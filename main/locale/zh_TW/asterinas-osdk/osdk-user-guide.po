@@ -35,6 +35,9 @@ msgid ""
 "projects, `cargo-osdk` enables building, running, and testing projects "
 "conveniently."
 msgstr ""
+"OSDK 提供了一個命令行工具 `cargo-osdk` ，有助於基於框內核架構開發的專案管理。"
+"` cargo-osdk` 可以作為 Cargo 的子命令使用。就像 Cargo 之於 Rust 專案一樣， "
+"`cargo-osdk` 讓建置、執行和測試專案變得非常方便。"
 
 #: src/osdk/guide/index.md:18
 msgid "Install OSDK"
@@ -99,10 +102,12 @@ msgid ""
 "About how to install Rust, you can refer to the [official site](https://www."
 "rust-lang.org/tools/install)."
 msgstr ""
+"關於如何安裝 Rust，您可以參考[官方網站](https://www.rust-lang.org/tools/"
+"install)。"
 
 #: src/osdk/guide/index.md:44
 msgid "`cargo-binutils` can be installed after Rust is installed by"
-msgstr ""
+msgstr "在安裝 Rust 之後，可以透過以下方式安裝 `cargo-binutils`"
 
 #: src/osdk/guide/index.md:50
 msgid "Install"

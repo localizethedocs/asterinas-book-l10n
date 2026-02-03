@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/test.md:11
 msgid "Arguments"
-msgstr ""
+msgstr "引數"
 
 #: src/osdk/reference/commands/test.md:13
 msgid "`TESTNAME`: Only run tests containing this string in their names"

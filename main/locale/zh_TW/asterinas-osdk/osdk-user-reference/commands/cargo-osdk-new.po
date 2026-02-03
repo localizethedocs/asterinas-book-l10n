@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/new.md:14
 msgid "Arguments"
-msgstr ""
+msgstr "引數"
 
 #: src/osdk/reference/commands/new.md:16
 msgid "`<name>`: the name of the crate."

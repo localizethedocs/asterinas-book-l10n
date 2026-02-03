@@ -90,6 +90,10 @@ msgid ""
 "mylib = { path = \"../mylib\" }\n"
 "```"
 msgstr ""
+"```toml\n"
+"[dependencies]\n"
+"mylib = { path = \"../mylib\" }\n"
+"```"
 
 #: src/osdk/guide/work-in-workspace.md:79
 msgid ""
@@ -103,11 +107,11 @@ msgstr ""
 
 #: src/osdk/guide/work-in-workspace.md:98
 msgid "Building and Running the kernel"
-msgstr ""
+msgstr "建置並執行內核"
 
 #: src/osdk/guide/work-in-workspace.md:100
 msgid "Build and run the project using the following commands:"
-msgstr ""
+msgstr "使用以下命令建置並執行專案："
 
 #: src/osdk/guide/work-in-workspace.md:107
 msgid "If everything goes well, you will see the output from the guest kernel."
@@ -115,7 +119,7 @@ msgstr ""
 
 #: src/osdk/guide/work-in-workspace.md:110
 msgid "Running unit test"
-msgstr ""
+msgstr "執行單元測試"
 
 #: src/osdk/guide/work-in-workspace.md:112
 msgid ""

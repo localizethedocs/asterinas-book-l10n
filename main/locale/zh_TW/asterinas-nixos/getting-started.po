@@ -68,6 +68,8 @@ msgid ""
 "Download the latest Asterinas NixOS installer ISO from [GitHub Releases]"
 "(https://github.com/asterinas/asterinas/releases)."
 msgstr ""
+"從 [GitHub Releases](https://github.com/asterinas/asterinas/releases) 下載最"
+"新的 Asterinas NixOS 安裝程式 ISO。"
 
 #: src/distro/index.md:44
 msgid ""
@@ -149,7 +151,7 @@ msgstr ""
 
 #: src/distro/index.md:121
 msgid "Kernel Developers"
-msgstr ""
+msgstr "內核開發者"
 
 #: src/distro/index.md:123
 msgid "Download the latest source code on an x86-64 Linux machine:"

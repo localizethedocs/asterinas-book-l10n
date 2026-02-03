@@ -58,7 +58,7 @@ msgstr ""
 
 #: src/kernel/the-framekernel-architecture.md:22
 msgid "Allowed"
-msgstr ""
+msgstr "允許"
 
 #: src/kernel/the-framekernel-architecture.md:22
 msgid "Encapsulate low-level unsafe code within high-level safe APIs"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/kernel/the-framekernel-architecture.md:23
 msgid "Not allowed"
-msgstr ""
+msgstr "不允許"
 
 #: src/kernel/the-framekernel-architecture.md:23
 msgid ""

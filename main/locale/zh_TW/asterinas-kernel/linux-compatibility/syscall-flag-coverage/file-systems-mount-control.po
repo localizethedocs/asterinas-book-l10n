@@ -28,7 +28,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:90
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:105
 msgid "Supported functionality in SCML:"
-msgstr ""
+msgstr "SCML 支援的功能："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:19
 msgid "// Create a new mount\n"

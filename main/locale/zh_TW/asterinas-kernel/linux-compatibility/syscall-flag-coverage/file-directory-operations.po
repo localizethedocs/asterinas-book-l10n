@@ -123,7 +123,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:237
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:258
 msgid "Supported functionality in SCML:"
-msgstr ""
+msgstr "SCML 支援的功能："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:105
 msgid "// Rename a file, moving it between directories if required.\n"

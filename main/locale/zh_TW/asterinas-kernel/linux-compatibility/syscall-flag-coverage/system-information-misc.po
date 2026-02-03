@@ -26,7 +26,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:106
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:130
 msgid "Supported functionality in SCML:"
-msgstr ""
+msgstr "SCML 支援的功能："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:16
 msgid "// Get or set the FS register\n"

@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/osdk/guide/run-project.md:14
 msgid "Build the project"
-msgstr ""
+msgstr "建置專案"
 
 #: src/osdk/guide/run-project.md:16
 msgid "To build the project and its dependencies, simply type:"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: src/osdk/guide/run-project.md:28
 msgid "Run the project"
-msgstr ""
+msgstr "執行專案"
 
 #: src/osdk/guide/run-project.md:30
 msgid "To launch the kernel with QEMU, use the following command:"
@@ -106,12 +106,12 @@ msgstr ""
 
 #: src/osdk/guide/run-project.md:85
 msgid "[`build` options](../reference/commands/build.md)"
-msgstr ""
+msgstr "[`build` 選項](../reference/commands/build.md)"
 
 #: src/osdk/guide/run-project.md:86
 msgid "[`run` options](../reference/commands/run.md)"
-msgstr ""
+msgstr "[`run` 選項](../reference/commands/run.md)"
 
 #: src/osdk/guide/run-project.md:87
 msgid "[`test` options](../reference/commands/test.md)"
-msgstr ""
+msgstr "[`test` 選項](../reference/commands/test.md)"

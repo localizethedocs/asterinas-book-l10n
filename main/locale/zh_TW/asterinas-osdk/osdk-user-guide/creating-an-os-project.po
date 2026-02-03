@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/guide/create-project.md:1
 msgid "Creating an OS Project"
-msgstr ""
+msgstr "建立作業系統專案"
 
 #: src/osdk/guide/create-project.md:3
 msgid ""
@@ -68,7 +68,7 @@ msgstr ""
 
 #: src/osdk/guide/create-project.md:51
 msgid "Kernel project"
-msgstr ""
+msgstr "內核專案"
 
 #: src/osdk/guide/create-project.md:53
 msgid ""

@@ -91,7 +91,7 @@ msgstr ""
 
 #: src/distro/popular-applications/desktop-environment.md:43
 msgid "`mousepad`: The default Xfce text editor"
-msgstr ""
+msgstr "`mousepad`：預設的 Xfce 文字編輯器"
 
 #: src/distro/popular-applications/desktop-environment.md:44
 msgid "`mupdf`: A lightweight PDF and XPS viewer"

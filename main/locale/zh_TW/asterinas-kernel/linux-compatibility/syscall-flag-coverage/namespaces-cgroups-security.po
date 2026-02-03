@@ -24,7 +24,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:102
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:125
 msgid "Supported functionality in SCML:"
-msgstr ""
+msgstr "SCML 支援的功能："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:16
 msgid "// Retrieve or set the parent-death signal\n"

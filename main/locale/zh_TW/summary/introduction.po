@@ -20,6 +20,8 @@ msgid ""
 "Welcome to the documentation for Asterinas, an open-source project and "
 "community focused on developing cutting-edge Rust OS kernels."
 msgstr ""
+"歡迎閱讀 Asterinas 的文件。Asterinas 是一個開源專案與社群，致力於開發頂尖的 "
+"Rust 作業系統內核。"
 
 #: src/index.md:11
 msgid "Book Structure"
@@ -31,7 +33,7 @@ msgstr ""
 
 #: src/index.md:15
 msgid "[Part 1: Asterinas NixOS](distro/)"
-msgstr ""
+msgstr "[第 1 部份：Asterinas NixOS](distro/)"
 
 #: src/index.md:17
 msgid ""
@@ -40,10 +42,13 @@ msgid ""
 "and rich package ecosystem, while swapping out the Linux kernel for "
 "Asterinas."
 msgstr ""
+"Asterinas NixOS 是第一個基於 Asterinas 內核建置的散布版。它以 NixOS 為基礎，"
+"利用其強大的組態模型和豐富的軟體包生態系統，同時將 Linux 內核替換為 "
+"Asterinas。"
 
 #: src/index.md:23
 msgid "[Part 2: Asterinas Kernel](kernel/)"
-msgstr ""
+msgstr "[第 2 部份：Asterinas 內核](kernel/)"
 
 #: src/index.md:25
 msgid ""
@@ -55,7 +60,7 @@ msgstr ""
 
 #: src/index.md:31
 msgid "[Part 3: Asterinas OSTD](ostd/)"
-msgstr ""
+msgstr "[第 3 部份：Asterinas OSTD](ostd/)"
 
 #: src/index.md:33
 msgid ""
@@ -67,7 +72,7 @@ msgstr ""
 
 #: src/index.md:39
 msgid "[Part 4: Asterinas OSDK](osdk/guide/)"
-msgstr ""
+msgstr "[第 4 部份：Asterinas OSDK](osdk/guide/)"
 
 #: src/index.md:41
 msgid ""
@@ -80,7 +85,7 @@ msgstr ""
 
 #: src/index.md:49
 msgid "[Part 5: Contributing to Asterinas](to-contribute/)"
-msgstr ""
+msgstr "[第 5 部份：貢獻 Asterinas](to-contribute/)"
 
 #: src/index.md:51
 msgid ""
@@ -91,7 +96,7 @@ msgstr ""
 
 #: src/index.md:56
 msgid "[Part 6: Requests for Comments (RFCs)](rfcs/)"
-msgstr ""
+msgstr "[第 6 部份：意見徵求稿（RFCs）](rfcs/)"
 
 #: src/index.md:58
 msgid ""
@@ -101,7 +106,7 @@ msgstr ""
 
 #: src/index.md:62
 msgid "Licensing"
-msgstr ""
+msgstr "授權條款"
 
 #: src/index.md:64
 msgid ""

@@ -25,7 +25,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:158
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:173
 msgid "Supported functionality in SCML:"
-msgstr ""
+msgstr "SCML 支援的功能："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:15
 msgid "// Get the scheduling policy of a \"normal\" thread\n"

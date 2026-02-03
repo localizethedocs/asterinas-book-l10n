@@ -31,6 +31,9 @@ msgid ""
 "is important to note that Asterinas does not, nor will it in the future, "
 "support the loading of Linux kernel modules."
 msgstr ""
+"Asterinas 致力於保持與 Linux ABI 的相容性，確保專為 Linux 設計的應用程式和管"
+"理工具能在 Asterinas 中無縫運行。雖然我們優先考慮相容性，但必須注意的是，"
+"Asterinas 目前不支援、未來也不會支援載入 Linux 內核模組。"
 
 #: src/kernel/linux-compatibility/index.md:15
 msgid "System Calls"

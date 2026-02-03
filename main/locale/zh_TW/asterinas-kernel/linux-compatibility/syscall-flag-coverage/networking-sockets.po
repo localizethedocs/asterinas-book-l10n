@@ -32,7 +32,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:203
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:231
 msgid "Supported functionality in SCML:"
-msgstr ""
+msgstr "SCML 支援的功能："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:19
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:59

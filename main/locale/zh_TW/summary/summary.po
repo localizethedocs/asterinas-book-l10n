@@ -49,7 +49,7 @@ msgstr "Asterinas 內核"
 
 #: src/SUMMARY.md:16
 msgid "Advanced Build and Test Instructions"
-msgstr ""
+msgstr "進階建置與測試說明"
 
 #: src/SUMMARY.md:17 src/SUMMARY.md:50
 msgid "Intel TDX"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: src/SUMMARY.md:37
 msgid "An Overview of OSTD"
-msgstr ""
+msgstr "OSTD 概覽"
 
 #: src/SUMMARY.md:38
 msgid "Example: Writing a Kernel in 100 Lines of Safe Rust"
@@ -153,7 +153,7 @@ msgstr ""
 
 #: src/SUMMARY.md:46
 msgid "Creating an OS Project"
-msgstr ""
+msgstr "建立作業系統專案"
 
 #: src/SUMMARY.md:47
 msgid "Testing or Running an OS Project"

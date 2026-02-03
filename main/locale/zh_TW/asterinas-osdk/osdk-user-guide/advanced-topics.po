@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/guide/advanced-topics.md:1
 msgid "Advanced topics"
-msgstr ""
+msgstr "進階話題"
 
 #: src/osdk/guide/advanced-topics.md:3
 msgid ""

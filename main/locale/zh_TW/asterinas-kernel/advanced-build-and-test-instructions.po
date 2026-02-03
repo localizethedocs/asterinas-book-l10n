@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/advanced-instructions.md:1
 msgid "Advanced Build and Test Instructions"
-msgstr ""
+msgstr "進階建置與測試說明"
 
 #: src/kernel/advanced-instructions.md:3
 msgid "User-Mode Unit Tests"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: src/kernel/advanced-instructions.md:83
 msgid "A GDB client: start a GDB client in another terminal."
-msgstr ""
+msgstr "GDB 客戶端：在另一個終端機啟動 GDB 客戶端。"
 
 #: src/kernel/advanced-instructions.md:89
 msgid ""
