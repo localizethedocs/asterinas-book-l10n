@@ -1,0 +1,3708 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/index.md:1
+msgid "Linux Compatibility"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:3
+msgid "\"We don't break user space.\""
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:5
+msgid "\\--- Linus Torvalds"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:7
+msgid ""
+"Asterinas is dedicated to maintaining compatibility with the Linux ABI, "
+"ensuring that applications and administrative tools designed for Linux can "
+"seamlessly operate within Asterinas. While we prioritize compatibility, it "
+"is important to note that Asterinas does not, nor will it in the future, "
+"support the loading of Linux kernel modules."
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:15
+msgid "System Calls"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:17
+msgid ""
+"At the time of writing, Asterinas supports over 230 Linux system calls for "
+"the x86-64 architecture, which are summarized in the table below."
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:21
+msgid "Numbers"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:21
+msgid "Names"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:21
+msgid "Supported"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:21
+msgid "Flag Coverage"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:23
+msgid "0"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:23
+msgid "read"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:23
+#: src/kernel/linux-compatibility/index.md:24
+#: src/kernel/linux-compatibility/index.md:25
+#: src/kernel/linux-compatibility/index.md:26
+#: src/kernel/linux-compatibility/index.md:27
+#: src/kernel/linux-compatibility/index.md:28
+#: src/kernel/linux-compatibility/index.md:29
+#: src/kernel/linux-compatibility/index.md:30
+#: src/kernel/linux-compatibility/index.md:31
+#: src/kernel/linux-compatibility/index.md:32
+#: src/kernel/linux-compatibility/index.md:33
+#: src/kernel/linux-compatibility/index.md:34
+#: src/kernel/linux-compatibility/index.md:35
+#: src/kernel/linux-compatibility/index.md:36
+#: src/kernel/linux-compatibility/index.md:37
+#: src/kernel/linux-compatibility/index.md:38
+#: src/kernel/linux-compatibility/index.md:39
+#: src/kernel/linux-compatibility/index.md:40
+#: src/kernel/linux-compatibility/index.md:41
+#: src/kernel/linux-compatibility/index.md:42
+#: src/kernel/linux-compatibility/index.md:43
+#: src/kernel/linux-compatibility/index.md:44
+#: src/kernel/linux-compatibility/index.md:45
+#: src/kernel/linux-compatibility/index.md:46
+#: src/kernel/linux-compatibility/index.md:47
+#: src/kernel/linux-compatibility/index.md:48
+#: src/kernel/linux-compatibility/index.md:49
+#: src/kernel/linux-compatibility/index.md:51
+#: src/kernel/linux-compatibility/index.md:55
+#: src/kernel/linux-compatibility/index.md:56
+#: src/kernel/linux-compatibility/index.md:57
+#: src/kernel/linux-compatibility/index.md:58
+#: src/kernel/linux-compatibility/index.md:59
+#: src/kernel/linux-compatibility/index.md:60
+#: src/kernel/linux-compatibility/index.md:61
+#: src/kernel/linux-compatibility/index.md:62
+#: src/kernel/linux-compatibility/index.md:63
+#: src/kernel/linux-compatibility/index.md:64
+#: src/kernel/linux-compatibility/index.md:65
+#: src/kernel/linux-compatibility/index.md:66
+#: src/kernel/linux-compatibility/index.md:67
+#: src/kernel/linux-compatibility/index.md:68
+#: src/kernel/linux-compatibility/index.md:69
+#: src/kernel/linux-compatibility/index.md:70
+#: src/kernel/linux-compatibility/index.md:71
+#: src/kernel/linux-compatibility/index.md:72
+#: src/kernel/linux-compatibility/index.md:73
+#: src/kernel/linux-compatibility/index.md:74
+#: src/kernel/linux-compatibility/index.md:75
+#: src/kernel/linux-compatibility/index.md:76
+#: src/kernel/linux-compatibility/index.md:77
+#: src/kernel/linux-compatibility/index.md:78
+#: src/kernel/linux-compatibility/index.md:79
+#: src/kernel/linux-compatibility/index.md:80
+#: src/kernel/linux-compatibility/index.md:81
+#: src/kernel/linux-compatibility/index.md:82
+#: src/kernel/linux-compatibility/index.md:83
+#: src/kernel/linux-compatibility/index.md:84
+#: src/kernel/linux-compatibility/index.md:85
+#: src/kernel/linux-compatibility/index.md:86
+#: src/kernel/linux-compatibility/index.md:87
+#: src/kernel/linux-compatibility/index.md:88
+#: src/kernel/linux-compatibility/index.md:89
+#: src/kernel/linux-compatibility/index.md:95
+#: src/kernel/linux-compatibility/index.md:96
+#: src/kernel/linux-compatibility/index.md:97
+#: src/kernel/linux-compatibility/index.md:98
+#: src/kernel/linux-compatibility/index.md:99
+#: src/kernel/linux-compatibility/index.md:100
+#: src/kernel/linux-compatibility/index.md:101
+#: src/kernel/linux-compatibility/index.md:102
+#: src/kernel/linux-compatibility/index.md:103
+#: src/kernel/linux-compatibility/index.md:104
+#: src/kernel/linux-compatibility/index.md:105
+#: src/kernel/linux-compatibility/index.md:106
+#: src/kernel/linux-compatibility/index.md:107
+#: src/kernel/linux-compatibility/index.md:108
+#: src/kernel/linux-compatibility/index.md:109
+#: src/kernel/linux-compatibility/index.md:110
+#: src/kernel/linux-compatibility/index.md:111
+#: src/kernel/linux-compatibility/index.md:112
+#: src/kernel/linux-compatibility/index.md:113
+#: src/kernel/linux-compatibility/index.md:114
+#: src/kernel/linux-compatibility/index.md:115
+#: src/kernel/linux-compatibility/index.md:116
+#: src/kernel/linux-compatibility/index.md:117
+#: src/kernel/linux-compatibility/index.md:118
+#: src/kernel/linux-compatibility/index.md:119
+#: src/kernel/linux-compatibility/index.md:120
+#: src/kernel/linux-compatibility/index.md:121
+#: src/kernel/linux-compatibility/index.md:122
+#: src/kernel/linux-compatibility/index.md:125
+#: src/kernel/linux-compatibility/index.md:127
+#: src/kernel/linux-compatibility/index.md:128
+#: src/kernel/linux-compatibility/index.md:129
+#: src/kernel/linux-compatibility/index.md:130
+#: src/kernel/linux-compatibility/index.md:131
+#: src/kernel/linux-compatibility/index.md:132
+#: src/kernel/linux-compatibility/index.md:133
+#: src/kernel/linux-compatibility/index.md:134
+#: src/kernel/linux-compatibility/index.md:135
+#: src/kernel/linux-compatibility/index.md:136
+#: src/kernel/linux-compatibility/index.md:137
+#: src/kernel/linux-compatibility/index.md:138
+#: src/kernel/linux-compatibility/index.md:139
+#: src/kernel/linux-compatibility/index.md:140
+#: src/kernel/linux-compatibility/index.md:141
+#: src/kernel/linux-compatibility/index.md:142
+#: src/kernel/linux-compatibility/index.md:143
+#: src/kernel/linux-compatibility/index.md:144
+#: src/kernel/linux-compatibility/index.md:145
+#: src/kernel/linux-compatibility/index.md:146
+#: src/kernel/linux-compatibility/index.md:147
+#: src/kernel/linux-compatibility/index.md:148
+#: src/kernel/linux-compatibility/index.md:149
+#: src/kernel/linux-compatibility/index.md:150
+#: src/kernel/linux-compatibility/index.md:151
+#: src/kernel/linux-compatibility/index.md:153
+#: src/kernel/linux-compatibility/index.md:154
+#: src/kernel/linux-compatibility/index.md:155
+#: src/kernel/linux-compatibility/index.md:156
+#: src/kernel/linux-compatibility/index.md:160
+#: src/kernel/linux-compatibility/index.md:161
+#: src/kernel/linux-compatibility/index.md:163
+#: src/kernel/linux-compatibility/index.md:164
+#: src/kernel/linux-compatibility/index.md:165
+#: src/kernel/linux-compatibility/index.md:166
+#: src/kernel/linux-compatibility/index.md:167
+#: src/kernel/linux-compatibility/index.md:168
+#: src/kernel/linux-compatibility/index.md:169
+#: src/kernel/linux-compatibility/index.md:170
+#: src/kernel/linux-compatibility/index.md:180
+#: src/kernel/linux-compatibility/index.md:181
+#: src/kernel/linux-compatibility/index.md:183
+#: src/kernel/linux-compatibility/index.md:184
+#: src/kernel/linux-compatibility/index.md:185
+#: src/kernel/linux-compatibility/index.md:188
+#: src/kernel/linux-compatibility/index.md:189
+#: src/kernel/linux-compatibility/index.md:192
+#: src/kernel/linux-compatibility/index.md:193
+#: src/kernel/linux-compatibility/index.md:194
+#: src/kernel/linux-compatibility/index.md:209
+#: src/kernel/linux-compatibility/index.md:211
+#: src/kernel/linux-compatibility/index.md:212
+#: src/kernel/linux-compatibility/index.md:213
+#: src/kernel/linux-compatibility/index.md:214
+#: src/kernel/linux-compatibility/index.md:215
+#: src/kernel/linux-compatibility/index.md:216
+#: src/kernel/linux-compatibility/index.md:217
+#: src/kernel/linux-compatibility/index.md:218
+#: src/kernel/linux-compatibility/index.md:219
+#: src/kernel/linux-compatibility/index.md:220
+#: src/kernel/linux-compatibility/index.md:221
+#: src/kernel/linux-compatibility/index.md:222
+#: src/kernel/linux-compatibility/index.md:224
+#: src/kernel/linux-compatibility/index.md:225
+#: src/kernel/linux-compatibility/index.md:226
+#: src/kernel/linux-compatibility/index.md:227
+#: src/kernel/linux-compatibility/index.md:236
+#: src/kernel/linux-compatibility/index.md:240
+#: src/kernel/linux-compatibility/index.md:241
+#: src/kernel/linux-compatibility/index.md:243
+#: src/kernel/linux-compatibility/index.md:244
+#: src/kernel/linux-compatibility/index.md:245
+#: src/kernel/linux-compatibility/index.md:246
+#: src/kernel/linux-compatibility/index.md:247
+#: src/kernel/linux-compatibility/index.md:249
+#: src/kernel/linux-compatibility/index.md:251
+#: src/kernel/linux-compatibility/index.md:253
+#: src/kernel/linux-compatibility/index.md:254
+#: src/kernel/linux-compatibility/index.md:255
+#: src/kernel/linux-compatibility/index.md:256
+#: src/kernel/linux-compatibility/index.md:257
+#: src/kernel/linux-compatibility/index.md:258
+#: src/kernel/linux-compatibility/index.md:270
+#: src/kernel/linux-compatibility/index.md:274
+#: src/kernel/linux-compatibility/index.md:275
+#: src/kernel/linux-compatibility/index.md:276
+#: src/kernel/linux-compatibility/index.md:277
+#: src/kernel/linux-compatibility/index.md:278
+#: src/kernel/linux-compatibility/index.md:280
+#: src/kernel/linux-compatibility/index.md:281
+#: src/kernel/linux-compatibility/index.md:282
+#: src/kernel/linux-compatibility/index.md:283
+#: src/kernel/linux-compatibility/index.md:284
+#: src/kernel/linux-compatibility/index.md:285
+#: src/kernel/linux-compatibility/index.md:286
+#: src/kernel/linux-compatibility/index.md:287
+#: src/kernel/linux-compatibility/index.md:288
+#: src/kernel/linux-compatibility/index.md:289
+#: src/kernel/linux-compatibility/index.md:290
+#: src/kernel/linux-compatibility/index.md:291
+#: src/kernel/linux-compatibility/index.md:292
+#: src/kernel/linux-compatibility/index.md:293
+#: src/kernel/linux-compatibility/index.md:294
+#: src/kernel/linux-compatibility/index.md:295
+#: src/kernel/linux-compatibility/index.md:296
+#: src/kernel/linux-compatibility/index.md:303
+#: src/kernel/linux-compatibility/index.md:304
+#: src/kernel/linux-compatibility/index.md:305
+#: src/kernel/linux-compatibility/index.md:306
+#: src/kernel/linux-compatibility/index.md:307
+#: src/kernel/linux-compatibility/index.md:308
+#: src/kernel/linux-compatibility/index.md:309
+#: src/kernel/linux-compatibility/index.md:310
+#: src/kernel/linux-compatibility/index.md:311
+#: src/kernel/linux-compatibility/index.md:312
+#: src/kernel/linux-compatibility/index.md:313
+#: src/kernel/linux-compatibility/index.md:314
+#: src/kernel/linux-compatibility/index.md:315
+#: src/kernel/linux-compatibility/index.md:316
+#: src/kernel/linux-compatibility/index.md:317
+#: src/kernel/linux-compatibility/index.md:318
+#: src/kernel/linux-compatibility/index.md:319
+#: src/kernel/linux-compatibility/index.md:325
+#: src/kernel/linux-compatibility/index.md:329
+#: src/kernel/linux-compatibility/index.md:330
+#: src/kernel/linux-compatibility/index.md:331
+#: src/kernel/linux-compatibility/index.md:332
+#: src/kernel/linux-compatibility/index.md:337
+#: src/kernel/linux-compatibility/index.md:338
+#: src/kernel/linux-compatibility/index.md:339
+#: src/kernel/linux-compatibility/index.md:340
+#: src/kernel/linux-compatibility/index.md:341
+#: src/kernel/linux-compatibility/index.md:342
+#: src/kernel/linux-compatibility/index.md:343
+#: src/kernel/linux-compatibility/index.md:344
+#: src/kernel/linux-compatibility/index.md:345
+#: src/kernel/linux-compatibility/index.md:346
+#: src/kernel/linux-compatibility/index.md:347
+#: src/kernel/linux-compatibility/index.md:348
+#: src/kernel/linux-compatibility/index.md:349
+#: src/kernel/linux-compatibility/index.md:350
+#: src/kernel/linux-compatibility/index.md:351
+#: src/kernel/linux-compatibility/index.md:352
+msgid "✅"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:23
+#: src/kernel/linux-compatibility/index.md:24
+#: src/kernel/linux-compatibility/index.md:26
+#: src/kernel/linux-compatibility/index.md:27
+#: src/kernel/linux-compatibility/index.md:28
+#: src/kernel/linux-compatibility/index.md:29
+#: src/kernel/linux-compatibility/index.md:34
+#: src/kernel/linux-compatibility/index.md:35
+#: src/kernel/linux-compatibility/index.md:38
+#: src/kernel/linux-compatibility/index.md:40
+#: src/kernel/linux-compatibility/index.md:41
+#: src/kernel/linux-compatibility/index.md:42
+#: src/kernel/linux-compatibility/index.md:43
+#: src/kernel/linux-compatibility/index.md:44
+#: src/kernel/linux-compatibility/index.md:45
+#: src/kernel/linux-compatibility/index.md:46
+#: src/kernel/linux-compatibility/index.md:47
+#: src/kernel/linux-compatibility/index.md:55
+#: src/kernel/linux-compatibility/index.md:56
+#: src/kernel/linux-compatibility/index.md:57
+#: src/kernel/linux-compatibility/index.md:58
+#: src/kernel/linux-compatibility/index.md:59
+#: src/kernel/linux-compatibility/index.md:60
+#: src/kernel/linux-compatibility/index.md:61
+#: src/kernel/linux-compatibility/index.md:62
+#: src/kernel/linux-compatibility/index.md:63
+#: src/kernel/linux-compatibility/index.md:71
+#: src/kernel/linux-compatibility/index.md:73
+#: src/kernel/linux-compatibility/index.md:74
+#: src/kernel/linux-compatibility/index.md:75
+#: src/kernel/linux-compatibility/index.md:80
+#: src/kernel/linux-compatibility/index.md:81
+#: src/kernel/linux-compatibility/index.md:82
+#: src/kernel/linux-compatibility/index.md:83
+#: src/kernel/linux-compatibility/index.md:85
+#: src/kernel/linux-compatibility/index.md:86
+#: src/kernel/linux-compatibility/index.md:96
+#: src/kernel/linux-compatibility/index.md:97
+#: src/kernel/linux-compatibility/index.md:98
+#: src/kernel/linux-compatibility/index.md:99
+#: src/kernel/linux-compatibility/index.md:100
+#: src/kernel/linux-compatibility/index.md:101
+#: src/kernel/linux-compatibility/index.md:102
+#: src/kernel/linux-compatibility/index.md:103
+#: src/kernel/linux-compatibility/index.md:104
+#: src/kernel/linux-compatibility/index.md:105
+#: src/kernel/linux-compatibility/index.md:106
+#: src/kernel/linux-compatibility/index.md:107
+#: src/kernel/linux-compatibility/index.md:108
+#: src/kernel/linux-compatibility/index.md:109
+#: src/kernel/linux-compatibility/index.md:110
+#: src/kernel/linux-compatibility/index.md:111
+#: src/kernel/linux-compatibility/index.md:112
+#: src/kernel/linux-compatibility/index.md:113
+#: src/kernel/linux-compatibility/index.md:114
+#: src/kernel/linux-compatibility/index.md:115
+#: src/kernel/linux-compatibility/index.md:116
+#: src/kernel/linux-compatibility/index.md:117
+#: src/kernel/linux-compatibility/index.md:118
+#: src/kernel/linux-compatibility/index.md:119
+#: src/kernel/linux-compatibility/index.md:120
+#: src/kernel/linux-compatibility/index.md:122
+#: src/kernel/linux-compatibility/index.md:125
+#: src/kernel/linux-compatibility/index.md:127
+#: src/kernel/linux-compatibility/index.md:128
+#: src/kernel/linux-compatibility/index.md:129
+#: src/kernel/linux-compatibility/index.md:130
+#: src/kernel/linux-compatibility/index.md:131
+#: src/kernel/linux-compatibility/index.md:132
+#: src/kernel/linux-compatibility/index.md:133
+#: src/kernel/linux-compatibility/index.md:134
+#: src/kernel/linux-compatibility/index.md:135
+#: src/kernel/linux-compatibility/index.md:136
+#: src/kernel/linux-compatibility/index.md:137
+#: src/kernel/linux-compatibility/index.md:138
+#: src/kernel/linux-compatibility/index.md:139
+#: src/kernel/linux-compatibility/index.md:140
+#: src/kernel/linux-compatibility/index.md:141
+#: src/kernel/linux-compatibility/index.md:142
+#: src/kernel/linux-compatibility/index.md:143
+#: src/kernel/linux-compatibility/index.md:144
+#: src/kernel/linux-compatibility/index.md:145
+#: src/kernel/linux-compatibility/index.md:146
+#: src/kernel/linux-compatibility/index.md:147
+#: src/kernel/linux-compatibility/index.md:150
+#: src/kernel/linux-compatibility/index.md:151
+#: src/kernel/linux-compatibility/index.md:153
+#: src/kernel/linux-compatibility/index.md:154
+#: src/kernel/linux-compatibility/index.md:155
+#: src/kernel/linux-compatibility/index.md:156
+#: src/kernel/linux-compatibility/index.md:160
+#: src/kernel/linux-compatibility/index.md:161
+#: src/kernel/linux-compatibility/index.md:163
+#: src/kernel/linux-compatibility/index.md:164
+#: src/kernel/linux-compatibility/index.md:165
+#: src/kernel/linux-compatibility/index.md:166
+#: src/kernel/linux-compatibility/index.md:168
+#: src/kernel/linux-compatibility/index.md:169
+#: src/kernel/linux-compatibility/index.md:170
+#: src/kernel/linux-compatibility/index.md:183
+#: src/kernel/linux-compatibility/index.md:184
+#: src/kernel/linux-compatibility/index.md:185
+#: src/kernel/linux-compatibility/index.md:193
+#: src/kernel/linux-compatibility/index.md:194
+#: src/kernel/linux-compatibility/index.md:209
+#: src/kernel/linux-compatibility/index.md:211
+#: src/kernel/linux-compatibility/index.md:212
+#: src/kernel/linux-compatibility/index.md:213
+#: src/kernel/linux-compatibility/index.md:214
+#: src/kernel/linux-compatibility/index.md:215
+#: src/kernel/linux-compatibility/index.md:216
+#: src/kernel/linux-compatibility/index.md:217
+#: src/kernel/linux-compatibility/index.md:218
+#: src/kernel/linux-compatibility/index.md:219
+#: src/kernel/linux-compatibility/index.md:220
+#: src/kernel/linux-compatibility/index.md:221
+#: src/kernel/linux-compatibility/index.md:222
+#: src/kernel/linux-compatibility/index.md:224
+#: src/kernel/linux-compatibility/index.md:226
+#: src/kernel/linux-compatibility/index.md:227
+#: src/kernel/linux-compatibility/index.md:236
+#: src/kernel/linux-compatibility/index.md:240
+#: src/kernel/linux-compatibility/index.md:241
+#: src/kernel/linux-compatibility/index.md:246
+#: src/kernel/linux-compatibility/index.md:247
+#: src/kernel/linux-compatibility/index.md:249
+#: src/kernel/linux-compatibility/index.md:254
+#: src/kernel/linux-compatibility/index.md:255
+#: src/kernel/linux-compatibility/index.md:257
+#: src/kernel/linux-compatibility/index.md:258
+#: src/kernel/linux-compatibility/index.md:276
+#: src/kernel/linux-compatibility/index.md:278
+#: src/kernel/linux-compatibility/index.md:281
+#: src/kernel/linux-compatibility/index.md:282
+#: src/kernel/linux-compatibility/index.md:283
+#: src/kernel/linux-compatibility/index.md:284
+#: src/kernel/linux-compatibility/index.md:286
+#: src/kernel/linux-compatibility/index.md:287
+#: src/kernel/linux-compatibility/index.md:288
+#: src/kernel/linux-compatibility/index.md:289
+#: src/kernel/linux-compatibility/index.md:290
+#: src/kernel/linux-compatibility/index.md:291
+#: src/kernel/linux-compatibility/index.md:292
+#: src/kernel/linux-compatibility/index.md:293
+#: src/kernel/linux-compatibility/index.md:296
+#: src/kernel/linux-compatibility/index.md:304
+#: src/kernel/linux-compatibility/index.md:305
+#: src/kernel/linux-compatibility/index.md:307
+#: src/kernel/linux-compatibility/index.md:310
+#: src/kernel/linux-compatibility/index.md:312
+#: src/kernel/linux-compatibility/index.md:314
+#: src/kernel/linux-compatibility/index.md:315
+#: src/kernel/linux-compatibility/index.md:318
+#: src/kernel/linux-compatibility/index.md:319
+#: src/kernel/linux-compatibility/index.md:325
+#: src/kernel/linux-compatibility/index.md:329
+#: src/kernel/linux-compatibility/index.md:332
+#: src/kernel/linux-compatibility/index.md:342
+#: src/kernel/linux-compatibility/index.md:346
+#: src/kernel/linux-compatibility/index.md:348
+#: src/kernel/linux-compatibility/index.md:349
+#: src/kernel/linux-compatibility/index.md:351
+#: src/kernel/linux-compatibility/index.md:352
+msgid "💯"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:24
+msgid "1"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:24
+msgid "write"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:25
+msgid "2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:25
+msgid "open"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:25
+#: src/kernel/linux-compatibility/index.md:280
+msgid ""
+"[⚠️](syscall-flag-coverage/file-and-directory-operations/#open-and-openat)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:26
+msgid "3"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:26
+msgid "close"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:27
+msgid "4"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:27
+msgid "stat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:28
+msgid "5"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:28
+msgid "fstat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:29
+msgid "6"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:29
+msgid "lstat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:30
+msgid "7"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:30
+msgid "poll"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:30
+#: src/kernel/linux-compatibility/index.md:294
+msgid ""
+"[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#poll-and-ppoll)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:31
+msgid "8"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:31
+msgid "lseek"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:31
+msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#lseek)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:32
+msgid "9"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:32
+msgid "mmap"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:32
+msgid "[⚠️](syscall-flag-coverage/memory-management/#mmap-and-munmap)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:33
+msgid "10"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:33
+msgid "mprotect"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:33
+msgid "[⚠️](syscall-flag-coverage/memory-management/#mprotect)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:34
+msgid "11"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:34
+msgid "munmap"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:35
+msgid "12"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:35
+msgid "brk"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:36
+msgid "13"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:36
+msgid "rt_sigaction"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:36
+msgid "[⚠️](syscall-flag-coverage/signals-and-timers/#rt_sigaction)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:37
+msgid "14"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:37
+msgid "rt_sigprocmask"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:37
+msgid "[⚠️](syscall-flag-coverage/signals-and-timers/#rt_sigprocmask)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:38
+msgid "15"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:38
+msgid "rt_sigreturn"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:39
+msgid "16"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:39
+msgid "ioctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:39
+msgid "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#ioctl)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:40
+msgid "17"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:40
+msgid "pread64"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:41
+msgid "18"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:41
+msgid "pwrite64"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:42
+msgid "19"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:42
+msgid "readv"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:43
+msgid "20"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:43
+msgid "writev"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:44
+msgid "21"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:44
+msgid "access"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:45
+msgid "22"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:45
+msgid "pipe"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:46
+msgid "23"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:46
+msgid "select"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:47
+msgid "24"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:47
+msgid "sched_yield"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:48
+msgid "25"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:48
+msgid "mremap"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:48
+msgid "[⚠️](syscall-flag-coverage/memory-management/#mremap)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:49
+msgid "26"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:49
+msgid "msync"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:49
+msgid "[⚠️](syscall-flag-coverage/memory-management/#msync)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:50
+msgid "27"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:50
+msgid "mincore"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:50
+#: src/kernel/linux-compatibility/index.md:52
+#: src/kernel/linux-compatibility/index.md:53
+#: src/kernel/linux-compatibility/index.md:54
+#: src/kernel/linux-compatibility/index.md:90
+#: src/kernel/linux-compatibility/index.md:91
+#: src/kernel/linux-compatibility/index.md:92
+#: src/kernel/linux-compatibility/index.md:93
+#: src/kernel/linux-compatibility/index.md:94
+#: src/kernel/linux-compatibility/index.md:123
+#: src/kernel/linux-compatibility/index.md:124
+#: src/kernel/linux-compatibility/index.md:126
+#: src/kernel/linux-compatibility/index.md:152
+#: src/kernel/linux-compatibility/index.md:157
+#: src/kernel/linux-compatibility/index.md:158
+#: src/kernel/linux-compatibility/index.md:159
+#: src/kernel/linux-compatibility/index.md:162
+#: src/kernel/linux-compatibility/index.md:171
+#: src/kernel/linux-compatibility/index.md:172
+#: src/kernel/linux-compatibility/index.md:173
+#: src/kernel/linux-compatibility/index.md:174
+#: src/kernel/linux-compatibility/index.md:175
+#: src/kernel/linux-compatibility/index.md:176
+#: src/kernel/linux-compatibility/index.md:177
+#: src/kernel/linux-compatibility/index.md:178
+#: src/kernel/linux-compatibility/index.md:179
+#: src/kernel/linux-compatibility/index.md:182
+#: src/kernel/linux-compatibility/index.md:186
+#: src/kernel/linux-compatibility/index.md:187
+#: src/kernel/linux-compatibility/index.md:190
+#: src/kernel/linux-compatibility/index.md:191
+#: src/kernel/linux-compatibility/index.md:195
+#: src/kernel/linux-compatibility/index.md:196
+#: src/kernel/linux-compatibility/index.md:197
+#: src/kernel/linux-compatibility/index.md:198
+#: src/kernel/linux-compatibility/index.md:199
+#: src/kernel/linux-compatibility/index.md:200
+#: src/kernel/linux-compatibility/index.md:201
+#: src/kernel/linux-compatibility/index.md:202
+#: src/kernel/linux-compatibility/index.md:203
+#: src/kernel/linux-compatibility/index.md:204
+#: src/kernel/linux-compatibility/index.md:205
+#: src/kernel/linux-compatibility/index.md:206
+#: src/kernel/linux-compatibility/index.md:207
+#: src/kernel/linux-compatibility/index.md:208
+#: src/kernel/linux-compatibility/index.md:210
+#: src/kernel/linux-compatibility/index.md:223
+#: src/kernel/linux-compatibility/index.md:228
+#: src/kernel/linux-compatibility/index.md:229
+#: src/kernel/linux-compatibility/index.md:230
+#: src/kernel/linux-compatibility/index.md:231
+#: src/kernel/linux-compatibility/index.md:232
+#: src/kernel/linux-compatibility/index.md:233
+#: src/kernel/linux-compatibility/index.md:234
+#: src/kernel/linux-compatibility/index.md:235
+#: src/kernel/linux-compatibility/index.md:237
+#: src/kernel/linux-compatibility/index.md:238
+#: src/kernel/linux-compatibility/index.md:239
+#: src/kernel/linux-compatibility/index.md:242
+#: src/kernel/linux-compatibility/index.md:248
+#: src/kernel/linux-compatibility/index.md:250
+#: src/kernel/linux-compatibility/index.md:252
+#: src/kernel/linux-compatibility/index.md:259
+#: src/kernel/linux-compatibility/index.md:260
+#: src/kernel/linux-compatibility/index.md:261
+#: src/kernel/linux-compatibility/index.md:262
+#: src/kernel/linux-compatibility/index.md:263
+#: src/kernel/linux-compatibility/index.md:264
+#: src/kernel/linux-compatibility/index.md:265
+#: src/kernel/linux-compatibility/index.md:266
+#: src/kernel/linux-compatibility/index.md:267
+#: src/kernel/linux-compatibility/index.md:268
+#: src/kernel/linux-compatibility/index.md:269
+#: src/kernel/linux-compatibility/index.md:271
+#: src/kernel/linux-compatibility/index.md:272
+#: src/kernel/linux-compatibility/index.md:273
+#: src/kernel/linux-compatibility/index.md:279
+#: src/kernel/linux-compatibility/index.md:297
+#: src/kernel/linux-compatibility/index.md:298
+#: src/kernel/linux-compatibility/index.md:299
+#: src/kernel/linux-compatibility/index.md:300
+#: src/kernel/linux-compatibility/index.md:301
+#: src/kernel/linux-compatibility/index.md:302
+#: src/kernel/linux-compatibility/index.md:320
+#: src/kernel/linux-compatibility/index.md:321
+#: src/kernel/linux-compatibility/index.md:322
+#: src/kernel/linux-compatibility/index.md:323
+#: src/kernel/linux-compatibility/index.md:324
+#: src/kernel/linux-compatibility/index.md:326
+#: src/kernel/linux-compatibility/index.md:327
+#: src/kernel/linux-compatibility/index.md:328
+#: src/kernel/linux-compatibility/index.md:333
+#: src/kernel/linux-compatibility/index.md:334
+#: src/kernel/linux-compatibility/index.md:335
+#: src/kernel/linux-compatibility/index.md:336
+msgid "❌"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:50
+#: src/kernel/linux-compatibility/index.md:52
+#: src/kernel/linux-compatibility/index.md:53
+#: src/kernel/linux-compatibility/index.md:54
+#: src/kernel/linux-compatibility/index.md:90
+#: src/kernel/linux-compatibility/index.md:91
+#: src/kernel/linux-compatibility/index.md:92
+#: src/kernel/linux-compatibility/index.md:93
+#: src/kernel/linux-compatibility/index.md:94
+#: src/kernel/linux-compatibility/index.md:123
+#: src/kernel/linux-compatibility/index.md:124
+#: src/kernel/linux-compatibility/index.md:126
+#: src/kernel/linux-compatibility/index.md:152
+#: src/kernel/linux-compatibility/index.md:157
+#: src/kernel/linux-compatibility/index.md:158
+#: src/kernel/linux-compatibility/index.md:159
+#: src/kernel/linux-compatibility/index.md:162
+#: src/kernel/linux-compatibility/index.md:171
+#: src/kernel/linux-compatibility/index.md:172
+#: src/kernel/linux-compatibility/index.md:173
+#: src/kernel/linux-compatibility/index.md:174
+#: src/kernel/linux-compatibility/index.md:175
+#: src/kernel/linux-compatibility/index.md:176
+#: src/kernel/linux-compatibility/index.md:177
+#: src/kernel/linux-compatibility/index.md:178
+#: src/kernel/linux-compatibility/index.md:179
+#: src/kernel/linux-compatibility/index.md:182
+#: src/kernel/linux-compatibility/index.md:186
+#: src/kernel/linux-compatibility/index.md:187
+#: src/kernel/linux-compatibility/index.md:190
+#: src/kernel/linux-compatibility/index.md:191
+#: src/kernel/linux-compatibility/index.md:195
+#: src/kernel/linux-compatibility/index.md:196
+#: src/kernel/linux-compatibility/index.md:197
+#: src/kernel/linux-compatibility/index.md:198
+#: src/kernel/linux-compatibility/index.md:199
+#: src/kernel/linux-compatibility/index.md:200
+#: src/kernel/linux-compatibility/index.md:201
+#: src/kernel/linux-compatibility/index.md:202
+#: src/kernel/linux-compatibility/index.md:203
+#: src/kernel/linux-compatibility/index.md:204
+#: src/kernel/linux-compatibility/index.md:205
+#: src/kernel/linux-compatibility/index.md:206
+#: src/kernel/linux-compatibility/index.md:207
+#: src/kernel/linux-compatibility/index.md:208
+#: src/kernel/linux-compatibility/index.md:210
+#: src/kernel/linux-compatibility/index.md:223
+#: src/kernel/linux-compatibility/index.md:228
+#: src/kernel/linux-compatibility/index.md:229
+#: src/kernel/linux-compatibility/index.md:230
+#: src/kernel/linux-compatibility/index.md:231
+#: src/kernel/linux-compatibility/index.md:232
+#: src/kernel/linux-compatibility/index.md:233
+#: src/kernel/linux-compatibility/index.md:234
+#: src/kernel/linux-compatibility/index.md:235
+#: src/kernel/linux-compatibility/index.md:237
+#: src/kernel/linux-compatibility/index.md:238
+#: src/kernel/linux-compatibility/index.md:239
+#: src/kernel/linux-compatibility/index.md:242
+#: src/kernel/linux-compatibility/index.md:248
+#: src/kernel/linux-compatibility/index.md:250
+#: src/kernel/linux-compatibility/index.md:252
+#: src/kernel/linux-compatibility/index.md:259
+#: src/kernel/linux-compatibility/index.md:260
+#: src/kernel/linux-compatibility/index.md:261
+#: src/kernel/linux-compatibility/index.md:262
+#: src/kernel/linux-compatibility/index.md:263
+#: src/kernel/linux-compatibility/index.md:264
+#: src/kernel/linux-compatibility/index.md:265
+#: src/kernel/linux-compatibility/index.md:266
+#: src/kernel/linux-compatibility/index.md:267
+#: src/kernel/linux-compatibility/index.md:268
+#: src/kernel/linux-compatibility/index.md:269
+#: src/kernel/linux-compatibility/index.md:271
+#: src/kernel/linux-compatibility/index.md:272
+#: src/kernel/linux-compatibility/index.md:273
+#: src/kernel/linux-compatibility/index.md:279
+#: src/kernel/linux-compatibility/index.md:297
+#: src/kernel/linux-compatibility/index.md:298
+#: src/kernel/linux-compatibility/index.md:299
+#: src/kernel/linux-compatibility/index.md:300
+#: src/kernel/linux-compatibility/index.md:301
+#: src/kernel/linux-compatibility/index.md:302
+#: src/kernel/linux-compatibility/index.md:320
+#: src/kernel/linux-compatibility/index.md:321
+#: src/kernel/linux-compatibility/index.md:322
+#: src/kernel/linux-compatibility/index.md:323
+#: src/kernel/linux-compatibility/index.md:324
+#: src/kernel/linux-compatibility/index.md:326
+#: src/kernel/linux-compatibility/index.md:327
+#: src/kernel/linux-compatibility/index.md:328
+#: src/kernel/linux-compatibility/index.md:333
+#: src/kernel/linux-compatibility/index.md:334
+#: src/kernel/linux-compatibility/index.md:335
+#: src/kernel/linux-compatibility/index.md:336
+msgid "N/A"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:51
+msgid "28"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:51
+msgid "madvise"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:51
+msgid "[⚠️](syscall-flag-coverage/memory-management/#madvise)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:52
+msgid "29"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:52
+msgid "shmget"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:53
+msgid "30"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:53
+msgid "shmat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:54
+msgid "31"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:54
+msgid "shmctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:55
+msgid "32"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:55
+msgid "dup"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:56
+msgid "33"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:56
+msgid "dup2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:57
+msgid "34"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:57
+msgid "pause"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:58
+msgid "35"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:58
+msgid "nanosleep"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:59
+msgid "36"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:59
+msgid "getitimer"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:60
+msgid "37"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:60
+msgid "alarm"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:61
+msgid "38"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:61
+msgid "setitimer"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:62
+msgid "39"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:62
+msgid "getpid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:63
+msgid "40"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:63
+msgid "sendfile"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:64
+msgid "41"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:64
+msgid "socket"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:64
+msgid "[⚠️](syscall-flag-coverage/networking-and-sockets/#socket)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:65
+msgid "42"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:65
+msgid "connect"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:65
+msgid "[⚠️](syscall-flag-coverage/networking-and-sockets/#connect)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:66
+msgid "43"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:66
+msgid "accept"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:66
+#: src/kernel/linux-compatibility/index.md:311
+msgid "[⚠️](syscall-flag-coverage/networking-and-sockets/#accept-and-accept4)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:67
+msgid "44"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:67
+msgid "sendto"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:67
+#: src/kernel/linux-compatibility/index.md:69
+#: src/kernel/linux-compatibility/index.md:330
+msgid ""
+"[⚠️](syscall-flag-coverage/networking-and-sockets/#sendto-sendmsg-and-"
+"sendmmsg)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:68
+msgid "45"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:68
+msgid "recvfrom"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:68
+#: src/kernel/linux-compatibility/index.md:70
+msgid "[⚠️](syscall-flag-coverage/networking-and-sockets/#recvfrom-and-recvmsg)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:69
+msgid "46"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:69
+msgid "sendmsg"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:70
+msgid "47"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:70
+msgid "recvmsg"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:71
+msgid "48"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:71
+msgid "shutdown"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:72
+msgid "49"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:72
+msgid "bind"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:72
+msgid "[⚠️](syscall-flag-coverage/networking-and-sockets/#bind)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:73
+msgid "50"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:73
+msgid "listen"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:74
+msgid "51"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:74
+msgid "getsockname"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:75
+msgid "52"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:75
+msgid "getpeername"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:76
+msgid "53"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:76
+msgid "socketpair"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:76
+msgid "[⚠️](syscall-flag-coverage/networking-and-sockets/#socketpair)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:77
+msgid "54"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:77
+msgid "setsockopt"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:77
+#: src/kernel/linux-compatibility/index.md:78
+msgid ""
+"[⚠️](syscall-flag-coverage/networking-and-sockets/#getsockopt-and-setsockopt)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:78
+msgid "55"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:78
+msgid "getsockopt"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:79
+msgid "56"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:79
+msgid "clone"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:79
+#: src/kernel/linux-compatibility/index.md:347
+msgid ""
+"[⚠️](syscall-flag-coverage/process-and-thread-management/#clone-and-clone3)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:80
+msgid "57"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:80
+msgid "fork"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:81
+msgid "58"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:81
+msgid "vfork"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:82
+msgid "59"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:82
+msgid "execve"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:83
+msgid "60"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:83
+msgid "exit"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:84
+msgid "61"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:84
+msgid "wait4"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:84
+msgid "[⚠️](syscall-flag-coverage/process-and-thread-management/#wait4)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:85
+msgid "62"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:85
+msgid "kill"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:86
+msgid "63"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:86
+msgid "uname"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:87
+msgid "64"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:87
+msgid "semget"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:87
+msgid "[⚠️](syscall-flag-coverage/inter-process-communication/#semget)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:88
+msgid "65"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:88
+msgid "semop"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:88
+#: src/kernel/linux-compatibility/index.md:243
+msgid ""
+"[⚠️](syscall-flag-coverage/inter-process-communication/#semop-and-semtimedop)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:89
+msgid "66"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:89
+msgid "semctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:89
+msgid "[⚠️](syscall-flag-coverage/inter-process-communication/#semctl)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:90
+msgid "67"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:90
+msgid "shmdt"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:91
+msgid "68"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:91
+msgid "msgget"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:92
+msgid "69"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:92
+msgid "msgsnd"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:93
+msgid "70"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:93
+msgid "msgrcv"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:94
+msgid "71"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:94
+msgid "msgctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:95
+msgid "72"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:95
+msgid "fcntl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:95
+msgid "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#fcntl)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:96
+msgid "73"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:96
+msgid "flock"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:97
+msgid "74"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:97
+msgid "fsync"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:98
+msgid "75"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:98
+msgid "fdatasync"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:99
+msgid "76"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:99
+msgid "truncate"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:100
+msgid "77"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:100
+msgid "ftruncate"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:101
+msgid "78"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:101
+msgid "getdents"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:102
+msgid "79"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:102
+msgid "getcwd"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:103
+msgid "80"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:103
+msgid "chdir"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:104
+msgid "81"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:104
+msgid "fchdir"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:105
+msgid "82"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:105
+msgid "rename"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:106
+msgid "83"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:106
+msgid "mkdir"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:107
+msgid "84"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:107
+msgid "rmdir"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:108
+msgid "85"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:108
+msgid "creat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:109
+msgid "86"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:109
+msgid "link"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:110
+msgid "87"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:110
+msgid "unlink"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:111
+msgid "88"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:111
+msgid "symlink"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:112
+msgid "89"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:112
+msgid "readlink"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:113
+msgid "90"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:113
+msgid "chmod"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:114
+msgid "91"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:114
+msgid "fchmod"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:115
+msgid "92"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:115
+msgid "chown"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:116
+msgid "93"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:116
+msgid "fchown"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:117
+msgid "94"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:117
+msgid "lchown"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:118
+msgid "95"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:118
+msgid "umask"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:119
+msgid "96"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:119
+msgid "gettimeofday"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:120
+msgid "97"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:120
+msgid "getrlimit"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:121
+msgid "98"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:121
+msgid "getrusage"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:121
+msgid "[⚠️](syscall-flag-coverage/system-information-and-misc/#getrusage)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:122
+msgid "99"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:122
+msgid "sysinfo"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:123
+msgid "100"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:123
+msgid "times"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:124
+msgid "101"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:124
+msgid "ptrace"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:125
+msgid "102"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:125
+msgid "getuid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:126
+msgid "103"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:126
+msgid "syslog"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:127
+msgid "104"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:127
+msgid "getgid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:128
+msgid "105"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:128
+msgid "setuid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:129
+msgid "106"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:129
+msgid "setgid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:130
+msgid "107"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:130
+msgid "geteuid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:131
+msgid "108"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:131
+msgid "getegid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:132
+msgid "109"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:132
+msgid "setpgid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:133
+msgid "110"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:133
+msgid "getppid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:134
+msgid "111"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:134
+msgid "getpgrp"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:135
+msgid "112"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:135
+msgid "setsid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:136
+msgid "113"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:136
+msgid "setreuid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:137
+msgid "114"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:137
+msgid "setregid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:138
+msgid "115"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:138
+msgid "getgroups"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:139
+msgid "116"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:139
+msgid "setgroups"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:140
+msgid "117"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:140
+msgid "setresuid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:141
+msgid "118"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:141
+msgid "getresuid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:142
+msgid "119"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:142
+msgid "setresgid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:143
+msgid "120"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:143
+msgid "getresgid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:144
+msgid "121"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:144
+msgid "getpgid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:145
+msgid "122"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:145
+msgid "setfsuid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:146
+msgid "123"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:146
+msgid "setfsgid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:147
+msgid "124"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:147
+msgid "getsid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:148
+msgid "125"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:148
+msgid "capget"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:148
+#: src/kernel/linux-compatibility/index.md:149
+msgid ""
+"[⚠️](syscall-flag-coverage/namespaces-cgroups-and-security/#capget-and-capset)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:149
+msgid "126"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:149
+msgid "capset"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:150
+msgid "127"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:150
+msgid "rt_sigpending"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:151
+msgid "128"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:151
+msgid "rt_sigtimedwait"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:152
+msgid "129"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:152
+msgid "rt_sigqueueinfo"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:153
+msgid "130"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:153
+msgid "rt_sigsuspend"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:154
+msgid "131"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:154
+msgid "sigaltstack"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:155
+msgid "132"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:155
+msgid "utime"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:156
+msgid "133"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:156
+msgid "mknod"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:157
+msgid "134"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:157
+msgid "uselib"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:158
+msgid "135"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:158
+msgid "personality"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:159
+msgid "136"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:159
+msgid "ustat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:160
+msgid "137"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:160
+msgid "statfs"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:161
+msgid "138"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:161
+msgid "fstatfs"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:162
+msgid "139"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:162
+msgid "sysfs"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:163
+msgid "140"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:163
+msgid "getpriority"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:164
+msgid "141"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:164
+msgid "setpriority"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:165
+msgid "142"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:165
+msgid "sched_setparam"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:166
+msgid "143"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:166
+msgid "sched_getparam"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:167
+msgid "144"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:167
+msgid "sched_setscheduler"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:167
+msgid ""
+"[⚠️](syscall-flag-coverage/process-and-thread-management/#sched_setscheduler)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:168
+msgid "145"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:168
+msgid "sched_getscheduler"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:169
+msgid "146"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:169
+msgid "sched_get_priority_max"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:170
+msgid "147"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:170
+msgid "sched_get_priority_min"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:171
+msgid "148"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:171
+msgid "sched_rr_get_interval"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:172
+msgid "149"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:172
+msgid "mlock"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:173
+msgid "150"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:173
+msgid "munlock"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:174
+msgid "151"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:174
+msgid "mlockall"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:175
+msgid "152"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:175
+msgid "munlockall"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:176
+msgid "153"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:176
+msgid "vhangup"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:177
+msgid "154"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:177
+msgid "modify_ldt"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:178
+msgid "155"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:178
+msgid "pivot_root"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:179
+msgid "156"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:179
+msgid "\\_sysctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:180
+msgid "157"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:180
+msgid "prctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:180
+msgid "[⚠️](syscall-flag-coverage/namespaces-cgroups-and-security/#prctl)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:181
+msgid "158"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:181
+msgid "arch_prctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:181
+msgid "[⚠️](syscall-flag-coverage/system-information-and-misc/#arch_prctl)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:182
+msgid "159"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:182
+msgid "adjtimex"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:183
+msgid "160"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:183
+msgid "setrlimit"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:184
+msgid "161"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:184
+msgid "chroot"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:185
+msgid "162"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:185
+msgid "sync"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:186
+msgid "163"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:186
+msgid "acct"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:187
+msgid "164"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:187
+msgid "settimeofday"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:188
+msgid "165"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:188
+msgid "mount"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:188
+msgid "[⚠️](syscall-flag-coverage/file-systems-and-mount-control/#mount)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:189
+msgid "166"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:189
+msgid "umount2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:189
+msgid ""
+"[⚠️](syscall-flag-coverage/file-systems-and-mount-control/#umount-and-umount2)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:190
+msgid "167"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:190
+msgid "swapon"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:191
+msgid "168"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:191
+msgid "swapoff"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:192
+msgid "169"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:192
+msgid "reboot"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:192
+msgid "[⚠️](syscall-flag-coverage/system-information-and-misc/#reboot)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:193
+msgid "170"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:193
+msgid "sethostname"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:194
+msgid "171"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:194
+msgid "setdomainname"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:195
+msgid "172"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:195
+msgid "iopl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:196
+msgid "173"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:196
+msgid "ioperm"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:197
+msgid "174"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:197
+msgid "create_module"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:198
+msgid "175"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:198
+msgid "init_module"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:199
+msgid "176"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:199
+msgid "delete_module"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:200
+msgid "177"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:200
+msgid "get_kernel_syms"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:201
+msgid "178"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:201
+msgid "query_module"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:202
+msgid "179"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:202
+msgid "quotactl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:203
+msgid "180"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:203
+msgid "nfsservctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:204
+msgid "181"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:204
+msgid "getpmsg"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:205
+msgid "182"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:205
+msgid "putpmsg"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:206
+msgid "183"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:206
+msgid "afs_syscall"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:207
+msgid "184"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:207
+msgid "tuxcall"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:208
+msgid "185"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:208
+msgid "security"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:209
+msgid "186"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:209
+msgid "gettid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:210
+msgid "187"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:210
+msgid "readahead"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:211
+msgid "188"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:211
+msgid "setxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:212
+msgid "189"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:212
+msgid "lsetxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:213
+msgid "190"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:213
+msgid "fsetxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:214
+msgid "191"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:214
+msgid "getxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:215
+msgid "192"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:215
+msgid "lgetxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:216
+msgid "193"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:216
+msgid "fgetxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:217
+msgid "194"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:217
+msgid "listxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:218
+msgid "195"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:218
+msgid "llistxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:219
+msgid "196"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:219
+msgid "flistxattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:220
+msgid "197"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:220
+msgid "removexattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:221
+msgid "198"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:221
+msgid "lremovexattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:222
+msgid "199"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:222
+msgid "fremovexattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:223
+msgid "200"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:223
+msgid "tkill"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:224
+msgid "201"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:224
+msgid "time"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:225
+msgid "202"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:225
+msgid "futex"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:225
+msgid "[⚠️](syscall-flag-coverage/inter-process-communication/#futex)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:226
+msgid "203"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:226
+msgid "sched_setaffinity"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:227
+msgid "204"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:227
+msgid "sched_getaffinity"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:228
+msgid "205"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:228
+msgid "set_thread_area"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:229
+msgid "206"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:229
+msgid "io_setup"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:230
+msgid "207"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:230
+msgid "io_destroy"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:231
+msgid "208"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:231
+msgid "io_getevents"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:232
+msgid "209"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:232
+msgid "io_submit"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:233
+msgid "210"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:233
+msgid "io_cancel"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:234
+msgid "211"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:234
+msgid "get_thread_area"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:235
+msgid "212"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:235
+msgid "lookup_dcookie"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:236
+msgid "213"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:236
+msgid "epoll_create"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:237
+msgid "214"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:237
+msgid "epoll_ctl_old"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:238
+msgid "215"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:238
+msgid "epoll_wait_old"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:239
+msgid "216"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:239
+msgid "remap_file_pages"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:240
+msgid "217"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:240
+msgid "getdents64"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:241
+msgid "218"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:241
+msgid "set_tid_address"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:242
+msgid "219"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:242
+msgid "restart_syscall"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:243
+msgid "220"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:243
+msgid "semtimedop"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:244
+msgid "221"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:244
+msgid "fadvise64"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:244
+msgid "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#fadvise64)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:245
+msgid "222"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:245
+msgid "timer_create"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:245
+msgid "[⚠️](syscall-flag-coverage/signals-and-timers/#timer_create)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:246
+msgid "223"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:246
+msgid "timer_settime"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:247
+msgid "224"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:247
+msgid "timer_gettime"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:248
+msgid "225"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:248
+msgid "timer_getoverrun"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:249
+msgid "226"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:249
+msgid "timer_delete"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:250
+msgid "227"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:250
+msgid "clock_settime"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:251
+msgid "228"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:251
+msgid "clock_gettime"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:251
+msgid "[⚠️](syscall-flag-coverage/system-information-and-misc/#clock_gettime)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:252
+msgid "229"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:252
+msgid "clock_getres"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:253
+msgid "230"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:253
+msgid "clock_nanosleep"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:253
+msgid "[⚠️](syscall-flag-coverage/system-information-and-misc/#clock_nanosleep)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:254
+msgid "231"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:254
+msgid "exit_group"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:255
+msgid "232"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:255
+msgid "epoll_wait"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:256
+msgid "233"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:256
+msgid "epoll_ctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:256
+msgid "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#epoll_ctl)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:257
+msgid "234"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:257
+msgid "tgkill"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:258
+msgid "235"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:258
+msgid "utimes"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:259
+msgid "236"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:259
+msgid "vserver"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:260
+msgid "237"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:260
+msgid "mbind"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:261
+msgid "238"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:261
+msgid "set_mempolicy"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:262
+msgid "239"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:262
+msgid "get_mempolicy"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:263
+msgid "240"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:263
+msgid "mq_open"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:264
+msgid "241"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:264
+msgid "mq_unlink"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:265
+msgid "242"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:265
+msgid "mq_timedsend"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:266
+msgid "243"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:266
+msgid "mq_timedreceive"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:267
+msgid "244"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:267
+msgid "mq_notify"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:268
+msgid "245"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:268
+msgid "mq_getsetattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:269
+msgid "246"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:269
+msgid "kexec_load"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:270
+msgid "247"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:270
+msgid "waitid"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:270
+msgid "[⚠️](syscall-flag-coverage/process-and-thread-management/#waitid)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:271
+msgid "248"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:271
+msgid "add_key"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:272
+msgid "249"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:272
+msgid "request_key"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:273
+msgid "250"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:273
+msgid "keyctl"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:274
+msgid "251"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:274
+msgid "ioprio_set"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:274
+#: src/kernel/linux-compatibility/index.md:275
+msgid ""
+"[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#ioprio_set-and-"
+"ioprio_get)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:275
+msgid "252"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:275
+msgid "ioprio_get"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:276
+msgid "253"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:276
+msgid "inotify_init"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:277
+msgid "254"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:277
+msgid "inotify_add_watch"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:277
+msgid ""
+"[⚠️](syscall-flag-coverage/file-systems-and-mount-control/#inotify_add_watch)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:278
+msgid "255"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:278
+msgid "inotify_rm_watch"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:279
+msgid "256"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:279
+msgid "migrate_pages"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:280
+msgid "257"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:280
+msgid "openat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:281
+msgid "258"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:281
+msgid "mkdirat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:282
+msgid "259"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:282
+msgid "mknodat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:283
+msgid "260"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:283
+msgid "fchownat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:284
+msgid "261"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:284
+msgid "futimesat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:285
+msgid "262"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:285
+msgid "newfstatat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:285
+msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#newfstatat)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:286
+msgid "263"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:286
+msgid "unlinkat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:287
+msgid "264"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:287
+msgid "renameat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:288
+msgid "265"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:288
+msgid "linkat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:289
+msgid "266"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:289
+msgid "symlinkat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:290
+msgid "267"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:290
+msgid "readlinkat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:291
+msgid "268"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:291
+msgid "fchmodat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:292
+msgid "269"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:292
+msgid "faccessat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:293
+msgid "270"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:293
+msgid "pselect6"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:294
+msgid "271"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:294
+msgid "ppoll"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:295
+msgid "272"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:295
+msgid "unshare"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:295
+msgid "[⚠️](syscall-flag-coverage/namespaces-cgroups-and-security/#unshare)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:296
+msgid "273"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:296
+msgid "set_robust_list"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:297
+msgid "274"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:297
+msgid "get_robust_list"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:298
+msgid "275"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:298
+msgid "splice"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:299
+msgid "276"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:299
+msgid "tee"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:300
+msgid "277"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:300
+msgid "sync_file_range"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:301
+msgid "278"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:301
+msgid "vmsplice"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:302
+msgid "279"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:302
+msgid "move_pages"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:303
+msgid "280"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:303
+msgid "utimensat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:303
+msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#utimensat)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:304
+msgid "281"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:304
+msgid "epoll_pwait"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:305
+msgid "282"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:305
+msgid "signalfd"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:306
+msgid "283"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:306
+msgid "timerfd_create"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:306
+msgid "[⚠️](syscall-flag-coverage/signals-and-timers/#timerfd_create)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:307
+msgid "284"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:307
+msgid "eventfd"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:308
+msgid "285"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:308
+msgid "fallocate"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:308
+msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#fallocate)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:309
+msgid "286"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:309
+msgid "timerfd_settime"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:309
+msgid "[⚠️](syscall-flag-coverage/signals-and-timers/#timerfd_settime)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:310
+msgid "287"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:310
+msgid "timerfd_gettime"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:311
+msgid "288"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:311
+msgid "accept4"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:312
+msgid "289"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:312
+msgid "signalfd4"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:313
+msgid "290"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:313
+msgid "eventfd2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:313
+msgid ""
+"[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#eventfd-and-"
+"eventfd2)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:314
+msgid "291"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:314
+msgid "epoll_create1"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:315
+msgid "292"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:315
+msgid "dup3"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:316
+msgid "293"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:316
+msgid "pipe2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:316
+msgid ""
+"[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#pipe-and-pipe2)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:317
+msgid "294"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:317
+msgid "inotify_init1"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:317
+msgid ""
+"[⚠️](syscall-flag-coverage/file-systems-and-mount-control/#inotify_init-and-"
+"inotify_init1)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:318
+msgid "295"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:318
+msgid "preadv"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:319
+msgid "296"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:319
+msgid "pwritev"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:320
+msgid "297"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:320
+msgid "rt_tgsigqueueinfo"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:321
+msgid "298"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:321
+msgid "perf_event_open"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:322
+msgid "299"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:322
+msgid "recvmmsg"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:323
+msgid "300"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:323
+msgid "fanotify_init"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:324
+msgid "301"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:324
+msgid "fanotify_mark"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:325
+msgid "302"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:325
+msgid "prlimit64"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:326
+msgid "303"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:326
+msgid "name_to_handle_at"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:327
+msgid "304"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:327
+msgid "open_by_handle_at"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:328
+msgid "305"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:328
+msgid "clock_adjtime"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:329
+msgid "306"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:329
+msgid "syncfs"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:330
+msgid "307"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:330
+msgid "sendmmsg"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:331
+msgid "308"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:331
+msgid "setns"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:331
+msgid "[⚠️](syscall-flag-coverage/namespaces-cgroups-and-security/#setns)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:332
+msgid "309"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:332
+msgid "getcpu"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:333
+msgid "310"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:333
+msgid "process_vm_readv"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:334
+msgid "311"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:334
+msgid "process_vm_writev"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:335
+msgid "312"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:335
+msgid "kcmp"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:336
+msgid "313"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:336
+msgid "finit_module"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:337
+msgid "314"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:337
+msgid "sched_setattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:337
+#: src/kernel/linux-compatibility/index.md:338
+msgid ""
+"[⚠️](syscall-flag-coverage/process-and-thread-management/#sched_getattr-and-"
+"sched_setattr)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:338
+msgid "315"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:338
+msgid "sched_getattr"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:339
+msgid "316"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:339
+msgid "renameat2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:339
+msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#renameat2)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:340
+msgid "318"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:340
+msgid "getrandom"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:340
+msgid "[⚠️](syscall-flag-coverage/system-information-and-misc/#getrandom)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:341
+msgid "319"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:341
+msgid "memfd_create"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:341
+msgid "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#memfd_create)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:342
+msgid "322"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:342
+msgid "execveat"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:343
+msgid "327"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:343
+msgid "preadv2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:343
+#: src/kernel/linux-compatibility/index.md:344
+msgid ""
+"[⚠️](syscall-flag-coverage/file-and-directory-operations/#preadv2-and-"
+"pwritev2)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:344
+msgid "328"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:344
+msgid "pwritev2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:345
+msgid "332"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:345
+msgid "statx"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:345
+msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#statx)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:346
+msgid "434"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:346
+msgid "pidfd_open"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:347
+msgid "435"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:347
+msgid "clone3"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:348
+msgid "436"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:348
+msgid "close_range"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:349
+msgid "438"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:349
+msgid "pidfd_getfd"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:350
+msgid "439"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:350
+msgid "faccessat2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:350
+msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#faccessat2)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:351
+msgid "441"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:351
+msgid "epoll_pwait2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:352
+msgid "452"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:352
+msgid "fchmodat2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:354
+msgid "Supported:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:355
+msgid "✅ = syscall supported"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:356
+msgid "❌ = not supported"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:358
+msgid "Flag Coverage:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:359
+msgid "💯 = all flags/commands/modes are supported"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:360
+msgid "⚠️ = syscall works, but some flags/modes are not implemented"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:361
+msgid "❓ = implementation exists, but we have not audited its coverage yet"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:362
+msgid "N/A = not applicable (e.g., syscall not supported)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:364
+msgid ""
+"Most of these system calls (or their variants) are also supported for the "
+"RISC-V and LoongArch architectures."
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:367
+msgid "File Systems"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:369
+msgid "Here is the list of supported file systems:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:370
+msgid "Devfs"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:371
+msgid "Devpts"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:372
+msgid "Ext2"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:373
+msgid "Procfs"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:374
+msgid "Ramfs"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:376
+msgid "Sockets"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:378
+msgid "Here is the list of supported socket types:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:379
+msgid "TCP sockets over IPv4"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:380
+msgid "UDP sockets over IPv4"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:381
+msgid "Unix sockets"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:383
+msgid "vDSO"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:385
+msgid "Here is the list of supported symbols in vDSO:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:386
+msgid "`__vdso_clock_gettime`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:387
+msgid "`__vdso_gettimeofday`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:388
+msgid "`__vdso_time`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:390
+msgid "Boot Protocols"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:392
+msgid "Here is the list of supported boot protocols:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:393
+msgid ""
+"[Multiboot](https://www.gnu.org/software/grub/manual/multiboot/multiboot."
+"html)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:394
+msgid ""
+"[Multiboot2](https://www.gnu.org/software/grub/manual/multiboot2/multiboot."
+"html)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:395
+msgid ""
+"[Linux 32-bit boot protocol](https://www.kernel.org/doc/html/v5.4/x86/boot."
+"html#bit-boot-protocol)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:396
+msgid ""
+"[Linux EFI handover](https://www.kernel.org/doc/html/v5.4/x86/boot.html#efi-"
+"handover-protocol)"
+msgstr ""

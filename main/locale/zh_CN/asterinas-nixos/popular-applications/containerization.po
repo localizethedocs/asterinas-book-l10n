@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/containerization.md:1
+msgid "Containerization"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:3
+msgid "Podman"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:5
+msgid ""
+"[Podman](https://docs.podman.io/en/stable/Introduction.html) is a modern, "
+"daemonless container engine that provides a Docker-compatible command-line "
+"interface, making it easy for users familiar with Docker to transition."
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:9
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:11
+msgid "To install Podman, add the following line to `configuration.nix`:"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:17
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:19
+msgid "`podman run`"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:21
+msgid "`podman run` runs a command in a new container."
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:24
+msgid "# Start a container, execute a command, and then exit\n"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:26
+msgid "# Start a container and attach to an interactive shell\n"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:31
+msgid "`podman image`"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:33
+msgid "`podman image` manages local images."
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:36
+msgid "# List downloaded images\n"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:40
+msgid "`podman ps`"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:42
+msgid "`podman ps` lists containers."
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:45
+msgid "# Show the status of all containers (including exited ones)\n"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:49
+msgid "`podman rm`"
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:51
+msgid "`podman rm` removes one or more containers."
+msgstr ""
+
+#: src/distro/popular-applications/containerization.md:54
+msgid "# Remove a container named foo\n"
+msgstr ""

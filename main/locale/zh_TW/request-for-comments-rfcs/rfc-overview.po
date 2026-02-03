@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/rfcs/index.md:1
+msgid "RFC Overview"
+msgstr ""
+
+#: src/rfcs/index.md:3
+msgid ""
+"The Asterinas RFC process is intended to provide a consistent, transparent, "
+"structured path for the community to make \"big\" decisions. For example, "
+"the RFC process can be used to evolve the project roadmap and the system "
+"architecture."
+msgstr ""
+
+#: src/rfcs/index.md:5
+msgid "For more details, see the [RFC-0001 RFC process](0001-rfc-process.md)."
+msgstr ""

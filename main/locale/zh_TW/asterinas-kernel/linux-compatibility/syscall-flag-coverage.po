@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:1
+msgid "Syscall Flag Coverage"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:3
+msgid ""
+"This section documents the flag coverage of Asterinas's implementation of "
+"Linux system calls. It introduces [**System Call Matching Language (SCML)**]"
+"(system-call-matching-language.md), a lightweight domain‑specific language "
+"for specifying allowed and disallowed patterns of system‑call invocations."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:8
+msgid ""
+"The rest of this section uses SCML to accurately and concisely describe both "
+"supported and unsupported functionality of system calls, which are divided "
+"into the following categories:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:12
+msgid "[Process and thread management](process-and-thread-management/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:13
+msgid "[Memory management](memory-management/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:14
+msgid "[File & directory operations](file-and-directory-operations/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:15
+msgid "[File systems & mount control](file-systems-and-mount-control/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:16
+msgid "[File descriptor & I/O control](file-descriptor-and-io-control/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:17
+msgid "[Inter-process communication](inter-process-communication/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:18
+msgid "[Networking & sockets](networking-and-sockets/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:19
+msgid "[Signals & timers](signals-and-timers/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:20
+msgid "[Namespaces, cgroups & security](namespaces-cgroups-and-security/)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:21
+msgid "[System information & misc](system-information-and-misc/)"
+msgstr ""

@@ -1,0 +1,131 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/guide/work-in-workspace.md:1
+msgid "Working in a Workspace"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:3
+msgid ""
+"Typically, an operating system may consist of multiple crates, and these "
+"crates may be organized in a workspace. The OSDK also supports managing "
+"projects in a workspace. Below is an example that demonstrates how to "
+"create, build, run, and test projects in a workspace."
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:9
+msgid "Creating a new workspace"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:11
+msgid "Create a new workspace by executing the following commands:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:18
+msgid "Then, add the following content to `Cargo.toml`:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:20
+msgid ""
+"```toml\n"
+"[workspace]\n"
+"members = []\n"
+"resolver = \"2\"\n"
+"```"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:26
+msgid "Creating a kernel project and a library project"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:28
+msgid "The two projects can be created using the following commands:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:35
+msgid "The generated directory structure will be as follows:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:52
+msgid ""
+"At present, the OSDK mandates that there must be only one kernel project "
+"within a workspace."
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:55
+msgid ""
+"In addition to the two projects, the OSDK will also generate `OSDK.toml` and "
+"`rust-toolchain.toml` at the root of the workspace."
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:59
+msgid ""
+"Next, add the following function to `mylib/src/lib.rs`. This function will "
+"calculate the available memory after booting:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:64
+#: src/osdk/guide/work-in-workspace.md:84
+msgid "// SPDX-License-Identifier: MPL-2.0\n"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:72
+msgid "Then, add a dependency on `mylib` to `myos/Cargo.toml`:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:74
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"mylib = { path = \"../mylib\" }\n"
+"```"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:79
+msgid ""
+"In `myos/src/lib.rs`, modify the file content as follows. This main function "
+"will call the function from `mylib`:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:94
+msgid "\"The available memory is {} MB\""
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:98
+msgid "Building and Running the kernel"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:100
+msgid "Build and run the project using the following commands:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:107
+msgid "If everything goes well, you will see the output from the guest kernel."
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:110
+msgid "Running unit test"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:112
+msgid ""
+"You can run test cases from all crates by using the following command in the "
+"workspace folder:"
+msgstr ""
+
+#: src/osdk/guide/work-in-workspace.md:119
+msgid ""
+"If you want to run test cases from a specific crate, navigate to the crate's "
+"folder and run `cargo osdk test`. For example, if you want to test `mylib`, "
+"use the following command:"
+msgstr ""

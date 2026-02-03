@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-01-28 19:43:55 -0800",
+        "hash" : "6d2ff13a639b9fff72842869cfd78f78ff21bbf2",
+        "title" : "Redirect serial output if `hvc0` is on"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-01-28 19:43:55 -0800",
+        "hash" : "6d2ff13a639b9fff72842869cfd78f78ff21bbf2",
+        "title" : "Redirect serial output if `hvc0` is on"
       }
     }
   },

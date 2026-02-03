@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/rfcs/rfc-template.md:1
+msgid "RFC-0000: Your short, descriptive title"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:3
+msgid "Status: Draft"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:4
+msgid "Pull request: (link to PR)"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:5
+msgid "Date submitted: YYYY-MM-DD"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:6
+msgid "Date approved: YYYY-MM-DD"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:8
+msgid "Summary"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:10
+msgid ""
+"Provide a concise, one-paragraph summary of the proposed change. This should "
+"explain the core idea at a high level, making it understandable to someone "
+"without deep context."
+msgstr ""
+
+#: src/rfcs/rfc-template.md:12
+msgid "Motivation"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:14
+msgid ""
+"Explain the \"why\" behind this RFC. What problem does this solve? What is "
+"the user or developer story that justifies this change? Why is this change "
+"important for the Asterinas project _now_? This section should clearly "
+"articulate the benefits and convince readers of the proposal's necessity."
+msgstr ""
+
+#: src/rfcs/rfc-template.md:16
+msgid "Design"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:18
+msgid ""
+"This is the heart of the RFC. Describe the proposed design in sufficient "
+"detail for a technical review. Explain how it works, how it interacts with "
+"other parts of the system, and any new APIs or concepts being introduced. "
+"Use code snippets, diagrams, and bullet points where they add clarity."
+msgstr ""
+
+#: src/rfcs/rfc-template.md:20
+msgid "Drawbacks, Alternatives, and Unknown"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:22
+msgid ""
+"**Drawbacks:** What are the negative consequences of this proposal? What "
+"compromises are being made?"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:23
+msgid ""
+"**Alternatives:** What other designs or solutions were considered? Why was "
+"this specific design chosen over them? What is the impact of _not_ doing "
+"this?"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:24
+msgid ""
+"**Unresolved Questions:** What parts of the design are still to be "
+"determined (TBD)? What questions will need to be answered during the "
+"implementation phase?"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:26
+msgid "Prior Art and References"
+msgstr ""
+
+#: src/rfcs/rfc-template.md:28
+msgid "Include links to relevant work"
+msgstr ""

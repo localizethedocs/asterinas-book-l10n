@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:1
+msgid "Networking & Sockets"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:12
+msgid "Socket Creation"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:14
+msgid "`socket`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:16
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:56
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:78
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:97
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:116
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:143
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:203
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:231
+msgid "Supported functionality in SCML:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:19
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:59
+msgid "// Optional flags for socket type\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:21
+msgid "// Create a UNIX socket\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:28
+msgid "// Create an IPv4 socket (TCP or UDP)\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:35
+msgid "// Create a netlink socket\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:42
+msgid "// Create a VSOCK socket\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:51
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/socket.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:54
+msgid "`socketpair`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:61
+msgid "// Create a pair of connected UNIX sockets\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:71
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/socketpair.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:74
+msgid "Socket Setup"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:76
+msgid "`bind`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:85
+msgid "// Bind a socket to an address\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:92
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/bind.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:95
+msgid "`connect`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:104
+msgid "// Connect to a peer socket\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:111
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/connect.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:114
+msgid "`accept` and `accept4`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:123
+msgid "// Accept an incoming connection\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:128
+msgid "// Accept an incoming connection and set flags for the new socket\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:136
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/accept.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:139
+msgid "Socket Communication"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:141
+msgid "`sendto`, `sendmsg` and `sendmmsg`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:161
+msgid "// Send message on a socket\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:169
+msgid "// Send message using scatter-gather buffers and ancillary data\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:177
+msgid "// Send multiple messages on a socket\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:187
+msgid "Unsupported flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:188
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:193
+msgid "`MSG_CONFIRM`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:189
+msgid "`MSG_DONTROUTE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:190
+msgid "`MSG_DONTWAIT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:191
+msgid "`MSG_EOR`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:192
+msgid "`MSG_MORE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:194
+msgid "`MSG_NOSIGNAL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:195
+msgid "`MSG_OOB`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:196
+msgid "`MSG_FASTOPEN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:198
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/sendto.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:201
+msgid "`recvfrom` and `recvmsg`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:206
+msgid "// Receive message from a socket\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:212
+msgid "// Receive message using scatter-gather buffers and ancillary data\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:221
+msgid "Partially-supported flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:222
+msgid "`MSG_PEEK` because it is only supported in netlink socket"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:224
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/recvfrom.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:227
+msgid "Socket Options"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:229
+msgid "`getsockopt` and `setsockopt`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:244
+msgid "// Get options at socket level\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:251
+msgid "// Get options at IP level\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:258
+msgid "// Get options at TCP level\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:265
+msgid "// Set options at socket level\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:272
+msgid "// Set options at IP level\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:279
+msgid "// Set options at TCP level\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:286
+msgid "// Set options at netlink level\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:295
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/getsockopt.2.html)."
+msgstr ""

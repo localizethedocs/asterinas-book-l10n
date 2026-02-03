@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/reference/commands/profile.md:1
+msgid "cargo osdk profile"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:3
+msgid "Overview"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:5
+msgid ""
+"The profile command is used to collect stack traces when running the target "
+"kernel in QEMU. It attaches to the GDB server, initiated with the run "
+"subcommand, and collects the stack trace periodically. The collected "
+"information can be used to directly generate a flame graph, or be stored for "
+"later analysis using [the original flame graph tool](https://github.com/"
+"brendangregg/FlameGraph)."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:11
+msgid "Options"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:13
+msgid "`--remote <REMOTE>`:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:15
+msgid ""
+"Specify the address of the remote target. By default this is `.osdk-gdb-"
+"socket`"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:18
+msgid "`--samples <SAMPLES>`:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:20
+msgid ""
+"The number of samples to collect (default 200). It is recommended to go "
+"beyond 100 for performance analysis."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:23
+msgid "`--interval <INTERVAL>`:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:25
+msgid "The interval between samples in seconds (default 0.1)."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:27
+msgid "`--parse <PATH>`:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:29
+msgid "Parse a collected JSON profile file into other formats."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:31
+msgid "`--format <FORMAT>`:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:33
+msgid ""
+"Possible values: \\- `json`:   The parsed stack trace log from GDB in JSON. "
+"\\- `folded`: The folded stack trace for flame graph. \\- `flame-graph`: A "
+"SVG flame graph."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:38
+msgid ""
+"If the user does not specify the format, it will be inferred from the output "
+"file extension. If the output file does not have an extension, the default "
+"format is flame graph."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:42
+msgid "`--cpu-mask <CPU_MASK>`:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:44
+msgid ""
+"The mask of the CPU to generate traces for in the output profile data "
+"(default first 128 cores). This mask is presented as an integer."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:47
+msgid "`--output <PATH>`:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:49
+msgid "The path to the output profile data file."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:51
+msgid ""
+"If the user does not specify the output path, it will be generated from the "
+"crate name, current time stamp and the format."
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:54
+msgid "Examples"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:56
+msgid ""
+"To profile a remote QEMU GDB server running some workload for flame graph, "
+"do:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:63
+msgid "If wanted a detailed analysis, do:"
+msgstr ""
+
+#: src/osdk/reference/commands/profile.md:70
+msgid ""
+"When you get the above detailed analysis, you can also use the JSON file to "
+"generate the folded format for flame graph."
+msgstr ""

@@ -1,0 +1,404 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:1
+msgid "System Call Matching Language (SCML)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:3
+msgid ""
+"SCML specifies matching patterns for system‑call invocations. Asterinas "
+"developers can easily write SCML rules to describe supported patterns. "
+"Likewise, users and developers can intuitively read these rules to "
+"understand which system calls and features are available."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:8
+msgid ""
+"SCML is designed to integrate seamlessly with [strace](https://man7.org/"
+"linux/man-pages/man1/strace.1.html), the standard Linux system‑call tracer. "
+"Strace emits each invocation in a C‑style syntax; given a set of SCML rules, "
+"a tool can automatically determine whether a strace log entry conforms to "
+"the supported patterns. This paves the way for an SCML‑based analyzer that "
+"reports unsupported calls in any application's trace."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:18
+msgid "Strace: A Quick Example"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:20
+msgid "To illustrate, run strace on a simple \"Hello, World!\" program:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:26
+msgid "A typical trace might look like this:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:28
+msgid ""
+"```shell\n"
+"execve(\"./hello_world\", [\"./hello_world\"], 0xffffffd3f710 /* 4 vars */) "
+"= 0\n"
+"brk(NULL)                               = 0xaaaabdc1b000\n"
+"mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = "
+"0xffff890f4000\n"
+"openat(AT_FDCWD, \"/lib/aarch64-linux-gnu/libc.so.6\", O_RDONLY|O_CLOEXEC) = "
+"3\n"
+"read(3, "
+"\"\\177ELF\\2\\1\\1\\3\\0\\0\\0\\0\\0\\0\\0\\0\\3\\0\\267\\0\\1\\0\\0\\0\\360\\206\\2\\0\\0\\0\\0\\0\"..., "
+"832) = 832\n"
+"fstat(3, {st_mode=S_IFREG|0755, st_size=1722920, ...}) = 0\n"
+"…\n"
+"write(1, \"Hello, World!\\n\", 14)         = 14\n"
+"exit_group(0)                           = ?\n"
+"```"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:40
+msgid "Key points of this output:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:42
+msgid "System calls are rendered as `name(arg1, …, argN)`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:43
+msgid "Flags appear as `FLAG1|FLAG2|…|FLAGN`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:44
+msgid "Structs use `{field1=value1, …}`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:45
+msgid "Arrays are shown as `[value1, …]`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:47
+msgid "SCML's syntax draws directly from these conventions."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:49
+msgid "SCML by Example"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:51
+msgid ""
+"SCML is intentionally simple: most Linux system‑call semantics hinge on "
+"bitflags. SCML rules act as templates: you define a rule once, and a human "
+"or an analyzer uses it to check if a syscall invocation matches it or not."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:57
+msgid ""
+"Imagine you're developing a Linux-compatible OS (like Asterinas) that "
+"supports just a restricted subset of syscalls and their options. We will use "
+"SCML to describe the restricted functionality."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:61
+msgid "Matching Rules for System Calls"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:63
+msgid ""
+"For example, your OS supports the [`open`](https://man7.org/linux/man-pages/"
+"man2/openat.2.html) system call with one or more of the four flags: "
+"`O_RDONLY`, `O_WRONLY`, `O_RDWR`, and `O_CLOEXEC`: This constraint can be "
+"expressed in the following system call matching rule."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:72
+msgid ""
+"To allow file creation, you add another matching rule that includes the "
+"`O_CREAT` flag and requires a `mode` argument:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:80
+msgid ""
+"To support the `O_PATH` flag (only valid with `O_CLOEXEC`, not with  "
+"`O_RDONLY`, `O_WRONLY`, or `O_RDWR`), you add a third matching rule:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:88
+msgid ""
+"SCML rules constrain only the flagged arguments; other parameters (like "
+"`path` and `mode`) accept any value."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:91
+msgid ""
+"In many system calls, the number of arguments may vary depending on the "
+"flags provided. To accommodate this, SCML allows you to use the `..` "
+"wildcard in the parameter list. This indicates that any additional arguments "
+"are accepted, regardless of their value or count."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:95
+msgid "For example:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:101
+msgid ""
+"Here, the `..` wildcard makes the rule flexible enough to match invocations "
+"of `open` with extra parameters, such as when the `O_CREAT` flag is present "
+"and a `mode` argument is required. This approach makes it easy to write "
+"concise rules that only constrain the arguments of interest, while allowing "
+"other parameters to vary as needed."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:106
+msgid "C-Style Comments"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:108
+msgid "SCML also supports C‑style comments:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:111
+msgid ""
+"// All matching rules for the open syscall.\n"
+"// A supported invocation of the open syscall must match at least one of the "
+"rules.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:118
+msgid "Matching Rules for Bitflags"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:120
+msgid ""
+"Above, we embedded flag combinations directly within individual system‑call "
+"rules, which can lead to duplication and make maintenance harder. SCML "
+"allows you to define named bitflag rules that can be reused across multiple "
+"rules. This reduces repetition and centralizes your flag definitions. For "
+"example:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:128
+msgid "// Define a reusable bitflags rule\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:136
+msgid "Matching Rules for Structs"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:138
+msgid ""
+"SCML can match flags inside struct fields. Consider [`sigaction`](https://"
+"man7.org/linux/man-pages/man2/sigaction.2.html):"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:148
+msgid "Here, `..` is a wildcard for remaining fields that we do not care."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:150
+msgid ""
+"Then, we can write a system call rule that refers to the struct rule using "
+"the `<struct_rule>` syntax."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:157
+msgid ""
+"Instead of defining a separate struct rule, you can also inline the struct "
+"pattern directly in the parameter list. This is convenient when the struct "
+"pattern is only used once or when you want to express different constraints "
+"for the same struct type in different contexts."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:162
+msgid ""
+"For example, the following rule inlines the struct pattern for `capget`:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:174
+msgid "Matching Rules for Arrays"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:176
+msgid ""
+"SCML can describe how to match flags embedded inside the struct values of an "
+"array. This is the case of the [`poll`](https://man7.org/linux/man-pages/"
+"man2/poll.2.html) system call. It takes an array of values of `struct "
+"pollfd`, whose `event` and `revents` fields are bitflags."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:182
+msgid "// Support all but the POLLPRI flags\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:194
+msgid "Notice how SCML denotes an array with the `[ <struct_rule> ]` syntax."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:196
+msgid "Special Built-in Matching Rules"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:198
+msgid ""
+"Bitflags-based matching rules described above are expressive enough to "
+"capture most patterns of interesting system call arguments. But some system "
+"call arguments cannot be characterized with bitflags. To address such cases, "
+"SCML introduces two special built-in matching rules: `<PATH>` and `<INTEGER>`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:204
+msgid "The file path matching rule"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:206
+msgid ""
+"The `<PATH>` matching rule is used to denote a system call argument of a C-"
+"string file path. For example, the matching rules for the `open` system call "
+"can be enhanced with `<PATH>` as follows:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:219
+msgid ""
+"File paths provide a new dimension to determine whether a system call is "
+"supported or not. Linux has multiple pseudo file systems such as DevTmpFS, "
+"ProcFS, SysFS, CgroupFS, and ConfigFS, mounted at well-known locations. A "
+"Linux-compatible OS such as Asterinas may only support a sub-tree of an "
+"pseudo FS. Knowing which system call arguments refer to file paths, a tool "
+"may be built to automatically issue warnings when unsupported file paths are "
+"accessed by system calls."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:228
+msgid "The integer matching rule"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:230
+msgid ""
+"The `<INTEGER>` matching rule can match any integer system call argument "
+"such as `1234`, `-100`, `0xdeadbeef`, and `0o666`. It can be used as a "
+"fallback rule when a system call takes an argument of either bitflags or "
+"integer."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:238
+msgid "// Static clock IDs represented as bitflags\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:240
+msgid ""
+"// Dynamic clock IDs (per-process or per-thread clock IDs)\n"
+"        // represented as an integer value.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:248
+msgid "Advanced Usage"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:250
+msgid ""
+"Just like you can write multiple rules of the same system call, you may "
+"define multiple rules for the same struct:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:254
+msgid "// Rules for control message header\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:267
+msgid "A `cmsghdr` value matches if it satisfies any one rule."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:269
+msgid "Struct rules may also be nested:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:272
+msgid ""
+"// Rule for message header, which refers to the rules for control message "
+"header\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:281
+msgid ""
+"SCML supports arrays with nested structures and heterogeneous element types, "
+"as encountered in system calls like `recvmsg` where netlink message payloads "
+"follow the TLV (Type-Length-Value) format. Arrays can contain multiple "
+"elements of varying types: inline struct patterns (`{ ... }`), nested arrays "
+"(`[ ... ]`), or references to named rules (`<identifier>`). This flexibility "
+"allows SCML to represent hierarchical data structures as they appear in "
+"strace output."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:290
+msgid ""
+"For example, when receiving a netlink message about adding a network address:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:318
+msgid ""
+"This example demonstrates receiving a netlink message of type `RTM_NEWADDR` "
+"containing nested attributes with cache information (`IFA_CACHEINFO`). The "
+"nested array structure illustrates how SCML handles heterogeneous arrays "
+"where elements can be both structs and nested arrays, reflecting the "
+"hierarchical TLV encoding typical of netlink."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:324
+msgid "Formal Syntax"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:326
+msgid ""
+"Below is the formal syntax of SCML, expressed in Extended Backus–Naur Form "
+"(EBNF). Non‑terminals are in angle brackets, terminals in quotes."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:330
+msgid ""
+"```\n"
+"<scml>           ::= { <rule> }\n"
+"<rule>           ::= <syscall-rule> ';' \n"
+"                   | <struct-rule> ';'\n"
+"                   | <bitflags-rule> ';'\n"
+"\n"
+"<syscall-rule>   ::= <identifier> '(' [ <param-list> ] ')'\n"
+"<param-list>     ::= '..'\n"
+"                   | <param> { ',' <param> } [ ',' '..' ]\n"
+"<param>          ::= <identifier> '=' <flag-pattern>\n"
+"                   | <identifier> '=' <struct-pattern>\n"
+"                   | <identifier> '=' <array-pattern>\n"
+"                   | <identifier>\n"
+"\n"
+"<flag-pattern>   ::= <flag-part> { '|' <flag-part> }\n"
+"<flag-part>      ::= <identifier>\n"
+"                   | '<' <identifier> '>'\n"
+"\n"
+"<array-pattern>  ::= '[' <array-element> { ',' <array-element> } ']'\n"
+"<array-element>  ::= '<' <identifier> '>'\n"
+"                   | <struct-pattern>\n"
+"                   | <array-pattern>\n"
+"\n"
+"<struct-rule>    ::= 'struct' <identifier> '=' <struct-pattern>\n"
+"<struct-pattern> ::= '{' <field-list> [ ',' '..' ] '}'\n"
+"<field-list>     ::= <field> { ',' <field> }\n"
+"<field>          ::= <identifier>\n"
+"                   | <identifier> '=' <flag-pattern>\n"
+"                   | <identifier> '=' <struct-pattern>\n"
+"                   | <identifier> '=' <array-pattern>\n"
+"\n"
+"<bitflags-rule>  ::= <identifier> '=' <flag-pattern>\n"
+"\n"
+"<identifier>     ::= letter { letter | digit | '_' }\n"
+"\n"
+"comment          ::= '//' { any-char }\n"
+"```"
+msgstr ""

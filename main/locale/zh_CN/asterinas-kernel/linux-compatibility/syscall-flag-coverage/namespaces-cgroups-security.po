@@ -1,0 +1,276 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:1
+msgid "Namespaces, Cgroups & Security"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:11
+msgid "`prctl`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:13
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:71
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:102
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:125
+msgid "Supported functionality in SCML:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:16
+msgid "// Retrieve or set the parent-death signal\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:18
+msgid "// Get or set the name of calling thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:21
+msgid ""
+"// Query whether process retains permitted capabilities after `UID` changes\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:24
+msgid "// Configure permitted capabilities retention after `UID` changes\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:27
+msgid "// Retrieve or set \"child subreaper\" attribute\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:30
+msgid "// Retrieve or set the timer slack value (nanoseconds)\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:35
+msgid "Partially-supported operations:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:36
+msgid ""
+"`PR_GET_DUMPABLE` and `PR_SET_DUMPABLE` because coredump is not supported"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:38
+msgid "Unsupported operations:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:39
+msgid "`PR_CAP_AMBIENT`, `PR_CAPBSET_READ` and `PR_CAPBSET_DROP`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:40
+msgid "`PR_GET_ENDIAN` and `PR_SET_ENDIAN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:41
+msgid "`PR_GET_FP_MODE` and `PR_SET_FP_MODE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:42
+msgid "`PR_GET_FPEMU` and `PR_SET_FPEMU`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:43
+msgid "`PR_GET_FPEXC` and `PR_SET_FPEXC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:44
+msgid "`PR_GET_IO_FLUSHER` and `PR_SET_IO_FLUSHER`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:45
+msgid "`PR_MCE_KILL` and `PR_MCE_KILL_GET`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:46
+msgid "`PR_SET_MM` and `PR_SET_VMA`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:47
+msgid "`PR_MPX_ENABLE_MANAGEMENT` and `PR_MPX_DISABLE_MANAGEMENT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:48
+msgid "`PR_GET_NO_NEW_PRIVS` and `PR_SET_NO_NEW_PRIVS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:49
+msgid "`PR_PAC_RESET_KEYS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:50
+msgid "`PR_SET_PTRACER`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:51
+msgid "`PR_GET_SECCOMP` and `PR_SET_SECCOMP`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:52
+msgid "`PR_GET_SPECULATION_CTRL` and `PR_SET_SPECULATION_CTRL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:53
+msgid "`PR_SVE_GET_VL` and `PR_SVE_SET_VL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:54
+msgid "`PR_SET_SYSCALL_USER_DISPATCH`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:55
+msgid "`PR_GET_TAGGED_ADDR_CTRL` and `PR_SET_TAGGED_ADDR_CTRL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:56
+msgid "`PR_TASK_PERF_EVENTS_ENABLE` and `PR_TASK_PERF_EVENTS_DISABLE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:57
+msgid "`PR_GET_THP_DISABLE` and `PR_SET_THP_DISABLE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:58
+msgid "`PR_GET_TID_ADDRESS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:59
+msgid "`PR_GET_TIMING` and `PR_SET_TIMING`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:60
+msgid "`PR_GET_TSC` and `PR_SET_TSC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:61
+msgid "`PR_GET_UNALIGN` and `PR_SET_UNALIGN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:62
+msgid "`PR_GET_AUXV`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:63
+msgid "`PR_GET_MDWE` and `PR_SET_MDWE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:64
+msgid "`PR_RISCV_SET_ICACHE_FLUSH_CTX`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:66
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/prctl.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:69
+msgid "`capget` and `capset`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:74
+msgid "// Get capabilities of thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:82
+msgid "// Set capabilities of thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:93
+msgid "Unsupported versions:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:94
+msgid "`_LINUX_CAPABILITY_VERSION_1`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:95
+msgid "`_LINUX_CAPABILITY_VERSION_2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:97
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/capget.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:100
+msgid "`unshare`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:105
+msgid "// Disassociate parts of the process execution context\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:109
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:132
+msgid "Unsupported flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:110
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:133
+msgid "`CLONE_NEWCGROUP`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:111
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:134
+msgid "`CLONE_NEWIPC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:112
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:135
+msgid "`CLONE_NEWNET`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:113
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:136
+msgid "`CLONE_NEWPID`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:114
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:137
+msgid "`CLONE_NEWTIME`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:115
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:138
+msgid "`CLONE_NEWUSER`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:117
+msgid "Silently-ignored flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:118
+msgid "`CLONE_SYSVSEM`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:120
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/unshare.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:123
+msgid "`setns`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:128
+msgid "// Reassociate thread with a namespace\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:140
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/setns.2.html)."
+msgstr ""

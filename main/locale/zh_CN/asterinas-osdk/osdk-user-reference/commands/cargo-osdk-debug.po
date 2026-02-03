@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/reference/commands/debug.md:1
+msgid "cargo osdk debug"
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:3
+msgid "Overview"
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:5
+msgid ""
+"`cargo osdk debug` is used to debug a remote target via GDB. You need to "
+"start a running server to debug with. This is accomplished by the `run` "
+"subcommand with `--gdb-server`. Then you can use the following command to "
+"attach to the server and do debugging."
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:14
+msgid ""
+"Note that when KVM is enabled, hardware-assisted break points (`hbreak`) are "
+"needed instead of the normal break points (`break`/`b`) in GDB."
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:17
+msgid "Options"
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:19
+msgid ""
+"`--remote <REMOTE>`: Specify the address of the remote target \\[default: ."
+"osdk-gdb-socket\\]. The address can be either a path for the UNIX domain "
+"socket or a TCP port on an IP address."
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:24
+msgid "Examples"
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:26
+msgid ""
+"To debug a remote target started with [QEMU GDB stub](https://www.qemu.org/"
+"docs/master/system/gdb.html) or the `run` subcommand, use the following "
+"commands."
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:30
+msgid "Connect to an unix socket, e.g., `./debug`:"
+msgstr ""
+
+#: src/osdk/reference/commands/debug.md:36
+msgid "Connect to a TCP port (`[IP]:PORT`), e.g., `localhost:1234`:"
+msgstr ""

@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ostd/index.md:1
+msgid "Asterinas OSTD"
+msgstr ""
+
+#: src/ostd/index.md:3
+msgid ""
+"Confucious remarked, \"I could follow whatever my heart desired without "
+"transgressing the law.\""
+msgstr ""
+
+#: src/ostd/index.md:7
+msgid "子曰： \"从心所欲，不逾矩。\""
+msgstr ""
+
+#: src/ostd/index.md:10
+msgid ""
+"With the Asterinas OSTD (Operating System Standard Library), you don't have "
+"to learn the dark art of unsafe Rust programming and risk shooting yourself "
+"in the foot. You will be doing whatever your heart desires, and be confident "
+"that your kernel will never crash or be hacked due to undefined behaviors, "
+"even if today marks your Day 1 as a Rust programmer."
+msgstr ""
+
+#: src/ostd/index.md:18
+msgid "APIs"
+msgstr ""
+
+#: src/ostd/index.md:20
+msgid ""
+"Asterinas OSTD stands as a powerful and solid foundation for safe kernel "
+"development, providing high-level safe Rust APIs that are"
+msgstr ""
+
+#: src/ostd/index.md:24
+msgid "Essential for OS development, and"
+msgstr ""
+
+#: src/ostd/index.md:25
+msgid "Dependent on the use of unsafe Rust."
+msgstr ""
+
+#: src/ostd/index.md:27
+msgid "Most of these APIs fall into the following categories:"
+msgstr ""
+
+#: src/ostd/index.md:29
+msgid ""
+"Memory management (e.g., allocating and accessing physical memory pages)"
+msgstr ""
+
+#: src/ostd/index.md:30
+msgid "Task management (e.g., context switching between kernel tasks)"
+msgstr ""
+
+#: src/ostd/index.md:31
+msgid "User space (e.g., manipulating and entering the user space)"
+msgstr ""
+
+#: src/ostd/index.md:32
+msgid "Interrupt handling (e.g., registering interrupt handlers)"
+msgstr ""
+
+#: src/ostd/index.md:33
+msgid "Timer management (e.g., registering timer handlers)"
+msgstr ""
+
+#: src/ostd/index.md:34
+msgid "Driver support (e.g., performing DMA and MMIO)"
+msgstr ""
+
+#: src/ostd/index.md:35
+msgid "Boot support (e.g., retrieving information from the bootloader)"
+msgstr ""
+
+#: src/ostd/index.md:36
+msgid "Synchronization (e.g., locking and sleeping)"
+msgstr ""
+
+#: src/ostd/index.md:38
+msgid ""
+"To explore how these APIs come into play, see [the example of a 100-line "
+"kernel in safe Rust](a-100-line-kernel.md)."
+msgstr ""
+
+#: src/ostd/index.md:41
+msgid ""
+"The OSTD APIs have been extensively documented. You can access the "
+"comprehensive API documentation by visiting the [docs.rs](https://docs.rs/"
+"ostd/latest/ostd)."
+msgstr ""
+
+#: src/ostd/index.md:44
+msgid "Four Requirements Satisfied"
+msgstr ""
+
+#: src/ostd/index.md:46
+msgid ""
+"In designing and implementing OSTD, we have risen to meet the challenge of "
+"fulfilling [the aforementioned four criteria as demanded by the framekernel "
+"architecture](../kernel/the-framekernel-architecture.md)."
+msgstr ""
+
+#: src/ostd/index.md:50
+msgid ""
+"Expressiveness is evident through Asterinas Kernel itself, where all system "
+"calls, file systems, network protocols, and device drivers (e.g., Virtio "
+"drivers) have been implemented in safe Rust by leveraging OSTD."
+msgstr ""
+
+#: src/ostd/index.md:58
+msgid ""
+"Adopting a minimalist philosophy, OSTD has a small codebase. At its core "
+"lies the `ostd` crate, currently encompassing about 10K lines of code - a "
+"figure that is even smaller than those of many microkernels. As OSTD "
+"evolves, its codebase will expand, albeit at a relatively slow rate in "
+"comparison to the OS services layered atop it."
+msgstr ""
+
+#: src/ostd/index.md:68
+msgid ""
+"The OSTD's efficiency is measurable through the performance metrics of its "
+"APIs and the system calls of Asterinas Kernel. No intrinsic limitations have "
+"been identified within Rust or the framekernel architecture that could "
+"hinder kernel performance."
+msgstr ""
+
+#: src/ostd/index.md:75
+msgid ""
+"Soundness, unlike the other three requirements, is not as easily quantified "
+"or proved. While formal verification stands as the gold standard, it "
+"requires considerable resources and time and is not an immediate priority. "
+"As a more pragmatic approach, we will explain why the high-level design is "
+"sound in the soundness analysis and rely on the many eyes of the community "
+"to catch any potential flaws in the implementation."
+msgstr ""

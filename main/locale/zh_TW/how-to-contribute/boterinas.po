@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/boterinas.md:1
+msgid "Boterinas"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:3
+msgid "Introduction"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:5
+msgid ""
+"`@boterinas` is a general-purpose bot designed for a wide variety of tasks "
+"in Asterinas. It streamlines maintenance tasks to enhance workflow "
+"efficiency."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:7
+msgid ""
+"Commands are issued by writing comments that start with the text "
+"`@boterinas`. The available commands depend on which repository you are "
+"using. The main Asterinas repository contains a `triagebot.toml` file where "
+"you can see which features are enabled."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:9
+msgid ""
+"Commands for GitHub issues or pull requests should be issued by writing "
+"`@boterinas` followed by the command anywhere in the comment. Note that "
+"`@boterinas` will ignore commands in Markdown code blocks, inline code "
+"spans, or blockquotes. You can enter multiple `@boterinas` commands in a "
+"single comment."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:11
+msgid ""
+"For example, you can claim an issue and add a label in the same comment."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:17
+msgid ""
+"Additionally, `@boterinas` allows for editing comments. If you don't change "
+"the text of a command, the edit will be ignored. However, if you modify an "
+"existing command or add new ones, those commands will be processed."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:19
+msgid ""
+"Below, you'll find a comprehensive guide on how to use `@boterinas` "
+"effectively."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:21
+msgid "Commands and Usage"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:23
+msgid "Workflow Management"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:24
+msgid ""
+"**`@boterinas rerun`**  \n"
+"Restarts the workflow of the current pull request if it has failed "
+"unexpectedly. Only the author of the pull request can use this command."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:27
+msgid "Issue and Pull Request Management"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:28
+msgid ""
+"**`@boterinas claim`**  \n"
+"Assigns the issue or pull request to yourself."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:31
+msgid ""
+"**`@boterinas release-assignment`**  \n"
+"Removes the current assignee from an issue or pull request. This command can "
+"only be executed by the current assignee or a team member."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:34
+msgid ""
+"**`@boterinas assign @user`**  \n"
+"Assigns a specific user to the issue or pull request. Only team members have "
+"permission to assign other users."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:37
+msgid "Label Management"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:38
+msgid ""
+"**`@boterinas label <label>`**  \n"
+"Adds a label to the issue or pull request.  \n"
+"_Example:_ `@boterinas label C-enhancement C-rfc`"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:42
+msgid ""
+"**`@boterinas label -<label>`**  \n"
+"Removes a label from the issue or pull request.  \n"
+"_Example:_ `@boterinas label -C-enhancement -C-bug`"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:46
+msgid "Status Indicators"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:47
+msgid ""
+"**`@boterinas author`**  \n"
+"Indicates that a pull request is waiting on the author. It assigns the `S-"
+"waiting-on-author` label and removes both `S-waiting-on-review` and `S-"
+"blocked`, if present."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:50
+msgid ""
+"**`@boterinas blocked`**  \n"
+"Marks a pull request as blocked on something."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:53
+msgid ""
+"**`@boterinas ready`**  \n"
+"Indicates that a pull request is ready for review. This command can also be "
+"invoked with the aliases `@boterinas review` or `@boterinas reviewer`."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:56
+msgid "Notes"
+msgstr ""
+
+#: src/to-contribute/boterinas.md:57
+msgid "Only team members can assign users or remove assignments."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:58
+msgid ""
+"Labels are crucial for organizing issues and pull requests, so ensure they "
+"are used consistently and accurately."
+msgstr ""
+
+#: src/to-contribute/boterinas.md:59
+msgid ""
+"For any issues or questions regarding `@boterinas`, please reach out to the "
+"team for support."
+msgstr ""

@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/desktop-environment.md:1
+msgid "Desktop Environment"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:3
+msgid "Xfce"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:5
+msgid ""
+"[Xfce](https://www.xfce.org/) is a lightweight desktop environment for UNIX-"
+"like operating systems."
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:7
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:9
+msgid "Add the following lines to the `configuration.nix` file:"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:23
+msgid "Verified Backends"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:25
+msgid "Display server:"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:26
+msgid "Xorg display server"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:27
+msgid "Graphics drivers:"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:28
+msgid "Standard UEFI VGA framebuffer"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:30
+msgid "Verified Functionality"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:32
+msgid "Changing desktop wallpapers and background settings"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:33
+msgid "Adjusting font size, style, and system theme"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:34
+msgid "Creating application shortcuts and desktop launchers"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:35
+msgid "Managing panels and window behavior"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:36
+msgid "Using the settings manager and file browser"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:38
+msgid "Verified GUI Applications"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:40
+msgid "Utilities:"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:42
+msgid "`galculator`: Calculator"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:43
+msgid "`mousepad`: The default Xfce text editor"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:44
+msgid "`mupdf`: A lightweight PDF and XPS viewer"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:46
+msgid "Games:"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:48
+msgid "`fairymax`: Chess"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:49
+msgid "`five-or-more`: GNOME alignment game"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:50
+msgid "`lbreakout2`: Breakout/Arkanoid clone"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:51
+msgid "`gnome-chess`: GNOME chess"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:52
+msgid "`gnome-mines`: Minesweeper"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:53
+msgid "`gnome-sudoku`: GNOME sudoku"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:54
+msgid "`tali`: GNOME dice game"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:55
+msgid "`xboard`: Chess"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environment.md:56
+msgid "`xgalaga`: Galaga-style arcade game"
+msgstr ""
