@@ -5,19 +5,19 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:1
 msgid "Signals & Timers"
-msgstr ""
+msgstr "訊號與計時器"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:12
 msgid "Signals"
-msgstr ""
+msgstr "訊號"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:14
 msgid "`rt_sigaction`"

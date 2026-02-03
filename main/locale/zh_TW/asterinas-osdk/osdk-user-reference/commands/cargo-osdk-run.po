@@ -5,19 +5,19 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/osdk/reference/commands/run.md:1
 msgid "cargo osdk run"
-msgstr ""
+msgstr "cargo osdk run"
 
 #: src/osdk/reference/commands/run.md:3
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: src/osdk/reference/commands/run.md:5
 msgid ""
@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/run.md:12
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: src/osdk/reference/commands/run.md:14
 msgid ""
@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/run.md:33
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: src/osdk/reference/commands/run.md:35
 msgid "Launch a debug server via QEMU with an unix socket stub, e.g. `.debug`:"
