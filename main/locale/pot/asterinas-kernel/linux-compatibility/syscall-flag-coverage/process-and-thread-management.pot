@@ -1,0 +1,229 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:1
+msgid "Process & Thread Management"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:10
+msgid "`sched_getattr` and `sched_setattr`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:12
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:70
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:92
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:158
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:173
+msgid "Supported functionality in SCML:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:15
+msgid "// Get the scheduling policy of a \"normal\" thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:24
+msgid "// Set the scheduling policy of a \"normal\" thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:35
+msgid "// Get the scheduling policy of a real-time thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:45
+msgid "// Set the scheduling policy of a real-time thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:58
+msgid "Unsupported scheduling policies:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:59
+msgid "`SCHED_DEADLINE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:61
+msgid "Unsupported scheduling flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:62
+msgid "`SCHED_FLAG_RESET_ON_FORK`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:63
+msgid "`SCHED_FLAG_RECLAIM`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:64
+msgid "`SCHED_FLAG_DL_OVERRUN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:65
+msgid "`SCHED_FLAG_UTIL_CLAMP_MIN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:66
+msgid "`SCHED_FLAG_UTIL_CLAMP_MAX`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:68
+msgid "`wait4`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:73
+msgid ""
+"// Wait until a specified child process undergoes a state change "
+"(termination, stopping and resumption)\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:81
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:185
+msgid "Ignored options:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:82
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:186
+msgid "`WEXITED`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:83
+msgid "`WNOTHREAD`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:84
+msgid "`WALL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:85
+msgid "`WCLONE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:87
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/wait4.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:90
+msgid "`clone` and `clone3`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:105
+msgid ""
+"// Optional flags\n"
+"    //\n"
+"    // Share the parent's virtual memory\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:109
+msgid "// Share the parent's filesystem\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:111
+msgid "// Share the parent's file descriptor table\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:113
+msgid "// Share the parent's signal handlers\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:115
+msgid "// Place child in the same thread group as parent\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:117
+msgid "// Share the parent's System V semaphore adjustments\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:119
+msgid "// Suspend parent until the child exits or calls `execve`\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:121
+msgid "// Create a new mount namespace for the child\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:123
+msgid "// Write child `TID` to parent's memory\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:125
+msgid "// Allocate a `PID` file descriptor for the child\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:127
+msgid "// Set thread-local storage for the child\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:129
+msgid "// Write child `TID` to child's memory\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:131
+msgid "// Clear child `TID` in child's memory on exit\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:133
+msgid "// Make the child's parent the same as the caller's parent\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:135
+msgid "// Create a thread or process\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:142
+msgid ""
+"// Create a thread or process with enhanced control by providing structured "
+"arguments\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:153
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/clone.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:156
+msgid "`sched_setscheduler`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:161
+msgid "// Set scheduling policy\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:165
+msgid "Unsupported policies or flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:166
+msgid "`SCHED_RESET_ON_FORK`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:168
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/sched_setscheduler.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:171
+msgid "`waitid`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:176
+msgid "// Wait for a child process to change state\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:188
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/waitid.2.html)."
+msgstr ""

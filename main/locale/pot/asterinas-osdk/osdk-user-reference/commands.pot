@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/reference/commands/index.md:1
+msgid "Commands"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:3
+msgid ""
+"OSDK provides similar subcommands as Cargo, and these subcommands have "
+"similar meanings as corresponding Cargo subcommands."
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:7
+msgid "Currently, OSDK supports the following subcommands:"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:9
+msgid "**new**: Create a new kernel package or library package"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:10
+msgid "**build**: Compile the project and its dependencies"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:11
+msgid "**run**: Run the kernel with a VMM"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:12
+msgid "**test**: Execute kernel mode unit test by starting a VMM"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:13
+msgid "**debug**: Debug a remote target via GDB"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:14
+msgid "**profile**: Profile a remote GDB debug target to collect stack traces"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:15
+msgid "**check**: Analyze the current package and report errors"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:16
+msgid "**clippy**: Check the current package and catch common mistakes"
+msgstr ""
+
+#: src/osdk/reference/commands/index.md:18
+msgid ""
+"The **new**, **build**, **run**, **test** and **debug** subcommands can "
+"accept additional options, while the **check** and **clippy** subcommands "
+"can only accept arguments that are compatible with the corresponding Cargo "
+"subcommands."
+msgstr ""

@@ -1,0 +1,276 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/SUMMARY.md:1
+msgid "Summary"
+msgstr ""
+
+#: src/SUMMARY.md:3
+msgid "Introduction"
+msgstr ""
+
+#: src/SUMMARY.md:5
+msgid "Asterinas NixOS"
+msgstr ""
+
+#: src/SUMMARY.md:7 src/SUMMARY.md:15
+msgid "Getting Started"
+msgstr ""
+
+#: src/SUMMARY.md:8
+msgid "Popular Applications"
+msgstr ""
+
+#: src/SUMMARY.md:9
+msgid "Package Management"
+msgstr ""
+
+#: src/SUMMARY.md:10
+msgid "Desktop Environment"
+msgstr ""
+
+#: src/SUMMARY.md:11
+msgid "Containerization"
+msgstr ""
+
+#: src/SUMMARY.md:13
+msgid "Asterinas Kernel"
+msgstr ""
+
+#: src/SUMMARY.md:16
+msgid "Advanced Build and Test Instructions"
+msgstr ""
+
+#: src/SUMMARY.md:17 src/SUMMARY.md:50
+msgid "Intel TDX"
+msgstr ""
+
+#: src/SUMMARY.md:18
+msgid "The Framekernel Architecture"
+msgstr ""
+
+#: src/SUMMARY.md:19
+msgid "Linux Compatibility"
+msgstr ""
+
+#: src/SUMMARY.md:20
+msgid "Syscall Flag Coverage"
+msgstr ""
+
+#: src/SUMMARY.md:21
+msgid "System Call Matching Language (SCML)"
+msgstr ""
+
+#: src/SUMMARY.md:22
+msgid "Process and thread management"
+msgstr ""
+
+#: src/SUMMARY.md:23
+msgid "Memory management"
+msgstr ""
+
+#: src/SUMMARY.md:24
+msgid "File & directory operations"
+msgstr ""
+
+#: src/SUMMARY.md:25
+msgid "File systems & mount control"
+msgstr ""
+
+#: src/SUMMARY.md:26
+msgid "File descriptor & I/O control"
+msgstr ""
+
+#: src/SUMMARY.md:27
+msgid "Inter-process communication"
+msgstr ""
+
+#: src/SUMMARY.md:28
+msgid "Networking & sockets"
+msgstr ""
+
+#: src/SUMMARY.md:29
+msgid "Signals & timers"
+msgstr ""
+
+#: src/SUMMARY.md:30
+msgid "Namespaces, cgroups & security"
+msgstr ""
+
+#: src/SUMMARY.md:31
+msgid "System information & misc"
+msgstr ""
+
+#: src/SUMMARY.md:32
+msgid "File System Coverage"
+msgstr ""
+
+#: src/SUMMARY.md:33
+msgid "Roadmap"
+msgstr ""
+
+#: src/SUMMARY.md:35
+msgid "Asterinas OSTD"
+msgstr ""
+
+#: src/SUMMARY.md:37
+msgid "An Overview of OSTD"
+msgstr ""
+
+#: src/SUMMARY.md:38
+msgid "Example: Writing a Kernel in 100 Lines of Safe Rust"
+msgstr ""
+
+#: src/SUMMARY.md:39
+msgid "Example: Writing a Driver in 100 Lines of Safe Rust"
+msgstr ""
+
+#: src/SUMMARY.md:40
+msgid "Soundness Analysis"
+msgstr ""
+
+#: src/SUMMARY.md:42
+msgid "Asterinas OSDK"
+msgstr ""
+
+#: src/SUMMARY.md:44
+msgid "OSDK User Guide"
+msgstr ""
+
+#: src/SUMMARY.md:45
+msgid "Why OSDK"
+msgstr ""
+
+#: src/SUMMARY.md:46
+msgid "Creating an OS Project"
+msgstr ""
+
+#: src/SUMMARY.md:47
+msgid "Testing or Running an OS Project"
+msgstr ""
+
+#: src/SUMMARY.md:48
+msgid "Working in a Workspace"
+msgstr ""
+
+#: src/SUMMARY.md:49
+msgid "Advanced Topics"
+msgstr ""
+
+#: src/SUMMARY.md:51
+msgid "OSDK User Reference"
+msgstr ""
+
+#: src/SUMMARY.md:52
+msgid "Commands"
+msgstr ""
+
+#: src/SUMMARY.md:53
+msgid "cargo osdk new"
+msgstr ""
+
+#: src/SUMMARY.md:54
+msgid "cargo osdk build"
+msgstr ""
+
+#: src/SUMMARY.md:55
+msgid "cargo osdk run"
+msgstr ""
+
+#: src/SUMMARY.md:56
+msgid "cargo osdk test"
+msgstr ""
+
+#: src/SUMMARY.md:57
+msgid "cargo osdk debug"
+msgstr ""
+
+#: src/SUMMARY.md:58
+msgid "cargo osdk profile"
+msgstr ""
+
+#: src/SUMMARY.md:59
+msgid "Manifest"
+msgstr ""
+
+#: src/SUMMARY.md:60
+msgid "Environment Variables"
+msgstr ""
+
+#: src/SUMMARY.md:62
+msgid "How to Contribute"
+msgstr ""
+
+#: src/SUMMARY.md:64
+msgid "Before You Contribute"
+msgstr ""
+
+#: src/SUMMARY.md:65
+msgid "Code Organization"
+msgstr ""
+
+#: src/SUMMARY.md:66
+msgid "Style Guidelines"
+msgstr ""
+
+#: src/SUMMARY.md:67
+msgid "General Guidelines"
+msgstr ""
+
+#: src/SUMMARY.md:68
+msgid "Rust Guidelines"
+msgstr ""
+
+#: src/SUMMARY.md:69
+msgid "Git Guidelines"
+msgstr ""
+
+#: src/SUMMARY.md:70
+msgid "Assembly Guidelines"
+msgstr ""
+
+#: src/SUMMARY.md:71
+msgid "Boterinas"
+msgstr ""
+
+#: src/SUMMARY.md:72
+msgid "Version Bump"
+msgstr ""
+
+#: src/SUMMARY.md:73
+msgid "Community"
+msgstr ""
+
+#: src/SUMMARY.md:74
+msgid "Code of Conduct"
+msgstr ""
+
+#: src/SUMMARY.md:76
+msgid "Request for Comments (RFCs)"
+msgstr ""
+
+#: src/SUMMARY.md:78
+msgid "RFC Overview"
+msgstr ""
+
+#: src/SUMMARY.md:79
+msgid "RFC-0001: RFC Process"
+msgstr ""
+
+#: src/SUMMARY.md:80
+msgid "RFC-0002: Asterinas NixOS"
+msgstr ""
+
+#: src/SUMMARY.md:81
+msgid "RFC Template"
+msgstr ""

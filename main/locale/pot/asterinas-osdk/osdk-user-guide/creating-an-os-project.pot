@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/guide/create-project.md:1
+msgid "Creating an OS Project"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:3
+msgid ""
+"The OSDK can be used to create a new kernel project or a new library "
+"project. A kernel project defines the entry point of the kernel and can be "
+"run with QEMU. A library project can provide certain OS functionalities and "
+"be imported by other OSes."
+msgstr ""
+
+#: src/osdk/guide/create-project.md:10
+msgid "Creating a new kernel project"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:12
+msgid ""
+"Creating a new kernel project is simple. You only need to execute the "
+"following command:"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:19
+msgid "Creating a new library project"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:21
+msgid "Creating a new library project requires just one command:"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:27
+msgid "Generated files"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:29
+msgid ""
+"Next, we will introduce the contents of the generated project in detail. If "
+"you don't wish to delve into the details, you can skip the following "
+"sections."
+msgstr ""
+
+#: src/osdk/guide/create-project.md:34
+msgid "Overview"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:36
+msgid ""
+"The generated directory for both the kernel project and library project "
+"contains the following contents:"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:49
+msgid "`src/lib.rs`"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:51
+msgid "Kernel project"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:53
+msgid ""
+"The `src/lib.rs` file contains the code for a simple kernel. The function "
+"marked with the `#[ostd::main]` macro is considered the kernel entry point "
+"by OSDK. The kernel will print `Hello world from the guest kernel!`to the "
+"console and then abort."
+msgstr ""
+
+#: src/osdk/guide/create-project.md:68
+msgid "\"Hello world from guest kernel!\""
+msgstr ""
+
+#: src/osdk/guide/create-project.md:72
+msgid "Library project"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:74
+msgid ""
+"The `src/lib.rs` of library project only contains a simple kernel mode unit "
+"test. It follows a similar code pattern as user mode unit tests. The test "
+"module is marked with the `#[cfg(ktest)]` macro, and each test case is "
+"marked with `#[ktest]`."
+msgstr ""
+
+#: src/osdk/guide/create-project.md:96
+msgid "`Cargo.toml`"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:98
+msgid ""
+"The `Cargo.toml` file is the Rust project manifest. In addition to the "
+"contents of a normal Rust project, OSDK will add the dependencies of the "
+"Asterinas OSTD to the file. The dependency version may change over time."
+msgstr ""
+
+#: src/osdk/guide/create-project.md:103
+msgid ""
+"```toml\n"
+"[dependencies.ostd]\n"
+"git = \"https://github.com/asterinas/asterinas\"\n"
+"branch = \"main\"\n"
+"```"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:109
+msgid ""
+"OSDK will also exclude the directory which is used to generate temporary "
+"files."
+msgstr ""
+
+#: src/osdk/guide/create-project.md:111
+msgid ""
+"```toml\n"
+"[workspace]\n"
+"exclude = [\"target/osdk/base\"]\n"
+"```"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:116
+msgid "`OSDK.toml`"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:118
+msgid ""
+"The `OSDK.toml` file is a manifest that defines the exact behavior of OSDK. "
+"By default, it includes settings on how to start QEMU to run a kernel. The "
+"meaning of each key can be found in the [manifest documentation](../"
+"reference/manifest.md). Please avoid changing the default settings unless "
+"you know what you are doing."
+msgstr ""
+
+#: src/osdk/guide/create-project.md:126
+msgid "The default manifest of a kernel project:"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:128
+msgid ""
+"```toml\n"
+"project_type = \"kernel\"\n"
+"\n"
+"[boot]\n"
+"method = \"grub-rescue-iso\"\n"
+"\n"
+"[qemu]\n"
+"args = \"\"\"\\\n"
+"    -machine q35,kernel-irqchip=split \\\n"
+"    -cpu Icelake-Server,+x2apic \\\n"
+"    --no-reboot \\\n"
+"    -m 8G \\\n"
+"    -smp 1 \\\n"
+"    -nographic \\\n"
+"    -serial chardev:mux \\\n"
+"    -monitor chardev:mux \\\n"
+"    -chardev stdio,id=mux,mux=on,signal=off \\\n"
+"    -display none \\\n"
+"    -device isa-debug-exit,iobase=0xf4,iosize=0x04 \\\n"
+"    -drive if=pflash,format=raw,unit=0,readonly=on,file=/root/ovmf/release/"
+"OVMF.fd \\\n"
+"    -drive if=pflash,format=raw,unit=1,file=/root/ovmf/release/OVMF_VARS.fd "
+"\\\n"
+"\"\"\"\n"
+"```"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:152
+msgid "`rust-toolchain.toml`"
+msgstr ""
+
+#: src/osdk/guide/create-project.md:154
+msgid ""
+"The Rust toolchain for the kernel. It is the same as the toolchain of the "
+"Asterinas OSTD."
+msgstr ""

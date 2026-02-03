@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/the-framekernel-architecture.md:1
+msgid "The Framekernel Architecture"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:3
+msgid "Framekernel: What and Why"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:5
+msgid "The security of a microkernel, the speed of a monolithic kernel."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:7
+msgid ""
+"Asterinas introduces a novel OS architecture called _framekernel_, which "
+"unleashes the full power of Rust to bring the best of both monolithic "
+"kernels and microkernels."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:11
+msgid ""
+"Within the framekernel architecture, the entire OS resides in the same "
+"address space (like a monolithic kernel) and is required to be written in "
+"Rust. However, there's a twist---the kernel is partitioned in two halves: "
+"the OS Framework (akin to a microkernel) and the OS Services. Only the OS "
+"Framework is allowed to use _unsafe Rust_, while the OS Services must be "
+"written exclusively in _safe Rust_."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:20
+msgid "Unsafe Rust"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:20
+msgid "Responsibilities"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:20
+msgid "Code Sizes"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:22
+msgid "OS Framework"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:22
+msgid "Allowed"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:22
+msgid "Encapsulate low-level unsafe code within high-level safe APIs"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:22
+msgid "Small"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:23
+msgid "OS Services"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:23
+msgid "Not allowed"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:23
+msgid ""
+"Implement OS functionalities, e.g., system calls, file systems, device "
+"drivers"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:23
+msgid "Large"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:25
+msgid ""
+"As a result, the memory safety of the kernel can be reduced to that of the "
+"OS Framework, thus minimizing the Trusted Computing Base (TCB) associated "
+"with the kernel's memory safety. On the other hand, the single address space "
+"allows different parts of the kernel to communicate in the most efficient "
+"means, e.g., function calls and shared memory. Thanks to the framekernel "
+"architecture, Asterinas can offer both exceptional performance and enhanced "
+"safety."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:36
+msgid ""
+"![A comparison between different OS architectures](../images/"
+"a_comparison_between_os_archs.svg)"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:38
+msgid "Requirements for the OS Framework"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:40
+msgid ""
+"While the concept of framekernel is straightforward, the design and "
+"implementation of the required OS framework present challenges. It must "
+"concurrently fulfill four criteria."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:44
+msgid ""
+"![The four requirements for the OS framework](../images/"
+"four_requirements_for_os_framework.svg)"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:46
+msgid ""
+"**Soundness.** The safe APIs of the framework are considered sound if no "
+"[undefined behaviors](https://doc.rust-lang.org/reference/behavior-"
+"considered-undefined.html#behavior-considered-undefined) shall be triggered "
+"by whatever safe Rust code that a programmer may write using the APIs"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:50
+msgid ""
+"as long as the code is verified by the Rust toolchain. Soundness ensures "
+"that the OS framework, in conjunction with the Rust toolchain, bears the "
+"full responsibility for the kernel's memory safety."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:55
+msgid ""
+"**Expressiveness.** The framework should empower developers to implement a "
+"substantial range of OS functionalities in safe Rust using the APIs. It is "
+"especially important that the framework enables writing device drivers in "
+"safe Rust, considering that device drivers comprise the bulk of the code in "
+"a fully-fleged OS kernel (like Linux)."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:64
+msgid ""
+"**Minimalism.** As the TCB for memory safety, the framework should be kept "
+"as small as possible. No functionality should be implemented inside the "
+"framework if doing it outside is possible."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:70
+msgid ""
+"**Efficiency.** The safe API provided by the framework is only allowed to "
+"introduce minimal overheads. Ideally, these APIs should be realized as [zero-"
+"cost abstractions](https://monomorph.is/posts/zero-cost-abstractions/)."
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:76
+msgid ""
+"Fortunately, our efforts to design and implement an OS framework meeting "
+"these standards have borne fruit in the form of the [Asterinas OSTD](../"
+"ostd/). Using this framework as a foundation, we have developed the "
+"Asterinas Kernel; this framework also enables others to create their own "
+"framekernels, with different goals and tradeoffs."
+msgstr ""
