@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:1
 msgid "Popular Applications"
-msgstr ""
+msgstr "熱門應用程式"
 
 #: src/distro/popular-applications/index.md:3
 msgid ""

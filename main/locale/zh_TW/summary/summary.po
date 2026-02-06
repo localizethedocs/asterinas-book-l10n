@@ -29,7 +29,7 @@ msgstr "開始使用"
 
 #: src/SUMMARY.md:8
 msgid "Popular Applications"
-msgstr ""
+msgstr "熱門應用程式"
 
 #: src/SUMMARY.md:9
 msgid "Package Management"

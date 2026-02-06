@@ -54,7 +54,7 @@ msgstr ""
 
 #: src/to-contribute/style-guidelines/asm-guidelines.md:36
 msgid "Define functions"
-msgstr ""
+msgstr "定義函式"
 
 #: src/to-contribute/style-guidelines/asm-guidelines.md:38
 msgid ""

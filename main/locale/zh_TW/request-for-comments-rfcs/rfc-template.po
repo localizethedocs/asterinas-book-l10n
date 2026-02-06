@@ -44,7 +44,7 @@ msgstr ""
 
 #: src/rfcs/rfc-template.md:12
 msgid "Motivation"
-msgstr ""
+msgstr "動機"
 
 #: src/rfcs/rfc-template.md:14
 msgid ""
@@ -56,7 +56,7 @@ msgstr ""
 
 #: src/rfcs/rfc-template.md:16
 msgid "Design"
-msgstr ""
+msgstr "設計"
 
 #: src/rfcs/rfc-template.md:18
 msgid ""

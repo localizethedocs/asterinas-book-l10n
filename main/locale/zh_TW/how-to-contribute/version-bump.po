@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/to-contribute/version-bump.md:3
 msgid "Version Numbers"
-msgstr ""
+msgstr "版本號"
 
 #: src/to-contribute/version-bump.md:5
 msgid ""

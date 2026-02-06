@@ -152,7 +152,7 @@ msgstr ""
 
 #: src/rfcs/0002-asterinas-nixos.md:38
 msgid "Design"
-msgstr ""
+msgstr "設計"
 
 #: src/rfcs/0002-asterinas-nixos.md:40
 msgid "Why NixOS as the base distro?"

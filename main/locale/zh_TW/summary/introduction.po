@@ -25,11 +25,11 @@ msgstr ""
 
 #: src/index.md:11
 msgid "Book Structure"
-msgstr ""
+msgstr "手冊結構"
 
 #: src/index.md:13
 msgid "This book is divided into six distinct parts:"
-msgstr ""
+msgstr "這本手冊分為六個不同部份："
 
 #: src/index.md:15
 msgid "[Part 1: Asterinas NixOS](distro/)"
@@ -57,6 +57,9 @@ msgid ""
 "safe and efficient way. This means it can seamlessly replace Linux, offering "
 "enhanced safety and security."
 msgstr ""
+"探索 Asterinas 核心的現代作業系統內核。Asterinas 內核是為了發揮 Rust 的全部潛"
+"力而設計的，以安全且高效的方式實現 Linux ABI。這意味著它可以無縫替換 Linux，"
+"並提供更強的安全性與保障。"
 
 #: src/index.md:31
 msgid "[Part 3: Asterinas OSTD](ostd/)"

@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:12
 msgid "Motivation"
-msgstr ""
+msgstr "動機"
 
 #: src/rfcs/0001-rfc-process.md:14
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:23
 msgid "Design"
-msgstr ""
+msgstr "設計"
 
 #: src/rfcs/0001-rfc-process.md:25
 msgid "When to follow the RFC process"
@@ -203,7 +203,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:55
 msgid "The Draft Stage"
-msgstr ""
+msgstr "草稿階段"
 
 #: src/rfcs/0001-rfc-process.md:57
 msgid "Once you are ready to proceed, create a formal RFC document."
@@ -229,7 +229,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:62
 msgid "The Iteration Stage"
-msgstr ""
+msgstr "疊代階段"
 
 #: src/rfcs/0001-rfc-process.md:64
 msgid ""
@@ -258,7 +258,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:69
 msgid "The Voting Stage"
-msgstr ""
+msgstr "投票階段"
 
 #: src/rfcs/0001-rfc-process.md:71
 msgid ""
@@ -331,7 +331,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:90
 msgid "License"
-msgstr ""
+msgstr "授權條款"
 
 #: src/rfcs/0001-rfc-process.md:92
 msgid ""
