@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-01-28 19:43:55 -0800",
-      "hash" : "6d2ff13a639b9fff72842869cfd78f78ff21bbf2",
-      "title" : "Redirect serial output if `hvc0` is on"
+      "date" : "2026-02-08 20:32:24 -0800",
+      "hash" : "5f8b019369c97bc8dc072ebfe3859ea1ff23450d",
+      "title" : "Replace `from_first_bytes` with `from_bytes` if possible"
     }
   },
   "type" : "branch",
