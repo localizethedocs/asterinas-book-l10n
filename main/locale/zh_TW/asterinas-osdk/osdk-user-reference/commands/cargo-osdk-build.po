@@ -71,7 +71,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/build.md:40
 msgid "Manifest options"
-msgstr ""
+msgstr "清單選項"
 
 #: src/osdk/reference/commands/build.md:42
 msgid ""

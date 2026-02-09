@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/reference/index.md:1
 msgid "OSDK User Reference"
-msgstr ""
+msgstr "OSDK 使用者參考"
 
 #: src/osdk/reference/index.md:3
 msgid ""
@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/osdk/reference/index.md:16
 msgid "Manifest"
-msgstr ""
+msgstr "清單"
 
 #: src/osdk/reference/index.md:18
 msgid ""
@@ -55,6 +55,10 @@ msgid ""
 "path = \"/usr/bin/qemu-system-x86_64\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[qemu]\n"
+"path = \"/usr/bin/qemu-system-x86_64\"\n"
+"```"
 
 #: src/osdk/reference/index.md:38
 msgid "But the user provides a new QEMU path when running the project using:"

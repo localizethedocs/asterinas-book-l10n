@@ -32,11 +32,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:12
 msgid "[Process and thread management](process-and-thread-management/)"
-msgstr ""
+msgstr "[進程與執行緒管理](process-and-thread-management/)"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:13
 msgid "[Memory management](memory-management/)"
-msgstr ""
+msgstr "[記憶體管理](memory-management/)"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:14
 msgid "[File & directory operations](file-and-directory-operations/)"
@@ -44,15 +44,15 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:15
 msgid "[File systems & mount control](file-systems-and-mount-control/)"
-msgstr ""
+msgstr "[檔案系統與掛載控制](file-systems-and-mount-control/)"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:16
 msgid "[File descriptor & I/O control](file-descriptor-and-io-control/)"
-msgstr ""
+msgstr "[檔案描述子與 I/O 控制](file-descriptor-and-io-control/)"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:17
 msgid "[Inter-process communication](inter-process-communication/)"
-msgstr ""
+msgstr "[進程間通訊](inter-process-communication/)"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:18
 msgid "[Networking & sockets](networking-and-sockets/)"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:19
 msgid "[Signals & timers](signals-and-timers/)"
-msgstr ""
+msgstr "[訊號與計時器](signals-and-timers/)"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:20
 msgid "[Namespaces, cgroups & security](namespaces-cgroups-and-security/)"

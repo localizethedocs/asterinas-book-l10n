@@ -29,7 +29,7 @@ msgstr "準備 Intel TDX 環境"
 
 #: src/osdk/guide/intel-tdx.md:8
 msgid "Please make sure your server supports Intel TDX."
-msgstr ""
+msgstr "請確保您的伺服器支援 Intel TDX。"
 
 #: src/osdk/guide/intel-tdx.md:10
 msgid ""

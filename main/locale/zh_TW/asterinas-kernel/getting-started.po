@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/index.md:1
 msgid "Asterinas Kernel"
-msgstr ""
+msgstr "Asterinas 內核"
 
 #: src/kernel/index.md:3
 msgid "Overview"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: src/kernel/index.md:33
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: src/kernel/index.md:35
 msgid ""
@@ -65,11 +65,11 @@ msgstr ""
 
 #: src/kernel/index.md:38
 msgid "Download the latest source code."
-msgstr ""
+msgstr "下載最新的來源碼。"
 
 #: src/kernel/index.md:44
 msgid "Run a Docker container as the development environment."
-msgstr ""
+msgstr "執行 Docker 容器作為開發環境。"
 
 #: src/kernel/index.md:54
 msgid ""

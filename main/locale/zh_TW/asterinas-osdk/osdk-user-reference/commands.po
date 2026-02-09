@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/index.md:1
 msgid "Commands"
-msgstr ""
+msgstr "命令"
 
 #: src/osdk/reference/commands/index.md:3
 msgid ""
@@ -27,11 +27,11 @@ msgstr ""
 
 #: src/osdk/reference/commands/index.md:9
 msgid "**new**: Create a new kernel package or library package"
-msgstr ""
+msgstr "**new**：建立新的內核包或程式庫包"
 
 #: src/osdk/reference/commands/index.md:10
 msgid "**build**: Compile the project and its dependencies"
-msgstr ""
+msgstr "**build**：編譯專案及其依賴項目"
 
 #: src/osdk/reference/commands/index.md:11
 msgid "**run**: Run the kernel with a VMM"

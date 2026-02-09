@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/rfcs/rfc-template.md:8
 msgid "Summary"
-msgstr ""
+msgstr "摘要"
 
 #: src/rfcs/rfc-template.md:10
 msgid ""

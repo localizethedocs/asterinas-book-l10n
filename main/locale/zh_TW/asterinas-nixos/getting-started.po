@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/index.md:1
 msgid "Asterinas NixOS"
-msgstr ""
+msgstr "Asterinas NixOS"
 
 #: src/distro/index.md:3
 msgid ""
@@ -25,7 +25,7 @@ msgid ""
 "github.io/book/rfcs/0002-asterinas-nixos.html)."
 msgstr ""
 "Asterinas NixOS 是 Asterinas 的第一個散布版。我們選擇 [NixOS](https://nixos."
-"org/) 作為基礎作業系統，是因為其無與倫比的可自訂製性與豐富的軟體包生態系統。"
+"org/) 作為基礎作業系統，是因為其無與倫比的可訂製性與豐富的軟體包生態系統。"
 "Asterinas NixOS 的目的在於提供與原生 NixOS 相似的外觀與使用體驗，唯一的區別在"
 "於它將內核從 Linux 替換為 Asterinas。關於選擇 NixOS 的更多理由，請參見 [RFC]"
 "(https://asterinas.github.io/book/rfcs/0002-asterinas-nixos.html)。"
@@ -37,8 +37,8 @@ msgid ""
 "NixOS Foundation. _No_ sponsorship or endorsement is implied.**"
 msgstr ""
 "**免責聲明：Asterinas 是一個獨立且由社群主導的專案。Asterinas NixOS _並非_ "
-"NixOS 的官方專案，且與 NixOS 基金會_無_任何隸屬關係。此處_不_包含任何贊助或背"
-"書之意。**"
+"NixOS 的官方專案，且與 NixOS 基金會 _無_ 任何隸屬關係。此處 _不_ 包含任何贊助"
+"或背書之意。**"
 
 #: src/distro/index.md:14
 msgid ""
@@ -55,7 +55,7 @@ msgstr ""
 
 #: src/distro/index.md:22
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: src/distro/index.md:24
 msgid "End Users"
@@ -69,11 +69,11 @@ msgstr ""
 
 #: src/distro/index.md:29
 msgid "Launch an x86-64 Ubuntu container:"
-msgstr ""
+msgstr "啟動 x86-64 的 Ubuntu 容器："
 
 #: src/distro/index.md:35
 msgid "Inside the container, install QEMU:"
-msgstr ""
+msgstr "在容器內安裝 QEMU："
 
 #: src/distro/index.md:42
 msgid ""
@@ -101,7 +101,7 @@ msgstr ""
 
 #: src/distro/index.md:55
 msgid "/path/to/your/downloaded/installer.iso"
-msgstr ""
+msgstr "/path/to/your/downloaded/installer.iso"
 
 #: src/distro/index.md:58
 msgid "\"$INSTALLER_ISO\""
@@ -171,7 +171,7 @@ msgstr ""
 
 #: src/distro/index.md:129
 msgid "Run a Docker container as the development environment:"
-msgstr ""
+msgstr "執行 Docker 容器作為開發環境："
 
 #: src/distro/index.md:135
 msgid ""

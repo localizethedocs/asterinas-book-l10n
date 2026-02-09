@@ -44,7 +44,7 @@ msgstr ""
 
 #: src/distro/popular-applications/containerization.md:21
 msgid "`podman run` runs a command in a new container."
-msgstr ""
+msgstr "`podman run` 在新的容器中執行命令。"
 
 #: src/distro/popular-applications/containerization.md:24
 msgid "# Start a container, execute a command, and then exit\n"
@@ -68,11 +68,11 @@ msgstr ""
 
 #: src/distro/popular-applications/containerization.md:40
 msgid "`podman ps`"
-msgstr ""
+msgstr "`podman ps`"
 
 #: src/distro/popular-applications/containerization.md:42
 msgid "`podman ps` lists containers."
-msgstr ""
+msgstr "`podman ps` 列出容器。"
 
 #: src/distro/popular-applications/containerization.md:45
 msgid "# Show the status of all containers (including exited ones)\n"
@@ -80,11 +80,11 @@ msgstr ""
 
 #: src/distro/popular-applications/containerization.md:49
 msgid "`podman rm`"
-msgstr ""
+msgstr "`podman rm`"
 
 #: src/distro/popular-applications/containerization.md:51
 msgid "`podman rm` removes one or more containers."
-msgstr ""
+msgstr "`podman rm` 移除一個或多個容器。"
 
 #: src/distro/popular-applications/containerization.md:54
 msgid "# Remove a container named foo\n"

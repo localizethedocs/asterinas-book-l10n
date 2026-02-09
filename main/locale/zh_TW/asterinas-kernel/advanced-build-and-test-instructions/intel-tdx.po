@@ -58,11 +58,11 @@ msgstr ""
 
 #: src/kernel/intel-tdx.md:36
 msgid "Prepare the Intel TDX Environment"
-msgstr ""
+msgstr "準備 Intel TDX 環境"
 
 #: src/kernel/intel-tdx.md:38
 msgid "Please make sure your server supports Intel TDX."
-msgstr ""
+msgstr "請確保您的伺服器支援 Intel TDX。"
 
 #: src/kernel/intel-tdx.md:40
 msgid ""
@@ -89,15 +89,15 @@ msgstr ""
 
 #: src/kernel/intel-tdx.md:58
 msgid "Build and run Asterinas"
-msgstr ""
+msgstr "建置並執行 Asterinas"
 
 #: src/kernel/intel-tdx.md:60
 msgid "Download the latest source code."
-msgstr ""
+msgstr "下載最新的來源碼。"
 
 #: src/kernel/intel-tdx.md:66
 msgid "Run a Docker container as the development environment."
-msgstr ""
+msgstr "執行 Docker 容器作為開發環境。"
 
 #: src/kernel/intel-tdx.md:72
 msgid ""
@@ -148,7 +148,7 @@ msgstr ""
 
 #: src/kernel/intel-tdx.md:110
 msgid "About Intel TDX"
-msgstr ""
+msgstr "關於 Intel TDX"
 
 #: src/kernel/intel-tdx.md:112
 msgid ""

@@ -124,6 +124,8 @@ msgid ""
 "Our choice of the [weak-copyleft](https://www.tldrlegal.com/license/mozilla-"
 "public-license-2-0-mpl-2) MPL license reflects a strategic balance:"
 msgstr ""
+"我們選擇[弱著作傳](https://www.tldrlegal.com/license/mozilla-public-"
+"license-2-0-mpl-2)的 MPL 授權條款，反映了一種策略性的平衡："
 
 #: src/index.md:71
 msgid ""
@@ -135,6 +137,10 @@ msgid ""
 "possibility of their contributions being made closed source](https://"
 "drewdevault.com/2018/10/05/Dont-sign-a-CLA.html)."
 msgstr ""
+"**對開源自由的承諾：** 我們相信作業系統內核是全人類應共同受益的公共資產。MPL "
+"確保對受 MPL 保護的檔案的任何修改都保持開源，這與我們的願景一致。此外，我們不"
+"要求貢獻者簽署貢獻者授權協議（CLA）以保留其權利，[並防止其貢獻被轉為閉源的可"
+"能性](https://drewdevault.com/2018/10/05/Dont-sign-a-CLA.html)。"
 
 #: src/index.md:79
 msgid ""

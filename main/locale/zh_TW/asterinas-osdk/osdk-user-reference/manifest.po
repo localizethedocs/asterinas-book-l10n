@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:1
 msgid "Manifest"
-msgstr ""
+msgstr "清單"
 
 #: src/osdk/reference/manifest.md:3
 msgid "Overview"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:23
 msgid "Configurations"
-msgstr ""
+msgstr "組態"
 
 #: src/osdk/reference/manifest.md:25
 msgid ""
@@ -198,7 +198,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:124
 msgid "The boot method."
-msgstr ""
+msgstr "開機方法。"
 
 #: src/osdk/reference/manifest.md:126
 msgid "Optional. The default value is `qemu-direct`."
@@ -252,7 +252,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:157
 msgid "The protocol GRUB used."
-msgstr ""
+msgstr "GRUB 所使用的協定。"
 
 #: src/osdk/reference/manifest.md:159
 msgid "Optional. The default value is `multiboot2`."

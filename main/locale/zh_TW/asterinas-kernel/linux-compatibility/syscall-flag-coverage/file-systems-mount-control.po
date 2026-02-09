@@ -13,15 +13,15 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:1
 msgid "File Systems & Mount Control"
-msgstr ""
+msgstr "檔案系統與掛載控制"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:12
 msgid "Mount and Unmount File Systems"
-msgstr ""
+msgstr "掛載與卸載檔案系统"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:14
 msgid "`mount`"
-msgstr ""
+msgstr "`mount`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:16
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:68

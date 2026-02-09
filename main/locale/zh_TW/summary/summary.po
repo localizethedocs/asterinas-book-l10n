@@ -85,7 +85,7 @@ msgstr ""
 
 #: src/SUMMARY.md:25
 msgid "File systems & mount control"
-msgstr ""
+msgstr "檔案系統與掛載控制"
 
 #: src/SUMMARY.md:26
 msgid "File descriptor & I/O control"
@@ -117,7 +117,7 @@ msgstr ""
 
 #: src/SUMMARY.md:33
 msgid "Roadmap"
-msgstr ""
+msgstr "路線圖"
 
 #: src/SUMMARY.md:35
 msgid "Asterinas OSTD"
@@ -201,7 +201,7 @@ msgstr "cargo osdk profile"
 
 #: src/SUMMARY.md:59
 msgid "Manifest"
-msgstr ""
+msgstr "清單"
 
 #: src/SUMMARY.md:60
 msgid "Environment Variables"
