@@ -1,4 +1,10 @@
 <div align="center">
+<picture>
+  <img height="100" src="https://cdn.jsdelivr.net/gh/localizethedocs/static/mark/asterinas.svg">
+</picture>
+</div>
+
+<div align="center">
 <h1 id="localization-of-the-asterinas-book">Localization of The Asterinas Book</h1>
 </div>
 
