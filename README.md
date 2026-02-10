@@ -518,4 +518,3 @@ All document files (e.g., <code>README.md</code>) of this project are licensed u
 <a href="http://creativecommons.org/licenses/by-sa/4.0/" title="CC BY SA 4.0" target="_blank">
   <img alt="CC BY SA 4.0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/>
 </a>
-# asterinas-book-l10n
