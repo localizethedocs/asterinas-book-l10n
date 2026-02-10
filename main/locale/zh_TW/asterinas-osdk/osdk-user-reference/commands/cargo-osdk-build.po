@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/build.md:19
 msgid "Cargo options"
-msgstr ""
+msgstr "Cargo 選項"
 
 #: src/osdk/reference/commands/build.md:21
 msgid ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,11 +13,11 @@ msgstr ""
 
 #: src/kernel/index.md:1
 msgid "Asterinas Kernel"
-msgstr ""
+msgstr "Asterinas Kernel"
 
 #: src/kernel/index.md:3
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: src/kernel/index.md:5
 msgid ""
@@ -55,27 +55,29 @@ msgstr ""
 
 #: src/kernel/index.md:33
 msgid "Getting Started"
-msgstr ""
+msgstr "开始使用"
 
 #: src/kernel/index.md:35
 msgid ""
 "Get yourself an x86-64 Linux machine with Docker installed. Follow the three "
 "simple steps below to get Asterinas up and running."
 msgstr ""
+"准备一台安装了 Docker 的 x86-64 Linux 机器。按照以下三个简单步骤即可启动并运"
+"行 Asterinas。"
 
 #: src/kernel/index.md:38
 msgid "Download the latest source code."
-msgstr ""
+msgstr "下载最新源代码。"
 
 #: src/kernel/index.md:44
 msgid "Run a Docker container as the development environment."
-msgstr ""
+msgstr "运行一个 Docker 容器作为开发环境。"
 
 #: src/kernel/index.md:54
 msgid ""
 "Inside the container, go to the project folder to build and run Asterinas."
-msgstr ""
+msgstr "在容器内，进入项目文件夹构建并运行 Asterinas。"
 
 #: src/kernel/index.md:61
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
-msgstr ""
+msgstr "如果一切顺利，Asterinas 现在应该已经在虚拟机中启动并运行了。"

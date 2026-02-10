@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,25 +13,27 @@ msgstr ""
 
 #: src/index.md:1
 msgid "The Asterinas Book"
-msgstr ""
+msgstr "The Asterinas Book"
 
 #: src/index.md:7
 msgid ""
 "Welcome to the documentation for Asterinas, an open-source project and "
 "community focused on developing cutting-edge Rust OS kernels."
 msgstr ""
+"欢迎阅读 Asterinas 的文档，这是一个专注于开发前沿 Rust 操作系统内核的开源项目"
+"与社区。"
 
 #: src/index.md:11
 msgid "Book Structure"
-msgstr ""
+msgstr "本书结构"
 
 #: src/index.md:13
 msgid "This book is divided into six distinct parts:"
-msgstr ""
+msgstr "本书分为六个独立部分："
 
 #: src/index.md:15
 msgid "[Part 1: Asterinas NixOS](distro/)"
-msgstr ""
+msgstr "[Part 1: Asterinas NixOS](distro/)"
 
 #: src/index.md:17
 msgid ""
@@ -40,10 +42,12 @@ msgid ""
 "and rich package ecosystem, while swapping out the Linux kernel for "
 "Asterinas."
 msgstr ""
+"Asterinas NixOS 是首个基于 Asterinas 内核构建的发行版。它以 NixOS 为基础，充"
+"分利用其强大的配置模型和丰富的包生态系统，同时将 Linux 内核替换为 Asterinas。"
 
 #: src/index.md:23
 msgid "[Part 2: Asterinas Kernel](kernel/)"
-msgstr ""
+msgstr "[Part 2: Asterinas Kernel](kernel/)"
 
 #: src/index.md:25
 msgid ""
@@ -52,10 +56,13 @@ msgid ""
 "safe and efficient way. This means it can seamlessly replace Linux, offering "
 "enhanced safety and security."
 msgstr ""
+"探索位于 Asterinas 核心的现代操作系统内核。Asterinas 内核旨在充分发挥 Rust 语"
+"言的全部潜力，以安全高效的方式实现了 Linux ABI，这意味着它可以无缝替代 "
+"Linux，提供更强大的安全性保障。"
 
 #: src/index.md:31
 msgid "[Part 3: Asterinas OSTD](ostd/)"
-msgstr ""
+msgstr "[Part 3: Asterinas OSTD](ostd/)"
 
 #: src/index.md:33
 msgid ""
@@ -64,10 +71,13 @@ msgid ""
 "demands of _safe_ Rust OS development. The Asterinas Kernel is built on this "
 "very OSTD."
 msgstr ""
+"Asterinas OSTD 为操作系统开发奠定了一个简约、强大且稳固的基础。它类似于 Rust "
+"的 `std`  crate，但专为*安全*的 Rust 操作系统开发需求而设计。Asterinas 内核正"
+"是构建于这一 OSTD 之上。"
 
 #: src/index.md:39
 msgid "[Part 4: Asterinas OSDK](osdk/guide/)"
-msgstr ""
+msgstr "[Part 4: Asterinas OSDK](osdk/guide/)"
 
 #: src/index.md:41
 msgid ""
@@ -77,10 +87,14 @@ msgid ""
 "better suite their specific needs. OSDK is instrumental in the development "
 "of Asterinas Kernel."
 msgstr ""
+"OSDK 是一款命令行工具，它简化了基于 Asterinas OSTD 创建、构建、测试和运行 "
+"Rust 操作系统项目的工作流程。它专为操作系统开发者设计，扩展了 Rust 的 Cargo "
+"工具，以更好地满足其特定需求。\n"
+"OSDK 在 Asterinas 内核的开发中发挥着关键作用。"
 
 #: src/index.md:49
 msgid "[Part 5: Contributing to Asterinas](to-contribute/)"
-msgstr ""
+msgstr "[Part 5: 为 Asterinas 做出贡献](to-contribute/)"
 
 #: src/index.md:51
 msgid ""
@@ -88,20 +102,24 @@ msgid ""
 "provides guidance on how you can become an integral part of the Asterinas "
 "project."
 msgstr ""
+"Asterinas 项目尚处于早期阶段，欢迎您的贡献！本部分将指导您如何成为 Asterinas "
+"项目不可或缺的一部分。"
 
 #: src/index.md:56
 msgid "[Part 6: Requests for Comments (RFCs)](rfcs/)"
-msgstr ""
+msgstr "[Part 6: 征求意见稿 (RFCs)](rfcs/)"
 
 #: src/index.md:58
 msgid ""
 "Significant decisions in Asterinas are made through a transparent RFC "
 "process. This part describes the RFC process and archives all approvaed RFCs."
 msgstr ""
+"Asterinas 的重大决策均通过透明的 RFC 流程做出。本部分将介绍 RFC 流程并存档所"
+"有已批准的 RFC。"
 
 #: src/index.md:62
 msgid "Licensing"
-msgstr ""
+msgstr "许可协议"
 
 #: src/index.md:64
 msgid ""
@@ -110,12 +128,18 @@ msgid ""
 "LICENSE-MPL). Select components are under more permissive licenses, detailed "
 "[here](https://github.com/asterinas/asterinas/blob/main/.licenserc.yaml)."
 msgstr ""
+"Asterinas 的源代码和文档主要使用 [Mozilla Public License (MPL), Version 2.0]"
+"(https://github.com/asterinas/asterinas/blob/main/LICENSE-MPL)。部分组件采用"
+"更宽松的许可证，详情请见 [此处](https://github.com/asterinas/asterinas/blob/"
+"main/.licenserc.yaml)。"
 
 #: src/index.md:69
 msgid ""
 "Our choice of the [weak-copyleft](https://www.tldrlegal.com/license/mozilla-"
 "public-license-2-0-mpl-2) MPL license reflects a strategic balance:"
 msgstr ""
+"我们选择[弱版权保护](https://www.tldrlegal.com/license/mozilla-public-"
+"license-2-0-mpl-2)的 MPL 许可证体现了一种战略平衡："
 
 #: src/index.md:71
 msgid ""
@@ -127,6 +151,11 @@ msgid ""
 "possibility of their contributions being made closed source](https://"
 "drewdevault.com/2018/10/05/Dont-sign-a-CLA.html)."
 msgstr ""
+"**对开源自由的承诺**：我们认为操作系统内核是公共资产，应造福全人类。MPL 协议"
+"确保对受 MPL 保护的文件所做的任何修改都保持开源，这与我们的理念一致。此外，我"
+"们**不要求贡献者签署贡献者许可协议（CLA）**，从而[保护贡献者的权利，并防止他"
+"们的贡献被闭源化 。](https://drewdevault.com/2018/10/05/Dont-sign-a-CLA."
+"html)。"
 
 #: src/index.md:79
 msgid ""
@@ -135,9 +164,14 @@ msgid ""
 "accommodate the business need for proprietary kernel modules. Unlike GPL, "
 "the MPL permits the linking of MPL-covered files with proprietary code."
 msgstr ""
+"**兼容专有模块**：认识到大型企业也对开源做出重要贡献的不断演变格局，我们兼顾"
+"企业对专有内核模块的业务需求。与GPL不同，MPL允许将受 MPL 保护的文件与专有代码"
+"链接。"
 
 #: src/index.md:86
 msgid ""
 "In conclusion, we believe that MPL is the best choice to foster a vibrant, "
 "robust, and inclusive open-source community around Asterinas."
 msgstr ""
+"总之，我们认为 MPL 是围绕 Asterinas 培育一个充满活力、强大且包容的开源社区的"
+"最佳选择。"

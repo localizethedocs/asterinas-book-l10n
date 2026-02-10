@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 "Asterinas NixOS 尚未準備好用於生產環境。我們提供 Asterinas NixOS 是為了降低 "
 "Asterinas 內核的使用門檻，讓早期採用者與愛好者能夠嘗試並提供反饋。此外，"
-"Asterinas 開發者將此散布版作為主要的開發工具，以立於在 Asterinas 內核上啟用並"
+"Asterinas 開發者將此散布版作為主要的開發工具，有助於在 Asterinas 內核上啟用並"
 "測試更多現實世界的應用程式。"
 
 #: src/distro/index.md:22
@@ -105,7 +105,7 @@ msgstr "/path/to/your/downloaded/installer.iso"
 
 #: src/distro/index.md:58
 msgid "\"$INSTALLER_ISO\""
-msgstr ""
+msgstr "\"$INSTALLER_ISO\""
 
 #: src/distro/index.md:66
 msgid ""
@@ -135,7 +135,7 @@ msgstr ""
 
 #: src/distro/index.md:83
 msgid "Start installation:"
-msgstr ""
+msgstr "開始安裝："
 
 #: src/distro/index.md:89
 msgid ""
@@ -167,7 +167,7 @@ msgstr "內核開發者"
 
 #: src/distro/index.md:123
 msgid "Download the latest source code on an x86-64 Linux machine:"
-msgstr ""
+msgstr "在 x86-64 的 Linux 機器上下載最新的來源碼："
 
 #: src/distro/index.md:129
 msgid "Run a Docker container as the development environment:"

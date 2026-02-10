@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -101,16 +101,16 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:85
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:111
 msgid "`CLOCK_REALTIME_ALARM`"
-msgstr ""
+msgstr "`CLOCK_REALTIME_ALARM`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:86
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:112
 msgid "`CLOCK_BOOTTIME_ALARM`"
-msgstr ""
+msgstr "`CLOCK_BOOTTIME_ALARM`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:87
 msgid "`CLOCK_TAI`"
-msgstr ""
+msgstr "`CLOCK_TAI`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:89
 msgid "Unsupported notification methods:"

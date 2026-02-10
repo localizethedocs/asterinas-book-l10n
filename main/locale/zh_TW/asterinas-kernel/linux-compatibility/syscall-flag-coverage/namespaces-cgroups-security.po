@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -106,11 +106,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:49
 msgid "`PR_PAC_RESET_KEYS`"
-msgstr ""
+msgstr "`PR_PAC_RESET_KEYS`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:50
 msgid "`PR_SET_PTRACER`"
-msgstr ""
+msgstr "`PR_SET_PTRACER`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:51
 msgid "`PR_GET_SECCOMP` and `PR_SET_SECCOMP`"
@@ -142,7 +142,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:58
 msgid "`PR_GET_TID_ADDRESS`"
-msgstr ""
+msgstr "`PR_GET_TID_ADDRESS`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:59
 msgid "`PR_GET_TIMING` and `PR_SET_TIMING`"
@@ -220,32 +220,32 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:110
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:133
 msgid "`CLONE_NEWCGROUP`"
-msgstr ""
+msgstr "`CLONE_NEWCGROUP`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:111
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:134
 msgid "`CLONE_NEWIPC`"
-msgstr ""
+msgstr "`CLONE_NEWIPC`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:112
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:135
 msgid "`CLONE_NEWNET`"
-msgstr ""
+msgstr "`CLONE_NEWNET`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:113
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:136
 msgid "`CLONE_NEWPID`"
-msgstr ""
+msgstr "`CLONE_NEWPID`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:114
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:137
 msgid "`CLONE_NEWTIME`"
-msgstr ""
+msgstr "`CLONE_NEWTIME`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:115
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:138
 msgid "`CLONE_NEWUSER`"
-msgstr ""
+msgstr "`CLONE_NEWUSER`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:117
 msgid "Silently-ignored flags:"

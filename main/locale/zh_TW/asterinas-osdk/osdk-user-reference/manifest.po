@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -331,7 +331,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:210
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: src/osdk/reference/manifest.md:212
 msgid ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/SUMMARY.md:7 src/SUMMARY.md:15
 msgid "Getting Started"
-msgstr ""
+msgstr "开始使用"
 
 #: src/SUMMARY.md:8
 msgid "Popular Applications"
@@ -45,11 +45,11 @@ msgstr ""
 
 #: src/SUMMARY.md:13
 msgid "Asterinas Kernel"
-msgstr ""
+msgstr "Asterinas Kernel"
 
 #: src/SUMMARY.md:16
 msgid "Advanced Build and Test Instructions"
-msgstr ""
+msgstr "高级构建和测试说明"
 
 #: src/SUMMARY.md:17 src/SUMMARY.md:50
 msgid "Intel TDX"

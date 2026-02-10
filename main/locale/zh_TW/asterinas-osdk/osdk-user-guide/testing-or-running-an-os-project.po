@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/guide/run-project.md:1
 msgid "Running or Testing an OS Project"
-msgstr ""
+msgstr "執行或測試作業系統專案"
 
 #: src/osdk/guide/run-project.md:3
 msgid ""
@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/osdk/guide/run-project.md:48
 msgid "Test the project"
-msgstr ""
+msgstr "測試專案"
 
 #: src/osdk/guide/run-project.md:50
 msgid ""

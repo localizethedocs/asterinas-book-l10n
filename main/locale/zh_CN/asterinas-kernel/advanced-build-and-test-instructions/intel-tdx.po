@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -93,16 +93,16 @@ msgstr ""
 
 #: src/kernel/intel-tdx.md:60
 msgid "Download the latest source code."
-msgstr ""
+msgstr "下载最新源代码。"
 
 #: src/kernel/intel-tdx.md:66
 msgid "Run a Docker container as the development environment."
-msgstr ""
+msgstr "运行一个 Docker 容器作为开发环境。"
 
 #: src/kernel/intel-tdx.md:72
 msgid ""
 "Inside the container, go to the project folder to build and run Asterinas."
-msgstr ""
+msgstr "在容器内，进入项目文件夹构建并运行 Asterinas。"
 
 #: src/kernel/intel-tdx.md:79
 msgid "If everything goes well, Asterinas is now up and running inside a TD."
@@ -110,7 +110,7 @@ msgstr ""
 
 #: src/kernel/intel-tdx.md:82
 msgid "Using GDB to Debug"
-msgstr ""
+msgstr "使用 GDB 进行调试"
 
 #: src/kernel/intel-tdx.md:84
 msgid ""

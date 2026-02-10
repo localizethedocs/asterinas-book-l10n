@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -165,16 +165,16 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:121
 msgid "`CLOCK_REALTIME_ALARM`"
-msgstr ""
+msgstr "`CLOCK_REALTIME_ALARM`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:122
 msgid "`CLOCK_BOOTTIME_ALARM`"
-msgstr ""
+msgstr "`CLOCK_BOOTTIME_ALARM`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:123
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:146
 msgid "`CLOCK_TAI`"
-msgstr ""
+msgstr "`CLOCK_TAI`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:125
 msgid ""

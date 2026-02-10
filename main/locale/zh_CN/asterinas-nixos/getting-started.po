@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/distro/index.md:22
 msgid "Getting Started"
-msgstr ""
+msgstr "开始使用"
 
 #: src/distro/index.md:24
 msgid "End Users"

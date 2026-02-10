@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,11 +13,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:1
 msgid "Memory Management"
-msgstr ""
+msgstr "記憶體管理"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:10
 msgid "Memory Mappings"
-msgstr ""
+msgstr "記憶體映射"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:12
 msgid "`mmap` and `munmap`"
@@ -50,27 +50,27 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:53
 msgid "`MAP_HUGETLB`"
-msgstr ""
+msgstr "`MAP_HUGETLB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:54
 msgid "`MAP_GROWSDOWN`"
-msgstr ""
+msgstr "`MAP_GROWSDOWN`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:55
 msgid "`MAP_LOCKED`"
-msgstr ""
+msgstr "`MAP_LOCKED`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:56
 msgid "`MAP_NONBLOCK`"
-msgstr ""
+msgstr "`MAP_NONBLOCK`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:57
 msgid "`MAP_NORESERVE`"
-msgstr ""
+msgstr "`MAP_NORESERVE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:58
 msgid "`MAP_POPULATE`"
-msgstr ""
+msgstr "`MAP_POPULATE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:60
 msgid "Partially supported flags:"
@@ -86,19 +86,19 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:64
 msgid "`MAP_32BIT`"
-msgstr ""
+msgstr "`MAP_32BIT`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:65
 msgid "`MAP_HUGE_1GB`"
-msgstr ""
+msgstr "`MAP_HUGE_1GB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:66
 msgid "`MAP_HUGE_2MB`"
-msgstr ""
+msgstr "`MAP_HUGE_2MB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:67
 msgid "`MAP_UNINITIALIZED`"
-msgstr ""
+msgstr "`MAP_UNINITIALIZED`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:69
 msgid ""
@@ -218,24 +218,24 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:163
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:179
 msgid "`MADV_FREE`"
-msgstr ""
+msgstr "`MADV_FREE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:164
 msgid "`MADV_MERGEABLE`"
-msgstr ""
+msgstr "`MADV_MERGEABLE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:165
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:175
 msgid "`MADV_UNMERGEABLE`"
-msgstr ""
+msgstr "`MADV_UNMERGEABLE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:166
 msgid "`MADV_HUGEPAGE`"
-msgstr ""
+msgstr "`MADV_HUGEPAGE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:167
 msgid "`MADV_NOHUGEPAGE`"
-msgstr ""
+msgstr "`MADV_NOHUGEPAGE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:169
 msgid "Unsupported advice:"
@@ -243,39 +243,39 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:171
 msgid "`MADV_REMOVE`"
-msgstr ""
+msgstr "`MADV_REMOVE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:172
 msgid "`MADV_DONTFORK`"
-msgstr ""
+msgstr "`MADV_DONTFORK`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:173
 msgid "`MADV_DOFORK`"
-msgstr ""
+msgstr "`MADV_DOFORK`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:174
 msgid "`MADV_HWPOISON`"
-msgstr ""
+msgstr "`MADV_HWPOISON`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:176
 msgid "`MADV_SOFT_OFFLINE`"
-msgstr ""
+msgstr "`MADV_SOFT_OFFLINE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:177
 msgid "`MADV_DONTDUMP`"
-msgstr ""
+msgstr "`MADV_DONTDUMP`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:178
 msgid "`MADV_DODUMP`"
-msgstr ""
+msgstr "`MADV_DODUMP`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:180
 msgid "`MADV_WIPEONFORK`"
-msgstr ""
+msgstr "`MADV_WIPEONFORK`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:181
 msgid "`MADV_KEEPONFORK`"
-msgstr ""
+msgstr "`MADV_KEEPONFORK`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:183
 msgid ""

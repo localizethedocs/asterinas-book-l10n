@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,7 +17,7 @@ msgstr "容器化"
 
 #: src/distro/popular-applications/containerization.md:3
 msgid "Podman"
-msgstr ""
+msgstr "Podman"
 
 #: src/distro/popular-applications/containerization.md:5
 msgid ""

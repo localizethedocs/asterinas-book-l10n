@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -73,7 +73,7 @@ msgstr "未支援的命令："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:45
 msgid "`F_NOTIFY`"
-msgstr ""
+msgstr "`F_NOTIFY`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:46
 msgid "`F_OFD_SETLK`, `F_OFD_SETLKW` and `F_OFD_GETLK`"
@@ -188,51 +188,51 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:108
 msgid "`MFD_HUGE_64KB`"
-msgstr ""
+msgstr "`MFD_HUGE_64KB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:109
 msgid "`MFD_HUGE_512KB`"
-msgstr ""
+msgstr "`MFD_HUGE_512KB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:110
 msgid "`MFD_HUGE_1MB`"
-msgstr ""
+msgstr "`MFD_HUGE_1MB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:111
 msgid "`MFD_HUGE_2MB`"
-msgstr ""
+msgstr "`MFD_HUGE_2MB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:112
 msgid "`MFD_HUGE_8MB`"
-msgstr ""
+msgstr "`MFD_HUGE_8MB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:113
 msgid "`MFD_HUGE_16MB`"
-msgstr ""
+msgstr "`MFD_HUGE_16MB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:114
 msgid "`MFD_HUGE_32MB`"
-msgstr ""
+msgstr "`MFD_HUGE_32MB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:115
 msgid "`MFD_HUGE_256MB`"
-msgstr ""
+msgstr "`MFD_HUGE_256MB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:116
 msgid "`MFD_HUGE_512MB`"
-msgstr ""
+msgstr "`MFD_HUGE_512MB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:117
 msgid "`MFD_HUGE_1GB`"
-msgstr ""
+msgstr "`MFD_HUGE_1GB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:118
 msgid "`MFD_HUGE_2GB`"
-msgstr ""
+msgstr "`MFD_HUGE_2GB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:119
 msgid "`MFD_HUGE_16GB`"
-msgstr ""
+msgstr "`MFD_HUGE_16GB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:121
 msgid ""
@@ -252,27 +252,27 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:134
 msgid "`POSIX_FADV_NORMAL`"
-msgstr ""
+msgstr "`POSIX_FADV_NORMAL`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:135
 msgid "`POSIX_FADV_RANDOM`"
-msgstr ""
+msgstr "`POSIX_FADV_RANDOM`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:136
 msgid "`POSIX_FADV_SEQUENTIAL`"
-msgstr ""
+msgstr "`POSIX_FADV_SEQUENTIAL`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:137
 msgid "`POSIX_FADV_WILLNEED`"
-msgstr ""
+msgstr "`POSIX_FADV_WILLNEED`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:138
 msgid "`POSIX_FADV_DONTNEED`"
-msgstr ""
+msgstr "`POSIX_FADV_DONTNEED`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:139
 msgid "`POSIX_FADV_NOREUSE`"
-msgstr ""
+msgstr "`POSIX_FADV_NOREUSE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:141
 msgid ""
@@ -296,11 +296,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:164
 msgid "`EPOLLEXCLUSIVE`"
-msgstr ""
+msgstr "`EPOLLEXCLUSIVE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:165
 msgid "`EPOLLWAKEUP`"
-msgstr ""
+msgstr "`EPOLLWAKEUP`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:167
 msgid ""
@@ -328,15 +328,15 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:189
 msgid "`POLLRDBAND`"
-msgstr ""
+msgstr "`POLLRDBAND`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:190
 msgid "`POLLWRNORM`"
-msgstr ""
+msgstr "`POLLWRNORM`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:191
 msgid "`POLLWRBAND`"
-msgstr ""
+msgstr "`POLLWRBAND`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:193
 msgid ""
@@ -396,11 +396,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:252
 msgid "`IOPRIO_WHO_PGRP`"
-msgstr ""
+msgstr "`IOPRIO_WHO_PGRP`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:253
 msgid "`IOPRIO_WHO_USER`"
-msgstr ""
+msgstr "`IOPRIO_WHO_USER`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:255
 msgid ""

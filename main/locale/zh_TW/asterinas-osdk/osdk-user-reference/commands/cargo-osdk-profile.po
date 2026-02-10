@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-03T02:17:05Z\n"
+"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/profile.md:1
 msgid "cargo osdk profile"
-msgstr ""
+msgstr "cargo osdk profile"
 
 #: src/osdk/reference/commands/profile.md:3
 msgid "Overview"
@@ -35,7 +35,7 @@ msgstr "選項"
 
 #: src/osdk/reference/commands/profile.md:13
 msgid "`--remote <REMOTE>`:"
-msgstr ""
+msgstr "`--remote <REMOTE>`："
 
 #: src/osdk/reference/commands/profile.md:15
 msgid ""
@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/profile.md:18
 msgid "`--samples <SAMPLES>`:"
-msgstr ""
+msgstr "`--samples <SAMPLES>`："
 
 #: src/osdk/reference/commands/profile.md:20
 msgid ""
@@ -55,7 +55,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/profile.md:23
 msgid "`--interval <INTERVAL>`:"
-msgstr ""
+msgstr "`--interval <INTERVAL>`："
 
 #: src/osdk/reference/commands/profile.md:25
 msgid "The interval between samples in seconds (default 0.1)."
