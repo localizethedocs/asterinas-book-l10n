@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/index.md:1
 msgid "Asterinas NixOS"
-msgstr ""
+msgstr "Asterinas NixOS"
 
 #: src/distro/index.md:3
 msgid ""
@@ -24,6 +24,11 @@ msgid ""
 "For more rationale about choosing NixOS, see [the RFC](https://asterinas."
 "github.io/book/rfcs/0002-asterinas-nixos.html)."
 msgstr ""
+"Asterinas NixOS 是 Asterinas 的首个发行版。我们选择 [NixOS](https://nixos."
+"org/) 作为基础操作系统，因其具有无与伦比的可定制性和丰富的软件包生态系统。"
+"Asterinas NixOS 旨在保持与原生 NixOS 相同的外观和使用体验，区别在于它用 "
+"Asterinas 内核取代了 Linux。有关选择 NixOS 的更多理由，请参阅 [RFC](https://"
+"asterinas.github.io/book/rfcs/0002-asterinas-nixos.html)。"
 
 #: src/distro/index.md:11
 msgid ""
@@ -31,6 +36,8 @@ msgid ""
 "NixOS is _not_ an official NixOS project and has _no_ affiliation with the "
 "NixOS Foundation. _No_ sponsorship or endorsement is implied.**"
 msgstr ""
+"**免责声明：Asterinas 是一个独立的、由社区主导的项目。Asterinas NixOS 并非官"
+"方 NixOS 项目，也与 NixOS 基金会无任何关联。不暗示任何赞助或认可。**"
 
 #: src/distro/index.md:14
 msgid ""
@@ -40,6 +47,10 @@ msgid ""
 "developers use this distro as a key development vehicle to facilitate "
 "enabling and testing more real-world applications on the Asterinas kernel."
 msgstr ""
+"Asterinas NixOS 尚未准备好用于生产环境。我们提供 Asterinas NixOS 是为了让 "
+"Asterinas 内核更易于使用，让早期采用者和爱好者能够试用并提供反馈。此外，"
+"Asterinas 开发者将此发行版作为关键的开发工具，以促进在 Asterinas 内核上启用和"
+"测试更多实际应用。"
 
 #: src/distro/index.md:22
 msgid "Getting Started"
@@ -47,43 +58,48 @@ msgstr "开始使用"
 
 #: src/distro/index.md:24
 msgid "End Users"
-msgstr ""
+msgstr "终端用户"
 
 #: src/distro/index.md:26
 msgid ""
 "The following instructions describe how to install Asterinas NixOS in a VM "
 "using the Asterinas NixOS installer ISO."
 msgstr ""
+"以下说明描述了如何使用 Asterinas NixOS 安装程序 ISO 在虚拟机中安装 Asterinas "
+"NixOS。"
 
 #: src/distro/index.md:29
 msgid "Launch an x86-64 Ubuntu container:"
-msgstr ""
+msgstr "启动一个 x86-64 Ubuntu容器："
 
 #: src/distro/index.md:35
 msgid "Inside the container, install QEMU:"
-msgstr ""
+msgstr "在容器中安装 QEMU："
 
 #: src/distro/index.md:42
 msgid ""
 "Download the latest Asterinas NixOS installer ISO from [GitHub Releases]"
 "(https://github.com/asterinas/asterinas/releases)."
 msgstr ""
+"从 [GitHub Releases](https://github.com/asterinas/asterinas/releases)下载最新"
+"的 Asterinas NixOS 安装程序 ISO。"
 
 #: src/distro/index.md:44
 msgid ""
 "Create a file that will be used as the target disk to install Asterinas "
 "NixOS:"
-msgstr ""
+msgstr "创建一个文件，该文件将用作安装 Asterinas NixOS 的目标磁盘："
 
 #: src/distro/index.md:47
 msgid "# The capacity of the disk is 10GB; adjust it as you see fit\n"
-msgstr ""
+msgstr "# 磁盘容量为10GB；根据您的需要进行调整\n"
 
 #: src/distro/index.md:51
 msgid ""
 "Start an x86-64 VM with two drives: one is the installer CD-ROM and the "
 "other is the target disk:"
 msgstr ""
+"使用两个驱动器启动x86-64 虚拟机：一个是安装程序 CD-ROM，另一个是目标光盘："
 
 #: src/distro/index.md:55
 msgid "/path/to/your/downloaded/installer.iso"
@@ -96,13 +112,14 @@ msgstr ""
 #: src/distro/index.md:66
 msgid ""
 "After the VM boots, you now have access to the installation environment."
-msgstr ""
+msgstr "虚拟机启动后，您现在可以访问安装环境。"
 
 #: src/distro/index.md:68
 msgid ""
 "Edit the `configuration.nix` file in the home directory to customize the "
 "NixOS system to be installed:"
 msgstr ""
+"编辑用户主目录中的 `configuration.nix` 文件以自定义要安装的 NixOS 系统："
 
 #: src/distro/index.md:75
 msgid ""
@@ -111,6 +128,9 @@ msgid ""
 "configuration). If you are not familiar with NixOS, you can simply skip this "
 "step."
 msgstr ""
+"`configuration.nix`文件的完整语法和使用指南请参阅 [NixOS 手册](https://nixos."
+"org/manual/nixos/stable/#ch-configuration) 。 如果你不熟悉NixOS，可以跳过这一"
+"步。"
 
 #: src/distro/index.md:80
 msgid ""
@@ -118,56 +138,60 @@ msgid ""
 "Asterinas NixOS yet. The ones that have been tested are documented in the "
 "subsequent chapters."
 msgstr ""
+"Asterinas NixOS 目前尚未支持 `configuration.nix` 中的所有设置组合。已测试过的"
+"设置组合记录在后续章节中。"
 
 #: src/distro/index.md:83
 msgid "Start installation:"
-msgstr ""
+msgstr "开始安装："
 
 #: src/distro/index.md:89
 msgid ""
 "The installation process involves downloading packages and may take around "
 "30 minutes to complete, depending on your network speed."
-msgstr ""
+msgstr "安装过程涉及下载包，可能需要大约30分钟才能完成，这取决于您的网络速度。"
 
 #: src/distro/index.md:93
 msgid "After the installation is complete, you can shut down the VM:"
-msgstr ""
+msgstr "安装完成后，即可关闭虚拟机："
 
 #: src/distro/index.md:99
 msgid "Now Asterinas NixOS is installed in `aster_nixos_disk.img`."
-msgstr ""
+msgstr "现在 Asterinas NixOS 已安装在`aster_nixos_disk.img`中。"
 
 #: src/distro/index.md:101
 msgid "Start a VM to boot the newly installed Asterinas NixOS:"
-msgstr ""
+msgstr "启动虚拟机引导新安装的 Asterinas NixOS："
 
 #: src/distro/index.md:118
 msgid ""
 "If a desktop environment is enabled in the `configuration.nix` file, you can "
 "view the graphical interface using a VNC client."
 msgstr ""
+"如果在 `configuration.nix` 文件中启用了桌面环境，您可以使用 VNC 客户端查看图"
+"形界面。"
 
 #: src/distro/index.md:121
 msgid "Kernel Developers"
-msgstr ""
+msgstr "内核开发者"
 
 #: src/distro/index.md:123
 msgid "Download the latest source code on an x86-64 Linux machine:"
-msgstr ""
+msgstr "在 x86-64 Linux 机器上下载最新源代码："
 
 #: src/distro/index.md:129
 msgid "Run a Docker container as the development environment:"
-msgstr ""
+msgstr "运行一个 Docker 容器作为开发环境："
 
 #: src/distro/index.md:135
 msgid ""
 "Inside the Docker container, generate a disk image with Asterinas NixOS "
 "installed using this command:"
-msgstr ""
+msgstr "在 Docker 容器内，使用以下命令生成已安装 Asterinas NixOS 的磁盘镜像："
 
 #: src/distro/index.md:142
 msgid "or this command:"
-msgstr ""
+msgstr "或者使用以下命令："
 
 #: src/distro/index.md:148
 msgid ""
@@ -177,7 +201,10 @@ msgid ""
 "running a VM. Using either method results in a disk image with an Asterinas "
 "NixOS installation."
 msgstr ""
+"这两种方法的区别在于，第一种是将 NixOS 完全安装到容器内部的磁盘镜像中，而第二"
+"种是通过运行虚拟机来模拟手动 ISO 安装步骤（见[上一节](#end-users)）。两种方法"
+"最终都会生成一个包含 Asterinas NixOS 安装的磁盘镜像。"
 
 #: src/distro/index.md:155
 msgid "Start a VM to run the installed Asterinas NixOS:"
-msgstr ""
+msgstr "启动虚拟机运行已安装的 Asterinas NixOS："

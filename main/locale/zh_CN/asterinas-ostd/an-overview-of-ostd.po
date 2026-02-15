@@ -33,6 +33,10 @@ msgid ""
 "that your kernel will never crash or be hacked due to undefined behaviors, "
 "even if today marks your Day 1 as a Rust programmer."
 msgstr ""
+"借助 Asterinas OSTD（操作系统标准库），您无需钻研 unsafe Rust 编程的艰深技"
+"艺，也不必承担误操作的风险。\n"
+"您将能随心所欲地开发，并确信您的内核绝不会因未定义行为而崩溃或被攻击，即便今"
+"天是您作为 Rust 程序员的第 1 天。"
 
 #: src/ostd/index.md:18
 msgid "APIs"
@@ -43,57 +47,61 @@ msgid ""
 "Asterinas OSTD stands as a powerful and solid foundation for safe kernel "
 "development, providing high-level safe Rust APIs that are"
 msgstr ""
+"Asterinas OSTD 为安全内核开发提供了强大而坚实的基础，它提供的高层安全 Rust "
+"API 是"
 
 #: src/ostd/index.md:24
 msgid "Essential for OS development, and"
-msgstr ""
+msgstr "操作系统开发所必需的，并且"
 
 #: src/ostd/index.md:25
 msgid "Dependent on the use of unsafe Rust."
-msgstr ""
+msgstr "依赖于不安全 Rust 的使用。"
 
 #: src/ostd/index.md:27
 msgid "Most of these APIs fall into the following categories:"
-msgstr ""
+msgstr "这些 API 大多属于以下几类："
 
 #: src/ostd/index.md:29
 msgid ""
 "Memory management (e.g., allocating and accessing physical memory pages)"
-msgstr ""
+msgstr "内存管理（例如，分配和访问物理内存页）"
 
 #: src/ostd/index.md:30
 msgid "Task management (e.g., context switching between kernel tasks)"
-msgstr ""
+msgstr "任务管理（例如，内核任务间的上下文切换）"
 
 #: src/ostd/index.md:31
 msgid "User space (e.g., manipulating and entering the user space)"
-msgstr ""
+msgstr "用户空间（例如，操作和进入用户空间）"
 
 #: src/ostd/index.md:32
 msgid "Interrupt handling (e.g., registering interrupt handlers)"
-msgstr ""
+msgstr "中断处理（例如，注册中断处理程序）"
 
 #: src/ostd/index.md:33
 msgid "Timer management (e.g., registering timer handlers)"
-msgstr ""
+msgstr "定时器管理（例如：注册定时器处理程序）"
 
 #: src/ostd/index.md:34
 msgid "Driver support (e.g., performing DMA and MMIO)"
-msgstr ""
+msgstr "驱动程序支持（例如：执行 DMA 和 MMIO 操作）"
 
 #: src/ostd/index.md:35
 msgid "Boot support (e.g., retrieving information from the bootloader)"
-msgstr ""
+msgstr "启动支持（例如：从引导加载程序获取信息）"
 
 #: src/ostd/index.md:36
 msgid "Synchronization (e.g., locking and sleeping)"
-msgstr ""
+msgstr "同步机制（例如：加锁与休眠）"
 
 #: src/ostd/index.md:38
 msgid ""
 "To explore how these APIs come into play, see [the example of a 100-line "
 "kernel in safe Rust](a-100-line-kernel.md)."
 msgstr ""
+"要了解这些 API 如何发挥作用，请参阅 [用安全 Rust 编写的 100 行内核示例]"
+"(a-100-line-kernel.md)。"
 
 #: src/ostd/index.md:41
 msgid ""
@@ -101,10 +109,12 @@ msgid ""
 "comprehensive API documentation by visiting the [docs.rs](https://docs.rs/"
 "ostd/latest/ostd)."
 msgstr ""
+"OSTD 的 API 已获得详尽文档支持。您可通过访问 [docs.rs](https://docs.rs/ostd/"
+"latest/ostd) 获取完整的 API 文档。"
 
 #: src/ostd/index.md:44
 msgid "Four Requirements Satisfied"
-msgstr ""
+msgstr "四项要求已满足"
 
 #: src/ostd/index.md:46
 msgid ""
@@ -112,6 +122,8 @@ msgid ""
 "fulfilling [the aforementioned four criteria as demanded by the framekernel "
 "architecture](../kernel/the-framekernel-architecture.md)."
 msgstr ""
+"在设计和实现OSTD的过程中，我们已积极应对挑战，致力于满足[framekernel 架构所要"
+"求的上述四项标准](../kernel/the-framekernel-architecture.md)。"
 
 #: src/ostd/index.md:50
 msgid ""
@@ -119,6 +131,9 @@ msgid ""
 "calls, file systems, network protocols, and device drivers (e.g., Virtio "
 "drivers) have been implemented in safe Rust by leveraging OSTD."
 msgstr ""
+"OSTD 的表现力在 Asterinas 内核中得到了充分体现，所有系统调用、文件系统、网络"
+"协议和设备驱动程序（例如 Virtio 驱动程序）均已借助 OSTD 用安全的 Rust 语言实"
+"现。"
 
 #: src/ostd/index.md:58
 msgid ""
@@ -128,6 +143,9 @@ msgid ""
 "evolves, its codebase will expand, albeit at a relatively slow rate in "
 "comparison to the OS services layered atop it."
 msgstr ""
+"采用极简主义理念，OSTD的代码库规模较小。其核心是`ostd` crate，目前包含约一万"
+"行代码——这一数字甚至比许多微内核的代码量还要少。随着OSTD的发展，其代码库会不"
+"断扩展，但与构建在它之上的操作系统服务相比，扩展速度会相对较慢。"
 
 #: src/ostd/index.md:68
 msgid ""
@@ -136,6 +154,8 @@ msgid ""
 "been identified within Rust or the framekernel architecture that could "
 "hinder kernel performance."
 msgstr ""
+"OSTD 的高效性可通过其 API 性能指标及 Asterinas 内核系统调用的表现来衡量。目前"
+"尚未发现 Rust 语言或框架内核架构中存在任何可能限制内核性能的内在约束。"
 
 #: src/ostd/index.md:75
 msgid ""
@@ -146,3 +166,7 @@ msgid ""
 "sound in the soundness analysis and rely on the many eyes of the community "
 "to catch any potential flaws in the implementation."
 msgstr ""
+"与前三项要求不同，可靠性难以直接量化或证明。虽然形式化验证是黄金标准，但其需"
+"要大量资源与时间投入，并非当前的首要任务。\n"
+"作为一种更务实的方法，我们将在可靠性分析中解释高层设计为何合理，并依靠社区众"
+"多参与者的共同审视来发现实现中可能存在的缺陷。"

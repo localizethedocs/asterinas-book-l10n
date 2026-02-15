@@ -21,7 +21,7 @@ msgstr "介紹"
 
 #: src/SUMMARY.md:5
 msgid "Asterinas NixOS"
-msgstr ""
+msgstr "Asterinas NixOS"
 
 #: src/SUMMARY.md:7 src/SUMMARY.md:15
 msgid "Getting Started"
@@ -53,7 +53,7 @@ msgstr "進階建置與測試說明"
 
 #: src/SUMMARY.md:17 src/SUMMARY.md:50
 msgid "Intel TDX"
-msgstr ""
+msgstr "Intel TDX"
 
 #: src/SUMMARY.md:18
 msgid "The Framekernel Architecture"
@@ -81,7 +81,7 @@ msgstr "記憶體管理"
 
 #: src/SUMMARY.md:24
 msgid "File & directory operations"
-msgstr ""
+msgstr "檔案與目錄操作"
 
 #: src/SUMMARY.md:25
 msgid "File systems & mount control"
@@ -121,7 +121,7 @@ msgstr "路線圖"
 
 #: src/SUMMARY.md:35
 msgid "Asterinas OSTD"
-msgstr ""
+msgstr "Asterinas OSTD"
 
 #: src/SUMMARY.md:37
 msgid "An Overview of OSTD"
@@ -141,7 +141,7 @@ msgstr ""
 
 #: src/SUMMARY.md:42
 msgid "Asterinas OSDK"
-msgstr ""
+msgstr "Asterinas OSDK"
 
 #: src/SUMMARY.md:44
 msgid "OSDK User Guide"

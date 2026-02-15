@@ -25,14 +25,17 @@ msgid ""
 "daemonless container engine that provides a Docker-compatible command-line "
 "interface, making it easy for users familiar with Docker to transition."
 msgstr ""
+"[Podman](https://docs.podman.io/en/stable/Introduction.html) 是一款現代化的無"
+"守護進程容器引擎，提供與 Docker 相容的命令行介面，讓熟悉 Docker 的使用者能輕"
+"鬆過渡。"
 
 #: src/distro/popular-applications/containerization.md:9
 msgid "Installation"
-msgstr ""
+msgstr "安裝"
 
 #: src/distro/popular-applications/containerization.md:11
 msgid "To install Podman, add the following line to `configuration.nix`:"
-msgstr ""
+msgstr "若要安裝 Podman，請將以下內容增添到 `configuration.nix`："
 
 #: src/distro/popular-applications/containerization.md:17
 msgid "Verified Usage"
@@ -40,7 +43,7 @@ msgstr ""
 
 #: src/distro/popular-applications/containerization.md:19
 msgid "`podman run`"
-msgstr ""
+msgstr "`podman run`"
 
 #: src/distro/popular-applications/containerization.md:21
 msgid "`podman run` runs a command in a new container."
@@ -48,23 +51,23 @@ msgstr "`podman run` 在新的容器中執行命令。"
 
 #: src/distro/popular-applications/containerization.md:24
 msgid "# Start a container, execute a command, and then exit\n"
-msgstr ""
+msgstr "# 啟動容器，執行命令，然後退出\n"
 
 #: src/distro/popular-applications/containerization.md:26
 msgid "# Start a container and attach to an interactive shell\n"
-msgstr ""
+msgstr "# 啟動容器並附加到互動式外殼\n"
 
 #: src/distro/popular-applications/containerization.md:31
 msgid "`podman image`"
-msgstr ""
+msgstr "`podman image`"
 
 #: src/distro/popular-applications/containerization.md:33
 msgid "`podman image` manages local images."
-msgstr ""
+msgstr "`podman image` 會管理本機映像。"
 
 #: src/distro/popular-applications/containerization.md:36
 msgid "# List downloaded images\n"
-msgstr ""
+msgstr "# 列出已下載的映像檔\n"
 
 #: src/distro/popular-applications/containerization.md:40
 msgid "`podman ps`"
@@ -88,4 +91,4 @@ msgstr "`podman rm` 移除一個或多個容器。"
 
 #: src/distro/popular-applications/containerization.md:54
 msgid "# Remove a container named foo\n"
-msgstr ""
+msgstr "# 移除名為 foo 的容器\n"

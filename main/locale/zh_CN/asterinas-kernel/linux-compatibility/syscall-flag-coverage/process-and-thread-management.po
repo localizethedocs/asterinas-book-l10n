@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:1
 msgid "Process & Thread Management"
-msgstr ""
+msgstr "进程和线程管理"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:10
 msgid "`sched_getattr` and `sched_setattr`"
@@ -25,27 +25,27 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:158
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:173
 msgid "Supported functionality in SCML:"
-msgstr ""
+msgstr "SCML支持的功能："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:15
 msgid "// Get the scheduling policy of a \"normal\" thread\n"
-msgstr ""
+msgstr "// 获取“normal”线程的调度策略\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:24
 msgid "// Set the scheduling policy of a \"normal\" thread\n"
-msgstr ""
+msgstr "// 设置“normal”线程的调度策略\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:35
 msgid "// Get the scheduling policy of a real-time thread\n"
-msgstr ""
+msgstr "// 获取实时线程的调度策略\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:45
 msgid "// Set the scheduling policy of a real-time thread\n"
-msgstr ""
+msgstr "// 设置实时线程的调度策略\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:58
 msgid "Unsupported scheduling policies:"
-msgstr ""
+msgstr "不支持的调度策略："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:59
 msgid "`SCHED_DEADLINE`"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:61
 msgid "Unsupported scheduling flags:"
-msgstr ""
+msgstr "不支持的调度标志："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:62
 msgid "`SCHED_FLAG_RESET_ON_FORK`"
@@ -83,12 +83,12 @@ msgstr ""
 msgid ""
 "// Wait until a specified child process undergoes a state change "
 "(termination, stopping and resumption)\n"
-msgstr ""
+msgstr "// 等待指定的子进程发生状态变化(终止、停止和恢复)\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:81
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:185
 msgid "Ignored options:"
-msgstr ""
+msgstr "已忽略的选项："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:82
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:186
@@ -112,6 +112,8 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/wait4.2.html)."
 msgstr ""
+"更多信息请参阅[man page](https://man7.org/linux/man-pages/man2/wait4.2."
+"html)。"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:90
 msgid "`clone` and `clone3`"
@@ -178,7 +180,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:135
 msgid "// Create a thread or process\n"
-msgstr ""
+msgstr "// 创建线程或进程\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:142
 msgid ""
@@ -191,6 +193,8 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/clone.2.html)."
 msgstr ""
+"更多信息请参阅[man page](https://man7.org/linux/man-pages/man2/clone.2."
+"html)。"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:156
 msgid "`sched_setscheduler`"
@@ -198,11 +202,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:161
 msgid "// Set scheduling policy\n"
-msgstr ""
+msgstr "// 设置调度策略\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:165
 msgid "Unsupported policies or flags:"
-msgstr ""
+msgstr "不支持的策略或标志："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:166
 msgid "`SCHED_RESET_ON_FORK`"
@@ -213,6 +217,8 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/sched_setscheduler.2.html)."
 msgstr ""
+"更多信息请参阅[man page](https://man7.org/linux/man-pages/man2/"
+"sched_setscheduler.2.html)。"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:171
 msgid "`waitid`"
@@ -220,10 +226,12 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:176
 msgid "// Wait for a child process to change state\n"
-msgstr ""
+msgstr "// 等待子进程改变状态\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:188
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/waitid.2.html)."
 msgstr ""
+"更多信息请参阅[man page](https://man7.org/linux/man-pages/man2/waitid.2."
+"html)。"

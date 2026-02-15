@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/index.md:1
 msgid "The Asterinas Book"
-msgstr "The Asterinas Book"
+msgstr "Asterinas 手册"
 
 #: src/index.md:7
 msgid ""
@@ -25,11 +25,11 @@ msgstr ""
 
 #: src/index.md:11
 msgid "Book Structure"
-msgstr "本书结构"
+msgstr "手册结构"
 
 #: src/index.md:13
 msgid "This book is divided into six distinct parts:"
-msgstr "本书分为六个独立部分："
+msgstr "手册分为六个独立部分："
 
 #: src/index.md:15
 msgid "[Part 1: Asterinas NixOS](distro/)"
@@ -47,7 +47,7 @@ msgstr ""
 
 #: src/index.md:23
 msgid "[Part 2: Asterinas Kernel](kernel/)"
-msgstr "[Part 2: Asterinas Kernel](kernel/)"
+msgstr "[Part 2: Asterinas 内核](kernel/)"
 
 #: src/index.md:25
 msgid ""
@@ -72,7 +72,7 @@ msgid ""
 "very OSTD."
 msgstr ""
 "Asterinas OSTD 为操作系统开发奠定了一个简约、强大且稳固的基础。它类似于 Rust "
-"的 `std`  crate，但专为*安全*的 Rust 操作系统开发需求而设计。Asterinas 内核正"
+"的`std` crate，但专为**安全**的 Rust 操作系统开发需求而设计。Asterinas 内核正"
 "是构建于这一 OSTD 之上。"
 
 #: src/index.md:39
@@ -128,7 +128,7 @@ msgid ""
 "LICENSE-MPL). Select components are under more permissive licenses, detailed "
 "[here](https://github.com/asterinas/asterinas/blob/main/.licenserc.yaml)."
 msgstr ""
-"Asterinas 的源代码和文档主要使用 [Mozilla Public License (MPL), Version 2.0]"
+"Asterinas 的源代码和文档主要使用 [Mozilla 公共许可证(MPL), Version 2.0]"
 "(https://github.com/asterinas/asterinas/blob/main/LICENSE-MPL)。部分组件采用"
 "更宽松的许可证，详情请见 [此处](https://github.com/asterinas/asterinas/blob/"
 "main/.licenserc.yaml)。"

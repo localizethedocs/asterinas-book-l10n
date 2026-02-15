@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:1
 msgid "Linux Compatibility"
-msgstr ""
+msgstr "Linux 兼容性"
 
 #: src/kernel/linux-compatibility/index.md:3
 msgid "\"We don't break user space.\""
@@ -31,16 +31,21 @@ msgid ""
 "is important to note that Asterinas does not, nor will it in the future, "
 "support the loading of Linux kernel modules."
 msgstr ""
+"Asterinas 致力于保持与 Linux ABI 的兼容性，确保为 Linux 设计的应用程序和管理"
+"工具能够在 Asterinas 中无缝运行。虽然我们优先考虑兼容性，但需要注意的是，"
+"Asterinas 目前不支持也不会在未来支持 Linux 内核模块的加载。"
 
 #: src/kernel/linux-compatibility/index.md:15
 msgid "System Calls"
-msgstr ""
+msgstr "系统调用"
 
 #: src/kernel/linux-compatibility/index.md:17
 msgid ""
 "At the time of writing, Asterinas supports over 230 Linux system calls for "
 "the x86-64 architecture, which are summarized in the table below."
 msgstr ""
+"在撰写本文时，Asterinas 支持 x86-64 架构的 230 多种 Linux 系统调用，这些系统"
+"调用总结如下表所示。"
 
 #: src/kernel/linux-compatibility/index.md:21
 msgid "Numbers"
@@ -3597,33 +3602,33 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:360
 msgid "💯 = all flags/commands/modes are supported"
-msgstr ""
+msgstr "💯 = 所有 flags/命令/模式均受支持"
 
 #: src/kernel/linux-compatibility/index.md:361
 msgid "⚠️ = syscall works, but some flags/modes are not implemented"
-msgstr ""
+msgstr "⚠️ = 系统调用有效，但某些 flags/模式尚未实现"
 
 #: src/kernel/linux-compatibility/index.md:362
 msgid "❓ = implementation exists, but we have not audited its coverage yet"
-msgstr ""
+msgstr "❓ = 已实现，但我们尚未审核其覆盖范围"
 
 #: src/kernel/linux-compatibility/index.md:363
 msgid "N/A = not applicable (e.g., syscall not supported)"
-msgstr ""
+msgstr "N/A = 不适用（例如，不支持系统调用）"
 
 #: src/kernel/linux-compatibility/index.md:365
 msgid ""
 "Most of these system calls (or their variants) are also supported for the "
 "RISC-V and LoongArch architectures."
-msgstr ""
+msgstr "这些系统调用中的大多数（或其变体）也支持 RISC-V 和龙芯架构。"
 
 #: src/kernel/linux-compatibility/index.md:368
 msgid "File Systems"
-msgstr ""
+msgstr "文件系统"
 
 #: src/kernel/linux-compatibility/index.md:370
 msgid "Here is the list of supported file systems:"
-msgstr ""
+msgstr "以下是支持的文件系统列表："
 
 #: src/kernel/linux-compatibility/index.md:371
 msgid "Devfs"
@@ -3651,15 +3656,15 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:379
 msgid "Here is the list of supported socket types:"
-msgstr ""
+msgstr "以下是支持的 socket 类型列表："
 
 #: src/kernel/linux-compatibility/index.md:380
 msgid "TCP sockets over IPv4"
-msgstr ""
+msgstr "基于 IPv4 的 TCP sockets"
 
 #: src/kernel/linux-compatibility/index.md:381
 msgid "UDP sockets over IPv4"
-msgstr ""
+msgstr "基于 IPv4 的 UDP sockets"
 
 #: src/kernel/linux-compatibility/index.md:382
 msgid "Unix sockets"
@@ -3671,7 +3676,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:386
 msgid "Here is the list of supported symbols in vDSO:"
-msgstr ""
+msgstr "以下是 vDSO 中支持的符号列表："
 
 #: src/kernel/linux-compatibility/index.md:387
 msgid "`__vdso_clock_gettime`"
@@ -3687,11 +3692,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:391
 msgid "Boot Protocols"
-msgstr ""
+msgstr "引导协议"
 
 #: src/kernel/linux-compatibility/index.md:393
 msgid "Here is the list of supported boot protocols:"
-msgstr ""
+msgstr "以下是支持的引导协议列表："
 
 #: src/kernel/linux-compatibility/index.md:394
 msgid ""

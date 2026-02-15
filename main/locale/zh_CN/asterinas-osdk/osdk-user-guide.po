@@ -13,11 +13,11 @@ msgstr ""
 
 #: src/osdk/guide/index.md:1
 msgid "OSDK User Guide"
-msgstr ""
+msgstr "OSDK 用户指南"
 
 #: src/osdk/guide/index.md:3
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: src/osdk/guide/index.md:5
 msgid ""
@@ -38,11 +38,11 @@ msgstr ""
 
 #: src/osdk/guide/index.md:18
 msgid "Install OSDK"
-msgstr ""
+msgstr "安装 OSDK"
 
 #: src/osdk/guide/index.md:20
 msgid "Requirements"
-msgstr ""
+msgstr "系统需求"
 
 #: src/osdk/guide/index.md:21
 msgid ""

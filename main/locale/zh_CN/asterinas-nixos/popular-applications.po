@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:1
 msgid "Popular Applications"
-msgstr ""
+msgstr "热门应用程序"
 
 #: src/distro/popular-applications/index.md:3
 msgid ""
@@ -23,3 +23,7 @@ msgid ""
 "its support status. Instead, we group popular applications into categories "
 "and document the ones we have verified to work."
 msgstr ""
+"[Nix 软件包集合](https://search.nixos.org/packages) 包含超过 12 万个软件包。"
+"其中许多可能已经可以在 Asterinas NixOS 上开箱即用，但测试每个软件包并记录其支"
+"持状态是不切实际的。相反，我们将流行的应用程序按类别分组，并记录我们已验证可"
+"正常运行的软件包。"

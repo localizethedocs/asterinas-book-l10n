@@ -21,7 +21,7 @@ msgstr "框內核：是什麼與為什麼"
 
 #: src/kernel/the-framekernel-architecture.md:5
 msgid "The security of a microkernel, the speed of a monolithic kernel."
-msgstr ""
+msgstr "微內核的安全性，單內核的速度。"
 
 #: src/kernel/the-framekernel-architecture.md:7
 msgid ""

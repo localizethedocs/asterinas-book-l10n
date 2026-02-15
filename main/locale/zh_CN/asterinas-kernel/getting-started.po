@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/index.md:1
 msgid "Asterinas Kernel"
-msgstr "Asterinas Kernel"
+msgstr "Asterinas 内核"
 
 #: src/kernel/index.md:3
 msgid "Overview"
@@ -25,6 +25,9 @@ msgid ""
 "provides an _Linux-compatible_ ABI. It can serve as a seamless replacement "
 "for Linux while enhancing _memory safety_ and _developer friendliness_."
 msgstr ""
+"Asterinas 是一个**安全**、**快速**、**通用**的操作系统内核，提供**兼容 "
+"Linux** 的 ABI。它能够无缝替代 Linux，同时增强**内存安全性**与**开发者友好性"
+"**。"
 
 #: src/kernel/index.md:10
 msgid ""
@@ -34,6 +37,10 @@ msgid ""
 "known as [the framekernel architecture](the-framekernel-architecture.md), "
 "establishes Asterinas as a more secure and dependable kernel option."
 msgstr ""
+"Asterinas 通过采用 Rust 作为唯一编程语言，并将 **unsafe Rust** 的使用限制在明"
+"确界定且最小化的可信计算基（TCB）中，优先保障内存安全。这一被称为"
+"[Framekernel 架构](the-framekernel-architecture.md)的创新方法，使 Asterinas "
+"成为更安全可靠的内核选择。"
 
 #: src/kernel/index.md:18
 msgid ""
@@ -44,6 +51,9 @@ msgid ""
 "open source or keeping them proprietary, thanks to the flexibility offered "
 "by [MPL](../)."
 msgstr ""
+"Asterinas 在开发者友好性方面超越了 Linux。它使内核开发者能够：(1) 使用更高生"
+"产力的 Rust 编程语言，(2) 借助名为 [OSDK]() 的专用工具包优化工作流程，以及 "
+"(3) 得益于 [MPL](../) 提供的灵活性，自由选择将内核模块开源发布或保持专有。"
 
 #: src/kernel/index.md:26
 msgid ""
@@ -52,6 +62,9 @@ msgid ""
 "supports x86-64 VMs. However, [our aim for 2024](roadmap.md) is to make "
 "Asterinas production-ready on x86-64 for both bare-metal and VM environments."
 msgstr ""
+"虽然迈向生产级操作系统内核的旅程充满挑战，但我们正坚定地向目标推进。目前，"
+"Asterinas 仅支持 x86-64 虚拟机。然而，[我们在 2024 年的目标](roadmap.md)是让 "
+"Asterinas 在 x86-64 架构上，无论是裸机还是虚拟机环境，都能达到生产就绪状态。"
 
 #: src/kernel/index.md:33
 msgid "Getting Started"

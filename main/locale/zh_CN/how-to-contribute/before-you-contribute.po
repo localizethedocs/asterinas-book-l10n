@@ -13,9 +13,9 @@ msgstr ""
 
 #: src/to-contribute/index.md:1
 msgid "Before You Contribute"
-msgstr ""
+msgstr "贡献前须知"
 
 #: src/to-contribute/index.md:3
 msgid ""
 "This part of the Book provides guidelines for contributing to Asterinas."
-msgstr ""
+msgstr "本书的这一部分提供了为 Asterinas 做出贡献的指导方针。"

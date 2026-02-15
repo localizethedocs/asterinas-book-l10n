@@ -21,6 +21,8 @@ msgid ""
 "architectures and a variety of use cases. Currently, it only supports x86-64 "
 "VMs. Our roadmap includes the following plans:"
 msgstr ""
+"Asterinas 是一款通用型作業系統內核，旨在支援多種 CPU 架構與多樣化的應用場景。"
+"目前，它僅支援 x86-64 虛擬機器。我們的路線圖包含以下計劃："
 
 #: src/kernel/roadmap.md:8
 msgid ""

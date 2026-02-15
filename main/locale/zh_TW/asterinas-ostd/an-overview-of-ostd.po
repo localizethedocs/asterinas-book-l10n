@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/ostd/index.md:1
 msgid "Asterinas OSTD"
-msgstr ""
+msgstr "Asterinas OSTD"
 
 #: src/ostd/index.md:3
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 #: src/ostd/index.md:29
 msgid ""
 "Memory management (e.g., allocating and accessing physical memory pages)"
-msgstr ""
+msgstr "記憶體分配（例如：分配與存取物理記憶體分頁）"
 
 #: src/ostd/index.md:30
 msgid "Task management (e.g., context switching between kernel tasks)"
@@ -67,15 +67,15 @@ msgstr ""
 
 #: src/ostd/index.md:31
 msgid "User space (e.g., manipulating and entering the user space)"
-msgstr ""
+msgstr "使用者空間（例如：操縱與進入使用者空間）"
 
 #: src/ostd/index.md:32
 msgid "Interrupt handling (e.g., registering interrupt handlers)"
-msgstr ""
+msgstr "中斷處理（例如：註冊中斷處理器）"
 
 #: src/ostd/index.md:33
 msgid "Timer management (e.g., registering timer handlers)"
-msgstr ""
+msgstr "計時器管理（例如：註冊計時器處理器）"
 
 #: src/ostd/index.md:34
 msgid "Driver support (e.g., performing DMA and MMIO)"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: src/ostd/index.md:35
 msgid "Boot support (e.g., retrieving information from the bootloader)"
-msgstr ""
+msgstr "開機支援（例如：從開機載入程式獲取資訊）"
 
 #: src/ostd/index.md:36
 msgid "Synchronization (e.g., locking and sleeping)"

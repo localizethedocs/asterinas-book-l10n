@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/run.md:1
 msgid "cargo osdk run"
-msgstr ""
+msgstr "cargo osdk run"
 
 #: src/osdk/reference/commands/run.md:3
 msgid "Overview"

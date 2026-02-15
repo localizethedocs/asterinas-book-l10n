@@ -31,7 +31,7 @@ msgstr "引數"
 
 #: src/osdk/reference/commands/new.md:16
 msgid "`<name>`: the name of the crate."
-msgstr ""
+msgstr "`<name>`：軟體箱的名稱。"
 
 #: src/osdk/reference/commands/new.md:18
 msgid "Options"
@@ -53,8 +53,8 @@ msgstr "範例"
 
 #: src/osdk/reference/commands/new.md:30
 msgid "Create a new kernel named `myos`:"
-msgstr ""
+msgstr "建立名為 `myos` 的新內核："
 
 #: src/osdk/reference/commands/new.md:36
 msgid "Create a new library named `mylib`:"
-msgstr ""
+msgstr "建立名為 `mylib` 的新程式庫："

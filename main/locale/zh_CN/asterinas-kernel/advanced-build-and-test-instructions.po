@@ -17,7 +17,7 @@ msgstr "高级构建和测试说明"
 
 #: src/kernel/advanced-instructions.md:3
 msgid "User-Mode Unit Tests"
-msgstr "用户模式(User-Mode)单元测试"
+msgstr "用户模式单元测试"
 
 #: src/kernel/advanced-instructions.md:5
 msgid ""
@@ -38,7 +38,7 @@ msgstr "要测试单个 crate，请进入 crate 的目录并调用 cargo test �
 
 #: src/kernel/advanced-instructions.md:17
 msgid "Kernel-Mode Unit Tests"
-msgstr "内核模式(Kernel-Mode)单元测试"
+msgstr "内核模式单元测试"
 
 #: src/kernel/advanced-instructions.md:19
 msgid ""
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/kernel/advanced-instructions.md:43
 msgid "Syscall Test"
-msgstr "系统调用 (Syscall) 测试"
+msgstr "系统调用测试"
 
 #: src/kernel/advanced-instructions.md:45
 msgid ""
@@ -96,7 +96,7 @@ msgstr "然后，在交互式 shell 中运行以下脚本来启动系统调用�
 
 #: src/kernel/advanced-instructions.md:63
 msgid "Debug"
-msgstr "调试 (Debug)"
+msgstr "调试"
 
 #: src/kernel/advanced-instructions.md:65
 msgid "Using GDB to Debug"
@@ -109,8 +109,8 @@ msgid ""
 "an Asterinas instance and run the GDB interactive shell in another terminal."
 msgstr ""
 "要通过 [QEMU GDB 支持](https://qemu-project.gitlab.io/qemu/system/gdb.html) "
-"调试 Asterinas，你可以使用调试配置 (debug profile) 来编译 Asterinas，启动一"
-"个 Asterinas 实例，并在另一个终端中运行 GDB 交互式 shell。"
+"调试 Asterinas，你可以使用 debug profile 来编译 Asterinas，启动一个 "
+"Asterinas 实例，并在另一个终端中运行 GDB 交互式 shell。"
 
 #: src/kernel/advanced-instructions.md:71
 msgid ""
@@ -149,10 +149,10 @@ msgid ""
 msgstr ""
 "VS Code: 需要[CodeLLDB](https://marketplace.visualstudio.com/items?"
 "itemName=vadimcn.vscode-lldb)扩展。通过 OSDK 在终端执行`make gdb_server`启动"
-"调试服务器后，系统会在`.vscode`目录下生成临时`launch.json`文件，原有调试配置"
-"(launch configs)将在服务器关闭后自动恢复。按`F5`（运行并调试）即可通过VS Code"
-"启动调试会话。首次中断时点击`继续`（或按`F5`）可恢复被暂停的服务器实例，程序"
-"将持续运行直至遇到您设置的第一个断点。"
+"调试服务器后，系统会在`.vscode`目录下生成临时`launch.json`文件，原有 launch "
+"configs 将在服务器关闭后自动恢复。按`F5`（运行并调试）即可通过VS Code启动调试"
+"会话。首次中断时点击`继续`（或按`F5`）可恢复被暂停的服务器实例，程序将持续运"
+"行直至遇到您设置的第一个断点。"
 
 #: src/kernel/advanced-instructions.md:97
 msgid ""

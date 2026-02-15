@@ -17,11 +17,11 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:3
 msgid "Status: Implemented"
-msgstr ""
+msgstr "狀態：已實現"
 
 #: src/rfcs/0001-rfc-process.md:4
 msgid "Pull request: https://github.com/asterinas/asterinas/pull/2365/"
-msgstr ""
+msgstr "拉取請求：https://github.com/asterinas/asterinas/pull/2365/"
 
 #: src/rfcs/0001-rfc-process.md:5
 msgid "Date submitted: 2025-08-24"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:8
 msgid "Summary"
-msgstr ""
+msgstr "摘要"
 
 #: src/rfcs/0001-rfc-process.md:10
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:16
 msgid "Adopting a formal RFC process will:"
-msgstr ""
+msgstr "採用正式的 RFC 過程將會："
 
 #: src/rfcs/0001-rfc-process.md:17
 msgid ""
@@ -77,6 +77,8 @@ msgid ""
 "community to come together, discuss differing viewpoints, and arrive at a "
 "consensus on important issues."
 msgstr ""
+"**促進共識**：此過程提供了一個清晰的框架，讓社群成員能匯聚一堂、討論不同觀"
+"點，並針對重要議題達成共識。"
 
 #: src/rfcs/0001-rfc-process.md:19
 msgid ""
@@ -191,7 +193,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:51
 msgid "Talking to key contributors, code owners, or maintainers directly."
-msgstr ""
+msgstr "直接與重要貢獻者、程式碼擁有者或維護者溝通。"
 
 #: src/rfcs/0001-rfc-process.md:53
 msgid ""
@@ -211,7 +213,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:58
 msgid "Fork the `asterinas/asterinas` repository."
-msgstr ""
+msgstr "分叉 `asterinas/asterinas` 儲存庫。"
 
 #: src/rfcs/0001-rfc-process.md:59
 msgid ""
@@ -236,6 +238,8 @@ msgid ""
 "Submit your RFC draft as a pull request to the Asterinas repository. Once "
 "the PR is opened, the formal review process begins:"
 msgstr ""
+"將您的 RFC 草案以拉取請求（PR）的形式提交至 Asterinas 儲存庫。一旦 PR 開啟，"
+"正式的審核過程即將開始："
 
 #: src/rfcs/0001-rfc-process.md:65
 msgid ""
@@ -265,6 +269,8 @@ msgid ""
 "When the discussion has converged and the major points of feedback have been "
 "addressed, the author can request that the facilitator initiate a final vote."
 msgstr ""
+"當討論趨於一致且主要的反饋意見皆已處理完畢時，作者可以請求協調人發起最終投"
+"票。"
 
 #: src/rfcs/0001-rfc-process.md:73
 msgid ""
@@ -272,10 +278,13 @@ msgid ""
 "projects. See the [`CODEOWNERS`](https://github.com/asterinas/asterinas/blob/"
 "main/CODEOWNERS) file for details."
 msgstr ""
+"投票開放給所有專案維護者以及頂層子專案的程式碼擁有者。詳情請參見 "
+"[`CODEOWNERS`](https://github.com/asterinas/asterinas/blob/main/CODEOWNERS) "
+"檔案。"
 
 #: src/rfcs/0001-rfc-process.md:74
 msgid "Voters can express either \"approval\" or \"rejection.\""
-msgstr ""
+msgstr "投票者可以表達「贊成」或「反對」。"
 
 #: src/rfcs/0001-rfc-process.md:75
 msgid ""
@@ -343,7 +352,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:94
 msgid "Drawbacks"
-msgstr ""
+msgstr "缺點"
 
 #: src/rfcs/0001-rfc-process.md:96
 msgid ""

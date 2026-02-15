@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:1
 msgid "System Call Matching Language (SCML)"
-msgstr ""
+msgstr "系统调用匹配语言（SCML）"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:3
 msgid ""

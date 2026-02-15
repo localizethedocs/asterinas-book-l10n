@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/distro/popular-applications/desktop-environment.md:7
 msgid "Installation"
-msgstr ""
+msgstr "安裝"
 
 #: src/distro/popular-applications/desktop-environment.md:9
 msgid "Add the following lines to the `configuration.nix` file:"

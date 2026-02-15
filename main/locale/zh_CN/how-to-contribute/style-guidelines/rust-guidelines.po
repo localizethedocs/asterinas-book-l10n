@@ -13,17 +13,17 @@ msgstr ""
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:1
 msgid "Rust Guidelines"
-msgstr ""
+msgstr "Rust 指南"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:3
 msgid "API Documentation Guidelines"
-msgstr ""
+msgstr "API 文档指南"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:5
 msgid ""
 "API documentation describes the meanings and usage of APIs, and will be "
 "rendered into web pages by rustdoc."
-msgstr ""
+msgstr "API 文档描述了 API 的含义和用法，并将由 rustdoc 渲染成网页。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:8
 msgid ""
@@ -31,18 +31,24 @@ msgid ""
 "modules, structs, traits, functions, macros, and more. The use of the "
 "`#[warn(missing_docs)]` lint enforces this rule."
 msgstr ""
+"所有公共 API，包括 crate、模块、结构体、trait、函数、宏等等，都必须添加文"
+"档。 `#[warn(missing_docs)]` lint 会强制执行此规则。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:12
 msgid ""
 "Asterinas adheres to the API style guidelines of the Rust community. The "
 "recommended API documentation style are specified by two official resources:"
 msgstr ""
+"Asterinas 遵循 Rust 社区的 API 风格指南。推荐的 API 文档风格由两个官方资源指"
+"定："
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:14
 msgid ""
 "The rustdoc book: [How to write documentation](https://doc.rust-lang.org/"
 "rustdoc/how-to-write-documentation.html);"
 msgstr ""
+"The rustdoc book: [How to write documentation](https://doc.rust-lang.org/"
+"rustdoc/how-to-write-documentation.html)；"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:15
 msgid ""
@@ -50,10 +56,13 @@ msgid ""
 "io/rfcs/1574-more-api-documentation-conventions.html#appendix-a-full-"
 "conventions-text)."
 msgstr ""
+"The Rust RFC book: [API Documentation Conventions](https://rust-lang.github."
+"io/rfcs/1574-more-api-documentation-conventions.html#appendix-a-full-"
+"conventions-text)。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:17
 msgid "Lint Guidelines"
-msgstr ""
+msgstr "Lint 指南"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:19
 msgid ""
@@ -62,6 +71,9 @@ msgid ""
 "readers aware of the exact places where the lint is generated, and to make "
 "it easier for subsequent committers to maintain such lint."
 msgstr ""
+"代码检查工具 Lints 帮助我们提高代码质量并发现更多漏洞。在抑制代码检查时，应尽"
+"可能缩小影响范围，以便让读者清楚了解代码检查产生的具体位置，也便于后续提交者"
+"维护此类代码检查。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:24
 msgid ""
@@ -69,6 +81,8 @@ msgid ""
 "trait as dead code is unnecessary and can easily be misinterpreted as the "
 "trait itself being dead code. Instead, the following pattern is preferred:"
 msgstr ""
+"例如，如果某个 trait 中的某些方法是死代码，则没有必要将整个 trait 标记为死代"
+"码，而且很容易被误解为 trait 本身就是死代码。相反，建议采用以下模式："
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:40
 msgid ""
@@ -77,10 +91,13 @@ msgid ""
 "example, in the following code, we add `#[expect(non_camel_case_types)]` for "
 "the type `SomeEnum`, instead of for each variant of the type:"
 msgstr ""
+"有一个例外情况：如果很明显每个成员都会触发 lint 检查，那么在类型层面上期望进"
+"行 lint 检查是合理的。例如，在下面的代码中，我们为类型 `SomeEnum` 添加了 "
+"`#[expect(non_camel_case_types)]`，而不是为该类型的每个变体添加。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:54
 msgid "When to `#[expect(dead_code)]`"
-msgstr ""
+msgstr "何时需要`#[expect(dead_code)]`"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:56
 msgid ""
@@ -88,34 +105,39 @@ msgid ""
 "unnecessary maintenance overhead, and _(ii)_ its correctness can only be "
 "guaranteed by manual and error-pruned review of the code."
 msgstr ""
+"一般来说，应该避免无用代码，因为*（i）*它会引入不必要的维护开销，*（ii）*其正"
+"确性只能通过人工且经过错误检查的代码审查来保证。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:61
 msgid ""
 "In the case where expecting dead code is necessary, it should fulfill the "
 "following requirements:"
-msgstr ""
+msgstr "如果需要预期死代码，则应满足以下要求："
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:63
 msgid ""
 "We have a _concrete case_ that will be implemented in the future and will "
 "turn the dead code into used code."
-msgstr ""
+msgstr "我们有一个*具体的案例*，将在未来实施，并将无用代码转化为可用代码。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:65
 msgid ""
 "The semantics of the dead code are _clear_ enough (perhaps with the help of "
 "some comments), _even if the use case has not been added_."
 msgstr ""
+"死代码的语义已经足够*清晰*了。（或许可以借助一些注释），*即使尚未添加用例*。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:68
 msgid ""
 "The dead code is _simple_ enough that both the committer and the reviewer "
 "can be confident that the code must be correct _without even testing it_."
 msgstr ""
+"这段死代码非常*简单*，提交者和审查者都可以确信代码一定是正确的 ，*甚至无需进"
+"行测试*。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:71
 msgid "It serves as a counterpart to existing non-dead code."
-msgstr ""
+msgstr "它与现有的非死代码相对应。"
 
 #: src/to-contribute/style-guidelines/rust-guidelines.md:73
 msgid ""
@@ -124,3 +146,5 @@ msgid ""
 "is a case where all of the above requirements are met, so adding them as "
 "dead code is perfectly acceptable."
 msgstr ""
+"例如，如果相应的功能（*例如*系统调用）仅部分实现，则添加未使用的 ABI 常量是可"
+"以接受的。这种情况满足上述所有要求，因此将其作为死代码添加是完全可以接受的。"

@@ -243,7 +243,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:151
 msgid "The path to the `grub-mkrescue` executable."
-msgstr ""
+msgstr "`grub-mkrescue` 執行檔的路徑。"
 
 #: src/osdk/reference/manifest.md:153 src/osdk/reference/manifest.md:171
 msgid ""
@@ -272,7 +272,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:169
 msgid "The path to the QEMU executable."
-msgstr ""
+msgstr "QEMU 執行檔的路徑。"
 
 #: src/osdk/reference/manifest.md:175
 msgid ""
@@ -312,7 +312,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:200
 msgid "Special settings for testing."
-msgstr ""
+msgstr "用於測試的特殊設定。"
 
 #: src/osdk/reference/manifest.md:202
 msgid "Similar to `20`, but only take effect when running `cargo osdk test`."
@@ -320,7 +320,7 @@ msgstr ""
 
 #: src/osdk/reference/manifest.md:204
 msgid "The definition of customized scheme."
-msgstr ""
+msgstr "訂製方案的定義。"
 
 #: src/osdk/reference/manifest.md:206
 msgid ""

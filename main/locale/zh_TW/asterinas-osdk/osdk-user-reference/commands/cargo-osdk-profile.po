@@ -63,7 +63,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/profile.md:27
 msgid "`--parse <PATH>`:"
-msgstr ""
+msgstr "`--parse <PATH>`："
 
 #: src/osdk/reference/commands/profile.md:29
 msgid "Parse a collected JSON profile file into other formats."

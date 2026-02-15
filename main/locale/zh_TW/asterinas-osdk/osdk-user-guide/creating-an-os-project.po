@@ -84,7 +84,7 @@ msgstr ""
 
 #: src/osdk/guide/create-project.md:72
 msgid "Library project"
-msgstr ""
+msgstr "程式庫專案"
 
 #: src/osdk/guide/create-project.md:74
 msgid ""
@@ -113,6 +113,11 @@ msgid ""
 "branch = \"main\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[dependencies.ostd]\n"
+"git = \"https://github.com/asterinas/asterinas\"\n"
+"branch = \"main\"\n"
+"```"
 
 #: src/osdk/guide/create-project.md:109
 msgid ""
@@ -127,10 +132,14 @@ msgid ""
 "exclude = [\"target/osdk/base\"]\n"
 "```"
 msgstr ""
+"```toml\n"
+"[workspace]\n"
+"exclude = [\"target/osdk/base\"]\n"
+"```"
 
 #: src/osdk/guide/create-project.md:116
 msgid "`OSDK.toml`"
-msgstr ""
+msgstr "`OSDK.toml`"
 
 #: src/osdk/guide/create-project.md:118
 msgid ""
@@ -143,7 +152,7 @@ msgstr ""
 
 #: src/osdk/guide/create-project.md:126
 msgid "The default manifest of a kernel project:"
-msgstr ""
+msgstr "內核專案的預設清單："
 
 #: src/osdk/guide/create-project.md:128
 msgid ""
@@ -173,10 +182,35 @@ msgid ""
 "\"\"\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"project_type = \"kernel\"\n"
+"\n"
+"[boot]\n"
+"method = \"grub-rescue-iso\"\n"
+"\n"
+"[qemu]\n"
+"args = \"\"\"\\\n"
+"    -machine q35,kernel-irqchip=split \\\n"
+"    -cpu Icelake-Server,+x2apic \\\n"
+"    --no-reboot \\\n"
+"    -m 8G \\\n"
+"    -smp 1 \\\n"
+"    -nographic \\\n"
+"    -serial chardev:mux \\\n"
+"    -monitor chardev:mux \\\n"
+"    -chardev stdio,id=mux,mux=on,signal=off \\\n"
+"    -display none \\\n"
+"    -device isa-debug-exit,iobase=0xf4,iosize=0x04 \\\n"
+"    -drive if=pflash,format=raw,unit=0,readonly=on,file=/root/ovmf/release/"
+"OVMF.fd \\\n"
+"    -drive if=pflash,format=raw,unit=1,file=/root/ovmf/release/OVMF_VARS.fd "
+"\\\n"
+"\"\"\"\n"
+"```"
 
 #: src/osdk/guide/create-project.md:152
 msgid "`rust-toolchain.toml`"
-msgstr ""
+msgstr "`rust-toolchain.toml`"
 
 #: src/osdk/guide/create-project.md:154
 msgid ""

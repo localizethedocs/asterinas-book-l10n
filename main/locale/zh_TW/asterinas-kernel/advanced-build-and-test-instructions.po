@@ -26,6 +26,9 @@ msgid ""
 "listed in the root `Makefile` and can be tested together through the "
 "following Make command."
 msgstr ""
+"Asterinas 由許多軟體箱組成，其中部分不需要 VM 環境，即可使用標準的 `cargo "
+"test` 進行測試。這些軟體箱已列在根目錄的 `Makefile` 中，並可透過以下 Make 命"
+"令進行統一測試。"
 
 #: src/kernel/advanced-instructions.md:15
 msgid ""
@@ -62,6 +65,8 @@ msgid ""
 "The following command builds and runs the test binaries in `test/initramfs/"
 "src/apps` directory on Asterinas."
 msgstr ""
+"以下命令會在 Asterinas 上建置並執行位於 `test/initramfs/src/apps` 目錄中的測"
+"試二進位檔。"
 
 #: src/kernel/advanced-instructions.md:43
 msgid "Syscall Test"

@@ -43,6 +43,11 @@ msgid ""
 "resolver = \"2\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[workspace]\n"
+"members = []\n"
+"resolver = \"2\"\n"
+"```"
 
 #: src/osdk/guide/work-in-workspace.md:26
 msgid "Creating a kernel project and a library project"
