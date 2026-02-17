@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-02-08 20:32:24 -0800",
-      "hash" : "5f8b019369c97bc8dc072ebfe3859ea1ff23450d",
-      "title" : "Replace `from_first_bytes` with `from_bytes` if possible"
+      "date" : "2026-02-14 09:55:52 -0800",
+      "hash" : "8b7b915b2b405de22fea15e728267caf36950518",
+      "title" : "Extend the doc of the `[ostd::main]` attribute macro"
     }
   },
   "type" : "branch",
