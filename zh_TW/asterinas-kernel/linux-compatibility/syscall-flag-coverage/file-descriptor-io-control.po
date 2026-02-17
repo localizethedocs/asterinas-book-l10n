@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:1
+msgid "File Descriptor and I/O Control"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:10
+msgid "`fcntl`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:12
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:59
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:78
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:97
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:126
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:146
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:172
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:198
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:241
+msgid "Supported functionality in SCML:"
+msgstr "SCML 支援的功能："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:17
+msgid "// Duplicate a file descriptor\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:20
+msgid ""
+"// Retrieve file descriptor flags (F_GETFD), file status flags (F_GETFL)\n"
+"// or SIGIO/SIGURG owner process (F_GETOWN)\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:24
+msgid "// Set file descriptor flags\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:27
+msgid "// Set file status flags\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:30
+msgid ""
+"// Manage record locks: test (F_GETLK), non-blocking set (F_SETLK), blocking "
+"set (F_SETLKW)\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:33
+msgid "// Assign SIGIO/SIGURG owner process\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:36
+msgid "// Add seals to the inode referred to\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:39
+msgid "// Get seals from the inode referred to\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:44
+msgid "Unsupported commands:"
+msgstr "未支援的命令："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:45
+msgid "`F_NOTIFY`"
+msgstr "`F_NOTIFY`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:46
+msgid "`F_OFD_SETLK`, `F_OFD_SETLKW` and `F_OFD_GETLK`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:47
+msgid "`F_GETOWN_EX` and `F_SETOWN_EX`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:48
+msgid "`F_GETSIG` and `F_SETSIG`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:49
+msgid "`F_SETLEASE` and `F_GETLEASE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:50
+msgid "`F_SETPIPE_SZ` and `F_GETPIPE_SZ`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:51
+msgid "`F_GET_RW_HINT` and `F_SET_RW_HINT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:52
+msgid "`F_GET_FILE_RW_HINT` and `F_SET_FILE_RW_HINT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:54
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/fcntl.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:57
+msgid "`pipe` and `pipe2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:62
+msgid "// Create pipe\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:64
+msgid "// Create pipe with enhanced behavior control\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:69
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:88
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:104
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:133
+msgid "Silently-ignored flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:70
+msgid "`O_DIRECT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:71
+msgid "`O_NONBLOCK`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:73
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/pipe.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:76
+msgid "`eventfd` and `eventfd2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:81
+msgid "// Create event notification descriptor\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:83
+msgid ""
+"// Create event notification descriptor with enhanced behavior control\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:89
+msgid "`EFD_NONBLOCK`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:90
+msgid "`EFD_SEMAPHORE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:92
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/eventfd.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:95
+msgid "`memfd_create`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:100
+msgid ""
+"// Create an anonymous file and return a file descriptor that refers to it\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:105
+msgid "`MFD_HUGETLB`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:107
+msgid "Unsupported flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:108
+msgid "`MFD_HUGE_64KB`"
+msgstr "`MFD_HUGE_64KB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:109
+msgid "`MFD_HUGE_512KB`"
+msgstr "`MFD_HUGE_512KB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:110
+msgid "`MFD_HUGE_1MB`"
+msgstr "`MFD_HUGE_1MB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:111
+msgid "`MFD_HUGE_2MB`"
+msgstr "`MFD_HUGE_2MB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:112
+msgid "`MFD_HUGE_8MB`"
+msgstr "`MFD_HUGE_8MB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:113
+msgid "`MFD_HUGE_16MB`"
+msgstr "`MFD_HUGE_16MB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:114
+msgid "`MFD_HUGE_32MB`"
+msgstr "`MFD_HUGE_32MB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:115
+msgid "`MFD_HUGE_256MB`"
+msgstr "`MFD_HUGE_256MB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:116
+msgid "`MFD_HUGE_512MB`"
+msgstr "`MFD_HUGE_512MB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:117
+msgid "`MFD_HUGE_1GB`"
+msgstr "`MFD_HUGE_1GB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:118
+msgid "`MFD_HUGE_2GB`"
+msgstr "`MFD_HUGE_2GB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:119
+msgid "`MFD_HUGE_16GB`"
+msgstr "`MFD_HUGE_16GB`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:121
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/memfd_create.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:124
+msgid "`fadvise64`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:129
+msgid ""
+"// Announce an intention to access file data in a specific pattern in the "
+"future\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:134
+msgid "`POSIX_FADV_NORMAL`"
+msgstr "`POSIX_FADV_NORMAL`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:135
+msgid "`POSIX_FADV_RANDOM`"
+msgstr "`POSIX_FADV_RANDOM`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:136
+msgid "`POSIX_FADV_SEQUENTIAL`"
+msgstr "`POSIX_FADV_SEQUENTIAL`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:137
+msgid "`POSIX_FADV_WILLNEED`"
+msgstr "`POSIX_FADV_WILLNEED`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:138
+msgid "`POSIX_FADV_DONTNEED`"
+msgstr "`POSIX_FADV_DONTNEED`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:139
+msgid "`POSIX_FADV_NOREUSE`"
+msgstr "`POSIX_FADV_NOREUSE`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:141
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/posix_fadvise.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:144
+msgid "`epoll_ctl`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:154
+msgid ""
+"// Add, modify, or delete entries in the interest list of an epoll file "
+"descriptor\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:163
+msgid "Unsupported flags in events:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:164
+msgid "`EPOLLEXCLUSIVE`"
+msgstr "`EPOLLEXCLUSIVE`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:165
+msgid "`EPOLLWAKEUP`"
+msgstr "`EPOLLWAKEUP`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:167
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/epoll_ctl.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:170
+msgid "`poll` and `ppoll`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:180
+msgid "// Wait for I/O event on a set of file descriptors\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:183
+msgid ""
+"// Wait for I/O event on a set of file descriptors with specified signals "
+"temporarily blocked\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:188
+msgid "Unsupported events:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:189
+msgid "`POLLRDBAND`"
+msgstr "`POLLRDBAND`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:190
+msgid "`POLLWRNORM`"
+msgstr "`POLLWRNORM`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:191
+msgid "`POLLWRBAND`"
+msgstr "`POLLWRBAND`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:193
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/poll.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:196
+msgid "`ioctl`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:206
+msgid "// Control file descriptor flags and I/O modes\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:209
+msgid "// Control terminal devices\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:212
+msgid "// Control framebuffer display\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:220
+msgid "// Control Event devices (evdev)\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:228
+msgid "// Control block devices\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:231
+msgid "// Control Trust Domain Extensions (TDX) guest devices\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:236
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/ioctl.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:239
+msgid "`ioprio_set` and `ioprio_get`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:244
+msgid "// Set the I/O priority for a single thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:246
+msgid "// Get the I/O priority for a single thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:251
+msgid "Unsupported selectors:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:252
+msgid "`IOPRIO_WHO_PGRP`"
+msgstr "`IOPRIO_WHO_PGRP`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:253
+msgid "`IOPRIO_WHO_USER`"
+msgstr "`IOPRIO_WHO_USER`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:255
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/ioprio_set.2.html)."
+msgstr ""

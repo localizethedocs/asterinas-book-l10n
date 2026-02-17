@@ -1,0 +1,457 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/rfcs/0002-asterinas-nixos.md:1
+msgid "RFC-0002: Asterinas NixOS"
+msgstr "RFC-0002：Asterinas NixOS"
+
+#: src/rfcs/0002-asterinas-nixos.md:3
+msgid "Status: Approved"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:4
+msgid "Pull request: https://github.com/asterinas/asterinas/pull/2584"
+msgstr "拉取請求：https://github.com/asterinas/asterinas/pull/2584"
+
+#: src/rfcs/0002-asterinas-nixos.md:5
+msgid "Date submitted: 2025-11-14"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:6
+msgid "Date approved: 2025-12-01"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:8
+msgid "Summary"
+msgstr "摘要"
+
+#: src/rfcs/0002-asterinas-nixos.md:10
+msgid ""
+"This RFC formally proposes the establishment of an Asterinas distribution as "
+"a new, top-level sub-project of Asterinas. We intend for this distribution "
+"to leverage [NixOS](https://nixos.org/) due to its unparalleled "
+"customizability and rich package ecosystem. Accordingly, we propose naming "
+"this new sub-project **Asterinas NixOS (AsterNixOS)**."
+msgstr ""
+"本 RFC 正式提議建立 Asterinas 散佈版，作為 Asterinas 的全新頂級子專案。我們打"
+"算利用 [NixOS](https://nixos.org/) 的卓越訂製能力與豐富的軟體包生態系統來打造"
+"此散佈版。因此，我們提議將此新子專案命名為 **Asterinas NixOS (AsterNixOS)**。"
+
+#: src/rfcs/0002-asterinas-nixos.md:12
+msgid "Motivations"
+msgstr "動機"
+
+#: src/rfcs/0002-asterinas-nixos.md:14
+msgid "What is a \"distro\"?"
+msgstr "什麼是「散佈版」？"
+
+#: src/rfcs/0002-asterinas-nixos.md:16
+msgid ""
+"In the context of operating systems (OSes), a \"distribution\" (or "
+"\"distro\") typically refers to a complete OS built around a kernel, "
+"complemented by userspace tools, libraries, and applications managed via a "
+"package management system. A Linux distro, for example, combines the Linux "
+"kernel with a rich userspace. Similarly, an Asterinas distro will pair the "
+"Asterinas kernel with a comprehensive userspace environment. For the purpose "
+"of this discussion, \"distro\" will refer broadly to either a Linux or "
+"Asterinas-based distro."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:18
+msgid "Short-term strategic advantages"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:20
+msgid ""
+"Achieving a Minimum Viable Product (MVP) milestone is crucial for "
+"Asterinas's maturation. Reaching MVP means that Asterinas is ready for "
+"evaluation by early adopters, who expect a seamless experience comparable to "
+"mainstream OSes. This includes easy application installation and out-of-the-"
+"box functionality. Simply providing a kernel is insufficient; we must "
+"deliver a user-friendly experience, which necessitates a full-fledged distro "
+"complete with an intuitive package manager."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:22
+msgid ""
+"Furthermore, direct control over an Asterinas distro offers a pragmatic "
+"approach to addressing Linux compatibility challenges. While Asterinas is "
+"committed to a high degree of Linux compatibility, achieving perfect parity "
+"in the near term is impractical. A dedicated distro allows us to configure "
+"or patch specific packages to circumvent reliance on advanced or bleeding-"
+"edge Linux features that do not have high priority in Asterinas. This "
+"significantly reduces pressure on Asterinas kernel developers to implement "
+"complex features prematurely, enabling a more focused and stable development "
+"roadmap."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:24
+msgid ""
+"Beyond external users, Asterinas developers themselves will greatly benefit "
+"from a dedicated distro. Testing complex applications with intricate "
+"dependencies is a significant hurdle. While \"Hello World\" or even medium-"
+"sized projects like Nginx or Redis can be manually built and integrated into "
+"a disk image, this approach does not scale for complex applications such as "
+"Spark, PyTorch, or Chromium. Identifying, understanding, and building every "
+"dependency for such projects would divert critical kernel development "
+"resources. A distro, by its very nature, abstracts this complexity through "
+"its package manager, streamlining the testing and development workflow for "
+"all Asterinas developers."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:26
+msgid "Long-term ecosystem vision"
+msgstr "長期生態系統願景"
+
+#: src/rfcs/0002-asterinas-nixos.md:28
+msgid ""
+"Looking ahead, we envision a thriving ecosystem of Asterinas distros. This "
+"initial, kernel-developer-maintained distro will serve as a vital reference "
+"implementation, fostering the creation of diverse Asterinas-based distros. "
+"While the Linux world boasts numerous distros, Asterinas-specific distros "
+"will be essential for two primary reasons:"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:30
+msgid ""
+"Firstly, Asterinas prioritizes Linux compatibility at the external ABI "
+"level, not the internal kernel module interface. This means Asterinas cannot "
+"load Linux kernel modules (`.ko` files). An Asterinas distro will ensure "
+"that all system programs exclusively load Asterinas kernel modules."
+msgstr ""
+"首先，Asterinas 優先考慮的是外部 ABI 層級的 Linux 相容性，而非內部內核模組介"
+"面。這意味著 Asterinas 無法載入 Linux 內核模組（`.ko` 檔案）。Asterinas 散佈"
+"版將確保所有系統程式僅載入 Asterinas 內核模組。"
+
+#: src/rfcs/0002-asterinas-nixos.md:32
+msgid ""
+"Secondly, Asterinas will eventually provide features and value propositions "
+"that Linux simply does not have—for example, new system calls, file systems, "
+"and device drivers. These benefits only become real when applications can "
+"detect and leverage them."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:34
+msgid ""
+"An Asterinas distro is the natural vehicle for this. It can ship new "
+"packages written specifically for Asterinas and carry patches to existing "
+"packages to make them \"Asterinas-aware\", ensuring that userspace can "
+"meaningfully take advantage of the kernel’s unique capabilities."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:36
+msgid ""
+"In essence, establishing Asterinas distros is paramount for Asterinas's long-"
+"term success and differentiation. This RFC lays the groundwork for that "
+"future by proposing our foundational distro."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:38
+msgid "Design"
+msgstr "設計"
+
+#: src/rfcs/0002-asterinas-nixos.md:40
+msgid "Why NixOS as the base distro?"
+msgstr "為什麼選擇 NixOS 作為基礎散佈版？"
+
+#: src/rfcs/0002-asterinas-nixos.md:42
+msgid ""
+"Building the first Asterinas distro from scratch would be an immense "
+"undertaking, diverting focus from core kernel development. Therefore, basing "
+"it on an existing Linux distro is the most rational path forward. This leads "
+"to the crucial question: which Linux distro should serve as our foundation?"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:44
+msgid ""
+"The landscape of Linux distros is vast, featuring prominent names such as "
+"[Arch](https://archlinux.org/), [CentOS](https://www.centos.org/), [Debian]"
+"(https://www.debian.org/), and [Gentoo](https://www.gentoo.org/). While "
+"theoretically, any of these could serve, we have identified [NixOS](https://"
+"nixos.org/) as a particularly attractive and uniquely suited option."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:46
+msgid ""
+"In most distros, package recipes are centered around shell scripts (e.g., "
+"[`PKGBUILD`](https://man.archlinux.org/man/PKGBUILD.5#EXAMPLE) in Arch Linux "
+"or the [`rules`](https://www.debian.org/doc/manuals/maint-guide/dreq.en."
+"html#rules) file in a Debian package). NixOS, however, utilizes a purpose-"
+"built, purely functional language called [Nix](https://nixos-and-flakes."
+"thiscute.world/the-nix-language/), which offers unparalleled expressiveness "
+"and flexibility for defining package recipes."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:48
+msgid ""
+"A core requirement for our base distro is the ability to easily tweak "
+"existing package recipes to work around Asterinas's limitations or customize "
+"the new distro's look or behavior. The Nix language excels in this regard."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:50
+msgid ""
+"For instance, consider overriding specific attributes of an existing Nix "
+"package, such as `xfdesktop`, with minimal code:"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:52
+msgid ""
+"```nix\n"
+"{ pkgs }:\n"
+"{\n"
+"  xfdesktop = pkgs.xfce.xfdesktop.overrideAttrs (oldAttrs: {\n"
+"    version = \"4.16.0\";\n"
+"    patches = (oldAttrs.patches or []) ++ [\n"
+"      ./patches/xfdesktop4/0001-Fix-not-using-consistent-monitor-identifiers."
+"patch\n"
+"    ];\n"
+"  });\n"
+"}\n"
+"```"
+msgstr ""
+"```nix\n"
+"{ pkgs }:\n"
+"{\n"
+"  xfdesktop = pkgs.xfce.xfdesktop.overrideAttrs (oldAttrs: {\n"
+"    version = \"4.16.0\";\n"
+"    patches = (oldAttrs.patches or []) ++ [\n"
+"      ./patches/xfdesktop4/0001-Fix-not-using-consistent-monitor-identifiers."
+"patch\n"
+"    ];\n"
+"  });\n"
+"}\n"
+"```"
+
+#: src/rfcs/0002-asterinas-nixos.md:64
+msgid ""
+"This Nix file creates a customized `xfdesktop` package without requiring "
+"intrusive modifications to its original recipe. This capability, known as "
+"[the override design pattern](https://nixos.org/guides/nix-pills/14-override-"
+"design-pattern.html) in Nix, is uniquely feasible due to Nix's first-class "
+"functions and lazy evaluation."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:66
+msgid ""
+"Another powerful example of NixOS's flexibility is how easily we can create "
+"an Asterinas distro ISO installer by customizing an existing [NixOS "
+"installer ISO](https://nixos.org/download/#nixos-iso). Consider the "
+"following `iso-image.nix` file:"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:68
+msgid ""
+"```nix\n"
+"{ lib, pkgs, ... }:\n"
+"let\n"
+"  asterinas_kernel = builtins.path { path = \"asterinas_bin\"; };\n"
+"  auto_install_script = pkgs.replaceVarsWith {\n"
+"    src = \"./auto_install.sh\";\n"
+"    isExecutable = true;\n"
+"    replacements = {\n"
+"      shell = \"${pkgs.bash}/bin/sh\";\n"
+"      inherit asterinas_kernel;\n"
+"    };\n"
+"  };\n"
+"  configuration = {\n"
+"    imports = [\n"
+"      \"${pkgs.path}/nixos/modules/installer/cd-dvd/installation-cd-minimal."
+"nix\"\n"
+"      \"${pkgs.path}/nixos/modules/installer/cd-dvd/channel.nix\"\n"
+"    ];\n"
+"\n"
+"    services.getty.autologinUser = lib.mkForce \"root\";\n"
+"    environment.loginShellInit = \"${auto_install_script}\";\n"
+"  };\n"
+"in (pkgs.nixos configuration).config.system.build.isoImage\n"
+"```"
+msgstr ""
+"```nix\n"
+"{ lib, pkgs, ... }:\n"
+"let\n"
+"  asterinas_kernel = builtins.path { path = \"asterinas_bin\"; };\n"
+"  auto_install_script = pkgs.replaceVarsWith {\n"
+"    src = \"./auto_install.sh\";\n"
+"    isExecutable = true;\n"
+"    replacements = {\n"
+"      shell = \"${pkgs.bash}/bin/sh\";\n"
+"      inherit asterinas_kernel;\n"
+"    };\n"
+"  };\n"
+"  configuration = {\n"
+"    imports = [\n"
+"      \"${pkgs.path}/nixos/modules/installer/cd-dvd/installation-cd-minimal."
+"nix\"\n"
+"      \"${pkgs.path}/nixos/modules/installer/cd-dvd/channel.nix\"\n"
+"    ];\n"
+"\n"
+"    services.getty.autologinUser = lib.mkForce \"root\";\n"
+"    environment.loginShellInit = \"${auto_install_script}\";\n"
+"  };\n"
+"in (pkgs.nixos configuration).config.system.build.isoImage\n"
+"```"
+
+#: src/rfcs/0002-asterinas-nixos.md:92
+msgid ""
+"This file defines a new installer ISO that differs from the original in two "
+"key ways. First, it ships with the Asterinas kernel (`asterinas_kernel`). "
+"Second, instead of dropping the user into an interactive shell, the ISO's "
+"init process immediately runs an automatic installation script "
+"(`auto_install.sh`)."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:94
+msgid ""
+"A notable NixOS feature relevant to our design is `/etc/nixos/configuration."
+"nix`, the [primary configuration file](https://nixos.org/manual/nixos/stable/"
+"#sec-configuration-file) that determines _all_ system-wide states of a NixOS "
+"installation, including the kernel, installed software, and configuration. A "
+"minimal `configuration.nix` for our distro might look like this:"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:111
+msgid ""
+"Here, the sample `configuration.nix` uses a NixOS feature called [overlays]"
+"(https://wiki.nixos.org/wiki/Overlays) to customize and extend Nixpkgs "
+"without modifying its upstream source. Overlays apply globally within the "
+"configuration, so our Asterinas-specific changes to vanilla NixOS can be "
+"expressed cleanly as reusable overlays rather than as ad-hoc patches "
+"scattered throughout the system."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:113
+msgid ""
+"A further significant advantage of NixOS is the portability of [Nix](https://"
+"nixos.org/download/#nix-install-linux), its package manager (and the Nix "
+"language it uses), across various Linux distros and even macOS."
+msgstr ""
+"NixOS 的一個顯著優勢在於它的軟體包管理器 [Nix](https://nixos.org/download/"
+"#nix-install-linux)（以及它所使用的 Nix 語言）具備高度的可移植性，可跨多種 "
+"Linux 散佈版甚至在 macOS 上運作。"
+
+#: src/rfcs/0002-asterinas-nixos.md:115
+msgid ""
+"Unlike most package managers, which are tightly coupled to their parent "
+"distros (e.g., `pacman` for Arch, `dpkg` for Debian, `rpm` for Red Hat-based "
+"systems), Nix operates independently. Nix packages are installed in the `/"
+"nix/store` directory, ensuring they do not conflict with native packages. "
+"This portability is invaluable for debugging: if a package in our NixOS-"
+"based distro encounters an issue, we can replicate the exact same package "
+"environment on any Linux development machine, greatly simplifying "
+"troubleshooting."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:117
+msgid "The New Top-Level Sub-Project"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:119
+msgid ""
+"Given these compelling rationales, we propose the creation of a new top-"
+"level sub-project named _Asterinas NixOS (AsterNixOS)_. This sub-project "
+"will reside in a new `distro/` directory at the project root."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:121
+msgid ""
+"Initially, AsterNixOS will share version numbers with the Asterinas kernel, "
+"emphasizing its early development stage and close coupling. Every kernel "
+"release will be accompanied by a compatible distro release. In the long "
+"term, once both the kernel and the distro achieve maturity and stability, "
+"AsterNixOS will adopt its own independent versioning scheme, likely "
+"following a \"YY.MM\" format (e.g., 25.12)."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:123
+msgid "Drawbacks, Alternatives, and Unknowns"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:125
+msgid "Drawbacks"
+msgstr "缺點"
+
+#: src/rfcs/0002-asterinas-nixos.md:127
+msgid ""
+"**Learning curve for Nix/NixOS:** This is arguably the most significant "
+"hurdle. While exceptionally powerful, the Nix ecosystem, including the Nix "
+"language and its functional paradigm, presents a steeper learning curve "
+"compared to conventional package managers and build systems. This could pose "
+"an initial barrier for new contributors and existing Asterinas developers "
+"unfamiliar with Nix. Investing in clear documentation and onboarding "
+"resources will be critical."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:128
+msgid ""
+"**Maintenance overhead of Nixpkgs overlay:** While the override pattern "
+"offers flexibility, maintaining a dedicated overlay for Asterinas-specific "
+"patches and configurations within the vast `nixpkgs` repository will still "
+"require continuous effort. Keeping pace with upstream `nixpkgs` changes, "
+"resolving potential conflicts, and ensuring compatibility will be an ongoing "
+"challenge requiring dedicated resources."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:130
+msgid "Alternatives"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:132
+msgid ""
+"**Embedded Linux distros:** [Buildroot](https://buildroot.org/) and [Yocto]"
+"(https://www.yoctoproject.org/) are established and highly capable tools for "
+"building embedded Linux distros, offering extensive customization for "
+"toolchains and root filesystems from scratch."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:133
+msgid ""
+"**Why NixOS is superior:** While powerful for embedded use cases, Buildroot "
+"and Yocto are less oriented toward a general-purpose desktop/server distro, "
+"which is our primary initial target. Furthermore, their configuration "
+"languages are generally less expressive and composable than the Nix "
+"language, limiting the flexibility we seek for deep customization and "
+"elegant overriding."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:134
+msgid ""
+"**Direct port of Debian/Arch/etc.:** This approach would involve directly "
+"modifying the build systems of a more traditional distro like Debian or Arch "
+"to target Asterinas."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:135
+msgid ""
+"**Why NixOS is superior:** As elaborated, traditional packaging systems are "
+"less flexible for the granular, targeted patching and configuration required "
+"when adapting to a new kernel. More critically, their package managers (e."
+"g., `dpkg`, `pacman`, `rpm`) are inherently tied to their parent distros, "
+"making cross-distro development and debugging significantly more complex. "
+"The Nix package manager's portability offers a clear advantage here."
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:137
+msgid "Prior Art and References"
+msgstr ""
+
+#: src/rfcs/0002-asterinas-nixos.md:139
+msgid ""
+"The NixOS project itself serves as the most prominent piece of prior art, "
+"demonstrating the viability and advantages of a purely functional approach "
+"to OS configuration and package management. Its design principles, "
+"particularly around atomic upgrades, rollbacks, and reproducible builds, "
+"have been thoroughly proven since its inception in 2003. Other projects, "
+"like [GNU Guix](https://guix.gnu.org/), also follow a similar functional "
+"package management paradigm."
+msgstr ""

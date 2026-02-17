@@ -1,0 +1,276 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/SUMMARY.md:1
+msgid "Summary"
+msgstr "概览"
+
+#: src/SUMMARY.md:3
+msgid "Introduction"
+msgstr "介绍"
+
+#: src/SUMMARY.md:5
+msgid "Asterinas NixOS"
+msgstr "Asterinas NixOS"
+
+#: src/SUMMARY.md:7 src/SUMMARY.md:15
+msgid "Getting Started"
+msgstr "开始使用"
+
+#: src/SUMMARY.md:8
+msgid "Popular Applications"
+msgstr "热门应用程序"
+
+#: src/SUMMARY.md:9
+msgid "Package Management"
+msgstr "包管理"
+
+#: src/SUMMARY.md:10
+msgid "Desktop Environment"
+msgstr "桌面环境"
+
+#: src/SUMMARY.md:11
+msgid "Containerization"
+msgstr "容器化"
+
+#: src/SUMMARY.md:13
+msgid "Asterinas Kernel"
+msgstr "Asterinas 内核"
+
+#: src/SUMMARY.md:16
+msgid "Advanced Build and Test Instructions"
+msgstr "高级构建和测试说明"
+
+#: src/SUMMARY.md:17 src/SUMMARY.md:50
+msgid "Intel TDX"
+msgstr "Intel TDX"
+
+#: src/SUMMARY.md:18
+msgid "The Framekernel Architecture"
+msgstr "Framekernel 架构"
+
+#: src/SUMMARY.md:19
+msgid "Linux Compatibility"
+msgstr "Linux 兼容性"
+
+#: src/SUMMARY.md:20
+msgid "Syscall Flag Coverage"
+msgstr "系统调用 Flag 覆盖率"
+
+#: src/SUMMARY.md:21
+msgid "System Call Matching Language (SCML)"
+msgstr "系统调用匹配语言（SCML）"
+
+#: src/SUMMARY.md:22
+msgid "Process and thread management"
+msgstr "进程和线程管理"
+
+#: src/SUMMARY.md:23
+msgid "Memory management"
+msgstr "内存管理"
+
+#: src/SUMMARY.md:24
+msgid "File & directory operations"
+msgstr "文件与目录操作"
+
+#: src/SUMMARY.md:25
+msgid "File systems & mount control"
+msgstr "文件系统与挂载控制"
+
+#: src/SUMMARY.md:26
+msgid "File descriptor & I/O control"
+msgstr "文件描述符与 I/O 控制"
+
+#: src/SUMMARY.md:27
+msgid "Inter-process communication"
+msgstr "进程间通信"
+
+#: src/SUMMARY.md:28
+msgid "Networking & sockets"
+msgstr "网络与套接字（Socket）"
+
+#: src/SUMMARY.md:29
+msgid "Signals & timers"
+msgstr "信号与定时器"
+
+#: src/SUMMARY.md:30
+msgid "Namespaces, cgroups & security"
+msgstr "命名空间、控制组（cgroups）与安全"
+
+#: src/SUMMARY.md:31
+msgid "System information & misc"
+msgstr "系统信息及其他"
+
+#: src/SUMMARY.md:32
+msgid "File System Coverage"
+msgstr "文件系统覆盖率"
+
+#: src/SUMMARY.md:33
+msgid "Roadmap"
+msgstr "路线图"
+
+#: src/SUMMARY.md:35
+msgid "Asterinas OSTD"
+msgstr "Asterinas OSTD"
+
+#: src/SUMMARY.md:37
+msgid "An Overview of OSTD"
+msgstr "OSTD 概述"
+
+#: src/SUMMARY.md:38
+msgid "Example: Writing a Kernel in 100 Lines of Safe Rust"
+msgstr "示例：用大约 100 行安全的 Rust 代码编写内核"
+
+#: src/SUMMARY.md:39
+msgid "Example: Writing a Driver in 100 Lines of Safe Rust"
+msgstr "示例：用大约 100 行安全的 Rust 代码编写驱动"
+
+#: src/SUMMARY.md:40
+msgid "Soundness Analysis"
+msgstr "可靠性分析"
+
+#: src/SUMMARY.md:42
+msgid "Asterinas OSDK"
+msgstr "Asterinas OSDK"
+
+#: src/SUMMARY.md:44
+msgid "OSDK User Guide"
+msgstr "OSDK 用户指南"
+
+#: src/SUMMARY.md:45
+msgid "Why OSDK"
+msgstr "为什么选择 OSDK"
+
+#: src/SUMMARY.md:46
+msgid "Creating an OS Project"
+msgstr "创建操作系统项目"
+
+#: src/SUMMARY.md:47
+msgid "Testing or Running an OS Project"
+msgstr "测试或运行操作系统项目"
+
+#: src/SUMMARY.md:48
+msgid "Working in a Workspace"
+msgstr "在工作区中工作"
+
+#: src/SUMMARY.md:49
+msgid "Advanced Topics"
+msgstr "进阶主题"
+
+#: src/SUMMARY.md:51
+msgid "OSDK User Reference"
+msgstr "OSDK 用户参考"
+
+#: src/SUMMARY.md:52
+msgid "Commands"
+msgstr "命令"
+
+#: src/SUMMARY.md:53
+msgid "cargo osdk new"
+msgstr "cargo osdk new"
+
+#: src/SUMMARY.md:54
+msgid "cargo osdk build"
+msgstr "cargo osdk build"
+
+#: src/SUMMARY.md:55
+msgid "cargo osdk run"
+msgstr "cargo osdk run"
+
+#: src/SUMMARY.md:56
+msgid "cargo osdk test"
+msgstr "cargo osdk test"
+
+#: src/SUMMARY.md:57
+msgid "cargo osdk debug"
+msgstr "cargo osdk debug"
+
+#: src/SUMMARY.md:58
+msgid "cargo osdk profile"
+msgstr "cargo osdk profile"
+
+#: src/SUMMARY.md:59
+msgid "Manifest"
+msgstr "清单文件"
+
+#: src/SUMMARY.md:60
+msgid "Environment Variables"
+msgstr "环境变量"
+
+#: src/SUMMARY.md:62
+msgid "How to Contribute"
+msgstr "如何参与贡献"
+
+#: src/SUMMARY.md:64
+msgid "Before You Contribute"
+msgstr "贡献前须知"
+
+#: src/SUMMARY.md:65
+msgid "Code Organization"
+msgstr "代码组织"
+
+#: src/SUMMARY.md:66
+msgid "Style Guidelines"
+msgstr "风格指南"
+
+#: src/SUMMARY.md:67
+msgid "General Guidelines"
+msgstr "通用指南"
+
+#: src/SUMMARY.md:68
+msgid "Rust Guidelines"
+msgstr "Rust 指南"
+
+#: src/SUMMARY.md:69
+msgid "Git Guidelines"
+msgstr "Git 指南"
+
+#: src/SUMMARY.md:70
+msgid "Assembly Guidelines"
+msgstr "汇编指南"
+
+#: src/SUMMARY.md:71
+msgid "Boterinas"
+msgstr "Boterinas"
+
+#: src/SUMMARY.md:72
+msgid "Version Bump"
+msgstr "版本号更新"
+
+#: src/SUMMARY.md:73
+msgid "Community"
+msgstr "社区"
+
+#: src/SUMMARY.md:74
+msgid "Code of Conduct"
+msgstr "行为守则"
+
+#: src/SUMMARY.md:76
+msgid "Request for Comments (RFCs)"
+msgstr "征求意见稿 (RFCs)"
+
+#: src/SUMMARY.md:78
+msgid "RFC Overview"
+msgstr "RFC 概述"
+
+#: src/SUMMARY.md:79
+msgid "RFC-0001: RFC Process"
+msgstr "RFC-0001：RFC 流程"
+
+#: src/SUMMARY.md:80
+msgid "RFC-0002: Asterinas NixOS"
+msgstr "RFC-0002: Asterinas NixOS"
+
+#: src/SUMMARY.md:81
+msgid "RFC Template"
+msgstr "RFC 模板"

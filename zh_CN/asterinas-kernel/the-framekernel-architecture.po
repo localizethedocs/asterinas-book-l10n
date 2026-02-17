@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/the-framekernel-architecture.md:1
+msgid "The Framekernel Architecture"
+msgstr "Framekernel 架构"
+
+#: src/kernel/the-framekernel-architecture.md:3
+msgid "Framekernel: What and Why"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:5
+msgid "The security of a microkernel, the speed of a monolithic kernel."
+msgstr "微内核的安全性，宏内核的速度。"
+
+#: src/kernel/the-framekernel-architecture.md:7
+msgid ""
+"Asterinas introduces a novel OS architecture called _framekernel_, which "
+"unleashes the full power of Rust to bring the best of both monolithic "
+"kernels and microkernels."
+msgstr ""
+"Asterinas推出了一种名为\n"
+"*framekernel*的新型操作系统架构，该架构充分发挥Rust的强大能力，融合了宏内核和"
+"微内核的优势。"
+
+#: src/kernel/the-framekernel-architecture.md:11
+msgid ""
+"Within the framekernel architecture, the entire OS resides in the same "
+"address space (like a monolithic kernel) and is required to be written in "
+"Rust. However, there's a twist---the kernel is partitioned in two halves: "
+"the OS Framework (akin to a microkernel) and the OS Services. Only the OS "
+"Framework is allowed to use _unsafe Rust_, while the OS Services must be "
+"written exclusively in _safe Rust_."
+msgstr ""
+"在framekernel架构中，整个操作系统驻留在同一地址空间中（类似于宏内核），并且必"
+"须使用Rust编写。不过，这里有一个特别之处——内核被分为两半：操作系统框架（类似"
+"微内核）和操作系统服务。只有操作系统框架允许使用*不安全的Rust*，而操作系统服"
+"务必须完全使用*安全的Rust*编写。"
+
+#: src/kernel/the-framekernel-architecture.md:20
+msgid "Unsafe Rust"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:20
+msgid "Responsibilities"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:20
+msgid "Code Sizes"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:22
+msgid "OS Framework"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:22
+msgid "Allowed"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:22
+msgid "Encapsulate low-level unsafe code within high-level safe APIs"
+msgstr "将底层不安全代码封装在高层安全 API 中"
+
+#: src/kernel/the-framekernel-architecture.md:22
+msgid "Small"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:23
+msgid "OS Services"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:23
+msgid "Not allowed"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:23
+msgid ""
+"Implement OS functionalities, e.g., system calls, file systems, device "
+"drivers"
+msgstr "实现操作系统功能，例如系统调用、文件系统、设备驱动程序"
+
+#: src/kernel/the-framekernel-architecture.md:23
+msgid "Large"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:25
+msgid ""
+"As a result, the memory safety of the kernel can be reduced to that of the "
+"OS Framework, thus minimizing the Trusted Computing Base (TCB) associated "
+"with the kernel's memory safety. On the other hand, the single address space "
+"allows different parts of the kernel to communicate in the most efficient "
+"means, e.g., function calls and shared memory. Thanks to the framekernel "
+"architecture, Asterinas can offer both exceptional performance and enhanced "
+"safety."
+msgstr ""
+"因此，内核的内存安全性可降低至操作系统框架的水平，从而最小化与内核内存安全性"
+"相关的可信计算基（TCB）。另一方面，单一地址空间使内核的不同部分能够以最高效的"
+"方式通信，例如函数调用和共享内存。得益于framekernel架构，Asterinas 能够同时提"
+"供卓越的性能和更高的安全性。"
+
+#: src/kernel/the-framekernel-architecture.md:36
+msgid ""
+"![A comparison between different OS architectures](../images/"
+"a_comparison_between_os_archs.svg)"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:38
+msgid "Requirements for the OS Framework"
+msgstr "操作系统框架的要求"
+
+#: src/kernel/the-framekernel-architecture.md:40
+msgid ""
+"While the concept of framekernel is straightforward, the design and "
+"implementation of the required OS framework present challenges. It must "
+"concurrently fulfill four criteria."
+msgstr ""
+"虽然 framekernel 的概念很简单，但所需操作系统框架的设计和实现却面临挑战。它必"
+"须同时满足四个标准。"
+
+#: src/kernel/the-framekernel-architecture.md:44
+msgid ""
+"![The four requirements for the OS framework](../images/"
+"four_requirements_for_os_framework.svg)"
+msgstr ""
+
+#: src/kernel/the-framekernel-architecture.md:46
+msgid ""
+"**Soundness.** The safe APIs of the framework are considered sound if no "
+"[undefined behaviors](https://doc.rust-lang.org/reference/behavior-"
+"considered-undefined.html#behavior-considered-undefined) shall be triggered "
+"by whatever safe Rust code that a programmer may write using the APIs"
+msgstr ""
+"**可靠。** 若程序员使用该框架的安全 API 编写任何安全的 Rust 代码时，均不会触"
+"发任何[未定义行为](https://doc.rust-lang.org/reference/behavior-considered-"
+"undefined.html#behavior-considered-undefined)，则认为该框架的安全 API 具备可"
+"靠性"
+
+#: src/kernel/the-framekernel-architecture.md:50
+msgid ""
+"as long as the code is verified by the Rust toolchain. Soundness ensures "
+"that the OS framework, in conjunction with the Rust toolchain, bears the "
+"full responsibility for the kernel's memory safety."
+msgstr ""
+"只要代码通过了 Rust 工具链的验证，可靠性就能确保操作系统框架与 Rust 工具链共"
+"同承担内核内存安全的全部责任。"
+
+#: src/kernel/the-framekernel-architecture.md:55
+msgid ""
+"**Expressiveness.** The framework should empower developers to implement a "
+"substantial range of OS functionalities in safe Rust using the APIs. It is "
+"especially important that the framework enables writing device drivers in "
+"safe Rust, considering that device drivers comprise the bulk of the code in "
+"a fully-fleged OS kernel (like Linux)."
+msgstr ""
+"**实用。**该框架应使开发者能够使用这些 API 在安全的 Rust 中实现大量操作系统功"
+"能。考虑到设备驱动程序在成熟的操作系统内核（如 Linux）中占代码的大部分，该框"
+"架能够支持在安全的 Rust 中编写设备驱动程序尤为重要。"
+
+#: src/kernel/the-framekernel-architecture.md:64
+msgid ""
+"**Minimalism.** As the TCB for memory safety, the framework should be kept "
+"as small as possible. No functionality should be implemented inside the "
+"framework if doing it outside is possible."
+msgstr ""
+"**极简。**作为内存安全的 TCB，该框架应尽可能精简。如果某些功能可以在框架外部"
+"实现，则不应在框架内部实现。"
+
+#: src/kernel/the-framekernel-architecture.md:70
+msgid ""
+"**Efficiency.** The safe API provided by the framework is only allowed to "
+"introduce minimal overheads. Ideally, these APIs should be realized as [zero-"
+"cost abstractions](https://monomorph.is/posts/zero-cost-abstractions/)."
+msgstr ""
+"**高效。**框架提供的安全API仅允许引入最小的开销。理想情况下，这些API应实现为"
+"[零成本抽象](https://monomorph.is/posts/zero-cost-abstractions/)。"
+
+#: src/kernel/the-framekernel-architecture.md:76
+msgid ""
+"Fortunately, our efforts to design and implement an OS framework meeting "
+"these standards have borne fruit in the form of the [Asterinas OSTD](../"
+"ostd/). Using this framework as a foundation, we have developed the "
+"Asterinas Kernel; this framework also enables others to create their own "
+"framekernels, with different goals and tradeoffs."
+msgstr ""
+"幸运的是，我们设计和实现符合这些标准的操作系统框架的努力已取得成果，这就是"
+"[Asterinas OSTD](../ostd/)。以该框架为基础，我们开发了Asterinas内核；该框架还"
+"使其他人能够创建具有不同目标和权衡的自己的框架内核。"

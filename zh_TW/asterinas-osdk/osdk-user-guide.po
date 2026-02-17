@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/guide/index.md:1
+msgid "OSDK User Guide"
+msgstr "OSDK 使用者指南"
+
+#: src/osdk/guide/index.md:3
+msgid "Overview"
+msgstr "概覽"
+
+#: src/osdk/guide/index.md:5
+msgid ""
+"The Asterinas OSDK (short for Operating System Development Kit) is designed "
+"to simplify the development of Rust operating systems. It aims to streamline "
+"the process by leveraging [the framekernel architecture](../../kernel/the-"
+"framekernel-architecture.md)."
+msgstr ""
+
+#: src/osdk/guide/index.md:10
+msgid ""
+"The OSDK provides a command-line tool `cargo-osdk`, which facilitates "
+"project management for those developed on the framekernel architecture. "
+"`cargo-osdk` can be used as a subcommand of Cargo. Much like Cargo for Rust "
+"projects, `cargo-osdk` enables building, running, and testing projects "
+"conveniently."
+msgstr ""
+"OSDK 提供了一個命令行工具 `cargo-osdk` ，有助於基於框內核架構開發的專案管理。"
+"` cargo-osdk` 可以作為 Cargo 的子命令使用。就像 Cargo 之於 Rust 專案一樣， "
+"`cargo-osdk` 讓建置、執行和測試專案變得非常方便。"
+
+#: src/osdk/guide/index.md:18
+msgid "Install OSDK"
+msgstr "安裝 OSDK"
+
+#: src/osdk/guide/index.md:20
+msgid "Requirements"
+msgstr ""
+
+#: src/osdk/guide/index.md:21
+msgid ""
+"Currently, OSDK is only supported on x86_64 Ubuntu systems. We will add "
+"support for more operating systems in the future."
+msgstr ""
+
+#: src/osdk/guide/index.md:24
+msgid ""
+"To run a kernel developed by OSDK with QEMU, the following tools need to be "
+"installed:"
+msgstr ""
+
+#: src/osdk/guide/index.md:26
+msgid "Rust >= 1.75.0"
+msgstr ""
+
+#: src/osdk/guide/index.md:27
+msgid "cargo-binutils"
+msgstr ""
+
+#: src/osdk/guide/index.md:28
+msgid "gcc"
+msgstr ""
+
+#: src/osdk/guide/index.md:29
+msgid "gdb"
+msgstr ""
+
+#: src/osdk/guide/index.md:30
+msgid "grub"
+msgstr ""
+
+#: src/osdk/guide/index.md:31
+msgid "ovmf"
+msgstr ""
+
+#: src/osdk/guide/index.md:32
+msgid "qemu-system-x86_64"
+msgstr ""
+
+#: src/osdk/guide/index.md:33
+msgid "xorriso"
+msgstr ""
+
+#: src/osdk/guide/index.md:35
+msgid ""
+"The dependencies required for installing Rust and running QEMU can be "
+"installed by:"
+msgstr ""
+
+#: src/osdk/guide/index.md:41
+msgid ""
+"About how to install Rust, you can refer to the [official site](https://www."
+"rust-lang.org/tools/install)."
+msgstr ""
+"關於如何安裝 Rust，您可以參考[官方網站](https://www.rust-lang.org/tools/"
+"install)。"
+
+#: src/osdk/guide/index.md:44
+msgid "`cargo-binutils` can be installed after Rust is installed by"
+msgstr "在安裝 Rust 之後，可以透過以下方式安裝 `cargo-binutils`"
+
+#: src/osdk/guide/index.md:50
+msgid "Install"
+msgstr ""
+
+#: src/osdk/guide/index.md:52
+msgid ""
+"`cargo-osdk` is published on [crates.io](https://crates.io/), and can be "
+"installed by running"
+msgstr ""
+
+#: src/osdk/guide/index.md:58
+msgid "Upgrade"
+msgstr ""
+
+#: src/osdk/guide/index.md:59
+msgid ""
+"If `cargo-osdk` is already installed, the tool can be upgraded by running"
+msgstr ""
