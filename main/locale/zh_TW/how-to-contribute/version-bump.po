@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/to-contribute/version-bump.md:1
 msgid "Version Bump"
-msgstr ""
+msgstr "版本升級"
 
 #: src/to-contribute/version-bump.md:3
 msgid "Version Numbers"
@@ -30,6 +30,13 @@ msgid ""
 "Docker images (i.e., [`asterinas/asterinas`](https://hub.docker.com/r/"
 "asterinas/asterinas)) are released regularly."
 msgstr ""
+"目前，Asterinas 定期為 Rust 作業系統開發者社群發行兩個主要的製品：[OSDK]"
+"(https://crates.io/crates/cargo-osdk) 與 [OSTD](https://crates.io/crates/"
+"ostd)。為了支援使用這些工具進行開發，我們也在 DockerHub 上發佈了配套的 "
+"Docker 映像檔（即 [`asterinas/osdk`](https://hub.docker.com/r/asterinas/"
+"osdk)）。雖然 Asterinas 內核尚未準備好發行公開的二進位版本，但其開發用的 "
+"Docker 映像檔（即 [`asterinas/asterinas`](https://hub.docker.com/r/asterinas/"
+"asterinas)）。"
 
 #: src/to-contribute/version-bump.md:16
 msgid ""
@@ -37,12 +44,15 @@ msgid ""
 "is stored in the `VERSION` file at the project root. The current content of "
 "this file is shown below."
 msgstr ""
+"所有已發行的 OSDK 與 OSTD 軟體箱皆共用同一個版本號，該版本號儲存在專案根目錄"
+"的 `VERSION` 檔案中。該檔案目前的內容如下所示。"
 
 #: src/to-contribute/version-bump.md:24
 msgid ""
 "Similarly, the Docker images’ version number is stored in the "
 "`DOCKER_IMAGE_VERSION` file, as shown below."
 msgstr ""
+"同樣地，Docker 映像檔的版本號儲存在 `DOCKER_IMAGE_VERSION` 檔案中，如下所示。"
 
 #: src/to-contribute/version-bump.md:32
 msgid ""
@@ -57,7 +67,7 @@ msgstr ""
 
 #: src/to-contribute/version-bump.md:41
 msgid "How to Bump Versions"
-msgstr ""
+msgstr "如何升級版本"
 
 #: src/to-contribute/version-bump.md:43
 msgid "We recommend a three-commit procedure to bump versions:"
@@ -68,17 +78,20 @@ msgid ""
 "**Commit 1 \"Bump the Docker image version\"** triggers the generation of a "
 "new Docker image."
 msgstr ""
+"**送交 1「Bump the Docker image version」** 會觸發生成新的 Docker 映像檔。"
 
 #: src/to-contribute/version-bump.md:45
 msgid ""
 "**Commit 2 \"Switch to a new Docker image\"** makes the codebase use the new "
 "Docker image."
 msgstr ""
+"**送交 2「Switch to a new Docker image」** 會使程式碼庫改為使用新的 Docker 映"
+"像檔。"
 
 #: src/to-contribute/version-bump.md:46
 msgid ""
 "**Commit 3 \"Bump the project version\"** triggers the release of new crates."
-msgstr ""
+msgstr "**送交 3「Bump the project version」** 會觸發發行新的軟體箱。"
 
 #: src/to-contribute/version-bump.md:48
 msgid ""
@@ -91,12 +104,16 @@ msgid ""
 "**To make non-breaking changes to the Docker images**, submit Commit 1 in a "
 "PR, then Commit 2 in another."
 msgstr ""
+"**若要對 Docker 映像檔進行非破壞性變更**，請先在一個 PR 中提交送交 1，接著在"
+"另一個 PR 中提交送交 2。"
 
 #: src/to-contribute/version-bump.md:52
 msgid ""
 "**To make breaking changes to the Docker images and the crates' APIs**, "
 "submit Commit 1 in a PR, then Commit 2 and 3 in another."
 msgstr ""
+"**若要對 Docker 映像檔和軟體箱的 API 進行重大變更**，請在一個 PR 中提交送交 "
+"1，然後在另一個 PR 中提交送交 2 和 3。"
 
 #: src/to-contribute/version-bump.md:55
 msgid ""
@@ -106,13 +123,13 @@ msgstr ""
 
 #: src/to-contribute/version-bump.md:58
 msgid "Commit 1: \"Bump the Docker image version\""
-msgstr ""
+msgstr "送交 1：「Bump the Docker image version」"
 
 #: src/to-contribute/version-bump.md:60
 msgid ""
 "After updating the Docker image content, increment the Docker image version "
 "using the following command:"
-msgstr ""
+msgstr "更新 Docker 映像檔內容後，請使用以下命令增加 Docker 映像檔的版本號："
 
 #: src/to-contribute/version-bump.md:67
 msgid ""
@@ -131,7 +148,7 @@ msgstr ""
 
 #: src/to-contribute/version-bump.md:76
 msgid "Commit 2: \"Switch to a new Docker image\""
-msgstr ""
+msgstr "送交 2：「Switch to a new Docker image」"
 
 #: src/to-contribute/version-bump.md:78
 msgid ""
@@ -149,7 +166,7 @@ msgstr ""
 
 #: src/to-contribute/version-bump.md:91
 msgid "Commit 3: \"Bump the project version\""
-msgstr ""
+msgstr "送交 3：「Bump the project version」"
 
 #: src/to-contribute/version-bump.md:93
 msgid ""

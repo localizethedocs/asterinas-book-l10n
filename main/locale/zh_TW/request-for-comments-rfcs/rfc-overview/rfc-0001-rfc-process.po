@@ -25,11 +25,11 @@ msgstr "拉取請求：https://github.com/asterinas/asterinas/pull/2365/"
 
 #: src/rfcs/0001-rfc-process.md:5
 msgid "Date submitted: 2025-08-24"
-msgstr ""
+msgstr "提交日期：2025-08-24"
 
 #: src/rfcs/0001-rfc-process.md:6
 msgid "Date approved: 2025-09-05"
-msgstr ""
+msgstr "批准日期：025-09-05"
 
 #: src/rfcs/0001-rfc-process.md:8
 msgid "Summary"

@@ -245,7 +245,7 @@ msgstr ""
 
 #: src/SUMMARY.md:72
 msgid "Version Bump"
-msgstr ""
+msgstr "版本升級"
 
 #: src/SUMMARY.md:73
 msgid "Community"

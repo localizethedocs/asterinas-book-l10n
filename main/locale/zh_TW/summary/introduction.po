@@ -115,6 +115,8 @@ msgid ""
 "Significant decisions in Asterinas are made through a transparent RFC "
 "process. This part describes the RFC process and archives all approvaed RFCs."
 msgstr ""
+"Asterinas 的重大決策皆透過透明的 RFC 過程制定。本部分描述了 RFC 過程，並封存"
+"所有已通過的 RFC。"
 
 #: src/index.md:62
 msgid "Licensing"
