@@ -34,7 +34,7 @@ msgstr ""
 msgid ""
 "To test an individual crate, enter the directory of the crate and invoke "
 "`cargo test`."
-msgstr ""
+msgstr "若要測試單個軟體箱，請進入該軟體箱的目錄並執行 `cargo test`。"
 
 #: src/kernel/advanced-instructions.md:17
 msgid "Kernel-Mode Unit Tests"
@@ -45,6 +45,8 @@ msgid ""
 "Many crates in Asterinas do require a VM environment to be tested. The unit "
 "tests for these crates are empowered by OSDK."
 msgstr ""
+"Asterinas 中的許多軟體箱都需要虛擬機環境才能進行測試。這些軟體箱的單元測試是"
+"由 OSDK 提供支援的。"
 
 #: src/kernel/advanced-instructions.md:26
 msgid ""

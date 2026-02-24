@@ -32,6 +32,8 @@ msgid ""
 "is a total game-changer for OS devs, the challenge stands tall. There is a "
 "bunch of reasons."
 msgstr ""
+"老實說，編寫作業系統內核非常困難。即便使用了對作業系統開發者來說具有劃時代意"
+"義的 Rust 語言，挑戰依然巨大。這背後有許多原因。"
 
 #: src/osdk/guide/why.md:20
 msgid ""
@@ -44,6 +46,12 @@ msgid ""
 "and a whole lot of finger-crossing to make sure everything clicks into "
 "place. This means a high entry bar for new OS creators."
 msgstr ""
+"首先，從零開始編寫一個新內核非常困難。應用程式開發者視為理所當然的一切都消失"
+"了：沒有堆疊（stack）、沒有堆積（heap）、沒有執行緒，甚至連標準 I/O 都沒有。"
+"你只能獨自面對 Rust 的 no_std 世界。你必須親自動手處理電腦架構中最底層、最容"
+"易出錯且最繁瑣的細節，來實現這些基礎的程式設計原語（primitive）。這是一個不斷"
+"學習、實作，並祈禱一切都能順利運作的過程。這也意味著對於新的作業系統創作者來"
+"說，進入門檻非常高。"
 
 #: src/osdk/guide/why.md:33
 msgid ""

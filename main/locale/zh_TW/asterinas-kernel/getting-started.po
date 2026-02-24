@@ -25,6 +25,9 @@ msgid ""
 "provides an _Linux-compatible_ ABI. It can serve as a seamless replacement "
 "for Linux while enhancing _memory safety_ and _developer friendliness_."
 msgstr ""
+"Asterinas 是一款 _安全_ 、 _快速_ 且 _通用_ 的作業系統內核，提供 _相容於 "
+"Linux_ 的 ABI。它能作為 Linux 的無縫替代方案，同時提升 _記憶體安全性_ 與 _開"
+"發者友善性_ 。"
 
 #: src/kernel/index.md:10
 msgid ""
@@ -44,6 +47,10 @@ msgid ""
 "open source or keeping them proprietary, thanks to the flexibility offered "
 "by [MPL](../)."
 msgstr ""
+"Asterinas 在開發者友善性方面超越了 Linux。它賦予內核開發者以下能力：(1) 使用"
+"更具生產力的 Rust 程式語言；(2) 利用名為 [OSDK]() 的專用工具組來簡化工作流"
+"程；(3) 由於 [MPL](../) 提供的靈活性，開發者可以自由選擇將其內核模組開源或保"
+"持私有。"
 
 #: src/kernel/index.md:26
 msgid ""
@@ -62,6 +69,8 @@ msgid ""
 "Get yourself an x86-64 Linux machine with Docker installed. Follow the three "
 "simple steps below to get Asterinas up and running."
 msgstr ""
+"準備一台已安裝 Docker 的 x86-64 Linux 機器。按照以下三個簡單步驟即可啟動並執"
+"行 Asterinas。"
 
 #: src/kernel/index.md:38
 msgid "Download the latest source code."
@@ -74,8 +83,8 @@ msgstr "執行 Docker 容器作為開發環境。"
 #: src/kernel/index.md:54
 msgid ""
 "Inside the container, go to the project folder to build and run Asterinas."
-msgstr ""
+msgstr "在容器內，前往專案資料夾建置並執行 Asterinas。"
 
 #: src/kernel/index.md:61
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
-msgstr ""
+msgstr "如果一切順利，Asterinas 現在已在虛擬機中啟動並執行。"

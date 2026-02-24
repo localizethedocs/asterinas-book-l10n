@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/intel-tdx.md:1
 msgid "Intel TDX"
-msgstr ""
+msgstr "Intel TDX"
 
 #: src/kernel/intel-tdx.md:3
 msgid ""
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/kernel/intel-tdx.md:43
 msgid "To verify the TDX host status, you can type:"
-msgstr ""
+msgstr "若要驗證 TDX 主機狀態，您可以輸入："
 
 #: src/kernel/intel-tdx.md:47
 msgid "\"TDX module initialized\""
@@ -102,7 +102,7 @@ msgstr "執行 Docker 容器作為開發環境。"
 #: src/kernel/intel-tdx.md:72
 msgid ""
 "Inside the container, go to the project folder to build and run Asterinas."
-msgstr ""
+msgstr "在容器內，前往專案資料夾建置並執行 Asterinas。"
 
 #: src/kernel/intel-tdx.md:79
 msgid "If everything goes well, Asterinas is now up and running inside a TD."

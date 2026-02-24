@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/osdk/guide/intel-tdx.md:1
 msgid "Running an OS in Intel TDX env"
-msgstr ""
+msgstr "在 Intel TDX 環境中執行作業系統"
 
 #: src/osdk/guide/intel-tdx.md:3
 msgid ""
@@ -22,6 +22,9 @@ msgid ""
 "environment conveniently. Intel TDX can provide a more secure environment "
 "for your OS."
 msgstr ""
+"OSDK 支援讓您的作業系統便捷地在 [Intel TDX](https://www.intel.com/content/"
+"www/us/en/developer/tools/trust-domain-extensions/overview.html) 環境中執行。"
+"Intel TDX 能為您的作業系統提供更安全的環境。"
 
 #: src/osdk/guide/intel-tdx.md:6
 msgid "Prepare the Intel TDX Environment"
@@ -40,7 +43,7 @@ msgstr ""
 
 #: src/osdk/guide/intel-tdx.md:13
 msgid "To verify the TDX host status, you can type:"
-msgstr ""
+msgstr "若要驗證 TDX 主機狀態，您可以輸入："
 
 #: src/osdk/guide/intel-tdx.md:16
 msgid "\"TDX module initialized\""
@@ -54,7 +57,7 @@ msgstr ""
 msgid ""
 "If you see the message \"TDX module initialized\", it means the TDX module "
 "has loaded successfully."
-msgstr ""
+msgstr "如果您看到「TDX module initialized」訊息，代表 TDX 模組已成功載入。"
 
 #: src/osdk/guide/intel-tdx.md:28
 msgid ""
@@ -146,3 +149,5 @@ msgid ""
 "To choose the configurations specified by the TDX scheme over the default "
 "ones, add the `--scheme` argument to the build, run, or test command."
 msgstr ""
+"若要選擇 TDX 方案所指定的組態而非預設組態，請在 build、run 或 test 命令中增"
+"添 `--scheme` 引數。"

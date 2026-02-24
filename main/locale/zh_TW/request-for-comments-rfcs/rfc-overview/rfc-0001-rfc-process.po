@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:1
 msgid "RFC-0001: RFC process"
-msgstr ""
+msgstr "RFC-0001：RFC 過程"
 
 #: src/rfcs/0001-rfc-process.md:3
 msgid "Status: Implemented"
@@ -99,19 +99,21 @@ msgstr "設計"
 
 #: src/rfcs/0001-rfc-process.md:25
 msgid "When to follow the RFC process"
-msgstr ""
+msgstr "何時應遵循 RFC 過程"
 
 #: src/rfcs/0001-rfc-process.md:27
 msgid ""
 "The RFC process should be used for any \"substantial\" change to Asterinas. "
 "Examples of changes that **require** an RFC include:"
 msgstr ""
+"RFC 過程應適用於對 Asterinas 的任何「重大」變更。**需要** 透過 RFC 進行變更的"
+"範例包括："
 
 #: src/rfcs/0001-rfc-process.md:28
 msgid ""
 "Launching new top-level sub-projects of a similar significance to OSTD and "
 "OSDK."
-msgstr ""
+msgstr "啟動與 OSTD 和 OSDK 具有同等重要性的全新頂層子專案。"
 
 #: src/rfcs/0001-rfc-process.md:29
 msgid "Defining or significantly altering the project roadmap and goals."
@@ -127,7 +129,7 @@ msgstr ""
 msgid ""
 "Proposing significant architectural designs, such as the framekernel "
 "architecture or safe policy injection."
-msgstr ""
+msgstr "提出重大的架構設計，例如框內核架構或安全方針注入。"
 
 #: src/rfcs/0001-rfc-process.md:32
 msgid ""
@@ -164,7 +166,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:41
 msgid "How the RFC process works"
-msgstr ""
+msgstr "RFC 過程的運作方式"
 
 #: src/rfcs/0001-rfc-process.md:43
 msgid "The RFC process consists of several distinct stages:"
@@ -172,7 +174,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:45
 msgid "The Socialization Stage"
-msgstr ""
+msgstr "社交化階段"
 
 #: src/rfcs/0001-rfc-process.md:47
 msgid ""
@@ -296,7 +298,7 @@ msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:77
 msgid "If the final decision is approval:"
-msgstr ""
+msgstr "如果最終決定為批准："
 
 #: src/rfcs/0001-rfc-process.md:78
 msgid "The facilitator will assign an unique RFC number."
@@ -380,6 +382,8 @@ msgid ""
 "The overall structure and philosophy are closely modeled on Rust's RFC "
 "process."
 msgstr ""
+"[Rust RFC 過程](https://rust-lang.github.io/rfcs/0002-rfc-process.html)：整體"
+"結構與理念皆緊密參考 Rust 的 RFC 過程。"
 
 #: src/rfcs/0001-rfc-process.md:103
 msgid ""
