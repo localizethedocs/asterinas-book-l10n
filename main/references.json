@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-02-08 20:32:24 -0800",
-      "hash" : "5f8b019369c97bc8dc072ebfe3859ea1ff23450d",
-      "title" : "Replace `from_first_bytes` with `from_bytes` if possible"
+      "date" : "2026-02-19 06:48:17 +0800",
+      "hash" : "97bc17fa58ff2d3be555c48be8973e4d1c924b94",
+      "title" : "Fix typos in ostd documentation"
     }
   },
   "type" : "branch",
