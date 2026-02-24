@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/reference/environment-variables.md:1
+msgid "Environment Variables"
+msgstr ""
+
+#: src/osdk/reference/environment-variables.md:3
+msgid ""
+"The OSDK tool uses the following environment variables to customize "
+"compilation and target behavior."
+msgstr ""
+
+#: src/osdk/reference/environment-variables.md:5
+msgid "OSDK-Specific Variables"
+msgstr ""
+
+#: src/osdk/reference/environment-variables.md:6
+msgid ""
+"`OSDK_TARGET_ARCH`: If set, OSDK will use the specified value as its default "
+"target architecture (e.g., x86_64, riscv64). If not set, OSDK will default "
+"to the host architecture."
+msgstr ""

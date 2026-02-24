@@ -1,0 +1,393 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/rfcs/0001-rfc-process.md:1
+msgid "RFC-0001: RFC process"
+msgstr "RFC-0001：RFC 過程"
+
+#: src/rfcs/0001-rfc-process.md:3
+msgid "Status: Implemented"
+msgstr "狀態：已實現"
+
+#: src/rfcs/0001-rfc-process.md:4
+msgid "Pull request: https://github.com/asterinas/asterinas/pull/2365/"
+msgstr "拉取請求：https://github.com/asterinas/asterinas/pull/2365/"
+
+#: src/rfcs/0001-rfc-process.md:5
+msgid "Date submitted: 2025-08-24"
+msgstr "提交日期：2025-08-24"
+
+#: src/rfcs/0001-rfc-process.md:6
+msgid "Date approved: 2025-09-05"
+msgstr "批准日期：025-09-05"
+
+#: src/rfcs/0001-rfc-process.md:8
+msgid "Summary"
+msgstr "摘要"
+
+#: src/rfcs/0001-rfc-process.md:10
+msgid ""
+"The \"RFC\" (request for comments) process is intended to provide a "
+"consistent, transparent, structured path for the community to make \"big\" "
+"decisions. For example, the RFC process can be used to evolve the project "
+"roadmap and the system architecture."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:12
+msgid "Motivation"
+msgstr "動機"
+
+#: src/rfcs/0001-rfc-process.md:14
+msgid ""
+"As the Asterinas project grows in scale and community size, an informal "
+"decision-making process becomes insufficient. A formalized process is "
+"crucial for maintaining the quality and coherence of the project. Several "
+"highly successful open-source projects have demonstrated the value of such a "
+"process, including Rust ([RFCs](https://rust-lang.github.io/rfcs/"
+"introduction.html)), Fuchsia ([RFCs](https://fuchsia.dev/fuchsia-src/"
+"contribute/governance/rfcs)), Python ([Python Enhancement Proposals](https://"
+"peps.python.org/) or PEPs), and Kubernetes ([Kubernetes Enhancement "
+"Proposals](https://www.kubernetes.dev/resources/keps/) or KEPs)."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:16
+msgid "Adopting a formal RFC process will:"
+msgstr "採用正式的 RFC 過程將會："
+
+#: src/rfcs/0001-rfc-process.md:17
+msgid ""
+"**Enhance decision quality**: By requiring a detailed proposal and public "
+"discussion, we can ensure that decisions are well-reasoned, technically "
+"sound, and consider a wide range of perspectives."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:18
+msgid ""
+"**Foster Consensus**: The process provides a clear framework for the "
+"community to come together, discuss differing viewpoints, and arrive at a "
+"consensus on important issues."
+msgstr ""
+"**促進共識**：此過程提供了一個清晰的框架，讓社群成員能匯聚一堂、討論不同觀"
+"點，並針對重要議題達成共識。"
+
+#: src/rfcs/0001-rfc-process.md:19
+msgid ""
+"**Create design records**: Approved RFCs will serve as a historical archive, "
+"documenting the design choices made and the reasoning behind them. This is "
+"invaluable for new contributors and for future reference."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:21
+msgid ""
+"By introducing this process, we aim to support the healthy and sustainable "
+"growth of the Asterinas project."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:23
+msgid "Design"
+msgstr "設計"
+
+#: src/rfcs/0001-rfc-process.md:25
+msgid "When to follow the RFC process"
+msgstr "何時應遵循 RFC 過程"
+
+#: src/rfcs/0001-rfc-process.md:27
+msgid ""
+"The RFC process should be used for any \"substantial\" change to Asterinas. "
+"Examples of changes that **require** an RFC include:"
+msgstr ""
+"RFC 過程應適用於對 Asterinas 的任何「重大」變更。**需要** 透過 RFC 進行變更的"
+"範例包括："
+
+#: src/rfcs/0001-rfc-process.md:28
+msgid ""
+"Launching new top-level sub-projects of a similar significance to OSTD and "
+"OSDK."
+msgstr "啟動與 OSTD 和 OSDK 具有同等重要性的全新頂層子專案。"
+
+#: src/rfcs/0001-rfc-process.md:29
+msgid "Defining or significantly altering the project roadmap and goals."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:30
+msgid ""
+"Establishing or changing project-wide norms, such as this RFC process itself "
+"or coding style guides."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:31
+msgid ""
+"Proposing significant architectural designs, such as the framekernel "
+"architecture or safe policy injection."
+msgstr "提出重大的架構設計，例如框內核架構或安全方針注入。"
+
+#: src/rfcs/0001-rfc-process.md:32
+msgid ""
+"Introducing changes that affect user-space programs, such as adding a non-"
+"Linux system call or feature."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:34
+msgid "Examples of changes that **do not** require an RFC include:"
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:35
+msgid ""
+"Proposing a design whose impact is confined to a single sub-project or "
+"module. If the design is significant or non-trivial, submit a design "
+"proposal on Github Issues for discussion."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:36
+msgid ""
+"Adding well-understood features with established patterns, such as a "
+"standard Linux system call or a device driver."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:37
+msgid "Refactoring existing code, fixing bugs, or improving performance."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:39
+msgid ""
+"When in doubt, it is best to consult with the project maintainers using the "
+"methods described in the next section."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:41
+msgid "How the RFC process works"
+msgstr "RFC 過程的運作方式"
+
+#: src/rfcs/0001-rfc-process.md:43
+msgid "The RFC process consists of several distinct stages:"
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:45
+msgid "The Socialization Stage"
+msgstr "社交化階段"
+
+#: src/rfcs/0001-rfc-process.md:47
+msgid ""
+"Before investing the time to write a full RFC, it is highly recommended to "
+"socialize the core idea with the community. This helps gauge interest, "
+"gather early feedback, and refine the proposal. Good venues for this include:"
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:49
+msgid ""
+"Starting a discussion on the project's [GitHub Discussions page](https://"
+"github.com/asterinas/asterinas/discussions)."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:50
+msgid "Posting a \"Pre-RFC\" document to solicit more detailed feedback."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:51
+msgid "Talking to key contributors, code owners, or maintainers directly."
+msgstr "直接與重要貢獻者、程式碼擁有者或維護者溝通。"
+
+#: src/rfcs/0001-rfc-process.md:53
+msgid ""
+"Having support from at least a few other community members is a strong "
+"signal that the idea is ready for a formal RFC. Additionally, having a proof-"
+"of-concept implementation or identifying individuals committed to the "
+"implementation can strengthen the proposal."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:55
+msgid "The Draft Stage"
+msgstr "草稿階段"
+
+#: src/rfcs/0001-rfc-process.md:57
+msgid "Once you are ready to proceed, create a formal RFC document."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:58
+msgid "Fork the `asterinas/asterinas` repository."
+msgstr "分叉 `asterinas/asterinas` 儲存庫。"
+
+#: src/rfcs/0001-rfc-process.md:59
+msgid ""
+"In [the `rfcs` directory](https://github.com/asterinas/asterinas/tree/main/"
+"book/src/rfcs), copy `rfc-template.md` and rename it to `0000-your-rfc-title."
+"md`. The `0000` is a placeholder for the RFC number, which will be assigned "
+"later."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:60
+msgid ""
+"Fill out the template with your proposal. The template provides a solid "
+"structure, but feel free to adapt it to best suit your proposal."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:62
+msgid "The Iteration Stage"
+msgstr "疊代階段"
+
+#: src/rfcs/0001-rfc-process.md:64
+msgid ""
+"Submit your RFC draft as a pull request to the Asterinas repository. Once "
+"the PR is opened, the formal review process begins:"
+msgstr ""
+"將您的 RFC 草案以拉取請求（PR）的形式提交至 Asterinas 儲存庫。一旦 PR 開啟，"
+"正式的審核過程即將開始："
+
+#: src/rfcs/0001-rfc-process.md:65
+msgid ""
+"A project maintainer will be assigned as the **facilitator** for the RFC. "
+"The facilitator's role is to guide the discussion, ensure it remains "
+"productive, and ultimately determine when consensus has been reached."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:66
+msgid ""
+"All members of the community are encouraged to review the proposal and "
+"provide constructive feedback through comments on the pull request."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:67
+msgid ""
+"The RFC author is responsible for engaging with the feedback, addressing "
+"concerns, and updating the RFC text to reflect the evolving consensus."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:69
+msgid "The Voting Stage"
+msgstr "投票階段"
+
+#: src/rfcs/0001-rfc-process.md:71
+msgid ""
+"When the discussion has converged and the major points of feedback have been "
+"addressed, the author can request that the facilitator initiate a final vote."
+msgstr ""
+"當討論趨於一致且主要的反饋意見皆已處理完畢時，作者可以請求協調人發起最終投"
+"票。"
+
+#: src/rfcs/0001-rfc-process.md:73
+msgid ""
+"The vote is open to all project maintainers and code owners of top-level sub-"
+"projects. See the [`CODEOWNERS`](https://github.com/asterinas/asterinas/blob/"
+"main/CODEOWNERS) file for details."
+msgstr ""
+"投票開放給所有專案維護者以及頂層子專案的程式碼擁有者。詳情請參見 "
+"[`CODEOWNERS`](https://github.com/asterinas/asterinas/blob/main/CODEOWNERS) "
+"檔案。"
+
+#: src/rfcs/0001-rfc-process.md:74
+msgid "Voters can express either \"approval\" or \"rejection.\""
+msgstr "投票者可以表達「贊成」或「反對」。"
+
+#: src/rfcs/0001-rfc-process.md:75
+msgid ""
+"The final decision will be based on a [rough consensus](https://en.wikipedia."
+"org/wiki/Rough_consensus) as determined by the facilitator. This means that "
+"while unanimous agreement is not required, any major objections must be "
+"addressed."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:77
+msgid "If the final decision is approval:"
+msgstr "如果最終決定為批准："
+
+#: src/rfcs/0001-rfc-process.md:78
+msgid "The facilitator will assign an unique RFC number."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:79
+msgid ""
+"The author will update the RFC's file name with the assigned RFC number. The "
+"author should also update the metadata fields of the RFC."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:80
+msgid "The facilitator will merge the pull request."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:82
+msgid "The Maintenance Stage"
+msgstr "維護階段"
+
+#: src/rfcs/0001-rfc-process.md:84
+msgid ""
+"Once an RFC is approved, the proposed changes are ready for implementation. "
+"When the corresponding work is completed and merged, the RFC's status is "
+"updated from \"approved\" to \"implemented.\""
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:86
+msgid ""
+"Approved RFCs are considered immutable historical records of design "
+"decisions. As such, only minor corrective edits like fixing typos or broken "
+"links are allowed."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:88
+msgid ""
+"Significant changes or amendments to an existing RFC must be proposed "
+"through an entirely new RFC. This new proposal can also be used to formally "
+"deprecate a previous RFC, in which case the original's status will be "
+"updated to \"deprecated.\""
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:90
+msgid "License"
+msgstr "授權條款"
+
+#: src/rfcs/0001-rfc-process.md:92
+msgid ""
+"All RFCs submitted to the Asterinas project are licensed under [Apache "
+"License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). This "
+"license is more permissive than [the MPL license](https://www.mozilla.org/en-"
+"US/MPL/) used for the Asterinas code."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:94
+msgid "Drawbacks"
+msgstr "缺點"
+
+#: src/rfcs/0001-rfc-process.md:96
+msgid ""
+"Introducing a formal RFC process can increase the overhead for making "
+"changes to the project. The process is intentionally deliberate, which may "
+"slow down the pace of development for major features. There is also a risk "
+"that the process could become overly bureaucratic if not managed carefully. "
+"For contributors, the effort required to write a high-quality RFC and see it "
+"through the review process can be significant."
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:98
+msgid "Prior Art and References"
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:100
+msgid ""
+"The Asterinas RFC process is heavily inspired by the well-established "
+"processes of the following two open-source projects:"
+msgstr ""
+
+#: src/rfcs/0001-rfc-process.md:102
+msgid ""
+"[Rust RFC Process](https://rust-lang.github.io/rfcs/0002-rfc-process.html): "
+"The overall structure and philosophy are closely modeled on Rust's RFC "
+"process."
+msgstr ""
+"[Rust RFC 過程](https://rust-lang.github.io/rfcs/0002-rfc-process.html)：整體"
+"結構與理念皆緊密參考 Rust 的 RFC 過程。"
+
+#: src/rfcs/0001-rfc-process.md:103
+msgid ""
+"[Fuchsia RFC Process](https://fuchsia.dev/fuchsia-src/contribute/governance/"
+"rfcs/rfc_process): We have drawn on the Fuchsia process for its clear "
+"definition of roles and its emphasis on transparent decision-making."
+msgstr ""

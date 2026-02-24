@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/index.md:1
+msgid "Popular Applications"
+msgstr "熱門應用程式"
+
+#: src/distro/popular-applications/index.md:3
+msgid ""
+"The [Nix package collection](https://search.nixos.org/packages) contains "
+"over 120,000 packages. Many of them may already work out of the box on "
+"Asterinas NixOS, but it is impractical to test every package and document "
+"its support status. Instead, we group popular applications into categories "
+"and document the ones we have verified to work."
+msgstr ""

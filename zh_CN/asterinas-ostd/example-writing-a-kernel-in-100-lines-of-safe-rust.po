@@ -1,0 +1,210 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ostd/a-100-line-kernel.md:1
+msgid "Example: Writing a Kernel in About 100 Lines of Safe Rust"
+msgstr "示例：用大约 100 行安全的 Rust 代码编写内核"
+
+#: src/ostd/a-100-line-kernel.md:3
+msgid ""
+"To give you a sense of how Asterinas OSTD enables writing kernels in safe "
+"Rust, we will show a new kernel in about 100 lines of safe Rust."
+msgstr ""
+"为了让你了解 Asterinas OSTD 如何支持用安全 Rust 编写内核，我们将展示一个仅需"
+"约 100 行安全 Rust 代码的新内核。"
+
+#: src/ostd/a-100-line-kernel.md:7
+msgid "Our new kernel will be able to run the following Hello World program."
+msgstr "我们的新内核将能够运行以下 Hello World 程序。"
+
+#: src/ostd/a-100-line-kernel.md:10
+msgid "# SPDX-License-Identifier: MPL-2.0\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:12
+msgid "# entry point\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:13
+msgid "# code section\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:15
+msgid "# syscall number of write\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:16
+msgid "# stdout\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:17
+msgid "# address of message         \n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:19
+msgid "# calculate message len\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:21
+msgid "# syscall number of exit, move it to rax\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:22
+msgid "# exit code, move it to rdi\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:25
+msgid "# read only data section\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:27
+msgid "\"Hello, world\\n\""
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:31
+msgid "The assembly program above can be compiled with the following command."
+msgstr "上述汇编程序可通过以下命令编译。"
+
+#: src/ostd/a-100-line-kernel.md:37
+msgid ""
+"The user program above requires our kernel to support three main features:"
+msgstr "上述汇编程序可通过以下命令编译："
+
+#: src/ostd/a-100-line-kernel.md:38
+msgid "Loading a program as a process image in user space;"
+msgstr "在用户空间加载程序作为进程镜像；"
+
+#: src/ostd/a-100-line-kernel.md:39
+msgid "Handling the write system call;"
+msgstr "处理写系统调用；"
+
+#: src/ostd/a-100-line-kernel.md:40
+msgid "Handling the exit system call."
+msgstr "处理退出系统调用。"
+
+#: src/ostd/a-100-line-kernel.md:42
+msgid ""
+"A sample implementation of the kernel in safe Rust is given below. Comments "
+"are added to highlight how the APIs of Asterinas OSTD enable safe kernel "
+"development."
+msgstr ""
+"以下给出了一个用安全 Rust 编写的内核示例实现。添加了注释以突出说明 Asterinas "
+"OSTD 的 API 如何支持安全的内核开发。"
+
+#: src/ostd/a-100-line-kernel.md:47
+msgid "// SPDX-License-Identifier: MPL-2.0\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:69
+msgid ""
+"/// The kernel's boot and initialization process is managed by OSTD.\n"
+"/// After the process is done, the kernel's execution environment\n"
+"/// (e.g., stack, heap, tasks) will be ready for use and the entry function\n"
+"/// labeled as `#[ostd::main]` will be called.\n"
+msgstr ""
+"/// 内核的引导和初始化过程由OSTD管理。\n"
+"/// 在该过程完成后，内核的执行环境\n"
+"///（例如，栈、堆、任务）将准备就绪\n"
+"/// 标记为`#[ostd::main]`的入口函数将被调用。\n"
+
+#: src/ostd/a-100-line-kernel.md:76
+msgid "\"../hello\""
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:89
+msgid ""
+"// Physical memory pages can be only accessed\n"
+"        // via the `UFrame` or `USegment` abstraction.\n"
+msgstr "// 物理内存页只能通过 `UFrame` 或 `USegment` 抽象来访问。\n"
+
+#: src/ostd/a-100-line-kernel.md:95
+msgid ""
+"// The page table of the user space can be\n"
+"    // created and manipulated safely through\n"
+"    // the `VmSpace` abstraction.\n"
+msgstr "// 用户空间的页表可以通过 `VmSpace` 抽象安全地创建和操作。\n"
+
+#: src/ostd/a-100-line-kernel.md:99
+msgid "// The map addr for statically-linked executable\n"
+msgstr "// 静态链接可执行文件的映射地址\n"
+
+#: src/ostd/a-100-line-kernel.md:115
+msgid ""
+"// Switching between user-kernel space is\n"
+"        // performed via the UserMode abstraction.\n"
+msgstr ""
+"// 用户空间和内核空间之间的切换是\n"
+"        // 通过 UserMode 抽象来执行的。\n"
+
+#: src/ostd/a-100-line-kernel.md:123
+msgid ""
+"// The execute method returns when system\n"
+"            // calls or CPU exceptions occur or some\n"
+"            // events specified by the kernel occur.\n"
+msgstr ""
+"// 当系统调用、CPU异常发生，\n"
+"            // 或者内核指定的某些事件发生时，\n"
+"            // execute方法返回。\n"
+
+#: src/ostd/a-100-line-kernel.md:128
+msgid ""
+"// The CPU registers of the user space\n"
+"            // can be accessed and manipulated via\n"
+"            // the `UserContext` abstraction.\n"
+msgstr ""
+"// 用户空间的 CPU 寄存器\n"
+"             // 可以通过 `UserContext` 抽象进行访问和操作。\n"
+
+#: src/ostd/a-100-line-kernel.md:139
+msgid ""
+"// Kernel tasks are managed by the Framework,\n"
+"    // while scheduling algorithms for them can be\n"
+"    // determined by the users of the Framework.\n"
+msgstr ""
+"// 内核任务由框架管理，\n"
+"    // 而这些任务的调度算法可由框架用户确定。\n"
+
+#: src/ostd/a-100-line-kernel.md:146
+msgid ""
+"// The user-space CPU states can be initialized\n"
+"    // to arbitrary values via the `UserContext`\n"
+"    // abstraction.\n"
+msgstr "// 用户空间的 CPU 状态可以通过 `UserContext` 抽象初始化为任意值。\n"
+
+#: src/ostd/a-100-line-kernel.md:150
+msgid "// The entry point for statically-linked executable\n"
+msgstr "// 静态链接可执行文件的入口点\n"
+
+#: src/ostd/a-100-line-kernel.md:161
+msgid "// Access the user-space CPU registers safely.\n"
+msgstr "// 安全访问用户空间 CPU 寄存器。\n"
+
+#: src/ostd/a-100-line-kernel.md:166
+msgid ""
+"// Copy data from the user space without\n"
+"                // unsafe pointer dereferencing.\n"
+msgstr ""
+"// 从用户空间复制数据，避免\n"
+"                // 不安全的指针解引用。\n"
+
+#: src/ostd/a-100-line-kernel.md:174
+msgid "// Use the console for output safely.\n"
+msgstr "// 安全地使用控制台进行输出。\n"
+
+#: src/ostd/a-100-line-kernel.md:175
+msgid "\"{}\""
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:176
+msgid "// Manipulate the user-space CPU registers safely.\n"
+msgstr "// 安全地操作用户空间的 CPU 寄存器。\n"

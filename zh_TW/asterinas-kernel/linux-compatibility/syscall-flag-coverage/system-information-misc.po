@@ -1,0 +1,208 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:1
+msgid "System Information & Misc."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:11
+msgid "`arch_prctl`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:13
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:32
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:56
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:78
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:106
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:130
+msgid "Supported functionality in SCML:"
+msgstr "SCML 支援的功能："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:16
+msgid "// Get or set the FS register\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:23
+msgid "Unsupported codes:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:24
+msgid "`ARCH_GET_CPUID` and `ARCH_SET_CPUID`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:25
+msgid "`ARCH_GET_GS` and `ARCH_SET_GS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:27
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/arch_prctl.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:30
+msgid "`getrusage`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:35
+msgid "// Return resource usage statistics for the calling process\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:40
+msgid "// Return resource usage statistics for the calling thread\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:48
+msgid "Unsupported `who` flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:49
+msgid "`RUSAGE_CHILDREN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:51
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/getrusage.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:54
+msgid "`getrandom`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:59
+msgid "// Obtain random bytes\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:63
+msgid ""
+"// Optional flags:\n"
+"        //\n"
+"        // High-entropy pool\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:70
+msgid "Silently-ignored flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:71
+msgid "`GRND_NONBLOCK` because the underlying operation never blocks"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:73
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/getrandom.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:76
+msgid "`reboot`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:82
+msgid "// Stop the current system\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:92
+msgid "Unsupported `op` flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:93
+msgid "`LINUX_REBOOT_CMD_CAD_OFF`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:94
+msgid "`LINUX_REBOOT_CMD_CAD_ON`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:95
+msgid "`LINUX_REBOOT_CMD_KEXEC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:96
+msgid "`LINUX_REBOOT_CMD_RESTART2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:97
+msgid "`LINUX_REBOOT_CMD_SW_SUSPEND`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:99
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/reboot.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:102
+msgid "POSIX Clocks"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:104
+msgid "`clock_gettime`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:112
+msgid "// Get the time of a clock specified by a static ID\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:115
+msgid "// Get the time of a clock specified by a dynamic ID\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:120
+msgid "Unsupported predefined clock IDs:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:121
+msgid "`CLOCK_REALTIME_ALARM`"
+msgstr "`CLOCK_REALTIME_ALARM`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:122
+msgid "`CLOCK_BOOTTIME_ALARM`"
+msgstr "`CLOCK_BOOTTIME_ALARM`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:123
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:146
+msgid "`CLOCK_TAI`"
+msgstr "`CLOCK_TAI`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:125
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/clock_gettime.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:128
+msgid "`clock_nanosleep`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:133
+msgid "// Sleep with a specified clock\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:137
+msgid ""
+"// Optional flags:\n"
+"        //\n"
+"        // Sleep until an absolute time point\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:145
+msgid "Unsupported clock IDs:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:148
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/clock_nanosleep.2.html)."
+msgstr ""

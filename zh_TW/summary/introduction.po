@@ -1,0 +1,177 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/index.md:1
+msgid "The Asterinas Book"
+msgstr "Asterinas 手冊"
+
+#: src/index.md:7
+msgid ""
+"Welcome to the documentation for Asterinas, an open-source project and "
+"community focused on developing cutting-edge Rust OS kernels."
+msgstr ""
+"歡迎閱讀 Asterinas 的文件。Asterinas 是一個開源專案與社群，致力於開發頂尖的 "
+"Rust 作業系統內核。"
+
+#: src/index.md:11
+msgid "Book Structure"
+msgstr "手冊結構"
+
+#: src/index.md:13
+msgid "This book is divided into six distinct parts:"
+msgstr "這本手冊分為六個不同部份："
+
+#: src/index.md:15
+msgid "[Part 1: Asterinas NixOS](distro/)"
+msgstr "[第 1 部份：Asterinas NixOS](distro/)"
+
+#: src/index.md:17
+msgid ""
+"Asterinas NixOS is the first distribution built on top of the Asterinas "
+"kernel. It is based on NixOS, leveraging its powerful configuration model "
+"and rich package ecosystem, while swapping out the Linux kernel for "
+"Asterinas."
+msgstr ""
+"Asterinas NixOS 是第一個基於 Asterinas 內核建置的散布版。它以 NixOS 為基礎，"
+"利用其強大的組態模型和豐富的軟體包生態系統，同時將 Linux 內核替換為 "
+"Asterinas。"
+
+#: src/index.md:23
+msgid "[Part 2: Asterinas Kernel](kernel/)"
+msgstr "[第 2 部份：Asterinas 內核](kernel/)"
+
+#: src/index.md:25
+msgid ""
+"Explore the modern OS kernel at the heart of Asterinas. Designed to realize "
+"the full potential of Rust, Asterinas Kernel implements the Linux ABI in a "
+"safe and efficient way. This means it can seamlessly replace Linux, offering "
+"enhanced safety and security."
+msgstr ""
+"探索 Asterinas 核心的現代作業系統內核。Asterinas 內核是為了發揮 Rust 的全部潛"
+"力而設計的，以安全且高效的方式實現 Linux ABI。這意味著它可以無縫替換 Linux，"
+"並提供更強的安全性與保障。"
+
+#: src/index.md:31
+msgid "[Part 3: Asterinas OSTD](ostd/)"
+msgstr "[第 3 部份：Asterinas OSTD](ostd/)"
+
+#: src/index.md:33
+msgid ""
+"The Asterinas OSTD lays down a minimalistic, powerful, and solid foundation "
+"for OS development. It's akin to Rust's `std` crate but crafted for the "
+"demands of _safe_ Rust OS development. The Asterinas Kernel is built on this "
+"very OSTD."
+msgstr ""
+"Asterinas OSTD 為作業系統開發奠定了極簡、強大且穩固的基礎。它類似於 Rust 的 "
+"`std` 軟體箱，但是專為 _安全的_ Rust 作業系統開發的需求而打造。Asterinas 內核"
+"正是建置於此 OSTD 之上。"
+
+#: src/index.md:39
+msgid "[Part 4: Asterinas OSDK](osdk/guide/)"
+msgstr "[第 4 部份：Asterinas OSDK](osdk/guide/)"
+
+#: src/index.md:41
+msgid ""
+"The OSDK is a command-line tool that streamlines the workflow to create, "
+"build, test, and run Rust OS projects that are built upon Asterinas OSTD. "
+"Developed specifically for OS developers, it extends Rust's Cargo tool to "
+"better suite their specific needs. OSDK is instrumental in the development "
+"of Asterinas Kernel."
+msgstr ""
+"OSDK 是一款命令行工具，旨在簡化基於 Asterinas OSTD 建置的 Rust 作業系統專案的"
+"建立、編譯、測試與執行的工作流程。它是專為作業系統開發者開發的，擴充了 Rust "
+"的 Cargo 工具，以更貼合其特定需求。OSDK 在 Asterinas 內核的開發過程中發揮了關"
+"鍵作用。"
+
+#: src/index.md:49
+msgid "[Part 5: Contributing to Asterinas](to-contribute/)"
+msgstr "[第 5 部份：貢獻 Asterinas](to-contribute/)"
+
+#: src/index.md:51
+msgid ""
+"Asterinas is in its early stage and welcomes your contributions! This part "
+"provides guidance on how you can become an integral part of the Asterinas "
+"project."
+msgstr ""
+"Asterinas 正處於早期階段，歡迎您的貢獻！本章節將引導您如何成為 Asterinas 專案"
+"中不可或缺的一員。"
+
+#: src/index.md:56
+msgid "[Part 6: Requests for Comments (RFCs)](rfcs/)"
+msgstr "[第 6 部份：意見徵求稿（RFCs）](rfcs/)"
+
+#: src/index.md:58
+msgid ""
+"Significant decisions in Asterinas are made through a transparent RFC "
+"process. This part describes the RFC process and archives all approvaed RFCs."
+msgstr ""
+"Asterinas 的重大決策皆透過透明的 RFC 過程制定。本部分描述了 RFC 過程，並封存"
+"所有已通過的 RFC。"
+
+#: src/index.md:62
+msgid "Licensing"
+msgstr "授權條款"
+
+#: src/index.md:64
+msgid ""
+"Asterinas's source code and documentation primarily use the [Mozilla Public "
+"License (MPL), Version 2.0](https://github.com/asterinas/asterinas/blob/main/"
+"LICENSE-MPL). Select components are under more permissive licenses, detailed "
+"[here](https://github.com/asterinas/asterinas/blob/main/.licenserc.yaml)."
+msgstr ""
+"Asterinas 的來源碼與文件主要使用 [Mozilla Public License (MPL), Version 2.0]"
+"(https://github.com/asterinas/asterinas/blob/main/LICENSE-MPL)。部分特定組件"
+"則使用更寬鬆的授權條款，詳情請參見[此處](https://github.com/asterinas/"
+"asterinas/blob/main/.licenserc.yaml)。"
+
+#: src/index.md:69
+msgid ""
+"Our choice of the [weak-copyleft](https://www.tldrlegal.com/license/mozilla-"
+"public-license-2-0-mpl-2) MPL license reflects a strategic balance:"
+msgstr ""
+"我們選擇[弱著作傳](https://www.tldrlegal.com/license/mozilla-public-"
+"license-2-0-mpl-2)的 MPL 授權條款，反映了一種策略性的平衡："
+
+#: src/index.md:71
+msgid ""
+"**Commitment to open-source freedom**: We believe that OS kernels are a "
+"communal asset that should benefit humanity. The MPL ensures that any "
+"alterations to MPL-covered files remain open source, aligning with our "
+"vision. Additionally, we do not require contributors to sign a Contributor "
+"License Agreement (CLA), [preserving their rights and preventing the "
+"possibility of their contributions being made closed source](https://"
+"drewdevault.com/2018/10/05/Dont-sign-a-CLA.html)."
+msgstr ""
+"**對開源自由的承諾：** 我們相信作業系統內核是全人類應共同受益的公共資產。MPL "
+"確保對受 MPL 保護的檔案的任何修改都保持開源，這與我們的願景一致。此外，我們不"
+"要求貢獻者簽署貢獻者授權協議（CLA）以保留其權利，[並防止其貢獻被轉為閉源的可"
+"能性](https://drewdevault.com/2018/10/05/Dont-sign-a-CLA.html)。"
+
+#: src/index.md:79
+msgid ""
+"**Accommodating proprietary modules**: Recognizing the evolving landscape "
+"where large corporations also contribute significantly to open-source, we "
+"accommodate the business need for proprietary kernel modules. Unlike GPL, "
+"the MPL permits the linking of MPL-covered files with proprietary code."
+msgstr ""
+"**容納專有模組：**我們認知到大型企業也對開源做出重大貢獻的演進趨勢，因此我們"
+"容納了對專有核心模組的商業需求。與 GPL 不同，MPL 允許將受 MPL 保護的檔案與專"
+"有程式碼進行連結。"
+
+#: src/index.md:86
+msgid ""
+"In conclusion, we believe that MPL is the best choice to foster a vibrant, "
+"robust, and inclusive open-source community around Asterinas."
+msgstr ""
+"總結來說，我們相信 MPL 是圍繞 Asterinas 培育一個充滿活力、強健且具包容性的開"
+"源社群之最佳選擇。"
