@@ -1,0 +1,81 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="980"
+  height="210"
+  viewBox="0 0 980 210"
+>
+  <style>
+    .contributor { cursor: pointer; }
+    .name {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      fill: #6B6B6C;
+      text-anchor: middle;
+    }
+    .username {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      fill: #6B6B6C;
+      text-anchor: middle;
+    }
+    .words {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      fill: #6B6B6C;
+      text-anchor: middle;
+    }
+    .project-link {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      fill: #3b82f6;
+      text-anchor: middle;
+    }
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+    <g class="contributor">
+      <defs>
+        <clipPath id="clip-33">
+          <circle cx="70" cy="70" r="50"/>
+        </clipPath>
+      </defs>
+      <title>azurezee</title>
+      <image 
+        x="20" 
+        y="20" 
+        width="100" 
+        height="100" 
+        xlink:href="data:image/png;base64,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"
+        clip-path="url(#clip-33)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <text x="70" y="150" class="name">azurezee</text>
+      <text x="70" y="170" class="words">4,006 words</text>
+    </g>
+    <g class="contributor">
+      <defs>
+        <clipPath id="clip-2">
+          <circle cx="210" cy="70" r="50"/>
+        </clipPath>
+      </defs>
+      <title>Haowei Hsu (hwhsu1231)</title>
+      <image 
+        x="160" 
+        y="20" 
+        width="100" 
+        height="100" 
+        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACv0lEQVR42u2dsU4yQRRGv5lQ0FgQ4vaU0FiRbeAVlMre1poYnsFYk2wsTCyt1MYH0EZKi6XcHrPZwoYEM/NXFmbXQp39QTgnoVmSe2HOztybLDMYSV6wNixDgAAEAAIQAAhAACAAAYAABAACEAAIQAAgAAFQL42QwYwxMsZs9YB57+W93zwBxhhdXV2p1+tttYA0TXVychJMQlABvV5P/X5/65cNY0wwAdQAijACAAG0obUyn8/1+PgYJFYURTo8PJS1n+8d55zu7++1WCyC5BkOh+p2u/+ntQ3xstb62Wzmq0iSxIfKE8exX61WpRyr1crHcRwsT5Ikld9lNpt5a22wPCxB1AAEAALogtZj31q1Wq1SRyNJb29vWi6XQfI0m03t7e2VrjvnVBSFnHO7KaDVaunp6Untdrv03ng81vX1dZA8x8fHuri4KF3P81yDwUB5nu/uDGi329rf36+8a0PRbDYrc3x8BmoARRgQgADYuSL8E7Is0+npaenZs/deWZYhoG4Wi4UuLy9ZggABCAAE0AXVRafTURzHwWIh4JucnZ1pPB6HmebWIuAng7bJA0cNQAAggC6oPpxzwR4VbnI92VgB5+fnur29DRJrNBppMpkg4DtkWabn5+cgsQ4ODqgBgAAEAAIowr8liiIdHR1VPpK8u7sLtj8AAV/Q6XQ0nU7VaHz+6O/v73p5eflzAliCEIAAQABd0Fpwzn350/BQewM+Yr2+vpau53m+1r0BaxdQFIUGg8GXGzRCcXNzo4eHh8oboCgKZkDdLJfLoDOKGkARBgQgAP5MER4Oh0qSJEisKIoquyZrrSaTSdDDOrZGQLfbrf3kEWutRqMRSxAgAAGAgN3rgrz3StN06wcsTdOgJ+caBfwzT44uXrMAoAYgABCAAEAAAgABCAAEIAAQgABAAAIAAQgABGwc/wBRjl+W9J6jBgAAAABJRU5ErkJggg=="
+        clip-path="url(#clip-2)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <text x="210" y="150" class="name">Haowei Hsu</text>
+      <text x="210" y="170" class="username">(hwhsu1231)</text>
+      <text x="210" y="190" class="words">2,674 words</text>
+    </g>
+</svg>
