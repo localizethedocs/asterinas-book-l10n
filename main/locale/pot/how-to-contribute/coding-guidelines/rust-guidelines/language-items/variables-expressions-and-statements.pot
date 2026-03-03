@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:1
+msgid "Variables, Expressions, and Statements"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:3
+msgid "Introduce explaining variables (`explain-variables`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:5
+msgid ""
+"Break down complex expressions by assigning intermediate results to well-"
+"named variables. An explaining variable turns an opaque expression into self-"
+"documenting code:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:11
+msgid "// Good — intent is clear\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:15
+msgid "// Bad — reader must parse the whole expression\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:20
+msgid ""
+"See also: _The Art of Readable Code_, Chapter 8 \"Breaking Down Giant "
+"Expressions\"; PR [\\#2083](https://github.com/asterinas/asterinas/"
+"pull/2083#discussion_r2512772091) and [\\#643](https://github.com/asterinas/"
+"asterinas/pull/643#discussion_r1497243812)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:25
+msgid "Use block expressions to scope temporary state (`block-expressions`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:27
+msgid ""
+"Use block expressions when temporary variables are only needed to produce "
+"one final value. This keeps temporary state local and avoids leaking one-off "
+"names into outer scope."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:34
+msgid "// Good — intermediate values are scoped to the block\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:40
+msgid "// Bad — temporary variables leak into outer scope\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:47
+msgid "Use checked or saturating arithmetic (`checked-arithmetic`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:49
+msgid ""
+"Use checked or saturating arithmetic for operations that could overflow. "
+"Prefer explicit overflow handling over silent wrapping:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:55
+msgid "// Good — overflow is handled explicitly\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:58
+msgid "// Good — clamps instead of wrapping\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:61
+msgid "// Bad — may silently wrap in release builds\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:66
+msgid ""
+"If wraparound behavior is intentional, use explicit `wrapping_*` or "
+"`overflowing_*` operations and document why wrapping is correct."
+msgstr ""

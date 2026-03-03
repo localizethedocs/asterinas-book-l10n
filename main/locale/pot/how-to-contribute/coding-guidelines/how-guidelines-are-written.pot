@@ -1,0 +1,318 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:1
+msgid "How Guidelines Are Written"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:3
+msgid ""
+"The guidelines in this collection reflect a set of widely-recognized "
+"**philosophy** and **principles** for writing high-quality software. Three "
+"books have influenced the guidelines the most:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:7
+msgid ""
+"[_The Art of Readable Code_](https://www.oreilly.com/library/view/the-art-"
+"of/9781449318482/)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:8
+msgid ""
+"[_Clean Code_](https://www.oreilly.com/library/view/clean-code-"
+"a/9780136083238/)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:9
+msgid "[_Code Complete_](https://stevemcconnell.com/books/)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:11
+msgid ""
+"The guidelines are derived from **code review experience**, where we point "
+"out code smells, observe anti-patterns, and fix recurring bugs. By the time "
+"the initial version of these guidelines was formulated, Asterinas had seen "
+"thousands of code reviews. We collected the historical review comments as a "
+"[dataset](https://github.com/asterinas/pr-review-analysis) and used it as "
+"both inspiration and evidence."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:19
+msgid ""
+"The remainder of this page moves from values to practice. The [Philosophy]"
+"(#philosophy) section captures foundational beliefs about what makes code "
+"understandable and maintainable. The [Principles](#principles) section turns "
+"those beliefs into design-level rules that guide everyday decisions. "
+"Finally, the [Quality Criteria](#quality-criteria) section defines how "
+"individual guidelines are written and accepted into this collection."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:28
+msgid "Philosophy"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:30
+msgid "Minimize time to understand"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:32
+msgid ""
+"Code should be written to minimize the time it would take someone else to "
+"fully understand it. This is the fundamental theorem of readability and the "
+"single most important measure of code quality in this project. \"Someone "
+"else\" includes your future self."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:39
+msgid ""
+"Code is read far more often than it is written. If a technique makes code "
+"shorter but harder to follow at a glance, choose clarity over brevity."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:44
+msgid "Managing complexity is the primary technical imperative"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:46
+msgid ""
+"No one can hold an entire modern program in their head. The purpose of every "
+"technique in software construction — decomposition, naming, encapsulation, "
+"abstraction — is to break complex problems into simple pieces so that you "
+"can safely focus on one thing at a time."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:52
+msgid "Craftsmanship and care"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:54
+msgid ""
+"Clean code looks like it was written by someone who cares. Professionalism "
+"means never knowingly leaving a mess. The only way to go fast is to keep the "
+"code clean at all times."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:58
+msgid "Continuous improvement"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:60
+msgid ""
+"Leave code cleaner than you found it. Small, steady improvements — renaming "
+"a variable, extracting a function, eliminating duplication — prevent code "
+"from rotting over time."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:66
+msgid "Principles"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:68
+msgid "Single Responsibility"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:70
+msgid ""
+"Each module, type, or function should have one, and only one, reason to "
+"change. If you cannot describe what a unit does without the words \"and,\" "
+"\"or,\" or \"but,\" it has too many responsibilities."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:76
+msgid "Don't Repeat Yourself (DRY)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:78
+msgid ""
+"Every piece of knowledge should have a single, unambiguous representation. "
+"Duplication harms readability and maintainability. When the same pattern "
+"appears three or more times, eliminate the duplication (e.g., adding a "
+"helper function)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:84
+msgid "Information Hiding"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:86
+msgid ""
+"Hide design decisions behind well-defined interfaces. A module's public "
+"surface should contain only what its consumers need. Internal data "
+"structures, helper types, and bookkeeping fields should remain private."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:92
+msgid "Open for Extension, Closed for Modification"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:94
+msgid ""
+"Stable modules and APIs should be open to extension but closed to breaking "
+"modification. Prefer adding new behavior through existing interfaces "
+"(traits, enums, and pluggable components) instead of repeatedly editing "
+"established call paths. Do not introduce extension points preemptively; add "
+"them when there is a concrete extension need."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:104
+msgid "Least Surprise"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:106
+msgid ""
+"Functions, types, and APIs should behave as their names and signatures "
+"suggest. When an obvious behavior is not implemented, readers lose trust in "
+"the codebase and must fall back on reading implementation details."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:112
+msgid "Loose Coupling, Strong Cohesion"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:114
+msgid ""
+"Connections between modules should be small, visible, and flexible. Within a "
+"module, every part should contribute to a single, well-defined purpose."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:119
+msgid "Consistency"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:121
+msgid ""
+"Do similar things the same way throughout the codebase. Consistency reduces "
+"surprise and cognitive load even when neither approach is objectively "
+"superior. When a convention already exists, follow it; do not introduce a "
+"competing convention without compelling justification."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:128
+msgid "Test as the Source of Confidence"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:130
+msgid ""
+"Tests exist to make change safe. A comprehensive test suite should give "
+"developers confidence that a passing run means the system works and a "
+"failing run pinpoints what broke. Every test must earn its place by "
+"increasing that confidence. A test that does not — flaky tests, tautological "
+"assertions, tests coupled to implementation details — is worse than no test "
+"at all."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:141
+msgid "Rust-Native Approach"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:143
+msgid ""
+"Asterinas is inspired by Linux but is not a C port. The language shapes how "
+"we think about problems: where C code relies on conventions and manual "
+"discipline (return-code checking, paired init/cleanup, header-file "
+"contracts), Rust offers compiler-enforced, zero-cost abstractions (the `?` "
+"operator, RAII, trait bounds)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:150
+msgid ""
+"Learn from Linux's design, not its idioms. The result should read like "
+"idiomatic Rust, not like C written in Rust syntax."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:154
+msgid "Quality Criteria"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:156
+msgid ""
+"Every guideline carries a **descriptive short name** in kebab-case (e.g., "
+"`explain-variables`, `lock-ordering`). Short names are kept **intact** even "
+"as the guidelines evolve and should be used when referencing guidelines in "
+"code reviews."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:161
+msgid ""
+"A guideline is accepted into this collection when it satisfies all four "
+"quality criteria:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:164
+msgid ""
+"**Concrete** — Framed as an actionable item with an illustrating example "
+"when possible."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:166
+msgid "**Concise** — Kept short; we do not want to intimidate readers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:168
+msgid ""
+"**Grounded** — Opinionated or non-obvious guidelines should include a \"See "
+"also\" line with supportive materials (literature, PR reviews, codebase "
+"examples)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:171
+msgid ""
+"**Relevant** — Included only if it has codebase examples, prevents a past "
+"bug, or matches anti-patterns observed in code reviews."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:176
+msgid ""
+"When present, the **\"See also\" line** lists sources in the order: "
+"literature; PR reviews; codebase examples. Not every guideline needs all "
+"three; for strongly opinionated or non-obvious guidelines, include the line "
+"by default."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:182
+msgid ""
+"Do not add a guideline whose only value is mechanical enforcement already "
+"provided by automated tools such as [rustfmt](https://github.com/rust-lang/"
+"rustfmt) and [clippy](https://github.com/rust-lang/rust-clippy). If a tool-"
+"enforced convention appears frequently in review or needs project-specific "
+"rationale, keep a short explanatory guideline and point to the tool "
+"configuration."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:189
+msgid "Example"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:191
+msgid "Below is a sample guideline demonstrating these conventions:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:217
+msgid "This example demonstrates:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:218
+msgid ""
+"A stable short name (`explain-variables`) shown parenthetically and used as "
+"the heading anchor"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:219
+msgid "A one-sentence actionable recommendation followed by a code example"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:220
+msgid ""
+"A \"See also\" line ordered as: literature, PR reviews, codebase examples"
+msgstr ""
