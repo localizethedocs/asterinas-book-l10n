@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:1
+msgid "Performance"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:3
+msgid ""
+"Performance on critical paths is taken very seriously. Changes to hot paths "
+"must be benchmarked. Unnecessary copies, allocations, and O(n) algorithms "
+"are rejected."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:8
+msgid "Avoid O(n) algorithms on hot paths (`no-linear-hot-paths`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:10
+msgid ""
+"System call dispatch, scheduler enqueue, and frequent query operations must "
+"not introduce O(n) complexity where n is a quantity that can be large "
+"(number of processes, number of file descriptors, etc.). Demand sub-linear "
+"alternatives."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:18
+msgid "// Bad — O(n) scan on every enqueue\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:22
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:29
+msgid "\"at least one CPU\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:25
+msgid ""
+"// Good — maintain a priority queue\n"
+"// so selection is O(log n)\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:33
+msgid ""
+"See also: PR [\\#1790](https://github.com/asterinas/asterinas/pull/1790)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:36
+msgid "Minimize unnecessary copies and allocations (`minimize-copies`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:38
+msgid ""
+"Extra data copies — serializing to a stack buffer before writing, cloning an "
+"`Arc` when a `&` reference suffices, collecting into a `Vec` when an "
+"iterator would do — should be avoided."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:45
+msgid "// Bad — unnecessary Arc::clone\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:50
+msgid "// Good — borrow when ownership is not needed\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:57
+msgid ""
+"See also: PR [\\#2582](https://github.com/asterinas/asterinas/pull/2582) and "
+"[\\#2725](https://github.com/asterinas/asterinas/pull/2725)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:61
+msgid ""
+"No premature optimization without evidence (`no-premature-optimization`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/performance.md:63
+msgid ""
+"Performance optimizations must be justified with data. Introducing "
+"complexity to solve a non-existent problem is rejected. If you claim a "
+"change improves performance, show the numbers."
+msgstr ""
