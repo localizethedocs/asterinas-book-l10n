@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:1
+msgid "Concurrency and Races"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:3
+msgid ""
+"Concurrency code is reviewed with extreme rigor. Lock ordering, atomic "
+"correctness, memory ordering, and race condition analysis are all demanded "
+"explicitly."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:7
+msgid "Establish and enforce a consistent lock order (`lock-ordering`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:9
+msgid ""
+"Acquiring two locks in different orders from different code paths is a "
+"potential deadlock. Hierarchical lock order must be established and "
+"documented."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:19
+msgid "// Lock order: group of process -> session inner -> job control\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:21
+msgid "// ...\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:25
+msgid ""
+"See also: PR [\\#2942](https://github.com/asterinas/asterinas/pull/2942)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:28
+msgid ""
+"Never do I/O or blocking operations while holding a spinlock (`no-io-under-"
+"spinlock`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:30
+msgid ""
+"Holding a spinlock while performing I/O or blocking operations is a deadlock "
+"hazard. Use a sleeping mutex or restructure to drop the lock first."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:36
+msgid "// Good — spinlock dropped before I/O\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:38
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:44
+msgid "// state: SpinLock<...>\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:42
+msgid "// Bad — I/O while holding spinlock\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:48
+msgid "See also: PR [\\#925](https://github.com/asterinas/asterinas/pull/925)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:51
+msgid "Do not use atomics casually (`careful-atomics`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:53
+msgid ""
+"When multiple atomic fields must be updated in concert, use a lock. Only use "
+"atomics when a single value is genuinely independent."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:59
+msgid "// Good — a lock protects correlated fields\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:67
+msgid ""
+"// Bad — two atomics that must be consistent\n"
+"// but can be observed in an inconsistent state\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:76
+msgid ""
+"Critical sections must not be split across lock boundaries (`atomic-critical-"
+"sections`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:78
+msgid ""
+"Operations that must be atomic (check + conditional action) must happen "
+"under the same lock acquisition. Moving a comparison outside the critical "
+"region is a correctness bug."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:85
+msgid "// Good — check and action under the same lock\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:91
+msgid ""
+"// Bad — TOCTOU race: state can change\n"
+"// between the check and the action\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/concurrency-and-races.md:101
+msgid ""
+"See also: PR [\\#2277](https://github.com/asterinas/asterinas/pull/2277)."
+msgstr ""

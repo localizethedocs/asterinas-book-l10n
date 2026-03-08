@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:1
+msgid "Unsafety"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:3
+msgid "Justify every use of `unsafe` (`justify-unsafe-use`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:5
+msgid ""
+"Every `unsafe` block must have a preceding `// SAFETY:` comment that "
+"justifies why the operation is sound. For multi-condition invariants, use a "
+"numbered list:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:11
+msgid ""
+"// SAFETY:\n"
+"// 1. We have exclusive access to both the current context\n"
+"//    and the next context (see above).\n"
+"// 2. The next context is valid (because it is either\n"
+"//    correctly initialized or written by a previous\n"
+"//    `context_switch`).\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:22
+msgid ""
+"See also: PR [\\#2958](https://github.com/asterinas/asterinas/pull/2958) and "
+"[\\#836](https://github.com/asterinas/asterinas/pull/836)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:26
+msgid "Document safety conditions (`document-safety-conds`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:28
+msgid ""
+"All `unsafe` functions and traits must include a `# Safety` section in their "
+"doc comments describing the conditions, properties, or invariants that "
+"callers must uphold. State exactly what the caller must guarantee — not "
+"implementation details or side effects."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:35
+msgid ""
+"/// A marker trait for guard types that enforce the atomic mode.\n"
+"///\n"
+"/// # Safety\n"
+"///\n"
+"/// The implementer must ensure that the atomic mode is maintained while\n"
+"/// the guard type is alive.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:44
+msgid "Deny unsafe code in `kernel/` (`deny-unsafe-kernel`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:46
+msgid "All crates under `kernel/` must deny unsafe:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:52
+msgid ""
+"Only OSTD (`ostd/`) crates may contain `unsafe` code. If a kernel crate "
+"requires an unsafe operation, the functionality should be provided as a safe "
+"API in OSTD."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:56
+msgid "Reason about safety at the module boundary (`module-boundary-safety`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:58
+msgid ""
+"The safety of an `unsafe` block depends on ALL code that can access the same "
+"private state. Encapsulate unsafe abstractions in the smallest possible "
+"module to minimize the \"audit surface.\" Any code in the same module that "
+"can modify relied-upon fields is part of the safety argument."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:68
+msgid "// Good — small, focused module limits the audit surface\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:70
+msgid "/// Invariant: `next` is always a valid frame index.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:73
+msgid "// ...\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/unsafety.md:78
+msgid ""
+"// SAFETY: `next` is always valid (see invariant above).\n"
+"            // Only code in this module can modify `next`.\n"
+msgstr ""

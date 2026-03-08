@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:1
+msgid "Naming"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:3
+msgid ""
+"Asterinas enforces strict, Rust-idiomatic naming across the entire codebase. "
+"Names must be accurate, unabbreviated, and follow [Rust API Guidelines on "
+"naming](https://rust-lang.github.io/api-guidelines/naming.html)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:9
+msgid ""
+"Follow Rust CamelCase and acronym capitalization (`camel-case-acronyms`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:11
+msgid ""
+"Type names follow Rust's CamelCase convention. Acronyms are title-cased per "
+"the Rust API Guidelines:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:15
+msgid "// Good\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:20
+msgid "// Bad\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:28
+msgid "End closure variables with `_fn` (`closure-fn-suffix`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:30
+msgid ""
+"Variables holding closures or function pointers must signal they are "
+"callable by ending with `_fn`. Treating a closure variable as if it were a "
+"data object misleads readers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:36
+msgid "// Good — clearly a callable\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/naming.md:49
+msgid ""
+"See also: PR [\\#395](https://github.com/asterinas/asterinas/"
+"pull/395#discussion_r1402964415) and [\\#783](https://github.com/asterinas/"
+"asterinas/pull/783#discussion_r1593335375)."
+msgstr ""

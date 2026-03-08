@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -220,57 +220,132 @@ msgid "Code Organization"
 msgstr "代码组织"
 
 #: src/SUMMARY.md:66
-msgid "Style Guidelines"
-msgstr "风格指南"
+msgid "Coding Guidelines"
+msgstr ""
 
 #: src/SUMMARY.md:67
+msgid "How Guidelines Are Written"
+msgstr ""
+
+#: src/SUMMARY.md:68
 msgid "General Guidelines"
 msgstr "通用指南"
 
-#: src/SUMMARY.md:68
+#: src/SUMMARY.md:69
 msgid "Rust Guidelines"
 msgstr "Rust 指南"
 
-#: src/SUMMARY.md:69
+#: src/SUMMARY.md:70
+msgid "Naming"
+msgstr ""
+
+#: src/SUMMARY.md:71
+msgid "Language Items"
+msgstr ""
+
+#: src/SUMMARY.md:72
+msgid "Variables, Expressions, and Statements"
+msgstr ""
+
+#: src/SUMMARY.md:73
+msgid "Functions and Methods"
+msgstr ""
+
+#: src/SUMMARY.md:74
+msgid "Types and Traits"
+msgstr ""
+
+#: src/SUMMARY.md:75
+msgid "Comments and Documentation"
+msgstr ""
+
+#: src/SUMMARY.md:76
+msgid "Unsafety"
+msgstr ""
+
+#: src/SUMMARY.md:77
+msgid "Modules and Crates"
+msgstr ""
+
+#: src/SUMMARY.md:78
+msgid "Macros and Attributes"
+msgstr ""
+
+#: src/SUMMARY.md:79
+msgid "Select Topics"
+msgstr ""
+
+#: src/SUMMARY.md:80
+msgid "Concurrency and Races"
+msgstr ""
+
+#: src/SUMMARY.md:81
+msgid "Defensive Programming"
+msgstr ""
+
+#: src/SUMMARY.md:82
+msgid "Error Handling"
+msgstr ""
+
+#: src/SUMMARY.md:83
+msgid "Logging"
+msgstr ""
+
+#: src/SUMMARY.md:84
+msgid "Memory and Resource Management"
+msgstr ""
+
+#: src/SUMMARY.md:85
+msgid "Performance"
+msgstr ""
+
+#: src/SUMMARY.md:86
 msgid "Git Guidelines"
 msgstr "Git 指南"
 
-#: src/SUMMARY.md:70
+#: src/SUMMARY.md:87
+msgid "Testing Guidelines"
+msgstr ""
+
+#: src/SUMMARY.md:88
 msgid "Assembly Guidelines"
 msgstr "汇编指南"
 
-#: src/SUMMARY.md:71
+#: src/SUMMARY.md:89
 msgid "Boterinas"
 msgstr "Boterinas"
 
-#: src/SUMMARY.md:72
+#: src/SUMMARY.md:90
 msgid "Version Bump"
 msgstr "版本号更新"
 
-#: src/SUMMARY.md:73
+#: src/SUMMARY.md:91
 msgid "Community"
 msgstr "社区"
 
-#: src/SUMMARY.md:74
+#: src/SUMMARY.md:92
 msgid "Code of Conduct"
 msgstr "行为守则"
 
-#: src/SUMMARY.md:76
+#: src/SUMMARY.md:94
 msgid "Request for Comments (RFCs)"
 msgstr "征求意见稿 (RFCs)"
 
-#: src/SUMMARY.md:78
+#: src/SUMMARY.md:96
 msgid "RFC Overview"
 msgstr "RFC 概述"
 
-#: src/SUMMARY.md:79
+#: src/SUMMARY.md:97
 msgid "RFC-0001: RFC Process"
 msgstr "RFC-0001：RFC 流程"
 
-#: src/SUMMARY.md:80
+#: src/SUMMARY.md:98
 msgid "RFC-0002: Asterinas NixOS"
 msgstr "RFC-0002: Asterinas NixOS"
 
-#: src/SUMMARY.md:81
+#: src/SUMMARY.md:99
 msgid "RFC Template"
 msgstr "RFC 模板"
+
+#~ msgid "Style Guidelines"
+#~ msgstr "风格指南"

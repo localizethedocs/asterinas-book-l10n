@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -200,6 +200,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:168
 #: src/kernel/linux-compatibility/index.md:169
 #: src/kernel/linux-compatibility/index.md:170
+#: src/kernel/linux-compatibility/index.md:178
 #: src/kernel/linux-compatibility/index.md:180
 #: src/kernel/linux-compatibility/index.md:181
 #: src/kernel/linux-compatibility/index.md:183
@@ -407,6 +408,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:168
 #: src/kernel/linux-compatibility/index.md:169
 #: src/kernel/linux-compatibility/index.md:170
+#: src/kernel/linux-compatibility/index.md:178
 #: src/kernel/linux-compatibility/index.md:183
 #: src/kernel/linux-compatibility/index.md:184
 #: src/kernel/linux-compatibility/index.md:185
@@ -759,7 +761,6 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:175
 #: src/kernel/linux-compatibility/index.md:176
 #: src/kernel/linux-compatibility/index.md:177
-#: src/kernel/linux-compatibility/index.md:178
 #: src/kernel/linux-compatibility/index.md:179
 #: src/kernel/linux-compatibility/index.md:182
 #: src/kernel/linux-compatibility/index.md:186
@@ -857,7 +858,6 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:175
 #: src/kernel/linux-compatibility/index.md:176
 #: src/kernel/linux-compatibility/index.md:177
-#: src/kernel/linux-compatibility/index.md:178
 #: src/kernel/linux-compatibility/index.md:179
 #: src/kernel/linux-compatibility/index.md:182
 #: src/kernel/linux-compatibility/index.md:186

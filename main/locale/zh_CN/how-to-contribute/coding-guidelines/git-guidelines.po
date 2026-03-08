@@ -1,0 +1,139 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:1
+msgid "Git Guidelines"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:3
+msgid ""
+"These guidelines cover commit hygiene and pull request conventions. For the "
+"underlying philosophy, see [How Guidelines Are Written](how-guidelines-are-"
+"written.md)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:7
+msgid "Write imperative, descriptive subject lines (`imperative-subject`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:9
+msgid ""
+"Write commit messages in imperative mood with the subject line at or below "
+"72 characters. Wrap identifiers in backticks."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:13
+msgid "Common prefixes used in the Asterinas commit log:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:15
+msgid "`Fix` — correct a bug"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:16
+msgid "`Add` — introduce new functionality"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:17
+msgid "`Remove` — delete code or features"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:18
+msgid "`Refactor` — restructure without changing behavior"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:19
+msgid "`Rename` — change names of files, modules, or symbols"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:20
+msgid "`Implement` — add a new subsystem or feature"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:21
+msgid "`Enable` — turn on a previously disabled capability"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:22
+msgid "`Clean up` — minor tidying without functional change"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:23
+msgid "`Bump` — update a dependency version"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:25
+msgid "Examples:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:35
+msgid ""
+"If the commit requires further explanation, add a blank line after the "
+"subject followed by a body paragraph describing the _why_ behind the change."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:40
+msgid ""
+"See also: PR [\\#2877](https://github.com/asterinas/asterinas/pull/2877) and "
+"[\\#2700](https://github.com/asterinas/asterinas/pull/2700)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:44
+msgid "One logical change per commit (`atomic-commits`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:46
+msgid ""
+"Each commit should represent one logical change. Do not mix unrelated "
+"changes in a single commit. When fixing an issue discovered during review on "
+"a local or private branch, use `git rebase -i` to amend the commit that "
+"introduced the issue rather than appending a fixup commit at the end."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:54
+msgid ""
+"See also: PR [\\#2791](https://github.com/asterinas/asterinas/pull/2791) and "
+"[\\#2260](https://github.com/asterinas/asterinas/pull/2260)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:58
+msgid "Separate refactoring from features (`refactor-then-feature`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:60
+msgid ""
+"If a feature requires preparatory refactoring, put the refactoring in its "
+"own commit(s) before the feature commit. This makes each commit easier to "
+"review and bisect."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:65
+msgid ""
+"See also: PR [\\#2877](https://github.com/asterinas/asterinas/pull/2877)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:68
+msgid "Keep pull requests focused (`focused-prs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:70
+msgid ""
+"Keep pull requests focused on a single topic. A PR that mixes a bug fix, a "
+"refactoring, and a new feature is difficult to review."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/git-guidelines.md:74
+msgid ""
+"Ensure that CI passes before requesting review. If CI fails on an unrelated "
+"flake, note it in the PR description."
+msgstr ""

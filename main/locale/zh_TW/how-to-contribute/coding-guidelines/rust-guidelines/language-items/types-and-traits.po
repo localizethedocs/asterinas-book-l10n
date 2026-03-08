@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:1
+msgid "Types and Traits"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:3
+msgid "Use types to enforce invariants (`rust-type-invariants`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:5
+msgid "Leverage the type system to make illegal states _unrepresentable_."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:8
+msgid "Define newtypes to encode domain constraints."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:11
+msgid "// Good — a `Nice` value is guaranteed to be valid\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:14
+msgid "// Bad — `i8` admits invalid values for nice levels\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:19
+msgid "Prefer enums over bare integers and boolean flags."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:22
+msgid "// Good — access mode is constrained by the enum\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:29
+msgid "// Bad — `u8` admits invalid values\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:34
+msgid "Encode invariants in generic parameters where needed."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:38
+msgid "// Good — only unsafe code can write to sensitive MMIO\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:39
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:44
+msgid "/* .. */"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:43
+msgid "// Good — safe code can write to insensitive MMIO\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:51
+msgid ""
+"Asterinas uses this pattern widely, for example with newtypes such as "
+"`CpuId` and `AlignedUsize<const N: u16>`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:55
+msgid ""
+"See also: PR [\\#2265](https://github.com/asterinas/asterinas/"
+"pull/2265#discussion_r2266214191) and [\\#2514](https://github.com/asterinas/"
+"asterinas/pull/2514)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:59
+msgid "Prefer enum over trait objects for closed sets (`enum-over-dyn`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:61
+msgid ""
+"When the set of variants is known and closed, an enum is often preferable to "
+"`Box<dyn Trait>` for both performance and pattern-matching expressiveness."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:66
+msgid "// Good — closed set modeled as an enum\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:74
+msgid "Encapsulate fields behind getters (`getter-encapsulation`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:76
+msgid ""
+"Do not make fields public when a simple getter method would do. A getter "
+"preserves naming flexibility and leaves room for future invariants."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:82
+msgid "// Good — field is private, accessed via getter\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/types-and-traits.md:92
+msgid "// Bad — public field exposes representation\n"
+msgstr ""

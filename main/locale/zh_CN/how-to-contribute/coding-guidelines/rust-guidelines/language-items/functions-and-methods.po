@@ -1,0 +1,133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:1
+msgid "Functions and Methods"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:3
+msgid "Minimize nesting (`minimize-nesting`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:5
+msgid ""
+"Minimize nesting depth. Code nested more than three levels deep should be "
+"reviewed for refactoring opportunities. Each nesting level multiplies the "
+"reader's cognitive load."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:10
+msgid "Techniques for flattening nesting:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:11
+msgid "Early returns and guard clauses for error paths."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:12
+msgid "`let...else` to collapse `if let` chains."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:13
+msgid "The `?` operator for error propagation."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:14
+msgid "`continue` to skip loop iterations."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:15
+msgid "Extracting the nested body into a helper function."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:17
+msgid ""
+"The normal/expected code path should be the first visible path; error and "
+"edge cases should be handled and dismissed early."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:25
+msgid "\"Framebuffer not found\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:28
+msgid "// ... main logic at the top level\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:32
+msgid ""
+"See also: PR [\\#2877](https://github.com/asterinas/asterinas/"
+"pull/2877#discussion_r2685861741)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:35
+msgid "Keep functions small and focused (`small-functions`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:37
+msgid ""
+"Each function should do one thing, do it well, and do it only. If you can "
+"extract another function from it with a name that is not merely a "
+"restatement of its implementation, the original function is doing more than "
+"one thing."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:44
+msgid ""
+"Do not mix levels of abstraction. For example, a syscall handler should read "
+"like a specification; byte-level manipulation belongs in a helper."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:49
+msgid "// Good — each function operates at one level of abstraction\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:55
+msgid "// Bad — mixes high-level logic with low-level details\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:63
+msgid "// ... 30 more lines of byte parsing ...\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:67
+msgid ""
+"See also: _Clean Code_, Chapter 3 \"Functions\"; PR [\\#639](https://github."
+"com/asterinas/asterinas/pull/639#discussion_r1524629393)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:71
+msgid "Avoid boolean arguments (`no-bool-args`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:73
+msgid ""
+"A boolean parameter that selects between two behaviors signals the function "
+"does two things. Split it into two functions or use a typed enum."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:79
+msgid "// Good — two separate functions\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:82
+msgid "// Good — typed enum\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:86
+msgid "// Bad — boolean argument\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:91
+msgid "See also: _Clean Code_, Chapter 3 \"Flag Arguments\"."
+msgstr ""

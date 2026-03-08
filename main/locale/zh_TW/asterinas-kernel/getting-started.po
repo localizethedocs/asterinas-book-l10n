@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -55,16 +55,94 @@ msgstr ""
 #: src/kernel/index.md:26
 msgid ""
 "While the journey towards a production-grade OS kernel can be challenging, "
-"we are steadfastly progressing towards our goal. Currently, Asterinas only "
-"supports x86-64 VMs. However, [our aim for 2024](roadmap.md) is to make "
-"Asterinas production-ready on x86-64 for both bare-metal and VM environments."
+"we are steadfastly progressing towards our goal."
+msgstr ""
+
+#: src/kernel/index.md:29
+msgid "Supported CPU Architectures"
+msgstr ""
+
+#: src/kernel/index.md:31
+msgid "Asterinas targets modern, 64-bit platforms only."
 msgstr ""
 
 #: src/kernel/index.md:33
+msgid ""
+"A **development platform** is where you build and test Asterinas (i.e., the "
+"host machine running the Docker-based development environment)."
+msgstr ""
+
+#: src/kernel/index.md:36
+msgid "Development Platform"
+msgstr ""
+
+#: src/kernel/index.md:38 src/kernel/index.md:45
+msgid "x86-64"
+msgstr ""
+
+#: src/kernel/index.md:40
+msgid ""
+"A **deployment platform** is a CPU architecture that Asterinas can run on as "
+"an OS kernel."
+msgstr ""
+
+#: src/kernel/index.md:43
+msgid "Deployment Platform"
+msgstr ""
+
+#: src/kernel/index.md:43
+msgid "Tier"
+msgstr ""
+
+#: src/kernel/index.md:45
+msgid "Tier 1"
+msgstr ""
+
+#: src/kernel/index.md:46
+msgid "x86-64 (Intel TDX)"
+msgstr ""
+
+#: src/kernel/index.md:46 src/kernel/index.md:47
+msgid "Tier 2"
+msgstr ""
+
+#: src/kernel/index.md:47
+msgid "RISC-V 64"
+msgstr ""
+
+#: src/kernel/index.md:48
+msgid "LoongArch 64"
+msgstr ""
+
+#: src/kernel/index.md:48
+msgid "Tier 3"
+msgstr ""
+
+#: src/kernel/index.md:50
+msgid ""
+"**Tier 1:** Fully supported and tested. CI runs the full test suite on every "
+"PR."
+msgstr ""
+
+#: src/kernel/index.md:52
+msgid ""
+"**Tier 2:** Actively developed with basic functionality working. CI runs "
+"build checks and basic tests on a regular basis (per PR for RISC-V and "
+"nightly for Intel TDX), but the full test suite is not yet covered."
+msgstr ""
+
+#: src/kernel/index.md:56
+msgid ""
+"**Tier 3:** Early-stage or experimental. The kernel can boot and perform "
+"basic operations, but CI coverage is limited and may not include automated "
+"runtime tests for every pull request."
+msgstr ""
+
+#: src/kernel/index.md:61
 msgid "Getting Started"
 msgstr "開始使用"
 
-#: src/kernel/index.md:35
+#: src/kernel/index.md:63
 msgid ""
 "Get yourself an x86-64 Linux machine with Docker installed. Follow the three "
 "simple steps below to get Asterinas up and running."
@@ -72,19 +150,19 @@ msgstr ""
 "準備一台已安裝 Docker 的 x86-64 Linux 機器。按照以下三個簡單步驟即可啟動並執"
 "行 Asterinas。"
 
-#: src/kernel/index.md:38
+#: src/kernel/index.md:68
 msgid "Download the latest source code."
 msgstr "下載最新的來源碼。"
 
-#: src/kernel/index.md:44
+#: src/kernel/index.md:74
 msgid "Run a Docker container as the development environment."
 msgstr "執行 Docker 容器作為開發環境。"
 
-#: src/kernel/index.md:54
+#: src/kernel/index.md:84
 msgid ""
 "Inside the container, go to the project folder to build and run Asterinas."
 msgstr "在容器內，前往專案資料夾建置並執行 Asterinas。"
 
-#: src/kernel/index.md:61
+#: src/kernel/index.md:91
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
 msgstr "如果一切順利，Asterinas 現在已在虛擬機中啟動並執行。"

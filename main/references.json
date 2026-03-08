@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-08 20:32:24 -0800",
-        "hash" : "5f8b019369c97bc8dc072ebfe3859ea1ff23450d",
-        "title" : "Replace `from_first_bytes` with `from_bytes` if possible"
+        "date" : "2026-03-02 23:54:13 -0800",
+        "hash" : "6f684acdc934c8a2342ea7e00421b770f04d3cf1",
+        "title" : "Accept should panic expected string as a substring"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-08 20:32:24 -0800",
-        "hash" : "5f8b019369c97bc8dc072ebfe3859ea1ff23450d",
-        "title" : "Replace `from_first_bytes` with `from_bytes` if possible"
+        "date" : "2026-03-02 23:54:13 -0800",
+        "hash" : "6f684acdc934c8a2342ea7e00421b770f04d3cf1",
+        "title" : "Accept should panic expected string as a substring"
       }
     }
   },

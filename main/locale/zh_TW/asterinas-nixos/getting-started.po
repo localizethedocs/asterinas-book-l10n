@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -166,24 +166,23 @@ msgid "Kernel Developers"
 msgstr "內核開發者"
 
 #: src/distro/index.md:123
-msgid "Download the latest source code on an x86-64 Linux machine:"
-msgstr "在 x86-64 的 Linux 機器上下載最新的來源碼："
+msgid ""
+"Follow Steps 1 and 2 in the [\"Getting Started\" section of the Asterinas "
+"Kernel](../kernel/index.html#getting-started) to set up the development "
+"environment."
+msgstr ""
 
-#: src/distro/index.md:129
-msgid "Run a Docker container as the development environment:"
-msgstr "執行 Docker 容器作為開發環境："
-
-#: src/distro/index.md:135
+#: src/distro/index.md:126
 msgid ""
 "Inside the Docker container, generate a disk image with Asterinas NixOS "
 "installed using this command:"
 msgstr ""
 
-#: src/distro/index.md:142
+#: src/distro/index.md:133
 msgid "or this command:"
 msgstr ""
 
-#: src/distro/index.md:148
+#: src/distro/index.md:139
 msgid ""
 "The difference between the two methods is that the first installs NixOS to a "
 "disk image entirely inside the container, whereas the second emulates the "
@@ -192,6 +191,12 @@ msgid ""
 "NixOS installation."
 msgstr ""
 
-#: src/distro/index.md:155
+#: src/distro/index.md:146
 msgid "Start a VM to run the installed Asterinas NixOS:"
 msgstr ""
+
+#~ msgid "Download the latest source code on an x86-64 Linux machine:"
+#~ msgstr "在 x86-64 的 Linux 機器上下載最新的來源碼："
+
+#~ msgid "Run a Docker container as the development environment:"
+#~ msgstr "執行 Docker 容器作為開發環境："
