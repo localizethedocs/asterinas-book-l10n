@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:1
+msgid "Logging"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:3
+msgid ""
+"Consistent logging makes debugging tractable across a large kernel codebase."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:6
+msgid "Use `log` crate macros exclusively (`log-crate-only`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:8
+msgid ""
+"The project standardizes on the [`log`](https://docs.rs/log) crate's macros: "
+"`trace!`, `debug!`, `info!`, `warn!`, `error!`. Custom output functions, "
+"`println!`, and hand-rolled serial print macros are not acceptable in "
+"production code. Exception: code that runs before the logging subsystem is "
+"initialized may use early-boot output helpers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:18
+msgid "// Good\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:19
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:22
+msgid "\"VirtIO block device initialized: {} sectors\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:20
+msgid "// Bad\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:25
+msgid "Choose appropriate log levels (`log-levels`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:27
+msgid "Level"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:27
+msgid "Use for"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:29
+msgid "`trace!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:29
+msgid "High-frequency events: every interrupt, every packet, every page fault."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:30
+msgid "`debug!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:30
+msgid "Development diagnostics: state transitions, intermediate values."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:31
+msgid "`info!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:31
+msgid ""
+"Rare, noteworthy events: subsystem initialization, configuration changes."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:32
+msgid "`warn!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:32
+msgid "Recoverable problems: fallback paths taken, deprecated usage detected."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:33
+msgid "`error!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:33
+msgid ""
+"Serious failures: resource exhaustion, invariant violations caught at "
+"runtime."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:35
+msgid ""
+"A log statement that fires on every syscall or every timer tick must use "
+"`trace!`, not `debug!`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:38
+msgid ""
+"See also: PR [\\#2260](https://github.com/asterinas/asterinas/pull/2260)."
+msgstr ""

@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:1
+msgid "Macros and Attributes"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:3
+msgid "Suppress lints at the narrowest scope (`narrow-lint-suppression`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:5
+msgid ""
+"When suppressing lints, the suppression should affect as little scope as "
+"possible. This makes readers aware of the exact places where the lint is "
+"generated and makes it easier for subsequent committers to maintain the "
+"suppression."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:13
+msgid "// Good — each method is individually marked\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:23
+msgid "// Bad — the entire trait is suppressed\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:29
+msgid ""
+"There is one exception: if it is clear enough that every member will trigger "
+"the lint, it is reasonable to expect the lint at the type level."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:42
+msgid ""
+"See also: [Clippy `allow_attributes`](https://rust-lang.github.io/rust-"
+"clippy/master/#allow_attributes), [Clippy `allow_attributes_without_reason`]"
+"(https://rust-lang.github.io/rust-clippy/master/"
+"#allow_attributes_without_reason), and rustc "
+"[`unfulfilled_lint_expectations`](https://doc.rust-lang.org/rustc/lints/"
+"listing/warn-by-default.html#unfulfilled-lint-expectations)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:47
+msgid "Use `#[expect(dead_code)]` with restraint (`expect-dead-code`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:49
+msgid ""
+"In general, dead code should be avoided because _(i)_ it introduces "
+"unnecessary maintenance overhead, and _(ii)_ its correctness can only be "
+"guaranteed by manual and error-prone review."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:54
+msgid "Dead code is acceptable only when all of these hold:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:56
+msgid ""
+"A _concrete case_ will be implemented in the future that turns the dead code "
+"into used code."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:58
+msgid "The semantics are _clear_ enough, even without the use case."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:60
+msgid ""
+"The dead code is _simple_ enough that both the committer and the reviewer "
+"can be confident it is correct without testing."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:63
+msgid "It serves as a counterpart to existing non-dead code."
+msgstr "它与现有的非死代码相对应。"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:65
+msgid ""
+"For example, it is fine to add ABI constants that are unused because the "
+"corresponding feature is partially implemented."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:69
+msgid ""
+"See also: [Rust Reference: Diagnostic attributes](https://doc.rust-lang.org/"
+"reference/attributes/diagnostics.html) and rustc "
+"[`unfulfilled_lint_expectations`](https://doc.rust-lang.org/rustc/lints/"
+"listing/warn-by-default.html#unfulfilled-lint-expectations)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:73
+msgid "Prefer functions over macros (`macros-as-last-resort`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:75
+msgid ""
+"Prefer functions and generics over macros. Macros are powerful but harder to "
+"understand, debug, test, and format. Reach for a macro only when the type "
+"system or generics cannot express what you need (e.g., variadic arguments, "
+"compile-time code generation, or DSL syntax)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:85
+msgid "// Good — a generic function covers all types\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:90
+msgid "// Bad — a macro where a function would suffice\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:99
+msgid ""
+"See also: _The Rust Programming Language_, Chapter 20.5 \"Macros\"; [Rust by "
+"Example: Macros](https://doc.rust-lang.org/rust-by-example/macros.html)."
+msgstr ""

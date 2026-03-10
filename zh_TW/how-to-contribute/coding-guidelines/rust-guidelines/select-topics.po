@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/index.md:1
+msgid "Select Topics"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/index.md:3
+msgid ""
+"This section covers cross-cutting concerns that span multiple language "
+"items. Each page focuses on one topic with actionable guidelines."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/index.md:8
+msgid ""
+"**[Concurrency and Races](concurrency-and-races.md)** — Lock ordering, "
+"spinlock discipline, atomic usage, and critical sections."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/index.md:13
+msgid ""
+"**[Defensive Programming](defensive-programming.md)** — Correct placement of "
+"`debug_assert!`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/index.md:15
+msgid "**[Error Handling](error-handling.md)** — Idiomatic error propagation."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/index.md:17
+msgid "**[Logging](logging.md)** — `log`\\-crate usage and level selection."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/index.md:19
+msgid ""
+"**[Memory and Resource Management](memory-and-resource-management.md)** — "
+"RAII-based cleanup and resource ownership."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/index.md:21
+msgid ""
+"**[Performance](performance.md)** — Hot-path complexity, copy/allocation "
+"control, and measured optimization."
+msgstr ""
