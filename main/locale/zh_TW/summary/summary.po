@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/SUMMARY.md:22
 msgid "Process and thread management"
-msgstr ""
+msgstr "進程與執行緒管理"
 
 #: src/SUMMARY.md:23
 msgid "Memory management"
@@ -241,15 +241,15 @@ msgstr ""
 
 #: src/SUMMARY.md:71
 msgid "Language Items"
-msgstr ""
+msgstr "語言項目"
 
 #: src/SUMMARY.md:72
 msgid "Variables, Expressions, and Statements"
-msgstr ""
+msgstr "變數、表達式與陳述句"
 
 #: src/SUMMARY.md:73
 msgid "Functions and Methods"
-msgstr ""
+msgstr "函式與方法"
 
 #: src/SUMMARY.md:74
 msgid "Types and Traits"
@@ -257,7 +257,7 @@ msgstr ""
 
 #: src/SUMMARY.md:75
 msgid "Comments and Documentation"
-msgstr ""
+msgstr "註釋與文件"
 
 #: src/SUMMARY.md:76
 msgid "Unsafety"
@@ -265,7 +265,7 @@ msgstr ""
 
 #: src/SUMMARY.md:77
 msgid "Modules and Crates"
-msgstr ""
+msgstr "模組與軟體箱"
 
 #: src/SUMMARY.md:78
 msgid "Macros and Attributes"
@@ -285,7 +285,7 @@ msgstr ""
 
 #: src/SUMMARY.md:82
 msgid "Error Handling"
-msgstr ""
+msgstr "錯誤處理"
 
 #: src/SUMMARY.md:83
 msgid "Logging"
@@ -293,11 +293,11 @@ msgstr ""
 
 #: src/SUMMARY.md:84
 msgid "Memory and Resource Management"
-msgstr ""
+msgstr "記憶體與資源管理"
 
 #: src/SUMMARY.md:85
 msgid "Performance"
-msgstr ""
+msgstr "效能"
 
 #: src/SUMMARY.md:86
 msgid "Git Guidelines"
@@ -345,4 +345,4 @@ msgstr "RFC-0002：Asterinas NixOS"
 
 #: src/SUMMARY.md:99
 msgid "RFC Template"
-msgstr ""
+msgstr "RFC 模板"

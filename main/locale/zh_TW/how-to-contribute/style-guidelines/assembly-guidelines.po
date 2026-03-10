@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/to-contribute/style-guidelines/asm-guidelines.md:3
 msgid "Define sections"
-msgstr ""
+msgstr "定義區段"
 
 #: src/to-contribute/style-guidelines/asm-guidelines.md:5
 msgid ""

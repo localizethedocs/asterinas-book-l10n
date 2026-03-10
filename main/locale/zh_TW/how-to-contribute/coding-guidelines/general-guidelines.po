@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:1
@@ -159,7 +159,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:111
 msgid "Comments"
-msgstr ""
+msgstr "註釋"
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:113
 msgid "Prefer semantic line breaks (`semantic-line-breaks`)"
@@ -315,7 +315,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:224
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:226
 msgid "Format error messages consistently (`error-message-format`)"
@@ -335,7 +335,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:236
 msgid "API Design"
-msgstr ""
+msgstr "API 設計"
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:238
 msgid "Stick to familiar conventions (`familiar-conventions`)"

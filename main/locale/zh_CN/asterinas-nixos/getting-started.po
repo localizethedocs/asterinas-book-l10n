@@ -207,9 +207,3 @@ msgstr ""
 #: src/distro/index.md:146
 msgid "Start a VM to run the installed Asterinas NixOS:"
 msgstr "启动虚拟机运行已安装的 Asterinas NixOS："
-
-#~ msgid "Download the latest source code on an x86-64 Linux machine:"
-#~ msgstr "在 x86-64 Linux 机器上下载最新源代码："
-
-#~ msgid "Run a Docker container as the development environment:"
-#~ msgstr "运行一个 Docker 容器作为开发环境："

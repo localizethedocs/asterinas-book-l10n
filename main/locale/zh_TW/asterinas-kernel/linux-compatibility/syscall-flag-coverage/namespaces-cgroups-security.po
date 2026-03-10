@@ -66,43 +66,43 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:39
 msgid "`PR_CAP_AMBIENT`, `PR_CAPBSET_READ` and `PR_CAPBSET_DROP`"
-msgstr ""
+msgstr "`PR_CAP_AMBIENT`、`PR_CAPBSET_READ` 和 `PR_CAPBSET_DROP`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:40
 msgid "`PR_GET_ENDIAN` and `PR_SET_ENDIAN`"
-msgstr ""
+msgstr "`PR_GET_ENDIAN` 和 `PR_SET_ENDIAN`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:41
 msgid "`PR_GET_FP_MODE` and `PR_SET_FP_MODE`"
-msgstr ""
+msgstr "`PR_GET_FP_MODE` 和 `PR_SET_FP_MODE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:42
 msgid "`PR_GET_FPEMU` and `PR_SET_FPEMU`"
-msgstr ""
+msgstr "`PR_GET_FPEMU` 和 `PR_SET_FPEMU`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:43
 msgid "`PR_GET_FPEXC` and `PR_SET_FPEXC`"
-msgstr ""
+msgstr "`PR_GET_FPEXC` 和 `PR_SET_FPEXC`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:44
 msgid "`PR_GET_IO_FLUSHER` and `PR_SET_IO_FLUSHER`"
-msgstr ""
+msgstr "`PR_GET_IO_FLUSHER` 和 `PR_SET_IO_FLUSHER`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:45
 msgid "`PR_MCE_KILL` and `PR_MCE_KILL_GET`"
-msgstr ""
+msgstr "`PR_MCE_KILL` 和 `PR_MCE_KILL_GET`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:46
 msgid "`PR_SET_MM` and `PR_SET_VMA`"
-msgstr ""
+msgstr "`PR_SET_MM` 和 `PR_SET_VMA`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:47
 msgid "`PR_MPX_ENABLE_MANAGEMENT` and `PR_MPX_DISABLE_MANAGEMENT`"
-msgstr ""
+msgstr "`PR_MPX_ENABLE_MANAGEMENT` 和 `PR_MPX_DISABLE_MANAGEMENT`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:48
 msgid "`PR_GET_NO_NEW_PRIVS` and `PR_SET_NO_NEW_PRIVS`"
-msgstr ""
+msgstr "`PR_GET_NO_NEW_PRIVS` 和 `PR_SET_NO_NEW_PRIVS`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:49
 msgid "`PR_PAC_RESET_KEYS`"
@@ -114,11 +114,11 @@ msgstr "`PR_SET_PTRACER`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:51
 msgid "`PR_GET_SECCOMP` and `PR_SET_SECCOMP`"
-msgstr ""
+msgstr "`PR_GET_SECCOMP` 和 `PR_SET_SECCOMP`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:52
 msgid "`PR_GET_SPECULATION_CTRL` and `PR_SET_SPECULATION_CTRL`"
-msgstr ""
+msgstr "`PR_GET_SPECULATION_CTRL` 和 `PR_SET_SPECULATION_CTRL`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:53
 msgid "`PR_SVE_GET_VL` and `PR_SVE_SET_VL`"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:93
 msgid "Unsupported versions:"
-msgstr ""
+msgstr "未支援的版本："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:94
 msgid "`_LINUX_CAPABILITY_VERSION_1`"
@@ -215,7 +215,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:109
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:132
 msgid "Unsupported flags:"
-msgstr ""
+msgstr "未支援的旗標："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:110
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:133

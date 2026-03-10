@@ -63,7 +63,7 @@ msgstr ""
 
 #: src/to-contribute/boterinas.md:21
 msgid "Commands and Usage"
-msgstr ""
+msgstr "命令與使用"
 
 #: src/to-contribute/boterinas.md:23
 msgid "Workflow Management"
@@ -98,6 +98,8 @@ msgid ""
 "**`@boterinas claim`**  \n"
 "Assigns the issue or pull request to yourself."
 msgstr ""
+"**`@boterinas claim`**  \n"
+"指派議題或拉取請求給你自己。"
 
 #: src/to-contribute/boterinas.md:35
 msgid ""

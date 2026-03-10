@@ -130,11 +130,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:70
 msgid "`O_DIRECT`"
-msgstr ""
+msgstr "`O_DIRECT`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:71
 msgid "`O_NONBLOCK`"
-msgstr ""
+msgstr "`O_NONBLOCK`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:73
 msgid ""
@@ -157,11 +157,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:89
 msgid "`EFD_NONBLOCK`"
-msgstr ""
+msgstr "`EFD_NONBLOCK`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:90
 msgid "`EFD_SEMAPHORE`"
-msgstr ""
+msgstr "`EFD_SEMAPHORE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:92
 msgid ""
@@ -180,11 +180,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:105
 msgid "`MFD_HUGETLB`"
-msgstr ""
+msgstr "`MFD_HUGETLB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:107
 msgid "Unsupported flags:"
-msgstr ""
+msgstr "未支援的旗標："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:108
 msgid "`MFD_HUGE_64KB`"

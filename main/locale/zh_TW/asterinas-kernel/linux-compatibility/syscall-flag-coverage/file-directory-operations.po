@@ -92,7 +92,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:172
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:265
 msgid "Unsupported flags:"
-msgstr ""
+msgstr "未支援的旗標："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:92
 msgid "`O_TMPFILE`"
@@ -131,15 +131,15 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:110
 msgid "`RENAME_EXCHANGE`"
-msgstr ""
+msgstr "`RENAME_EXCHANGE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:111
 msgid "`RENAME_NOREPLACE`"
-msgstr ""
+msgstr "`RENAME_NOREPLACE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:112
 msgid "`RENAME_WHITEOUT`"
-msgstr ""
+msgstr "`RENAME_WHITEOUT`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:114
 msgid ""
@@ -202,31 +202,31 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:167
 msgid "`RWF_DSYNC`"
-msgstr ""
+msgstr "`RWF_DSYNC`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:168
 msgid "`RWF_HIPRI`"
-msgstr ""
+msgstr "`RWF_HIPRI`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:169
 msgid "`RWF_SYNC`"
-msgstr ""
+msgstr "`RWF_SYNC`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:170
 msgid "`RWF_NOWAIT`"
-msgstr ""
+msgstr "`RWF_NOWAIT`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:173
 msgid "`RWF_APPEND`"
-msgstr ""
+msgstr "`RWF_APPEND`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:174
 msgid "`RWF_NOAPPEND`"
-msgstr ""
+msgstr "`RWF_NOAPPEND`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:175
 msgid "`RWF_ATOMIC`"
-msgstr ""
+msgstr "`RWF_ATOMIC`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:177
 msgid ""
@@ -313,7 +313,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:247
 msgid "Unsupported modes:"
-msgstr ""
+msgstr "未支援的模式："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:248
 msgid "`FALLOC_FL_UNSHARE_RANGE`"

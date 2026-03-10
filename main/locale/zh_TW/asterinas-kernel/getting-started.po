@@ -74,11 +74,11 @@ msgstr ""
 
 #: src/kernel/index.md:36
 msgid "Development Platform"
-msgstr ""
+msgstr "開發平臺"
 
 #: src/kernel/index.md:38 src/kernel/index.md:45
 msgid "x86-64"
-msgstr ""
+msgstr "x86-64"
 
 #: src/kernel/index.md:40
 msgid ""
@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/kernel/index.md:43
 msgid "Deployment Platform"
-msgstr ""
+msgstr "部署平臺"
 
 #: src/kernel/index.md:43
 msgid "Tier"

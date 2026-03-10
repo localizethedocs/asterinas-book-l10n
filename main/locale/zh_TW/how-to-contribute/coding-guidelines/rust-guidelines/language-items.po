@@ -5,15 +5,15 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:1
 msgid "Language Items"
-msgstr ""
+msgstr "語言項目"
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:3
 msgid ""

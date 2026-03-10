@@ -80,6 +80,8 @@ msgid ""
 "toml`. The allowed values for each option can be found in the [Manifest "
 "Documentation](../manifest.md)."
 msgstr ""
+"這些選項也可以在名為 `OSDK.toml` 的專案清單中定義。命令行選項用於覆蓋或追加 "
+"`OSDK.toml` 中的數值。每個選項允許的值可在[清單文件](../manifest.md)中找到。"
 
 #: src/osdk/reference/commands/build.md:49
 msgid "`--kcmd-args <ARGS>`: Command line arguments for the guest kernel"

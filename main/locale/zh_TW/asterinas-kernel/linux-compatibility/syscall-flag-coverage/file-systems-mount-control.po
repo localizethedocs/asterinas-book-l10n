@@ -108,19 +108,19 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:58
 msgid "Unsupported mount flags:"
-msgstr ""
+msgstr "未支援的掛載旗標："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:59
 msgid "`MS_SHARED`"
-msgstr ""
+msgstr "`MS_SHARED`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:60
 msgid "`MS_SLAVE`"
-msgstr ""
+msgstr "`MS_SLAVE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:61
 msgid "`MS_UNBINDABLE`"
-msgstr ""
+msgstr "`MS_UNBINDABLE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:63
 msgid ""
@@ -146,15 +146,15 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:79
 msgid "`MNT_FORCE`"
-msgstr ""
+msgstr "`MNT_FORCE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:80
 msgid "`MNT_DETACH`"
-msgstr ""
+msgstr "`MNT_DETACH`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:81
 msgid "`MNT_EXPIRE`"
-msgstr ""
+msgstr "`MNT_EXPIRE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:83
 msgid ""
@@ -164,11 +164,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:86
 msgid "Event Notifications"
-msgstr ""
+msgstr "事件通知"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:88
 msgid "`inotify_init` and `inotify_init1`"
-msgstr ""
+msgstr "`inotify_init` 和 `inotify_init1`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:93
 msgid "// Create an inotify instance\n"
@@ -194,7 +194,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:119
 msgid "Unsupported event flags:"
-msgstr ""
+msgstr "未支援的事件旗標："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:120
 msgid "`IN_MOVED_FROM` and `IN_MOVED_TO` - Move events are not generated"
@@ -220,7 +220,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:126
 msgid "Unsupported control flags:"
-msgstr ""
+msgstr "未支援的控制旗標："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:127
 msgid "`IN_EXCL_UNLINK` - Events on unlinked files are not excluded"

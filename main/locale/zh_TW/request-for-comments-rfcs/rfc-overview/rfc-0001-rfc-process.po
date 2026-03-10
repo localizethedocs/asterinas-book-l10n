@@ -339,6 +339,8 @@ msgid ""
 "deprecate a previous RFC, in which case the original's status will be "
 "updated to \"deprecated.\""
 msgstr ""
+"針對現有 RFC 的重大變更或修正，必須透過全新的 RFC 提出。這項新提案也可用於正"
+"式廢止先前的 RFC，在這種情況下，原 RFC 的狀態將更新為「已棄用」。"
 
 #: src/rfcs/0001-rfc-process.md:90
 msgid "License"
@@ -374,7 +376,7 @@ msgstr ""
 msgid ""
 "The Asterinas RFC process is heavily inspired by the well-established "
 "processes of the following two open-source projects:"
-msgstr ""
+msgstr "Asterinas 的 RFC 過程深受以下兩個開源專案成熟過程的啟發："
 
 #: src/rfcs/0001-rfc-process.md:102
 msgid ""

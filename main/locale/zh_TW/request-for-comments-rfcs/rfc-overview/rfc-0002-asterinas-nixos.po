@@ -25,7 +25,7 @@ msgstr "拉取請求：https://github.com/asterinas/asterinas/pull/2584"
 
 #: src/rfcs/0002-asterinas-nixos.md:5
 msgid "Date submitted: 2025-11-14"
-msgstr ""
+msgstr "提交日期：2025-11-14"
 
 #: src/rfcs/0002-asterinas-nixos.md:6
 msgid "Date approved: 2025-12-01"
@@ -121,6 +121,10 @@ msgid ""
 "While the Linux world boasts numerous distros, Asterinas-specific distros "
 "will be essential for two primary reasons:"
 msgstr ""
+"展望未來，我們預見一個蓬勃發展的 Asterinas 散佈版生態系統。這個最初由內核開發"
+"者維護的散佈版將作為至關重要的參考實現，促進各種基於 Asterinas 的散佈版誕生。"
+"雖然 Linux 世界擁有眾多的散佈版，但針對 Asterinas 的散佈版將不可或缺，主要原"
+"因有二："
 
 #: src/rfcs/0002-asterinas-nixos.md:30
 msgid ""
@@ -140,6 +144,9 @@ msgid ""
 "and device drivers. These benefits only become real when applications can "
 "detect and leverage them."
 msgstr ""
+"其次，Asterinas 最終將提供 Linux 所不具備的功能與價值主張——例如，全新的系統呼"
+"叫、檔案系統以及裝置驅動程式。只有當應用程式能夠偵測並利用這些優勢時，這些效"
+"益才會真正實現。"
 
 #: src/rfcs/0002-asterinas-nixos.md:34
 msgid ""
@@ -148,6 +155,9 @@ msgid ""
 "packages to make them \"Asterinas-aware\", ensuring that userspace can "
 "meaningfully take advantage of the kernel’s unique capabilities."
 msgstr ""
+"Asterinas 散佈版是實現此目標的自然載體。它可以提供專為 Asterinas 編寫的新軟體"
+"包，並對現有軟體包進行修補，使其具備「Asterinas 感知」能力，確保使用者空間能"
+"有效地利用內核的獨特功能。"
 
 #: src/rfcs/0002-asterinas-nixos.md:36
 msgid ""
@@ -171,6 +181,9 @@ msgid ""
 "it on an existing Linux distro is the most rational path forward. This leads "
 "to the crucial question: which Linux distro should serve as our foundation?"
 msgstr ""
+"從零開始建置第一個 Asterinas 散佈版將是一項巨大的工程，會分散核心內核開發的精"
+"力。因此，基於現有的 Linux 散佈版是最理性的前進方向。這引出了一個關鍵問題：應"
+"該選擇哪一個 Linux 散佈版作為我們的基礎？"
 
 #: src/rfcs/0002-asterinas-nixos.md:44
 msgid ""
@@ -180,6 +193,11 @@ msgid ""
 "theoretically, any of these could serve, we have identified [NixOS](https://"
 "nixos.org/) as a particularly attractive and uniquely suited option."
 msgstr ""
+"Linux 散佈版的版圖非常廣闊，其中包含許多著名的名稱，例如 [Arch](https://"
+"archlinux.org/)、[CentOS](https://www.centos.org/)、[Debian](https://www."
+"debian.org/) 和 [Gentoo](https://www.gentoo.org/)。雖然理論上其中任何一個都可"
+"以使用，但我們發現 [NixOS](https://nixos.org/) 是一個特別吸引人且具有獨特優勢"
+"的選擇。"
 
 #: src/rfcs/0002-asterinas-nixos.md:46
 msgid ""
@@ -391,6 +409,10 @@ msgid ""
 "unfamiliar with Nix. Investing in clear documentation and onboarding "
 "resources will be critical."
 msgstr ""
+"**Nix/NixOS 的學習曲線：** 這可說是最大的障礙。儘管功能極其強大，但 Nix 生態"
+"系統（包括 Nix 語言及其函式型範式）與傳統的軟體包管理器和建置系統相比，學習曲"
+"線更為陡峭。這可能會對新貢獻者以及不熟悉 Nix 的現有 Asterinas 開發者造成初步"
+"門檻。因此，投入資源建立清晰的文件與入職資源將至關重要。"
 
 #: src/rfcs/0002-asterinas-nixos.md:128
 msgid ""

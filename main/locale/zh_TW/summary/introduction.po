@@ -164,7 +164,7 @@ msgid ""
 "accommodate the business need for proprietary kernel modules. Unlike GPL, "
 "the MPL permits the linking of MPL-covered files with proprietary code."
 msgstr ""
-"**容納專有模組：**我們認知到大型企業也對開源做出重大貢獻的演進趨勢，因此我們"
+"**容納專有模組：** 我們認知到大型企業也對開源做出重大貢獻的演進趨勢，因此我們"
 "容納了對專有核心模組的商業需求。與 GPL 不同，MPL 允許將受 MPL 保護的檔案與專"
 "有程式碼進行連結。"
 

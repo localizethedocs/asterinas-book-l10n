@@ -35,15 +35,15 @@ msgstr ""
 
 #: src/distro/popular-applications/desktop-environment.md:23
 msgid "Verified Backends"
-msgstr ""
+msgstr "已驗證的後端"
 
 #: src/distro/popular-applications/desktop-environment.md:25
 msgid "Display server:"
-msgstr ""
+msgstr "顯示伺服器："
 
 #: src/distro/popular-applications/desktop-environment.md:26
 msgid "Xorg display server"
-msgstr ""
+msgstr "Xorg 顯示伺服器"
 
 #: src/distro/popular-applications/desktop-environment.md:27
 msgid "Graphics drivers:"
@@ -63,23 +63,23 @@ msgstr ""
 
 #: src/distro/popular-applications/desktop-environment.md:33
 msgid "Adjusting font size, style, and system theme"
-msgstr ""
+msgstr "調整字型大小、樣式及系統主題"
 
 #: src/distro/popular-applications/desktop-environment.md:34
 msgid "Creating application shortcuts and desktop launchers"
-msgstr ""
+msgstr "建立應用程式捷徑與桌面啟動器"
 
 #: src/distro/popular-applications/desktop-environment.md:35
 msgid "Managing panels and window behavior"
-msgstr ""
+msgstr "管理面板與視窗行為"
 
 #: src/distro/popular-applications/desktop-environment.md:36
 msgid "Using the settings manager and file browser"
-msgstr ""
+msgstr "使用設定管理器與檔案瀏覽器"
 
 #: src/distro/popular-applications/desktop-environment.md:38
 msgid "Verified GUI Applications"
-msgstr ""
+msgstr "已驗證的 GUI 應用程式"
 
 #: src/distro/popular-applications/desktop-environment.md:40
 msgid "Utilities:"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: src/distro/popular-applications/desktop-environment.md:52
 msgid "`gnome-mines`: Minesweeper"
-msgstr ""
+msgstr "`gnome-mines`：踩地雷（Minesweeper）"
 
 #: src/distro/popular-applications/desktop-environment.md:53
 msgid "`gnome-sudoku`: GNOME sudoku"

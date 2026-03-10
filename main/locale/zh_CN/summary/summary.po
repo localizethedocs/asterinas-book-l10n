@@ -346,6 +346,3 @@ msgstr "RFC-0002: Asterinas NixOS"
 #: src/SUMMARY.md:99
 msgid "RFC Template"
 msgstr "RFC 模板"
-
-#~ msgid "Style Guidelines"
-#~ msgstr "风格指南"

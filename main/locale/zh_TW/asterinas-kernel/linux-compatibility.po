@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:1
 msgid "Linux Compatibility"
-msgstr ""
+msgstr "Linux 相容性"
 
 #: src/kernel/linux-compatibility/index.md:3
 msgid "\"We don't break user space.\""
@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:15
 msgid "System Calls"
-msgstr ""
+msgstr "系統呼叫"
 
 #: src/kernel/linux-compatibility/index.md:17
 msgid ""
@@ -2277,87 +2277,87 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:205
 msgid "putpmsg"
-msgstr ""
+msgstr "putpmsg"
 
 #: src/kernel/linux-compatibility/index.md:206
 msgid "183"
-msgstr ""
+msgstr "183"
 
 #: src/kernel/linux-compatibility/index.md:206
 msgid "afs_syscall"
-msgstr ""
+msgstr "afs_syscall"
 
 #: src/kernel/linux-compatibility/index.md:207
 msgid "184"
-msgstr ""
+msgstr "184"
 
 #: src/kernel/linux-compatibility/index.md:207
 msgid "tuxcall"
-msgstr ""
+msgstr "tuxcall"
 
 #: src/kernel/linux-compatibility/index.md:208
 msgid "185"
-msgstr ""
+msgstr "185"
 
 #: src/kernel/linux-compatibility/index.md:208
 msgid "security"
-msgstr ""
+msgstr "security"
 
 #: src/kernel/linux-compatibility/index.md:209
 msgid "186"
-msgstr ""
+msgstr "186"
 
 #: src/kernel/linux-compatibility/index.md:209
 msgid "gettid"
-msgstr ""
+msgstr "gettid"
 
 #: src/kernel/linux-compatibility/index.md:210
 msgid "187"
-msgstr ""
+msgstr "187"
 
 #: src/kernel/linux-compatibility/index.md:210
 msgid "readahead"
-msgstr ""
+msgstr "readahead"
 
 #: src/kernel/linux-compatibility/index.md:211
 msgid "188"
-msgstr ""
+msgstr "188"
 
 #: src/kernel/linux-compatibility/index.md:211
 msgid "setxattr"
-msgstr ""
+msgstr "setxattr"
 
 #: src/kernel/linux-compatibility/index.md:212
 msgid "189"
-msgstr ""
+msgstr "189"
 
 #: src/kernel/linux-compatibility/index.md:212
 msgid "lsetxattr"
-msgstr ""
+msgstr "lsetxattr"
 
 #: src/kernel/linux-compatibility/index.md:213
 msgid "190"
-msgstr ""
+msgstr "190"
 
 #: src/kernel/linux-compatibility/index.md:213
 msgid "fsetxattr"
-msgstr ""
+msgstr "fsetxattr"
 
 #: src/kernel/linux-compatibility/index.md:214
 msgid "191"
-msgstr ""
+msgstr "191"
 
 #: src/kernel/linux-compatibility/index.md:214
 msgid "getxattr"
-msgstr ""
+msgstr "getxattr"
 
 #: src/kernel/linux-compatibility/index.md:215
 msgid "192"
-msgstr ""
+msgstr "192"
 
 #: src/kernel/linux-compatibility/index.md:215
 msgid "lgetxattr"
-msgstr ""
+msgstr "lgetxattr"
 
 #: src/kernel/linux-compatibility/index.md:216
 msgid "193"

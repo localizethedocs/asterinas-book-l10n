@@ -33,10 +33,14 @@ msgid ""
 "that your kernel will never crash or be hacked due to undefined behaviors, "
 "even if today marks your Day 1 as a Rust programmer."
 msgstr ""
+"有了 Asterinas OSTD（作業系統標準函式庫），你無需學習那些不安全的 Rust 程式設"
+"計黑魔法，也不必冒著自討苦吃的風險。無論你想做什麼，都能放心去實現。即使今天"
+"是你的 Rust 程式設計初體驗，也能確信你的內核絕不會因未定義行為而當機或被入"
+"侵。"
 
 #: src/ostd/index.md:18
 msgid "APIs"
-msgstr ""
+msgstr "API"
 
 #: src/ostd/index.md:20
 msgid ""
@@ -46,11 +50,11 @@ msgstr ""
 
 #: src/ostd/index.md:24
 msgid "Essential for OS development, and"
-msgstr ""
+msgstr "對於作業系統開發至關重要，並且"
 
 #: src/ostd/index.md:25
 msgid "Dependent on the use of unsafe Rust."
-msgstr ""
+msgstr "依賴於使用不安全 Rust。"
 
 #: src/ostd/index.md:27
 msgid "Most of these APIs fall into the following categories:"
@@ -63,7 +67,7 @@ msgstr "記憶體分配（例如：分配與存取物理記憶體分頁）"
 
 #: src/ostd/index.md:30
 msgid "Task management (e.g., context switching between kernel tasks)"
-msgstr ""
+msgstr "任務管理（例如：在內核任務之間的上下文切換）"
 
 #: src/ostd/index.md:31
 msgid "User space (e.g., manipulating and entering the user space)"
@@ -87,7 +91,7 @@ msgstr "開機支援（例如：從開機載入程式獲取資訊）"
 
 #: src/ostd/index.md:36
 msgid "Synchronization (e.g., locking and sleeping)"
-msgstr ""
+msgstr "同步（例如：鎖定與休眠）"
 
 #: src/ostd/index.md:38
 msgid ""
@@ -101,10 +105,12 @@ msgid ""
 "comprehensive API documentation by visiting the [docs.rs](https://docs.rs/"
 "ostd/latest/ostd)."
 msgstr ""
+"OSTD API 已獲得完整文件記載。您可以透過訪問 [docs.rs](https://docs.rs/ostd/"
+"latest/ostd) 來存取完整的 API 文件。"
 
 #: src/ostd/index.md:44
 msgid "Four Requirements Satisfied"
-msgstr ""
+msgstr "滿足四個要求"
 
 #: src/ostd/index.md:46
 msgid ""
@@ -146,3 +152,7 @@ msgid ""
 "sound in the soundness analysis and rely on the many eyes of the community "
 "to catch any potential flaws in the implementation."
 msgstr ""
+"健全性，與其他三項要求不同，並不容易量化或證明。雖然形式驗證被視為黃金標準，"
+"但它需要相當多的資源和時間，且並非當前的首要任務。作為一種更務實的方法，我們"
+"將在健全性分析中解釋為何高層設計是健全的，並依賴社區的眾多眼睛來捕捉實作中任"
+"何潛在的缺陷。"
