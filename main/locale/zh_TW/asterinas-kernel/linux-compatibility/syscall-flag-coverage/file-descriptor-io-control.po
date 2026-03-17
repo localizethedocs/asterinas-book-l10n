@@ -324,7 +324,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:188
 msgid "Unsupported events:"
-msgstr ""
+msgstr "未支援的事件："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:189
 msgid "`POLLRDBAND`"
@@ -354,7 +354,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:209
 msgid "// Control terminal devices\n"
-msgstr ""
+msgstr "// 控制終端機裝置\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:212
 msgid "// Control framebuffer display\n"

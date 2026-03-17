@@ -69,7 +69,7 @@ msgstr ""
 
 #: src/rfcs/0002-asterinas-nixos.md:18
 msgid "Short-term strategic advantages"
-msgstr ""
+msgstr "短期策略優勢"
 
 #: src/rfcs/0002-asterinas-nixos.md:20
 msgid ""
@@ -209,6 +209,12 @@ msgid ""
 "thiscute.world/the-nix-language/), which offers unparalleled expressiveness "
 "and flexibility for defining package recipes."
 msgstr ""
+"在大多數的散佈版中，軟體包配方（package recipes）主要圍繞著外殼腳本（例如 "
+"Arch Linux 中的 [`PKGBUILD`](https://man.archlinux.org/man/"
+"PKGBUILD.5#EXAMPLE) 或 Debian 軟體包中的 [`rules`](https://www.debian.org/"
+"doc/manuals/maint-guide/dreq.en.html#rules) 檔案）。然而，NixOS 使用一種專門"
+"用於建置的純函式型語言，稱為 [Nix](https://nixos-and-flakes.thiscute.world/"
+"the-nix-language/)，它為定義軟體包配方提供了無與倫比的表達能力與靈活性。"
 
 #: src/rfcs/0002-asterinas-nixos.md:48
 msgid ""

@@ -63,11 +63,11 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:23
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: src/kernel/linux-compatibility/index.md:23
 msgid "read"
-msgstr ""
+msgstr "read"
 
 #: src/kernel/linux-compatibility/index.md:23
 #: src/kernel/linux-compatibility/index.md:24
@@ -307,7 +307,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:352
 #: src/kernel/linux-compatibility/index.md:353
 msgid "✅"
-msgstr ""
+msgstr "✅"
 
 #: src/kernel/linux-compatibility/index.md:23
 #: src/kernel/linux-compatibility/index.md:24
@@ -475,99 +475,101 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:352
 #: src/kernel/linux-compatibility/index.md:353
 msgid "💯"
-msgstr ""
+msgstr "💯"
 
 #: src/kernel/linux-compatibility/index.md:24
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: src/kernel/linux-compatibility/index.md:24
 msgid "write"
-msgstr ""
+msgstr "write"
 
 #: src/kernel/linux-compatibility/index.md:25
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: src/kernel/linux-compatibility/index.md:25
 msgid "open"
-msgstr ""
+msgstr "open"
 
 #: src/kernel/linux-compatibility/index.md:25
 #: src/kernel/linux-compatibility/index.md:280
 msgid ""
 "[⚠️](syscall-flag-coverage/file-and-directory-operations/#open-and-openat)"
 msgstr ""
+"[⚠️](syscall-flag-coverage/file-and-directory-operations/#open-and-openat)"
 
 #: src/kernel/linux-compatibility/index.md:26
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: src/kernel/linux-compatibility/index.md:26
 msgid "close"
-msgstr ""
+msgstr "close"
 
 #: src/kernel/linux-compatibility/index.md:27
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: src/kernel/linux-compatibility/index.md:27
 msgid "stat"
-msgstr ""
+msgstr "stat"
 
 #: src/kernel/linux-compatibility/index.md:28
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: src/kernel/linux-compatibility/index.md:28
 msgid "fstat"
-msgstr ""
+msgstr "fstat"
 
 #: src/kernel/linux-compatibility/index.md:29
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: src/kernel/linux-compatibility/index.md:29
 msgid "lstat"
-msgstr ""
+msgstr "lstat"
 
 #: src/kernel/linux-compatibility/index.md:30
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: src/kernel/linux-compatibility/index.md:30
 msgid "poll"
-msgstr ""
+msgstr "poll"
 
 #: src/kernel/linux-compatibility/index.md:30
 #: src/kernel/linux-compatibility/index.md:294
 msgid ""
 "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#poll-and-ppoll)"
 msgstr ""
+"[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#poll-and-ppoll)"
 
 #: src/kernel/linux-compatibility/index.md:31
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: src/kernel/linux-compatibility/index.md:31
 msgid "lseek"
-msgstr ""
+msgstr "lseek"
 
 #: src/kernel/linux-compatibility/index.md:31
 msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#lseek)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/file-and-directory-operations/#lseek)"
 
 #: src/kernel/linux-compatibility/index.md:32
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: src/kernel/linux-compatibility/index.md:32
 msgid "mmap"
-msgstr ""
+msgstr "mmap"
 
 #: src/kernel/linux-compatibility/index.md:32
 msgid "[⚠️](syscall-flag-coverage/memory-management/#mmap-and-munmap)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/memory-management/#mmap-and-munmap)"
 
 #: src/kernel/linux-compatibility/index.md:33
 msgid "10"
@@ -639,103 +641,103 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:39
 msgid "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#ioctl)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#ioctl)"
 
 #: src/kernel/linux-compatibility/index.md:40
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: src/kernel/linux-compatibility/index.md:40
 msgid "pread64"
-msgstr ""
+msgstr "pread64"
 
 #: src/kernel/linux-compatibility/index.md:41
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: src/kernel/linux-compatibility/index.md:41
 msgid "pwrite64"
-msgstr ""
+msgstr "pwrite64"
 
 #: src/kernel/linux-compatibility/index.md:42
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: src/kernel/linux-compatibility/index.md:42
 msgid "readv"
-msgstr ""
+msgstr "readv"
 
 #: src/kernel/linux-compatibility/index.md:43
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: src/kernel/linux-compatibility/index.md:43
 msgid "writev"
-msgstr ""
+msgstr "writev"
 
 #: src/kernel/linux-compatibility/index.md:44
 msgid "21"
-msgstr ""
+msgstr "21"
 
 #: src/kernel/linux-compatibility/index.md:44
 msgid "access"
-msgstr ""
+msgstr "access"
 
 #: src/kernel/linux-compatibility/index.md:45
 msgid "22"
-msgstr ""
+msgstr "22"
 
 #: src/kernel/linux-compatibility/index.md:45
 msgid "pipe"
-msgstr ""
+msgstr "pipe"
 
 #: src/kernel/linux-compatibility/index.md:46
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: src/kernel/linux-compatibility/index.md:46
 msgid "select"
-msgstr ""
+msgstr "select"
 
 #: src/kernel/linux-compatibility/index.md:47
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: src/kernel/linux-compatibility/index.md:47
 msgid "sched_yield"
-msgstr ""
+msgstr "sched_yield"
 
 #: src/kernel/linux-compatibility/index.md:48
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #: src/kernel/linux-compatibility/index.md:48
 msgid "mremap"
-msgstr ""
+msgstr "mremap"
 
 #: src/kernel/linux-compatibility/index.md:48
 msgid "[⚠️](syscall-flag-coverage/memory-management/#mremap)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/memory-management/#mremap)"
 
 #: src/kernel/linux-compatibility/index.md:49
 msgid "26"
-msgstr ""
+msgstr "26"
 
 #: src/kernel/linux-compatibility/index.md:49
 msgid "msync"
-msgstr ""
+msgstr "msync"
 
 #: src/kernel/linux-compatibility/index.md:49
 msgid "[⚠️](syscall-flag-coverage/memory-management/#msync)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/memory-management/#msync)"
 
 #: src/kernel/linux-compatibility/index.md:50
 msgid "27"
-msgstr ""
+msgstr "27"
 
 #: src/kernel/linux-compatibility/index.md:50
 msgid "mincore"
-msgstr ""
+msgstr "mincore"
 
 #: src/kernel/linux-compatibility/index.md:50
 #: src/kernel/linux-compatibility/index.md:52
@@ -832,7 +834,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:335
 #: src/kernel/linux-compatibility/index.md:336
 msgid "❌"
-msgstr ""
+msgstr "❌"
 
 #: src/kernel/linux-compatibility/index.md:50
 #: src/kernel/linux-compatibility/index.md:52
@@ -929,23 +931,23 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:335
 #: src/kernel/linux-compatibility/index.md:336
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: src/kernel/linux-compatibility/index.md:51
 msgid "28"
-msgstr ""
+msgstr "28"
 
 #: src/kernel/linux-compatibility/index.md:51
 msgid "madvise"
-msgstr ""
+msgstr "madvise"
 
 #: src/kernel/linux-compatibility/index.md:51
 msgid "[⚠️](syscall-flag-coverage/memory-management/#madvise)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/memory-management/#madvise)"
 
 #: src/kernel/linux-compatibility/index.md:52
 msgid "29"
-msgstr ""
+msgstr "29"
 
 #: src/kernel/linux-compatibility/index.md:52
 msgid "shmget"
@@ -1069,20 +1071,20 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:66
 msgid "accept"
-msgstr ""
+msgstr "accept"
 
 #: src/kernel/linux-compatibility/index.md:66
 #: src/kernel/linux-compatibility/index.md:311
 msgid "[⚠️](syscall-flag-coverage/networking-and-sockets/#accept-and-accept4)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/networking-and-sockets/#accept-and-accept4)"
 
 #: src/kernel/linux-compatibility/index.md:67
 msgid "44"
-msgstr ""
+msgstr "44"
 
 #: src/kernel/linux-compatibility/index.md:67
 msgid "sendto"
-msgstr ""
+msgstr "sendto"
 
 #: src/kernel/linux-compatibility/index.md:67
 #: src/kernel/linux-compatibility/index.md:69
@@ -1235,47 +1237,47 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:82
 msgid "execve"
-msgstr ""
+msgstr "execve"
 
 #: src/kernel/linux-compatibility/index.md:83
 msgid "60"
-msgstr ""
+msgstr "60"
 
 #: src/kernel/linux-compatibility/index.md:83
 msgid "exit"
-msgstr ""
+msgstr "exit"
 
 #: src/kernel/linux-compatibility/index.md:84
 msgid "61"
-msgstr ""
+msgstr "61"
 
 #: src/kernel/linux-compatibility/index.md:84
 msgid "wait4"
-msgstr ""
+msgstr "wait4"
 
 #: src/kernel/linux-compatibility/index.md:84
 msgid "[⚠️](syscall-flag-coverage/process-and-thread-management/#wait4)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/process-and-thread-management/#wait4)"
 
 #: src/kernel/linux-compatibility/index.md:85
 msgid "62"
-msgstr ""
+msgstr "62"
 
 #: src/kernel/linux-compatibility/index.md:85
 msgid "kill"
-msgstr ""
+msgstr "kill"
 
 #: src/kernel/linux-compatibility/index.md:86
 msgid "63"
-msgstr ""
+msgstr "63"
 
 #: src/kernel/linux-compatibility/index.md:86
 msgid "uname"
-msgstr ""
+msgstr "uname"
 
 #: src/kernel/linux-compatibility/index.md:87
 msgid "64"
-msgstr ""
+msgstr "64"
 
 #: src/kernel/linux-compatibility/index.md:87
 msgid "semget"
@@ -1341,15 +1343,15 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:93
 msgid "msgrcv"
-msgstr ""
+msgstr "msgrcv"
 
 #: src/kernel/linux-compatibility/index.md:94
 msgid "71"
-msgstr ""
+msgstr "71"
 
 #: src/kernel/linux-compatibility/index.md:94
 msgid "msgctl"
-msgstr ""
+msgstr "msgctl"
 
 #: src/kernel/linux-compatibility/index.md:95
 msgid "72"
@@ -2445,87 +2447,87 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:226
 msgid "203"
-msgstr ""
+msgstr "203"
 
 #: src/kernel/linux-compatibility/index.md:226
 msgid "sched_setaffinity"
-msgstr ""
+msgstr "sched_setaffinity"
 
 #: src/kernel/linux-compatibility/index.md:227
 msgid "204"
-msgstr ""
+msgstr "204"
 
 #: src/kernel/linux-compatibility/index.md:227
 msgid "sched_getaffinity"
-msgstr ""
+msgstr "sched_getaffinity"
 
 #: src/kernel/linux-compatibility/index.md:228
 msgid "205"
-msgstr ""
+msgstr "205"
 
 #: src/kernel/linux-compatibility/index.md:228
 msgid "set_thread_area"
-msgstr ""
+msgstr "set_thread_area"
 
 #: src/kernel/linux-compatibility/index.md:229
 msgid "206"
-msgstr ""
+msgstr "206"
 
 #: src/kernel/linux-compatibility/index.md:229
 msgid "io_setup"
-msgstr ""
+msgstr "io_setup"
 
 #: src/kernel/linux-compatibility/index.md:230
 msgid "207"
-msgstr ""
+msgstr "207"
 
 #: src/kernel/linux-compatibility/index.md:230
 msgid "io_destroy"
-msgstr ""
+msgstr "io_destroy"
 
 #: src/kernel/linux-compatibility/index.md:231
 msgid "208"
-msgstr ""
+msgstr "208"
 
 #: src/kernel/linux-compatibility/index.md:231
 msgid "io_getevents"
-msgstr ""
+msgstr "io_getevents"
 
 #: src/kernel/linux-compatibility/index.md:232
 msgid "209"
-msgstr ""
+msgstr "209"
 
 #: src/kernel/linux-compatibility/index.md:232
 msgid "io_submit"
-msgstr ""
+msgstr "io_submit"
 
 #: src/kernel/linux-compatibility/index.md:233
 msgid "210"
-msgstr ""
+msgstr "210"
 
 #: src/kernel/linux-compatibility/index.md:233
 msgid "io_cancel"
-msgstr ""
+msgstr "io_cancel"
 
 #: src/kernel/linux-compatibility/index.md:234
 msgid "211"
-msgstr ""
+msgstr "211"
 
 #: src/kernel/linux-compatibility/index.md:234
 msgid "get_thread_area"
-msgstr ""
+msgstr "get_thread_area"
 
 #: src/kernel/linux-compatibility/index.md:235
 msgid "212"
-msgstr ""
+msgstr "212"
 
 #: src/kernel/linux-compatibility/index.md:235
 msgid "lookup_dcookie"
-msgstr ""
+msgstr "lookup_dcookie"
 
 #: src/kernel/linux-compatibility/index.md:236
 msgid "213"
-msgstr ""
+msgstr "213"
 
 #: src/kernel/linux-compatibility/index.md:236
 msgid "epoll_create"
@@ -2685,167 +2687,167 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:254
 msgid "231"
-msgstr ""
+msgstr "231"
 
 #: src/kernel/linux-compatibility/index.md:254
 msgid "exit_group"
-msgstr ""
+msgstr "exit_group"
 
 #: src/kernel/linux-compatibility/index.md:255
 msgid "232"
-msgstr ""
+msgstr "232"
 
 #: src/kernel/linux-compatibility/index.md:255
 msgid "epoll_wait"
-msgstr ""
+msgstr "epoll_wait"
 
 #: src/kernel/linux-compatibility/index.md:256
 msgid "233"
-msgstr ""
+msgstr "233"
 
 #: src/kernel/linux-compatibility/index.md:256
 msgid "epoll_ctl"
-msgstr ""
+msgstr "epoll_ctl"
 
 #: src/kernel/linux-compatibility/index.md:256
 msgid "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#epoll_ctl)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/file-descriptor-and-io-control/#epoll_ctl)"
 
 #: src/kernel/linux-compatibility/index.md:257
 msgid "234"
-msgstr ""
+msgstr "234"
 
 #: src/kernel/linux-compatibility/index.md:257
 msgid "tgkill"
-msgstr ""
+msgstr "tgkill"
 
 #: src/kernel/linux-compatibility/index.md:258
 msgid "235"
-msgstr ""
+msgstr "235"
 
 #: src/kernel/linux-compatibility/index.md:258
 msgid "utimes"
-msgstr ""
+msgstr "utimes"
 
 #: src/kernel/linux-compatibility/index.md:259
 msgid "236"
-msgstr ""
+msgstr "236"
 
 #: src/kernel/linux-compatibility/index.md:259
 msgid "vserver"
-msgstr ""
+msgstr "vserver"
 
 #: src/kernel/linux-compatibility/index.md:260
 msgid "237"
-msgstr ""
+msgstr "237"
 
 #: src/kernel/linux-compatibility/index.md:260
 msgid "mbind"
-msgstr ""
+msgstr "mbind"
 
 #: src/kernel/linux-compatibility/index.md:261
 msgid "238"
-msgstr ""
+msgstr "238"
 
 #: src/kernel/linux-compatibility/index.md:261
 msgid "set_mempolicy"
-msgstr ""
+msgstr "set_mempolicy"
 
 #: src/kernel/linux-compatibility/index.md:262
 msgid "239"
-msgstr ""
+msgstr "239"
 
 #: src/kernel/linux-compatibility/index.md:262
 msgid "get_mempolicy"
-msgstr ""
+msgstr "get_mempolicy"
 
 #: src/kernel/linux-compatibility/index.md:263
 msgid "240"
-msgstr ""
+msgstr "240"
 
 #: src/kernel/linux-compatibility/index.md:263
 msgid "mq_open"
-msgstr ""
+msgstr "mq_open"
 
 #: src/kernel/linux-compatibility/index.md:264
 msgid "241"
-msgstr ""
+msgstr "241"
 
 #: src/kernel/linux-compatibility/index.md:264
 msgid "mq_unlink"
-msgstr ""
+msgstr "mq_unlink"
 
 #: src/kernel/linux-compatibility/index.md:265
 msgid "242"
-msgstr ""
+msgstr "242"
 
 #: src/kernel/linux-compatibility/index.md:265
 msgid "mq_timedsend"
-msgstr ""
+msgstr "mq_timedsend"
 
 #: src/kernel/linux-compatibility/index.md:266
 msgid "243"
-msgstr ""
+msgstr "243"
 
 #: src/kernel/linux-compatibility/index.md:266
 msgid "mq_timedreceive"
-msgstr ""
+msgstr "mq_timedreceive"
 
 #: src/kernel/linux-compatibility/index.md:267
 msgid "244"
-msgstr ""
+msgstr "244"
 
 #: src/kernel/linux-compatibility/index.md:267
 msgid "mq_notify"
-msgstr ""
+msgstr "mq_notify"
 
 #: src/kernel/linux-compatibility/index.md:268
 msgid "245"
-msgstr ""
+msgstr "245"
 
 #: src/kernel/linux-compatibility/index.md:268
 msgid "mq_getsetattr"
-msgstr ""
+msgstr "mq_getsetattr"
 
 #: src/kernel/linux-compatibility/index.md:269
 msgid "246"
-msgstr ""
+msgstr "246"
 
 #: src/kernel/linux-compatibility/index.md:269
 msgid "kexec_load"
-msgstr ""
+msgstr "kexec_load"
 
 #: src/kernel/linux-compatibility/index.md:270
 msgid "247"
-msgstr ""
+msgstr "247"
 
 #: src/kernel/linux-compatibility/index.md:270
 msgid "waitid"
-msgstr ""
+msgstr "waitid"
 
 #: src/kernel/linux-compatibility/index.md:270
 msgid "[⚠️](syscall-flag-coverage/process-and-thread-management/#waitid)"
-msgstr ""
+msgstr "[⚠️](syscall-flag-coverage/process-and-thread-management/#waitid)"
 
 #: src/kernel/linux-compatibility/index.md:271
 msgid "248"
-msgstr ""
+msgstr "248"
 
 #: src/kernel/linux-compatibility/index.md:271
 msgid "add_key"
-msgstr ""
+msgstr "add_key"
 
 #: src/kernel/linux-compatibility/index.md:272
 msgid "249"
-msgstr ""
+msgstr "249"
 
 #: src/kernel/linux-compatibility/index.md:272
 msgid "request_key"
-msgstr ""
+msgstr "request_key"
 
 #: src/kernel/linux-compatibility/index.md:273
 msgid "250"
-msgstr ""
+msgstr "250"
 
 #: src/kernel/linux-compatibility/index.md:273
 msgid "keyctl"

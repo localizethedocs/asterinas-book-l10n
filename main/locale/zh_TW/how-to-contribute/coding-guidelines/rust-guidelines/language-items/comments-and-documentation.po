@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"POT-Creation-Date: 2026-03-10T17:12:34Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:1
 msgid "Comments and Documentation"
-msgstr ""
+msgstr "註釋與文件"
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:3
 msgid ""

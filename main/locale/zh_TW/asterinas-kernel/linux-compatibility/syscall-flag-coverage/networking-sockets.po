@@ -152,35 +152,35 @@ msgstr "未支援的旗標："
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:188
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:193
 msgid "`MSG_CONFIRM`"
-msgstr ""
+msgstr "`MSG_CONFIRM`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:189
 msgid "`MSG_DONTROUTE`"
-msgstr ""
+msgstr "`MSG_DONTROUTE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:190
 msgid "`MSG_DONTWAIT`"
-msgstr ""
+msgstr "`MSG_DONTWAIT`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:191
 msgid "`MSG_EOR`"
-msgstr ""
+msgstr "`MSG_EOR`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:192
 msgid "`MSG_MORE`"
-msgstr ""
+msgstr "`MSG_MORE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:194
 msgid "`MSG_NOSIGNAL`"
-msgstr ""
+msgstr "`MSG_NOSIGNAL`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:195
 msgid "`MSG_OOB`"
-msgstr ""
+msgstr "`MSG_OOB`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:196
 msgid "`MSG_FASTOPEN`"
-msgstr ""
+msgstr "`MSG_FASTOPEN`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:198
 msgid ""

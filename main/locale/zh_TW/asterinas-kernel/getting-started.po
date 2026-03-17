@@ -60,7 +60,7 @@ msgstr ""
 
 #: src/kernel/index.md:29
 msgid "Supported CPU Architectures"
-msgstr ""
+msgstr "支援的 CPU 架構"
 
 #: src/kernel/index.md:31
 msgid "Asterinas targets modern, 64-bit platforms only."

@@ -158,15 +158,15 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:62
 msgid "`PR_GET_AUXV`"
-msgstr ""
+msgstr "`PR_GET_AUXV`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:63
 msgid "`PR_GET_MDWE` and `PR_SET_MDWE`"
-msgstr ""
+msgstr "`PR_GET_MDWE` 和 `PR_SET_MDWE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:64
 msgid "`PR_RISCV_SET_ICACHE_FLUSH_CTX`"
-msgstr ""
+msgstr "`PR_RISCV_SET_ICACHE_FLUSH_CTX`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:66
 msgid ""

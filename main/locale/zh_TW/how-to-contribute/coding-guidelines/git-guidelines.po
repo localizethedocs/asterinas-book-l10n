@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"POT-Creation-Date: 2026-03-10T17:12:34Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/git-guidelines.md:25
 msgid "Examples:"
-msgstr ""
+msgstr "範例："
 
 #: src/to-contribute/coding-guidelines/git-guidelines.md:35
 msgid ""

@@ -165,19 +165,19 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:141
 msgid "`PROT_SEM`"
-msgstr ""
+msgstr "`PROT_SEM`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:142
 msgid "`PROT_SAO`"
-msgstr ""
+msgstr "`PROT_SAO`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:143
 msgid "`PROT_GROWSUP`"
-msgstr ""
+msgstr "`PROT_GROWSUP`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:144
 msgid "`PROT_GROWSDOWN`"
-msgstr ""
+msgstr "`PROT_GROWSDOWN`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:146
 msgid ""

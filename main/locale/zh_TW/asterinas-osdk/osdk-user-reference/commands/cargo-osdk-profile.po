@@ -71,7 +71,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/profile.md:31
 msgid "`--format <FORMAT>`:"
-msgstr ""
+msgstr "`--format <FORMAT>`："
 
 #: src/osdk/reference/commands/profile.md:33
 msgid ""

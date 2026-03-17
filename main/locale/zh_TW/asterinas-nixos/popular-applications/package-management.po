@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/distro/popular-applications/package-management.md:8
 msgid "`nix-build`"
-msgstr ""
+msgstr "`nix-build`"
 
 #: src/distro/popular-applications/package-management.md:10
 msgid ""
@@ -39,11 +39,11 @@ msgstr ""
 
 #: src/distro/popular-applications/package-management.md:14
 msgid "# Step 1: Create a clean workspace\n"
-msgstr ""
+msgstr "# 第 1 步：建立乾淨的工作空間\n"
 
 #: src/distro/popular-applications/package-management.md:16
 msgid "# Step 2: Write a C program\n"
-msgstr ""
+msgstr "# 第 2 步：編寫 C 程式\n"
 
 #: src/distro/popular-applications/package-management.md:18
 msgid ""
@@ -85,23 +85,23 @@ msgstr ""
 
 #: src/distro/popular-applications/package-management.md:54
 msgid "`nix-env`"
-msgstr ""
+msgstr "`nix-env`"
 
 #: src/distro/popular-applications/package-management.md:56
 msgid "`nix-env` installs or removes individual packages in your user profile."
-msgstr ""
+msgstr "`nix-env` 會安裝或移除您的使用者設定檔中的個別軟體包。"
 
 #: src/distro/popular-applications/package-management.md:59
 msgid "# Install the `hello` package\n"
-msgstr ""
+msgstr "# 安裝 `hello` 軟體包\n"
 
 #: src/distro/popular-applications/package-management.md:61
 msgid "# Remove the `hello` package\n"
-msgstr ""
+msgstr "# 移除 `hello` 軟體包\n"
 
 #: src/distro/popular-applications/package-management.md:66
 msgid "`nix-shell`"
-msgstr ""
+msgstr "`nix-shell`"
 
 #: src/distro/popular-applications/package-management.md:68
 msgid ""
@@ -116,7 +116,7 @@ msgstr ""
 
 #: src/distro/popular-applications/package-management.md:76
 msgid "`nixos-rebuild`"
-msgstr ""
+msgstr "`nixos-rebuild`"
 
 #: src/distro/popular-applications/package-management.md:78
 msgid ""

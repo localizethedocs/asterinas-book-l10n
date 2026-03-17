@@ -65,31 +65,31 @@ msgstr ""
 
 #: src/osdk/guide/index.md:27
 msgid "cargo-binutils"
-msgstr ""
+msgstr "cargo-binutils"
 
 #: src/osdk/guide/index.md:28
 msgid "gcc"
-msgstr ""
+msgstr "gcc"
 
 #: src/osdk/guide/index.md:29
 msgid "gdb"
-msgstr ""
+msgstr "gdb"
 
 #: src/osdk/guide/index.md:30
 msgid "grub"
-msgstr ""
+msgstr "grub"
 
 #: src/osdk/guide/index.md:31
 msgid "ovmf"
-msgstr ""
+msgstr "ovmf"
 
 #: src/osdk/guide/index.md:32
 msgid "qemu-system-x86_64"
-msgstr ""
+msgstr "qemu-system-x86_64"
 
 #: src/osdk/guide/index.md:33
 msgid "xorriso"
-msgstr ""
+msgstr "xorriso"
 
 #: src/osdk/guide/index.md:35
 msgid ""
@@ -111,7 +111,7 @@ msgstr "在安裝 Rust 之後，可以透過以下方式安裝 `cargo-binutils`"
 
 #: src/osdk/guide/index.md:50
 msgid "Install"
-msgstr ""
+msgstr "安裝"
 
 #: src/osdk/guide/index.md:52
 msgid ""
@@ -121,7 +121,7 @@ msgstr ""
 
 #: src/osdk/guide/index.md:58
 msgid "Upgrade"
-msgstr ""
+msgstr "升級"
 
 #: src/osdk/guide/index.md:59
 msgid ""
