@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-03-10 10:05:54 +0800",
-      "hash" : "417d58dbac51a71cbe02b5615a7198184371ebd6",
-      "title" : "Remove duplicate re-exports"
+      "date" : "2026-03-17 02:46:32 -0700",
+      "hash" : "e4bcaabb395dae631e41797383125b52ad3d2eb2",
+      "title" : "Add `Memcpy`/`Memset` trait framework for typed memory copies"
     }
   },
   "type" : "branch",
