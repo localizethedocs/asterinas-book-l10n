@@ -1,6 +1,6 @@
 <div align="center">
 <picture>
-  <img height="100" src="https://cdn.jsdelivr.net/gh/localizethedocs/static/mark/asterinas.svg">
+  <img height="100" src="https://cdn.jsdelivr.net/gh/localizethedocs/static/logo/asterinas.svg">
 </picture>
 </div>
 
