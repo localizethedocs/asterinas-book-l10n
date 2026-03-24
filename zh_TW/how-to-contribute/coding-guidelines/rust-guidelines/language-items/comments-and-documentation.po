@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-10T17:12:34Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:1
+msgid "Comments and Documentation"
+msgstr "註釋與文件"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:3
+msgid ""
+"API documentation describes API meaning and usage and is rendered by "
+"rustdoc. Public APIs should be documented, including crates, modules, "
+"structs, traits, functions, and macros. The `#![warn(missing_docs)]` lint "
+"helps enforce this baseline."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:9
+msgid ""
+"Asterinas follows Rust community documentation conventions. Two primary "
+"references are:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:11
+msgid ""
+"The rustdoc book: [How to write documentation](https://doc.rust-lang.org/"
+"rustdoc/how-to-write-documentation.html)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:13
+msgid ""
+"The Rust RFC book: [API Documentation Conventions](https://rust-lang.github."
+"io/rfcs/1574-more-api-documentation-conventions.html#appendix-a-full-"
+"conventions-text)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:16
+msgid "Follow RFC 1574 summary line conventions (`rfc1574-summary`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:18
+msgid ""
+"The first line of a doc comment should be third-person singular present "
+"indicative (\"Returns\", \"Creates\", \"Acquires\"), concise, and one "
+"sentence."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:24
+msgid "/// Returns the mapping's start address.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:30
+msgid "End sentence comments with punctuation (`comment-punctuation`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:32
+msgid ""
+"If a comment line is a full sentence, end it with proper punctuation. This "
+"improves readability in dense code and avoids fragmented prose."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:38
+msgid ""
+"// Good — complete sentence with punctuation.\n"
+"// SAFETY: The pointer is derived from a live allocation.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:40
+msgid ""
+"// Bad — complete sentence without punctuation\n"
+"// SAFETY: The pointer is derived from a live allocation\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:45
+msgid "Wrap identifiers in backticks (`backtick-identifiers`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:47
+msgid ""
+"Type names, method names, and code identifiers in doc comments should be "
+"wrapped in backticks for rustdoc rendering. When referring to types, prefer "
+"rustdoc links (`[TypeName]`) where possible."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:54
+msgid ""
+"/// Acquires the [`SpinLock`] and returns a guard\n"
+"/// that releases the lock on [`Drop`].\n"
+"///\n"
+"/// Callers must not call `acquire` while holding\n"
+"/// a [`RwMutex`] to avoid deadlock.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:62
+msgid ""
+"Do not disclose implementation details in doc comments (`no-impl-in-docs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:64
+msgid ""
+"Doc comments should describe _what_ the API does and _how to use it_, not "
+"_how it is implemented internally_."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:69
+msgid ""
+"// Good — behavior-oriented\n"
+"/// Returns the number of active connections.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:71
+msgid ""
+"// Bad — leaks implementation details\n"
+"/// Returns the length of the internal `HashMap`\n"
+"/// that tracks connections by socket address.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:77
+msgid "Add module-level documentation for major components (`module-docs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:79
+msgid ""
+"A module file that serves as an important kernel component (e.g., subsystem "
+"entry point, major data structure, driver) should begin with a `//!` comment "
+"explaining:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:83
+msgid "What the module does"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:84
+msgid "The key types it exposes"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:85
+msgid "How it relates to neighboring modules"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:88
+msgid ""
+"//! Virtual memory area (VMA) management.\n"
+"//!\n"
+"//! This module defines [`VmMapping`] and associated types,\n"
+"//! which represent contiguous regions of a process's virtual address "
+"space.\n"
+"//! VMAs are managed by the [`Vmar`] tree in the parent module.\n"
+msgstr ""
