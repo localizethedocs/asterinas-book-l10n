@@ -1,0 +1,375 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-24T14:04:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ostd/soundness/sensitivity-classification.md:1
+msgid "The Sensitivity Classification Principle"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:3
+msgid ""
+"At the heart of the framekernel architecture is a systematic classification "
+"of OS resources. An OS manages three fundamental classes of resources — CPU, "
+"memory, and devices — each subdivided into **sensitive** (can compromise "
+"kernel memory safety if misused) and **insensitive** (cannot compromise "
+"kernel memory safety even if misused). To ensure the soundness and "
+"minimality of TCB, OSTD adopts the following design principle:"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:13
+msgid ""
+"Keep sensitive resources inside the framework (for soundness) and move "
+"insensitive resources outside (for minimality)."
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:16
+msgid "CPU Resources"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:18
+#: src/ostd/soundness/sensitivity-classification.md:33
+#: src/ostd/soundness/sensitivity-classification.md:53
+msgid "Resource"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:18
+#: src/ostd/soundness/sensitivity-classification.md:33
+#: src/ostd/soundness/sensitivity-classification.md:53
+msgid "Classification"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:18
+#: src/ostd/soundness/sensitivity-classification.md:33
+#: src/ostd/soundness/sensitivity-classification.md:53
+msgid "Rationale"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:18
+#: src/ostd/soundness/sensitivity-classification.md:33
+#: src/ostd/soundness/sensitivity-classification.md:53
+msgid "OSTD Handling"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:20
+msgid ""
+"Kernel-mode registers (CR0–CR4, MSRs, GDT/IDT/TSS pointers, kernel GS base)"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:20
+#: src/ostd/soundness/sensitivity-classification.md:21
+#: src/ostd/soundness/sensitivity-classification.md:35
+#: src/ostd/soundness/sensitivity-classification.md:36
+#: src/ostd/soundness/sensitivity-classification.md:37
+#: src/ostd/soundness/sensitivity-classification.md:38
+#: src/ostd/soundness/sensitivity-classification.md:39
+#: src/ostd/soundness/sensitivity-classification.md:55
+#: src/ostd/soundness/sensitivity-classification.md:56
+#: src/ostd/soundness/sensitivity-classification.md:57
+#: src/ostd/soundness/sensitivity-classification.md:58
+msgid "**Sensitive**"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:20
+msgid "Can corrupt execution environment"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:20
+msgid "Set once at boot; never exposed to clients"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:21
+msgid "Kernel-mode traps (exception/interrupt handlers)"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:21
+msgid "Can hijack control flow"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:21
+msgid "IDT configured at boot; handlers are internal"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:22
+msgid "User-mode registers (GP registers, user RFLAGS subset, FS base)"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:22
+#: src/ostd/soundness/sensitivity-classification.md:23
+#: src/ostd/soundness/sensitivity-classification.md:40
+#: src/ostd/soundness/sensitivity-classification.md:41
+#: src/ostd/soundness/sensitivity-classification.md:59
+#: src/ostd/soundness/sensitivity-classification.md:60
+#: src/ostd/soundness/sensitivity-classification.md:61
+#: src/ostd/soundness/sensitivity-classification.md:62
+msgid "Insensitive"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:22
+msgid "Cannot directly affect kernel state"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:22
+msgid ""
+"Exposed via [`UserContext`](https://asterinas.github.io/api-docs/0.17.1/ostd/"
+"arch/cpu/context/struct.UserContext.html) with sanitization"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:23
+msgid "User-mode traps"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:23
+msgid "Routed through kernel trap handler"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:23
+msgid "Dispatched by OSTD; clients handle via callbacks"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:25
+msgid ""
+"`UserContext` sanitizes user-visible registers: it forces the IF (Interrupt "
+"Flag) and ID flags in RFLAGS and strips IOPL, preventing user space from "
+"disabling interrupts or accessing I/O ports directly. Kernel-mode registers "
+"are never represented in any client-visible type."
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:31
+msgid "Memory Resources"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:35
+msgid "Kernel code pages"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:35
+msgid "Overwriting code = arbitrary execution"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:35
+msgid "Mapped read-only; typed frames; never exposed"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:36
+msgid "Kernel stack pages"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:36
+msgid "Stack corruption = control flow hijack"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:36
+msgid "Typed frames; guard pages; never exposed"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:37
+msgid "Kernel heap pages"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:37
+msgid "Heap corruption = type confusion"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:37
+msgid ""
+"Typed frames ([`SlabMeta`](https://github.com/asterinas/asterinas/"
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/mm/heap/slab."
+"rs#L31)); never exposed"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:38
+msgid "Page table pages"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:38
+msgid "PT corruption = arbitrary memory access"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:38
+msgid ""
+"Typed frames ([`PageTablePageMeta`](https://github.com/asterinas/asterinas/"
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/mm/page_table/node/"
+"mod.rs#L265)); managed by OSTD"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:39
+msgid "Frame metadata pages"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:39
+msgid "Metadata corruption = use-after-free"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:39
+msgid ""
+"In dedicated [`FRAME_METADATA_RANGE`](https://github.com/asterinas/asterinas/"
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/mm/kspace/mod."
+"rs#L114); never exposed"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:40
+msgid "User-space virtual memory"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:40
+msgid "Kernel safety does not depend on it"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:40
+msgid ""
+"Manipulated safely via [`VmSpace`](https://asterinas.github.io/api-"
+"docs/0.17.1/ostd/mm/vm_space/struct.VmSpace.html)"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:41
+msgid "Untyped physical memory pages"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:41
+msgid "Do not host Rust objects; accessed only via POD copy"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:41
+msgid ""
+"Exposed as [`UFrame`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/"
+"frame/untyped/type.UFrame.html) / [`USegment`](https://asterinas.github.io/"
+"api-docs/0.17.1/ostd/mm/frame/segment/type.USegment.html); used for user "
+"pages, DMA buffers"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:43
+msgid ""
+"The sensitive/insensitive distinction maps directly to the typed/untyped "
+"frame distinction ([Safe Physical Memory Management](safe-memory-management."
+"md)). All sensitive memory is held in typed frames, which are never exposed "
+"to clients, user space, or devices. All insensitive memory is held in "
+"untyped frames, which can be safely shared."
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:51
+msgid "Device Resources"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:55
+msgid "Local APIC"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:55
+msgid "Can reset CPUs, mask interrupts"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:55
+msgid ""
+"[`IoMem`](https://asterinas.github.io/api-docs/0.17.1/ostd/io/struct.IoMem."
+"html)`<Sensitive>`, `pub(crate)` only"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:56
+msgid "I/O APIC"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:56
+msgid "Can redirect interrupts"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:56
+#: src/ostd/soundness/sensitivity-classification.md:57
+msgid "`IoMem<Sensitive>`, `pub(crate)` only"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:57
+msgid "IOMMU"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:57
+msgid "Controls DMA access"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:58
+msgid "PIC (8259A)"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:58
+msgid "Legacy interrupt controller"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:58
+msgid "Sensitive I/O ports, `pub(crate)` only"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:59
+msgid "Peripheral MMIO (NIC, disk, USB, GPU)"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:59
+#: src/ostd/soundness/sensitivity-classification.md:60
+msgid "Failure confined to the device"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:59
+msgid ""
+"`IoMem<Insensitive>` via [`IoMem::acquire(range)`](https://asterinas.github."
+"io/api-docs/0.17.1/ostd/io/struct.IoMem.html#method.acquire)"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:60
+msgid "Peripheral I/O ports"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:60
+msgid ""
+"[`IoPort`](https://asterinas.github.io/api-docs/0.17.1/ostd/io/struct.IoPort."
+"html) via [`IoPort::acquire(port)`](https://asterinas.github.io/api-"
+"docs/0.17.1/ostd/io/struct.IoPort.html#method.acquire)"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:61
+msgid "Peripheral interrupts"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:61
+msgid "Routed through OSTD's IRQ framework"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:61
+msgid ""
+"[`IrqLine`](https://asterinas.github.io/api-docs/0.17.1/ostd/irq/struct."
+"IrqLine.html) callback registration"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:62
+msgid "DMA mappings"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:62
+msgid "Restricted by IOMMU to untyped memory"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:62
+msgid ""
+"[`DmaCoherent`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/dma/"
+"struct.DmaCoherent.html) / [`DmaStream`](https://asterinas.github.io/api-"
+"docs/0.17.1/ostd/mm/dma/struct.DmaStream.html) APIs"
+msgstr ""
+
+#: src/ostd/soundness/sensitivity-classification.md:64
+msgid ""
+"Internally, OSTD maintains two I/O resource allocators ([`IoMemAllocator`]"
+"(https://github.com/asterinas/asterinas/"
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_mem/allocator."
+"rs#L18), [`IoPortAllocator`](https://github.com/asterinas/asterinas/"
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_port/allocator."
+"rs#L17)) that are initialized at boot time by removing all sensitive ranges. "
+"Only the remaining insensitive ranges are available for client allocation. "
+"This makes it impossible for a client to accidentally or maliciously access "
+"a sensitive device."
+msgstr ""

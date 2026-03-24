@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"POT-Creation-Date: 2026-03-24T14:04:16Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -51,7 +51,7 @@ msgstr ""
 msgid "Advanced Build and Test Instructions"
 msgstr ""
 
-#: src/SUMMARY.md:17 src/SUMMARY.md:50
+#: src/SUMMARY.md:17 src/SUMMARY.md:58
 msgid "Intel TDX"
 msgstr ""
 
@@ -116,233 +116,265 @@ msgid "File System Coverage"
 msgstr ""
 
 #: src/SUMMARY.md:33
+msgid "Kernel Parameters"
+msgstr ""
+
+#: src/SUMMARY.md:34
 msgid "Roadmap"
 msgstr ""
 
-#: src/SUMMARY.md:35
+#: src/SUMMARY.md:36
 msgid "Asterinas OSTD"
 msgstr ""
 
-#: src/SUMMARY.md:37
+#: src/SUMMARY.md:38
 msgid "An Overview of OSTD"
 msgstr ""
 
-#: src/SUMMARY.md:38
+#: src/SUMMARY.md:39
 msgid "Example: Writing a Kernel in 100 Lines of Safe Rust"
 msgstr ""
 
-#: src/SUMMARY.md:39
+#: src/SUMMARY.md:40
 msgid "Example: Writing a Driver in 100 Lines of Safe Rust"
 msgstr ""
 
-#: src/SUMMARY.md:40
+#: src/SUMMARY.md:41
 msgid "Soundness Analysis"
 msgstr ""
 
 #: src/SUMMARY.md:42
-msgid "Asterinas OSDK"
+msgid "What Soundness Means"
+msgstr ""
+
+#: src/SUMMARY.md:43
+msgid "The Sensitivity Classification"
 msgstr ""
 
 #: src/SUMMARY.md:44
-msgid "OSDK User Guide"
+msgid "Safe Physical Memory Management"
 msgstr ""
 
 #: src/SUMMARY.md:45
-msgid "Why OSDK"
+msgid "Safe User-Kernel Interactions"
 msgstr ""
 
 #: src/SUMMARY.md:46
-msgid "Creating an OS Project"
+msgid "Safe Kernel-Peripheral Interactions"
 msgstr ""
 
 #: src/SUMMARY.md:47
-msgid "Testing or Running an OS Project"
+msgid "Safe Kernel Logic"
 msgstr ""
 
 #: src/SUMMARY.md:48
-msgid "Working in a Workspace"
+msgid "Safe Policy Injection"
 msgstr ""
 
-#: src/SUMMARY.md:49
-msgid "Advanced Topics"
-msgstr ""
-
-#: src/SUMMARY.md:51
-msgid "OSDK User Reference"
+#: src/SUMMARY.md:50
+msgid "Asterinas OSDK"
 msgstr ""
 
 #: src/SUMMARY.md:52
-msgid "Commands"
+msgid "OSDK User Guide"
 msgstr ""
 
 #: src/SUMMARY.md:53
-msgid "cargo osdk new"
+msgid "Why OSDK"
 msgstr ""
 
 #: src/SUMMARY.md:54
-msgid "cargo osdk build"
+msgid "Creating an OS Project"
 msgstr ""
 
 #: src/SUMMARY.md:55
-msgid "cargo osdk run"
+msgid "Testing or Running an OS Project"
 msgstr ""
 
 #: src/SUMMARY.md:56
-msgid "cargo osdk test"
+msgid "Working in a Workspace"
 msgstr ""
 
 #: src/SUMMARY.md:57
-msgid "cargo osdk debug"
-msgstr ""
-
-#: src/SUMMARY.md:58
-msgid "cargo osdk profile"
+msgid "Advanced Topics"
 msgstr ""
 
 #: src/SUMMARY.md:59
-msgid "Manifest"
+msgid "OSDK User Reference"
 msgstr ""
 
 #: src/SUMMARY.md:60
-msgid "Environment Variables"
+msgid "Commands"
+msgstr ""
+
+#: src/SUMMARY.md:61
+msgid "cargo osdk new"
 msgstr ""
 
 #: src/SUMMARY.md:62
-msgid "How to Contribute"
+msgid "cargo osdk build"
+msgstr ""
+
+#: src/SUMMARY.md:63
+msgid "cargo osdk run"
 msgstr ""
 
 #: src/SUMMARY.md:64
-msgid "Before You Contribute"
+msgid "cargo osdk test"
 msgstr ""
 
 #: src/SUMMARY.md:65
-msgid "Code Organization"
+msgid "cargo osdk debug"
 msgstr ""
 
 #: src/SUMMARY.md:66
-msgid "Coding Guidelines"
+msgid "cargo osdk profile"
 msgstr ""
 
 #: src/SUMMARY.md:67
-msgid "How Guidelines Are Written"
+msgid "Manifest"
 msgstr ""
 
 #: src/SUMMARY.md:68
-msgid "General Guidelines"
-msgstr ""
-
-#: src/SUMMARY.md:69
-msgid "Rust Guidelines"
+msgid "Environment Variables"
 msgstr ""
 
 #: src/SUMMARY.md:70
-msgid "Naming"
-msgstr ""
-
-#: src/SUMMARY.md:71
-msgid "Language Items"
+msgid "How to Contribute"
 msgstr ""
 
 #: src/SUMMARY.md:72
-msgid "Variables, Expressions, and Statements"
+msgid "Before You Contribute"
 msgstr ""
 
 #: src/SUMMARY.md:73
-msgid "Functions and Methods"
+msgid "Code Organization"
 msgstr ""
 
 #: src/SUMMARY.md:74
-msgid "Types and Traits"
+msgid "Coding Guidelines"
 msgstr ""
 
 #: src/SUMMARY.md:75
-msgid "Comments and Documentation"
+msgid "How Guidelines Are Written"
 msgstr ""
 
 #: src/SUMMARY.md:76
-msgid "Unsafety"
+msgid "General Guidelines"
 msgstr ""
 
 #: src/SUMMARY.md:77
-msgid "Modules and Crates"
+msgid "Rust Guidelines"
 msgstr ""
 
 #: src/SUMMARY.md:78
-msgid "Macros and Attributes"
+msgid "Naming"
 msgstr ""
 
 #: src/SUMMARY.md:79
-msgid "Select Topics"
+msgid "Language Items"
 msgstr ""
 
 #: src/SUMMARY.md:80
-msgid "Concurrency and Races"
+msgid "Variables, Expressions, and Statements"
 msgstr ""
 
 #: src/SUMMARY.md:81
-msgid "Defensive Programming"
+msgid "Functions and Methods"
 msgstr ""
 
 #: src/SUMMARY.md:82
-msgid "Error Handling"
+msgid "Types and Traits"
 msgstr ""
 
 #: src/SUMMARY.md:83
-msgid "Logging"
+msgid "Comments and Documentation"
 msgstr ""
 
 #: src/SUMMARY.md:84
-msgid "Memory and Resource Management"
+msgid "Unsafety"
 msgstr ""
 
 #: src/SUMMARY.md:85
-msgid "Performance"
+msgid "Modules and Crates"
 msgstr ""
 
 #: src/SUMMARY.md:86
-msgid "Git Guidelines"
+msgid "Macros and Attributes"
 msgstr ""
 
 #: src/SUMMARY.md:87
-msgid "Testing Guidelines"
+msgid "Select Topics"
 msgstr ""
 
 #: src/SUMMARY.md:88
-msgid "Assembly Guidelines"
+msgid "Concurrency and Races"
 msgstr ""
 
 #: src/SUMMARY.md:89
-msgid "Boterinas"
+msgid "Defensive Programming"
 msgstr ""
 
 #: src/SUMMARY.md:90
-msgid "Version Bump"
+msgid "Error Handling"
 msgstr ""
 
 #: src/SUMMARY.md:91
-msgid "Community"
+msgid "Logging"
 msgstr ""
 
 #: src/SUMMARY.md:92
-msgid "Code of Conduct"
+msgid "Memory and Resource Management"
+msgstr ""
+
+#: src/SUMMARY.md:93
+msgid "Performance"
 msgstr ""
 
 #: src/SUMMARY.md:94
-msgid "Request for Comments (RFCs)"
+msgid "Git Guidelines"
+msgstr ""
+
+#: src/SUMMARY.md:95
+msgid "Testing Guidelines"
 msgstr ""
 
 #: src/SUMMARY.md:96
-msgid "RFC Overview"
+msgid "Assembly Guidelines"
 msgstr ""
 
 #: src/SUMMARY.md:97
-msgid "RFC-0001: RFC Process"
+msgid "Boterinas"
 msgstr ""
 
 #: src/SUMMARY.md:98
-msgid "RFC-0002: Asterinas NixOS"
+msgid "Version Bump"
 msgstr ""
 
 #: src/SUMMARY.md:99
+msgid "Community"
+msgstr ""
+
+#: src/SUMMARY.md:100
+msgid "Code of Conduct"
+msgstr ""
+
+#: src/SUMMARY.md:102
+msgid "Request for Comments (RFCs)"
+msgstr ""
+
+#: src/SUMMARY.md:104
+msgid "RFC Overview"
+msgstr ""
+
+#: src/SUMMARY.md:105
+msgid "RFC-0001: RFC Process"
+msgstr ""
+
+#: src/SUMMARY.md:106
+msgid "RFC-0002: Asterinas NixOS"
+msgstr ""
+
+#: src/SUMMARY.md:107
 msgid "RFC Template"
 msgstr ""

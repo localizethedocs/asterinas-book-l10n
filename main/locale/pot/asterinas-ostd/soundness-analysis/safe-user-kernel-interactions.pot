@@ -1,0 +1,214 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-24T14:04:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:1
+msgid "Safe User-Kernel Interactions"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:3
+msgid ""
+"OSTD provides three API categories for user-kernel interactions: entering/"
+"exiting user space ([`UserMode`](https://asterinas.github.io/api-docs/0.17.1/"
+"ostd/user/struct.UserMode.html), [`UserContext`](https://asterinas.github.io/"
+"api-docs/0.17.1/ostd/arch/cpu/context/struct.UserContext.html)), managing "
+"user address spaces ([`VmSpace`](https://asterinas.github.io/api-docs/0.17.1/"
+"ostd/mm/vm_space/struct.VmSpace.html)), and accessing user memory "
+"([`VmReader<Fallible>`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/"
+"io/struct.VmReader.html), [`VmWriter<Fallible>`](https://asterinas.github.io/"
+"api-docs/0.17.1/ostd/mm/io/struct.VmWriter.html))."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:8
+msgid "UserMode and UserContext"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:10
+msgid ""
+"`UserContext` stores the user-space register state (general-purpose "
+"registers, RFLAGS, FS/GS base, and exception info). Clients read and write "
+"this state between user-space entries — for instance, to set up syscall "
+"return values or inspect exception details."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:16
+msgid ""
+"`UserMode` owns a `UserContext` and provides the safe enter/exit loop for "
+"user space. It is `!Send`: once created on a task, it cannot be sent to "
+"another, preventing cross-task confusion of register state. [`UserMode::"
+"context()`](https://asterinas.github.io/api-docs/0.17.1/ostd/user/struct."
+"UserMode.html#method.context) and [`UserMode::context_mut()`](https://"
+"asterinas.github.io/api-docs/0.17.1/ostd/user/struct.UserMode.html#method."
+"context_mut) give access to the underlying `UserContext` for register "
+"inspection and modification between entries."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:27
+msgid ""
+"Clients may set arbitrary values in `UserContext`, but the sanitization "
+"inside [`UserMode::execute(has_kernel_event)`](https://asterinas.github.io/"
+"api-docs/0.17.1/ostd/user/struct.UserMode.html#method.execute) ensures "
+"kernel safety invariants are enforced every time before entering user space:"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:33
+msgid ""
+"**RFLAGS sanitization**: IF (Interrupt Flag) and ID are forced on. IOPL is "
+"stripped. This prevents user space from disabling interrupts or gaining I/O "
+"port access through RFLAGS manipulation."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:39
+msgid ""
+"**IRQ disabling before transition**: Local IRQs are disabled before calling "
+"the assembly `syscall_return` routine. This is critical: the `swapgs` "
+"instruction (which switches between kernel and user GS base) must execute "
+"atomically with the actual privilege level transition (`sysret` or `iret`). "
+"If an interrupt occurred between `swapgs` and `sysret`, the interrupt "
+"handler would see the user GS base instead of the kernel GS base, corrupting "
+"CPU-local storage access."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:50
+msgid ""
+"**FS base**: The user's `fsbase` is stored in `UserContext` and restored via "
+"`wrfsbase`. The kernel uses GS (not FS) for CPU-local storage, so a user-"
+"controlled FS base cannot affect kernel state."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:55
+msgid "The above safety measures are key to achieving the following invariant:"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:57
+msgid ""
+"**Safety Invariant:** User space cannot manipulate kernel-mode CPU state."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:59
+msgid "VmSpace"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:61
+msgid ""
+"`VmSpace` manages a user-space page table. To modify page table mappings, "
+"clients obtain a [`CursorMut`](https://asterinas.github.io/api-docs/0.17.1/"
+"ostd/mm/vm_space/struct.CursorMut.html) via [`VmSpace::cursor_mut(guard, "
+"&range)`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/vm_space/"
+"struct.VmSpace.html#method.cursor_mut), which gives exclusive access to a "
+"virtual address range within the page table."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:67
+msgid "The key safety invariant of `VmSpace` is:"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:69
+msgid ""
+"**Safety Invariant.** Only untyped frames and I/O memory can be mapped into "
+"user space."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:71
+msgid ""
+"`CursorMut` exposes exactly two methods for creating mappings, and neither "
+"accepts typed frames:"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:74
+msgid ""
+"[`CursorMut::map(frame, prop)`](https://asterinas.github.io/api-docs/0.17.1/"
+"ostd/mm/vm_space/struct.CursorMut.html#method.map) accepts a `UFrame` — an "
+"untyped frame. There is no code path that converts a typed `Frame<M>` to "
+"`UFrame` unless `M: AnyUFrameMeta`."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:78
+msgid ""
+"[`CursorMut::map_iomem(io_mem, prop, len, offset)`](https://asterinas.github."
+"io/api-docs/0.17.1/ostd/mm/vm_space/struct.CursorMut.html#method.map_iomem) "
+"accepts an `IoMem` (defaulting to `IoMem<Insensitive>`) — peripheral MMIO "
+"memory that does not host Rust objects."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:82
+msgid ""
+"**TLB coherence**: When frames are unmapped from user space, they are "
+"wrapped in `RcuDrop` and attached to the [`TlbFlusher`](https://github.com/"
+"asterinas/asterinas/blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/"
+"mm/tlb.rs#L28), which tracks which CPUs have cached the translation."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:87
+msgid ""
+"**Safety Invariant.** The frames are not freed until TLB flush IPIs have "
+"been sent to all relevant CPUs and acknowledged."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:89
+msgid "This prevents use-after-free via stale TLB entries."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:91
+msgid "Accessing User Memory from the Kernel"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:93
+msgid ""
+"The kernel frequently needs to read/write user-space memory (e.g., for "
+"`read()`/`write()` syscalls). Because user space can modify its own pages at "
+"any time, creating a Rust reference (`&T` or `&mut T`) to user memory would "
+"violate Rust's aliasing rules — the same problem that motivates the "
+"`VmReader`/`VmWriter` interface for [untyped frames](safe-memory-management."
+"md#the-solution-typed-and-untyped-frames)."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:101
+msgid ""
+"**Safety Invariant.** The kernel never creates Rust references to user "
+"memory."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:103
+msgid ""
+"[`VmSpace::reader(vaddr, len)`](https://asterinas.github.io/api-docs/0.17.1/"
+"ostd/mm/vm_space/struct.VmSpace.html#method.reader) and [`VmSpace::"
+"writer(vaddr, len)`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/"
+"vm_space/struct.VmSpace.html#method.writer) are the only safe APIs for user "
+"memory access. They return `VmReader<Fallible>` / `VmWriter<Fallible>` "
+"cursors — the same raw-pointer-based mechanism used for untyped frame "
+"access, but operating on user virtual addresses instead of physical frame "
+"contents. The `Fallible` marker (as opposed to `Infallible` for frame "
+"access) indicates that individual reads and writes may trigger page faults "
+"(e.g., on unmapped or copy-on-write pages); OSTD handles these faults "
+"gracefully and propagates the error to the caller."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:115
+msgid ""
+"These methods also enforce two runtime checks before constructing the "
+"cursors:"
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:118
+msgid ""
+"**Page table identity**: The call fails if the `VmSpace`'s page table is not "
+"the one currently active on this CPU, preventing access to another task's "
+"address space."
+msgstr ""
+
+#: src/ostd/soundness/safe-user-kernel-interactions.md:122
+msgid ""
+"**Address range**: The call fails if the address range extends beyond the "
+"user-space address limit, preventing accidental access to kernel memory "
+"through this API."
+msgstr ""
