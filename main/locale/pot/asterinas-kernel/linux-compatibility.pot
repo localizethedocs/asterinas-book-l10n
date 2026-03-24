@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"POT-Creation-Date: 2026-03-24T14:04:17Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -3707,12 +3707,18 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:396
 msgid ""
-"[Linux 32-bit boot protocol](https://www.kernel.org/doc/html/v5.4/x86/boot."
-"html#bit-boot-protocol)"
+"[Linux 32-bit boot protocol](https://www.kernel.org/doc/html/v6.19/arch/x86/"
+"boot.html#bit-boot-protocol)"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:397
 msgid ""
-"[Linux EFI handover](https://www.kernel.org/doc/html/v5.4/x86/boot.html#efi-"
-"handover-protocol)"
+"[Linux EFI handover](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
+"html#efi-handover-protocol-deprecated)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:398
+msgid ""
+"[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
+"html#pe-coff-entry-point)"
 msgstr ""

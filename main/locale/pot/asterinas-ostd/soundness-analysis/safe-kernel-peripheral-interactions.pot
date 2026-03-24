@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-24T14:04:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:1
+msgid "Safe Kernel-Peripheral Interactions"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:3
+msgid ""
+"OSTD provides APIs for device drivers to interact with peripheral hardware: "
+"DMA memory, MMIO, PIO, and interrupt handling. All are designed so that a "
+"safe-Rust driver cannot compromise kernel memory safety."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:8
+msgid "DMA Safety"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:10
+msgid ""
+"DMA (Direct Memory Access) allows peripheral devices to read/write physical "
+"memory independently of the CPU. Without protection, a malicious or buggy "
+"device could DMA into kernel code, page tables, or the heap — catastrophic "
+"for memory safety."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:16
+msgid "OSTD provides two DMA abstractions, both restricted to untyped memory:"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:19
+msgid ""
+"**[`DmaCoherent`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/dma/"
+"struct.DmaCoherent.html)**: Cache-coherent DMA mapping. Created from a "
+"[`Segment<()>`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/frame/"
+"segment/struct.Segment.html) (untyped)."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:21
+msgid ""
+"**[`DmaStream`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/dma/"
+"struct.DmaStream.html)**: Streaming DMA mapping. Created from a [`USegment`]"
+"(https://asterinas.github.io/api-docs/0.17.1/ostd/mm/frame/segment/type."
+"USegment.html) (untyped)."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:24
+msgid ""
+"**IOMMU enforcement**: When IOMMU DMA remapping is enabled (the default on "
+"x86), OSTD configures the IOMMU so that no physical memory is DMA-accessible "
+"by default. DMA mappings are created on-demand via `iommu::map`, which "
+"inserts entries into the IOMMU page table. Only addresses that have been "
+"explicitly mapped via `DmaCoherent` or `DmaStream` are accessible to "
+"devices. Since these APIs only accept untyped memory, the IOMMU page table "
+"only ever contains mappings to untyped frames."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:35
+msgid "**Safety Invariant.** Devices can only DMA to untyped memory."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:37
+msgid ""
+"A peripheral device can only DMA to addresses present in the IOMMU page "
+"table. The IOMMU page table only maps untyped memory. Untyped memory does "
+"not host Rust objects. Therefore, even a malicious device performing "
+"arbitrary DMA cannot corrupt any Rust data structure."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:44
+msgid ""
+"Without IOMMU (when hardware lacks it), OSTD cannot enforce DMA "
+"restrictions. In this case, the threat model explicitly excludes malicious "
+"devices — but the API-level restriction (untyped-only) still prevents "
+"accidental DMA to sensitive memory by well-behaved drivers."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:50
+msgid "Interrupt Remapping"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:52
+msgid ""
+"Beyond DMA, devices can also send interrupts — and on x86, interrupt "
+"delivery involves writing to a physical address (the APIC's message signaled "
+"interrupt region). Without protection, a device could forge interrupts to "
+"arbitrary vectors, potentially triggering unexpected trap handlers."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:58
+msgid ""
+"OSTD enables IOMMU interrupt remapping, which interposes a translation table "
+"between device interrupt requests and CPU interrupt delivery. The interrupt "
+"remapping table is managed exclusively by OSTD — no client can access or "
+"modify it."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:64
+msgid ""
+"**Safety Invariant.** Devices cannot inject interrupts to arbitrary vectors."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:66
+msgid ""
+"All interrupt delivery is mediated by the remapping table, which OSTD "
+"controls exclusively."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:69
+msgid "I/O Memory Access Control"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:71
+msgid ""
+"MMIO (Memory-Mapped I/O) allows the CPU to interact with device registers by "
+"reading/writing specific physical addresses. Some MMIO regions are sensitive "
+"(APIC, IOMMU registers) and must not be accessible to device drivers."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:76
+msgid ""
+"OSTD's [`IoMem`](https://asterinas.github.io/api-docs/0.17.1/ostd/io/struct."
+"IoMem.html) type has two sensitivity levels, enforced at the type level:"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:83
+msgid ""
+"`IoMem<Sensitive>`: The `read_once` and `write_once` methods are `pub(crate) "
+"unsafe`. Only OSTD-internal system drivers (APIC, IOMMU, I/O APIC) can "
+"access sensitive I/O memory."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:87
+msgid ""
+"`IoMem<Insensitive>`: Provides safe `reader()` and `writer()` methods via "
+"the `HasVmReaderWriter` trait. Available to device drivers via [`IoMem::"
+"acquire(range)`](https://asterinas.github.io/api-docs/0.17.1/ostd/io/struct."
+"IoMem.html#method.acquire)."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:92
+msgid ""
+"The [`IoMemAllocator`](https://github.com/asterinas/asterinas/"
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_mem/allocator."
+"rs#L18) enforces the boundary:"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:93
+msgid ""
+"At initialization, it is populated with all MMIO address ranges that do not "
+"overlap with RAM (from firmware tables)."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:96
+msgid "System device ranges (APIC, IOMMU, etc.) are removed via `remove()`."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:97
+msgid "Only the remaining ranges are available for `acquire()`."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:99
+msgid ""
+"**Safety Invariant.** Device drivers cannot access sensitive I/O memory "
+"through any safe API."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:101
+msgid ""
+"The `IoMemAllocator` has removed all sensitive ranges before clients can "
+"access it. Even if a driver obtains `IoMem<Insensitive>` for a peripheral's "
+"MMIO, the worst it can do is misconfigure that specific peripheral — it "
+"cannot access kernel-critical hardware."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:107
+msgid "I/O Port Access Control (x86)"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:109
+msgid ""
+"I/O ports, represented as [`IoPort`](https://asterinas.github.io/api-"
+"docs/0.17.1/ostd/io/struct.IoPort.html), are an x86-specific mechanism for "
+"device communication. The same sensitivity distinction applies:"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:114
+msgid ""
+"`IoPort::new(port)` is `pub(crate) unsafe` — for OSTD-internal use only."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:116
+msgid ""
+"[`IoPort::acquire(port)`](https://asterinas.github.io/api-docs/0.17.1/ostd/"
+"io/struct.IoPort.html#method.acquire) is the safe public API. It requests "
+"the port from the [`IoPortAllocator`](https://github.com/asterinas/asterinas/"
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_port/allocator."
+"rs#L17)."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:119
+msgid ""
+"The `IoPortAllocator` removes sensitive ports at initialization. Sensitive "
+"ports are declared statically via the [`sensitive_io_port!`](https://github."
+"com/asterinas/asterinas/blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/"
+"src/io/io_port/mod.rs#L168) macro, which places their addresses in the `."
+"sensitive_io_ports` linker section. At boot, OSTD reads this section and "
+"removes all listed ports from the allocator."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:125
+msgid ""
+"**Safety Invariant.** Device drivers cannot access sensitive I/O ports "
+"through any safe API."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:127
+msgid ""
+"Same enforcement as I/O memory — the `IoPortAllocator` removes all sensitive "
+"ports before clients can access it."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:131
+msgid "Interrupt Handling"
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:133
+msgid ""
+"Device interrupts are managed through the [`IrqLine`](https://asterinas."
+"github.io/api-docs/0.17.1/ostd/irq/struct.IrqLine.html) abstraction. Clients "
+"register callbacks but cannot manipulate the IDT, APIC, or interrupt routing "
+"directly. All interrupt configuration is mediated by OSTD's safe APIs."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:138
+msgid ""
+"**Safety Invariant.** Clients cannot corrupt interrupt delivery mechanisms."
+msgstr ""
+
+#: src/ostd/soundness/safe-kernel-peripheral-interactions.md:140
+msgid ""
+"They have no access to the IDT, APIC registers, or interrupt remapping table."
+msgstr ""
