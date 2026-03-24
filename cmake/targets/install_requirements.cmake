@@ -244,12 +244,21 @@ elseif (VERSION_OF_MDBOOK_I18N_HELPERS STREQUAL "")
 else()
     set(CRATE_OF_MDBOOK_I18N_HELPERS "mdbook-i18n-helpers@${VERSION_OF_MDBOOK_I18N_HELPERS}")
 endif()
+if     (VERSION_OF_MDBOOK_MERMAID STREQUAL "[none]")
+    set(CRATE_OF_MDBOOK_MERMAID "")
+elseif (VERSION_OF_MDBOOK_MERMAID STREQUAL "")
+    set(CRATE_OF_MDBOOK_MERMAID "mdbook-mermaid")
+else()
+    set(CRATE_OF_MDBOOK_MERMAID "mdbook-mermaid@${VERSION_OF_MDBOOK_MERMAID}")
+endif()
 remove_cmake_message_indent()
 message("")
 message("VERSION_OF_MDBOOK              = ${VERSION_OF_MDBOOK}")
 message("VERSION_OF_MDBOOK_I18N_HELPERS = ${VERSION_OF_MDBOOK_I18N_HELPERS}")
+message("VERSION_OF_MDBOOK_MERMAID      = ${VERSION_OF_MDBOOK_MERMAID}")
 message("CRATE_OF_MDBOOK                = ${CRATE_OF_MDBOOK}")
 message("CRATE_OF_MDBOOK_I18N_HELPERS   = ${CRATE_OF_MDBOOK_I18N_HELPERS}")
+message("CRATE_OF_MDBOOK_MERMAID        = ${CRATE_OF_MDBOOK_MERMAID}")
 message("")
 execute_process(
     COMMAND ${CMAKE_COMMAND} -E env
@@ -257,6 +266,7 @@ execute_process(
             ${Rust_CARGO_EXECUTABLE} install
             ${CRATE_OF_MDBOOK}
             ${CRATE_OF_MDBOOK_I18N_HELPERS}
+            ${CRATE_OF_MDBOOK_MERMAID}
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
     RESULT_VARIABLE RES_VAR

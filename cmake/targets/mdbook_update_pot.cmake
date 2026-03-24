@@ -14,7 +14,7 @@ set(CMAKE_PROGRAM_PATH  "${PROJ_CONDA_DIR}"
 find_package(Git        MODULE REQUIRED)
 find_package(Gettext    MODULE REQUIRED COMPONENTS Msgcat Msgmerge)
 find_package(Dasel      MODULE REQUIRED)
-find_package(mdBook     MODULE REQUIRED COMPONENTS mdBook)
+find_package(mdBook     MODULE REQUIRED COMPONENTS mdBook Mermaid)
 include(LogUtils)
 include(GitUtils)
 include(JsonUtils)
@@ -60,6 +60,29 @@ message("LATEST_POT_REFERENCE   = ${LATEST_POT_REFERENCE}")
 message("CURRENT_POT_REFERENCE  = ${CURRENT_POT_REFERENCE}")
 message("MODE_OF_UPDATE         = ${MODE_OF_UPDATE}")
 message("UPDATE_POT_REQUIRED    = ${UPDATE_POT_REQUIRED}")
+message("")
+restore_cmake_message_indent()
+
+
+message(STATUS "Running 'mdbook-mermaid install' command to configure the book...")
+remove_cmake_message_indent()
+message("")
+execute_process(
+    COMMAND ${mdBook_MERMAID_EXECUTABLE} install
+    WORKING_DIRECTORY ${PROJ_OUT_REPO_DOCS_BOOK_DIR}
+    ECHO_OUTPUT_VARIABLE
+    ECHO_ERROR_VARIABLE
+    RESULT_VARIABLE RES_VAR
+    OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
+    ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
+if (RES_VAR EQUAL 0)
+else()
+    string(APPEND FAILURE_REASON
+    "The command failed with fatal errors.\n"
+    "    result:\n${RES_VAR}\n"
+    "    stderr:\n${ERR_VAR}")
+    message(FATAL_ERROR "${FAILURE_REASON}")
+endif()
 message("")
 restore_cmake_message_indent()
 

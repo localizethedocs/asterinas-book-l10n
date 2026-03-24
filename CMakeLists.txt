@@ -103,6 +103,9 @@ set(VERSION_OF_MDBOOK "[default]"
 set(VERSION_OF_MDBOOK_I18N_HELPERS "[default]"
     CACHE STRING "The version of mdbook-i18n-helpers to install.")
 
+set(VERSION_OF_MDBOOK_MERMAID "[default]"
+    CACHE STRING "The version of mdbook-mermaid to install.")
+
 #[============================================================[
 # Directory-Related Variables.
 #]============================================================]
@@ -229,6 +232,7 @@ if     (VERSION MATCHES "^(main)$")
     set(VERSION_OF_DASEL                "2")
     set(VERSION_OF_MDBOOK               "^0.5")
     set(VERSION_OF_MDBOOK_I18N_HELPERS  "^0.4")
+    set(VERSION_OF_MDBOOK_MERMAID       "")
 else()
     message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
 endif()
@@ -243,6 +247,9 @@ if (NOT "$CACHE{VERSION_OF_MDBOOK}" STREQUAL "[default]")
 endif()
 if (NOT "$CACHE{VERSION_OF_MDBOOK_I18N_HELPERS}" STREQUAL "[default]")
     set(VERSION_OF_MDBOOK_I18N_HELPERS "$CACHE{VERSION_OF_MDBOOK_I18N_HELPERS}")
+endif()
+if (NOT "$CACHE{VERSION_OF_MDBOOK_MERMAID}" STREQUAL "[default]")
+    set(VERSION_OF_MDBOOK_MERMAID "$CACHE{VERSION_OF_MDBOOK_MERMAID}")
 endif()
 
 #[============================================================[
@@ -331,6 +338,7 @@ message(STATUS "VERSION_OF_RUST                 = ${VERSION_OF_RUST} (CACHE: $CA
 message(STATUS "VERSION_OF_DASEL                = ${VERSION_OF_DASEL} (CACHE: $CACHE{VERSION_OF_DASEL})")
 message(STATUS "VERSION_OF_MDBOOK               = ${VERSION_OF_MDBOOK} (CACHE: $CACHE{VERSION_OF_MDBOOK})")
 message(STATUS "VERSION_OF_MDBOOK_I18N_HELPERS  = ${VERSION_OF_MDBOOK_I18N_HELPERS} (CACHE: $CACHE{VERSION_OF_MDBOOK_I18N_HELPERS})")
+message(STATUS "VERSION_OF_MDBOOK_MERMAID       = ${VERSION_OF_MDBOOK_MERMAID} (CACHE: $CACHE{VERSION_OF_MDBOOK_MERMAID})")
 message(STATUS "---------- Directory-Related Variables ----------")
 message(STATUS "PROJ_SOURCE_DIR                 = ${PROJ_SOURCE_DIR}")
 message(STATUS "PROJ_BINARY_DIR                 = ${PROJ_BINARY_DIR}")
@@ -428,6 +436,7 @@ set(SCRIPT_MODE_CACHE
     -D VERSION_OF_DASEL=${VERSION_OF_DASEL}
     -D VERSION_OF_MDBOOK=${VERSION_OF_MDBOOK}
     -D VERSION_OF_MDBOOK_I18N_HELPERS=${VERSION_OF_MDBOOK_I18N_HELPERS}
+    -D VERSION_OF_MDBOOK_MERMAID=${VERSION_OF_MDBOOK_MERMAID}
     # [Directory-Related Variables]
     -D PROJ_SOURCE_DIR=${PROJ_SOURCE_DIR}
     -D PROJ_BINARY_DIR=${PROJ_BINARY_DIR}
