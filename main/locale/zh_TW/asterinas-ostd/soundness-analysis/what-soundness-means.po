@@ -97,7 +97,7 @@ msgstr ""
 
 #: src/ostd/soundness/what-soundness-means.md:60
 msgid "The Trust Model"
-msgstr ""
+msgstr "信任模型"
 
 #: src/ostd/soundness/what-soundness-means.md:62
 msgid "The following components are trusted — their correctness is assumed:"

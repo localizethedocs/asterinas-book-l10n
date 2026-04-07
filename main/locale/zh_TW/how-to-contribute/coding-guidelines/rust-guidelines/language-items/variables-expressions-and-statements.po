@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:1
 msgid "Variables, Expressions, and Statements"
-msgstr ""
+msgstr "變數、表達式與陳述句"
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:3
 msgid "Introduce explaining variables (`explain-variables`)"

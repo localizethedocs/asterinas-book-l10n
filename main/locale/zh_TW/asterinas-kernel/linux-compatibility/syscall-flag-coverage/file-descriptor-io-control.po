@@ -47,7 +47,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:27
 msgid "// Set file status flags\n"
-msgstr ""
+msgstr "// 設定檔案狀態旗標\n"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:30
 msgid ""

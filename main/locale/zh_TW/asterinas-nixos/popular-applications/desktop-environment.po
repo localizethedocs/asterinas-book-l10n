@@ -24,6 +24,7 @@ msgid ""
 "[Xfce](https://www.xfce.org/) is a lightweight desktop environment for UNIX-"
 "like operating systems."
 msgstr ""
+"[Xfce](https://www.xfce.org/) 是一款適用於類 UNIX 作業系統的輕量級桌面環境。"
 
 #: src/distro/popular-applications/desktop-environment.md:7
 msgid "Installation"

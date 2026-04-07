@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:1
 msgid "Safe Kernel-Peripheral Interactions"
-msgstr ""
+msgstr "安全的內核-週邊互動"
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:3
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:8
 msgid "DMA Safety"
-msgstr ""
+msgstr "DMA 安全性"
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:10
 msgid ""
@@ -118,7 +118,7 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:69
 msgid "I/O Memory Access Control"
-msgstr ""
+msgstr "I/O 記憶體存取控制"
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:71
 msgid ""

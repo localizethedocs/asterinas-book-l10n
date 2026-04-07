@@ -31,7 +31,7 @@ msgstr ""
 
 #: src/ostd/a-100-line-kernel.md:12
 msgid "# entry point\n"
-msgstr ""
+msgstr "# 進入點\n"
 
 #: src/ostd/a-100-line-kernel.md:13
 msgid "# code section\n"

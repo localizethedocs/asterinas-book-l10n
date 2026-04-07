@@ -585,6 +585,7 @@ msgstr ""
 msgid ""
 "[`log-crate-only`](rust-guidelines/select-topics/logging.md#log-crate-only)"
 msgstr ""
+"[`log-crate-only`](rust-guidelines/select-topics/logging.md#log-crate-only)"
 
 #: src/to-contribute/coding-guidelines/index.md:84
 msgid "Choose appropriate log levels"
@@ -592,7 +593,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:84
 msgid "[`log-levels`](rust-guidelines/select-topics/logging.md#log-levels)"
-msgstr ""
+msgstr "[`log-levels`](rust-guidelines/select-topics/logging.md#log-levels)"
 
 #: src/to-contribute/coding-guidelines/index.md:85
 msgid "Use RAII for all resource acquisition and release"

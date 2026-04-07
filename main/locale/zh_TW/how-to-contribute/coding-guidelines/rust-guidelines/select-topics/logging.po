@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:1
 msgid "Logging"
-msgstr ""
+msgstr "日誌紀錄"
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:3
 msgid ""

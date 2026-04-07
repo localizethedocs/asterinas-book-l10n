@@ -29,7 +29,7 @@ msgstr "提交日期：2025-08-24"
 
 #: src/rfcs/0001-rfc-process.md:6
 msgid "Date approved: 2025-09-05"
-msgstr "批准日期：025-09-05"
+msgstr "批准日期：2025-09-05"
 
 #: src/rfcs/0001-rfc-process.md:8
 msgid "Summary"
@@ -70,6 +70,8 @@ msgid ""
 "discussion, we can ensure that decisions are well-reasoned, technically "
 "sound, and consider a wide range of perspectives."
 msgstr ""
+"**提升決策品質：** 透過要求詳細的提案與公開討論，我們可以確保決策經過深思熟"
+"慮、技術上可行，並兼顧廣泛的觀點。"
 
 #: src/rfcs/0001-rfc-process.md:18
 msgid ""
@@ -117,7 +119,7 @@ msgstr "啟動與 OSTD 和 OSDK 具有同等重要性的全新頂層子專案。
 
 #: src/rfcs/0001-rfc-process.md:29
 msgid "Defining or significantly altering the project roadmap and goals."
-msgstr ""
+msgstr "定義或大幅修改專案路線圖與目標。"
 
 #: src/rfcs/0001-rfc-process.md:30
 msgid ""
@@ -170,7 +172,7 @@ msgstr "RFC 過程的運作方式"
 
 #: src/rfcs/0001-rfc-process.md:43
 msgid "The RFC process consists of several distinct stages:"
-msgstr ""
+msgstr "RFC 過程由幾個不同的階段組成："
 
 #: src/rfcs/0001-rfc-process.md:45
 msgid "The Socialization Stage"
@@ -211,7 +213,7 @@ msgstr "草稿階段"
 
 #: src/rfcs/0001-rfc-process.md:57
 msgid "Once you are ready to proceed, create a formal RFC document."
-msgstr ""
+msgstr "當您準備好繼續進行時，請創建一份正式的 RFC 文件。"
 
 #: src/rfcs/0001-rfc-process.md:58
 msgid "Fork the `asterinas/asterinas` repository."
@@ -255,12 +257,14 @@ msgid ""
 "All members of the community are encouraged to review the proposal and "
 "provide constructive feedback through comments on the pull request."
 msgstr ""
+"我們鼓勵社群的所有成員審閱提案，並透過拉取請求上的評論提供建設性的反饋。"
 
 #: src/rfcs/0001-rfc-process.md:67
 msgid ""
 "The RFC author is responsible for engaging with the feedback, addressing "
 "concerns, and updating the RFC text to reflect the evolving consensus."
 msgstr ""
+"RFC 作者有責任參與反饋互動、回應疑慮，並更新 RFC 文字以反映不斷演進的共識。"
 
 #: src/rfcs/0001-rfc-process.md:69
 msgid "The Voting Stage"

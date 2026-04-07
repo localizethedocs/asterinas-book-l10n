@@ -33,13 +33,13 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:16
 msgid "CPU Resources"
-msgstr ""
+msgstr "CPU 資源"
 
 #: src/ostd/soundness/sensitivity-classification.md:18
 #: src/ostd/soundness/sensitivity-classification.md:33
 #: src/ostd/soundness/sensitivity-classification.md:53
 msgid "Resource"
-msgstr ""
+msgstr "資源"
 
 #: src/ostd/soundness/sensitivity-classification.md:18
 #: src/ostd/soundness/sensitivity-classification.md:33
@@ -145,7 +145,7 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:31
 msgid "Memory Resources"
-msgstr ""
+msgstr "記憶體資源"
 
 #: src/ostd/soundness/sensitivity-classification.md:35
 msgid "Kernel code pages"
@@ -161,7 +161,7 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:36
 msgid "Kernel stack pages"
-msgstr ""
+msgstr "內核堆疊頁面"
 
 #: src/ostd/soundness/sensitivity-classification.md:36
 msgid "Stack corruption = control flow hijack"
@@ -173,7 +173,7 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:37
 msgid "Kernel heap pages"
-msgstr ""
+msgstr "內核堆積頁面"
 
 #: src/ostd/soundness/sensitivity-classification.md:37
 msgid "Heap corruption = type confusion"
@@ -218,7 +218,7 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:40
 msgid "User-space virtual memory"
-msgstr ""
+msgstr "使用者空間的虛擬記憶體"
 
 #: src/ostd/soundness/sensitivity-classification.md:40
 msgid "Kernel safety does not depend on it"
@@ -257,7 +257,7 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:51
 msgid "Device Resources"
-msgstr ""
+msgstr "裝置資源"
 
 #: src/ostd/soundness/sensitivity-classification.md:55
 msgid "Local APIC"

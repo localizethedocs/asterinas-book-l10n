@@ -153,7 +153,7 @@ msgstr ""
 
 #: src/SUMMARY.md:44
 msgid "Safe Physical Memory Management"
-msgstr ""
+msgstr "安全的物理記憶體管理"
 
 #: src/SUMMARY.md:45
 msgid "Safe User-Kernel Interactions"
@@ -161,7 +161,7 @@ msgstr ""
 
 #: src/SUMMARY.md:46
 msgid "Safe Kernel-Peripheral Interactions"
-msgstr ""
+msgstr "安全的內核-週邊互動"
 
 #: src/SUMMARY.md:47
 msgid "Safe Kernel Logic"
@@ -321,7 +321,7 @@ msgstr "錯誤處理"
 
 #: src/SUMMARY.md:91
 msgid "Logging"
-msgstr ""
+msgstr "日誌紀錄"
 
 #: src/SUMMARY.md:92
 msgid "Memory and Resource Management"
@@ -369,7 +369,7 @@ msgstr "RFC 概覽"
 
 #: src/SUMMARY.md:105
 msgid "RFC-0001: RFC Process"
-msgstr ""
+msgstr "RFC-0001：RFC 過程"
 
 #: src/SUMMARY.md:106
 msgid "RFC-0002: Asterinas NixOS"

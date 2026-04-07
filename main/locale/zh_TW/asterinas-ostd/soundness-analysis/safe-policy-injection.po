@@ -93,7 +93,7 @@ msgstr ""
 
 #: src/ostd/soundness/safe-policy-injection.md:54
 msgid "Frame Allocator"
-msgstr ""
+msgstr "頁框分配器"
 
 #: src/ostd/soundness/safe-policy-injection.md:56
 msgid ""
@@ -133,7 +133,7 @@ msgstr ""
 
 #: src/ostd/soundness/safe-policy-injection.md:78
 msgid "Slab Allocator"
-msgstr ""
+msgstr "平板分配器"
 
 #: src/ostd/soundness/safe-policy-injection.md:80
 msgid ""

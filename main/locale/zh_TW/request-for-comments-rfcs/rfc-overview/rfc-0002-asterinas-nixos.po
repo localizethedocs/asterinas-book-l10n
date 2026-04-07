@@ -17,7 +17,7 @@ msgstr "RFC-0002：Asterinas NixOS"
 
 #: src/rfcs/0002-asterinas-nixos.md:3
 msgid "Status: Approved"
-msgstr ""
+msgstr "狀態：已批准"
 
 #: src/rfcs/0002-asterinas-nixos.md:4
 msgid "Pull request: https://github.com/asterinas/asterinas/pull/2584"
@@ -29,7 +29,7 @@ msgstr "提交日期：2025-11-14"
 
 #: src/rfcs/0002-asterinas-nixos.md:6
 msgid "Date approved: 2025-12-01"
-msgstr ""
+msgstr "批准日期：2025-12-01"
 
 #: src/rfcs/0002-asterinas-nixos.md:8
 msgid "Summary"

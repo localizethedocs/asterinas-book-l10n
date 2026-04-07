@@ -176,7 +176,7 @@ msgstr ""
 msgid ""
 "Inside the Docker container, generate a disk image with Asterinas NixOS "
 "installed using this command:"
-msgstr ""
+msgstr "在 Docker 容器內，使用以下命令生成已安裝 Asterinas NixOS 的磁碟映像："
 
 #: src/distro/index.md:133
 msgid "or this command:"

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:1
 msgid "Safe Kernel Logic"
-msgstr ""
+msgstr "安全的內核邏輯"
 
 #: src/ostd/soundness/safe-kernel-logic.md:3
 msgid ""

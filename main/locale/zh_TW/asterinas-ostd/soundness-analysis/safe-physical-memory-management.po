@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/ostd/soundness/safe-memory-management.md:1
 msgid "Safe Physical Memory Management"
-msgstr ""
+msgstr "安全的物理記憶體管理"
 
 #: src/ostd/soundness/safe-memory-management.md:3
 msgid ""

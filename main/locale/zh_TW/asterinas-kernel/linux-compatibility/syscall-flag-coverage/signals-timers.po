@@ -155,4 +155,4 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:132
 msgid "`TFD_TIMER_CANCEL_ON_SET`"
-msgstr ""
+msgstr "`TFD_TIMER_CANCEL_ON_SET`"
