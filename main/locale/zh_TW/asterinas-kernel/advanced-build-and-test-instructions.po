@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -61,36 +61,34 @@ msgid "Integration Test"
 msgstr "整合測試"
 
 #: src/kernel/advanced-instructions.md:35
-msgid "General Test"
-msgstr "一般測試"
+msgid "Regression Test"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:37
 msgid ""
-"The following command builds and runs the test binaries in `test/initramfs/"
-"src/apps` directory on Asterinas."
+"The following command builds and runs the regression test in `test/initramfs/"
+"src/regression` on Asterinas."
 msgstr ""
-"以下命令會在 Asterinas 上建置並執行位於 `test/initramfs/src/apps` 目錄中的測"
-"試二進位檔。"
 
 #: src/kernel/advanced-instructions.md:43
-msgid "Syscall Test"
-msgstr "系統呼叫測試"
+msgid "Conformance Test"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:45
 msgid ""
-"The following command builds and runs the syscall test binaries on Asterinas."
-msgstr "以下命令會在 Asterinas 中建置並執行系統呼叫測試二進位檔。"
+"The following command builds and runs the conformance test on Asterinas."
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:51
 msgid ""
-"To run system call tests interactively, start an instance of Asterinas with "
-"the system call tests built and installed."
+"To run conformance test interactively, start an instance of Asterinas with "
+"the conformance tests built and installed."
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:57
 msgid ""
 "Then, in the interactive shell, run the following script to start the "
-"syscall tests."
+"conformance test."
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:63
@@ -148,3 +146,21 @@ msgid ""
 "breakpoints. See \"hbreak\" in [the GDB manual](https://ftp.gnu.org/old-gnu/"
 "Manuals/gdb/html_node/gdb_28.html) for details."
 msgstr ""
+
+#~ msgid "General Test"
+#~ msgstr "一般測試"
+
+#~ msgid ""
+#~ "The following command builds and runs the test binaries in `test/"
+#~ "initramfs/src/apps` directory on Asterinas."
+#~ msgstr ""
+#~ "以下命令會在 Asterinas 上建置並執行位於 `test/initramfs/src/apps` 目錄中的"
+#~ "測試二進位檔。"
+
+#~ msgid "Syscall Test"
+#~ msgstr "系統呼叫測試"
+
+#~ msgid ""
+#~ "The following command builds and runs the syscall test binaries on "
+#~ "Asterinas."
+#~ msgstr "以下命令會在 Asterinas 中建置並執行系統呼叫測試二進位檔。"

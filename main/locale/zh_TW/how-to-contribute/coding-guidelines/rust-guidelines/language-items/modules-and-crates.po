@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-03-10T17:12:34Z\n"
+"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -45,17 +45,70 @@ msgid ""
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:26
-msgid "Use workspace dependencies (`workspace-deps`)"
+msgid "Qualify function calls with the parent module (`qualified-fn-imports`)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:28
+msgid ""
+"When importing a free function or a static/constant from another module, "
+"import the **parent module** and access the item through it (`module::"
+"function()`, `module::CONSTANT`). Do not import free functions or statics "
+"directly by name."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:34
+msgid ""
+"This convention is recommended by [_The Rust Programming Language_](https://"
+"doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-"
+"keyword.html) and followed by the Rust compiler codebase. It serves two "
+"purposes:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:39
+msgid ""
+"The call site makes it clear that an imported item is being used, not a "
+"local one."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:42
+msgid "The module name provides context that complements the item name."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:46
+msgid "// Good — module-qualified function call\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:50
+msgid "// Good — module-qualified static access\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:55
+msgid "// Bad — bare function name; unclear origin at call site\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:60
+msgid "// Bad — bare static name; could be mistaken for a local constant\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:67
+msgid ""
+"This rule applies to **free functions and statics/constants**. Types, "
+"traits, and enum variants should still be imported directly by name, "
+"following the standard Rust convention."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:72
+msgid "Use workspace dependencies (`workspace-deps`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:74
 msgid ""
 "Always declare shared dependencies in the workspace `[workspace."
 "dependencies]` table and reference them with `.workspace = true` in member "
 "crates."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:33
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:79
 msgid ""
 "```toml\n"
 "# In the workspace root Cargo.toml\n"

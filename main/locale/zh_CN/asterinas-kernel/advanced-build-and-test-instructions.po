@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -60,39 +60,35 @@ msgid "Integration Test"
 msgstr "集成测试"
 
 #: src/kernel/advanced-instructions.md:35
-msgid "General Test"
-msgstr "常规测试"
+msgid "Regression Test"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:37
 msgid ""
-"The following command builds and runs the test binaries in `test/initramfs/"
-"src/apps` directory on Asterinas."
+"The following command builds and runs the regression test in `test/initramfs/"
+"src/regression` on Asterinas."
 msgstr ""
-"以下命令在 Asterinas 上构建并运行 `test/initramfs/src/apps` 目录中的测试二进"
-"制文件。"
 
 #: src/kernel/advanced-instructions.md:43
-msgid "Syscall Test"
-msgstr "系统调用测试"
+msgid "Conformance Test"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:45
 msgid ""
-"The following command builds and runs the syscall test binaries on Asterinas."
-msgstr "以下命令在 Asterinas 上构建并运行系统调用测试二进制文件。"
+"The following command builds and runs the conformance test on Asterinas."
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:51
 msgid ""
-"To run system call tests interactively, start an instance of Asterinas with "
-"the system call tests built and installed."
+"To run conformance test interactively, start an instance of Asterinas with "
+"the conformance tests built and installed."
 msgstr ""
-"要以交互方式运行系统调用测试，请启动一个已构建和安装系统调用测试的 Asterinas "
-"实例。"
 
 #: src/kernel/advanced-instructions.md:57
 msgid ""
 "Then, in the interactive shell, run the following script to start the "
-"syscall tests."
-msgstr "然后，在交互式 shell 中运行以下脚本来启动系统调用测试。"
+"conformance test."
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:63
 msgid "Debug"
@@ -163,3 +159,33 @@ msgstr ""
 "请注意，若在启用KVM的情况下进行调试，必须使用硬件辅助断点。具体方法参见[GDB手"
 "册](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_28.html)中的"
 "\"hbreak\"说明。"
+
+#~ msgid "General Test"
+#~ msgstr "常规测试"
+
+#~ msgid ""
+#~ "The following command builds and runs the test binaries in `test/"
+#~ "initramfs/src/apps` directory on Asterinas."
+#~ msgstr ""
+#~ "以下命令在 Asterinas 上构建并运行 `test/initramfs/src/apps` 目录中的测试二"
+#~ "进制文件。"
+
+#~ msgid "Syscall Test"
+#~ msgstr "系统调用测试"
+
+#~ msgid ""
+#~ "The following command builds and runs the syscall test binaries on "
+#~ "Asterinas."
+#~ msgstr "以下命令在 Asterinas 上构建并运行系统调用测试二进制文件。"
+
+#~ msgid ""
+#~ "To run system call tests interactively, start an instance of Asterinas "
+#~ "with the system call tests built and installed."
+#~ msgstr ""
+#~ "要以交互方式运行系统调用测试，请启动一个已构建和安装系统调用测试的 "
+#~ "Asterinas 实例。"
+
+#~ msgid ""
+#~ "Then, in the interactive shell, run the following script to start the "
+#~ "syscall tests."
+#~ msgstr "然后，在交互式 shell 中运行以下脚本来启动系统调用测试。"
