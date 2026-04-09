@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -54,34 +54,34 @@ msgid "Integration Test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:35
-msgid "General Test"
+msgid "Regression Test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:37
 msgid ""
-"The following command builds and runs the test binaries in `test/initramfs/"
-"src/apps` directory on Asterinas."
+"The following command builds and runs the regression test in `test/initramfs/"
+"src/regression` on Asterinas."
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:43
-msgid "Syscall Test"
+msgid "Conformance Test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:45
 msgid ""
-"The following command builds and runs the syscall test binaries on Asterinas."
+"The following command builds and runs the conformance test on Asterinas."
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:51
 msgid ""
-"To run system call tests interactively, start an instance of Asterinas with "
-"the system call tests built and installed."
+"To run conformance test interactively, start an instance of Asterinas with "
+"the conformance tests built and installed."
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:57
 msgid ""
 "Then, in the interactive shell, run the following script to start the "
-"syscall tests."
+"conformance test."
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:63

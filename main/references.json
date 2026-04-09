@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-03-22 05:37:13 -0700",
-      "hash" : "c19ab3fa98f66459ff166ee5ab013ee550e671d2",
-      "title" : "Add `SKIP_TEST_IF` to the general test framework"
+      "date" : "2026-04-04 01:07:35 -0700",
+      "hash" : "f6fb67e78d5babf48939793ddb273db7048bf76c",
+      "title" : "Fix `poll` behavior about invalid entries"
     }
   },
   "type" : "branch",
