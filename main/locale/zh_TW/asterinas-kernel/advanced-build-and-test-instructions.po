@@ -146,21 +146,3 @@ msgid ""
 "breakpoints. See \"hbreak\" in [the GDB manual](https://ftp.gnu.org/old-gnu/"
 "Manuals/gdb/html_node/gdb_28.html) for details."
 msgstr ""
-
-#~ msgid "General Test"
-#~ msgstr "一般測試"
-
-#~ msgid ""
-#~ "The following command builds and runs the test binaries in `test/"
-#~ "initramfs/src/apps` directory on Asterinas."
-#~ msgstr ""
-#~ "以下命令會在 Asterinas 上建置並執行位於 `test/initramfs/src/apps` 目錄中的"
-#~ "測試二進位檔。"
-
-#~ msgid "Syscall Test"
-#~ msgstr "系統呼叫測試"
-
-#~ msgid ""
-#~ "The following command builds and runs the syscall test binaries on "
-#~ "Asterinas."
-#~ msgstr "以下命令會在 Asterinas 中建置並執行系統呼叫測試二進位檔。"
