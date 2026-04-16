@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-04 01:07:35 -0700",
-        "hash" : "f6fb67e78d5babf48939793ddb273db7048bf76c",
-        "title" : "Fix `poll` behavior about invalid entries"
+        "date" : "2026-04-14 11:27:22 +0800",
+        "hash" : "2a30158c3cd77427217581a39a971667b761576a",
+        "title" : "Add regression test for `SIGTRAP` on `int3` and single-step"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-04 01:07:35 -0700",
-        "hash" : "f6fb67e78d5babf48939793ddb273db7048bf76c",
-        "title" : "Fix `poll` behavior about invalid entries"
+        "date" : "2026-04-14 11:27:22 +0800",
+        "hash" : "2a30158c3cd77427217581a39a971667b761576a",
+        "title" : "Add regression test for `SIGTRAP` on `int3` and single-step"
       }
     }
   },
