@@ -790,10 +790,3 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/index.md:104
 msgid "[`asm-prefer-balign`](asm-guidelines.md#asm-prefer-balign)"
 msgstr ""
-
-#~ msgid ""
-#~ "[`log-crate-only`](rust-guidelines/select-topics/logging.md#log-crate-"
-#~ "only)"
-#~ msgstr ""
-#~ "[`log-crate-only`](rust-guidelines/select-topics/logging.md#log-crate-"
-#~ "only)"

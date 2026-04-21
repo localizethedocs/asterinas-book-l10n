@@ -172,10 +172,3 @@ msgstr "在容器內，前往專案資料夾建置並執行 Asterinas。"
 #: src/kernel/index.md:93
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
 msgstr "如果一切順利，Asterinas 現在已在虛擬機中啟動並執行。"
-
-#~ msgid ""
-#~ "Get yourself an x86-64 Linux machine with Docker installed. Follow the "
-#~ "three simple steps below to get Asterinas up and running."
-#~ msgstr ""
-#~ "準備一台已安裝 Docker 的 x86-64 Linux 機器。按照以下三個簡單步驟即可啟動並"
-#~ "執行 Asterinas。"
