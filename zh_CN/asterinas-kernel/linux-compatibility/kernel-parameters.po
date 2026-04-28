@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-14T10:27:23Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:1
+msgid "Kernel Parameters"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:3
+msgid ""
+"This section documents kernel command-line parameters supported by Asterinas."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:5
+msgid "Inherited from Linux"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:7
+msgid "`init`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:9
+msgid "Run the specified binary as `init`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:11
+#: src/kernel/linux-compatibility/kernel-parameters.md:55
+msgid "Example:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:16
+msgid "Notes:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:17
+msgid "The value is the path to the executable."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:18
+msgid ""
+"If omitted, Asterinas will try to execute from the following paths in order: "
+"`/sbin/init`, `/etc/init`, `/bin/init`, `/bin/sh`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:21
+msgid "`console`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:23
+msgid ""
+"Select console devices for kernel messages. This parameter may be specified "
+"multiple times. Kernel messages are delivered to each listed console."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:27
+#: src/kernel/linux-compatibility/kernel-parameters.md:64
+msgid "Valid values:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:28
+msgid "`tty0`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:29
+msgid "`ttyS0`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:30
+msgid "`hvc0`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:32
+#: src/kernel/linux-compatibility/kernel-parameters.md:68
+msgid "Examples:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:38
+msgid "Asterinas-specific"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:40
+msgid "`ostd.log_level`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:42
+msgid "Set the verbosity level for Asterinas's logs."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:44
+msgid "Valid values (from most to least severe):"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:45
+msgid "`off`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:46
+msgid "`emerg`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:47
+msgid "`alert`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:48
+msgid "`crit`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:49
+msgid "`error`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:50
+msgid "`warn` (alias: `warning`)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:51
+msgid "`notice`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:52
+msgid "`info`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:53
+msgid "`debug`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:60
+msgid "`i8042.exist`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:62
+msgid "Override ACPI's indication of whether a PS/2 (i8042) controller exists."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:65
+msgid ""
+"`1`, `on`, `yes`, `true` or no value — treat the i8042 controller as present "
+"(force probing)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:66
+msgid ""
+"`0`, `off`, `no`, `false` - treat the i8042 controller as absent (skip "
+"probing)"
+msgstr ""

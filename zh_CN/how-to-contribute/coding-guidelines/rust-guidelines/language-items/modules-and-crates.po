@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:1
+msgid "Modules and Crates"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:3
+msgid "Default to the narrowest visibility (`narrow-visibility`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:5
+msgid ""
+"Start private, then widen to `pub(super)`, `pub(crate)`, or `pub` only when "
+"an actual external consumer requires it."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:10
+msgid "// Good — restricted to the parent module\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:15
+msgid "// ...\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:17
+msgid "// Bad — unnecessarily wide\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:22
+msgid ""
+"See also: PR [\\#2951](https://github.com/asterinas/asterinas/pull/2951) and "
+"[\\#2605](https://github.com/asterinas/asterinas/"
+"pull/2605#discussion_r2720506912)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:26
+msgid "Qualify function calls with the parent module (`qualified-fn-imports`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:28
+msgid ""
+"When importing a free function or a static/constant from another module, "
+"import the **parent module** and access the item through it (`module::"
+"function()`, `module::CONSTANT`). Do not import free functions or statics "
+"directly by name."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:34
+msgid ""
+"This convention is recommended by [_The Rust Programming Language_](https://"
+"doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-"
+"keyword.html) and followed by the Rust compiler codebase. It serves two "
+"purposes:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:39
+msgid ""
+"The call site makes it clear that an imported item is being used, not a "
+"local one."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:42
+msgid "The module name provides context that complements the item name."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:46
+msgid "// Good — module-qualified function call\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:50
+msgid "// Good — module-qualified static access\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:55
+msgid "// Bad — bare function name; unclear origin at call site\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:60
+msgid "// Bad — bare static name; could be mistaken for a local constant\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:67
+msgid ""
+"This rule applies to **free functions and statics/constants**. Types, "
+"traits, and enum variants should still be imported directly by name, "
+"following the standard Rust convention."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:72
+msgid "Use workspace dependencies (`workspace-deps`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:74
+msgid ""
+"Always declare shared dependencies in the workspace `[workspace."
+"dependencies]` table and reference them with `.workspace = true` in member "
+"crates."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:79
+msgid ""
+"```toml\n"
+"# In the workspace root Cargo.toml\n"
+"[workspace.dependencies]\n"
+"ostd = { version = \"0.17.0\", path = \"ostd\" }\n"
+"bitflags = \"2.6\"\n"
+"\n"
+"# In a member crate's Cargo.toml\n"
+"[dependencies]\n"
+"ostd.workspace = true\n"
+"bitflags.workspace = true\n"
+"```"
+msgstr ""

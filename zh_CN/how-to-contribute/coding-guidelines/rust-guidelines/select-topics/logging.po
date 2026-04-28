@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-14T10:27:23Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:1
+msgid "Logging"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:3
+msgid ""
+"Consistent logging makes debugging tractable across a large kernel codebase."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:6
+msgid "Use OSTD logging macros exclusively (`ostd-log-only`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:8
+msgid ""
+"All OSTD-based crates must use the logging macros provided by the [`ostd::"
+"log`](https://asterinas.github.io/ostd/ostd/log/) module: `debug!`, `info!`, "
+"`notice!`, `warn!`, `error!`, `crit!`, `alert!`, `emerg!`. Import them via "
+"`use ostd::prelude::*` or `use ostd::log::{info, warn, ...}`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:15
+msgid ""
+"Do not use the third-party [`log`](https://docs.rs/log) crate directly. OSTD "
+"provides a bridge that forwards messages from third-party crates (e.g., "
+"`smoltcp`) that use `log`, but first-party code must use OSTD's macros."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:20
+msgid ""
+"Custom output functions, `println!`, and hand-rolled serial print macros are "
+"not acceptable in production code. Exception: code that runs before the "
+"logging subsystem is initialized may use early-boot output helpers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:27
+msgid "// Good\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:28
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:31
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:34
+msgid "\"VirtIO block device initialized: {} sectors\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:29
+msgid "// Bad — using the log crate directly\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:32
+msgid "// Bad — using println\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:39
+msgid "Choose appropriate log levels (`log-levels`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:41
+msgid ""
+"OSTD provides eight log levels matching the severity levels described in "
+"[`syslog(2)`](https://man7.org/linux/man-pages/man2/syslog.2.html):"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:44
+msgid "Level"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:44
+msgid "Use for"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:46
+msgid "`emerg!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:46
+msgid "System is unusable; immediately before `abort()`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:47
+msgid "`alert!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:47
+msgid "Action must be taken immediately."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:48
+msgid "`crit!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:48
+msgid "Critical conditions: unrecoverable resource exhaustion."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:49
+msgid "`error!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:49
+msgid "Serious but recoverable failures: invariant violations, I/O errors."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:50
+msgid "`warn!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:50
+msgid "Recoverable problems: fallback paths taken, deprecated usage detected."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:51
+msgid "`notice!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:51
+msgid "Normal but significant events: CPU online, security feature activated."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:52
+msgid "`info!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:52
+msgid ""
+"Routine informational events: subsystem initialization, configuration "
+"changes."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:53
+msgid "`debug!`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:53
+msgid ""
+"Development diagnostics: state transitions, intermediate values, per-packet "
+"tracing."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:55
+msgid ""
+"Use `error!` for failures that the system can recover from. Use `crit!` or "
+"`emerg!` only for failures immediately before a halt or abort. A log "
+"statement that fires on every syscall or every timer tick must use `debug!`."
+msgstr ""

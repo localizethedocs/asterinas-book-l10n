@@ -1,0 +1,792 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-14T10:27:23Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/index.md:1
+msgid "Coding Guidelines"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:3
+msgid ""
+"This section describes coding and collaboration conventions for the "
+"Asterinas project. These guidelines aim to keep code clear, consistent, "
+"maintainable, correct, and efficient."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:8
+msgid ""
+"For the underlying philosophy, principles, and quality criteria for "
+"individual guidelines, see **[How Guidelines Are Written](how-guidelines-are-"
+"written.md)**."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:12
+msgid "The guidelines are organized into the following pages:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:14
+msgid ""
+"**[General Guidelines](general-guidelines/index.html)** — Language-agnostic "
+"guidance for naming, comments, layout, formatting, and API design."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:17
+msgid ""
+"**[Rust Guidelines](rust-guidelines/index.html)** — Rust-specific guidance "
+"for naming, language items, and cross-cutting topics."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:20
+msgid ""
+"**[Git Guidelines](git-guidelines.md)** — Commit hygiene and pull-request "
+"conventions."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:22
+msgid ""
+"**[Testing Guidelines](testing-guidelines.md)** — Test behavior, assertions, "
+"regression policy, and cleanup."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:25
+msgid ""
+"**[Assembly Guidelines](asm-guidelines.md)** — `.S` and `global_asm!` "
+"conventions for sectioning, function metadata, labels, and alignment."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:29
+msgid ""
+"The guidelines represent the _desired_ state of the codebase. If you find "
+"conflicting cases in the codebase, you are welcome to fix the code to match "
+"the guidelines."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:33
+msgid "Index"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:35
+msgid "Category"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:35
+msgid "Guideline"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:35
+msgid "Short Name"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:37
+#: src/to-contribute/coding-guidelines/index.md:38
+#: src/to-contribute/coding-guidelines/index.md:39
+#: src/to-contribute/coding-guidelines/index.md:40
+#: src/to-contribute/coding-guidelines/index.md:41
+#: src/to-contribute/coding-guidelines/index.md:42
+#: src/to-contribute/coding-guidelines/index.md:43
+#: src/to-contribute/coding-guidelines/index.md:44
+#: src/to-contribute/coding-guidelines/index.md:45
+#: src/to-contribute/coding-guidelines/index.md:46
+#: src/to-contribute/coding-guidelines/index.md:47
+#: src/to-contribute/coding-guidelines/index.md:48
+#: src/to-contribute/coding-guidelines/index.md:49
+#: src/to-contribute/coding-guidelines/index.md:50
+#: src/to-contribute/coding-guidelines/index.md:51
+msgid "General"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:37
+msgid "Be descriptive"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:37
+msgid "[`descriptive-names`](general-guidelines/index.html#descriptive-names)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:38
+msgid "Be accurate"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:38
+msgid "[`accurate-names`](general-guidelines/index.html#accurate-names)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:39
+msgid "Encode units and important attributes in names"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:39
+msgid "[`encode-units`](general-guidelines/index.html#encode-units)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:40
+msgid "Use assertion-style boolean names"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:40
+msgid "[`bool-names`](general-guidelines/index.html#bool-names)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:41
+msgid "Prefer semantic line breaks"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:41
+msgid ""
+"[`semantic-line-breaks`](general-guidelines/index.html#semantic-line-breaks)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:42
+msgid "Explain why, not what"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:42
+msgid "[`explain-why`](general-guidelines/index.html#explain-why)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:43
+msgid "Document design decisions"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:43
+msgid "[`design-decisions`](general-guidelines/index.html#design-decisions)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:44
+msgid "Cite specifications and algorithm sources"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:44
+msgid "[`cite-sources`](general-guidelines/index.html#cite-sources)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:45
+msgid "One concept per file"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:45
+msgid ""
+"[`one-concept-per-file`](general-guidelines/index.html#one-concept-per-file)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:46
+msgid "Organize code for top-down reading"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:46
+msgid "[`top-down-reading`](general-guidelines/index.html#top-down-reading)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:47
+msgid "Group statements into logical paragraphs"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:47
+msgid ""
+"[`logical-paragraphs`](general-guidelines/index.html#logical-paragraphs)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:48
+msgid "Format error messages consistently"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:48
+msgid ""
+"[`error-message-format`](general-guidelines/index.html#error-message-format)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:49
+msgid "Stick to familiar conventions"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:49
+msgid ""
+"[`familiar-conventions`](general-guidelines/index.html#familiar-conventions)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:50
+msgid "Hide implementation details"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:50
+msgid "[`hide-impl-details`](general-guidelines/index.html#hide-impl-details)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:51
+msgid "Validate at boundaries, trust internally"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:51
+msgid ""
+"[`validate-at-boundaries`](general-guidelines/index.html#validate-at-"
+"boundaries)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:52
+#: src/to-contribute/coding-guidelines/index.md:53
+#: src/to-contribute/coding-guidelines/index.md:54
+#: src/to-contribute/coding-guidelines/index.md:55
+#: src/to-contribute/coding-guidelines/index.md:56
+#: src/to-contribute/coding-guidelines/index.md:57
+#: src/to-contribute/coding-guidelines/index.md:58
+#: src/to-contribute/coding-guidelines/index.md:59
+#: src/to-contribute/coding-guidelines/index.md:60
+#: src/to-contribute/coding-guidelines/index.md:61
+#: src/to-contribute/coding-guidelines/index.md:62
+#: src/to-contribute/coding-guidelines/index.md:63
+#: src/to-contribute/coding-guidelines/index.md:64
+#: src/to-contribute/coding-guidelines/index.md:65
+#: src/to-contribute/coding-guidelines/index.md:66
+#: src/to-contribute/coding-guidelines/index.md:67
+#: src/to-contribute/coding-guidelines/index.md:68
+#: src/to-contribute/coding-guidelines/index.md:69
+#: src/to-contribute/coding-guidelines/index.md:70
+#: src/to-contribute/coding-guidelines/index.md:71
+#: src/to-contribute/coding-guidelines/index.md:72
+#: src/to-contribute/coding-guidelines/index.md:73
+#: src/to-contribute/coding-guidelines/index.md:74
+#: src/to-contribute/coding-guidelines/index.md:75
+#: src/to-contribute/coding-guidelines/index.md:76
+#: src/to-contribute/coding-guidelines/index.md:77
+#: src/to-contribute/coding-guidelines/index.md:78
+#: src/to-contribute/coding-guidelines/index.md:79
+#: src/to-contribute/coding-guidelines/index.md:80
+#: src/to-contribute/coding-guidelines/index.md:81
+#: src/to-contribute/coding-guidelines/index.md:82
+#: src/to-contribute/coding-guidelines/index.md:83
+#: src/to-contribute/coding-guidelines/index.md:84
+#: src/to-contribute/coding-guidelines/index.md:85
+#: src/to-contribute/coding-guidelines/index.md:86
+#: src/to-contribute/coding-guidelines/index.md:87
+#: src/to-contribute/coding-guidelines/index.md:88
+#: src/to-contribute/coding-guidelines/index.md:89
+#: src/to-contribute/coding-guidelines/index.md:90
+msgid "Rust"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:52
+msgid "Follow Rust CamelCase and acronym capitalization"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:52
+msgid "[`camel-case-acronyms`](rust-guidelines/naming.md#camel-case-acronyms)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:53
+msgid "End closure variables with `_fn`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:53
+msgid "[`closure-fn-suffix`](rust-guidelines/naming.md#closure-fn-suffix)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:54
+msgid "Introduce explaining variables"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:54
+msgid ""
+"[`explain-variables`](rust-guidelines/language-items/variables-expressions-"
+"and-statements.md#explain-variables)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:55
+msgid "Use block expressions to scope temporary state"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:55
+msgid ""
+"[`block-expressions`](rust-guidelines/language-items/variables-expressions-"
+"and-statements.md#block-expressions)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:56
+msgid "Use checked or saturating arithmetic"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:56
+msgid ""
+"[`checked-arithmetic`](rust-guidelines/language-items/variables-expressions-"
+"and-statements.md#checked-arithmetic)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:57
+msgid "Minimize nesting"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:57
+msgid ""
+"[`minimize-nesting`](rust-guidelines/language-items/functions-and-methods."
+"md#minimize-nesting)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:58
+msgid "Keep functions small and focused"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:58
+msgid ""
+"[`small-functions`](rust-guidelines/language-items/functions-and-methods."
+"md#small-functions)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:59
+msgid "Avoid boolean arguments"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:59
+msgid ""
+"[`no-bool-args`](rust-guidelines/language-items/functions-and-methods.md#no-"
+"bool-args)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:60
+msgid "Use types to enforce invariants"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:60
+msgid ""
+"[`rust-type-invariants`](rust-guidelines/language-items/types-and-traits."
+"md#rust-type-invariants)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:61
+msgid "Prefer enum over trait objects for closed sets"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:61
+msgid ""
+"[`enum-over-dyn`](rust-guidelines/language-items/types-and-traits.md#enum-"
+"over-dyn)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:62
+msgid "Encapsulate fields behind getters"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:62
+msgid ""
+"[`getter-encapsulation`](rust-guidelines/language-items/types-and-traits."
+"md#getter-encapsulation)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:63
+msgid "Follow RFC 1574 summary line conventions"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:63
+msgid ""
+"[`rfc1574-summary`](rust-guidelines/language-items/comments-and-"
+"documentation.md#rfc1574-summary)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:64
+msgid "End sentence comments with punctuation"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:64
+msgid ""
+"[`comment-punctuation`](rust-guidelines/language-items/comments-and-"
+"documentation.md#comment-punctuation)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:65
+msgid "Wrap identifiers in backticks"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:65
+msgid ""
+"[`backtick-identifiers`](rust-guidelines/language-items/comments-and-"
+"documentation.md#backtick-identifiers)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:66
+msgid "Do not disclose implementation details in doc comments"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:66
+msgid ""
+"[`no-impl-in-docs`](rust-guidelines/language-items/comments-and-"
+"documentation.md#no-impl-in-docs)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:67
+msgid "Add module-level documentation for major components"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:67
+msgid ""
+"[`module-docs`](rust-guidelines/language-items/comments-and-documentation."
+"md#module-docs)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:68
+msgid "Justify every use of `unsafe`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:68
+msgid ""
+"[`justify-unsafe-use`](rust-guidelines/language-items/unsafety.md#justify-"
+"unsafe-use)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:69
+msgid "Document safety conditions"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:69
+msgid ""
+"[`document-safety-conds`](rust-guidelines/language-items/unsafety."
+"md#document-safety-conds)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:70
+msgid "Deny unsafe code in `kernel/`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:70
+msgid ""
+"[`deny-unsafe-kernel`](rust-guidelines/language-items/unsafety.md#deny-"
+"unsafe-kernel)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:71
+msgid "Reason about safety at the module boundary"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:71
+msgid ""
+"[`module-boundary-safety`](rust-guidelines/language-items/unsafety.md#module-"
+"boundary-safety)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:72
+msgid "Default to the narrowest visibility"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:72
+msgid ""
+"[`narrow-visibility`](rust-guidelines/language-items/modules-and-crates."
+"md#narrow-visibility)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:73
+msgid "Qualify function calls with the parent module"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:73
+msgid ""
+"[`qualified-fn-imports`](rust-guidelines/language-items/modules-and-crates."
+"md#qualified-fn-imports)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:74
+msgid "Use workspace dependencies"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:74
+msgid ""
+"[`workspace-deps`](rust-guidelines/language-items/modules-and-crates."
+"md#workspace-deps)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:75
+msgid "Sort attributes and derive traits alphabetically"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:75
+msgid ""
+"[`alphabetical-attrs`](rust-guidelines/language-items/macros-and-attributes."
+"md#alphabetical-attrs)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:76
+msgid "Suppress lints at the narrowest scope"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:76
+msgid ""
+"[`narrow-lint-suppression`](rust-guidelines/language-items/macros-and-"
+"attributes.md#narrow-lint-suppression)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:77
+msgid "Use `#[expect(dead_code)]` with restraint"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:77
+msgid ""
+"[`expect-dead-code`](rust-guidelines/language-items/macros-and-attributes."
+"md#expect-dead-code)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:78
+msgid "Prefer functions over macros"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:78
+msgid ""
+"[`macros-as-last-resort`](rust-guidelines/language-items/macros-and-"
+"attributes.md#macros-as-last-resort)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:79
+msgid "Establish and enforce a consistent lock order"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:79
+msgid ""
+"[`lock-ordering`](rust-guidelines/select-topics/concurrency-and-races."
+"md#lock-ordering)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:80
+msgid "Never do I/O or blocking operations while holding a spinlock"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:80
+msgid ""
+"[`no-io-under-spinlock`](rust-guidelines/select-topics/concurrency-and-races."
+"md#no-io-under-spinlock)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:81
+msgid "Do not use atomics casually"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:81
+msgid ""
+"[`careful-atomics`](rust-guidelines/select-topics/concurrency-and-races."
+"md#careful-atomics)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:82
+msgid "Critical sections must not be split across lock boundaries"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:82
+msgid ""
+"[`atomic-critical-sections`](rust-guidelines/select-topics/concurrency-and-"
+"races.md#atomic-critical-sections)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:83
+msgid "Use `debug_assert` for correctness-only checks"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:83
+msgid ""
+"[`debug-assert`](rust-guidelines/select-topics/defensive-programming."
+"md#debug-assert)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:84
+msgid "Propagate errors with `?`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:84
+msgid ""
+"[`propagate-errors`](rust-guidelines/select-topics/error-handling."
+"md#propagate-errors)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:85
+msgid "Use OSTD logging macros exclusively"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:85
+msgid ""
+"[`ostd-log-only`](rust-guidelines/select-topics/logging.md#ostd-log-only)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:86
+msgid "Choose appropriate log levels"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:86
+msgid "[`log-levels`](rust-guidelines/select-topics/logging.md#log-levels)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:87
+msgid "Use RAII for all resource acquisition and release"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:87
+msgid ""
+"[`raii`](rust-guidelines/select-topics/memory-and-resource-management."
+"md#raii)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:88
+msgid "Avoid O(n) algorithms on hot paths"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:88
+msgid ""
+"[`no-linear-hot-paths`](rust-guidelines/select-topics/performance.md#no-"
+"linear-hot-paths)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:89
+msgid "Minimize unnecessary copies and allocations"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:89
+msgid ""
+"[`minimize-copies`](rust-guidelines/select-topics/performance.md#minimize-"
+"copies)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:90
+msgid "No premature optimization without evidence"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:90
+msgid ""
+"[`no-premature-optimization`](rust-guidelines/select-topics/performance."
+"md#no-premature-optimization)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:91
+#: src/to-contribute/coding-guidelines/index.md:92
+#: src/to-contribute/coding-guidelines/index.md:93
+#: src/to-contribute/coding-guidelines/index.md:94
+msgid "Git"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:91
+msgid "Write imperative, descriptive subject lines"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:91
+msgid "[`imperative-subject`](git-guidelines.md#imperative-subject)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:92
+msgid "One logical change per commit"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:92
+msgid "[`atomic-commits`](git-guidelines.md#atomic-commits)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:93
+msgid "Separate refactoring from features"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:93
+msgid "[`refactor-then-feature`](git-guidelines.md#refactor-then-feature)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:94
+msgid "Keep pull requests focused"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:94
+msgid "[`focused-prs`](git-guidelines.md#focused-prs)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:95
+#: src/to-contribute/coding-guidelines/index.md:96
+#: src/to-contribute/coding-guidelines/index.md:97
+#: src/to-contribute/coding-guidelines/index.md:98
+msgid "Testing"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:95
+msgid "Add regression tests for every bug fix"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:95
+msgid "[`add-regression-tests`](testing-guidelines.md#add-regression-tests)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:96
+msgid "Test user-visible behavior, not internals"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:96
+msgid "[`test-visible-behavior`](testing-guidelines.md#test-visible-behavior)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:97
+msgid "Use assertion macros, not manual inspection"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:97
+msgid "[`use-assertions`](testing-guidelines.md#use-assertions)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:98
+msgid "Clean up resources after every test"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:98
+msgid "[`test-cleanup`](testing-guidelines.md#test-cleanup)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:99
+#: src/to-contribute/coding-guidelines/index.md:100
+#: src/to-contribute/coding-guidelines/index.md:101
+#: src/to-contribute/coding-guidelines/index.md:102
+#: src/to-contribute/coding-guidelines/index.md:103
+#: src/to-contribute/coding-guidelines/index.md:104
+msgid "Assembly"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:99
+msgid "Use the correct section directive"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:99
+msgid "[`asm-section-directives`](asm-guidelines.md#asm-section-directives)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:100
+msgid "Place code-width directives after the section definition"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:100
+msgid "[`asm-code-width`](asm-guidelines.md#asm-code-width)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:101
+msgid "Place attributes directly before the function"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:101
+msgid "[`asm-function-attributes`](asm-guidelines.md#asm-function-attributes)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:102
+msgid "Add `.type` and `.size` for Rust-callable functions"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:102
+msgid "[`asm-type-and-size`](asm-guidelines.md#asm-type-and-size)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:103
+msgid "Use unique label prefixes to avoid name clashes"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:103
+msgid "[`asm-label-prefixes`](asm-guidelines.md#asm-label-prefixes)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:104
+msgid "Prefer `.balign` over `.align`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:104
+msgid "[`asm-prefer-balign`](asm-guidelines.md#asm-prefer-balign)"
+msgstr ""
