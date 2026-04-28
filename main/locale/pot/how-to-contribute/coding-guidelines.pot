@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-14T10:27:23Z\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -270,6 +270,7 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/index.md:88
 #: src/to-contribute/coding-guidelines/index.md:89
 #: src/to-contribute/coding-guidelines/index.md:90
+#: src/to-contribute/coding-guidelines/index.md:91
 msgid "Rust"
 msgstr ""
 
@@ -617,176 +618,184 @@ msgid "[`log-levels`](rust-guidelines/select-topics/logging.md#log-levels)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:87
-msgid "Use RAII for all resource acquisition and release"
+msgid "Define a log prefix for each crate"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:87
+msgid "[`log-prefix`](rust-guidelines/select-topics/logging.md#log-prefix)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:88
+msgid "Use RAII for all resource acquisition and release"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:88
 msgid ""
 "[`raii`](rust-guidelines/select-topics/memory-and-resource-management."
 "md#raii)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:88
+#: src/to-contribute/coding-guidelines/index.md:89
 msgid "Avoid O(n) algorithms on hot paths"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:88
+#: src/to-contribute/coding-guidelines/index.md:89
 msgid ""
 "[`no-linear-hot-paths`](rust-guidelines/select-topics/performance.md#no-"
 "linear-hot-paths)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:89
+#: src/to-contribute/coding-guidelines/index.md:90
 msgid "Minimize unnecessary copies and allocations"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:89
+#: src/to-contribute/coding-guidelines/index.md:90
 msgid ""
 "[`minimize-copies`](rust-guidelines/select-topics/performance.md#minimize-"
 "copies)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:90
+#: src/to-contribute/coding-guidelines/index.md:91
 msgid "No premature optimization without evidence"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:90
+#: src/to-contribute/coding-guidelines/index.md:91
 msgid ""
 "[`no-premature-optimization`](rust-guidelines/select-topics/performance."
 "md#no-premature-optimization)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:91
 #: src/to-contribute/coding-guidelines/index.md:92
 #: src/to-contribute/coding-guidelines/index.md:93
 #: src/to-contribute/coding-guidelines/index.md:94
+#: src/to-contribute/coding-guidelines/index.md:95
 msgid "Git"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:91
+#: src/to-contribute/coding-guidelines/index.md:92
 msgid "Write imperative, descriptive subject lines"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:91
+#: src/to-contribute/coding-guidelines/index.md:92
 msgid "[`imperative-subject`](git-guidelines.md#imperative-subject)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:92
+#: src/to-contribute/coding-guidelines/index.md:93
 msgid "One logical change per commit"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:92
+#: src/to-contribute/coding-guidelines/index.md:93
 msgid "[`atomic-commits`](git-guidelines.md#atomic-commits)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:93
+#: src/to-contribute/coding-guidelines/index.md:94
 msgid "Separate refactoring from features"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:93
+#: src/to-contribute/coding-guidelines/index.md:94
 msgid "[`refactor-then-feature`](git-guidelines.md#refactor-then-feature)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:94
+#: src/to-contribute/coding-guidelines/index.md:95
 msgid "Keep pull requests focused"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:94
+#: src/to-contribute/coding-guidelines/index.md:95
 msgid "[`focused-prs`](git-guidelines.md#focused-prs)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:95
 #: src/to-contribute/coding-guidelines/index.md:96
 #: src/to-contribute/coding-guidelines/index.md:97
 #: src/to-contribute/coding-guidelines/index.md:98
+#: src/to-contribute/coding-guidelines/index.md:99
 msgid "Testing"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:95
+#: src/to-contribute/coding-guidelines/index.md:96
 msgid "Add regression tests for every bug fix"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:95
+#: src/to-contribute/coding-guidelines/index.md:96
 msgid "[`add-regression-tests`](testing-guidelines.md#add-regression-tests)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:96
+#: src/to-contribute/coding-guidelines/index.md:97
 msgid "Test user-visible behavior, not internals"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:96
+#: src/to-contribute/coding-guidelines/index.md:97
 msgid "[`test-visible-behavior`](testing-guidelines.md#test-visible-behavior)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:97
+#: src/to-contribute/coding-guidelines/index.md:98
 msgid "Use assertion macros, not manual inspection"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:97
+#: src/to-contribute/coding-guidelines/index.md:98
 msgid "[`use-assertions`](testing-guidelines.md#use-assertions)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:98
+#: src/to-contribute/coding-guidelines/index.md:99
 msgid "Clean up resources after every test"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:98
+#: src/to-contribute/coding-guidelines/index.md:99
 msgid "[`test-cleanup`](testing-guidelines.md#test-cleanup)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:99
 #: src/to-contribute/coding-guidelines/index.md:100
 #: src/to-contribute/coding-guidelines/index.md:101
 #: src/to-contribute/coding-guidelines/index.md:102
 #: src/to-contribute/coding-guidelines/index.md:103
 #: src/to-contribute/coding-guidelines/index.md:104
+#: src/to-contribute/coding-guidelines/index.md:105
 msgid "Assembly"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:99
+#: src/to-contribute/coding-guidelines/index.md:100
 msgid "Use the correct section directive"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:99
+#: src/to-contribute/coding-guidelines/index.md:100
 msgid "[`asm-section-directives`](asm-guidelines.md#asm-section-directives)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:100
+#: src/to-contribute/coding-guidelines/index.md:101
 msgid "Place code-width directives after the section definition"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:100
+#: src/to-contribute/coding-guidelines/index.md:101
 msgid "[`asm-code-width`](asm-guidelines.md#asm-code-width)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:101
+#: src/to-contribute/coding-guidelines/index.md:102
 msgid "Place attributes directly before the function"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:101
+#: src/to-contribute/coding-guidelines/index.md:102
 msgid "[`asm-function-attributes`](asm-guidelines.md#asm-function-attributes)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:102
+#: src/to-contribute/coding-guidelines/index.md:103
 msgid "Add `.type` and `.size` for Rust-callable functions"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:102
+#: src/to-contribute/coding-guidelines/index.md:103
 msgid "[`asm-type-and-size`](asm-guidelines.md#asm-type-and-size)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:103
+#: src/to-contribute/coding-guidelines/index.md:104
 msgid "Use unique label prefixes to avoid name clashes"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:103
+#: src/to-contribute/coding-guidelines/index.md:104
 msgid "[`asm-label-prefixes`](asm-guidelines.md#asm-label-prefixes)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:104
+#: src/to-contribute/coding-guidelines/index.md:105
 msgid "Prefer `.balign` over `.align`"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/index.md:104
+#: src/to-contribute/coding-guidelines/index.md:105
 msgid "[`asm-prefer-balign`](asm-guidelines.md#asm-prefer-balign)"
 msgstr ""

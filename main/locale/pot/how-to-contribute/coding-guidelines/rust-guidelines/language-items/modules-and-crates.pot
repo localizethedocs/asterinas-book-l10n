@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"POT-Creation-Date: 2026-04-28T11:27:18Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -39,16 +39,23 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:22
 msgid ""
-"See also: PR [\\#2951](https://github.com/asterinas/asterinas/pull/2951) and "
-"[\\#2605](https://github.com/asterinas/asterinas/"
-"pull/2605#discussion_r2720506912)."
+"Inside the `aster-kernel` crate, `pub(crate)` and `pub` are equivalent, as "
+"the crate has no downstream consumers. Prefer the shorter `pub`."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:26
+msgid ""
+"See also: PR [\\#2951](https://github.com/asterinas/asterinas/pull/2951), "
+"[\\#2605](https://github.com/asterinas/asterinas/"
+"pull/2605#discussion_r2720506912), and [\\#3154](https://github.com/"
+"asterinas/asterinas/pull/3154#discussion_r3100905375)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:31
 msgid "Qualify function calls with the parent module (`qualified-fn-imports`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:28
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:33
 msgid ""
 "When importing a free function or a static/constant from another module, "
 "import the **parent module** and access the item through it (`module::"
@@ -56,7 +63,7 @@ msgid ""
 "directly by name."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:34
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:39
 msgid ""
 "This convention is recommended by [_The Rust Programming Language_](https://"
 "doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-"
@@ -64,51 +71,51 @@ msgid ""
 "purposes:"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:39
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:44
 msgid ""
 "The call site makes it clear that an imported item is being used, not a "
 "local one."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:42
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:47
 msgid "The module name provides context that complements the item name."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:46
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:51
 msgid "// Good — module-qualified function call\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:50
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:55
 msgid "// Good — module-qualified static access\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:55
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:60
 msgid "// Bad — bare function name; unclear origin at call site\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:60
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:65
 msgid "// Bad — bare static name; could be mistaken for a local constant\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:67
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:72
 msgid ""
 "This rule applies to **free functions and statics/constants**. Types, "
 "traits, and enum variants should still be imported directly by name, "
 "following the standard Rust convention."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:72
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:77
 msgid "Use workspace dependencies (`workspace-deps`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:74
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:79
 msgid ""
 "Always declare shared dependencies in the workspace `[workspace."
 "dependencies]` table and reference them with `.workspace = true` in member "
 "crates."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:79
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:84
 msgid ""
 "```toml\n"
 "# In the workspace root Cargo.toml\n"

@@ -1,0 +1,811 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:1
+msgid "File Management & Terminal"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:3
+msgid ""
+"This category covers file managers, terminal emulators, archiving tools, and "
+"modern CLI utilities."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:5
+msgid "Archiving & Compression"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:7
+msgid "Bzip2"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:9
+msgid ""
+"[Bzip2](https://www.sourceware.org/bzip2) uses the Burrows-Wheeler algorithm "
+"for compression."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:11
+#: src/distro/popular-applications/file-management-and-terminal/index.md:41
+#: src/distro/popular-applications/file-management-and-terminal/index.md:71
+#: src/distro/popular-applications/file-management-and-terminal/index.md:100
+#: src/distro/popular-applications/file-management-and-terminal/index.md:129
+#: src/distro/popular-applications/file-management-and-terminal/index.md:159
+#: src/distro/popular-applications/file-management-and-terminal/index.md:190
+#: src/distro/popular-applications/file-management-and-terminal/index.md:221
+#: src/distro/popular-applications/file-management-and-terminal/index.md:247
+#: src/distro/popular-applications/file-management-and-terminal/index.md:270
+#: src/distro/popular-applications/file-management-and-terminal/index.md:293
+#: src/distro/popular-applications/file-management-and-terminal/index.md:310
+#: src/distro/popular-applications/file-management-and-terminal/index.md:344
+#: src/distro/popular-applications/file-management-and-terminal/index.md:370
+#: src/distro/popular-applications/file-management-and-terminal/index.md:393
+#: src/distro/popular-applications/file-management-and-terminal/index.md:410
+#: src/distro/popular-applications/file-management-and-terminal/index.md:442
+#: src/distro/popular-applications/file-management-and-terminal/index.md:462
+#: src/distro/popular-applications/file-management-and-terminal/index.md:484
+#: src/distro/popular-applications/file-management-and-terminal/index.md:505
+#: src/distro/popular-applications/file-management-and-terminal/index.md:525
+#: src/distro/popular-applications/file-management-and-terminal/index.md:564
+#: src/distro/popular-applications/file-management-and-terminal/index.md:593
+#: src/distro/popular-applications/file-management-and-terminal/index.md:616
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:17
+#: src/distro/popular-applications/file-management-and-terminal/index.md:47
+#: src/distro/popular-applications/file-management-and-terminal/index.md:77
+#: src/distro/popular-applications/file-management-and-terminal/index.md:106
+#: src/distro/popular-applications/file-management-and-terminal/index.md:135
+#: src/distro/popular-applications/file-management-and-terminal/index.md:165
+#: src/distro/popular-applications/file-management-and-terminal/index.md:196
+#: src/distro/popular-applications/file-management-and-terminal/index.md:227
+#: src/distro/popular-applications/file-management-and-terminal/index.md:253
+#: src/distro/popular-applications/file-management-and-terminal/index.md:276
+#: src/distro/popular-applications/file-management-and-terminal/index.md:299
+#: src/distro/popular-applications/file-management-and-terminal/index.md:316
+#: src/distro/popular-applications/file-management-and-terminal/index.md:350
+#: src/distro/popular-applications/file-management-and-terminal/index.md:376
+#: src/distro/popular-applications/file-management-and-terminal/index.md:399
+#: src/distro/popular-applications/file-management-and-terminal/index.md:416
+#: src/distro/popular-applications/file-management-and-terminal/index.md:448
+#: src/distro/popular-applications/file-management-and-terminal/index.md:468
+#: src/distro/popular-applications/file-management-and-terminal/index.md:490
+#: src/distro/popular-applications/file-management-and-terminal/index.md:511
+#: src/distro/popular-applications/file-management-and-terminal/index.md:531
+#: src/distro/popular-applications/file-management-and-terminal/index.md:570
+#: src/distro/popular-applications/file-management-and-terminal/index.md:599
+#: src/distro/popular-applications/file-management-and-terminal/index.md:622
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:20
+msgid "# Compress file with bzip2\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:21
+msgid "# Creates file.txt.bz2\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:22
+msgid "# Decompress file with bunzip2\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:24
+#: src/distro/popular-applications/file-management-and-terminal/index.md:54
+#: src/distro/popular-applications/file-management-and-terminal/index.md:142
+msgid "# Restores file.txt\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:25
+#: src/distro/popular-applications/file-management-and-terminal/index.md:55
+#: src/distro/popular-applications/file-management-and-terminal/index.md:143
+msgid "# Decompress to stdout\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:28
+#: src/distro/popular-applications/file-management-and-terminal/index.md:58
+#: src/distro/popular-applications/file-management-and-terminal/index.md:146
+msgid "# View compressed file with pager\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:32
+#: src/distro/popular-applications/file-management-and-terminal/index.md:62
+#: src/distro/popular-applications/file-management-and-terminal/index.md:150
+msgid "# Search in compressed file\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:34
+#: src/distro/popular-applications/file-management-and-terminal/index.md:64
+#: src/distro/popular-applications/file-management-and-terminal/index.md:152
+#: src/distro/popular-applications/file-management-and-terminal/index.md:181
+#: src/distro/popular-applications/file-management-and-terminal/index.md:403
+#: src/distro/popular-applications/file-management-and-terminal/index.md:420
+#: src/distro/popular-applications/file-management-and-terminal/index.md:423
+#: src/distro/popular-applications/file-management-and-terminal/index.md:429
+#: src/distro/popular-applications/file-management-and-terminal/index.md:432
+#: src/distro/popular-applications/file-management-and-terminal/index.md:435
+#: src/distro/popular-applications/file-management-and-terminal/index.md:452
+msgid "\"pattern\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:37
+msgid "Gzip"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:39
+msgid ""
+"[Gzip](https://www.gnu.org/software/gzip/) is a popular data compression "
+"program."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:50
+msgid "# Compress file with gzip\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:51
+msgid "# Creates file.txt.gz\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:52
+msgid "# Decompress file with gunzip\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:67
+msgid "P7zip"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:69
+msgid ""
+"[P7zip](https://p7zip.sourceforge.io/) is a port of 7-Zip to Unix-like "
+"systems."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:80
+msgid "# Create 7z archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:82
+msgid "# Extract 7z archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:85
+#: src/distro/popular-applications/file-management-and-terminal/index.md:114
+msgid "# List contents of archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:88
+msgid "# Add files to existing archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:91
+msgid "# Test archive integrity\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:96
+msgid "Tar"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:98
+msgid ""
+"[Tar](https://www.gnu.org/software/tar/) creates and extracts archive files."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:109
+msgid "# Create tar archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:111
+msgid "# Extract tar archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:117
+msgid "# Append files to existing archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:120
+msgid "# Update files in archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:125
+msgid "Xz"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:127
+msgid ""
+"[Xz](https://tukaani.org/xz/) provides high compression ratio using LZMA2 "
+"algorithm."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:138
+msgid "# Compress file with xz\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:139
+msgid "# Creates file.txt.xz\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:140
+msgid "# Decompress file with unxz\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:155
+msgid "Zip"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:157
+msgid ""
+"[Zip](https://www.info-zip.org/) is a file compression and archive utility."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:168
+msgid "# Create zip archive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:170
+msgid "# List contents of zip file\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:173
+msgid "# Extract all files\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:176
+msgid "# View file information in zip\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:179
+msgid "# Search for pattern in zip files\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:184
+msgid "Terminal Multiplexers"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:186
+msgid "Screen"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:188
+msgid ""
+"[Screen](https://www.gnu.org/software/screen/) is a terminal multiplexer."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:199
+msgid "# Start a new named session\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:201
+msgid "# Start a daemon session in detached mode\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:204
+msgid "# List existing sessions\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:207
+msgid "# Reattach to a detached session\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:210
+msgid "# Kill a session\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:215
+msgid "File Inspection"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:217
+msgid "File"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:219
+msgid ""
+"[File](https://darwinsys.com/file/) determines file type by examining "
+"content."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:230
+msgid "# Determine file type\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:231
+msgid "# Basic file type detection\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:232
+msgid "# Identify PDF files\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:233
+msgid "# Identify image files\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:234
+msgid "# Detailed information\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:236
+msgid "# Show MIME type\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:237
+msgid "# Brief output (no filename)\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:238
+msgid "# Follow symlinks\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:241
+msgid "Text Processing"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:243
+msgid "Bat"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:245
+msgid ""
+"[Bat](https://github.com/sharkdp/bat) is a `cat` clone with syntax "
+"highlighting and Git integration."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:256
+msgid "# Display file with syntax highlighting\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:258
+msgid "# Print only plain text (no color)\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:261
+msgid "# Show line numbers explicitly\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:266
+msgid "Gawk"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:268
+msgid ""
+"[Gawk](https://www.gnu.org/software/gawk/) is the GNU implementation of Awk "
+"programming language."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:279
+msgid "# Use custom field separator\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:280
+msgid "'{print NR \": \" $1}'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:281
+msgid "# Print lines matching pattern\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:283
+msgid "'/pattern/ {print}'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:284
+msgid "# Sum numbers in first column\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:286
+msgid "'{sum += $1} END {print \"Sum:\", sum}'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:289
+msgid "Sd"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:291
+msgid ""
+"[Sd](https://github.com/chmln/sd) is an intuitive find-and-replace CLI tool."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:302
+msgid "# Replace text in files\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:303
+msgid "\"old\" \"new\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:306
+msgid "Sed"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:308
+msgid ""
+"[Sed](https://www.gnu.org/software/sed/) is the GNU implementation of stream "
+"editor."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:319
+msgid "# Print specific line numbers\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:320
+msgid "'1,10p'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:321
+msgid "# Replace all occurrences with case insensitive\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:323
+msgid "'s/old/new/gi'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:324
+msgid "# Delete specific line numbers\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:326
+msgid "'1,5d'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:327
+msgid "# Insert text before line\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:329
+msgid "'2i\\New line inserted'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:330
+msgid "# Append text after line\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:332
+msgid "'2a\\Appended line'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:333
+msgid "# Replace entire line\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:335
+msgid "'3c\\Completely replaced line'"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:338
+msgid "Search & Filtering"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:340
+msgid "Eza"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:342
+msgid ""
+"[eza](https://github.com/eza-community/eza) is a modern replacement for `ls`."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:353
+msgid "# List files in current directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:355
+msgid "# Long format including hidden files\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:358
+msgid "# List files only\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:361
+msgid "# List directories only\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:366
+msgid "Fd"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:368
+msgid ""
+"[Fd](https://github.com/sharkdp/fd) is a simple, fast alternative to `find`."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:379
+msgid "# Find files in current directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:381
+msgid "# Find files containing a pattern\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:384
+msgid "# Execute a command for each match\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:389
+msgid "Fzf"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:391
+msgid "[Fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:402
+msgid "# Print matches for the initial query and exit\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:406
+msgid "Ripgrep"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:408
+msgid ""
+"[Ripgrep](https://github.com/BurntSushi/ripgrep) is a fast line-oriented "
+"search tool."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:419
+msgid "# Search for pattern in files\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:421
+msgid "# Case-insensitive search\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:424
+msgid "# Search for a literal string (no regex)\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:426
+msgid "\"literal string\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:427
+msgid "# Show only matching filenames\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:430
+msgid "# Show files that do NOT contain the pattern\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:433
+msgid "# Show 1 lines of context before and after matches\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:438
+msgid "The Silver Searcher"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:440
+msgid ""
+"[The Silver Searcher](https://github.com/ggreer/the_silver_searcher) (`ag`) "
+"is a fast text search tool."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:451
+msgid "# Search in current directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:453
+msgid "# Limit to specific file types\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:455
+msgid "\"main\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:458
+msgid "Tree"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:460
+msgid ""
+"[Tree](http://mama.indstate.edu/users/ice/tree/) displays directory "
+"structures in a tree format."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:471
+msgid "# Show tree to depth 2\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:473
+msgid "# Show hidden files\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:478
+msgid "Security & Backup"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:480
+msgid "Age"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:482
+msgid ""
+"[Age](https://github.com/FiloSottile/age) is a simple, modern encryption "
+"tool."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:493
+msgid "# Generate a key pair\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:495
+msgid "# Encrypt and decrypt\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:501
+msgid "Crunch"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:503
+msgid ""
+"[Crunch](https://sourceforge.net/projects/crunch-wordlist/) generates "
+"wordlists by pattern."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:514
+msgid "# Generate passwords from length 4 to 6\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:516
+msgid "# Generate a fixed-length pattern list\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:521
+msgid "GnuPG"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:523
+msgid "[GnuPG](https://gnupg.org/) provides OpenPGP encryption and signing."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:534
+msgid "# Quick generate without passphrase protection\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:535
+msgid "\"Test User <test@example.com>\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:535
+msgid "\"\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:536
+msgid "# List public keys\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:539
+msgid "# Export public key\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:542
+msgid "# Export private key (be careful!)\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:545
+msgid "# Sign with specific key\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:548
+msgid "# Verify and extract the original file\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:552
+msgid "# Encrypt with passphrase from command line\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:554
+#: src/distro/popular-applications/file-management-and-terminal/index.md:557
+msgid "\"mysecretpassword\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:555
+msgid "# Decrypt with passphrase from command line\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:560
+msgid "John the Ripper"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:562
+msgid ""
+"[John the Ripper](https://www.openwall.com/john/) is a password security "
+"auditing tool."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:573
+msgid "# Create test dictionary file\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:574
+msgid "\"password\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:575
+msgid "\"123456\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:576
+msgid "\"admin\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:577
+msgid "\"welcome\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:578
+msgid "\"qwerty\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:579
+msgid "\"abc123\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:580
+msgid "\"password123\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:581
+msgid "# Create a MD5 hash for testing\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:583
+msgid "\"482c811da5d5b4bc6d497ffa98491e38\""
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:583
+msgid "# Genuine MD5 hash of \"password123\"\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:584
+msgid "# Basic password cracking with wordlist\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:589
+msgid "Restic"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:591
+msgid "[Restic](https://restic.net/) is a fast, secure backup program."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:602
+msgid "# Initialize a repository\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:604
+msgid "# Run a backup\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:607
+msgid "# List snapshots\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:612
+msgid "Wipe"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:614
+msgid ""
+"[Wipe](https://wipe.sourceforge.net/) securely erases files and directories."
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:625
+msgid "# Force wipe with zero-out pass (single pass of zeros)\n"
+msgstr ""
+
+#: src/distro/popular-applications/file-management-and-terminal/index.md:627
+msgid "# Force wipe with specific number of passes\n"
+msgstr ""

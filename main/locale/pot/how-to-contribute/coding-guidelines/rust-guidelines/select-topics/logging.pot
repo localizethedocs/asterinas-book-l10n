@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-14T10:27:23Z\n"
+"POT-Creation-Date: 2026-04-28T11:27:18Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -155,4 +155,59 @@ msgid ""
 "Use `error!` for failures that the system can recover from. Use `crit!` or "
 "`emerg!` only for failures immediately before a halt or abort. A log "
 "statement that fires on every syscall or every timer tick must use `debug!`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:62
+msgid "Define a log prefix for each crate (`log-prefix`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:64
+msgid ""
+"Every OSTD-based crate must define a `__log_prefix` macro at its crate root "
+"(in `lib.rs`), before any `mod` declarations. This labels all log messages "
+"from the crate:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:69
+msgid "// Set this crate's log prefix for `ostd::log`.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:72
+msgid "\"virtio: \""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:77
+msgid ""
+"Convention: use the lowercase crate name (without `aster_` prefix), followed "
+"by `: `. For example: `\"virtio: \"`, `\"pci: \"`, `\"uart: \"`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:80
+msgid ""
+"Subsystem modules within a crate can override the prefix by defining their "
+"own `__log_prefix` at the top of `mod.rs`:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:84
+msgid "// Set this module's log prefix for `ostd::log`.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:87
+msgid "\"net: \""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:92
+msgid "Child modules inherit the override automatically."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:94
+msgid ""
+"Do not put `#[rustfmt::skip]` or any other attribute on `__log_prefix` "
+"definitions — it causes a compiler ambiguity error (E0659)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/logging.md:97
+msgid ""
+"Do not use manual bracket prefixes like `[IOMMU]` or `[Virtio]:`. The "
+"`__log_prefix` mechanism replaces them."
 msgstr ""
