@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/multimedia/index.md:1
+msgid "Multimedia"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:3
+msgid ""
+"This category covers video/audio players, graphics tools, and streaming "
+"software."
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:5
+msgid "Audio Players"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:7
+msgid "SoX"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:9
+msgid ""
+"[SoX](https://sox.sourceforge.net/) is a sample rate converter for audio "
+"files."
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:11
+#: src/distro/popular-applications/multimedia/index.md:45
+#: src/distro/popular-applications/multimedia/index.md:76
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:17
+#: src/distro/popular-applications/multimedia/index.md:51
+#: src/distro/popular-applications/multimedia/index.md:82
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:20
+msgid "# Create 1 kHz tone (10 seconds)\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:22
+msgid "# Create chord (multiple tones)\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:25
+msgid "# Create white noise (5 seconds)\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:28
+msgid "# Convert audio format\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:31
+msgid "# Concatenate audio files\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:34
+msgid "# Cut audio (from 10s to 40s)\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:39
+msgid "Graphics & Image Editing"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:41
+msgid "ImageMagick"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:43
+msgid ""
+"[ImageMagick](http://www.imagemagick.org/) is a software suite to create, "
+"edit, compose, or convert bitmap images."
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:54
+msgid "# Create colorful test image\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:55
+msgid "\"circle 250,150 250,200\""
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:55
+msgid "\"circle 700,200 700,250\""
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:56
+msgid "# Convert image format\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:59
+msgid "# Resize image\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:62
+msgid "# Crop image\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:65
+msgid "# Rotate image\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:70
+msgid "Streaming & Recording"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:72
+msgid "FFmpeg"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:74
+msgid ""
+"[FFmpeg](https://www.ffmpeg.org/) is a complete, cross-platform solution to "
+"record, convert and stream audio and video."
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:85
+msgid "# Create a 10-second blue test video\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:87
+msgid "# Convert to different format\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:90
+msgid "# Resize video to 640x360\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:93
+msgid "# Compress video with lower quality\n"
+msgstr ""
+
+#: src/distro/popular-applications/multimedia/index.md:96
+msgid "# Extract first 5 seconds\n"
+msgstr ""

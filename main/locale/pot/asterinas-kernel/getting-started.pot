@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-14T10:27:23Z\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -159,9 +159,17 @@ msgstr ""
 
 #: src/kernel/index.md:86
 msgid ""
+"Alternatively, if you use VS Code with the [Dev Containers](https://"
+"marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-"
+"containers) extension, open the cloned folder and select \"Reopen in "
+"Container\"."
+msgstr ""
+
+#: src/kernel/index.md:90
+msgid ""
 "Inside the container, go to the project folder to build and run Asterinas."
 msgstr ""
 
-#: src/kernel/index.md:93
+#: src/kernel/index.md:97
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
 msgstr ""
