@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/web-browsers/index.md:1
+msgid "Web Browsers"
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:3
+msgid "This category covers web browsers."
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:5
+msgid "Browsers"
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:7
+msgid "Links2"
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:9
+msgid ""
+"[Links2](http://links.twibright.com/) is a text and graphics web browser."
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:11
+#: src/distro/popular-applications/web-browsers/index.md:31
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:17
+#: src/distro/popular-applications/web-browsers/index.md:37
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:20
+msgid "# Open a website\n"
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:22
+#: src/distro/popular-applications/web-browsers/index.md:42
+msgid "# Dump page contents as text\n"
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:27
+msgid "W3m"
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:29
+msgid "[W3m](https://w3m.sourceforge.net/) is a text-based web browser."
+msgstr ""
+
+#: src/distro/popular-applications/web-browsers/index.md:40
+msgid "# Open a website in text mode\n"
+msgstr ""

@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/office-and-productivity/index.md:1
+msgid "Office & Productivity"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:3
+msgid ""
+"This category covers office suites, document viewers, and note-taking "
+"applications."
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:5
+msgid "Document Viewers"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:7
+msgid "MuPDF"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:9
+msgid "[MuPDF](https://mupdf.com/) is a lightweight PDF and XPS viewer."
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:11
+#: src/distro/popular-applications/office-and-productivity/index.md:34
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:17
+#: src/distro/popular-applications/office-and-productivity/index.md:40
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:20
+msgid "# Show information about pdf resources\n"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:22
+msgid "# Convert text from pdf\n"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:25
+msgid "# Convert images from pdf\n"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:30
+msgid "Pandoc"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:32
+msgid ""
+"[Pandoc](https://hackage.haskell.org/package/pandoc-cli) is a universal "
+"document converter."
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:43
+msgid "# Convert Markdown to HTML\n"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:45
+msgid "# Convert Markdown to Word DOCX\n"
+msgstr ""
+
+#: src/distro/popular-applications/office-and-productivity/index.md:48
+msgid "# Convert HTML to Markdown\n"
+msgstr ""

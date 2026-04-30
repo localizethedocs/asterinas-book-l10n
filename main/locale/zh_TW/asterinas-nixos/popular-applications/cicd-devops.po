@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:1
+msgid "CI/CD & DevOps"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:3
+msgid ""
+"This category covers continuous integration/deployment tools and "
+"infrastructure automation."
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:5
+msgid "CI/CD Runners"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:7
+msgid "Just"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:9
+msgid ""
+"[Just](https://github.com/casey/just) is a handy way to save and run project-"
+"specific commands."
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:11
+#: src/distro/popular-applications/cicd-and-devops/index.md:31
+#: src/distro/popular-applications/cicd-and-devops/index.md:53
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:17
+#: src/distro/popular-applications/cicd-and-devops/index.md:37
+#: src/distro/popular-applications/cicd-and-devops/index.md:59
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:20
+msgid "# List recipes\n"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:22
+msgid "# Run a recipe\n"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:27
+msgid "Task"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:29
+msgid ""
+"[Task](https://taskfile.dev/) is a fast, cross-platform build tool inspired "
+"by Make, designed for modern workflows."
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:40
+msgid "# List tasks\n"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:42
+msgid "# Run a task named build\n"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:47
+msgid "Release Automation"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:49
+msgid "GoReleaser"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:51
+msgid ""
+"[GoReleaser](https://goreleaser.com/) does everything you need to create a "
+"professional release process for Go, Rust, TypeScript, Zig, and Python "
+"projects."
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:62
+msgid "# Check configuration\n"
+msgstr ""
+
+#: src/distro/popular-applications/cicd-and-devops/index.md:64
+msgid "# Run a snapshot release locally\n"
+msgstr ""

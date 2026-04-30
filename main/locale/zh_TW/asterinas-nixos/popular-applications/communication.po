@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/communication/index.md:1
+msgid "Communication"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:3
+msgid ""
+"This category covers email clients, instant messaging, and video "
+"conferencing applications."
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:5
+msgid "Terminal Chat Clients"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:7
+msgid "Irssi"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:9
+msgid ""
+"[Irssi](https://irssi.org/) is a modular text mode chat client. It comes "
+"with IRC support built in."
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:11
+#: src/distro/popular-applications/communication/index.md:34
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:17
+#: src/distro/popular-applications/communication/index.md:40
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:20
+msgid "# Start Irssi\n"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:22
+msgid "# Inside irssi:\n"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:24
+msgid "# /join #mychannel          - Join a channel\n"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:26
+msgid "#mychannel          - Leave a channel\n"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:30
+msgid "WeeChat"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:32
+msgid ""
+"[WeeChat](https://weechat.org/) is a fast, light and extensible chat client, "
+"with a text-based user interface."
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:43
+msgid "# Start WeeChat\n"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:45
+msgid "# Inside weechat:\n"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:47
+msgid "# /connect libera\n"
+msgstr ""
+
+#: src/distro/popular-applications/communication/index.md:49
+#: src/distro/popular-applications/communication/index.md:50
+msgid "#mychannel\n"
+msgstr ""

@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-14 11:27:22 +0800",
-        "hash" : "2a30158c3cd77427217581a39a971667b761576a",
-        "title" : "Add regression test for `SIGTRAP` on `int3` and single-step"
+        "date" : "2026-04-28 03:59:17 -0700",
+        "hash" : "f892c39264d978b1875c2524bfa5cfb5941f2b2a",
+        "title" : "Add documentation for popular applications"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-14 11:27:22 +0800",
-        "hash" : "2a30158c3cd77427217581a39a971667b761576a",
-        "title" : "Add regression test for `SIGTRAP` on `int3` and single-step"
+        "date" : "2026-04-28 03:59:17 -0700",
+        "hash" : "f892c39264d978b1875c2524bfa5cfb5941f2b2a",
+        "title" : "Add documentation for popular applications"
       }
     }
   },

@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:1
+msgid "Databases & Middleware"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:3
+msgid ""
+"This category covers relational databases, NoSQL stores, search engines, and "
+"message queues."
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:5
+msgid "Relational Databases"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:7
+msgid "SQLite"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:9
+msgid ""
+"[SQLite](https://www.sqlite.org/) is a C-language library that implements a "
+"small, fast, self-contained SQL database engine."
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:11
+#: src/distro/popular-applications/databases-and-middleware/index.md:39
+#: src/distro/popular-applications/databases-and-middleware/index.md:65
+#: src/distro/popular-applications/databases-and-middleware/index.md:94
+#: src/distro/popular-applications/databases-and-middleware/index.md:125
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:17
+#: src/distro/popular-applications/databases-and-middleware/index.md:45
+#: src/distro/popular-applications/databases-and-middleware/index.md:71
+#: src/distro/popular-applications/databases-and-middleware/index.md:100
+#: src/distro/popular-applications/databases-and-middleware/index.md:131
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:20
+msgid "# Create new SQLite database and open it\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:22
+msgid "# Execute SQL command directly\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:24
+msgid "\"CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:25
+msgid "# Insert data\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:27
+msgid "\"INSERT INTO users (name) VALUES ('Alice');\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:28
+#: src/distro/popular-applications/databases-and-middleware/index.md:149
+msgid "# Query data\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:30
+msgid "\"SELECT * FROM users;\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:33
+msgid "NoSQL & Key-Value Stores"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:35
+msgid "Etcd"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:37
+msgid ""
+"[Etcd](https://etcd.io/) is a distributed key-value store that provides a "
+"reliable way to store data that needs to be accessed by a distributed system."
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:48
+msgid "# Start etcd with specific listen addresses\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:50
+msgid "# Put key-value pair\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:53
+#: src/distro/popular-applications/databases-and-middleware/index.md:82
+#: src/distro/popular-applications/databases-and-middleware/index.md:111
+msgid "# Get value by key\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:56
+#: src/distro/popular-applications/databases-and-middleware/index.md:85
+#: src/distro/popular-applications/databases-and-middleware/index.md:114
+msgid "# Delete key\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:61
+msgid "Redis"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:63
+msgid ""
+"[Redis](https://redis.io/) is an in-memory data structure store used as a "
+"database, cache, and message broker."
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:74
+msgid "# Start Redis server with specific configuration\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:76
+msgid "# Connect to Redis server on specific host and port\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:79
+#: src/distro/popular-applications/databases-and-middleware/index.md:108
+msgid "# Set key-value pair\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:81
+#: src/distro/popular-applications/databases-and-middleware/index.md:110
+msgid "\"Hello World\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:90
+msgid "Valkey"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:92
+msgid ""
+"[Valkey](https://valkey.io/) is a high-performance key-value datastore, "
+"forked from Redis."
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:103
+msgid "# Start Valkey server with specific configuration\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:105
+msgid "# Connect to Valkey server on specific host and port\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:119
+msgid "Time Series Databases"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:121
+msgid "InfluxDB"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:123
+msgid ""
+"[InfluxDB](https://influxdata.com/) is a time series database designed for "
+"high write and query loads."
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:134
+msgid "# Start with specific configuration file\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:136
+msgid "# Connect to remote InfluxDB server\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:139
+msgid "# Create database\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:141
+msgid "\"CREATE DATABASE mydb\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:142
+msgid "# Use database\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:144
+msgid "\"USE mydb\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:145
+msgid "# Write data (InfluxDB line protocol)\n"
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:147
+msgid "\"INSERT cpu,host=server1 value=0.64\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:148
+msgid "\"INSERT memory,host=server1 used=80,total=100\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:151
+msgid "\"SELECT * FROM cpu\""
+msgstr ""
+
+#: src/distro/popular-applications/databases-and-middleware/index.md:152
+msgid "\"SELECT * FROM memory WHERE host='server1'\""
+msgstr ""

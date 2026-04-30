@@ -1,0 +1,798 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/development-tools/index.md:1
+msgid "Development Tools"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:3
+msgid ""
+"This category covers programming language runtimes, version control, build "
+"tools, editors, and debugging utilities."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:5
+msgid "Programming Language Runtimes"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:7
+msgid "Clang"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:9
+msgid ""
+"[Clang](https://clang.llvm.org/) is a C language family frontend for the "
+"LLVM compiler."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:11
+#: src/distro/popular-applications/development-tools/index.md:34
+#: src/distro/popular-applications/development-tools/index.md:60
+#: src/distro/popular-applications/development-tools/index.md:89
+#: src/distro/popular-applications/development-tools/index.md:109
+#: src/distro/popular-applications/development-tools/index.md:129
+#: src/distro/popular-applications/development-tools/index.md:155
+#: src/distro/popular-applications/development-tools/index.md:175
+#: src/distro/popular-applications/development-tools/index.md:195
+#: src/distro/popular-applications/development-tools/index.md:215
+#: src/distro/popular-applications/development-tools/index.md:235
+#: src/distro/popular-applications/development-tools/index.md:256
+#: src/distro/popular-applications/development-tools/index.md:275
+#: src/distro/popular-applications/development-tools/index.md:315
+#: src/distro/popular-applications/development-tools/index.md:344
+#: src/distro/popular-applications/development-tools/index.md:367
+#: src/distro/popular-applications/development-tools/index.md:387
+#: src/distro/popular-applications/development-tools/index.md:414
+#: src/distro/popular-applications/development-tools/index.md:436
+#: src/distro/popular-applications/development-tools/index.md:482
+#: src/distro/popular-applications/development-tools/index.md:516
+#: src/distro/popular-applications/development-tools/index.md:533
+#: src/distro/popular-applications/development-tools/index.md:576
+#: src/distro/popular-applications/development-tools/index.md:596
+#: src/distro/popular-applications/development-tools/index.md:616
+#: src/distro/popular-applications/development-tools/index.md:633
+#: src/distro/popular-applications/development-tools/index.md:653
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:17
+#: src/distro/popular-applications/development-tools/index.md:40
+#: src/distro/popular-applications/development-tools/index.md:66
+#: src/distro/popular-applications/development-tools/index.md:95
+#: src/distro/popular-applications/development-tools/index.md:115
+#: src/distro/popular-applications/development-tools/index.md:135
+#: src/distro/popular-applications/development-tools/index.md:161
+#: src/distro/popular-applications/development-tools/index.md:181
+#: src/distro/popular-applications/development-tools/index.md:201
+#: src/distro/popular-applications/development-tools/index.md:221
+#: src/distro/popular-applications/development-tools/index.md:241
+#: src/distro/popular-applications/development-tools/index.md:262
+#: src/distro/popular-applications/development-tools/index.md:281
+#: src/distro/popular-applications/development-tools/index.md:321
+#: src/distro/popular-applications/development-tools/index.md:350
+#: src/distro/popular-applications/development-tools/index.md:373
+#: src/distro/popular-applications/development-tools/index.md:397
+#: src/distro/popular-applications/development-tools/index.md:420
+#: src/distro/popular-applications/development-tools/index.md:442
+#: src/distro/popular-applications/development-tools/index.md:488
+#: src/distro/popular-applications/development-tools/index.md:522
+#: src/distro/popular-applications/development-tools/index.md:539
+#: src/distro/popular-applications/development-tools/index.md:582
+#: src/distro/popular-applications/development-tools/index.md:602
+#: src/distro/popular-applications/development-tools/index.md:622
+#: src/distro/popular-applications/development-tools/index.md:639
+#: src/distro/popular-applications/development-tools/index.md:659
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:20
+msgid "# Generate LLVM IR instead of native code\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:22
+msgid "# Show included headers\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:25
+msgid "# Compile with optimization\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:30
+msgid "GCC"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:32
+msgid "[GCC](https://gcc.gnu.org/) is the GNU Compiler Collection."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:43
+msgid "# Create object file only\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:45
+msgid "# Compile with output name\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:48
+msgid "# Compile with debug information\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:51
+msgid "# Link object files\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:56
+msgid "Go"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:58
+msgid ""
+"[Go](https://golang.org/) is an open source programming language designed "
+"for simplicity and reliability."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:69
+msgid "# Initialize new Go module\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:71
+msgid "# Build Go program\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:74
+msgid "# Run Go program\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:77
+msgid "# Format source\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:80
+msgid "# Clean build artifacts\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:85
+msgid "Lua"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:87
+msgid ""
+"[Lua](https://www.lua.org/) is a powerful, efficient, lightweight, "
+"embeddable scripting language."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:98
+msgid "# Execute Lua script\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:100
+msgid "# Run Lua code directly\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:102
+#: src/distro/popular-applications/development-tools/index.md:228
+msgid "\"print('Hello World')\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:105
+msgid "Node.js"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:107
+msgid ""
+"[Node.js](https://nodejs.org/) is a JavaScript runtime built on Chrome's V8 "
+"engine."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:118
+msgid "# Run Node.js script\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:120
+msgid "# Run Node.js code directly\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:122
+msgid "\"console.log('Hello World')\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:125
+msgid "Octave"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:127
+msgid ""
+"[GNU Octave](https://octave.org/) is a high-level language for numerical "
+"computations."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:138
+msgid "# Execute Octave script\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:140
+msgid "# Run Octave code directly\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:142
+msgid "\"disp('Hello World')\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:143
+msgid "# Matrix operations\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:145
+msgid "\"[1 2; 3 4] * [5; 6]\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:146
+msgid "# Statistical calculations\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:148
+msgid "\"mean([1 2 3 4 5])\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:151
+msgid "OpenJDK"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:153
+msgid ""
+"[OpenJDK](https://openjdk.java.net/) is a free and open-source "
+"implementation of the Java Platform."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:164
+msgid "# Compile Java source file\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:166
+msgid "# Run Java program\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:171
+msgid "Perl"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:173
+msgid ""
+"[Perl](https://www.perl.org/) is a highly capable, feature-rich programming "
+"language."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:184
+msgid "# Execute Perl script\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:186
+msgid "# Run Perl code directly\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:188
+msgid "'print \"Hello World\"'"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:191
+msgid "PHP"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:193
+msgid ""
+"[PHP](https://www.php.net/) is a popular general-purpose scripting language "
+"for web development."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:204
+msgid "# Execute PHP script\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:206
+msgid "# Run PHP code directly\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:208
+msgid "\"echo 'Hello World';\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:211
+msgid "Python3"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:213
+msgid "[Python](https://www.python.org/) is a high-level programming language."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:224
+msgid "# Execute Python script\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:226
+msgid "# Run Python code directly\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:231
+msgid "Ruby"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:233
+msgid ""
+"[Ruby](https://www.ruby-lang.org/) is a dynamic, open source programming "
+"language."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:244
+msgid "# Execute Ruby script\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:246
+msgid "# Run Ruby code directly\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:248
+msgid "\"puts 'Hello World'\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:251
+msgid "Rust"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:253
+msgid ""
+"[Rust](https://rust-lang.org/) is a language empowering everyone to build "
+"reliable and efficient software."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:265
+msgid "# Compile Rust source code\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:269
+msgid "Version Control"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:271
+msgid "Git"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:273
+msgid "[Git](https://git-scm.com/) is a distributed version control system."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:284
+msgid "# Clone existing repository\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:286
+msgid "# Check repository status\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:289
+msgid "# View commit history\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:292
+msgid "# Create and switch to new branch\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:295
+msgid "# View differences\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:298
+msgid "# Add files to staging area\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:301
+msgid "# Commit changes\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:303
+msgid "\"Commit message\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:304
+msgid "# Push changes to remote\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:309
+msgid "Build Tools"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:311
+msgid "Cargo"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:313
+msgid ""
+"[Cargo](https://doc.rust-lang.org/cargo/) is the Rust package manager and "
+"build system."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:324
+msgid "# Create new Rust project\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:326
+msgid "# Fast compilation check\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:329
+#: src/distro/popular-applications/development-tools/index.md:355
+#: src/distro/popular-applications/development-tools/index.md:402
+msgid "# Build project\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:332
+msgid "# Run project\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:335
+msgid "# Test project\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:340
+msgid "CMake"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:342
+msgid "[CMake](https://cmake.org/) is a cross-platform build system generator."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:353
+msgid "# Generate build files\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:358
+msgid "# Clean build\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:363
+msgid "Make"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:365
+msgid "[Make](https://www.gnu.org/software/make/) automates build processes."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:376
+msgid "# Run make with specific target\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:378
+msgid "# Run make with specific Makefile\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:383
+msgid "Meson"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:385
+msgid ""
+"[Meson](https://mesonbuild.com/) is a fast and user-friendly build system."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:400
+msgid "# Initialize project\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:405
+msgid "# Run output from build directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:410
+msgid "Ninja"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:412
+msgid ""
+"[Ninja](https://ninja-build.org/) is a small, fast build system focused on "
+"speed."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:423
+msgid "# Build in an existing build directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:425
+msgid "# List available targets\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:430
+msgid "Editors & IDEs"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:432
+msgid "Emacs"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:434
+msgid ""
+"[GNU Emacs](https://www.gnu.org/software/emacs/) is a customizable, "
+"extensible text editor."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:445
+msgid "# Open file in Emacs (terminal)\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:447
+msgid "# Basic navigation (C = Ctrl, M = Alt/Esc):\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:449
+msgid "# C-b           - Move backward (left)\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:451
+msgid "# C-p           - Previous line (up)\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:453
+msgid "# C-e           - End of line\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:455
+msgid "# M-b           - Backward one word\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:457
+msgid "# M->           - End of buffer\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:460
+msgid "# Editing:\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:462
+msgid "# DEL (Backspace) - Delete character before cursor\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:464
+msgid "# C-k           - Kill (cut) to end of line\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:466
+msgid "# C-space       - Start selection (set mark)\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:468
+msgid "# M-w           - Copy selected region\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:470
+#: src/distro/popular-applications/development-tools/index.md:561
+msgid "# Saving and quitting:\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:472
+msgid "# C-x C-w       - Save as (prompt for filename)\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:474
+msgid "# C-g           - Cancel current command/prompt\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:478
+msgid "Nano"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:480
+msgid ""
+"[Nano](https://www.nano-editor.org/) is a simple, user-friendly terminal-"
+"based text editor."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:491
+msgid "# Open file in nano\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:493
+msgid "# Basic navigation:\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:495
+msgid "# Ctrl+U        - Paste line\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:497
+msgid "# Ctrl+W        - Search text\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:499
+msgid "# Ctrl+G        - Show help\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:501
+msgid "# Ctrl+_        - Go to line\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:503
+msgid "# File operations:\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:505
+msgid "# Ctrl+X        - Exit nano\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:507
+msgid "# Ctrl+T        - Run spell checker\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:512
+msgid "Neovim"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:514
+msgid ""
+"[Neovim](https://neovim.io/) is a hyperextensible Vim-based text editor."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:525
+msgid "# Open file in neovim\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:529
+msgid "Vim"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:531
+msgid ""
+"[Vim](https://www.vim.org/) is a highly configurable text editor for "
+"efficient text editing."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:542
+msgid "# Open file in vim\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:544
+msgid "# Basic navigation (in normal mode):\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:546
+msgid "# w,W           - Move to next word\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:548
+msgid "# 0             - Move to beginning of line\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:550
+msgid "# gg            - Go to first line\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:552
+msgid "# :10           - Go to line 10\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:554
+msgid "# Editing modes:\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:556
+msgid "# a             - Insert mode after cursor\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:558
+msgid "# O             - Open new line above\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:563
+msgid "# :q            - Quit\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:565
+msgid "# :q!           - Quit without saving\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:570
+msgid "Other Utilities"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:572
+msgid "Hugo"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:574
+msgid "[Hugo](https://gohugo.io/) is a fast static site generator."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:585
+msgid "# Create a new site\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:587
+msgid "# Start a local server\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:592
+msgid "Direnv"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:594
+msgid ""
+"[Direnv](https://direnv.net/) loads and unloads environment variables based "
+"on the current directory."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:605
+msgid "# Allow a new .envrc\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:607
+msgid "# Show directory environment\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:612
+msgid "ShellCheck"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:614
+msgid ""
+"[ShellCheck](https://www.shellcheck.net/) is a static analysis tool for "
+"shell scripts."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:625
+msgid "# Analyze a shell script\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:629
+msgid "jq"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:631
+msgid "[jq](https://jqlang.github.io/jq/) is a command-line JSON processor."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:642
+msgid "# Pretty-print JSON\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:643
+msgid "'.'"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:644
+msgid "# Extract a field\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:646
+msgid "'.items[0].name'"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:649
+msgid "yq"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:651
+msgid "[yq](https://github.com/mikefarah/yq) is a command-line YAML processor."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:662
+msgid "# Read a field from YAML\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:663
+msgid "'.spec.replicas'"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:664
+msgid "# Update a field in place\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:666
+msgid "'.spec.replicas = 3'"
+msgstr ""

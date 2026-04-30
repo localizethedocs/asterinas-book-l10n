@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-03-24T14:04:17Z\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -160,6 +160,7 @@ msgstr "read"
 #: src/kernel/linux-compatibility/index.md:120
 #: src/kernel/linux-compatibility/index.md:121
 #: src/kernel/linux-compatibility/index.md:122
+#: src/kernel/linux-compatibility/index.md:124
 #: src/kernel/linux-compatibility/index.md:125
 #: src/kernel/linux-compatibility/index.md:127
 #: src/kernel/linux-compatibility/index.md:128
@@ -224,6 +225,7 @@ msgstr "read"
 #: src/kernel/linux-compatibility/index.md:220
 #: src/kernel/linux-compatibility/index.md:221
 #: src/kernel/linux-compatibility/index.md:222
+#: src/kernel/linux-compatibility/index.md:223
 #: src/kernel/linux-compatibility/index.md:224
 #: src/kernel/linux-compatibility/index.md:225
 #: src/kernel/linux-compatibility/index.md:226
@@ -427,6 +429,7 @@ msgstr "✅"
 #: src/kernel/linux-compatibility/index.md:220
 #: src/kernel/linux-compatibility/index.md:221
 #: src/kernel/linux-compatibility/index.md:222
+#: src/kernel/linux-compatibility/index.md:223
 #: src/kernel/linux-compatibility/index.md:224
 #: src/kernel/linux-compatibility/index.md:226
 #: src/kernel/linux-compatibility/index.md:227
@@ -749,7 +752,6 @@ msgstr "mincore"
 #: src/kernel/linux-compatibility/index.md:93
 #: src/kernel/linux-compatibility/index.md:94
 #: src/kernel/linux-compatibility/index.md:123
-#: src/kernel/linux-compatibility/index.md:124
 #: src/kernel/linux-compatibility/index.md:126
 #: src/kernel/linux-compatibility/index.md:152
 #: src/kernel/linux-compatibility/index.md:157
@@ -784,7 +786,6 @@ msgstr "mincore"
 #: src/kernel/linux-compatibility/index.md:207
 #: src/kernel/linux-compatibility/index.md:208
 #: src/kernel/linux-compatibility/index.md:210
-#: src/kernel/linux-compatibility/index.md:223
 #: src/kernel/linux-compatibility/index.md:228
 #: src/kernel/linux-compatibility/index.md:229
 #: src/kernel/linux-compatibility/index.md:230
@@ -846,7 +847,6 @@ msgstr "❌"
 #: src/kernel/linux-compatibility/index.md:93
 #: src/kernel/linux-compatibility/index.md:94
 #: src/kernel/linux-compatibility/index.md:123
-#: src/kernel/linux-compatibility/index.md:124
 #: src/kernel/linux-compatibility/index.md:126
 #: src/kernel/linux-compatibility/index.md:152
 #: src/kernel/linux-compatibility/index.md:157
@@ -881,7 +881,6 @@ msgstr "❌"
 #: src/kernel/linux-compatibility/index.md:207
 #: src/kernel/linux-compatibility/index.md:208
 #: src/kernel/linux-compatibility/index.md:210
-#: src/kernel/linux-compatibility/index.md:223
 #: src/kernel/linux-compatibility/index.md:228
 #: src/kernel/linux-compatibility/index.md:229
 #: src/kernel/linux-compatibility/index.md:230
@@ -1599,6 +1598,10 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:124
 msgid "ptrace"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:124
+msgid "[⚠️](syscall-flag-coverage/process-and-thread-management/#ptrace)"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:125

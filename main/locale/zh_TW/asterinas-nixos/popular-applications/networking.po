@@ -1,0 +1,298 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/networking/index.md:1
+msgid "Networking"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:3
+msgid ""
+"This category covers network utilities, DNS/DHCP servers, VPN tools, and "
+"firewalls."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:5
+msgid "Network Utilities"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:7
+msgid "Curl"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:9
+msgid "[Curl](https://curl.se/) transfers data with URLs."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:11
+#: src/distro/popular-applications/networking/index.md:31
+#: src/distro/popular-applications/networking/index.md:54
+#: src/distro/popular-applications/networking/index.md:83
+#: src/distro/popular-applications/networking/index.md:112
+#: src/distro/popular-applications/networking/index.md:141
+#: src/distro/popular-applications/networking/index.md:167
+#: src/distro/popular-applications/networking/index.md:189
+#: src/distro/popular-applications/networking/index.md:217
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:17
+#: src/distro/popular-applications/networking/index.md:37
+#: src/distro/popular-applications/networking/index.md:60
+#: src/distro/popular-applications/networking/index.md:89
+#: src/distro/popular-applications/networking/index.md:118
+#: src/distro/popular-applications/networking/index.md:147
+#: src/distro/popular-applications/networking/index.md:173
+#: src/distro/popular-applications/networking/index.md:195
+#: src/distro/popular-applications/networking/index.md:223
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:20
+msgid "# Basic GET request\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:22
+#: src/distro/popular-applications/networking/index.md:178
+msgid "# Download with specific filename\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:27
+msgid "LFTP"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:29
+msgid "[LFTP](https://lftp.yar.ru/) is a sophisticated file transfer program."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:40
+msgid "# Connect to FTP server\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:42
+msgid "# Connect to HTTP server\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:45
+#: src/distro/popular-applications/networking/index.md:176
+msgid "# Download single file\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:47
+msgid "\"open ftp.sjtu.edu.cn; cd /ubuntu-cd; get robots.txt\""
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:50
+msgid "Netcat"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:52
+msgid ""
+"[Netcat](https://man.openbsd.org/nc.1) is a networking utility for reading "
+"from and writing to network connections."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:63
+#: src/distro/popular-applications/networking/index.md:150
+msgid "# Basic TCP connection\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:65
+msgid "# Listen on specific port\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:68
+msgid "# Send file over network\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:71
+msgid "# Receive file over network\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:74
+msgid "# Zero-I/O mode (scanning)\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:79
+msgid "Rclone"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:81
+msgid ""
+"[Rclone](https://rclone.org/) syncs files to and from cloud storage "
+"providers."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:92
+msgid "# Copy files\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:94
+msgid "# Sync files\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:97
+msgid "# Check differences without transferring\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:100
+msgid "# Operations on the storage\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:108
+msgid "Rsync"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:110
+msgid ""
+"[Rsync](https://rsync.samba.org/) is a fast and versatile file "
+"synchronization tool."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:121
+msgid "# Sync local directories\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:123
+msgid "# Delete files not in source\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:126
+msgid "# Show progress during transfer\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:129
+msgid "# Exclude specific files/patterns\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:131
+msgid "'*.tmp'"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:132
+msgid "# Include only specific files\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:134
+msgid "'*.txt'"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:134
+msgid "'*'"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:137
+msgid "Socat"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:139
+msgid ""
+"[Socat](http://www.dest-unreach.org/socat/) is a multipurpose relay for "
+"bidirectional data transfer."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:152
+msgid "# Listen on TCP port\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:155
+msgid "# Echo server\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:158
+msgid "# HTTP server (simple)\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:160
+msgid "\"echo 'HTTP/1.0 200 OK'; echo; echo 'Hello World'\""
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:163
+msgid "Wget"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:165
+msgid ""
+"[Wget](https://www.gnu.org/software/wget/) downloads files from the web."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:183
+msgid "DNS & DHCP"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:185
+msgid "LDNS"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:187
+msgid ""
+"[LDNS](https://www.nlnetlabs.nl/projects/ldns/) is a library for DNS "
+"programming with C."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:198
+msgid "# Basic DNS lookup\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:200
+msgid "# Query specific record type\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:202
+msgid "# IPv4 address\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:203
+msgid "# IPv6 address\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:204
+msgid "# Mail exchange\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:205
+msgid "# Name servers\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:206
+msgid "# Text records\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:207
+msgid "# Canonical name\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:208
+msgid "# Reverse DNS lookup\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:213
+msgid "Whois"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:215
+msgid ""
+"[Whois](https://packages.qa.debian.org/w/whois.html) queries domain "
+"registration information."
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:226
+msgid "# Basic whois lookup\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:228
+msgid "# Query specific whois server\n"
+msgstr ""
+
+#: src/distro/popular-applications/networking/index.md:231
+msgid "# Query IP address\n"
+msgstr ""

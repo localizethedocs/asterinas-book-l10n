@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,4 +22,239 @@ msgid ""
 "Asterinas NixOS, but it is impractical to test every package and document "
 "its support status. Instead, we group popular applications into categories "
 "and document the ones we have verified to work."
+msgstr ""
+
+#: src/distro/popular-applications/index.md:10
+msgid "Categories"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:12
+msgid ""
+"The categorization is designed to scale to hundreds of applications while "
+"serving both server and desktop use cases. It follows a two-level hierarchy "
+"(Category > Sub-category) with the following top-level categories:"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:15
+msgid "Category"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:15
+msgid "Description"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:15
+msgid "Packages"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:17
+msgid "[System Core](system-core/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:17
+msgid "Shells, init systems, system monitoring, and essential utilities"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:17
+msgid ""
+"\"Bash\", \"Fish\", \"Zsh\", \"BusyBox\", \"Systemd\", \"Fastfetch\", "
+"\"Htop\", \"Lsof\", \"Ncdu\", \"Procps\", \"Coreutils\", \"Diffutils\", "
+"\"Findutils\", \"Grep\", \"Hostname\", \"Less\", \"Man-pages\", \"Texinfo\", "
+"\"Util-linux\", \"Which\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:18
+msgid "[Nix and NixOS Tools](nix-and-nixos-tools/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:18
+msgid "Nix package management and NixOS system management tools"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:18
+msgid "\"Nix\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:19
+msgid ""
+"[Containerization and Virtualization](containerization-and-virtualization/"
+"README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:19
+msgid "Container runtimes and image management tools"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:19
+msgid "\"Podman\", \"Skopeo\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:20
+msgid "[Networking](networking/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:20
+msgid "Network utilities, DNS, VPN, and firewalls"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:20
+msgid ""
+"\"Curl\", \"LFTP\", \"Netcat\", \"Rclone\", \"Rsync\", \"Socat\", \"Wget\", "
+"\"LDNS\", \"Whois\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:21
+msgid "[Web Servers & Proxies](web-servers-and-proxies/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:21
+msgid "Web servers and reverse proxies"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:21
+msgid "\"Apache HTTP Server\", \"Caddy\", \"Nginx\", \"OpenResty\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:22
+msgid "[Databases & Middleware](databases-and-middleware/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:22
+msgid "Relational databases, NoSQL, search engines, and message queues"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:22
+msgid "\"SQLite\", \"Etcd\", \"Redis\", \"Valkey\", \"InfluxDB\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:23
+msgid "[Development Tools](development-tools/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:23
+msgid "Language runtimes, build tools, editors, and debugging tools"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:23
+msgid ""
+"\"Clang\", \"GCC\", \"Go\", \"Lua\", \"Node.js\", \"Octave\", \"OpenJDK\", "
+"\"Perl\", \"PHP\", \"Python3\", \"Ruby\", \"Rust\", \"Git\", \"Cargo\", "
+"\"CMake\", \"Make\", \"Meson\", \"Ninja\", \"Emacs\", \"Nano\", \"Neovim\", "
+"\"Vim\", \"Hugo\", \"Direnv\", \"ShellCheck\", \"jq\", \"yq\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:24
+msgid "[CI/CD & DevOps](cicd-and-devops/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:24
+msgid "CI/CD runners and infrastructure automation"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:24
+msgid "\"Just\", \"Task\", \"GoReleaser\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:25
+msgid "[Monitoring & Observability](monitoring-and-observability/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:25
+msgid "Metrics, logging, and tracing tools"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:25
+msgid "\"Prometheus\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:26
+msgid ""
+"[Desktop Environments & Display](desktop-environments-and-display/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:26
+msgid "Desktop environments, window managers, and display servers"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:26
+msgid ""
+"\"Xfce\", \"galculator\", \"mousepad\", \"mupdf\", \"fairymax\", \"five-or-"
+"more\", \"lbreakout2\", \"gnome-chess\", \"gnome-mines\", \"gnome-sudoku\", "
+"\"tali\", \"xboard\", \"xgalaga\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:27
+msgid "[Web Browsers](web-browsers/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:27
+msgid "Web browsers"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:27
+msgid "\"Links2\", \"W3m\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:28
+msgid "[Office & Productivity](office-and-productivity/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:28
+msgid "Office suites, document viewers, and note-taking apps"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:28
+msgid "\"MuPDF\", \"Pandoc\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:29
+msgid "[Multimedia](multimedia/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:29
+msgid "Video/audio players, graphics tools, and streaming software"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:29
+msgid "\"SoX\", \"ImageMagick\", \"FFmpeg\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:30
+msgid "[Communication](communication/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:30
+msgid "Email clients, instant messaging, and video conferencing"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:30
+msgid "\"Irssi\", \"WeeChat\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:31
+msgid "[File Management & Terminal](file-management-and-terminal/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:31
+msgid "File managers, terminal emulators, archives, and CLI utilities"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:31
+msgid ""
+"\"Bzip2\", \"Gzip\", \"P7zip\", \"Tar\", \"Xz\", \"Zip\", \"Screen\", "
+"\"File\", \"Bat\", \"Gawk\", \"Sd\", \"Sed\", \"Eza\", \"Fd\", \"Fzf\", "
+"\"Ripgrep\", \"The Silver Searcher\", \"Tree\", \"Age\", \"Crunch\", "
+"\"GnuPG\", \"John the Ripper\", \"Restic\", \"Wipe\""
+msgstr ""
+
+#: src/distro/popular-applications/index.md:32
+msgid "[AI & Machine Learning](ai-and-machine-learning/README.md)"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:32
+msgid "Deep learning frameworks, LLM tools, and inference engines"
+msgstr ""
+
+#: src/distro/popular-applications/index.md:32
+msgid "\"PyTorch\", \"TensorFlow\", \"Ollama\""
 msgstr ""

@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:1
+msgid "Web Servers & Proxies"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:3
+msgid "This category covers web servers and reverse proxies/load balancers."
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:5
+msgid "Web Servers"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:7
+msgid "Apache HTTP Server"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:9
+msgid ""
+"[Apache HTTP Server](https://httpd.apache.org/) is a widely-used web server "
+"software."
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:11
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:28
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:45
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:62
+msgid "Installation"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:17
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:34
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:51
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:68
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:20
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:54
+msgid "# Start server with a configuration file\n"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:24
+msgid "Caddy"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:26
+msgid ""
+"[Caddy](https://caddyserver.com/) is a modern web server with automatic "
+"HTTPS."
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:37
+msgid "# Start a file server\n"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:41
+msgid "Nginx"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:43
+msgid ""
+"[Nginx](https://nginx.org/) is a high-performance web server, reverse proxy, "
+"and load balancer."
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:58
+msgid "OpenResty"
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:60
+msgid ""
+"[OpenResty](https://openresty.org/) is an Nginx-based web platform with "
+"LuaJIT support."
+msgstr ""
+
+#: src/distro/popular-applications/web-servers-and-proxies/index.md:71
+msgid "# Start OpenResty with a custom prefix and config\n"
+msgstr ""
