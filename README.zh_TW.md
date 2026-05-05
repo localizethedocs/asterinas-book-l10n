@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-<h1 id="localization-of-the-asterinas-book">Localization of The Asterinas Book</h1>
+<h1 id="localization-of-the-asterinas-book">Asterinas 手冊的在地化</h1>
 </div>
 
 <details><summary><strong>切換語言</strong></summary>
