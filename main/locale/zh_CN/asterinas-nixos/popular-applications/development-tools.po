@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/distro/popular-applications/development-tools/index.md:1
@@ -63,7 +63,7 @@ msgstr ""
 #: src/distro/popular-applications/development-tools/index.md:633
 #: src/distro/popular-applications/development-tools/index.md:653
 msgid "Installation"
-msgstr ""
+msgstr "安装"
 
 #: src/distro/popular-applications/development-tools/index.md:17
 #: src/distro/popular-applications/development-tools/index.md:40
@@ -93,7 +93,7 @@ msgstr ""
 #: src/distro/popular-applications/development-tools/index.md:639
 #: src/distro/popular-applications/development-tools/index.md:659
 msgid "Verified Usage"
-msgstr ""
+msgstr "已验证的使用情况"
 
 #: src/distro/popular-applications/development-tools/index.md:20
 msgid "# Generate LLVM IR instead of native code\n"

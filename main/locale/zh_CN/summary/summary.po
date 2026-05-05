@@ -430,12 +430,3 @@ msgstr "RFC-0002: Asterinas NixOS"
 #: src/SUMMARY.md:120
 msgid "RFC Template"
 msgstr "RFC 模板"
-
-#~ msgid "Package Management"
-#~ msgstr "包管理"
-
-#~ msgid "Desktop Environment"
-#~ msgstr "桌面环境"
-
-#~ msgid "Containerization"
-#~ msgstr "容器化"
