@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/intel-tdx.md:36
-msgid "Prepare the Intel TDX Environment"
+msgid "Prepare the Intel TDX environment"
 msgstr ""
 
 #: src/kernel/intel-tdx.md:38
@@ -109,7 +109,7 @@ msgid "If everything goes well, Asterinas is now up and running inside a TD."
 msgstr ""
 
 #: src/kernel/intel-tdx.md:82
-msgid "Using GDB to Debug"
+msgid "Using GDB to debug"
 msgstr ""
 
 #: src/kernel/intel-tdx.md:84

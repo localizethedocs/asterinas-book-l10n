@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgid "Advanced Build and Test Instructions"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:3
-msgid "User-Mode Unit Tests"
+msgid "User-mode unit tests"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:5
@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:17
-msgid "Kernel-Mode Unit Tests"
+msgid "Kernel-mode unit tests"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:19
@@ -50,11 +50,11 @@ msgid ""
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:33
-msgid "Integration Test"
+msgid "Integration test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:35
-msgid "Regression Test"
+msgid "Regression test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:37
@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:43
-msgid "Conformance Test"
+msgid "Conformance test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:45
@@ -89,7 +89,7 @@ msgid "Debug"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:65
-msgid "Using GDB to Debug"
+msgid "Using GDB to debug"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:67

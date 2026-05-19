@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:18
-msgid "Strace: A Quick Example"
+msgid "Strace: a quick example"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:20
@@ -90,7 +90,7 @@ msgid "SCML's syntax draws directly from these conventions."
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:49
-msgid "SCML by Example"
+msgid "SCML by example"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:51
@@ -108,7 +108,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:61
-msgid "Matching Rules for System Calls"
+msgid "Matching rules for system calls"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:63
@@ -159,7 +159,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:106
-msgid "C-Style Comments"
+msgid "C-style comments"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:108
@@ -174,7 +174,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:118
-msgid "Matching Rules for Bitflags"
+msgid "Matching rules for bitflags"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:120
@@ -191,7 +191,7 @@ msgid "// Define a reusable bitflags rule\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:136
-msgid "Matching Rules for Structs"
+msgid "Matching rules for structs"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:138
@@ -224,7 +224,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:174
-msgid "Matching Rules for Arrays"
+msgid "Matching rules for arrays"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:176
@@ -244,7 +244,7 @@ msgid "Notice how SCML denotes an array with the `[ <struct_rule> ]` syntax."
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:196
-msgid "Special Built-in Matching Rules"
+msgid "Special built-in matching rules"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:198
@@ -300,7 +300,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:248
-msgid "Advanced Usage"
+msgid "Advanced usage"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:250
@@ -353,7 +353,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:324
-msgid "Formal Syntax"
+msgid "Formal syntax"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:326
