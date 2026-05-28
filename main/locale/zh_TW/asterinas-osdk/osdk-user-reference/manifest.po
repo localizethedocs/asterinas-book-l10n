@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -400,33 +400,7 @@ msgid ""
 "supported_archs = [\"riscv64\"]\n"
 "boot.method = \"qemu-direct\"\n"
 "build.strip_elf = false\n"
-"\n"
-"qemu.args = \"\"\"\\\n"
-"    -cpu rv64,svpbmt=true \\\n"
-"    -machine virt \\\n"
-"    -m ${MEM-:8G} \\\n"
-"    -smp ${SMP-:1} \\\n"
-"    --no-reboot \\\n"
-"    -nographic \\\n"
-"    -display none \\\n"
-"    -serial chardev:mux \\\n"
-"    -monitor chardev:mux \\\n"
-"    -chardev stdio,id=mux,mux=on,signal=off,logfile=qemu.log \\\n"
-"    -drive if=none,format=raw,id=x0,file=./test/initramfs/build/ext2.img \\\n"
-"    -drive if=none,format=raw,id=x1,file=./test/initramfs/build/exfat.img "
-"\\\n"
-"    # NOTE: The `/etc/profile.d/init.sh` assumes that `ext2.img` appears as "
-"the first block device (`/dev/vda`).\n"
-"    # The ordering below ensures `x1` (ext2.img) is discovered before `x0`, "
-"maintaining this assumption.\n"
-"    # TODO: Once UUID-based mounting is implemented, this strict ordering "
-"will no longer be required.\n"
-"    -device virtio-blk-device,drive=x1 \\\n"
-"    -device virtio-blk-device,drive=x0 \\\n"
-"    -device virtio-keyboard-device \\\n"
-"    -device virtio-serial-device \\\n"
-"    -device virtconsole,chardev=mux \\\n"
-"\"\"\"\n"
+"qemu.args = \"$(./tools/qemu_args.sh riscv)\"\n"
 "\n"
 "[scheme.\"sifive_u\"]\n"
 "supported_archs = [\"riscv64\"]\n"
@@ -469,11 +443,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:335
+#: src/osdk/reference/manifest.md:313
 msgid "Scheme"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:337
+#: src/osdk/reference/manifest.md:315
 msgid ""
 "Scheme is an advanced feature that allows you to create multiple profiles "
 "for the same action (`build`, `run`, or `test`) under different scenarios (e."
@@ -481,32 +455,32 @@ msgid ""
 "configuration) and can be selected using the `--scheme` CLI argument."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:342
+#: src/osdk/reference/manifest.md:320
 msgid ""
 "If a scheme `<s>` is selected for an action (such as `test`), the value of "
 "an unspecified but required configuration `key` will be determined by the "
 "following rules:"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:345
+#: src/osdk/reference/manifest.md:323
 msgid ""
 "If the general config (`scheme.<s>.key`) exists for the selected scheme, use "
 "this value."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:347
+#: src/osdk/reference/manifest.md:325
 msgid ""
 "Otherwise, if the default scheme has this configuration for the action "
 "(`test.key`), use this value."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:349
+#: src/osdk/reference/manifest.md:327
 msgid ""
 "Otherwise, if the default scheme has this configuration (`key`), use this "
 "value."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:352
+#: src/osdk/reference/manifest.md:330
 msgid ""
 "If the value is still not found, either the default value for the key will "
 "be used or an error will be thrown."

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -36,12 +36,12 @@ msgid ""
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:11
-msgid "Fish"
+msgid "fish"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:13
 msgid ""
-"[Fish](https://fishshell.com/) is a user-friendly shell with autosuggestions "
+"[fish](https://fishshell.com/) is a user-friendly shell with autosuggestions "
 "and web-based configuration."
 msgstr ""
 
@@ -116,12 +116,12 @@ msgid ""
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:51
-msgid "Systemd"
+msgid "systemd"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:53
 msgid ""
-"[Systemd](https://systemd.io/) is a software suite for system and service "
+"[systemd](https://systemd.io/) is a software suite for system and service "
 "management, enabled by default in `rootfs` of Asterinas NixOS."
 msgstr ""
 
@@ -130,12 +130,12 @@ msgid "System Monitoring"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:57
-msgid "Fastfetch"
+msgid "fastfetch"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:59
 msgid ""
-"[Fastfetch](https://github.com/fastfetch-cli/fastfetch) is a system "
+"[fastfetch](https://github.com/fastfetch-cli/fastfetch) is a system "
 "information tool similar to `neofetch`."
 msgstr ""
 
@@ -148,11 +148,11 @@ msgid "# Save current output to a file\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:77
-msgid "Htop"
+msgid "htop"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:79
-msgid "[Htop](https://htop.dev/) is an interactive process viewer."
+msgid "[htop](https://htop.dev/) is an interactive process viewer."
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:90
@@ -172,12 +172,12 @@ msgid "# q             - Quit\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:100
-msgid "Lsof"
+msgid "lsof"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:102
 msgid ""
-"[Lsof](https://github.com/lsof-org/lsof) lists open files and the processes "
+"[lsof](https://github.com/lsof-org/lsof) lists open files and the processes "
 "that opened them."
 msgstr ""
 
@@ -198,12 +198,12 @@ msgid "# Show files opened under a directory\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:126
-msgid "Ncdu"
+msgid "ncdu"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:128
 msgid ""
-"[Ncdu](https://dev.yorhel.nl/ncdu) is a disk usage analyzer with an "
+"[ncdu](https://dev.yorhel.nl/ncdu) is a disk usage analyzer with an "
 "interactive TUI."
 msgstr ""
 
@@ -216,12 +216,12 @@ msgid "# Save scan results to a file\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:146
-msgid "Procps"
+msgid "procps"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:148
 msgid ""
-"[Procps](https://gitlab.com/procps-ng/procps) provides system utilities for "
+"[procps](https://gitlab.com/procps-ng/procps) provides system utilities for "
 "process management and system information."
 msgstr ""
 
@@ -266,12 +266,12 @@ msgid "Essential Tooling"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:186
-msgid "Coreutils"
+msgid "coreutils"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:188
 msgid ""
-"[Coreutils](https://www.gnu.org/software/coreutils/) includes basic file, "
+"[coreutils](https://www.gnu.org/software/coreutils/) includes basic file, "
 "shell and text manipulation utilities."
 msgstr ""
 
@@ -448,12 +448,12 @@ msgid "# Bytes only\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:302
-msgid "Diffutils"
+msgid "diffutils"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:304
 msgid ""
-"[Diffutils](https://www.gnu.org/software/diffutils/) compares files line by "
+"[diffutils](https://www.gnu.org/software/diffutils/) compares files line by "
 "line."
 msgstr ""
 
@@ -466,12 +466,12 @@ msgid "# Compare three files line by line\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:324
-msgid "Findutils"
+msgid "findutils"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:326
 msgid ""
-"[Findutils](https://www.gnu.org/software/findutils/) provides the basic "
+"[findutils](https://www.gnu.org/software/findutils/) provides the basic "
 "directory searching utilities."
 msgstr ""
 
@@ -525,12 +525,12 @@ msgid "\"*.txt\""
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:354
-msgid "Grep"
+msgid "grep"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:356
 msgid ""
-"[Grep](https://www.gnu.org/software/grep/) searches for patterns in text."
+"[grep](https://www.gnu.org/software/grep/) searches for patterns in text."
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:367
@@ -575,12 +575,12 @@ msgid "\"foo|bar\""
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:389
-msgid "Hostname"
+msgid "hostname"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:391
 msgid ""
-"[Hostname](https://man7.org/linux/man-pages/man1/hostname.1.html) shows or "
+"[hostname](https://man7.org/linux/man-pages/man1/hostname.1.html) shows or "
 "sets the system host name."
 msgstr ""
 
@@ -605,12 +605,12 @@ msgid "# Show ip address for the hostname\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:418
-msgid "Less"
+msgid "less"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:420
 msgid ""
-"[Less](https://www.greenwoodsoftware.com/less/) is a terminal pager program "
+"[less](https://www.greenwoodsoftware.com/less/) is a terminal pager program "
 "for viewing text files."
 msgstr ""
 
@@ -635,12 +635,12 @@ msgid "#   u             - Backward half window\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:443
-msgid "Man-pages"
+msgid "man-pages"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:445
 msgid ""
-"[Man-pages](https://www.kernel.org/doc/man-pages/) provides the Linux manual "
+"[man-pages](https://www.kernel.org/doc/man-pages/) provides the Linux manual "
 "pages."
 msgstr ""
 
@@ -723,12 +723,12 @@ msgid "#   s           - Search forward\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:501
-msgid "Util-linux"
+msgid "util-linux"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:503
 msgid ""
-"[Util-linux](https://www.kernel.org/pub/linux/utils/util-linux/) provides a "
+"[util-linux](https://www.kernel.org/pub/linux/utils/util-linux/) provides a "
 "set of system utilities for any Linux system."
 msgstr ""
 
@@ -781,12 +781,12 @@ msgid "# Display where program is located\n"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:548
-msgid "Which"
+msgid "which"
 msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:550
 msgid ""
-"[Which](https://www.gnu.org/software/which/) shows the full path of (shell) "
+"[which](https://www.gnu.org/software/which/) shows the full path of (shell) "
 "commands"
 msgstr ""
 

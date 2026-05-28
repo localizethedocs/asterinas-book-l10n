@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,12 +26,12 @@ msgid "CI/CD Runners"
 msgstr ""
 
 #: src/distro/popular-applications/cicd-and-devops/index.md:7
-msgid "Just"
+msgid "just"
 msgstr ""
 
 #: src/distro/popular-applications/cicd-and-devops/index.md:9
 msgid ""
-"[Just](https://github.com/casey/just) is a handy way to save and run project-"
+"[just](https://github.com/casey/just) is a handy way to save and run project-"
 "specific commands."
 msgstr ""
 

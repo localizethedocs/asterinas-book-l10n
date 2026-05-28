@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,8 +16,8 @@ msgid "Advanced Build and Test Instructions"
 msgstr "進階建置與測試說明"
 
 #: src/kernel/advanced-instructions.md:3
-msgid "User-Mode Unit Tests"
-msgstr "使用者模式單元測試"
+msgid "User-mode unit tests"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:5
 msgid ""
@@ -37,8 +37,8 @@ msgid ""
 msgstr "若要測試單個軟體箱，請進入該軟體箱的目錄並執行 `cargo test`。"
 
 #: src/kernel/advanced-instructions.md:17
-msgid "Kernel-Mode Unit Tests"
-msgstr "內核模式單元測試"
+msgid "Kernel-mode unit tests"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:19
 msgid ""
@@ -57,11 +57,11 @@ msgstr ""
 "test`。"
 
 #: src/kernel/advanced-instructions.md:33
-msgid "Integration Test"
-msgstr "整合測試"
+msgid "Integration test"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:35
-msgid "Regression Test"
+msgid "Regression test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:37
@@ -71,7 +71,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:43
-msgid "Conformance Test"
+msgid "Conformance test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:45
@@ -96,8 +96,8 @@ msgid "Debug"
 msgstr "除錯"
 
 #: src/kernel/advanced-instructions.md:65
-msgid "Using GDB to Debug"
-msgstr "使用 GDB 進行除錯"
+msgid "Using GDB to debug"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:67
 msgid ""
@@ -146,3 +146,15 @@ msgid ""
 "breakpoints. See \"hbreak\" in [the GDB manual](https://ftp.gnu.org/old-gnu/"
 "Manuals/gdb/html_node/gdb_28.html) for details."
 msgstr ""
+
+#~ msgid "User-Mode Unit Tests"
+#~ msgstr "使用者模式單元測試"
+
+#~ msgid "Kernel-Mode Unit Tests"
+#~ msgstr "內核模式單元測試"
+
+#~ msgid "Integration Test"
+#~ msgstr "整合測試"
+
+#~ msgid "Using GDB to Debug"
+#~ msgstr "使用 GDB 進行除錯"

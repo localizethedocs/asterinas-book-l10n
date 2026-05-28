@@ -1,0 +1,305 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/vm-based-containers/kata.md:1
+msgid "Using Asterinas as a Kata Guest Kernel"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:3
+msgid ""
+"This guide explains how to use Asterinas as the guest kernel for Kata "
+"Containers."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:6
+msgid ""
+"[Kata Containers](https://github.com/kata-containers/kata-containers) is a "
+"VM-based container runtime. It runs each sandbox or standalone container "
+"workload inside a lightweight virtual machine, so workloads do not share the "
+"host kernel. In Kubernetes, the sandbox maps to a pod, so containers in the "
+"same pod can share that VM. This design combines the deployment model of "
+"containers with the stronger isolation boundary of virtual machines. It "
+"reduces the risk that a compromised workload can affect the host or other "
+"containers."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:18
+msgid ""
+"The Kata Containers setup used in this guide comes from the [Asterinas fork "
+"of Kata Containers](https://github.com/asterinas/kata-containers). The fork "
+"carries the Asterinas-specific patches, helper scripts, and configuration "
+"for building, installing, and testing Kata with Asterinas as the guest "
+"kernel."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:24
+msgid "Step 1: Prepare the host kernel"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:26
+msgid ""
+"Kata Containers requires a host with KVM and vhost support. The commands in "
+"this guide are currently written for x86-64 hosts."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:29
+msgid "Verify that the required device nodes exist:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:35
+msgid "If any of them are missing, load the matching kernel modules:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:40
+msgid "# Or use kvm_amd on AMD hosts.\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:44
+msgid ""
+"Then make sure the user running Docker can access `/dev/kvm` and `/dev/vhost-"
+"vsock`."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:47
+msgid "Step 2: Enter the Kata-ready environment"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:49
+msgid ""
+"We provide the `asterinas/kata` Docker image, which is based on `asterinas/"
+"asterinas` and bundles Kata Containers, the Asterinas guest kernel, and the "
+"Kata configuration. The image also provides helper scripts under `/root/kata-"
+"containers`. Use the same image in one of the two ways below: End users can "
+"run it directly, while kernel developers can mount the Asterinas source tree."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:59
+msgid "Step 2.1: Prepare Docker arguments"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:61
+msgid "Define the following Docker arguments:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:74
+msgid "These flags are required for Kata:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:76
+msgid ""
+"`--cgroupns host` shares the host cgroup namespace so that `containerd` "
+"inside the container can manage Kata workloads."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:78
+msgid "`--privileged` is required for KVM and nested container management."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:79
+msgid ""
+"`--device /dev/kvm` and `--device /dev/vhost-vsock` expose the "
+"virtualization devices that Kata needs."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:82
+msgid ""
+"`--tmpfs /tmp:exec,...` and `--tmpfs /var/lib/containerd:exec,...` give Kata "
+"enough temporary storage space to create containers."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:85
+msgid "These Docker arguments apply to both end users and kernel developers."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:87
+msgid "Step 2.2: Start the Docker container"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:89
+msgid "For end users"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:91
+msgid ""
+"Run an `asterinas/kata` Docker container to enter an environment with Kata "
+"and Asterinas preinstalled:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:101
+msgid ""
+"The command above makes `/root/kata-containers` the working directory, so "
+"the `tools/kata/` helper scripts are available at the relative paths used "
+"below."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:105
+msgid ""
+"After entering the container, continue with [Step 3: Start a Kata workload]"
+"(#step-3-start-a-kata-workload)."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:108
+msgid "For kernel developers"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:110
+msgid ""
+"Run an `asterinas/kata` Docker container, with the Asterinas source tree "
+"mounted:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:114
+msgid "# Assumes the Asterinas source has already been cloned locally.\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:115
+msgid "$HOME/asterinas"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:124
+msgid ""
+"This setup allows you to rebuild the kernel and test how kernel changes "
+"affect Kata workloads. The Asterinas source tree is mounted at `/root/"
+"asterinas`. The command above makes `/root/kata-containers` the working "
+"directory, so the `tools/kata/` helper scripts are available at the relative "
+"paths used below."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:131
+msgid ""
+"Then continue with [Step 3: Start a Kata workload](#step-3-start-a-kata-"
+"workload)."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:133
+msgid "Step 3: Start a Kata workload"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:135
+msgid "Step 3.1: Start services"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:137
+msgid ""
+"Start `containerd` and `syslogd`, the background services required by Kata:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:144
+msgid "Check their status to make sure they started successfully:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:150
+msgid "Step 3.2: Run Alpine with Kata"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:152
+msgid "Use `nerdctl` with Kata to start an Alpine container:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:164
+msgid "The `nerdctl` flags above are also required:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:166
+msgid ""
+"`--cgroup-manager cgroupfs` is required because the example runs inside a "
+"Docker container where the systemd cgroup driver is not available."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:169
+msgid ""
+"`--net none` is required because Asterinas does not yet support hot-plugged "
+"network devices, so workloads inside the guest cannot access the network."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:173
+msgid "Step 3.3: Verify the guest"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:175
+msgid ""
+"Run the following commands after the container starts. The first checks the "
+"guest kernel, and the second checks the workload rootfs:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:184
+msgid ""
+"The `/proc/cmdline` output should contain the Asterinas kernel image path. "
+"If you are using the image's default kernel, look for:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:192
+msgid "If you configured a locally built kernel in Step 4, look for:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:199
+msgid ""
+"This is the most direct check that Kata booted an Asterinas guest kernel. "
+"The `/etc/alpine-release` output should print the Alpine version of the "
+"container rootfs."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:203
+msgid "Step 3.4: Clean up"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:205
+msgid "Remove the container after exiting it:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:211
+msgid "Step 4: Use a local kernel (optional)"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:213
+msgid ""
+"This step is for the kernel-developer setup only: it requires the Asterinas "
+"source tree, so it assumes you entered the Kata-ready environment through "
+"the [For kernel developers](#for-kernel-developers) setup in Step 2.2."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:218
+msgid "Build the kernel first:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:224
+msgid "Verify that the command produced the kernel image:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:230
+msgid "Pass that path to `tools/kata/kata_env.sh install`:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:237
+msgid ""
+"Configuring a local kernel re-runs `tools/kata/kata_env.sh install` (re-"
+"applying the Kata install) and writes a new `/etc/kata-containers/"
+"configuration.toml` that points at your local kernel."
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:242
+msgid ""
+"Start or restart the Kata services. If the services are already running from "
+"the previous run, stop them first:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:250
+msgid "Start the services again:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/kata.md:257
+msgid ""
+"Then run the `nerdctl run` command from [Step 3.2: Run Alpine with Kata]"
+"(#step-32-run-alpine-with-kata). Kata will boot the workload with your local "
+"Asterinas kernel."
+msgstr ""

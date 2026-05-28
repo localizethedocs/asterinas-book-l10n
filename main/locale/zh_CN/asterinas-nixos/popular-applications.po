@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -52,7 +52,7 @@ msgid "Packages"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:17
-msgid "[System Core](system-core/README.md)"
+msgid "[System Core](system-core/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:17
@@ -61,14 +61,19 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:17
 msgid ""
-"\"Bash\", \"Fish\", \"Zsh\", \"BusyBox\", \"Systemd\", \"Fastfetch\", "
-"\"Htop\", \"Lsof\", \"Ncdu\", \"Procps\", \"Coreutils\", \"Diffutils\", "
-"\"Findutils\", \"Grep\", \"Hostname\", \"Less\", \"Man-pages\", \"Texinfo\", "
-"\"Util-linux\", \"Which\""
+"[Bash](system-core/#bash), [fish](system-core/#fish), [Zsh](system-core/"
+"#zsh), [BusyBox](system-core/#busybox), [systemd](system-core/#systemd), "
+"[fastfetch](system-core/#fastfetch), [htop](system-core/#htop), [lsof]"
+"(system-core/#lsof), [ncdu](system-core/#ncdu), [procps](system-core/"
+"#procps), [coreutils](system-core/#coreutils), [diffutils](system-core/"
+"#diffutils), [findutils](system-core/#findutils), [grep](system-core/#grep), "
+"[hostname](system-core/#hostname), [less](system-core/#less), [man-pages]"
+"(system-core/#man-pages), [Texinfo](system-core/#texinfo), [util-linux]"
+"(system-core/#util-linux), [which](system-core/#which)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:18
-msgid "[Nix and NixOS Tools](nix-and-nixos-tools/README.md)"
+msgid "[Nix and NixOS Tools](nix-and-nixos-tools/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:18
@@ -76,13 +81,12 @@ msgid "Nix package management and NixOS system management tools"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:18
-msgid "\"Nix\""
+msgid "[Nix](nix-and-nixos-tools/#nix)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:19
 msgid ""
-"[Containerization and Virtualization](containerization-and-virtualization/"
-"README.md)"
+"[Containerization and Virtualization](containerization-and-virtualization/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:19
@@ -90,11 +94,13 @@ msgid "Container runtimes and image management tools"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:19
-msgid "\"Podman\", \"Skopeo\""
+msgid ""
+"[Podman](containerization-and-virtualization/#podman), [Skopeo]"
+"(containerization-and-virtualization/#skopeo)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:20
-msgid "[Networking](networking/README.md)"
+msgid "[Networking](networking/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:20
@@ -103,12 +109,14 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:20
 msgid ""
-"\"Curl\", \"LFTP\", \"Netcat\", \"Rclone\", \"Rsync\", \"Socat\", \"Wget\", "
-"\"LDNS\", \"Whois\""
+"[curl](networking/#curl), [LFTP](networking/#lftp), [Netcat](networking/"
+"#netcat), [rclone](networking/#rclone), [rsync](networking/#rsync), [socat]"
+"(networking/#socat), [Wget](networking/#wget), [LDNS](networking/#ldns), "
+"[whois](networking/#whois)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:21
-msgid "[Web Servers & Proxies](web-servers-and-proxies/README.md)"
+msgid "[Web Servers & Proxies](web-servers-and-proxies/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:21
@@ -116,11 +124,14 @@ msgid "Web servers and reverse proxies"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:21
-msgid "\"Apache HTTP Server\", \"Caddy\", \"Nginx\", \"OpenResty\""
+msgid ""
+"[Apache HTTP Server](web-servers-and-proxies/#apache-http-server), [Caddy]"
+"(web-servers-and-proxies/#caddy), [NGINX](web-servers-and-proxies/#nginx), "
+"[OpenResty](web-servers-and-proxies/#openresty)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:22
-msgid "[Databases & Middleware](databases-and-middleware/README.md)"
+msgid "[Databases & Middleware](databases-and-middleware/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:22
@@ -128,11 +139,14 @@ msgid "Relational databases, NoSQL, search engines, and message queues"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:22
-msgid "\"SQLite\", \"Etcd\", \"Redis\", \"Valkey\", \"InfluxDB\""
+msgid ""
+"[SQLite](databases-and-middleware/#sqlite), [etcd](databases-and-middleware/"
+"#etcd), [Redis](databases-and-middleware/#redis), [Valkey](databases-and-"
+"middleware/#valkey), [InfluxDB](databases-and-middleware/#influxdb)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:23
-msgid "[Development Tools](development-tools/README.md)"
+msgid "[Development Tools](development-tools/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:23
@@ -141,14 +155,24 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:23
 msgid ""
-"\"Clang\", \"GCC\", \"Go\", \"Lua\", \"Node.js\", \"Octave\", \"OpenJDK\", "
-"\"Perl\", \"PHP\", \"Python3\", \"Ruby\", \"Rust\", \"Git\", \"Cargo\", "
-"\"CMake\", \"Make\", \"Meson\", \"Ninja\", \"Emacs\", \"Nano\", \"Neovim\", "
-"\"Vim\", \"Hugo\", \"Direnv\", \"ShellCheck\", \"jq\", \"yq\""
+"[Clang](development-tools/#clang), [GCC](development-tools/#gcc), [Go]"
+"(development-tools/#go), [Lua](development-tools/#lua), [Node.js]"
+"(development-tools/#nodejs), [Octave](development-tools/#octave), [OpenJDK]"
+"(development-tools/#openjdk), [Perl](development-tools/#perl), [PHP]"
+"(development-tools/#php), [Python 3](development-tools/#python-3), [Ruby]"
+"(development-tools/#ruby), [Rust](development-tools/#rust), [Git]"
+"(development-tools/#git), [Cargo](development-tools/#cargo), [CMake]"
+"(development-tools/#cmake), [Make](development-tools/#make), [Meson]"
+"(development-tools/#meson), [Ninja](development-tools/#ninja), [Emacs]"
+"(development-tools/#emacs), [nano](development-tools/#nano), [Neovim]"
+"(development-tools/#neovim), [Vim](development-tools/#vim), [Hugo]"
+"(development-tools/#hugo), [direnv](development-tools/#direnv), [ShellCheck]"
+"(development-tools/#shellcheck), [jq](development-tools/#jq), [yq]"
+"(development-tools/#yq)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:24
-msgid "[CI/CD & DevOps](cicd-and-devops/README.md)"
+msgid "[CI/CD & DevOps](cicd-and-devops/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:24
@@ -156,11 +180,13 @@ msgid "CI/CD runners and infrastructure automation"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:24
-msgid "\"Just\", \"Task\", \"GoReleaser\""
+msgid ""
+"[just](cicd-and-devops/#just), [Task](cicd-and-devops/#task), [GoReleaser]"
+"(cicd-and-devops/#goreleaser)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:25
-msgid "[Monitoring & Observability](monitoring-and-observability/README.md)"
+msgid "[Monitoring & Observability](monitoring-and-observability/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:25
@@ -168,12 +194,11 @@ msgid "Metrics, logging, and tracing tools"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:25
-msgid "\"Prometheus\""
+msgid "[Prometheus](monitoring-and-observability/#prometheus)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:26
-msgid ""
-"[Desktop Environments & Display](desktop-environments-and-display/README.md)"
+msgid "[Desktop Environments & Display](desktop-environments-and-display/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:26
@@ -182,13 +207,23 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:26
 msgid ""
-"\"Xfce\", \"galculator\", \"mousepad\", \"mupdf\", \"fairymax\", \"five-or-"
-"more\", \"lbreakout2\", \"gnome-chess\", \"gnome-mines\", \"gnome-sudoku\", "
-"\"tali\", \"xboard\", \"xgalaga\""
+"[Xfce](desktop-environments-and-display/#xfce), [galculator](desktop-"
+"environments-and-display/#verified-gui-applications), [Mousepad](desktop-"
+"environments-and-display/#verified-gui-applications), [MuPDF](desktop-"
+"environments-and-display/#verified-gui-applications), [Fairy-Max](desktop-"
+"environments-and-display/#verified-gui-applications), [Five or More](desktop-"
+"environments-and-display/#verified-gui-applications), [LBreakout2](desktop-"
+"environments-and-display/#verified-gui-applications), [GNOME Chess](desktop-"
+"environments-and-display/#verified-gui-applications), [GNOME Mines](desktop-"
+"environments-and-display/#verified-gui-applications), [GNOME Sudoku](desktop-"
+"environments-and-display/#verified-gui-applications), [Tali](desktop-"
+"environments-and-display/#verified-gui-applications), [XBoard](desktop-"
+"environments-and-display/#verified-gui-applications), [XGalaga](desktop-"
+"environments-and-display/#verified-gui-applications)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:27
-msgid "[Web Browsers](web-browsers/README.md)"
+msgid "[Web Browsers](web-browsers/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:27
@@ -196,11 +231,11 @@ msgid "Web browsers"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:27
-msgid "\"Links2\", \"W3m\""
+msgid "[Links2](web-browsers/#links2), [w3m](web-browsers/#w3m)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:28
-msgid "[Office & Productivity](office-and-productivity/README.md)"
+msgid "[Office & Productivity](office-and-productivity/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:28
@@ -208,11 +243,13 @@ msgid "Office suites, document viewers, and note-taking apps"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:28
-msgid "\"MuPDF\", \"Pandoc\""
+msgid ""
+"[MuPDF](office-and-productivity/#mupdf), [pandoc](office-and-productivity/"
+"#pandoc)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:29
-msgid "[Multimedia](multimedia/README.md)"
+msgid "[Multimedia](multimedia/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:29
@@ -220,11 +257,13 @@ msgid "Video/audio players, graphics tools, and streaming software"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:29
-msgid "\"SoX\", \"ImageMagick\", \"FFmpeg\""
+msgid ""
+"[SoX](multimedia/#sox), [ImageMagick](multimedia/#imagemagick), [FFmpeg]"
+"(multimedia/#ffmpeg)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:30
-msgid "[Communication](communication/README.md)"
+msgid "[Communication](communication/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:30
@@ -232,11 +271,11 @@ msgid "Email clients, instant messaging, and video conferencing"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:30
-msgid "\"Irssi\", \"WeeChat\""
+msgid "[Irssi](communication/#irssi), [WeeChat](communication/#weechat)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:31
-msgid "[File Management & Terminal](file-management-and-terminal/README.md)"
+msgid "[File Management & Terminal](file-management-and-terminal/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:31
@@ -245,14 +284,26 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:31
 msgid ""
-"\"Bzip2\", \"Gzip\", \"P7zip\", \"Tar\", \"Xz\", \"Zip\", \"Screen\", "
-"\"File\", \"Bat\", \"Gawk\", \"Sd\", \"Sed\", \"Eza\", \"Fd\", \"Fzf\", "
-"\"Ripgrep\", \"The Silver Searcher\", \"Tree\", \"Age\", \"Crunch\", "
-"\"GnuPG\", \"John the Ripper\", \"Restic\", \"Wipe\""
+"[bzip2](file-management-and-terminal/#bzip2), [gzip](file-management-and-"
+"terminal/#gzip), [p7zip](file-management-and-terminal/#p7zip), [tar](file-"
+"management-and-terminal/#tar), [XZ Utils](file-management-and-terminal/#xz-"
+"utils), [Zip](file-management-and-terminal/#zip), [Screen](file-management-"
+"and-terminal/#screen), [file](file-management-and-terminal/#file), [bat]"
+"(file-management-and-terminal/#bat), [gawk](file-management-and-terminal/"
+"#gawk), [sd](file-management-and-terminal/#sd), [sed](file-management-and-"
+"terminal/#sed), [eza](file-management-and-terminal/#eza), [fd](file-"
+"management-and-terminal/#fd), [fzf](file-management-and-terminal/#fzf), "
+"[ripgrep](file-management-and-terminal/#ripgrep), [The Silver Searcher](file-"
+"management-and-terminal/#the-silver-searcher), [tree](file-management-and-"
+"terminal/#tree), [age](file-management-and-terminal/#age), [crunch](file-"
+"management-and-terminal/#crunch), [GnuPG](file-management-and-terminal/"
+"#gnupg), [John the Ripper](file-management-and-terminal/#john-the-ripper), "
+"[restic](file-management-and-terminal/#restic), [wipe](file-management-and-"
+"terminal/#wipe)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:32
-msgid "[AI & Machine Learning](ai-and-machine-learning/README.md)"
+msgid "[AI & Machine Learning](ai-and-machine-learning/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:32
@@ -260,5 +311,7 @@ msgid "Deep learning frameworks, LLM tools, and inference engines"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:32
-msgid "\"PyTorch\", \"TensorFlow\", \"Ollama\""
+msgid ""
+"[PyTorch](ai-and-machine-learning/#pytorch), [TensorFlow](ai-and-machine-"
+"learning/#tensorflow), [Ollama](ai-and-machine-learning/#ollama)"
 msgstr ""

@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-28 03:59:17 -0700",
-        "hash" : "f892c39264d978b1875c2524bfa5cfb5941f2b2a",
-        "title" : "Add documentation for popular applications"
+        "date" : "2026-05-19 16:25:18 +0800",
+        "hash" : "0f50d8dabf4438a90853ec356bc5201f0e01face",
+        "title" : "Require block backend to accept `complete_fn`"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-28 03:59:17 -0700",
-        "hash" : "f892c39264d978b1875c2524bfa5cfb5941f2b2a",
-        "title" : "Add documentation for popular applications"
+        "date" : "2026-05-19 16:25:18 +0800",
+        "hash" : "0f50d8dabf4438a90853ec356bc5201f0e01face",
+        "title" : "Require block backend to accept `complete_fn`"
       }
     }
   },

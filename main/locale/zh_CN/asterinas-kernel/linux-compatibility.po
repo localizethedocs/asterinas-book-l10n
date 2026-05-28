@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -36,8 +36,8 @@ msgstr ""
 "Asterinas 目前不支持也不会在未来支持 Linux 内核模块的加载。"
 
 #: src/kernel/linux-compatibility/index.md:15
-msgid "System Calls"
-msgstr "系统调用"
+msgid "System calls"
+msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:17
 msgid ""
@@ -3626,8 +3626,8 @@ msgid ""
 msgstr "这些系统调用中的大多数（或其变体）也支持 RISC-V 和龙芯架构。"
 
 #: src/kernel/linux-compatibility/index.md:368
-msgid "File Systems"
-msgstr "文件系统"
+msgid "File systems"
+msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:370
 msgid "Here is the list of supported file systems:"
@@ -3694,8 +3694,8 @@ msgid "`__vdso_time`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:391
-msgid "Boot Protocols"
-msgstr "引导协议"
+msgid "Boot protocols"
+msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:393
 msgid "Here is the list of supported boot protocols:"
@@ -3730,3 +3730,12 @@ msgid ""
 "[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
 "html#pe-coff-entry-point)"
 msgstr ""
+
+#~ msgid "System Calls"
+#~ msgstr "系统调用"
+
+#~ msgid "File Systems"
+#~ msgstr "文件系统"
+
+#~ msgid "Boot Protocols"
+#~ msgstr "引导协议"

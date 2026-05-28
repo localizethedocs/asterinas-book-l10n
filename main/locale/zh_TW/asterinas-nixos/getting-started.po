@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-03-03T12:46:51Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -167,9 +167,8 @@ msgstr "內核開發者"
 
 #: src/distro/index.md:123
 msgid ""
-"Follow Steps 1 and 2 in the [\"Getting Started\" section of the Asterinas "
-"Kernel](../kernel/index.html#getting-started) to set up the development "
-"environment."
+"Follow Steps 1 and 2 in the [\"Getting started\" section of the Asterinas "
+"Kernel](../kernel/#getting-started) to set up the development environment."
 msgstr ""
 
 #: src/distro/index.md:126

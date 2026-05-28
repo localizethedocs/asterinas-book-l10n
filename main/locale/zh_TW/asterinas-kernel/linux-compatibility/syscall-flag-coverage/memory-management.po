@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,8 +16,8 @@ msgid "Memory Management"
 msgstr "記憶體管理"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:10
-msgid "Memory Mappings"
-msgstr "記憶體映射"
+msgid "Memory mappings"
+msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/memory-management/index.md:12
 msgid "`mmap` and `munmap`"
@@ -282,3 +282,6 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/madvise.2.html)."
 msgstr ""
+
+#~ msgid "Memory Mappings"
+#~ msgstr "記憶體映射"

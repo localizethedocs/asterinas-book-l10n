@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -62,7 +62,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/index.md:29
-msgid "Supported CPU Architectures"
+msgid "Supported CPU architectures"
 msgstr ""
 
 #: src/kernel/index.md:31
@@ -150,8 +150,8 @@ msgid ""
 msgstr ""
 
 #: src/kernel/index.md:63
-msgid "Getting Started"
-msgstr "开始使用"
+msgid "Getting started"
+msgstr ""
 
 #: src/kernel/index.md:65
 msgid ""
@@ -183,3 +183,6 @@ msgstr "在容器内，进入项目文件夹构建并运行 Asterinas。"
 #: src/kernel/index.md:97
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
 msgstr "如果一切顺利，Asterinas 现在应该已经在虚拟机中启动并运行了。"
+
+#~ msgid "Getting Started"
+#~ msgstr "开始使用"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgid "The Framekernel Architecture"
 msgstr "Framekernel 架构"
 
 #: src/kernel/the-framekernel-architecture.md:3
-msgid "Framekernel: What and Why"
+msgid "Framekernel: what and why"
 msgstr ""
 
 #: src/kernel/the-framekernel-architecture.md:5
@@ -115,8 +115,8 @@ msgid ""
 msgstr ""
 
 #: src/kernel/the-framekernel-architecture.md:38
-msgid "Requirements for the OS Framework"
-msgstr "操作系统框架的要求"
+msgid "Requirements for the OS framework"
+msgstr ""
 
 #: src/kernel/the-framekernel-architecture.md:40
 msgid ""
@@ -195,3 +195,6 @@ msgstr ""
 "幸运的是，我们设计和实现符合这些标准的操作系统框架的努力已取得成果，这就是"
 "[Asterinas OSTD](../ostd/)。以该框架为基础，我们开发了Asterinas内核；该框架还"
 "使其他人能够创建具有不同目标和权衡的自己的框架内核。"
+
+#~ msgid "Requirements for the OS Framework"
+#~ msgstr "操作系统框架的要求"

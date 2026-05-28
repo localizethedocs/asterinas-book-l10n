@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,8 +16,8 @@ msgid "File Systems & Mount Control"
 msgstr "檔案系統與掛載控制"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:12
-msgid "Mount and Unmount File Systems"
-msgstr "掛載與卸載檔案系统"
+msgid "Mount and unmount file systems"
+msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:14
 msgid "`mount`"
@@ -163,8 +163,8 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:86
-msgid "Event Notifications"
-msgstr "事件通知"
+msgid "Event notifications"
+msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:88
 msgid "`inotify_init` and `inotify_init1`"
@@ -231,3 +231,9 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man7/inotify.7.html)."
 msgstr ""
+
+#~ msgid "Mount and Unmount File Systems"
+#~ msgstr "掛載與卸載檔案系统"
+
+#~ msgid "Event Notifications"
+#~ msgstr "事件通知"

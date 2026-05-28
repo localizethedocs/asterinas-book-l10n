@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,12 +26,12 @@ msgid "Archiving & Compression"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:7
-msgid "Bzip2"
+msgid "bzip2"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:9
 msgid ""
-"[Bzip2](https://www.sourceware.org/bzip2) uses the Burrows-Wheeler algorithm "
+"[bzip2](https://www.sourceware.org/bzip2) uses the Burrows-Wheeler algorithm "
 "for compression."
 msgstr ""
 
@@ -140,12 +140,12 @@ msgid "\"pattern\""
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:37
-msgid "Gzip"
+msgid "gzip"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:39
 msgid ""
-"[Gzip](https://www.gnu.org/software/gzip/) is a popular data compression "
+"[gzip](https://www.gnu.org/software/gzip/) is a popular data compression "
 "program."
 msgstr ""
 
@@ -162,12 +162,12 @@ msgid "# Decompress file with gunzip\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:67
-msgid "P7zip"
+msgid "p7zip"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:69
 msgid ""
-"[P7zip](https://p7zip.sourceforge.io/) is a port of 7-Zip to Unix-like "
+"[p7zip](https://p7zip.sourceforge.io/) is a port of 7-Zip to Unix-like "
 "systems."
 msgstr ""
 
@@ -193,12 +193,12 @@ msgid "# Test archive integrity\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:96
-msgid "Tar"
+msgid "tar"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:98
 msgid ""
-"[Tar](https://www.gnu.org/software/tar/) creates and extracts archive files."
+"[tar](https://www.gnu.org/software/tar/) creates and extracts archive files."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:109
@@ -218,13 +218,13 @@ msgid "# Update files in archive\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:125
-msgid "Xz"
+msgid "XZ Utils"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:127
 msgid ""
-"[Xz](https://tukaani.org/xz/) provides high compression ratio using LZMA2 "
-"algorithm."
+"[XZ Utils](https://tukaani.org/xz/) provides high compression ratio using "
+"LZMA2 algorithm."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:138
@@ -306,12 +306,12 @@ msgid "File Inspection"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:217
-msgid "File"
+msgid "file"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:219
 msgid ""
-"[File](https://darwinsys.com/file/) determines file type by examining "
+"[file](https://darwinsys.com/file/) determines file type by examining "
 "content."
 msgstr ""
 
@@ -352,12 +352,12 @@ msgid "Text Processing"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:243
-msgid "Bat"
+msgid "bat"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:245
 msgid ""
-"[Bat](https://github.com/sharkdp/bat) is a `cat` clone with syntax "
+"[bat](https://github.com/sharkdp/bat) is a `cat` clone with syntax "
 "highlighting and Git integration."
 msgstr ""
 
@@ -374,12 +374,12 @@ msgid "# Show line numbers explicitly\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:266
-msgid "Gawk"
+msgid "gawk"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:268
 msgid ""
-"[Gawk](https://www.gnu.org/software/gawk/) is the GNU implementation of Awk "
+"[gawk](https://www.gnu.org/software/gawk/) is the GNU implementation of Awk "
 "programming language."
 msgstr ""
 
@@ -408,12 +408,12 @@ msgid "'{sum += $1} END {print \"Sum:\", sum}'"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:289
-msgid "Sd"
+msgid "sd"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:291
 msgid ""
-"[Sd](https://github.com/chmln/sd) is an intuitive find-and-replace CLI tool."
+"[sd](https://github.com/chmln/sd) is an intuitive find-and-replace CLI tool."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:302
@@ -425,12 +425,12 @@ msgid "\"old\" \"new\""
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:306
-msgid "Sed"
+msgid "sed"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:308
 msgid ""
-"[Sed](https://www.gnu.org/software/sed/) is the GNU implementation of stream "
+"[sed](https://www.gnu.org/software/sed/) is the GNU implementation of stream "
 "editor."
 msgstr ""
 
@@ -487,7 +487,7 @@ msgid "Search & Filtering"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:340
-msgid "Eza"
+msgid "eza"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:342
@@ -512,12 +512,12 @@ msgid "# List directories only\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:366
-msgid "Fd"
+msgid "fd"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:368
 msgid ""
-"[Fd](https://github.com/sharkdp/fd) is a simple, fast alternative to `find`."
+"[fd](https://github.com/sharkdp/fd) is a simple, fast alternative to `find`."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:379
@@ -533,11 +533,11 @@ msgid "# Execute a command for each match\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:389
-msgid "Fzf"
+msgid "fzf"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:391
-msgid "[Fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder."
+msgid "[fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:402
@@ -545,12 +545,12 @@ msgid "# Print matches for the initial query and exit\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:406
-msgid "Ripgrep"
+msgid "ripgrep"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:408
 msgid ""
-"[Ripgrep](https://github.com/BurntSushi/ripgrep) is a fast line-oriented "
+"[ripgrep](https://github.com/BurntSushi/ripgrep) is a fast line-oriented "
 "search tool."
 msgstr ""
 
@@ -605,12 +605,12 @@ msgid "\"main\""
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:458
-msgid "Tree"
+msgid "tree"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:460
 msgid ""
-"[Tree](http://mama.indstate.edu/users/ice/tree/) displays directory "
+"[tree](http://mama.indstate.edu/users/ice/tree/) displays directory "
 "structures in a tree format."
 msgstr ""
 
@@ -627,12 +627,12 @@ msgid "Security & Backup"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:480
-msgid "Age"
+msgid "age"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:482
 msgid ""
-"[Age](https://github.com/FiloSottile/age) is a simple, modern encryption "
+"[age](https://github.com/FiloSottile/age) is a simple, modern encryption "
 "tool."
 msgstr ""
 
@@ -645,12 +645,12 @@ msgid "# Encrypt and decrypt\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:501
-msgid "Crunch"
+msgid "crunch"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:503
 msgid ""
-"[Crunch](https://sourceforge.net/projects/crunch-wordlist/) generates "
+"[crunch](https://sourceforge.net/projects/crunch-wordlist/) generates "
 "wordlists by pattern."
 msgstr ""
 
@@ -774,11 +774,11 @@ msgid "# Basic password cracking with wordlist\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:589
-msgid "Restic"
+msgid "restic"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:591
-msgid "[Restic](https://restic.net/) is a fast, secure backup program."
+msgid "[restic](https://restic.net/) is a fast, secure backup program."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:602
@@ -794,12 +794,12 @@ msgid "# List snapshots\n"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:612
-msgid "Wipe"
+msgid "wipe"
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:614
 msgid ""
-"[Wipe](https://wipe.sourceforge.net/) securely erases files and directories."
+"[wipe](https://wipe.sourceforge.net/) securely erases files and directories."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:625

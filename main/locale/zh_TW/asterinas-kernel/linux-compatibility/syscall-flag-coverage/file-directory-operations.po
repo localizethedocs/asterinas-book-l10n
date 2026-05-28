@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -90,7 +90,6 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:109
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:129
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:172
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:265
 msgid "Unsupported flags:"
 msgstr "未支援的旗標："
 
@@ -345,11 +344,7 @@ msgstr ""
 msgid "// Change file timestamps with nanosecond precision\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:266
-msgid "`AT_EMPTY_PATH`"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:268
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:265
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/utimensat.2.html)."

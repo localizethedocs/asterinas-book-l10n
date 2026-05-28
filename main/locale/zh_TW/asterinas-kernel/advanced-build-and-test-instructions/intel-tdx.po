@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -57,8 +57,8 @@ msgid ""
 msgstr ""
 
 #: src/kernel/intel-tdx.md:36
-msgid "Prepare the Intel TDX Environment"
-msgstr "準備 Intel TDX 環境"
+msgid "Prepare the Intel TDX environment"
+msgstr ""
 
 #: src/kernel/intel-tdx.md:38
 msgid "Please make sure your server supports Intel TDX."
@@ -109,8 +109,8 @@ msgid "If everything goes well, Asterinas is now up and running inside a TD."
 msgstr ""
 
 #: src/kernel/intel-tdx.md:82
-msgid "Using GDB to Debug"
-msgstr "使用 GDB 進行除錯"
+msgid "Using GDB to debug"
+msgstr ""
 
 #: src/kernel/intel-tdx.md:84
 msgid ""
@@ -195,3 +195,9 @@ msgid ""
 "For more information, please refer to [Intel TDX website](https://www.intel."
 "com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html)."
 msgstr ""
+
+#~ msgid "Prepare the Intel TDX Environment"
+#~ msgstr "準備 Intel TDX 環境"
+
+#~ msgid "Using GDB to Debug"
+#~ msgstr "使用 GDB 進行除錯"

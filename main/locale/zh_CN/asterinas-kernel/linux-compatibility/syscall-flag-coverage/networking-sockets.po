@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgid "Networking & Sockets"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:12
-msgid "Socket Creation"
+msgid "Socket creation"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:14
@@ -76,7 +76,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:74
-msgid "Socket Setup"
+msgid "Socket setup"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:76
@@ -126,7 +126,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:139
-msgid "Socket Communication"
+msgid "Socket communication"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:141
@@ -215,7 +215,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:227
-msgid "Socket Options"
+msgid "Socket options"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:229

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,11 +26,11 @@ msgid "Network Utilities"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:7
-msgid "Curl"
+msgid "curl"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:9
-msgid "[Curl](https://curl.se/) transfers data with URLs."
+msgid "[curl](https://curl.se/) transfers data with URLs."
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:11
@@ -123,12 +123,12 @@ msgid "# Zero-I/O mode (scanning)\n"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:79
-msgid "Rclone"
+msgid "rclone"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:81
 msgid ""
-"[Rclone](https://rclone.org/) syncs files to and from cloud storage "
+"[rclone](https://rclone.org/) syncs files to and from cloud storage "
 "providers."
 msgstr ""
 
@@ -149,12 +149,12 @@ msgid "# Operations on the storage\n"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:108
-msgid "Rsync"
+msgid "rsync"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:110
 msgid ""
-"[Rsync](https://rsync.samba.org/) is a fast and versatile file "
+"[rsync](https://rsync.samba.org/) is a fast and versatile file "
 "synchronization tool."
 msgstr ""
 
@@ -191,12 +191,12 @@ msgid "'*'"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:137
-msgid "Socat"
+msgid "socat"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:139
 msgid ""
-"[Socat](http://www.dest-unreach.org/socat/) is a multipurpose relay for "
+"[socat](http://www.dest-unreach.org/socat/) is a multipurpose relay for "
 "bidirectional data transfer."
 msgstr ""
 
@@ -276,12 +276,12 @@ msgid "# Reverse DNS lookup\n"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:213
-msgid "Whois"
+msgid "whois"
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:215
 msgid ""
-"[Whois](https://packages.qa.debian.org/w/whois.html) queries domain "
+"[whois](https://packages.qa.debian.org/w/whois.html) queries domain "
 "registration information."
 msgstr ""
 

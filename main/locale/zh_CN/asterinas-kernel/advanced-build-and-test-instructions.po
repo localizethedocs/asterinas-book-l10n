@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,8 +16,8 @@ msgid "Advanced Build and Test Instructions"
 msgstr "高级构建和测试说明"
 
 #: src/kernel/advanced-instructions.md:3
-msgid "User-Mode Unit Tests"
-msgstr "用户模式单元测试"
+msgid "User-mode unit tests"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:5
 msgid ""
@@ -37,8 +37,8 @@ msgid ""
 msgstr "要测试单个 crate，请进入 crate 的目录并调用 cargo test 。"
 
 #: src/kernel/advanced-instructions.md:17
-msgid "Kernel-Mode Unit Tests"
-msgstr "内核模式单元测试"
+msgid "Kernel-mode unit tests"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:19
 msgid ""
@@ -56,11 +56,11 @@ msgstr ""
 "要测试内核模式下的单个 crate，请进入 crate 的目录并调用 `cargo osdk test`。"
 
 #: src/kernel/advanced-instructions.md:33
-msgid "Integration Test"
-msgstr "集成测试"
+msgid "Integration test"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:35
-msgid "Regression Test"
+msgid "Regression test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:37
@@ -70,7 +70,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:43
-msgid "Conformance Test"
+msgid "Conformance test"
 msgstr ""
 
 #: src/kernel/advanced-instructions.md:45
@@ -95,8 +95,8 @@ msgid "Debug"
 msgstr "调试"
 
 #: src/kernel/advanced-instructions.md:65
-msgid "Using GDB to Debug"
-msgstr "使用 GDB 进行调试"
+msgid "Using GDB to debug"
+msgstr ""
 
 #: src/kernel/advanced-instructions.md:67
 msgid ""
@@ -159,3 +159,15 @@ msgstr ""
 "请注意，若在启用KVM的情况下进行调试，必须使用硬件辅助断点。具体方法参见[GDB手"
 "册](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_28.html)中的"
 "\"hbreak\"说明。"
+
+#~ msgid "User-Mode Unit Tests"
+#~ msgstr "用户模式单元测试"
+
+#~ msgid "Kernel-Mode Unit Tests"
+#~ msgstr "内核模式单元测试"
+
+#~ msgid "Integration Test"
+#~ msgstr "集成测试"
+
+#~ msgid "Using GDB to Debug"
+#~ msgstr "使用 GDB 进行调试"

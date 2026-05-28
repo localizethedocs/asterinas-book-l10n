@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -56,12 +56,12 @@ msgid "# Convert images from pdf\n"
 msgstr ""
 
 #: src/distro/popular-applications/office-and-productivity/index.md:30
-msgid "Pandoc"
+msgid "pandoc"
 msgstr ""
 
 #: src/distro/popular-applications/office-and-productivity/index.md:32
 msgid ""
-"[Pandoc](https://hackage.haskell.org/package/pandoc-cli) is a universal "
+"[pandoc](https://hackage.haskell.org/package/pandoc-cli) is a universal "
 "document converter."
 msgstr ""
 

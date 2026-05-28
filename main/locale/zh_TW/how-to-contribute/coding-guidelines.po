@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -35,14 +35,14 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:14
 msgid ""
-"**[General Guidelines](general-guidelines/index.html)** — Language-agnostic "
-"guidance for naming, comments, layout, formatting, and API design."
+"**[General Guidelines](general-guidelines/)** — Language-agnostic guidance "
+"for naming, comments, layout, formatting, and API design."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:17
 msgid ""
-"**[Rust Guidelines](rust-guidelines/index.html)** — Rust-specific guidance "
-"for naming, language items, and cross-cutting topics."
+"**[Rust Guidelines](rust-guidelines/)** — Rust-specific guidance for naming, "
+"language items, and cross-cutting topics."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:20
@@ -109,7 +109,7 @@ msgid "Be descriptive"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:37
-msgid "[`descriptive-names`](general-guidelines/index.html#descriptive-names)"
+msgid "[`descriptive-names`](general-guidelines/#descriptive-names)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:38
@@ -117,7 +117,7 @@ msgid "Be accurate"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:38
-msgid "[`accurate-names`](general-guidelines/index.html#accurate-names)"
+msgid "[`accurate-names`](general-guidelines/#accurate-names)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:39
@@ -125,7 +125,7 @@ msgid "Encode units and important attributes in names"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:39
-msgid "[`encode-units`](general-guidelines/index.html#encode-units)"
+msgid "[`encode-units`](general-guidelines/#encode-units)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:40
@@ -133,7 +133,7 @@ msgid "Use assertion-style boolean names"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:40
-msgid "[`bool-names`](general-guidelines/index.html#bool-names)"
+msgid "[`bool-names`](general-guidelines/#bool-names)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:41
@@ -141,8 +141,7 @@ msgid "Prefer semantic line breaks"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:41
-msgid ""
-"[`semantic-line-breaks`](general-guidelines/index.html#semantic-line-breaks)"
+msgid "[`semantic-line-breaks`](general-guidelines/#semantic-line-breaks)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:42
@@ -150,7 +149,7 @@ msgid "Explain why, not what"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:42
-msgid "[`explain-why`](general-guidelines/index.html#explain-why)"
+msgid "[`explain-why`](general-guidelines/#explain-why)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:43
@@ -158,7 +157,7 @@ msgid "Document design decisions"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:43
-msgid "[`design-decisions`](general-guidelines/index.html#design-decisions)"
+msgid "[`design-decisions`](general-guidelines/#design-decisions)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:44
@@ -166,7 +165,7 @@ msgid "Cite specifications and algorithm sources"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:44
-msgid "[`cite-sources`](general-guidelines/index.html#cite-sources)"
+msgid "[`cite-sources`](general-guidelines/#cite-sources)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:45
@@ -174,8 +173,7 @@ msgid "One concept per file"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:45
-msgid ""
-"[`one-concept-per-file`](general-guidelines/index.html#one-concept-per-file)"
+msgid "[`one-concept-per-file`](general-guidelines/#one-concept-per-file)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:46
@@ -183,7 +181,7 @@ msgid "Organize code for top-down reading"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:46
-msgid "[`top-down-reading`](general-guidelines/index.html#top-down-reading)"
+msgid "[`top-down-reading`](general-guidelines/#top-down-reading)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:47
@@ -191,8 +189,7 @@ msgid "Group statements into logical paragraphs"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:47
-msgid ""
-"[`logical-paragraphs`](general-guidelines/index.html#logical-paragraphs)"
+msgid "[`logical-paragraphs`](general-guidelines/#logical-paragraphs)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:48
@@ -200,8 +197,7 @@ msgid "Format error messages consistently"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:48
-msgid ""
-"[`error-message-format`](general-guidelines/index.html#error-message-format)"
+msgid "[`error-message-format`](general-guidelines/#error-message-format)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:49
@@ -209,8 +205,7 @@ msgid "Stick to familiar conventions"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:49
-msgid ""
-"[`familiar-conventions`](general-guidelines/index.html#familiar-conventions)"
+msgid "[`familiar-conventions`](general-guidelines/#familiar-conventions)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:50
@@ -218,7 +213,7 @@ msgid "Hide implementation details"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:50
-msgid "[`hide-impl-details`](general-guidelines/index.html#hide-impl-details)"
+msgid "[`hide-impl-details`](general-guidelines/#hide-impl-details)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:51
@@ -226,9 +221,7 @@ msgid "Validate at boundaries, trust internally"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:51
-msgid ""
-"[`validate-at-boundaries`](general-guidelines/index.html#validate-at-"
-"boundaries)"
+msgid "[`validate-at-boundaries`](general-guidelines/#validate-at-boundaries)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/index.md:52

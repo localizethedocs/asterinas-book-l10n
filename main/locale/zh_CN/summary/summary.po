@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -103,7 +103,7 @@ msgstr "Asterinas 内核"
 msgid "Advanced Build and Test Instructions"
 msgstr "高级构建和测试说明"
 
-#: src/SUMMARY.md:30 src/SUMMARY.md:71
+#: src/SUMMARY.md:30 src/SUMMARY.md:74
 msgid "Intel TDX"
 msgstr "Intel TDX"
 
@@ -172,261 +172,273 @@ msgid "Kernel Parameters"
 msgstr ""
 
 #: src/SUMMARY.md:47
+msgid "VM-based Containers"
+msgstr ""
+
+#: src/SUMMARY.md:48
+msgid "Kata Containers"
+msgstr ""
+
+#: src/SUMMARY.md:49
+msgid "Confidential Containers (CoCo)"
+msgstr ""
+
+#: src/SUMMARY.md:50
 msgid "Roadmap"
 msgstr "路线图"
 
-#: src/SUMMARY.md:49
+#: src/SUMMARY.md:52
 msgid "Asterinas OSTD"
 msgstr "Asterinas OSTD"
 
-#: src/SUMMARY.md:51
+#: src/SUMMARY.md:54
 msgid "An Overview of OSTD"
 msgstr "OSTD 概述"
 
-#: src/SUMMARY.md:52
+#: src/SUMMARY.md:55
 msgid "Example: Writing a Kernel in 100 Lines of Safe Rust"
 msgstr "示例：用大约 100 行安全的 Rust 代码编写内核"
 
-#: src/SUMMARY.md:53
+#: src/SUMMARY.md:56
 msgid "Example: Writing a Driver in 100 Lines of Safe Rust"
 msgstr "示例：用大约 100 行安全的 Rust 代码编写驱动"
 
-#: src/SUMMARY.md:54
+#: src/SUMMARY.md:57
 msgid "Soundness Analysis"
 msgstr "可靠性分析"
 
-#: src/SUMMARY.md:55
+#: src/SUMMARY.md:58
 msgid "What Soundness Means"
 msgstr ""
 
-#: src/SUMMARY.md:56
+#: src/SUMMARY.md:59
 msgid "The Sensitivity Classification"
 msgstr ""
 
-#: src/SUMMARY.md:57
+#: src/SUMMARY.md:60
 msgid "Safe Physical Memory Management"
 msgstr ""
 
-#: src/SUMMARY.md:58
+#: src/SUMMARY.md:61
 msgid "Safe User-Kernel Interactions"
 msgstr ""
 
-#: src/SUMMARY.md:59
+#: src/SUMMARY.md:62
 msgid "Safe Kernel-Peripheral Interactions"
 msgstr ""
 
-#: src/SUMMARY.md:60
+#: src/SUMMARY.md:63
 msgid "Safe Kernel Logic"
 msgstr ""
 
-#: src/SUMMARY.md:61
+#: src/SUMMARY.md:64
 msgid "Safe Policy Injection"
 msgstr ""
 
-#: src/SUMMARY.md:63
+#: src/SUMMARY.md:66
 msgid "Asterinas OSDK"
 msgstr "Asterinas OSDK"
 
-#: src/SUMMARY.md:65
+#: src/SUMMARY.md:68
 msgid "OSDK User Guide"
 msgstr "OSDK 用户指南"
 
-#: src/SUMMARY.md:66
+#: src/SUMMARY.md:69
 msgid "Why OSDK"
 msgstr "为什么选择 OSDK"
 
-#: src/SUMMARY.md:67
+#: src/SUMMARY.md:70
 msgid "Creating an OS Project"
 msgstr "创建操作系统项目"
 
-#: src/SUMMARY.md:68
+#: src/SUMMARY.md:71
 msgid "Testing or Running an OS Project"
 msgstr "测试或运行操作系统项目"
 
-#: src/SUMMARY.md:69
+#: src/SUMMARY.md:72
 msgid "Working in a Workspace"
 msgstr "在工作区中工作"
 
-#: src/SUMMARY.md:70
+#: src/SUMMARY.md:73
 msgid "Advanced Topics"
 msgstr "进阶主题"
 
-#: src/SUMMARY.md:72
+#: src/SUMMARY.md:75
 msgid "OSDK User Reference"
 msgstr "OSDK 用户参考"
 
-#: src/SUMMARY.md:73
+#: src/SUMMARY.md:76
 msgid "Commands"
 msgstr "命令"
 
-#: src/SUMMARY.md:74
+#: src/SUMMARY.md:77
 msgid "cargo osdk new"
 msgstr "cargo osdk new"
 
-#: src/SUMMARY.md:75
+#: src/SUMMARY.md:78
 msgid "cargo osdk build"
 msgstr "cargo osdk build"
 
-#: src/SUMMARY.md:76
+#: src/SUMMARY.md:79
 msgid "cargo osdk run"
 msgstr "cargo osdk run"
 
-#: src/SUMMARY.md:77
+#: src/SUMMARY.md:80
 msgid "cargo osdk test"
 msgstr "cargo osdk test"
 
-#: src/SUMMARY.md:78
+#: src/SUMMARY.md:81
 msgid "cargo osdk debug"
 msgstr "cargo osdk debug"
 
-#: src/SUMMARY.md:79
+#: src/SUMMARY.md:82
 msgid "cargo osdk profile"
 msgstr "cargo osdk profile"
 
-#: src/SUMMARY.md:80
+#: src/SUMMARY.md:83
 msgid "Manifest"
 msgstr "清单文件"
 
-#: src/SUMMARY.md:81
+#: src/SUMMARY.md:84
 msgid "Environment Variables"
 msgstr "环境变量"
 
-#: src/SUMMARY.md:83
+#: src/SUMMARY.md:86
 msgid "How to Contribute"
 msgstr "如何参与贡献"
 
-#: src/SUMMARY.md:85
+#: src/SUMMARY.md:88
 msgid "Before You Contribute"
 msgstr "贡献前须知"
 
-#: src/SUMMARY.md:86
+#: src/SUMMARY.md:89
 msgid "Code Organization"
 msgstr "代码组织"
 
-#: src/SUMMARY.md:87
+#: src/SUMMARY.md:90
 msgid "Coding Guidelines"
 msgstr ""
 
-#: src/SUMMARY.md:88
+#: src/SUMMARY.md:91
 msgid "How Guidelines Are Written"
 msgstr ""
 
-#: src/SUMMARY.md:89
+#: src/SUMMARY.md:92
 msgid "General Guidelines"
 msgstr "通用指南"
 
-#: src/SUMMARY.md:90
+#: src/SUMMARY.md:93
 msgid "Rust Guidelines"
 msgstr "Rust 指南"
 
-#: src/SUMMARY.md:91
+#: src/SUMMARY.md:94
 msgid "Naming"
 msgstr ""
 
-#: src/SUMMARY.md:92
+#: src/SUMMARY.md:95
 msgid "Language Items"
 msgstr ""
 
-#: src/SUMMARY.md:93
+#: src/SUMMARY.md:96
 msgid "Variables, Expressions, and Statements"
 msgstr ""
 
-#: src/SUMMARY.md:94
+#: src/SUMMARY.md:97
 msgid "Functions and Methods"
 msgstr ""
 
-#: src/SUMMARY.md:95
+#: src/SUMMARY.md:98
 msgid "Types and Traits"
 msgstr ""
 
-#: src/SUMMARY.md:96
+#: src/SUMMARY.md:99
 msgid "Comments and Documentation"
 msgstr ""
 
-#: src/SUMMARY.md:97
+#: src/SUMMARY.md:100
 msgid "Unsafety"
 msgstr ""
 
-#: src/SUMMARY.md:98
+#: src/SUMMARY.md:101
 msgid "Modules and Crates"
 msgstr ""
 
-#: src/SUMMARY.md:99
+#: src/SUMMARY.md:102
 msgid "Macros and Attributes"
 msgstr ""
 
-#: src/SUMMARY.md:100
+#: src/SUMMARY.md:103
 msgid "Select Topics"
 msgstr ""
 
-#: src/SUMMARY.md:101
+#: src/SUMMARY.md:104
 msgid "Concurrency and Races"
 msgstr ""
 
-#: src/SUMMARY.md:102
+#: src/SUMMARY.md:105
 msgid "Defensive Programming"
 msgstr ""
 
-#: src/SUMMARY.md:103
+#: src/SUMMARY.md:106
 msgid "Error Handling"
 msgstr ""
 
-#: src/SUMMARY.md:104
+#: src/SUMMARY.md:107
 msgid "Logging"
 msgstr ""
 
-#: src/SUMMARY.md:105
+#: src/SUMMARY.md:108
 msgid "Memory and Resource Management"
 msgstr ""
 
-#: src/SUMMARY.md:106
+#: src/SUMMARY.md:109
 msgid "Performance"
 msgstr ""
 
-#: src/SUMMARY.md:107
+#: src/SUMMARY.md:110
 msgid "Git Guidelines"
 msgstr "Git 指南"
 
-#: src/SUMMARY.md:108
+#: src/SUMMARY.md:111
 msgid "Testing Guidelines"
 msgstr ""
 
-#: src/SUMMARY.md:109
+#: src/SUMMARY.md:112
 msgid "Assembly Guidelines"
 msgstr "汇编指南"
 
-#: src/SUMMARY.md:110
+#: src/SUMMARY.md:113
 msgid "Boterinas"
 msgstr "Boterinas"
 
-#: src/SUMMARY.md:111
+#: src/SUMMARY.md:114
 msgid "Version Bump"
 msgstr "版本号更新"
 
-#: src/SUMMARY.md:112
+#: src/SUMMARY.md:115
 msgid "Community"
 msgstr "社区"
 
-#: src/SUMMARY.md:113
+#: src/SUMMARY.md:116
 msgid "Code of Conduct"
 msgstr "行为守则"
 
-#: src/SUMMARY.md:115
+#: src/SUMMARY.md:118
 msgid "Request for Comments (RFCs)"
 msgstr "征求意见稿 (RFCs)"
 
-#: src/SUMMARY.md:117
+#: src/SUMMARY.md:120
 msgid "RFC Overview"
 msgstr "RFC 概述"
 
-#: src/SUMMARY.md:118
+#: src/SUMMARY.md:121
 msgid "RFC-0001: RFC Process"
 msgstr "RFC-0001：RFC 流程"
 
-#: src/SUMMARY.md:119
+#: src/SUMMARY.md:122
 msgid "RFC-0002: Asterinas NixOS"
 msgstr "RFC-0002: Asterinas NixOS"
 
-#: src/SUMMARY.md:120
+#: src/SUMMARY.md:123
 msgid "RFC Template"
 msgstr "RFC 模板"

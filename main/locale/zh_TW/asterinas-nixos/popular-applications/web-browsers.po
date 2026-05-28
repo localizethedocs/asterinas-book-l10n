@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -52,11 +52,11 @@ msgid "# Dump page contents as text\n"
 msgstr ""
 
 #: src/distro/popular-applications/web-browsers/index.md:27
-msgid "W3m"
+msgid "w3m"
 msgstr ""
 
 #: src/distro/popular-applications/web-browsers/index.md:29
-msgid "[W3m](https://w3m.sourceforge.net/) is a text-based web browser."
+msgid "[w3m](https://w3m.sourceforge.net/) is a text-based web browser."
 msgstr ""
 
 #: src/distro/popular-applications/web-browsers/index.md:40

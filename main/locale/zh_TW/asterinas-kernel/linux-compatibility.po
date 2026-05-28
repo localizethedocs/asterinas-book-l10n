@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -36,8 +36,8 @@ msgstr ""
 "Asterinas 目前不支援、未來也不會支援載入 Linux 內核模組。"
 
 #: src/kernel/linux-compatibility/index.md:15
-msgid "System Calls"
-msgstr "系統呼叫"
+msgid "System calls"
+msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:17
 msgid ""
@@ -3626,7 +3626,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:368
-msgid "File Systems"
+msgid "File systems"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:370
@@ -3694,7 +3694,7 @@ msgid "`__vdso_time`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:391
-msgid "Boot Protocols"
+msgid "Boot protocols"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:393
@@ -3730,3 +3730,6 @@ msgid ""
 "[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
 "html#pe-coff-entry-point)"
 msgstr ""
+
+#~ msgid "System Calls"
+#~ msgstr "系統呼叫"

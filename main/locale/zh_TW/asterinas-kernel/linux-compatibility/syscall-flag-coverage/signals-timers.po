@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -68,7 +68,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:51
-msgid "POSIX Interval Timers"
+msgid "POSIX interval timers"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:53

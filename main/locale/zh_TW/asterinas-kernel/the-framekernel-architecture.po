@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,8 +16,8 @@ msgid "The Framekernel Architecture"
 msgstr "框內核架構"
 
 #: src/kernel/the-framekernel-architecture.md:3
-msgid "Framekernel: What and Why"
-msgstr "框內核：是什麼與為什麼"
+msgid "Framekernel: what and why"
+msgstr ""
 
 #: src/kernel/the-framekernel-architecture.md:5
 msgid "The security of a microkernel, the speed of a monolithic kernel."
@@ -104,7 +104,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/the-framekernel-architecture.md:38
-msgid "Requirements for the OS Framework"
+msgid "Requirements for the OS framework"
 msgstr ""
 
 #: src/kernel/the-framekernel-architecture.md:40
@@ -166,3 +166,6 @@ msgid ""
 "Asterinas Kernel; this framework also enables others to create their own "
 "framekernels, with different goals and tradeoffs."
 msgstr ""
+
+#~ msgid "Framekernel: What and Why"
+#~ msgstr "框內核：是什麼與為什麼"
