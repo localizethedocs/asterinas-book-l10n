@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/distro/popular-applications/web-servers-and-proxies/index.md:1
@@ -67,12 +67,12 @@ msgid "# Start a file server\n"
 msgstr ""
 
 #: src/distro/popular-applications/web-servers-and-proxies/index.md:41
-msgid "Nginx"
+msgid "NGINX"
 msgstr ""
 
 #: src/distro/popular-applications/web-servers-and-proxies/index.md:43
 msgid ""
-"[Nginx](https://nginx.org/) is a high-performance web server, reverse proxy, "
+"[NGINX](https://nginx.org/) is a high-performance web server, reverse proxy, "
 "and load balancer."
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-28T11:27:17Z\n"
+"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:15
-msgid "System Calls"
+msgid "System calls"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:17
@@ -3621,7 +3621,7 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:368
-msgid "File Systems"
+msgid "File systems"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:370
@@ -3689,7 +3689,7 @@ msgid "`__vdso_time`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:391
-msgid "Boot Protocols"
+msgid "Boot protocols"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:393
