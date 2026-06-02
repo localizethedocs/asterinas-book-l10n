@@ -159,15 +159,3 @@ msgstr ""
 "请注意，若在启用KVM的情况下进行调试，必须使用硬件辅助断点。具体方法参见[GDB手"
 "册](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_28.html)中的"
 "\"hbreak\"说明。"
-
-#~ msgid "User-Mode Unit Tests"
-#~ msgstr "用户模式单元测试"
-
-#~ msgid "Kernel-Mode Unit Tests"
-#~ msgstr "内核模式单元测试"
-
-#~ msgid "Integration Test"
-#~ msgstr "集成测试"
-
-#~ msgid "Using GDB to Debug"
-#~ msgstr "使用 GDB 进行调试"

@@ -180,9 +180,3 @@ msgstr "在容器內，前往專案資料夾建置並執行 Asterinas。"
 #: src/kernel/index.md:97
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
 msgstr "如果一切順利，Asterinas 現在已在虛擬機中啟動並執行。"
-
-#~ msgid "Supported CPU Architectures"
-#~ msgstr "支援的 CPU 架構"
-
-#~ msgid "Getting Started"
-#~ msgstr "開始使用"

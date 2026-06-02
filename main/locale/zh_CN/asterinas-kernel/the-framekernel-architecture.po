@@ -195,6 +195,3 @@ msgstr ""
 "幸运的是，我们设计和实现符合这些标准的操作系统框架的努力已取得成果，这就是"
 "[Asterinas OSTD](../ostd/)。以该框架为基础，我们开发了Asterinas内核；该框架还"
 "使其他人能够创建具有不同目标和权衡的自己的框架内核。"
-
-#~ msgid "Requirements for the OS Framework"
-#~ msgstr "操作系统框架的要求"

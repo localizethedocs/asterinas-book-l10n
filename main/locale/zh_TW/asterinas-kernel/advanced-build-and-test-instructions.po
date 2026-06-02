@@ -146,15 +146,3 @@ msgid ""
 "breakpoints. See \"hbreak\" in [the GDB manual](https://ftp.gnu.org/old-gnu/"
 "Manuals/gdb/html_node/gdb_28.html) for details."
 msgstr ""
-
-#~ msgid "User-Mode Unit Tests"
-#~ msgstr "使用者模式單元測試"
-
-#~ msgid "Kernel-Mode Unit Tests"
-#~ msgstr "內核模式單元測試"
-
-#~ msgid "Integration Test"
-#~ msgstr "整合測試"
-
-#~ msgid "Using GDB to Debug"
-#~ msgstr "使用 GDB 進行除錯"

@@ -3730,12 +3730,3 @@ msgid ""
 "[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
 "html#pe-coff-entry-point)"
 msgstr ""
-
-#~ msgid "System Calls"
-#~ msgstr "系统调用"
-
-#~ msgid "File Systems"
-#~ msgstr "文件系统"
-
-#~ msgid "Boot Protocols"
-#~ msgstr "引导协议"

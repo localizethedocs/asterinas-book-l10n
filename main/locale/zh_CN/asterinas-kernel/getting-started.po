@@ -183,6 +183,3 @@ msgstr "在容器内，进入项目文件夹构建并运行 Asterinas。"
 #: src/kernel/index.md:97
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
 msgstr "如果一切顺利，Asterinas 现在应该已经在虚拟机中启动并运行了。"
-
-#~ msgid "Getting Started"
-#~ msgstr "开始使用"

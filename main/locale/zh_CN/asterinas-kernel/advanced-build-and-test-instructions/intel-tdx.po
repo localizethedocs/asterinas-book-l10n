@@ -195,6 +195,3 @@ msgid ""
 "For more information, please refer to [Intel TDX website](https://www.intel."
 "com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html)."
 msgstr ""
-
-#~ msgid "Using GDB to Debug"
-#~ msgstr "使用 GDB 进行调试"

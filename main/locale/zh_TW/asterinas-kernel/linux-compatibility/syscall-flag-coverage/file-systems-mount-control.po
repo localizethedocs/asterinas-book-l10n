@@ -231,9 +231,3 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man7/inotify.7.html)."
 msgstr ""
-
-#~ msgid "Mount and Unmount File Systems"
-#~ msgstr "掛載與卸載檔案系统"
-
-#~ msgid "Event Notifications"
-#~ msgstr "事件通知"

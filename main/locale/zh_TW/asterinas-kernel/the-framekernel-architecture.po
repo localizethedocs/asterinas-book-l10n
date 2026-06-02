@@ -166,6 +166,3 @@ msgid ""
 "Asterinas Kernel; this framework also enables others to create their own "
 "framekernels, with different goals and tradeoffs."
 msgstr ""
-
-#~ msgid "Framekernel: What and Why"
-#~ msgstr "框內核：是什麼與為什麼"
