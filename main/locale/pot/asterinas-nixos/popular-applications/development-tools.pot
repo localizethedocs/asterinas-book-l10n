@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -54,14 +54,16 @@ msgstr ""
 #: src/distro/popular-applications/development-tools/index.md:387
 #: src/distro/popular-applications/development-tools/index.md:414
 #: src/distro/popular-applications/development-tools/index.md:436
-#: src/distro/popular-applications/development-tools/index.md:482
-#: src/distro/popular-applications/development-tools/index.md:516
-#: src/distro/popular-applications/development-tools/index.md:533
-#: src/distro/popular-applications/development-tools/index.md:576
-#: src/distro/popular-applications/development-tools/index.md:596
-#: src/distro/popular-applications/development-tools/index.md:616
-#: src/distro/popular-applications/development-tools/index.md:633
-#: src/distro/popular-applications/development-tools/index.md:653
+#: src/distro/popular-applications/development-tools/index.md:520
+#: src/distro/popular-applications/development-tools/index.md:539
+#: src/distro/popular-applications/development-tools/index.md:585
+#: src/distro/popular-applications/development-tools/index.md:619
+#: src/distro/popular-applications/development-tools/index.md:636
+#: src/distro/popular-applications/development-tools/index.md:679
+#: src/distro/popular-applications/development-tools/index.md:699
+#: src/distro/popular-applications/development-tools/index.md:719
+#: src/distro/popular-applications/development-tools/index.md:736
+#: src/distro/popular-applications/development-tools/index.md:756
 msgid "Installation"
 msgstr ""
 
@@ -84,14 +86,16 @@ msgstr ""
 #: src/distro/popular-applications/development-tools/index.md:397
 #: src/distro/popular-applications/development-tools/index.md:420
 #: src/distro/popular-applications/development-tools/index.md:442
-#: src/distro/popular-applications/development-tools/index.md:488
-#: src/distro/popular-applications/development-tools/index.md:522
-#: src/distro/popular-applications/development-tools/index.md:539
-#: src/distro/popular-applications/development-tools/index.md:582
-#: src/distro/popular-applications/development-tools/index.md:602
-#: src/distro/popular-applications/development-tools/index.md:622
-#: src/distro/popular-applications/development-tools/index.md:639
-#: src/distro/popular-applications/development-tools/index.md:659
+#: src/distro/popular-applications/development-tools/index.md:526
+#: src/distro/popular-applications/development-tools/index.md:545
+#: src/distro/popular-applications/development-tools/index.md:591
+#: src/distro/popular-applications/development-tools/index.md:625
+#: src/distro/popular-applications/development-tools/index.md:642
+#: src/distro/popular-applications/development-tools/index.md:685
+#: src/distro/popular-applications/development-tools/index.md:705
+#: src/distro/popular-applications/development-tools/index.md:725
+#: src/distro/popular-applications/development-tools/index.md:742
+#: src/distro/popular-applications/development-tools/index.md:762
 msgid "Verified Usage"
 msgstr ""
 
@@ -510,289 +514,352 @@ msgid "# List available targets\n"
 msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:430
-msgid "Editors & IDEs"
+msgid "Debugging Tools"
 msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:432
-msgid "Emacs"
+msgid "GDB"
 msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:434
+msgid ""
+"[GDB](https://www.sourceware.org/gdb/), the GNU Project debugger, helps "
+"developers debug programs by inspecting variables, controlling execution, "
+"and analyzing runtime behavior."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:444
+msgid ""
+"The following sample program is used for the verified GDB command sequence:"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:447
+msgid "// SPDX-License-Identifier: MPL-2.0\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:454
+msgid "\"Hello, World %d!\\n\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:469
+msgid "\"memory check failed: %d\\n\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:474
+msgid "\"memory check passed: %d\\n\""
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:480
+msgid "The verified GDB command sequence is:"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:509
+msgid "# Build a debug-friendly test program\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:511
+msgid "# Run the verified GDB command sequence\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:516
+msgid "strace"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:518
+msgid ""
+"[strace](https://strace.io/) traces interactions between processes and the "
+"kernel, which include system calls, signal deliveries, and changes of "
+"process state."
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:529
+msgid "# Trace `ls` and save the syscall log\n"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:533
+msgid "Editors & IDEs"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:535
+msgid "Emacs"
+msgstr ""
+
+#: src/distro/popular-applications/development-tools/index.md:537
 msgid ""
 "[GNU Emacs](https://www.gnu.org/software/emacs/) is a customizable, "
 "extensible text editor."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:445
+#: src/distro/popular-applications/development-tools/index.md:548
 msgid "# Open file in Emacs (terminal)\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:447
+#: src/distro/popular-applications/development-tools/index.md:550
 msgid "# Basic navigation (C = Ctrl, M = Alt/Esc):\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:449
+#: src/distro/popular-applications/development-tools/index.md:552
 msgid "# C-b           - Move backward (left)\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:451
+#: src/distro/popular-applications/development-tools/index.md:554
 msgid "# C-p           - Previous line (up)\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:453
+#: src/distro/popular-applications/development-tools/index.md:556
 msgid "# C-e           - End of line\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:455
+#: src/distro/popular-applications/development-tools/index.md:558
 msgid "# M-b           - Backward one word\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:457
+#: src/distro/popular-applications/development-tools/index.md:560
 msgid "# M->           - End of buffer\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:460
+#: src/distro/popular-applications/development-tools/index.md:563
 msgid "# Editing:\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:462
+#: src/distro/popular-applications/development-tools/index.md:565
 msgid "# DEL (Backspace) - Delete character before cursor\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:464
+#: src/distro/popular-applications/development-tools/index.md:567
 msgid "# C-k           - Kill (cut) to end of line\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:466
+#: src/distro/popular-applications/development-tools/index.md:569
 msgid "# C-space       - Start selection (set mark)\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:468
+#: src/distro/popular-applications/development-tools/index.md:571
 msgid "# M-w           - Copy selected region\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:470
-#: src/distro/popular-applications/development-tools/index.md:561
+#: src/distro/popular-applications/development-tools/index.md:573
+#: src/distro/popular-applications/development-tools/index.md:664
 msgid "# Saving and quitting:\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:472
+#: src/distro/popular-applications/development-tools/index.md:575
 msgid "# C-x C-w       - Save as (prompt for filename)\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:474
+#: src/distro/popular-applications/development-tools/index.md:577
 msgid "# C-g           - Cancel current command/prompt\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:478
+#: src/distro/popular-applications/development-tools/index.md:581
 msgid "nano"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:480
+#: src/distro/popular-applications/development-tools/index.md:583
 msgid ""
 "[nano](https://www.nano-editor.org/) is a simple, user-friendly terminal-"
 "based text editor."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:491
+#: src/distro/popular-applications/development-tools/index.md:594
 msgid "# Open file in nano\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:493
+#: src/distro/popular-applications/development-tools/index.md:596
 msgid "# Basic navigation:\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:495
+#: src/distro/popular-applications/development-tools/index.md:598
 msgid "# Ctrl+U        - Paste line\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:497
+#: src/distro/popular-applications/development-tools/index.md:600
 msgid "# Ctrl+W        - Search text\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:499
+#: src/distro/popular-applications/development-tools/index.md:602
 msgid "# Ctrl+G        - Show help\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:501
+#: src/distro/popular-applications/development-tools/index.md:604
 msgid "# Ctrl+_        - Go to line\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:503
+#: src/distro/popular-applications/development-tools/index.md:606
 msgid "# File operations:\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:505
+#: src/distro/popular-applications/development-tools/index.md:608
 msgid "# Ctrl+X        - Exit nano\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:507
+#: src/distro/popular-applications/development-tools/index.md:610
 msgid "# Ctrl+T        - Run spell checker\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:512
+#: src/distro/popular-applications/development-tools/index.md:615
 msgid "Neovim"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:514
+#: src/distro/popular-applications/development-tools/index.md:617
 msgid ""
 "[Neovim](https://neovim.io/) is a hyperextensible Vim-based text editor."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:525
+#: src/distro/popular-applications/development-tools/index.md:628
 msgid "# Open file in neovim\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:529
+#: src/distro/popular-applications/development-tools/index.md:632
 msgid "Vim"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:531
+#: src/distro/popular-applications/development-tools/index.md:634
 msgid ""
 "[Vim](https://www.vim.org/) is a highly configurable text editor for "
 "efficient text editing."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:542
+#: src/distro/popular-applications/development-tools/index.md:645
 msgid "# Open file in vim\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:544
+#: src/distro/popular-applications/development-tools/index.md:647
 msgid "# Basic navigation (in normal mode):\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:546
+#: src/distro/popular-applications/development-tools/index.md:649
 msgid "# w,W           - Move to next word\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:548
+#: src/distro/popular-applications/development-tools/index.md:651
 msgid "# 0             - Move to beginning of line\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:550
+#: src/distro/popular-applications/development-tools/index.md:653
 msgid "# gg            - Go to first line\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:552
+#: src/distro/popular-applications/development-tools/index.md:655
 msgid "# :10           - Go to line 10\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:554
+#: src/distro/popular-applications/development-tools/index.md:657
 msgid "# Editing modes:\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:556
+#: src/distro/popular-applications/development-tools/index.md:659
 msgid "# a             - Insert mode after cursor\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:558
+#: src/distro/popular-applications/development-tools/index.md:661
 msgid "# O             - Open new line above\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:563
+#: src/distro/popular-applications/development-tools/index.md:666
 msgid "# :q            - Quit\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:565
+#: src/distro/popular-applications/development-tools/index.md:668
 msgid "# :q!           - Quit without saving\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:570
+#: src/distro/popular-applications/development-tools/index.md:673
 msgid "Other Utilities"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:572
+#: src/distro/popular-applications/development-tools/index.md:675
 msgid "Hugo"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:574
+#: src/distro/popular-applications/development-tools/index.md:677
 msgid "[Hugo](https://gohugo.io/) is a fast static site generator."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:585
+#: src/distro/popular-applications/development-tools/index.md:688
 msgid "# Create a new site\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:587
+#: src/distro/popular-applications/development-tools/index.md:690
 msgid "# Start a local server\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:592
+#: src/distro/popular-applications/development-tools/index.md:695
 msgid "direnv"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:594
+#: src/distro/popular-applications/development-tools/index.md:697
 msgid ""
 "[direnv](https://direnv.net/) loads and unloads environment variables based "
 "on the current directory."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:605
+#: src/distro/popular-applications/development-tools/index.md:708
 msgid "# Allow a new .envrc\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:607
+#: src/distro/popular-applications/development-tools/index.md:710
 msgid "# Show directory environment\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:612
+#: src/distro/popular-applications/development-tools/index.md:715
 msgid "ShellCheck"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:614
+#: src/distro/popular-applications/development-tools/index.md:717
 msgid ""
 "[ShellCheck](https://www.shellcheck.net/) is a static analysis tool for "
 "shell scripts."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:625
+#: src/distro/popular-applications/development-tools/index.md:728
 msgid "# Analyze a shell script\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:629
+#: src/distro/popular-applications/development-tools/index.md:732
 msgid "jq"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:631
+#: src/distro/popular-applications/development-tools/index.md:734
 msgid "[jq](https://jqlang.github.io/jq/) is a command-line JSON processor."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:642
+#: src/distro/popular-applications/development-tools/index.md:745
 msgid "# Pretty-print JSON\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:643
+#: src/distro/popular-applications/development-tools/index.md:746
 msgid "'.'"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:644
+#: src/distro/popular-applications/development-tools/index.md:747
 msgid "# Extract a field\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:646
+#: src/distro/popular-applications/development-tools/index.md:749
 msgid "'.items[0].name'"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:649
+#: src/distro/popular-applications/development-tools/index.md:752
 msgid "yq"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:651
+#: src/distro/popular-applications/development-tools/index.md:754
 msgid "[yq](https://github.com/mikefarah/yq) is a command-line YAML processor."
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:662
+#: src/distro/popular-applications/development-tools/index.md:765
 msgid "# Read a field from YAML\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:663
+#: src/distro/popular-applications/development-tools/index.md:766
 msgid "'.spec.replicas'"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:664
+#: src/distro/popular-applications/development-tools/index.md:767
 msgid "# Update a field in place\n"
 msgstr ""
 
-#: src/distro/popular-applications/development-tools/index.md:666
+#: src/distro/popular-applications/development-tools/index.md:769
 msgid "'.spec.replicas = 3'"
 msgstr ""
