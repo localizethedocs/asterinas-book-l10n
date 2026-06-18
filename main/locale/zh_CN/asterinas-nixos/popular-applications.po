@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -90,13 +90,14 @@ msgid ""
 msgstr ""
 
 #: src/distro/popular-applications/index.md:19
-msgid "Container runtimes and image management tools"
+msgid "Containerization and virtualization tools"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:19
 msgid ""
 "[Podman](containerization-and-virtualization/#podman), [Skopeo]"
-"(containerization-and-virtualization/#skopeo)"
+"(containerization-and-virtualization/#skopeo), [QEMU](containerization-and-"
+"virtualization/#qemu)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:20
@@ -163,12 +164,12 @@ msgid ""
 "(development-tools/#ruby), [Rust](development-tools/#rust), [Git]"
 "(development-tools/#git), [Cargo](development-tools/#cargo), [CMake]"
 "(development-tools/#cmake), [Make](development-tools/#make), [Meson]"
-"(development-tools/#meson), [Ninja](development-tools/#ninja), [Emacs]"
-"(development-tools/#emacs), [nano](development-tools/#nano), [Neovim]"
-"(development-tools/#neovim), [Vim](development-tools/#vim), [Hugo]"
-"(development-tools/#hugo), [direnv](development-tools/#direnv), [ShellCheck]"
-"(development-tools/#shellcheck), [jq](development-tools/#jq), [yq]"
-"(development-tools/#yq)"
+"(development-tools/#meson), [Ninja](development-tools/#ninja), [GDB]"
+"(development-tools/#gdb), [Emacs](development-tools/#emacs), [nano]"
+"(development-tools/#nano), [Neovim](development-tools/#neovim), [Vim]"
+"(development-tools/#vim), [Hugo](development-tools/#hugo), [direnv]"
+"(development-tools/#direnv), [ShellCheck](development-tools/#shellcheck), "
+"[jq](development-tools/#jq), [yq](development-tools/#yq)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:24
@@ -231,7 +232,9 @@ msgid "Web browsers"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:27
-msgid "[Links2](web-browsers/#links2), [w3m](web-browsers/#w3m)"
+msgid ""
+"[Firefox](web-browsers/#firefox), [Links2](web-browsers/#links2), [w3m](web-"
+"browsers/#w3m)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:28
@@ -307,11 +310,12 @@ msgid "[AI & Machine Learning](ai-and-machine-learning/)"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:32
-msgid "Deep learning frameworks, LLM tools, and inference engines"
+msgid "Deep learning frameworks, inference engines, and AI coding agents"
 msgstr ""
 
 #: src/distro/popular-applications/index.md:32
 msgid ""
 "[PyTorch](ai-and-machine-learning/#pytorch), [TensorFlow](ai-and-machine-"
-"learning/#tensorflow), [Ollama](ai-and-machine-learning/#ollama)"
+"learning/#tensorflow), [Ollama](ai-and-machine-learning/#ollama), [Codex](ai-"
+"and-machine-learning/#codex)"
 msgstr ""

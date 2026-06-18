@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,11 +41,9 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:17
 msgid ""
-"At the time of writing, Asterinas supports over 230 Linux system calls for "
+"At the time of writing, Asterinas supports over 240 Linux system calls for "
 "the x86-64 architecture, which are summarized in the table below."
 msgstr ""
-"在撰写本文时，Asterinas 支持 x86-64 架构的 230 多种 Linux 系统调用，这些系统"
-"调用总结如下表所示。"
 
 #: src/kernel/linux-compatibility/index.md:21
 msgid "Numbers"
@@ -3730,3 +3728,10 @@ msgid ""
 "[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
 "html#pe-coff-entry-point)"
 msgstr ""
+
+#~ msgid ""
+#~ "At the time of writing, Asterinas supports over 230 Linux system calls "
+#~ "for the x86-64 architecture, which are summarized in the table below."
+#~ msgstr ""
+#~ "在撰写本文时，Asterinas 支持 x86-64 架构的 230 多种 Linux 系统调用，这些系"
+#~ "统调用总结如下表所示。"

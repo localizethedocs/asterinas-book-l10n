@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -35,9 +35,9 @@ msgstr ""
 #: src/ostd/soundness/safe-user-kernel-interactions.md:10
 msgid ""
 "`UserContext` stores the user-space register state (general-purpose "
-"registers, RFLAGS, FS/GS base, and exception info). Clients read and write "
-"this state between user-space entries — for instance, to set up syscall "
-"return values or inspect exception details."
+"registers, RFLAGS, and exception info). Clients read and write this state "
+"between user-space entries — for instance, to set up syscall return values "
+"or inspect exception details."
 msgstr ""
 
 #: src/ostd/soundness/safe-user-kernel-interactions.md:16
@@ -79,26 +79,19 @@ msgid ""
 msgstr ""
 
 #: src/ostd/soundness/safe-user-kernel-interactions.md:50
-msgid ""
-"**FS base**: The user's `fsbase` is stored in `UserContext` and restored via "
-"`wrfsbase`. The kernel uses GS (not FS) for CPU-local storage, so a user-"
-"controlled FS base cannot affect kernel state."
-msgstr ""
-
-#: src/ostd/soundness/safe-user-kernel-interactions.md:55
 msgid "The above safety measures are key to achieving the following invariant:"
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:57
+#: src/ostd/soundness/safe-user-kernel-interactions.md:52
 msgid ""
 "**Safety Invariant:** User space cannot manipulate kernel-mode CPU state."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:59
+#: src/ostd/soundness/safe-user-kernel-interactions.md:54
 msgid "VmSpace"
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:61
+#: src/ostd/soundness/safe-user-kernel-interactions.md:56
 msgid ""
 "`VmSpace` manages a user-space page table. To modify page table mappings, "
 "clients obtain a [`CursorMut`](https://asterinas.github.io/api-docs/0.17.1/"
@@ -108,23 +101,23 @@ msgid ""
 "virtual address range within the page table."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:67
+#: src/ostd/soundness/safe-user-kernel-interactions.md:62
 msgid "The key safety invariant of `VmSpace` is:"
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:69
+#: src/ostd/soundness/safe-user-kernel-interactions.md:64
 msgid ""
 "**Safety Invariant.** Only untyped frames and I/O memory can be mapped into "
 "user space."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:71
+#: src/ostd/soundness/safe-user-kernel-interactions.md:66
 msgid ""
 "`CursorMut` exposes exactly two methods for creating mappings, and neither "
 "accepts typed frames:"
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:74
+#: src/ostd/soundness/safe-user-kernel-interactions.md:69
 msgid ""
 "[`CursorMut::map(frame, prop)`](https://asterinas.github.io/api-docs/0.17.1/"
 "ostd/mm/vm_space/struct.CursorMut.html#method.map) accepts a `UFrame` — an "
@@ -132,7 +125,7 @@ msgid ""
 "`UFrame` unless `M: AnyUFrameMeta`."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:78
+#: src/ostd/soundness/safe-user-kernel-interactions.md:73
 msgid ""
 "[`CursorMut::map_iomem(io_mem, prop, len, offset)`](https://asterinas.github."
 "io/api-docs/0.17.1/ostd/mm/vm_space/struct.CursorMut.html#method.map_iomem) "
@@ -140,7 +133,7 @@ msgid ""
 "memory that does not host Rust objects."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:82
+#: src/ostd/soundness/safe-user-kernel-interactions.md:77
 msgid ""
 "**TLB coherence**: When frames are unmapped from user space, they are "
 "wrapped in `RcuDrop` and attached to the [`TlbFlusher`](https://github.com/"
@@ -148,21 +141,21 @@ msgid ""
 "mm/tlb.rs#L28), which tracks which CPUs have cached the translation."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:87
+#: src/ostd/soundness/safe-user-kernel-interactions.md:82
 msgid ""
 "**Safety Invariant.** The frames are not freed until TLB flush IPIs have "
 "been sent to all relevant CPUs and acknowledged."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:89
+#: src/ostd/soundness/safe-user-kernel-interactions.md:84
 msgid "This prevents use-after-free via stale TLB entries."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:91
+#: src/ostd/soundness/safe-user-kernel-interactions.md:86
 msgid "Accessing User Memory from the Kernel"
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:93
+#: src/ostd/soundness/safe-user-kernel-interactions.md:88
 msgid ""
 "The kernel frequently needs to read/write user-space memory (e.g., for "
 "`read()`/`write()` syscalls). Because user space can modify its own pages at "
@@ -172,13 +165,13 @@ msgid ""
 "md#the-solution-typed-and-untyped-frames)."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:101
+#: src/ostd/soundness/safe-user-kernel-interactions.md:96
 msgid ""
 "**Safety Invariant.** The kernel never creates Rust references to user "
 "memory."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:103
+#: src/ostd/soundness/safe-user-kernel-interactions.md:98
 msgid ""
 "[`VmSpace::reader(vaddr, len)`](https://asterinas.github.io/api-docs/0.17.1/"
 "ostd/mm/vm_space/struct.VmSpace.html#method.reader) and [`VmSpace::"
@@ -193,20 +186,20 @@ msgid ""
 "gracefully and propagates the error to the caller."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:115
+#: src/ostd/soundness/safe-user-kernel-interactions.md:110
 msgid ""
 "These methods also enforce two runtime checks before constructing the "
 "cursors:"
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:118
+#: src/ostd/soundness/safe-user-kernel-interactions.md:113
 msgid ""
 "**Page table identity**: The call fails if the `VmSpace`'s page table is not "
 "the one currently active on this CPU, preventing access to another task's "
 "address space."
 msgstr ""
 
-#: src/ostd/soundness/safe-user-kernel-interactions.md:122
+#: src/ostd/soundness/safe-user-kernel-interactions.md:117
 msgid ""
 "**Address range**: The call fails if the address range extends beyond the "
 "user-space address limit, preventing accidental access to kernel memory "

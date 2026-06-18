@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:3
 msgid ""
-"This category covers deep learning frameworks, LLM tools, and inference "
-"engines."
+"This category covers deep learning frameworks, inference engines, and AI "
+"coding agents."
 msgstr ""
 
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:5
@@ -40,12 +40,14 @@ msgstr ""
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:11
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:127
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:248
+#: src/distro/popular-applications/ai-and-machine-learning/index.md:270
 msgid "Installation"
 msgstr "安装"
 
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:19
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:135
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:254
+#: src/distro/popular-applications/ai-and-machine-learning/index.md:276
 msgid "Verified Usage"
 msgstr "已验证的使用情况"
 
@@ -237,4 +239,22 @@ msgstr ""
 
 #: src/distro/popular-applications/ai-and-machine-learning/index.md:259
 msgid "# List downloaded models\n"
+msgstr ""
+
+#: src/distro/popular-applications/ai-and-machine-learning/index.md:264
+msgid "AI Coding Agents"
+msgstr ""
+
+#: src/distro/popular-applications/ai-and-machine-learning/index.md:266
+msgid "Codex"
+msgstr ""
+
+#: src/distro/popular-applications/ai-and-machine-learning/index.md:268
+msgid ""
+"[Codex](https://github.com/openai/codex) is a coding agent that runs from "
+"the terminal and connects to OpenAI-compatible model providers."
+msgstr ""
+
+#: src/distro/popular-applications/ai-and-machine-learning/index.md:279
+msgid "# Start an interactive Codex session\n"
 msgstr ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,6 +41,7 @@ msgstr ""
 
 #: src/distro/popular-applications/containerization-and-virtualization/index.md:13
 #: src/distro/popular-applications/containerization-and-virtualization/index.md:68
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:92
 msgid "Installation"
 msgstr "安裝"
 
@@ -50,6 +51,7 @@ msgstr "若要安裝 Podman，請將以下內容增添到 `configuration.nix`：
 
 #: src/distro/popular-applications/containerization-and-virtualization/index.md:21
 #: src/distro/popular-applications/containerization-and-virtualization/index.md:74
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:116
 msgid "Verified Usage"
 msgstr ""
 
@@ -125,4 +127,78 @@ msgstr ""
 
 #: src/distro/popular-applications/containerization-and-virtualization/index.md:79
 msgid "# List all tags for a repository\n"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:84
+msgid "Virtualization"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:86
+msgid "QEMU"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:88
+msgid ""
+"[QEMU](https://www.qemu.org/) is the most widely used open-source machine "
+"emulator and virtualizer. It supports full system emulation as well as user-"
+"mode binary translation."
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:90
+msgid ""
+"Asterinas does not yet support hardware-assisted virtualization (KVM), "
+"therefore QEMU runs exclusively with **TCG** (Tiny Code Generator / software "
+"emulation) on Asterinas NixOS."
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:94
+msgid ""
+"```nix\n"
+"environment.systemPackages = with pkgs; [ qemu_kvm ];\n"
+"\n"
+"environment.variables = {\n"
+"  LINUX_BZIMAGE = \"${pkgs.linuxPackages.kernel}/bzImage\";\n"
+"  OVMF_PATH = \"${pkgs.OVMF.fd}/FV/OVMF.fd\";\n"
+"};\n"
+"```"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:103
+msgid "Environment Variables"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:105
+msgid ""
+"The following environment variables are automatically provided **when "
+"building the NixOS test suite**:"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:107
+msgid "`LINUX_BZIMAGE`: Path to the standard Linux kernel bzImage"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:108
+msgid "`OVMF_PATH`: Path to the OVMF (UEFI) firmware"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:110
+msgid "You can enable them by building with:"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:118
+msgid "Display QEMU version"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:124
+msgid "Run Linux kernel with TCG"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:135
+msgid "Run Asterinas kernel with TCG"
+msgstr ""
+
+#: src/distro/popular-applications/containerization-and-virtualization/index.md:150
+msgid ""
+"**Note**: Running the Asterinas kernel requires the `linux/multiboot` boot "
+"protocol (**multiboot2 is not supported**). Compile Asterinas with:"
 msgstr ""
