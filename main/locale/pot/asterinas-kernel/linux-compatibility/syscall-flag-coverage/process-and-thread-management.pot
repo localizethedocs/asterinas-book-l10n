@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -238,108 +238,150 @@ msgid "// Request that the calling thread should be traced by its parent\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:198
-msgid "// Read one word from the tracee's USER area\n"
+msgid "// Read one word from the tracee's text space\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:201
-msgid "// Write one word to the tracee's USER area\n"
+msgid "// Read one word from the tracee's data space\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:204
-msgid "// Resume a ptrace-stopped tracee, optionally injecting a signal\n"
+msgid "// Read one word from the tracee's USER area\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:207
-msgid "// Kill a tracee\n"
+msgid "// Write one word to the tracee's text space\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:210
-msgid "// Single-step a tracee, optionally injecting a signal\n"
+msgid "// Write one word to the tracee's data space\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:213
-msgid "// Get tracee general-purpose registers\n"
+msgid "// Write one word to the tracee's USER area\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:216
-msgid "// Set tracee general-purpose registers\n"
+msgid "// Resume a ptrace-stopped tracee, optionally injecting a signal\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:219
-msgid "// Set the ptrace options of a tracee\n"
+msgid "// Kill a tracee\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:222
-msgid "// Get the message associated with the current ptrace-event-stop\n"
+msgid "// Single-step a tracee, optionally injecting a signal\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:225
-msgid "// Get the siginfo associated with the current ptrace-stop\n"
+msgid "// Get tracee general-purpose registers\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:230
-msgid "Supported requests:"
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:228
+msgid "// Set tracee general-purpose registers\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:231
-msgid "`PTRACE_TRACEME`"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:232
-msgid "`PTRACE_PEEKUSER` (x86-64 only)"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:233
-msgid "`PTRACE_POKEUSER` (x86-64 only)"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:234
-msgid "`PTRACE_CONT`"
+msgid ""
+"// Resume a ptrace-stopped tracee and stop it again at syscall entry/exit,\n"
+"// optionally injecting a signal\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:235
-msgid "`PTRACE_KILL`"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:236
-msgid "`PTRACE_SINGLESTEP` (x86-64 only)"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:237
-msgid "`PTRACE_GETREGS` (x86-64 only)"
+msgid "// Set the ptrace options of a tracee\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:238
-msgid "`PTRACE_SETREGS` (x86-64 only)"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:239
-msgid "`PTRACE_SETOPTIONS`"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:240
-msgid "`PTRACE_GETEVENTMSG`"
+msgid "// Get the message associated with the current ptrace-event-stop\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:241
+msgid "// Get the siginfo associated with the current ptrace-stop\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:246
+msgid "Supported requests:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:247
+msgid "`PTRACE_TRACEME`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:248
+msgid "`PTRACE_PEEKTEXT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:249
+msgid "`PTRACE_PEEKDATA`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:250
+msgid "`PTRACE_PEEKUSER` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:251
+msgid "`PTRACE_POKETEXT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:252
+msgid "`PTRACE_POKEDATA`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:253
+msgid "`PTRACE_POKEUSER` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:254
+msgid "`PTRACE_CONT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:255
+msgid "`PTRACE_KILL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:256
+msgid "`PTRACE_SINGLESTEP` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:257
+msgid "`PTRACE_GETREGS` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:258
+msgid "`PTRACE_SETREGS` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:259
+msgid "`PTRACE_SYSCALL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:260
+msgid "`PTRACE_SETOPTIONS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:261
+msgid "`PTRACE_GETEVENTMSG`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:262
 msgid "`PTRACE_GETSIGINFO`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:243
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:264
 msgid "Limitations:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:244
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:265
 msgid "Only the main thread of a process can act as the tracer."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:245
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:266
 msgid ""
 "`PTRACE_PEEKUSER` and `PTRACE_POKEUSER` only support offsets for general-"
 "purpose registers."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:246
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:267
 msgid ""
 "If a tracee has clone-family options (`PTRACE_O_TRACEFORK`, "
 "`PTRACE_O_TRACEVFORK`, `PTRACE_O_TRACEVFORKDONE`, or `PTRACE_O_TRACECLONE`) "
@@ -347,7 +389,7 @@ msgid ""
 "event, the clone-family operation returns `EOPNOTSUPP`."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:248
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:269
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/ptrace.2.html)."

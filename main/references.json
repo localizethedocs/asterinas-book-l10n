@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-05-19 16:25:18 +0800",
-      "hash" : "0f50d8dabf4438a90853ec356bc5201f0e01face",
-      "title" : "Require block backend to accept `complete_fn`"
+      "date" : "2026-06-16 19:04:10 +0800",
+      "hash" : "e4f8507720924b42e04dfa40b8b10e2c0bf11941",
+      "title" : "Fix `memfd_create` returning wrong errno for too-long name"
     }
   },
   "type" : "branch",
