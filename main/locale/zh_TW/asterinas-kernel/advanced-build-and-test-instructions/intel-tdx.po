@@ -110,7 +110,7 @@ msgstr ""
 
 #: src/kernel/intel-tdx.md:82
 msgid "Using GDB to debug"
-msgstr ""
+msgstr "使用 GDB 進行除錯"
 
 #: src/kernel/intel-tdx.md:84
 msgid ""

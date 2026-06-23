@@ -81,27 +81,27 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:47
 msgid "`F_GETOWN_EX` and `F_SETOWN_EX`"
-msgstr ""
+msgstr "`F_GETOWN_EX` 和 `F_SETOWN_EX`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:48
 msgid "`F_GETSIG` and `F_SETSIG`"
-msgstr ""
+msgstr "`F_GETSIG` 和 `F_SETSIG`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:49
 msgid "`F_SETLEASE` and `F_GETLEASE`"
-msgstr ""
+msgstr "`F_SETLEASE` 和 `F_GETLEASE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:50
 msgid "`F_SETPIPE_SZ` and `F_GETPIPE_SZ`"
-msgstr ""
+msgstr "`F_SETPIPE_SZ` 和 `F_GETPIPE_SZ`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:51
 msgid "`F_GET_RW_HINT` and `F_SET_RW_HINT`"
-msgstr ""
+msgstr "`F_GET_RW_HINT` 和 `F_SET_RW_HINT`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:52
 msgid "`F_GET_FILE_RW_HINT` and `F_SET_FILE_RW_HINT`"
-msgstr ""
+msgstr "`F_GET_FILE_RW_HINT` 和 `F_SET_FILE_RW_HINT`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:54
 msgid ""

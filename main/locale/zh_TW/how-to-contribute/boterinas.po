@@ -164,13 +164,13 @@ msgstr ""
 
 #: src/to-contribute/boterinas.md:61
 msgid "Only team members can assign users or remove assignments."
-msgstr ""
+msgstr "只有團隊成員才可以指派使用者或移除指派。"
 
 #: src/to-contribute/boterinas.md:62
 msgid ""
 "Labels are crucial for organizing issues and pull requests, so ensure they "
 "are used consistently and accurately."
-msgstr ""
+msgstr "標籤對於組織議題與拉取請求至關重要，請確保標籤使用一致且準確。"
 
 #: src/to-contribute/boterinas.md:63
 msgid ""

@@ -64,7 +64,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/kernel-parameters.md:27
 #: src/kernel/linux-compatibility/kernel-parameters.md:64
 msgid "Valid values:"
-msgstr ""
+msgstr "有效值："
 
 #: src/kernel/linux-compatibility/kernel-parameters.md:28
 msgid "`tty0`"

@@ -148,11 +148,11 @@ msgstr ""
 
 #: src/osdk/reference/commands/build.md:80
 msgid "\"./initramfs.cpio.gz\""
-msgstr ""
+msgstr "\"./initramfs.cpio.gz\""
 
 #: src/osdk/reference/commands/build.md:80
 msgid "\"multiboot2\""
-msgstr ""
+msgstr "\"multiboot2\""
 
 #: src/osdk/reference/commands/build.md:83
 msgid "Build a project and append `sh`, `-l` to init process arguments:"

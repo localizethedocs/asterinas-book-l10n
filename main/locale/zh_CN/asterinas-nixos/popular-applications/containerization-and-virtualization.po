@@ -165,7 +165,7 @@ msgstr ""
 
 #: src/distro/popular-applications/containerization-and-virtualization/index.md:103
 msgid "Environment Variables"
-msgstr ""
+msgstr "环境变量"
 
 #: src/distro/popular-applications/containerization-and-virtualization/index.md:105
 msgid ""

@@ -17,7 +17,7 @@ msgstr "進階建置與測試說明"
 
 #: src/kernel/advanced-instructions.md:3
 msgid "User-mode unit tests"
-msgstr ""
+msgstr "使用者模式單元測試"
 
 #: src/kernel/advanced-instructions.md:5
 msgid ""
@@ -38,7 +38,7 @@ msgstr "若要測試單個軟體箱，請進入該軟體箱的目錄並執行 `c
 
 #: src/kernel/advanced-instructions.md:17
 msgid "Kernel-mode unit tests"
-msgstr ""
+msgstr "內核模式單元測試"
 
 #: src/kernel/advanced-instructions.md:19
 msgid ""
@@ -58,11 +58,11 @@ msgstr ""
 
 #: src/kernel/advanced-instructions.md:33
 msgid "Integration test"
-msgstr ""
+msgstr "整合測試"
 
 #: src/kernel/advanced-instructions.md:35
 msgid "Regression test"
-msgstr ""
+msgstr "回歸測試"
 
 #: src/kernel/advanced-instructions.md:37
 msgid ""
@@ -97,7 +97,7 @@ msgstr "除錯"
 
 #: src/kernel/advanced-instructions.md:65
 msgid "Using GDB to debug"
-msgstr ""
+msgstr "使用 GDB 進行除錯"
 
 #: src/kernel/advanced-instructions.md:67
 msgid ""

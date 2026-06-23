@@ -122,23 +122,23 @@ msgstr "`PR_GET_SPECULATION_CTRL` 和 `PR_SET_SPECULATION_CTRL`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:53
 msgid "`PR_SVE_GET_VL` and `PR_SVE_SET_VL`"
-msgstr ""
+msgstr "`PR_SVE_GET_VL` 和 `PR_SVE_SET_VL`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:54
 msgid "`PR_SET_SYSCALL_USER_DISPATCH`"
-msgstr ""
+msgstr "`PR_SET_SYSCALL_USER_DISPATCH`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:55
 msgid "`PR_GET_TAGGED_ADDR_CTRL` and `PR_SET_TAGGED_ADDR_CTRL`"
-msgstr ""
+msgstr "`PR_GET_TAGGED_ADDR_CTRL` 和 `PR_SET_TAGGED_ADDR_CTRL`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:56
 msgid "`PR_TASK_PERF_EVENTS_ENABLE` and `PR_TASK_PERF_EVENTS_DISABLE`"
-msgstr ""
+msgstr "`PR_TASK_PERF_EVENTS_ENABLE` 和 `PR_TASK_PERF_EVENTS_DISABLE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:57
 msgid "`PR_GET_THP_DISABLE` and `PR_SET_THP_DISABLE`"
-msgstr ""
+msgstr "`PR_GET_THP_DISABLE` 和 `PR_SET_THP_DISABLE`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:58
 msgid "`PR_GET_TID_ADDRESS`"
@@ -146,15 +146,15 @@ msgstr "`PR_GET_TID_ADDRESS`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:59
 msgid "`PR_GET_TIMING` and `PR_SET_TIMING`"
-msgstr ""
+msgstr "`PR_GET_TIMING` 和 `PR_SET_TIMING`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:60
 msgid "`PR_GET_TSC` and `PR_SET_TSC`"
-msgstr ""
+msgstr "`PR_GET_TSC` 和 `PR_SET_TSC`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:61
 msgid "`PR_GET_UNALIGN` and `PR_SET_UNALIGN`"
-msgstr ""
+msgstr "`PR_GET_UNALIGN` 和 `PR_SET_UNALIGN`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:62
 msgid "`PR_GET_AUXV`"
@@ -192,11 +192,11 @@ msgstr "未支援的版本："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:94
 msgid "`_LINUX_CAPABILITY_VERSION_1`"
-msgstr ""
+msgstr "`_LINUX_CAPABILITY_VERSION_1`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:95
 msgid "`_LINUX_CAPABILITY_VERSION_2`"
-msgstr ""
+msgstr "`_LINUX_CAPABILITY_VERSION_2`"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:97
 msgid ""
