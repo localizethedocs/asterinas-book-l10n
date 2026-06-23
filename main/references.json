@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-06-16 19:04:10 +0800",
-      "hash" : "e4f8507720924b42e04dfa40b8b10e2c0bf11941",
-      "title" : "Fix `memfd_create` returning wrong errno for too-long name"
+      "date" : "2026-06-22 18:08:39 -0700",
+      "hash" : "42d38f9af388c28c2dda8cb4d6e62de465f23e8e",
+      "title" : "Add regression test for `O_PATH` notification suppression"
     }
   },
   "type" : "branch",
