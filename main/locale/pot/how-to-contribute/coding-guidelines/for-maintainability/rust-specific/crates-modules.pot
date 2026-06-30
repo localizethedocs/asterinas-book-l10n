@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:1
+msgid "Crates & Modules"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:3
+msgid "Use workspace dependencies (`workspace-deps`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:5
+msgid ""
+"Always declare shared dependencies in the workspace `[workspace."
+"dependencies]` table and reference them with `.workspace = true` in member "
+"crates."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:10
+msgid ""
+"```toml\n"
+"# In the workspace root Cargo.toml\n"
+"[workspace.dependencies]\n"
+"ostd = { version = \"0.17.0\", path = \"ostd\" }\n"
+"bitflags = \"2.6\"\n"
+"\n"
+"# In a member crate's Cargo.toml\n"
+"[dependencies]\n"
+"ostd.workspace = true\n"
+"bitflags.workspace = true\n"
+"```"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:22
+msgid "Add module-level documentation for major components (`module-docs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:24
+msgid ""
+"A module file that serves as an important kernel component (e.g., subsystem "
+"entry point, major data structure, driver) should begin with a `//!` comment "
+"explaining:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:28
+msgid "What the module does"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:29
+msgid "The key types it exposes"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:30
+msgid "How it relates to neighboring modules"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:33
+msgid ""
+"//! Virtual memory area (VMA) management.\n"
+"//!\n"
+"//! This module defines [`VmMapping`] and associated types,\n"
+"//! which represent contiguous regions of a process's virtual address "
+"space.\n"
+"//! VMAs are managed by the [`Vmar`] tree in the parent module.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:40
+msgid "Default to the narrowest visibility (`narrow-visibility`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:42
+msgid ""
+"Start private, then widen to `pub(super)`, `pub(crate)`, or `pub` only when "
+"an actual external consumer requires it."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:47
+msgid "// Good — restricted to the parent module\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:52
+msgid "// ...\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:54
+msgid "// Bad — unnecessarily wide\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:59
+msgid ""
+"Inside the `aster-kernel` crate, `pub(crate)` and `pub` are equivalent, as "
+"the crate has no downstream consumers. Prefer the shorter `pub`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:63
+msgid ""
+"See also: PR [\\#2951](https://github.com/asterinas/asterinas/pull/2951), "
+"[\\#2605](https://github.com/asterinas/asterinas/"
+"pull/2605#discussion_r2720506912), and [\\#3154](https://github.com/"
+"asterinas/asterinas/pull/3154#discussion_r3100905375)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:68
+msgid "Qualify function calls with the parent module (`qualified-fn-imports`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:70
+msgid ""
+"When importing a free function or a static/constant from another module, "
+"import the **parent module** and access the item through it (`module::"
+"function()`, `module::CONSTANT`). Do not import free functions or statics "
+"directly by name."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:76
+msgid ""
+"This convention is recommended by [_The Rust Programming Language_](https://"
+"doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-"
+"keyword.html) and followed by the Rust compiler codebase. It serves two "
+"purposes:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:81
+msgid ""
+"The call site makes it clear that an imported item is being used, not a "
+"local one."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:84
+msgid "The module name provides context that complements the item name."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:88
+msgid "// Good — module-qualified function call\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:92
+msgid "// Good — module-qualified static access\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:97
+msgid "// Bad — bare function name; unclear origin at call site\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:102
+msgid "// Bad — bare static name; could be mistaken for a local constant\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:109
+msgid ""
+"This guideline applies to **free functions and statics/constants**. Types, "
+"traits, and enum variants should still be imported directly by name, "
+"following the standard Rust convention."
+msgstr ""

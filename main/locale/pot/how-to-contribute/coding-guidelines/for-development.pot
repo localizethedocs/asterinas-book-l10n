@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:1
+msgid "For Development"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:3
+msgid ""
+"_Does the code do the right thing — including on error, concurrent, and hot "
+"paths — and is it proven by tests?_"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:5
+msgid ""
+"This is the index of the **development** guidelines. Each subsection is its "
+"own page, and each entry below links a stable `short-name` to its guideline, "
+"with a one-line gist so a reader (or a review tool) can grasp the guideline "
+"before opening it."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:10
+msgid "Index"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:12
+msgid "**[Correctness](correctness.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:13
+msgid ""
+"[`checked-arithmetic`](correctness.md#checked-arithmetic): Use checked or "
+"saturating arithmetic where overflow is possible; don't rely on wrapping."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:14
+msgid ""
+"[`debug-assert`](correctness.md#debug-assert): Invariants that should never "
+"fail in correct code go in `debug_assert!`, not `assert!`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:15
+msgid ""
+"[`propagate-errors`](correctness.md#propagate-errors): Propagate errors with "
+"`?`; don't `.unwrap()` where failure is legitimate."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:17
+msgid "**[Concurrency](concurrency.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:18
+msgid ""
+"[`lock-ordering`](concurrency.md#lock-ordering): Establish and document one "
+"global, hierarchical lock order to avoid deadlock."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:19
+msgid ""
+"[`no-io-under-spinlock`](concurrency.md#no-io-under-spinlock): Never do I/O "
+"or blocking work under a spinlock; drop it first or use a sleeping mutex."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:20
+msgid ""
+"[`careful-atomics`](concurrency.md#careful-atomics): Use a lock when fields "
+"change in concert; atomics only for a genuinely independent value."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:21
+msgid ""
+"[`atomic-critical-sections`](concurrency.md#atomic-critical-sections): Keep "
+"a check-then-act sequence under one lock acquisition (else a TOCTOU race)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:23
+msgid "**[Resource Management](resource-management.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:24
+msgid ""
+"[`raii`](resource-management.md#raii): Acquire and release every resource "
+"via `Drop`, not manual enable/disable pairs."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:26
+msgid "**[Efficiency](efficiency.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:27
+msgid ""
+"[`no-linear-hot-paths`](efficiency.md#no-linear-hot-paths): Keep hot paths "
+"(syscall dispatch, scheduler enqueue) sub-linear; reject O(n) over large n."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:28
+msgid ""
+"[`minimize-copies`](efficiency.md#minimize-copies): Avoid needless copies/"
+"allocations — cloning an `Arc` where a reference suffices, etc."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:29
+msgid ""
+"[`no-premature-optimization`](efficiency.md#no-premature-optimization): "
+"Justify optimizations with measured data; don't add complexity for a non-"
+"problem."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:31
+msgid "**[Observability](observability.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:32
+msgid ""
+"[`ostd-log-only`](observability.md#ostd-log-only): Use the `ostd::log` "
+"macros in OSTD-based crates, not the `log` crate directly."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:33
+msgid ""
+"[`log-levels`](observability.md#log-levels): Match the eight severity levels "
+"to meaning — `error!` for recoverable failures, `emerg!` before halt."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:34
+msgid ""
+"[`log-prefix`](observability.md#log-prefix): Define a crate `__log_prefix` "
+"at the crate root before any `mod`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:36
+msgid "**[Testing](testing.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:37
+msgid ""
+"[`add-regression-tests`](testing.md#add-regression-tests): Every bug fix "
+"ships a test that would have caught it, referencing the issue."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:38
+msgid ""
+"[`test-visible-behavior`](testing.md#test-visible-behavior): Test observable "
+"behavior through public APIs; name tests after behavior, not internals."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:39
+msgid ""
+"[`use-assertions`](testing.md#use-assertions): Use assertion macros (clear "
+"failure messages), not print-and-eyeball."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:40
+msgid ""
+"[`test-cleanup`](testing.md#test-cleanup): Clean up after every test (fds, "
+"temp files, child processes) to avoid flakiness."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/index.md:42
+msgid "No **path-specific** guidelines yet."
+msgstr ""

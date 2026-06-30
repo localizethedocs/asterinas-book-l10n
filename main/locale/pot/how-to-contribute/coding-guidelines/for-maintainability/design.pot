@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:1
+msgid "Design"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:3
+msgid "Give each unit a single responsibility (`single-responsibility`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:5
+msgid ""
+"Each module, type, or function should have one, and only one, reason to "
+"change. If you cannot describe what a unit does without the words \"and,\" "
+"\"or,\" or \"but,\" it has too many responsibilities."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:11
+msgid "This applies at every scale:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:13
+msgid ""
+"**Functions** should do one thing, do it well, and do it only. If you can "
+"extract another function from it with a name that is not merely a "
+"restatement of its implementation, the original function is doing more than "
+"one thing. Do not mix levels of abstraction: a syscall handler should read "
+"like a specification, while byte-level manipulation belongs in a helper."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:20
+msgid ""
+"**Files** should hold one concept. When a file grows long or contains "
+"multiple distinct concepts, split it — each major data structure, subsystem "
+"entry point, or significant abstraction deserves its own file."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:26
+msgid "// Good — each function operates at one level of abstraction\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:32
+msgid "// Bad — mixes high-level logic with low-level details\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:40
+msgid "// ... 30 more lines of byte parsing ...\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:44
+msgid ""
+"See also: _Clean Code_, Chapter 3 \"Functions\"; PR [\\#639](https://github."
+"com/asterinas/asterinas/pull/639#discussion_r1524629393)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:48
+msgid "Don't repeat yourself (`dry`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:50
+msgid ""
+"Every piece of knowledge should have a single, unambiguous representation. "
+"Duplication harms readability and maintainability. When the same pattern "
+"appears three or more times, eliminate the duplication (e.g., by adding a "
+"helper function)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:56
+msgid "Hide details behind interfaces (`information-hiding`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:58
+msgid ""
+"Hide details behind well-defined interfaces. A module's public surface "
+"should contain only what its consumers need. Internal data structures, "
+"helper types, and bookkeeping fields should remain private, and "
+"implementation details should not leak through public APIs (including their "
+"documentation)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:66
+msgid ""
+"See also: [`narrow-visibility`](rust-specific/crates-and-modules.md#narrow-"
+"visibility) for Rust-specific visibility rules; PR [\\#2951](https://github."
+"com/asterinas/asterinas/pull/2951#discussion_r2786925410)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:71
+msgid "Be open for extension, closed for modification (`open-closed`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:73
+msgid ""
+"Stable modules and APIs should be open to extension but closed to breaking "
+"modification. Prefer adding new behavior through existing interfaces "
+"(traits, enums, and pluggable components) instead of repeatedly editing "
+"established call paths. Do not introduce extension points preemptively; add "
+"them when there is a concrete extension need."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:83
+msgid "Follow the principle of least surprise (`least-surprise`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:85
+msgid ""
+"Functions, types, and APIs should behave as their names and signatures "
+"suggest. When an obvious behavior is not implemented, readers lose trust in "
+"the codebase and must fall back on reading implementation details. Prefer "
+"names and API shapes that users already know from Rust and Linux; do not "
+"invent new terms for well-known operations."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:95
+msgid "// Good — follows common Rust naming conventions\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:98
+msgid "// Bad — unfamiliar synonyms for common operations\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:104
+msgid "Aim for loose coupling and strong cohesion (`coupling-cohesion`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:106
+msgid ""
+"Connections between modules should be small, visible, and flexible. Within a "
+"module, every part should contribute to a single, well-defined purpose."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:111
+msgid "Be consistent (`consistency`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:113
+msgid ""
+"Do similar things the same way throughout the codebase. Consistency reduces "
+"surprise and cognitive load even when neither approach is objectively "
+"superior. When a convention already exists, follow it; do not introduce a "
+"competing convention without compelling justification."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:120
+msgid "Take a Rust-native approach (`rust-native`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:122
+msgid ""
+"Asterinas is inspired by Linux but is not a C port. The language shapes how "
+"we think about problems: where C code relies on conventions and manual "
+"discipline (return-code checking, paired init/cleanup, header-file "
+"contracts), Rust offers compiler-enforced, zero-cost abstractions (the `?` "
+"operator, RAII, trait bounds)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/design.md:129
+msgid ""
+"Learn from Linux's design, not its idioms. The result should read like "
+"idiomatic Rust, not like C written in Rust syntax."
+msgstr ""
