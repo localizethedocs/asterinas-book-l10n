@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:1
+msgid "For Security"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:3
+msgid "_Could an adversary breach the security of the kernel?_"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:5
+msgid ""
+"This is the index of the **security** guidelines. Each subsection is its own "
+"page, and each entry below links a stable `short-name` to its guideline, "
+"with a one-line gist so a reader (or a review tool) can grasp the guideline "
+"before opening it."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:10
+msgid "Index"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:12
+msgid "**[Memory Safety](memory-safety.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:13
+msgid ""
+"[`justify-unsafe-use`](memory-safety.md#justify-unsafe-use): Precede every "
+"`unsafe` block with a `// SAFETY:` comment justifying soundness."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:14
+msgid ""
+"[`document-safety-conds`](memory-safety.md#document-safety-conds): Give "
+"every `unsafe` fn/trait a `# Safety` section stating caller obligations."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:15
+msgid ""
+"[`deny-unsafe-kernel`](memory-safety.md#deny-unsafe-kernel): All `kernel/` "
+"crates `#![deny(unsafe_code)]`; only OSTD crates may use `unsafe`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:16
+msgid ""
+"[`module-boundary-safety`](memory-safety.md#module-boundary-safety): An "
+"`unsafe` block's soundness spans all code touching the same private state; "
+"minimize that module."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:18
+msgid "**[Security Properties](security-properties.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:19
+msgid ""
+"[`validate-at-boundaries`](security-properties.md#validate-at-boundaries): "
+"Validate all user-supplied data at boundaries (e.g. syscall entry), then "
+"trust it internally."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-security/index.md:21
+msgid "No **path-specific** guidelines yet."
+msgstr ""

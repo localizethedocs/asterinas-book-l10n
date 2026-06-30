@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:1
+msgid "Comments"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:3
+msgid "Follow RFC 1574 summary line conventions (`rfc1574-summary`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:5
+msgid ""
+"The first line of a doc comment should be concise and one sentence. Its "
+"grammatical form depends on what the item is:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:8
+msgid ""
+"**Functions and methods** — third-person singular present indicative verb "
+"(\"Returns\", \"Creates\", \"Acquires\"), describing the action performed."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:10
+msgid ""
+"**Types (structs, enums, traits, type aliases), modules, and fields** — a "
+"noun phrase naming the thing, not describing an action. This matches the "
+"Rust standard library convention (e.g., `Vec` is \"A contiguous growable "
+"array type\")."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:16
+msgid "/// Returns the mapping's start address.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:20
+msgid ""
+"/// A policy for how [`FsPath::from_fd_at`] treats an empty `path_str`.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:22
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:25
+msgid "/* ... */"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:23
+msgid "/// A guard that releases a [`SpinLock`] when dropped.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:28
+msgid "End sentence comments with punctuation (`comment-punctuation`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:30
+msgid ""
+"If a comment line is a full sentence, end it with proper punctuation. This "
+"improves readability in dense code and avoids fragmented prose."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:36
+msgid ""
+"// Good — complete sentence with punctuation.\n"
+"// SAFETY: The pointer is derived from a live allocation.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:38
+msgid ""
+"// Bad — complete sentence without punctuation\n"
+"// SAFETY: The pointer is derived from a live allocation\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:43
+msgid "Wrap identifiers in backticks (`backtick-identifiers`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:45
+msgid ""
+"Type names, method names, and code identifiers in doc comments should be "
+"wrapped in backticks for rustdoc rendering. When referring to types, prefer "
+"rustdoc links (`[TypeName]`) where possible."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:52
+msgid ""
+"/// Acquires the [`SpinLock`] and returns a guard\n"
+"/// that releases the lock on [`Drop`].\n"
+"///\n"
+"/// Callers must not call `acquire` while holding\n"
+"/// a [`RwMutex`] to avoid deadlock.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:60
+msgid ""
+"Do not disclose implementation details in doc comments (`no-impl-in-docs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:62
+msgid ""
+"Doc comments should describe _what_ the API does and _how to use it_, not "
+"_how it is implemented internally_."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:67
+msgid ""
+"// Good — behavior-oriented\n"
+"/// Returns the number of active connections.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/comments.md:69
+msgid ""
+"// Bad — leaks implementation details\n"
+"/// Returns the length of the internal `HashMap`\n"
+"/// that tracks connections by socket address.\n"
+msgstr ""

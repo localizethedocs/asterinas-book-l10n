@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:1
+msgid "Naming"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:3
+msgid ""
+"Follow Rust CamelCase and acronym capitalization (`camel-case-acronyms`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:5
+msgid ""
+"Type names follow Rust's CamelCase convention. Acronyms are title-cased per "
+"the Rust API Guidelines:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:9
+msgid "// Good\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:14
+msgid "// Bad\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:22
+msgid "End closure variables with `_fn` (`closure-fn-suffix`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:24
+msgid ""
+"Variables holding closures or function pointers must signal they are "
+"callable by ending with `_fn`. Treating a closure variable as if it were a "
+"data object misleads readers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:30
+msgid "// Good — clearly a callable\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:43
+msgid ""
+"See also: PR [\\#395](https://github.com/asterinas/asterinas/"
+"pull/395#discussion_r1402964415) and [\\#783](https://github.com/asterinas/"
+"asterinas/pull/783#discussion_r1593335375)."
+msgstr ""

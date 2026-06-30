@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:1
+msgid "For Hardware"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:3
+msgid ""
+"_Is the low-level / arch-specific code correct against the hardware and ABI "
+"contract?_"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:5
+msgid ""
+"This is the index of the **hardware** guidelines. Each subsection is its own "
+"page, and each entry below links a stable `short-name` to its guideline, "
+"with a one-line gist so a reader (or a review tool) can grasp the guideline "
+"before opening it."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:10
+msgid "Index"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:12
+msgid "**[Assembly Conventions](assembly-conventions.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:13
+msgid ""
+"[`asm-section-directives`](assembly-conventions.md#asm-section-directives): "
+"Short directive for built-in sections; `.section` with flags for custom; "
+"blank line after."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:14
+msgid ""
+"[`asm-code-width`](assembly-conventions.md#asm-code-width): `.code64`/`."
+"code32` after the section definition for single-mode sections."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:15
+msgid ""
+"[`asm-function-attributes`](assembly-conventions.md#asm-function-"
+"attributes): Place `.global`/`.balign`/`.type` directly before the function "
+"label; prefer `.global`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:16
+msgid ""
+"[`asm-type-and-size`](assembly-conventions.md#asm-type-and-size): Give Rust-"
+"callable functions `.type @function` and `.size` (not boot/trap trampolines)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:17
+msgid ""
+"[`asm-label-prefixes`](assembly-conventions.md#asm-label-prefixes): Prefix "
+"`global_asm!` labels (e.g. `bsp_`) to avoid clashes in the crate namespace."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:18
+msgid ""
+"[`asm-prefer-balign`](assembly-conventions.md#asm-prefer-balign): Use `."
+"balign` (byte-count) over arch-dependent `.align`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:20
+msgid "**[CPU Architecture-Specific](cpu-architecture-specific/)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:21
+msgid "[x86-64](cpu-architecture-specific/x86-64.md)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-hardware/index.md:22
+msgid ""
+"[`16b-align-rsp-before-call`](cpu-architecture-specific/x86-64.md#16b-align-"
+"rsp-before-call): Ensure 16-byte alignment before making a function call."
+msgstr ""
