@@ -1,0 +1,404 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:1
+msgid "Process & Thread Management"
+msgstr "进程和线程管理"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:10
+msgid "`sched_getattr` and `sched_setattr`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:12
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:70
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:92
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:158
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:173
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:193
+msgid "Supported functionality in SCML:"
+msgstr "SCML支持的功能："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:15
+msgid "// Get the scheduling policy of a \"normal\" thread\n"
+msgstr "// 获取“normal”线程的调度策略\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:24
+msgid "// Set the scheduling policy of a \"normal\" thread\n"
+msgstr "// 设置“normal”线程的调度策略\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:35
+msgid "// Get the scheduling policy of a real-time thread\n"
+msgstr "// 获取实时线程的调度策略\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:45
+msgid "// Set the scheduling policy of a real-time thread\n"
+msgstr "// 设置实时线程的调度策略\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:58
+msgid "Unsupported scheduling policies:"
+msgstr "不支持的调度策略："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:59
+msgid "`SCHED_DEADLINE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:61
+msgid "Unsupported scheduling flags:"
+msgstr "不支持的调度标志："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:62
+msgid "`SCHED_FLAG_RESET_ON_FORK`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:63
+msgid "`SCHED_FLAG_RECLAIM`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:64
+msgid "`SCHED_FLAG_DL_OVERRUN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:65
+msgid "`SCHED_FLAG_UTIL_CLAMP_MIN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:66
+msgid "`SCHED_FLAG_UTIL_CLAMP_MAX`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:68
+msgid "`wait4`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:73
+msgid ""
+"// Wait until a specified child process undergoes a state change "
+"(termination, stopping and resumption)\n"
+msgstr "// 等待指定的子进程发生状态变化(终止、停止和恢复)\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:81
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:185
+msgid "Ignored options:"
+msgstr "已忽略的选项："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:82
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:186
+msgid "`WEXITED`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:83
+msgid "`WNOTHREAD`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:84
+msgid "`WALL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:85
+msgid "`WCLONE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:87
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/wait4.2.html)."
+msgstr ""
+"更多信息请参阅[man page](https://man7.org/linux/man-pages/man2/wait4.2."
+"html)。"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:90
+msgid "`clone` and `clone3`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:105
+msgid ""
+"// Optional flags\n"
+"    //\n"
+"    // Share the parent's virtual memory\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:109
+msgid "// Share the parent's filesystem\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:111
+msgid "// Share the parent's file descriptor table\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:113
+msgid "// Share the parent's signal handlers\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:115
+msgid "// Place child in the same thread group as parent\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:117
+msgid "// Share the parent's System V semaphore adjustments\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:119
+msgid "// Suspend parent until the child exits or calls `execve`\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:121
+msgid "// Create a new mount namespace for the child\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:123
+msgid "// Write child `TID` to parent's memory\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:125
+msgid "// Allocate a `PID` file descriptor for the child\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:127
+msgid "// Set thread-local storage for the child\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:129
+msgid "// Write child `TID` to child's memory\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:131
+msgid "// Clear child `TID` in child's memory on exit\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:133
+msgid "// Make the child's parent the same as the caller's parent\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:135
+msgid "// Create a thread or process\n"
+msgstr "// 创建线程或进程\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:142
+msgid ""
+"// Create a thread or process with enhanced control by providing structured "
+"arguments\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:153
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/clone.2.html)."
+msgstr ""
+"更多信息请参阅[man page](https://man7.org/linux/man-pages/man2/clone.2."
+"html)。"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:156
+msgid "`sched_setscheduler`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:161
+msgid "// Set scheduling policy\n"
+msgstr "// 设置调度策略\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:165
+msgid "Unsupported policies or flags:"
+msgstr "不支持的策略或标志："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:166
+msgid "`SCHED_RESET_ON_FORK`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:168
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/sched_setscheduler.2.html)."
+msgstr ""
+"更多信息请参阅[man page](https://man7.org/linux/man-pages/man2/"
+"sched_setscheduler.2.html)。"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:171
+msgid "`waitid`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:176
+msgid "// Wait for a child process to change state\n"
+msgstr "// 等待子进程改变状态\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:188
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/waitid.2.html)."
+msgstr ""
+"更多信息请参阅[man page](https://man7.org/linux/man-pages/man2/waitid.2."
+"html)。"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:191
+msgid "`ptrace`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:196
+msgid "// Request that the calling thread should be traced by its parent\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:198
+msgid "// Read one word from the tracee's text space\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:201
+msgid "// Read one word from the tracee's data space\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:204
+msgid "// Read one word from the tracee's USER area\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:207
+msgid "// Write one word to the tracee's text space\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:210
+msgid "// Write one word to the tracee's data space\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:213
+msgid "// Write one word to the tracee's USER area\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:216
+msgid "// Resume a ptrace-stopped tracee, optionally injecting a signal\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:219
+msgid "// Kill a tracee\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:222
+msgid "// Single-step a tracee, optionally injecting a signal\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:225
+msgid "// Get tracee general-purpose registers\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:228
+msgid "// Set tracee general-purpose registers\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:231
+msgid ""
+"// Resume a ptrace-stopped tracee and stop it again at syscall entry/exit,\n"
+"// optionally injecting a signal\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:235
+msgid "// Set the ptrace options of a tracee\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:238
+msgid "// Get the message associated with the current ptrace-event-stop\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:241
+msgid "// Get the siginfo associated with the current ptrace-stop\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:246
+msgid "Supported requests:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:247
+msgid "`PTRACE_TRACEME`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:248
+msgid "`PTRACE_PEEKTEXT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:249
+msgid "`PTRACE_PEEKDATA`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:250
+msgid "`PTRACE_PEEKUSER` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:251
+msgid "`PTRACE_POKETEXT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:252
+msgid "`PTRACE_POKEDATA`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:253
+msgid "`PTRACE_POKEUSER` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:254
+msgid "`PTRACE_CONT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:255
+msgid "`PTRACE_KILL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:256
+msgid "`PTRACE_SINGLESTEP` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:257
+msgid "`PTRACE_GETREGS` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:258
+msgid "`PTRACE_SETREGS` (x86-64 only)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:259
+msgid "`PTRACE_SYSCALL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:260
+msgid "`PTRACE_SETOPTIONS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:261
+msgid "`PTRACE_GETEVENTMSG`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:262
+msgid "`PTRACE_GETSIGINFO`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:264
+msgid "Limitations:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:265
+msgid "Only the main thread of a process can act as the tracer."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:266
+msgid ""
+"`PTRACE_PEEKUSER` and `PTRACE_POKEUSER` only support offsets for general-"
+"purpose registers."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:267
+msgid ""
+"If a tracee has clone-family options (`PTRACE_O_TRACEFORK`, "
+"`PTRACE_O_TRACEVFORK`, `PTRACE_O_TRACEVFORKDONE`, or `PTRACE_O_TRACECLONE`) "
+"and then performs a clone-family operation that would trigger a ptrace "
+"event, the clone-family operation returns `EOPNOTSUPP`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/process-and-thread-management/index.md:269
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/ptrace.2.html)."
+msgstr ""
