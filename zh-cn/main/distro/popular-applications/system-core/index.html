@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="navy sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>System Core - The Asterinas Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../../../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../../../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../../../ltd-flyout.js"></script>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../../css/general-0392ca55.css">
+        <link rel="stylesheet" href="../../../css/chrome-fc474251.css">
+        <link rel="stylesheet" href="../../../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../";
+            const default_light_theme = "navy";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../../searchindex-9001f81a.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc-4d262a9b.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Asterinas Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="system-core"><a class="header" href="#system-core">System Core</a></h1>
+<p>This category covers essential system components: shells, init systems, system monitoring tools, and core utilities.</p>
+<h2 id="shells"><a class="header" href="#shells">Shells</a></h2>
+<h3 id="bash"><a class="header" href="#bash">Bash</a></h3>
+<p><a href="https://www.gnu.org/software/bash/">Bash</a> is the GNU Project’s shell and command language, enabled by default in Asterinas NixOS.</p>
+<h4 id="安装"><a class="header" href="#安装">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.bash ];
+</code></pre>
+<h4 id="已验证的使用情况"><a class="header" href="#已验证的使用情况">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Execute a script
+bash script.sh
+</code></pre>
+<h3 id="fish"><a class="header" href="#fish">fish</a></h3>
+<p><a href="https://fishshell.com/">fish</a> is a user-friendly shell with autosuggestions and web-based configuration.</p>
+<h4 id="安装-1"><a class="header" href="#安装-1">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.fish ];
+</code></pre>
+<h4 id="已验证的使用情况-1"><a class="header" href="#已验证的使用情况-1">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Execute a script
+fish script.sh
+</code></pre>
+<h3 id="zsh"><a class="header" href="#zsh">Zsh</a></h3>
+<p><a href="https://www.zsh.org/">Zsh</a> is a powerful shell with extensive customization options.</p>
+<h4 id="安装-2"><a class="header" href="#安装-2">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.zsh ];
+</code></pre>
+<h4 id="已验证的使用情况-2"><a class="header" href="#已验证的使用情况-2">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Execute a script
+zsh script.sh
+</code></pre>
+<h2 id="init--service-management"><a class="header" href="#init--service-management">Init &amp; Service Management</a></h2>
+<h3 id="busybox"><a class="header" href="#busybox">BusyBox</a></h3>
+<p><a href="https://busybox.net/">BusyBox</a> provides many common UNIX utilities in a single small executable, enabled by default in <code>initramfs</code> of Asterinas NixOS.</p>
+<h4 id="安装-3"><a class="header" href="#安装-3">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.busybox ];
+</code></pre>
+<h4 id="已验证的使用情况-3"><a class="header" href="#已验证的使用情况-3">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># List all applets provided by BusyBox
+busybox
+
+# Run a BusyBox applet explicitly
+busybox ls -al /
+
+# Show help for a specific applet
+busybox cat --help
+</code></pre>
+<h3 id="systemd"><a class="header" href="#systemd">systemd</a></h3>
+<p><a href="https://systemd.io/">systemd</a> is a software suite for system and service management, enabled by default in <code>rootfs</code> of Asterinas NixOS.</p>
+<h4 id="安装-4"><a class="header" href="#安装-4">安装</a></h4>
+<pre><code class="language-nix"># Asterinas uses a patched `systemd` package.
+systemd.package = pkgs.aster_systemd;
+</code></pre>
+<h4 id="已验证的使用情况-4"><a class="header" href="#已验证的使用情况-4">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Show overall system status
+systemctl --no-pager status
+
+# List running services
+systemctl --no-pager list-units --type=service --state=running
+</code></pre>
+<h2 id="system-monitoring"><a class="header" href="#system-monitoring">System Monitoring</a></h2>
+<h3 id="fastfetch"><a class="header" href="#fastfetch">fastfetch</a></h3>
+<p><a href="https://github.com/fastfetch-cli/fastfetch">fastfetch</a> is a system information tool similar to <code>neofetch</code>.</p>
+<h4 id="安装-5"><a class="header" href="#安装-5">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.fastfetch ];
+</code></pre>
+<h4 id="已验证的使用情况-5"><a class="header" href="#已验证的使用情况-5">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Show system information with default configuration
+fastfetch
+
+# Save current output to a file
+fastfetch &gt; fastfetch-output.txt
+</code></pre>
+<h3 id="htop"><a class="header" href="#htop">htop</a></h3>
+<p><a href="https://htop.dev/">htop</a> is an interactive process viewer.</p>
+<h4 id="安装-6"><a class="header" href="#安装-6">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.htop ];
+</code></pre>
+<h4 id="已验证的使用情况-6"><a class="header" href="#已验证的使用情况-6">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Start htop
+htop
+
+# Inside htop:
+# Up/Down       - Select process
+# Left/Right    - Move between columns or UI sections
+# h or F1       - Help
+# q             - Quit
+</code></pre>
+<h3 id="lsof"><a class="header" href="#lsof">lsof</a></h3>
+<p><a href="https://github.com/lsof-org/lsof">lsof</a> lists open files and the processes that opened them.</p>
+<h4 id="安装-7"><a class="header" href="#安装-7">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.lsof ];
+</code></pre>
+<h4 id="已验证的使用情况-7"><a class="header" href="#已验证的使用情况-7">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Show all files opened by a process with a given PID
+lsof -p 1
+
+# Show all files opened by processes with a given command name
+lsof -c bash
+
+# Show all files opened by a specific user
+lsof -u root
+
+# Show files opened under a directory
+lsof +D /dev
+</code></pre>
+<h3 id="ncdu"><a class="header" href="#ncdu">ncdu</a></h3>
+<p><a href="https://dev.yorhel.nl/ncdu">ncdu</a> is a disk usage analyzer with an interactive TUI.</p>
+<h4 id="安装-8"><a class="header" href="#安装-8">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.ncdu ];
+</code></pre>
+<h4 id="已验证的使用情况-8"><a class="header" href="#已验证的使用情况-8">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Analyze a specific directory
+ncdu /var/log
+
+# Save scan results to a file
+ncdu -o result.ncdu /var/log
+</code></pre>
+<h3 id="procps"><a class="header" href="#procps">procps</a></h3>
+<p><a href="https://gitlab.com/procps-ng/procps">procps</a> provides system utilities for process management and system information.</p>
+<h4 id="安装-9"><a class="header" href="#安装-9">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.procps ];
+</code></pre>
+<h4 id="已验证的使用情况-9"><a class="header" href="#已验证的使用情况-9">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Display memory in human readable format
+free -h
+
+# Kill process by PID
+kill 1234
+
+# Display processes with custom format
+ps -eo pid,ppid,cmd,pcpu,pmem
+
+# Find processes with full command line
+pgrep -f "python script.py"
+
+# Kill processes by pattern
+pkill firefox
+
+# Display memory map of a process
+pmap 1234
+
+# Monitor processes in real-time
+top
+
+# Display system uptime
+uptime
+</code></pre>
+<h2 id="essential-tooling"><a class="header" href="#essential-tooling">Essential Tooling</a></h2>
+<h3 id="coreutils"><a class="header" href="#coreutils">coreutils</a></h3>
+<p><a href="https://www.gnu.org/software/coreutils/">coreutils</a> includes basic file, shell and text manipulation utilities.</p>
+<h4 id="安装-10"><a class="header" href="#安装-10">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.coreutils ];
+</code></pre>
+<h4 id="已验证的使用情况-10"><a class="header" href="#已验证的使用情况-10">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># BLAKE2 checksum
+b2sum file.txt &gt; checksums.b2
+b2sum --check checksums.b2
+
+# Base64 encode/decode
+base64 file.txt &gt; encoded_file.b64
+base64 -d encoded_file.b64
+
+# Strip directory and suffix from filenames
+basename /path/to/file.txt
+
+# Concatenate and display files
+cat file1.txt file2.txt
+
+# Change file permissions
+chmod 755 script.sh
+chmod +x script.sh
+chmod -R 755 directory/
+
+# Run command or interactive shell with special root directory
+chroot /newroot /bin/bash
+
+# Copy files and directories
+cp file1.txt file2.txt
+cp -r dir1 dir2
+
+# Split a file into sections determined by context lines
+csplit file.txt '/pattern/' '{*}'
+
+# Remove sections from each line of files
+cut -d':' -f1 /etc/passwd
+
+# Convert and copy a file
+dd if=input.txt of=output.txt
+dd if=/dev/zero of=disk.img bs=1M count=100
+
+# Strip last component from file name
+dirname /path/to/file.txt
+
+# Display a line of text
+echo "Hello World"
+
+# Evaluate expressions
+expr 2 + 3
+expr 10 \* 5    # Escape * for shell
+
+# Output the first part of files
+head -n 20 file.txt
+
+# Make links between files
+ln -s target_file symlink
+ln target_file hardlink
+
+# Make directories
+mkdir -p path/to/nested/dir
+
+# Move (rename) files
+mv old.txt new.txt
+mv file.txt /destination/
+
+# Dump files in octal and other formats
+od file.txt
+od -c file.txt  # Character format
+od -x file.txt  # Hexadecimal format
+
+# Merge lines of files
+paste -d ',' file1.txt file2.txt    # Use comma as delimiter
+
+# Print value of a symbolic link or canonical file name
+readlink symlink
+
+# Print the resolved path
+realpath file.txt
+
+# Remove files or directories
+rm file.txt
+rm -rf directory/
+
+# Print a sequence of numbers
+seq 0 2 10  # Start, increment, end
+
+# SHA2 checksums
+sha256sum file.txt &gt; checksums.sha256
+sha256sum --check checksums.sha256
+
+# Display file or file system status
+stat -c "%U %G" file.txt  # Custom format
+
+# Flush file system buffers
+sync
+
+# Output the last part of files
+tail -n 20 file.txt
+
+# Change file timestamps
+touch -t 202601011200 file.txt
+
+# Print newline, word, and byte counts for each file
+wc -l file.txt  # Lines only
+wc -w file.txt  # Words only
+wc -c file.txt  # Bytes only
+</code></pre>
+<h3 id="diffutils"><a class="header" href="#diffutils">diffutils</a></h3>
+<p><a href="https://www.gnu.org/software/diffutils/">diffutils</a> compares files line by line.</p>
+<h4 id="安装-11"><a class="header" href="#安装-11">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.diffutils ];
+</code></pre>
+<h4 id="已验证的使用情况-11"><a class="header" href="#已验证的使用情况-11">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># diff - Compare files line by line
+diff -u file1.txt file2.txt
+
+# Compare three files line by line
+diff3 file1.txt file2.txt file3.txt
+diff3 -m file1.txt file2.txt file3.txt
+diff3 -E file1.txt file2.txt file3.txt
+</code></pre>
+<h3 id="findutils"><a class="header" href="#findutils">findutils</a></h3>
+<p><a href="https://www.gnu.org/software/findutils/">findutils</a> provides the basic directory searching utilities.</p>
+<h4 id="安装-12"><a class="header" href="#安装-12">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.findutils ];
+</code></pre>
+<h4 id="已验证的使用情况-12"><a class="header" href="#已验证的使用情况-12">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Search for files in a directory hierarchy
+find /path -name "*.txt"           # Find by name
+find /path -iname "*.TXT"          # Case insensitive
+find /path -type f                 # Find files only
+find /path -type d                 # Find directories only
+find /path -type l                 # Find symbolic links only
+
+# Execute commands on found files
+find /path -name "*.tmp" -delete
+find /path -name "*.log" -exec rm {} \;
+find /path -name "*.bak" -exec cp {} {}.bak \;
+
+# Build and execute command lines from standard input
+find /path -name "*.txt" | xargs rm
+find /path -name "*.log" | xargs -I {} cp {} {}.bak
+</code></pre>
+<h3 id="grep"><a class="header" href="#grep">grep</a></h3>
+<p><a href="https://www.gnu.org/software/grep/">grep</a> searches for patterns in text.</p>
+<h4 id="安装-13"><a class="header" href="#安装-13">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.gnugrep ];
+</code></pre>
+<h4 id="已验证的使用情况-13"><a class="header" href="#已验证的使用情况-13">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Search for a pattern in a file
+grep "pattern" file.txt
+
+# Search recursively in a directory
+grep -r "pattern" src/
+
+# Case-insensitive search
+grep -i "pattern" file.txt
+
+# Show line numbers
+grep -n "pattern" file.txt
+
+# Show only the matching part of the line
+grep -o "pattern" file.txt
+
+# Invert match: show lines that do NOT match
+grep -v "pattern" file.txt
+
+# Use extended regular expressions
+grep -E "foo|bar" file.txt
+</code></pre>
+<h3 id="hostname"><a class="header" href="#hostname">hostname</a></h3>
+<p><a href="https://man7.org/linux/man-pages/man1/hostname.1.html">hostname</a> shows or sets the system host name.</p>
+<h4 id="安装-14"><a class="header" href="#安装-14">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.hostname ];
+</code></pre>
+<h4 id="已验证的使用情况-14"><a class="header" href="#已验证的使用情况-14">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Show current hostname
+hostname
+
+# Set hostname
+hostname test
+
+# Show NIS/YP domainname
+hostname -y
+
+# Set NIS domainname
+domainname test
+
+# Show ip address for the hostname
+hostname -i
+</code></pre>
+<h3 id="less"><a class="header" href="#less">less</a></h3>
+<p><a href="https://www.greenwoodsoftware.com/less/">less</a> is a terminal pager program for viewing text files.</p>
+<h4 id="安装-15"><a class="header" href="#安装-15">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.less ];
+</code></pre>
+<h4 id="已验证的使用情况-15"><a class="header" href="#已验证的使用情况-15">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Opposite of more (better file viewer)
+less file.txt
+
+# Navigation commands (while in less):
+#   j or Enter    - Move down one line
+#   k             - Move up one line
+#   f or Space    - Forward one window
+#   b             - Backward one window
+#   d             - Forward half window
+#   u             - Backward half window
+</code></pre>
+<h3 id="man-pages"><a class="header" href="#man-pages">man-pages</a></h3>
+<p><a href="https://www.kernel.org/doc/man-pages/">man-pages</a> provides the Linux manual pages.</p>
+<h4 id="安装-16"><a class="header" href="#安装-16">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.man-pages ];
+</code></pre>
+<h4 id="已验证的使用情况-16"><a class="header" href="#已验证的使用情况-16">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Display manual page in specific section
+man 1 ls        # User commands
+man 2 read      # System calls
+man 3 printf    # Library functions
+man 4 tty       # Special files
+man 5 fstab     # File formats
+man 6 banner    # Games
+man 7 regex     # Miscellaneous
+man 8 mount     # System administration
+
+# Display manual page with pager
+man -P less ls
+
+# Display manual page without pager
+man -P cat ls
+</code></pre>
+<h3 id="texinfo"><a class="header" href="#texinfo">Texinfo</a></h3>
+<p><a href="https://www.gnu.org/software/texinfo/">Texinfo</a> is the official GNU documentation system.</p>
+<h4 id="安装-17"><a class="header" href="#安装-17">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.texinfoInteractive ];
+</code></pre>
+<h4 id="已验证的使用情况-17"><a class="header" href="#已验证的使用情况-17">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Display info documentation for a topic
+info bash
+
+# Navigate within info viewer:
+#   Space       - Scroll forward
+#   Backspace   - Scroll backward
+#   n           - Next node
+#   p           - Previous node
+#   u           - Up node
+#   l           - Last visited node
+#   g           - Go to specific node
+#   s           - Search forward
+#   q           - Quit
+</code></pre>
+<h3 id="util-linux"><a class="header" href="#util-linux">util-linux</a></h3>
+<p><a href="https://www.kernel.org/pub/linux/utils/util-linux/">util-linux</a> provides a set of system utilities for any Linux system.</p>
+<h4 id="安装-18"><a class="header" href="#安装-18">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.util-linux ];
+</code></pre>
+<h4 id="已验证的使用情况-18"><a class="header" href="#已验证的使用情况-18">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Display system information
+uname -a
+
+# Display disk space usage
+df -h
+
+# Mount a file system
+mount -t ext2 /dev/vdb /ext2
+
+# Unmount a file system
+umount /ext2
+
+# Find mounted file systems
+findmnt
+
+# Display date in custom format
+date +"%Y-%m-%d %H:%M:%S"
+
+# Display calendar for specific month
+cal 01 2026
+
+# Display user and group information
+id
+
+# Display login history
+last
+
+# Display file in hexadecimal
+hexdump -C file.bin
+
+# Display where program is located
+whereis ls
+</code></pre>
+<h3 id="which"><a class="header" href="#which">which</a></h3>
+<p><a href="https://www.gnu.org/software/which/">which</a> shows the full path of (shell) commands</p>
+<h4 id="安装-19"><a class="header" href="#安装-19">安装</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.which ];
+</code></pre>
+<h4 id="已验证的使用情况-19"><a class="header" href="#已验证的使用情况-19">已验证的使用情况</a></h4>
+<pre><code class="language-bash"># Locate a command
+which ls
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../distro/popular-applications/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../distro/popular-applications/nix-and-nixos-tools/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../distro/popular-applications/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../distro/popular-applications/nix-and-nixos-tools/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../../mark-09e88c2c.min.js"></script>
+        <script src="../../../searcher-09f2665d.js"></script>
+
+        <script src="../../../clipboard-1626706a.min.js"></script>
+        <script src="../../../highlight-abc7f01d.js"></script>
+        <script src="../../../book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../mermaid-eefea253.min.js"></script>
+        <script src="../../../mermaid-init-ccf746f1.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

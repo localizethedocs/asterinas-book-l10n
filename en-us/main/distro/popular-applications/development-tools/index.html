@@ -1,0 +1,765 @@
+<!DOCTYPE HTML>
+<html lang="en_US" class="navy sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Development Tools - The Asterinas Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../../../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../../../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../../../ltd-flyout.js"></script>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../../css/general-0392ca55.css">
+        <link rel="stylesheet" href="../../../css/chrome-fc474251.css">
+        <link rel="stylesheet" href="../../../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../";
+            const default_light_theme = "navy";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../../searchindex-183d8e53.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc-4b8827e8.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Asterinas Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="development-tools"><a class="header" href="#development-tools">Development Tools</a></h1>
+<p>This category covers programming language runtimes, version control, build tools, editors, and debugging utilities.</p>
+<h2 id="programming-language-runtimes"><a class="header" href="#programming-language-runtimes">Programming Language Runtimes</a></h2>
+<h3 id="clang"><a class="header" href="#clang">Clang</a></h3>
+<p><a href="https://clang.llvm.org/">Clang</a> is a C language family frontend for the LLVM compiler.</p>
+<h4 id="installation"><a class="header" href="#installation">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.clang ];
+</code></pre>
+<h4 id="verified-usage"><a class="header" href="#verified-usage">Verified Usage</a></h4>
+<pre><code class="language-bash"># Generate LLVM IR instead of native code
+clang -S -emit-llvm hello.c -o hello.ll
+
+# Show included headers
+clang -H -c hello.c -o /dev/null
+
+# Compile with optimization
+clang -O2 hello.c -o hello
+</code></pre>
+<h3 id="gcc"><a class="header" href="#gcc">GCC</a></h3>
+<p><a href="https://gcc.gnu.org/">GCC</a> is the GNU Compiler Collection.</p>
+<h4 id="installation-1"><a class="header" href="#installation-1">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.gcc ];
+</code></pre>
+<h4 id="verified-usage-1"><a class="header" href="#verified-usage-1">Verified Usage</a></h4>
+<pre><code class="language-bash"># Create object file only
+gcc -c source.c
+
+# Compile with output name
+gcc -o program source.c
+
+# Compile with debug information
+gcc -g source.c -o program
+
+# Link object files
+gcc file1.o file2.o -o program
+</code></pre>
+<h3 id="go"><a class="header" href="#go">Go</a></h3>
+<p><a href="https://golang.org/">Go</a> is an open source programming language designed for simplicity and reliability.</p>
+<h4 id="installation-2"><a class="header" href="#installation-2">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.go ];
+</code></pre>
+<h4 id="verified-usage-2"><a class="header" href="#verified-usage-2">Verified Usage</a></h4>
+<pre><code class="language-bash"># Initialize new Go module
+go mod init module-name
+
+# Build Go program
+go build main.go
+
+# Run Go program
+go run main.go
+
+# Format source
+go fmt main.go
+
+# Clean build artifacts
+go clean
+</code></pre>
+<h3 id="lua"><a class="header" href="#lua">Lua</a></h3>
+<p><a href="https://www.lua.org/">Lua</a> is a powerful, efficient, lightweight, embeddable scripting language.</p>
+<h4 id="installation-3"><a class="header" href="#installation-3">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.lua ];
+</code></pre>
+<h4 id="verified-usage-3"><a class="header" href="#verified-usage-3">Verified Usage</a></h4>
+<pre><code class="language-bash"># Execute Lua script
+lua script.lua
+
+# Run Lua code directly
+lua -e "print('Hello World')"
+</code></pre>
+<h3 id="nodejs"><a class="header" href="#nodejs">Node.js</a></h3>
+<p><a href="https://nodejs.org/">Node.js</a> is a JavaScript runtime built on Chrome’s V8 engine.</p>
+<h4 id="installation-4"><a class="header" href="#installation-4">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.nodejs ];
+</code></pre>
+<h4 id="verified-usage-4"><a class="header" href="#verified-usage-4">Verified Usage</a></h4>
+<pre><code class="language-bash"># Run Node.js script
+node script.js
+
+# Run Node.js code directly
+node -e "console.log('Hello World')"
+</code></pre>
+<h3 id="octave"><a class="header" href="#octave">Octave</a></h3>
+<p><a href="https://octave.org/">GNU Octave</a> is a high-level language for numerical computations.</p>
+<h4 id="installation-5"><a class="header" href="#installation-5">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.octave ];
+</code></pre>
+<h4 id="verified-usage-5"><a class="header" href="#verified-usage-5">Verified Usage</a></h4>
+<pre><code class="language-bash"># Execute Octave script
+octave script.m
+
+# Run Octave code directly
+octave --eval "disp('Hello World')"
+
+# Matrix operations
+octave --eval "[1 2; 3 4] * [5; 6]"
+
+# Statistical calculations
+octave --eval "mean([1 2 3 4 5])"
+</code></pre>
+<h3 id="openjdk"><a class="header" href="#openjdk">OpenJDK</a></h3>
+<p><a href="https://openjdk.java.net/">OpenJDK</a> is a free and open-source implementation of the Java Platform.</p>
+<h4 id="installation-6"><a class="header" href="#installation-6">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.openjdk ];
+</code></pre>
+<h4 id="verified-usage-6"><a class="header" href="#verified-usage-6">Verified Usage</a></h4>
+<pre><code class="language-bash"># Compile Java source file
+javac HelloWorld.java
+
+# Run Java program
+java HelloWorld
+</code></pre>
+<h3 id="perl"><a class="header" href="#perl">Perl</a></h3>
+<p><a href="https://www.perl.org/">Perl</a> is a highly capable, feature-rich programming language.</p>
+<h4 id="installation-7"><a class="header" href="#installation-7">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.perl ];
+</code></pre>
+<h4 id="verified-usage-7"><a class="header" href="#verified-usage-7">Verified Usage</a></h4>
+<pre><code class="language-bash"># Execute Perl script
+perl script.pl
+
+# Run Perl code directly
+perl -e 'print "Hello World"'
+</code></pre>
+<h3 id="php"><a class="header" href="#php">PHP</a></h3>
+<p><a href="https://www.php.net/">PHP</a> is a popular general-purpose scripting language for web development.</p>
+<h4 id="installation-8"><a class="header" href="#installation-8">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.php ];
+</code></pre>
+<h4 id="verified-usage-8"><a class="header" href="#verified-usage-8">Verified Usage</a></h4>
+<pre><code class="language-bash"># Execute PHP script
+php script.php
+
+# Run PHP code directly
+php -r "echo 'Hello World';"
+</code></pre>
+<h3 id="python-3"><a class="header" href="#python-3">Python 3</a></h3>
+<p><a href="https://www.python.org/">Python</a> is a high-level programming language.</p>
+<h4 id="installation-9"><a class="header" href="#installation-9">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.python3 ];
+</code></pre>
+<h4 id="verified-usage-9"><a class="header" href="#verified-usage-9">Verified Usage</a></h4>
+<pre><code class="language-bash"># Execute Python script
+python3 script.py
+
+# Run Python code directly
+python3 -c "print('Hello World')"
+</code></pre>
+<h3 id="ruby"><a class="header" href="#ruby">Ruby</a></h3>
+<p><a href="https://www.ruby-lang.org/">Ruby</a> is a dynamic, open source programming language.</p>
+<h4 id="installation-10"><a class="header" href="#installation-10">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.ruby ];
+</code></pre>
+<h4 id="verified-usage-10"><a class="header" href="#verified-usage-10">Verified Usage</a></h4>
+<pre><code class="language-bash"># Execute Ruby script
+ruby script.rb
+
+# Run Ruby code directly
+ruby -e "puts 'Hello World'"
+</code></pre>
+<h3 id="rust"><a class="header" href="#rust">Rust</a></h3>
+<p><a href="https://rust-lang.org/">Rust</a> is a language empowering everyone
+to build reliable and efficient software.</p>
+<h4 id="installation-11"><a class="header" href="#installation-11">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.rustc ];
+</code></pre>
+<h4 id="verified-usage-11"><a class="header" href="#verified-usage-11">Verified Usage</a></h4>
+<pre><code class="language-bash"># Compile Rust source code
+rustc hello_world.rs
+</code></pre>
+<h2 id="version-control"><a class="header" href="#version-control">Version Control</a></h2>
+<h3 id="git"><a class="header" href="#git">Git</a></h3>
+<p><a href="https://git-scm.com/">Git</a> is a distributed version control system.</p>
+<h4 id="installation-12"><a class="header" href="#installation-12">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.git ];
+</code></pre>
+<h4 id="verified-usage-12"><a class="header" href="#verified-usage-12">Verified Usage</a></h4>
+<pre><code class="language-bash"># Clone existing repository
+git clone https://github.com/user/repo.git
+
+# Check repository status
+git status
+
+# View commit history
+git log
+
+# Create and switch to new branch
+git checkout -b new-feature
+
+# View differences
+git diff
+
+# Add files to staging area
+git add file.txt
+
+# Commit changes
+git commit -m "Commit message"
+
+# Push changes to remote
+git push origin main
+</code></pre>
+<h2 id="build-tools"><a class="header" href="#build-tools">Build Tools</a></h2>
+<h3 id="cargo"><a class="header" href="#cargo">Cargo</a></h3>
+<p><a href="https://doc.rust-lang.org/cargo/">Cargo</a> is the Rust package manager and build system.</p>
+<h4 id="installation-13"><a class="header" href="#installation-13">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.cargo ];
+</code></pre>
+<h4 id="verified-usage-13"><a class="header" href="#verified-usage-13">Verified Usage</a></h4>
+<pre><code class="language-bash"># Create new Rust project
+cargo new my_project
+
+# Fast compilation check
+cargo check
+
+# Build project
+cargo build
+
+# Run project
+cargo run
+
+# Test project
+cargo test
+</code></pre>
+<h3 id="cmake"><a class="header" href="#cmake">CMake</a></h3>
+<p><a href="https://cmake.org/">CMake</a> is a cross-platform build system generator.</p>
+<h4 id="installation-14"><a class="header" href="#installation-14">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.cmake ];
+</code></pre>
+<h4 id="verified-usage-14"><a class="header" href="#verified-usage-14">Verified Usage</a></h4>
+<pre><code class="language-bash"># Generate build files
+cmake .
+
+# Build project
+cmake --build .
+
+# Clean build
+cmake --build . --target clean
+</code></pre>
+<h3 id="make"><a class="header" href="#make">Make</a></h3>
+<p><a href="https://www.gnu.org/software/make/">Make</a> automates build processes.</p>
+<h4 id="installation-15"><a class="header" href="#installation-15">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.gnumake ];
+</code></pre>
+<h4 id="verified-usage-15"><a class="header" href="#verified-usage-15">Verified Usage</a></h4>
+<pre><code class="language-bash"># Run make with specific target
+make target_name
+
+# Run make with specific Makefile
+make -f Makefile.custom
+</code></pre>
+<h3 id="meson"><a class="header" href="#meson">Meson</a></h3>
+<p><a href="https://mesonbuild.com/">Meson</a> is a fast and user-friendly build system.</p>
+<h4 id="installation-16"><a class="header" href="#installation-16">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = with pkgs; [
+    (python3.withPackages (p: [ p.meson ]))
+    meson
+    ninja
+];
+</code></pre>
+<h4 id="verified-usage-16"><a class="header" href="#verified-usage-16">Verified Usage</a></h4>
+<pre><code class="language-bash"># Initialize project
+meson setup builddir
+
+# Build project
+meson compile -C builddir
+
+# Run output from build directory
+./builddir/hello
+</code></pre>
+<h3 id="ninja"><a class="header" href="#ninja">Ninja</a></h3>
+<p><a href="https://ninja-build.org/">Ninja</a> is a small, fast build system focused on speed.</p>
+<h4 id="installation-17"><a class="header" href="#installation-17">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.ninja ];
+</code></pre>
+<h4 id="verified-usage-17"><a class="header" href="#verified-usage-17">Verified Usage</a></h4>
+<pre><code class="language-bash"># Build in an existing build directory
+ninja -C build
+
+# List available targets
+ninja -C build -t targets
+</code></pre>
+<h2 id="debugging-tools"><a class="header" href="#debugging-tools">Debugging Tools</a></h2>
+<h3 id="gdb"><a class="header" href="#gdb">GDB</a></h3>
+<p><a href="https://www.sourceware.org/gdb/">GDB</a>, the GNU Project debugger, helps developers debug programs by inspecting variables, controlling execution, and analyzing runtime behavior.</p>
+<h4 id="installation-18"><a class="header" href="#installation-18">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.gdb ];
+</code></pre>
+<h4 id="verified-usage-18"><a class="header" href="#verified-usage-18">Verified Usage</a></h4>
+<p>The following sample program is used for the verified GDB command sequence:</p>
+<pre><code class="language-c">// SPDX-License-Identifier: MPL-2.0
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+__attribute__((noinline)) void hello_world(int x, int *heap_value)
+{
+    printf("Hello, World %d!\n", x);
+    fflush(stdout);
+}
+
+int main(void)
+{
+    int *heap_value = malloc(sizeof(*heap_value));
+    if (heap_value == NULL)
+        return 2;
+
+    *heap_value = 4321;
+    for (int i = 0; i &lt; 5; i++)
+        hello_world(i, heap_value);
+
+    if (*heap_value != 1234) {
+        printf("memory check failed: %d\n", *heap_value);
+        free(heap_value);
+        return 3;
+    }
+
+    printf("memory check passed: %d\n", *heap_value);
+    free(heap_value);
+    return 0;
+}
+</code></pre>
+<p>The verified GDB command sequence is:</p>
+<pre><code class="language-gdb"># Set a software breakpoint and stop in `hello_world`
+set pagination off
+break hello_world
+run
+continue
+
+# Inspect the current stop
+info breakpoints
+backtrace
+frame 0
+print x
+info registers rip rsp
+
+# Modify the register and memory
+set var x = 1000
+print heap_value
+x/wd heap_value
+set {int}heap_value = 1234
+
+# Single-step, remove the breakpoint, and finish execution
+step
+delete 1
+continue
+</code></pre>
+<pre><code class="language-bash"># Build a debug-friendly test program
+gcc -g -O0 gdb_sample.c -o gdb_sample
+
+# Run the verified GDB command sequence
+gdb -batch -x gdb_commands.gdb ./gdb_sample
+</code></pre>
+<h3 id="strace"><a class="header" href="#strace">strace</a></h3>
+<p><a href="https://strace.io/">strace</a> traces interactions between processes and the kernel, which include system calls, signal deliveries, and changes of process state.</p>
+<h4 id="installation-19"><a class="header" href="#installation-19">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.strace ];
+</code></pre>
+<h4 id="verified-usage-19"><a class="header" href="#verified-usage-19">Verified Usage</a></h4>
+<pre><code class="language-bash"># Trace `ls` and save the syscall log
+strace -o strace.out ls /tmp
+</code></pre>
+<h2 id="editors--ides"><a class="header" href="#editors--ides">Editors &amp; IDEs</a></h2>
+<h3 id="emacs"><a class="header" href="#emacs">Emacs</a></h3>
+<p><a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> is a customizable, extensible text editor.</p>
+<h4 id="installation-20"><a class="header" href="#installation-20">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.emacs ];
+</code></pre>
+<h4 id="verified-usage-20"><a class="header" href="#verified-usage-20">Verified Usage</a></h4>
+<pre><code class="language-bash"># Open file in Emacs (terminal)
+emacs file.txt
+
+# Basic navigation (C = Ctrl, M = Alt/Esc):
+# C-f           - Move forward (right)
+# C-b           - Move backward (left)
+# C-n           - Next line (down)
+# C-p           - Previous line (up)
+# C-a           - Beginning of line
+# C-e           - End of line
+# M-f           - Forward one word
+# M-b           - Backward one word
+# M-&lt;           - Beginning of buffer
+# M-&gt;           - End of buffer
+# M-g g         - Go to line (prompt for line number)
+
+# Editing:
+# C-d           - Delete character under cursor
+# DEL (Backspace) - Delete character before cursor
+# M-d           - Delete word forward
+# C-k           - Kill (cut) to end of line
+# C-y           - Yank (paste)
+# C-space       - Start selection (set mark)
+# C-w           - Cut selected region
+# M-w           - Copy selected region
+
+# Saving and quitting:
+# C-x C-s       - Save current buffer
+# C-x C-w       - Save as (prompt for filename)
+# C-x C-c       - Save modified buffers and exit Emacs
+# C-g           - Cancel current command/prompt
+</code></pre>
+<h3 id="nano"><a class="header" href="#nano">nano</a></h3>
+<p><a href="https://www.nano-editor.org/">nano</a> is a simple, user-friendly terminal-based text editor.</p>
+<h4 id="installation-21"><a class="header" href="#installation-21">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.nano ];
+</code></pre>
+<h4 id="verified-usage-21"><a class="header" href="#verified-usage-21">Verified Usage</a></h4>
+<pre><code class="language-bash"># Open file in nano
+nano file.txt
+
+# Basic navigation:
+# Ctrl+K        - Cut line
+# Ctrl+U        - Paste line
+# Ctrl+6        - Mark text (start selection)
+# Ctrl+W        - Search text
+# Ctrl+\        - Search and replace
+# Ctrl+G        - Show help
+# Ctrl+C        - Show cursor position
+# Ctrl+_        - Go to line
+
+# File operations:
+# Ctrl+O        - Write file (save)
+# Ctrl+X        - Exit nano
+# Ctrl+R        - Read file (insert file)
+# Ctrl+T        - Run spell checker
+# Ctrl+J        - Justify paragraph
+</code></pre>
+<h3 id="neovim"><a class="header" href="#neovim">Neovim</a></h3>
+<p><a href="https://neovim.io/">Neovim</a> is a hyperextensible Vim-based text editor.</p>
+<h4 id="installation-22"><a class="header" href="#installation-22">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.neovim ];
+</code></pre>
+<h4 id="verified-usage-22"><a class="header" href="#verified-usage-22">Verified Usage</a></h4>
+<pre><code class="language-bash"># Open file in neovim
+nvim file.txt
+</code></pre>
+<h3 id="vim"><a class="header" href="#vim">Vim</a></h3>
+<p><a href="https://www.vim.org/">Vim</a> is a highly configurable text editor for efficient text editing.</p>
+<h4 id="installation-23"><a class="header" href="#installation-23">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.vim ];
+</code></pre>
+<h4 id="verified-usage-23"><a class="header" href="#verified-usage-23">Verified Usage</a></h4>
+<pre><code class="language-bash"># Open file in vim
+vim file.txt
+
+# Basic navigation (in normal mode):
+# h,j,k,l       - Move left, down, up, right
+# w,W           - Move to next word
+# b,B           - Move to previous word
+# 0             - Move to beginning of line
+# $             - Move to end of line
+# gg            - Go to first line
+# G             - Go to last line
+# :10           - Go to line 10
+
+# Editing modes:
+# i             - Insert mode before cursor
+# a             - Insert mode after cursor
+# o             - Open new line below
+# O             - Open new line above
+# Esc           - Return to normal mode
+
+# Saving and quitting:
+# :w            - Save file
+# :q            - Quit
+# :wq or :x     - Save and quit
+# :q!           - Quit without saving
+# ZZ            - Save and quit
+</code></pre>
+<h2 id="other-utilities"><a class="header" href="#other-utilities">Other Utilities</a></h2>
+<h3 id="hugo"><a class="header" href="#hugo">Hugo</a></h3>
+<p><a href="https://gohugo.io/">Hugo</a> is a fast static site generator.</p>
+<h4 id="installation-24"><a class="header" href="#installation-24">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.hugo ];
+</code></pre>
+<h4 id="verified-usage-24"><a class="header" href="#verified-usage-24">Verified Usage</a></h4>
+<pre><code class="language-bash"># Create a new site
+hugo new site my-site
+
+# Start a local server
+hugo server
+</code></pre>
+<h3 id="direnv"><a class="header" href="#direnv">direnv</a></h3>
+<p><a href="https://direnv.net/">direnv</a> loads and unloads environment variables based on the current directory.</p>
+<h4 id="installation-25"><a class="header" href="#installation-25">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.direnv ];
+</code></pre>
+<h4 id="verified-usage-25"><a class="header" href="#verified-usage-25">Verified Usage</a></h4>
+<pre><code class="language-bash"># Allow a new .envrc
+direnv allow
+
+# Show directory environment
+direnv status
+</code></pre>
+<h3 id="shellcheck"><a class="header" href="#shellcheck">ShellCheck</a></h3>
+<p><a href="https://www.shellcheck.net/">ShellCheck</a> is a static analysis tool for shell scripts.</p>
+<h4 id="installation-26"><a class="header" href="#installation-26">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.shellcheck ];
+</code></pre>
+<h4 id="verified-usage-26"><a class="header" href="#verified-usage-26">Verified Usage</a></h4>
+<pre><code class="language-bash"># Analyze a shell script
+shellcheck script.sh
+</code></pre>
+<h3 id="jq"><a class="header" href="#jq">jq</a></h3>
+<p><a href="https://jqlang.github.io/jq/">jq</a> is a command-line JSON processor.</p>
+<h4 id="installation-27"><a class="header" href="#installation-27">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.jq ];
+</code></pre>
+<h4 id="verified-usage-27"><a class="header" href="#verified-usage-27">Verified Usage</a></h4>
+<pre><code class="language-bash"># Pretty-print JSON
+jq '.' data.json
+
+# Extract a field
+jq -r '.items[0].name' data.json
+</code></pre>
+<h3 id="yq"><a class="header" href="#yq">yq</a></h3>
+<p><a href="https://github.com/mikefarah/yq">yq</a> is a command-line YAML processor.</p>
+<h4 id="installation-28"><a class="header" href="#installation-28">Installation</a></h4>
+<pre><code class="language-nix">environment.systemPackages = [ pkgs.yq-go ];
+</code></pre>
+<h4 id="verified-usage-28"><a class="header" href="#verified-usage-28">Verified Usage</a></h4>
+<pre><code class="language-bash"># Read a field from YAML
+yq '.spec.replicas' deployment.yaml
+
+# Update a field in place
+yq -i '.spec.replicas = 3' deployment.yaml
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../distro/popular-applications/databases-and-middleware/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../distro/popular-applications/cicd-and-devops/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../distro/popular-applications/databases-and-middleware/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../distro/popular-applications/cicd-and-devops/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../../mark-09e88c2c.min.js"></script>
+        <script src="../../../searcher-09f2665d.js"></script>
+
+        <script src="../../../clipboard-1626706a.min.js"></script>
+        <script src="../../../highlight-abc7f01d.js"></script>
+        <script src="../../../book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../mermaid-eefea253.min.js"></script>
+        <script src="../../../mermaid-init-ccf746f1.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
