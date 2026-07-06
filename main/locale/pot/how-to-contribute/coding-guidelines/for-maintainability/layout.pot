@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-maintainability/layout.md:1
+msgid "Layout"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/layout.md:3
+msgid "Organize code for top-down reading (`top-down-reading`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/layout.md:5
+msgid ""
+"A source file should read from top to bottom. Start with high-level entry "
+"points and core flow. Move implementation details downward so readers can "
+"understand the big picture first before diving into low-level helpers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/layout.md:11
+msgid ""
+"Within each visibility group (e.g., a module), order methods so that callers "
+"appear before callees where possible, enabling the file to be read top to "
+"bottom. Place public methods before private helpers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/layout.md:16
+msgid "Group statements into logical paragraphs (`logical-paragraphs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/layout.md:18
+msgid ""
+"Within functions, group related statements into logical paragraphs separated "
+"by blank lines. Each paragraph should represent one sub-step of the "
+"function's overall purpose."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/layout.md:24
+msgid ""
+"For long functions, add a one-line summary comment at the start of each "
+"paragraph when the paragraph intent is not obvious."
+msgstr ""

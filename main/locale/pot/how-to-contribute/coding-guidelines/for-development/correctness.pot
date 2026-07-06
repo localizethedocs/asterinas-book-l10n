@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:1
+msgid "Correctness"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:3
+msgid "Use checked or saturating arithmetic (`checked-arithmetic`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:5
+msgid ""
+"Use checked or saturating arithmetic for operations that could overflow. "
+"Prefer explicit overflow handling over silent wrapping:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:11
+msgid "// Good — overflow is handled explicitly\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:14
+msgid "// Good — clamps instead of wrapping\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:17
+msgid "// Bad — may silently wrap in release builds\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:22
+msgid ""
+"If wraparound behavior is intentional, use explicit `wrapping_*` or "
+"`overflowing_*` operations and document why wrapping is correct."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:26
+msgid "Use `debug_assert` for correctness-only checks (`debug-assert`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:28
+msgid ""
+"Assertions verifying invariants that should never fail in correct code "
+"belong in `debug_assert!`, not `assert!`. `debug_assert!` is compiled out in "
+"release builds, so the check catches bugs during development without costing "
+"anything in production."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:40
+msgid ""
+"See also: [std::debug_assert!](https://doc.rust-lang.org/std/macro."
+"debug_assert.html) and [Rust Reference: `debug_assertions`](https://doc.rust-"
+"lang.org/reference/conditional-compilation.html#debug_assertions)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:44
+msgid "Propagate errors with `?` (`propagate-errors`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:46
+msgid ""
+"Use the `?` operator to propagate errors idiomatically. In kernel code, `."
+"unwrap()` is rejected wherever failure is a legitimate possibility."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:53
+msgid "// Good — propagate with ?\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:56
+msgid "// Bad — unwrap hides the failure path\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/correctness.md:61
+msgid ""
+"See also: _The Rust Programming Language_, Chapter 9 \"Error Handling\" and "
+"[Rust by Example: unpacking options and defaults with `?`](https://doc.rust-"
+"lang.org/rust-by-example/std/result/question_mark.html)."
+msgstr ""

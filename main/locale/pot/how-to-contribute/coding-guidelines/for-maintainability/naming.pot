@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:1
+msgid "Naming"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:3
+msgid "Be descriptive (`descriptive-names`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:5
+msgid ""
+"Choose names that convey meaning at the point of use. Avoid single-letter "
+"names and ambiguous abbreviations. Prefer full words over cryptic shorthand "
+"so that readers do not need surrounding context to understand a variable's "
+"purpose. Prefer names that are as short as possible while still being "
+"unambiguous at the point of use."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:13
+msgid "Be accurate (`accurate-names`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:15
+msgid ""
+"Avoid confusing names. If a name can be misread to imply the wrong meaning, "
+"behavior, or side effects, it must be corrected immediately."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:21
+msgid "// Good — clearly a count\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:22
+msgid ""
+"// Bad — looks like a collection\n"
+"// rather than a numeric counter\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:28
+msgid "Choose verbs that reflect the actual work being done."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:32
+msgid "// Good — implies an MMIO read is involved\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:33
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:35
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:42
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:44
+msgid "/* .. */"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:34
+msgid "// Bad — looks like a plain field access\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:41
+msgid "// Good — implies an O(n) collection pass\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:43
+msgid "// Bad — sounds like an accessor returning a reference\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:48
+msgid ""
+"See also: PR [\\#1488](https://github.com/asterinas/asterinas/"
+"pull/1488#discussion_r1825441287) and [\\#2964](https://github.com/asterinas/"
+"asterinas/pull/2964#discussion_r2789739882)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:52
+msgid "Encode units and important attributes in names (`encode-units`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:54
+msgid ""
+"When the type does not encode the unit, the name must. Kernel code deals "
+"with bytes, pages, frames, nanoseconds, ticks, and sectors — ambiguous units "
+"are a source of real bugs."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:60
+msgid ""
+"```text\n"
+"// Good — unit is unambiguous\n"
+"timeout_ns\n"
+"offset_bytes\n"
+"size_pages\n"
+"delay_ms\n"
+"\n"
+"// Bad — unit is ambiguous\n"
+"timeout\n"
+"offset\n"
+"size\n"
+"delay\n"
+"```"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:74
+msgid ""
+"Where the language's type system can enforce units (e.g., newtypes), prefer "
+"that. Where it cannot, the name must carry the information."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:78
+msgid ""
+"See also: PR [\\#2796](https://github.com/asterinas/asterinas/"
+"pull/2796#discussion_r2646889913)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:81
+msgid "Use assertion-style boolean names (`bool-names`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:83
+msgid ""
+"Boolean variables and functions should read as assertions of fact. Use "
+"`is_`, `has_`, `can_`, `should_`, `was_`, or `needs_` prefixes. Never use "
+"negated names (`is_not_empty`, `no_error`); prefer the positive form "
+"(`is_empty`, `ok` or `succeeded`). A bare name like `found`, `done`, or "
+"`ready` is acceptable when the context is unambiguous."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:95
+msgid "// Good — reads as an assertion\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:99
+msgid "// Bad — verb suggests an action, not a query\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:101
+msgid "// Bad — negated name\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:106
+msgid ""
+"See also: PR [\\#1488](https://github.com/asterinas/asterinas/"
+"pull/1488#discussion_r1841827039)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:109
+msgid "Format error messages consistently (`error-message-format`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:111
+msgid ""
+"Start with a lowercase letter (unless the first word is a proper noun or "
+"identifier). Be specific: prefer \"`len` is too large\" over \"the argument "
+"is invalid\"."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:116
+msgid ""
+"For system call errors, follow the style and descriptions in Linux man pages."
+msgstr ""

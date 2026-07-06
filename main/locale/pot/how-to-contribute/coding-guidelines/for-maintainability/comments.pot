@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:1
+msgid "Comments"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:3
+msgid "Explain why, not what (`explain-why`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:5
+msgid ""
+"Comments should explain the intent behind the code, not restate what the "
+"code does. If a comment merely paraphrases the code, it adds noise without "
+"insight."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:10
+msgid ""
+"If a comment is needed to explain what code does, first try to rewrite the "
+"code. Do not write good comments to compensate for bad code — rewrite it to "
+"be straightforward."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:15
+msgid ""
+"See also: _The Art of Readable Code_, Chapter 6 \"Knowing What to Comment\"; "
+"PR [\\#2265](https://github.com/asterinas/asterinas/"
+"pull/2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
+"asterinas/pull/2050#discussion_r2224106025)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:20
+msgid "Document design decisions (`design-decisions`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:22
+msgid ""
+"When the code makes a non-obvious choice — a particular data structure, a "
+"locking strategy, a deviation from Linux behavior — add a comment explaining "
+"the rationale and any alternatives considered. Design-decision comments "
+"(\"director's commentary\") are the most valuable kind of comment."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:31
+msgid ""
+"// We use a radix tree rather than a HashMap\n"
+"// because lookups must be O(log n) worst-case\n"
+"// for the page fault handler.\n"
+"// A HashMap gives O(1) amortized\n"
+"// but O(n) worst-case due to rehashing,\n"
+"// which is unacceptable on the page fault path.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:39
+msgid ""
+"See also: PR [\\#2265](https://github.com/asterinas/asterinas/"
+"pull/2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
+"asterinas/pull/2050#discussion_r2224106025)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:43
+msgid "Cite specifications and algorithm sources (`cite-sources`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:45
+msgid ""
+"When implementing behavior defined by an external specification or a non-"
+"trivial algorithm, cite the source: the relevant POSIX section, Linux man "
+"page, hardware reference manual, or academic paper."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/comments.md:52
+msgid ""
+"/// Maximum number of bytes guaranteed to be written to a pipe atomically.\n"
+"///\n"
+"/// For more details, see the description of `PIPE_BUF` in\n"
+"/// <https://man7.org/linux/man-pages/man7/pipe.7.html>.\n"
+msgstr ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -193,19 +193,15 @@ msgid "`recvfrom` and `recvmsg`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:206
+msgid "// Supported message receive flags\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:208
 msgid "// Receive message from a socket\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:212
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:215
 msgid "// Receive message using scatter-gather buffers and ancillary data\n"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:221
-msgid "Partially-supported flags:"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:222
-msgid "`MSG_PEEK` because it is only supported in netlink socket"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:224

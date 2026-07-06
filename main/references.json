@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-06-16 19:04:10 +0800",
-      "hash" : "e4f8507720924b42e04dfa40b8b10e2c0bf11941",
-      "title" : "Fix `memfd_create` returning wrong errno for too-long name"
+      "date" : "2026-06-30 19:39:36 +0800",
+      "hash" : "63e71c2806af7fb02b49b927d0e527efa578352b",
+      "title" : "Fix syncfs with O_PATH fd"
     }
   },
   "type" : "branch",

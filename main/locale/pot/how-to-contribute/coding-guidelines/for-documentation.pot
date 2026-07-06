@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:1
+msgid "For Documentation"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:3
+msgid ""
+"_Are user-facing docs and compatibility artifacts correct, current, and well-"
+"written?_"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:5
+msgid ""
+"This is the index of the **documentation** guidelines. Each subsection is "
+"its own page, and each entry below links a stable `short-name` to its "
+"guideline, with a one-line gist so a reader (or a review tool) can grasp the "
+"guideline before opening it."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:10
+msgid "Index"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:12
+msgid "**[General Style](general-style.md)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:13
+msgid ""
+"[`semantic-line-breaks`](general-style.md#semantic-line-breaks): Break prose "
+"at sentence/clause boundaries, one idea per line."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:14
+msgid ""
+"[`readme-as-crate-doc`](general-style.md#readme-as-crate-doc): For a "
+"published crate, make `README.md` the crate-level doc (`#![doc = include_str!"
+"(\"../README.md\")]`) so crates.io and docs.rs stay in sync."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:16
+msgid "**[Path-Specific](path-specific/)**"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:17
+msgid "[`kernel/`](path-specific/kernel.md)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-documentation/index.md:18
+msgid ""
+"[`linux-compat-docs`](path-specific/kernel.md#linux-compat-docs): When a "
+"user-visible API (syscall or kernel parameter) changes, update the Linux "
+"Compatibility docs (Syscall Flag Coverage + `.scml`, or Kernel Parameters)."
+msgstr ""
