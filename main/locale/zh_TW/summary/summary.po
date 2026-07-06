@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -324,121 +324,180 @@ msgid "How Guidelines Are Written"
 msgstr ""
 
 #: src/SUMMARY.md:92
-msgid "General Guidelines"
+msgid "For Maintainability"
 msgstr ""
 
 #: src/SUMMARY.md:93
-msgid "Rust Guidelines"
+msgid "Design"
 msgstr ""
 
 #: src/SUMMARY.md:94
+msgid "Process"
+msgstr ""
+
+#: src/SUMMARY.md:95 src/SUMMARY.md:99
 msgid "Naming"
 msgstr ""
 
-#: src/SUMMARY.md:95
-msgid "Language Items"
-msgstr "語言項目"
-
 #: src/SUMMARY.md:96
-msgid "Variables, Expressions, and Statements"
-msgstr "變數、表達式與陳述句"
-
-#: src/SUMMARY.md:97
-msgid "Functions and Methods"
-msgstr "函式與方法"
-
-#: src/SUMMARY.md:98
-msgid "Types and Traits"
+msgid "Layout"
 msgstr ""
 
-#: src/SUMMARY.md:99
-msgid "Comments and Documentation"
-msgstr "註釋與文件"
+#: src/SUMMARY.md:97 src/SUMMARY.md:104
+msgid "Comments"
+msgstr ""
+
+#: src/SUMMARY.md:98
+msgid "Rust-Specific"
+msgstr ""
 
 #: src/SUMMARY.md:100
-msgid "Unsafety"
+msgid "Crates & Modules"
 msgstr ""
 
 #: src/SUMMARY.md:101
-msgid "Modules and Crates"
-msgstr "模組與軟體箱"
+msgid "Types & Traits"
+msgstr ""
 
 #: src/SUMMARY.md:102
-msgid "Macros and Attributes"
+msgid "Functions & Methods"
 msgstr ""
 
 #: src/SUMMARY.md:103
-msgid "Select Topics"
-msgstr ""
-
-#: src/SUMMARY.md:104
-msgid "Concurrency and Races"
+msgid "Attributes & Macros"
 msgstr ""
 
 #: src/SUMMARY.md:105
-msgid "Defensive Programming"
+msgid "For Development"
 msgstr ""
 
 #: src/SUMMARY.md:106
-msgid "Error Handling"
-msgstr "錯誤處理"
+msgid "Correctness"
+msgstr ""
 
 #: src/SUMMARY.md:107
-msgid "Logging"
-msgstr "日誌紀錄"
+msgid "Concurrency"
+msgstr ""
 
 #: src/SUMMARY.md:108
-msgid "Memory and Resource Management"
-msgstr "記憶體與資源管理"
+msgid "Resource Management"
+msgstr ""
 
 #: src/SUMMARY.md:109
-msgid "Performance"
-msgstr "效能"
+msgid "Efficiency"
+msgstr ""
 
 #: src/SUMMARY.md:110
-msgid "Git Guidelines"
+msgid "Observability"
 msgstr ""
 
 #: src/SUMMARY.md:111
-msgid "Testing Guidelines"
+msgid "Testing"
 msgstr ""
 
 #: src/SUMMARY.md:112
-msgid "Assembly Guidelines"
+msgid "For Security"
 msgstr ""
 
 #: src/SUMMARY.md:113
-msgid "Boterinas"
+msgid "Memory Safety"
 msgstr ""
 
 #: src/SUMMARY.md:114
+msgid "Security Properties"
+msgstr ""
+
+#: src/SUMMARY.md:115
+msgid "For Hardware"
+msgstr ""
+
+#: src/SUMMARY.md:116
+msgid "Assembly Conventions"
+msgstr ""
+
+#: src/SUMMARY.md:117
+msgid "CPU Architecture-Specific"
+msgstr ""
+
+#: src/SUMMARY.md:118
+msgid "x86-64"
+msgstr ""
+
+#: src/SUMMARY.md:119
+msgid "For Documentation"
+msgstr ""
+
+#: src/SUMMARY.md:120
+msgid "General Style"
+msgstr ""
+
+#: src/SUMMARY.md:121
+msgid "Path-Specific"
+msgstr ""
+
+#: src/SUMMARY.md:122
+msgid "`kernel/`"
+msgstr ""
+
+#: src/SUMMARY.md:123
+msgid "Boterinas"
+msgstr ""
+
+#: src/SUMMARY.md:124
 msgid "Version Bump"
 msgstr "版本升級"
 
-#: src/SUMMARY.md:115
+#: src/SUMMARY.md:125
 msgid "Community"
 msgstr "社群"
 
-#: src/SUMMARY.md:116
+#: src/SUMMARY.md:126
 msgid "Code of Conduct"
 msgstr "行為守則"
 
-#: src/SUMMARY.md:118
+#: src/SUMMARY.md:128
 msgid "Request for Comments (RFCs)"
 msgstr "意見徵求稿（RFCs）"
 
-#: src/SUMMARY.md:120
+#: src/SUMMARY.md:130
 msgid "RFC Overview"
 msgstr "RFC 概覽"
 
-#: src/SUMMARY.md:121
+#: src/SUMMARY.md:131
 msgid "RFC-0001: RFC Process"
 msgstr "RFC-0001：RFC 過程"
 
-#: src/SUMMARY.md:122
+#: src/SUMMARY.md:132
 msgid "RFC-0002: Asterinas NixOS"
 msgstr "RFC-0002：Asterinas NixOS"
 
-#: src/SUMMARY.md:123
+#: src/SUMMARY.md:133
 msgid "RFC Template"
 msgstr "RFC 模板"
+
+#~ msgid "Language Items"
+#~ msgstr "語言項目"
+
+#~ msgid "Variables, Expressions, and Statements"
+#~ msgstr "變數、表達式與陳述句"
+
+#~ msgid "Functions and Methods"
+#~ msgstr "函式與方法"
+
+#~ msgid "Comments and Documentation"
+#~ msgstr "註釋與文件"
+
+#~ msgid "Modules and Crates"
+#~ msgstr "模組與軟體箱"
+
+#~ msgid "Error Handling"
+#~ msgstr "錯誤處理"
+
+#~ msgid "Logging"
+#~ msgstr "日誌紀錄"
+
+#~ msgid "Memory and Resource Management"
+#~ msgstr "記憶體與資源管理"
+
+#~ msgid "Performance"
+#~ msgstr "效能"
