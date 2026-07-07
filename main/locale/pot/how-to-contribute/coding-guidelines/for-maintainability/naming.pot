@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/to-contribute/coding-guidelines/for-maintainability/naming.md:1
@@ -123,10 +123,45 @@ msgid ""
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/naming.md:81
-msgid "Use assertion-style boolean names (`bool-names`)"
+msgid "No magic number (`no-magic-number`)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/naming.md:83
+msgid ""
+"Numeric literals must be meaningful at the point of use. When a number "
+"represents a non-local invariant, an external contract, or a domain-specific "
+"meaning beyond its immediate arithmetic value, give that meaning a name. Use "
+"a constant, typed value, enum variant, or helper function, whichever best "
+"expresses the invariant."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:96
+msgid "// Good — the flag's meaning is explicit.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:99
+msgid "// Bad — the reader must infer why this bit is special.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:104
+msgid ""
+"Prefer deriving related values from the named source instead of repeating "
+"the same number in multiple places. If the name alone does not explain where "
+"the value comes from, add a short comment or cite the relevant specification."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:109
+msgid ""
+"Do not introduce names for numbers whose meaning is already obvious locally, "
+"such as `0`, `1`, or `2` in ordinary arithmetic, indexing, small ranges, or "
+"direct comparisons."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:117
+msgid "Use assertion-style boolean names (`bool-names`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:119
 msgid ""
 "Boolean variables and functions should read as assertions of fact. Use "
 "`is_`, `has_`, `can_`, `should_`, `was_`, or `needs_` prefixes. Never use "
@@ -135,36 +170,36 @@ msgid ""
 "`ready` is acceptable when the context is unambiguous."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:95
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:131
 msgid "// Good — reads as an assertion\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:99
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:135
 msgid "// Bad — verb suggests an action, not a query\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:101
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:137
 msgid "// Bad — negated name\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:106
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:142
 msgid ""
 "See also: PR [\\#1488](https://github.com/asterinas/asterinas/"
 "pull/1488#discussion_r1841827039)."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:109
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:145
 msgid "Format error messages consistently (`error-message-format`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:111
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:147
 msgid ""
 "Start with a lowercase letter (unless the first word is a proper noun or "
 "identifier). Be specific: prefer \"`len` is too large\" over \"the argument "
 "is invalid\"."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:116
+#: src/to-contribute/coding-guidelines/for-maintainability/naming.md:152
 msgid ""
 "For system call errors, follow the style and descriptions in Linux man pages."
 msgstr ""
