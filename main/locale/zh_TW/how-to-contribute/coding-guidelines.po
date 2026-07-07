@@ -203,6 +203,3 @@ msgid ""
 "Keep a guideline's kebab-case **short-name** stable once published; links "
 "point at it."
 msgstr ""
-
-#~ msgid "[`log-levels`](rust-guidelines/select-topics/logging.md#log-levels)"
-#~ msgstr "[`log-levels`](rust-guidelines/select-topics/logging.md#log-levels)"

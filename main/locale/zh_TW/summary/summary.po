@@ -329,7 +329,7 @@ msgstr ""
 
 #: src/SUMMARY.md:93
 msgid "Design"
-msgstr ""
+msgstr "設計"
 
 #: src/SUMMARY.md:94
 msgid "Process"
@@ -345,7 +345,7 @@ msgstr ""
 
 #: src/SUMMARY.md:97 src/SUMMARY.md:104
 msgid "Comments"
-msgstr ""
+msgstr "註釋"
 
 #: src/SUMMARY.md:98
 msgid "Rust-Specific"
@@ -421,7 +421,7 @@ msgstr ""
 
 #: src/SUMMARY.md:118
 msgid "x86-64"
-msgstr ""
+msgstr "x86-64"
 
 #: src/SUMMARY.md:119
 msgid "For Documentation"
@@ -474,30 +474,3 @@ msgstr "RFC-0002：Asterinas NixOS"
 #: src/SUMMARY.md:133
 msgid "RFC Template"
 msgstr "RFC 模板"
-
-#~ msgid "Language Items"
-#~ msgstr "語言項目"
-
-#~ msgid "Variables, Expressions, and Statements"
-#~ msgstr "變數、表達式與陳述句"
-
-#~ msgid "Functions and Methods"
-#~ msgstr "函式與方法"
-
-#~ msgid "Comments and Documentation"
-#~ msgstr "註釋與文件"
-
-#~ msgid "Modules and Crates"
-#~ msgstr "模組與軟體箱"
-
-#~ msgid "Error Handling"
-#~ msgstr "錯誤處理"
-
-#~ msgid "Logging"
-#~ msgstr "日誌紀錄"
-
-#~ msgid "Memory and Resource Management"
-#~ msgstr "記憶體與資源管理"
-
-#~ msgid "Performance"
-#~ msgstr "效能"

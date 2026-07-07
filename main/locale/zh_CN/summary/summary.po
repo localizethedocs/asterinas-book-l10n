@@ -474,15 +474,3 @@ msgstr "RFC-0002: Asterinas NixOS"
 #: src/SUMMARY.md:133
 msgid "RFC Template"
 msgstr "RFC 模板"
-
-#~ msgid "General Guidelines"
-#~ msgstr "通用指南"
-
-#~ msgid "Rust Guidelines"
-#~ msgstr "Rust 指南"
-
-#~ msgid "Git Guidelines"
-#~ msgstr "Git 指南"
-
-#~ msgid "Assembly Guidelines"
-#~ msgstr "汇编指南"
