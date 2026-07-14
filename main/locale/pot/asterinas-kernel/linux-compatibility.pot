@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
+"POT-Creation-Date: 2026-07-14T10:43:21Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -305,6 +305,10 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:351
 #: src/kernel/linux-compatibility/index.md:352
 #: src/kernel/linux-compatibility/index.md:353
+#: src/kernel/linux-compatibility/index.md:354
+#: src/kernel/linux-compatibility/index.md:355
+#: src/kernel/linux-compatibility/index.md:356
+#: src/kernel/linux-compatibility/index.md:357
 msgid "✅"
 msgstr ""
 
@@ -469,11 +473,12 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:332
 #: src/kernel/linux-compatibility/index.md:342
 #: src/kernel/linux-compatibility/index.md:346
-#: src/kernel/linux-compatibility/index.md:347
-#: src/kernel/linux-compatibility/index.md:349
-#: src/kernel/linux-compatibility/index.md:350
-#: src/kernel/linux-compatibility/index.md:352
+#: src/kernel/linux-compatibility/index.md:348
+#: src/kernel/linux-compatibility/index.md:351
 #: src/kernel/linux-compatibility/index.md:353
+#: src/kernel/linux-compatibility/index.md:354
+#: src/kernel/linux-compatibility/index.md:356
+#: src/kernel/linux-compatibility/index.md:357
 msgid "💯"
 msgstr ""
 
@@ -1204,7 +1209,7 @@ msgid "clone"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:79
-#: src/kernel/linux-compatibility/index.md:348
+#: src/kernel/linux-compatibility/index.md:352
 msgid ""
 "[⚠️](syscall-flag-coverage/process-and-thread-management/#clone-and-clone3)"
 msgstr ""
@@ -3523,204 +3528,248 @@ msgid "pidfd_send_signal"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:347
-msgid "434"
+msgid "429"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:347
+msgid "move_mount"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:347
+msgid "[⚠️](syscall-flag-coverage/file-systems-and-mount-control/#move_mount)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:348
+msgid "430"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:348
+msgid "fsopen"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:349
+msgid "431"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:349
+msgid "fsconfig"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:349
+msgid "[⚠️](syscall-flag-coverage/file-systems-and-mount-control/#fsconfig)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:350
+msgid "432"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:350
+msgid "fsmount"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:350
+msgid "[⚠️](syscall-flag-coverage/file-systems-and-mount-control/#fsmount)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:351
+msgid "434"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:351
 msgid "pidfd_open"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:348
+#: src/kernel/linux-compatibility/index.md:352
 msgid "435"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:348
+#: src/kernel/linux-compatibility/index.md:352
 msgid "clone3"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:349
+#: src/kernel/linux-compatibility/index.md:353
 msgid "436"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:349
+#: src/kernel/linux-compatibility/index.md:353
 msgid "close_range"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:350
+#: src/kernel/linux-compatibility/index.md:354
 msgid "438"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:350
+#: src/kernel/linux-compatibility/index.md:354
 msgid "pidfd_getfd"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:351
+#: src/kernel/linux-compatibility/index.md:355
 msgid "439"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:351
+#: src/kernel/linux-compatibility/index.md:355
 msgid "faccessat2"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:351
+#: src/kernel/linux-compatibility/index.md:355
 msgid "[⚠️](syscall-flag-coverage/file-and-directory-operations/#faccessat2)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:352
+#: src/kernel/linux-compatibility/index.md:356
 msgid "441"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:352
+#: src/kernel/linux-compatibility/index.md:356
 msgid "epoll_pwait2"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:353
+#: src/kernel/linux-compatibility/index.md:357
 msgid "452"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:353
+#: src/kernel/linux-compatibility/index.md:357
 msgid "fchmodat2"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:355
+#: src/kernel/linux-compatibility/index.md:359
 msgid "Supported:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:356
+#: src/kernel/linux-compatibility/index.md:360
 msgid "✅ = syscall supported"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:357
+#: src/kernel/linux-compatibility/index.md:361
 msgid "❌ = not supported"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:359
+#: src/kernel/linux-compatibility/index.md:363
 msgid "Flag Coverage:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:360
+#: src/kernel/linux-compatibility/index.md:364
 msgid "💯 = all flags/commands/modes are supported"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:361
+#: src/kernel/linux-compatibility/index.md:365
 msgid "⚠️ = syscall works, but some flags/modes are not implemented"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:362
+#: src/kernel/linux-compatibility/index.md:366
 msgid "❓ = implementation exists, but we have not audited its coverage yet"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:363
+#: src/kernel/linux-compatibility/index.md:367
 msgid "N/A = not applicable (e.g., syscall not supported)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:365
+#: src/kernel/linux-compatibility/index.md:369
 msgid ""
 "Most of these system calls (or their variants) are also supported for the "
 "RISC-V and LoongArch architectures."
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:368
+#: src/kernel/linux-compatibility/index.md:372
 msgid "File systems"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:370
+#: src/kernel/linux-compatibility/index.md:374
 msgid "Here is the list of supported file systems:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:371
+#: src/kernel/linux-compatibility/index.md:375
 msgid "Devfs"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:372
+#: src/kernel/linux-compatibility/index.md:376
 msgid "Devpts"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:373
+#: src/kernel/linux-compatibility/index.md:377
 msgid "Ext2"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:374
+#: src/kernel/linux-compatibility/index.md:378
 msgid "Procfs"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:375
+#: src/kernel/linux-compatibility/index.md:379
 msgid "Ramfs"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:377
+#: src/kernel/linux-compatibility/index.md:381
 msgid "Sockets"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:379
+#: src/kernel/linux-compatibility/index.md:383
 msgid "Here is the list of supported socket types:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:380
+#: src/kernel/linux-compatibility/index.md:384
 msgid "TCP sockets over IPv4"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:381
+#: src/kernel/linux-compatibility/index.md:385
 msgid "UDP sockets over IPv4"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:382
+#: src/kernel/linux-compatibility/index.md:386
 msgid "Unix sockets"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:384
+#: src/kernel/linux-compatibility/index.md:388
 msgid "vDSO"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:386
+#: src/kernel/linux-compatibility/index.md:390
 msgid "Here is the list of supported symbols in vDSO:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:387
+#: src/kernel/linux-compatibility/index.md:391
 msgid "`__vdso_clock_gettime`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:388
+#: src/kernel/linux-compatibility/index.md:392
 msgid "`__vdso_gettimeofday`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:389
+#: src/kernel/linux-compatibility/index.md:393
 msgid "`__vdso_time`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:391
+#: src/kernel/linux-compatibility/index.md:395
 msgid "Boot protocols"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:393
+#: src/kernel/linux-compatibility/index.md:397
 msgid "Here is the list of supported boot protocols:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:394
+#: src/kernel/linux-compatibility/index.md:398
 msgid ""
 "[Multiboot](https://www.gnu.org/software/grub/manual/multiboot/multiboot."
 "html)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:395
+#: src/kernel/linux-compatibility/index.md:399
 msgid ""
 "[Multiboot2](https://www.gnu.org/software/grub/manual/multiboot2/multiboot."
 "html)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:396
+#: src/kernel/linux-compatibility/index.md:400
 msgid ""
 "[Linux 32-bit boot protocol](https://www.kernel.org/doc/html/v6.19/arch/x86/"
 "boot.html#bit-boot-protocol)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:397
+#: src/kernel/linux-compatibility/index.md:401
 msgid ""
 "[Linux EFI handover](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
 "html#efi-handover-protocol-deprecated)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/index.md:398
+#: src/kernel/linux-compatibility/index.md:402
 msgid ""
 "[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
 "html#pe-coff-entry-point)"

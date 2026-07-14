@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-07 15:45:08 +0800",
-      "hash" : "bf8e15eff0877954deba68c4bf188f700d501572",
-      "title" : "Add `/proc/sys/vm/mmap_min_addr`"
+      "date" : "2026-07-13 19:14:41 +0800",
+      "hash" : "b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d",
+      "title" : "Remove redundant empty-path checks"
     }
   },
   "type" : "branch",
