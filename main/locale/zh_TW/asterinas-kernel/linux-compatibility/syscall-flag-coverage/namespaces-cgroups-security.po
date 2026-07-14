@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
+"POT-Creation-Date: 2026-07-14T10:43:22Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,9 +20,9 @@ msgid "`prctl`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:13
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:84
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:115
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:138
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:86
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:117
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:142
 msgid "Supported functionality in SCML:"
 msgstr "SCML 支援的功能："
 
@@ -60,228 +60,227 @@ msgid "// Retrieve or set \"child subreaper\" attribute\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:44
+msgid "// Retrieve or set the no-new-privileges attribute\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:47
 msgid "// Retrieve or set the timer slack value (nanoseconds)\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:49
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:52
 msgid "Partially-supported operations:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:50
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:53
 msgid ""
 "`PR_GET_DUMPABLE` and `PR_SET_DUMPABLE` because coredump is not supported"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:52
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:55
 msgid "Unsupported operations:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:53
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:56
 msgid "`PR_GET_ENDIAN` and `PR_SET_ENDIAN`"
 msgstr "`PR_GET_ENDIAN` 和 `PR_SET_ENDIAN`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:54
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:57
 msgid "`PR_GET_FP_MODE` and `PR_SET_FP_MODE`"
 msgstr "`PR_GET_FP_MODE` 和 `PR_SET_FP_MODE`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:55
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:58
 msgid "`PR_GET_FPEMU` and `PR_SET_FPEMU`"
 msgstr "`PR_GET_FPEMU` 和 `PR_SET_FPEMU`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:56
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:59
 msgid "`PR_GET_FPEXC` and `PR_SET_FPEXC`"
 msgstr "`PR_GET_FPEXC` 和 `PR_SET_FPEXC`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:57
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:60
 msgid "`PR_GET_IO_FLUSHER` and `PR_SET_IO_FLUSHER`"
 msgstr "`PR_GET_IO_FLUSHER` 和 `PR_SET_IO_FLUSHER`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:58
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:61
 msgid "`PR_MCE_KILL` and `PR_MCE_KILL_GET`"
 msgstr "`PR_MCE_KILL` 和 `PR_MCE_KILL_GET`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:59
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:62
 msgid "`PR_SET_MM` and `PR_SET_VMA`"
 msgstr "`PR_SET_MM` 和 `PR_SET_VMA`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:60
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:63
 msgid "`PR_MPX_ENABLE_MANAGEMENT` and `PR_MPX_DISABLE_MANAGEMENT`"
 msgstr "`PR_MPX_ENABLE_MANAGEMENT` 和 `PR_MPX_DISABLE_MANAGEMENT`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:61
-msgid "`PR_GET_NO_NEW_PRIVS` and `PR_SET_NO_NEW_PRIVS`"
-msgstr "`PR_GET_NO_NEW_PRIVS` 和 `PR_SET_NO_NEW_PRIVS`"
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:62
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:64
 msgid "`PR_PAC_RESET_KEYS`"
 msgstr "`PR_PAC_RESET_KEYS`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:63
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:65
 msgid "`PR_SET_PTRACER`"
 msgstr "`PR_SET_PTRACER`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:64
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:66
 msgid "`PR_GET_SECCOMP` and `PR_SET_SECCOMP`"
 msgstr "`PR_GET_SECCOMP` 和 `PR_SET_SECCOMP`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:65
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:67
 msgid "`PR_GET_SPECULATION_CTRL` and `PR_SET_SPECULATION_CTRL`"
 msgstr "`PR_GET_SPECULATION_CTRL` 和 `PR_SET_SPECULATION_CTRL`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:66
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:68
 msgid "`PR_SVE_GET_VL` and `PR_SVE_SET_VL`"
 msgstr "`PR_SVE_GET_VL` 和 `PR_SVE_SET_VL`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:67
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:69
 msgid "`PR_SET_SYSCALL_USER_DISPATCH`"
 msgstr "`PR_SET_SYSCALL_USER_DISPATCH`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:68
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:70
 msgid "`PR_GET_TAGGED_ADDR_CTRL` and `PR_SET_TAGGED_ADDR_CTRL`"
 msgstr "`PR_GET_TAGGED_ADDR_CTRL` 和 `PR_SET_TAGGED_ADDR_CTRL`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:69
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:71
 msgid "`PR_TASK_PERF_EVENTS_ENABLE` and `PR_TASK_PERF_EVENTS_DISABLE`"
 msgstr "`PR_TASK_PERF_EVENTS_ENABLE` 和 `PR_TASK_PERF_EVENTS_DISABLE`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:70
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:72
 msgid "`PR_GET_THP_DISABLE` and `PR_SET_THP_DISABLE`"
 msgstr "`PR_GET_THP_DISABLE` 和 `PR_SET_THP_DISABLE`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:71
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:73
 msgid "`PR_GET_TID_ADDRESS`"
 msgstr "`PR_GET_TID_ADDRESS`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:72
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:74
 msgid "`PR_GET_TIMING` and `PR_SET_TIMING`"
 msgstr "`PR_GET_TIMING` 和 `PR_SET_TIMING`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:73
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:75
 msgid "`PR_GET_TSC` and `PR_SET_TSC`"
 msgstr "`PR_GET_TSC` 和 `PR_SET_TSC`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:74
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:76
 msgid "`PR_GET_UNALIGN` and `PR_SET_UNALIGN`"
 msgstr "`PR_GET_UNALIGN` 和 `PR_SET_UNALIGN`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:75
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:77
 msgid "`PR_GET_AUXV`"
 msgstr "`PR_GET_AUXV`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:76
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:78
 msgid "`PR_GET_MDWE` and `PR_SET_MDWE`"
 msgstr "`PR_GET_MDWE` 和 `PR_SET_MDWE`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:77
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:79
 msgid "`PR_RISCV_SET_ICACHE_FLUSH_CTX`"
 msgstr "`PR_RISCV_SET_ICACHE_FLUSH_CTX`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:79
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:81
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/prctl.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:82
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:84
 msgid "`capget` and `capset`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:87
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:89
 msgid "// Get capabilities of thread\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:95
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:97
 msgid "// Set capabilities of thread\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:106
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:108
 msgid "Unsupported versions:"
 msgstr "未支援的版本："
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:107
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:109
 msgid "`_LINUX_CAPABILITY_VERSION_1`"
 msgstr "`_LINUX_CAPABILITY_VERSION_1`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:108
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:110
 msgid "`_LINUX_CAPABILITY_VERSION_2`"
 msgstr "`_LINUX_CAPABILITY_VERSION_2`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:110
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:112
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/capget.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:113
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:115
 msgid "`unshare`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:118
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:120
 msgid "// Disassociate parts of the process execution context\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:122
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:145
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:128
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:149
 msgid "Unsupported flags:"
 msgstr "未支援的旗標："
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:123
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:146
-msgid "`CLONE_NEWCGROUP`"
-msgstr "`CLONE_NEWCGROUP`"
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:124
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:147
-msgid "`CLONE_NEWIPC`"
-msgstr "`CLONE_NEWIPC`"
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:125
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:148
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:129
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:150
 msgid "`CLONE_NEWNET`"
 msgstr "`CLONE_NEWNET`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:126
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:149
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:130
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:151
 msgid "`CLONE_NEWPID`"
 msgstr "`CLONE_NEWPID`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:127
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:150
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:131
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:152
 msgid "`CLONE_NEWTIME`"
 msgstr "`CLONE_NEWTIME`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:128
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:151
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:132
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:153
 msgid "`CLONE_NEWUSER`"
 msgstr "`CLONE_NEWUSER`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:130
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:134
 msgid "Silently-ignored flags:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:131
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:135
 msgid "`CLONE_SYSVSEM`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:133
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:137
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/unshare.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:136
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:140
 msgid "`setns`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:141
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:145
 msgid "// Reassociate thread with a namespace\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:153
+#: src/kernel/linux-compatibility/syscall-flag-coverage/namespaces-cgroups-and-security/index.md:155
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/setns.2.html)."
 msgstr ""
+
+#~ msgid "`PR_GET_NO_NEW_PRIVS` and `PR_SET_NO_NEW_PRIVS`"
+#~ msgstr "`PR_GET_NO_NEW_PRIVS` 和 `PR_SET_NO_NEW_PRIVS`"
+
+#~ msgid "`CLONE_NEWCGROUP`"
+#~ msgstr "`CLONE_NEWCGROUP`"
+
+#~ msgid "`CLONE_NEWIPC`"
+#~ msgstr "`CLONE_NEWIPC`"
 
 #~ msgid "`PR_CAP_AMBIENT`, `PR_CAPBSET_READ` and `PR_CAPBSET_DROP`"
 #~ msgstr "`PR_CAP_AMBIENT`、`PR_CAPBSET_READ` 和 `PR_CAPBSET_DROP`"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-07-14T10:43:22Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,7 +26,10 @@ msgstr "`mount`"
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:16
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:68
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:90
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:105
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:114
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:137
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:160
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:175
 msgid "Supported functionality in SCML:"
 msgstr "SCML 支援的功能："
 
@@ -163,70 +166,192 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:86
-msgid "Event notifications"
+msgid "New mount API"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:88
+msgid "`fsconfig`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:93
+msgid "// Configure a filesystem context\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:102
+msgid "Unsupported commands:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:103
+msgid "`FSCONFIG_SET_BINARY`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:104
+msgid "`FSCONFIG_SET_PATH`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:105
+msgid "`FSCONFIG_SET_PATH_EMPTY`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:106
+msgid "`FSCONFIG_SET_FD`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:107
+msgid "`FSCONFIG_CMD_CREATE_EXCL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:109
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/fsconfig.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:112
+msgid "`fsmount`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:121
+msgid "// Create a mount object from a filesystem context\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:126
+msgid "Silently-ignored mount attributes:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:127
+msgid "`MOUNT_ATTR_NOATIME`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:128
+msgid "`MOUNT_ATTR_NODIRATIME`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:129
+msgid "`MOUNT_ATTR_RELATIME`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:130
+msgid "`MOUNT_ATTR_STRICTATIME`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:132
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/fsmount.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:135
+msgid "`move_mount`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:140
+msgid "// Move or attach a mount object to the filesystem\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:144
+msgid "Unsupported flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:145
+msgid "`MOVE_MOUNT_F_SYMLINKS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:146
+msgid "`MOVE_MOUNT_F_AUTOMOUNTS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:147
+msgid "`MOVE_MOUNT_T_SYMLINKS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:148
+msgid "`MOVE_MOUNT_T_AUTOMOUNTS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:149
+msgid "`MOVE_MOUNT_T_EMPTY_PATH`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:150
+msgid "`MOVE_MOUNT_SET_GROUP`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:151
+msgid "`MOVE_MOUNT_BENEATH`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:153
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/move_mount.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:156
+msgid "Event notifications"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:158
 msgid "`inotify_init` and `inotify_init1`"
 msgstr "`inotify_init` 和 `inotify_init1`"
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:93
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:163
 msgid "// Create an inotify instance\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:95
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:165
 msgid "// Create an inotify instance with enhanced behavior control\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:100
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:170
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/inotify_init.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:103
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:173
 msgid "`inotify_add_watch`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:114
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:184
 msgid "// Add a watch to an initialized inotify instance\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:119
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:189
 msgid "Unsupported event flags:"
 msgstr "未支援的事件旗標："
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:120
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:190
 msgid "`IN_MOVED_FROM` and `IN_MOVED_TO` - Move events are not generated"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:121
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:191
 msgid "`IN_MOVE_SELF` - Self move events are not generated"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:122
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:192
 msgid "`IN_UNMOUNT` - Unmount events are not generated"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:123
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:193
 msgid ""
 "`IN_Q_OVERFLOW` - Queue overflow events are not generated (events are "
 "silently dropped when queue is full)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:124
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:194
 msgid "`IN_ALL_EVENTS` - Only includes actually supported events"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:126
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:196
 msgid "Unsupported control flags:"
 msgstr "未支援的控制旗標："
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:127
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:197
 msgid "`IN_EXCL_UNLINK` - Events on unlinked files are not excluded"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:129
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:199
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man7/inotify.7.html)."

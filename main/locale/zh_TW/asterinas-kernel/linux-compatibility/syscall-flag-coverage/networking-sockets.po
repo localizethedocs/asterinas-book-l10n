@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"POT-Creation-Date: 2026-07-14T10:43:22Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -218,35 +218,35 @@ msgstr ""
 msgid "`getsockopt` and `setsockopt`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:244
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:246
 msgid "// Get options at socket level\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:251
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:253
 msgid "// Get options at IP level\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:258
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:260
 msgid "// Get options at TCP level\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:265
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:267
 msgid "// Set options at socket level\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:272
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:274
 msgid "// Set options at IP level\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:279
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:281
 msgid "// Set options at TCP level\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:286
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:288
 msgid "// Set options at netlink level\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:295
+#: src/kernel/linux-compatibility/syscall-flag-coverage/networking-and-sockets/index.md:297
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/getsockopt.2.html)."
