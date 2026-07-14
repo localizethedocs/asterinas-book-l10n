@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-06-30 19:39:36 +0800",
-      "hash" : "63e71c2806af7fb02b49b927d0e527efa578352b",
-      "title" : "Fix syncfs with O_PATH fd"
+      "date" : "2026-07-07 15:45:08 +0800",
+      "hash" : "bf8e15eff0877954deba68c4bf188f700d501572",
+      "title" : "Add `/proc/sys/vm/mmap_min_addr`"
     }
   },
   "type" : "branch",
