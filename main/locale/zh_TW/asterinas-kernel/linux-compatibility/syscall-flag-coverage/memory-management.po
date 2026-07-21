@@ -278,6 +278,3 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/madvise.2.html)."
 msgstr ""
-
-#~ msgid "`MAP_32BIT`"
-#~ msgstr "`MAP_32BIT`"

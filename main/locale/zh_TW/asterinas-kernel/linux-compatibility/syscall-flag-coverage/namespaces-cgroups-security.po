@@ -272,15 +272,3 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/setns.2.html)."
 msgstr ""
-
-#~ msgid "`PR_GET_NO_NEW_PRIVS` and `PR_SET_NO_NEW_PRIVS`"
-#~ msgstr "`PR_GET_NO_NEW_PRIVS` 和 `PR_SET_NO_NEW_PRIVS`"
-
-#~ msgid "`CLONE_NEWCGROUP`"
-#~ msgstr "`CLONE_NEWCGROUP`"
-
-#~ msgid "`CLONE_NEWIPC`"
-#~ msgstr "`CLONE_NEWIPC`"
-
-#~ msgid "`PR_CAP_AMBIENT`, `PR_CAPBSET_READ` and `PR_CAPBSET_DROP`"
-#~ msgstr "`PR_CAP_AMBIENT`、`PR_CAPBSET_READ` 和 `PR_CAPBSET_DROP`"
