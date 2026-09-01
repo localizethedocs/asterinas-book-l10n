@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -226,142 +226,156 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/index.md:51
 msgid ""
+"[`layered-kernel-crates`](rust-specific/crates-and-modules.md#layered-kernel-"
+"crates): Organize kernel crates as an acyclic layered graph, and keep new "
+"subsystems, drivers, and utilities outside `aster-core` by default."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:52
+msgid ""
 "[`module-docs`](rust-specific/crates-and-modules.md#module-docs): Open a "
 "major module with a `//!` doc: purpose, key types, relation to neighbors."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:52
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:53
 msgid ""
 "[`narrow-visibility`](rust-specific/crates-and-modules.md#narrow-"
 "visibility): Start private; widen visibility only when an actual consumer "
 "requires it."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:53
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:54
+msgid ""
+"[`encode-intent-in-vis`](rust-specific/crates-and-modules.md#encode-intent-"
+"in-vis): A visibility modifier declares an item's maximum intended exposure, "
+"regardless of what its ancestors allow."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:55
 msgid ""
 "[`qualified-fn-imports`](rust-specific/crates-and-modules.md#qualified-fn-"
 "imports): Import the parent module and call free functions/statics through "
 "it, not by bare name."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:54
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:56
 msgid "[Types & Traits](rust-specific/types-and-traits.md)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:55
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:57
 msgid ""
 "[`rust-type-invariants`](rust-specific/types-and-traits.md#rust-type-"
 "invariants): Use the type system (newtypes, enums, generics) to make illegal "
 "states unrepresentable."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:56
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:58
 msgid ""
 "[`enum-over-dyn`](rust-specific/types-and-traits.md#enum-over-dyn): For a "
 "closed set of variants, prefer an `enum` over `Box<dyn Trait>`."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:57
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:59
 msgid ""
 "[`getter-encapsulation`](rust-specific/types-and-traits.md#getter-"
 "encapsulation): Prefer a getter over a public field; it preserves naming "
 "freedom and room for invariants."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:58
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:60
 msgid "[Functions & Methods](rust-specific/functions-and-methods.md)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:59
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:61
 msgid ""
 "[`no-bool-args`](rust-specific/functions-and-methods.md#no-bool-args): Avoid "
 "boolean parameters that select behavior; split the function or use a typed "
 "enum."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:60
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:62
 msgid ""
 "[`block-expressions`](rust-specific/functions-and-methods.md#block-"
 "expressions): Use a block expression to scope temporary state that only "
 "produces one value."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:61
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:63
 msgid ""
 "[`minimize-nesting`](rust-specific/functions-and-methods.md#minimize-"
 "nesting): Flatten nesting past ~3 levels with early returns, guard clauses, "
 "`let…else`, `?`, `continue`."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:62
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:64
 msgid ""
 "[`explain-variables`](rust-specific/functions-and-methods.md#explain-"
 "variables): Bind intermediate results of a complex expression to well-named "
 "variables."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:63
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:65
 msgid "[Attributes & Macros](rust-specific/attributes-and-macros.md)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:64
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:66
 msgid ""
 "[`expect-dead-code`](rust-specific/attributes-and-macros.md#expect-dead-"
 "code): Allow `#[expect(dead_code)]` only for a planned, clear, simple future "
 "use."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:65
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:67
 msgid ""
 "[`alphabetical-attrs`](rust-specific/attributes-and-macros.md#alphabetical-"
 "attrs): Sort outer attributes alphabetically; place `#[derive(...)]` last "
 "with sorted traits."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:66
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:68
 msgid ""
 "[`narrow-lint-suppression`](rust-specific/attributes-and-macros.md#narrow-"
 "lint-suppression): Suppress a lint at the narrowest scope (item/method), not "
 "a whole type or module."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:67
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:69
 msgid ""
 "[`macros-as-last-resort`](rust-specific/attributes-and-macros.md#macros-as-"
 "last-resort): Prefer functions and generics; use a macro only when the type "
 "system can't express the need."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:68
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:70
 msgid "[Comments](rust-specific/comments.md)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:69
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:71
 msgid ""
 "[`rfc1574-summary`](rust-specific/comments.md#rfc1574-summary): First doc "
 "line is one sentence — a third-person verb for functions, a noun phrase for "
 "types/modules."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:70
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:72
 msgid ""
 "[`comment-punctuation`](rust-specific/comments.md#comment-punctuation): End "
 "full-sentence comments with terminal punctuation."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:71
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:73
 msgid ""
 "[`backtick-identifiers`](rust-specific/comments.md#backtick-identifiers): "
 "Wrap identifiers in doc comments in backticks; prefer rustdoc links where "
 "possible."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:72
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:74
 msgid ""
 "[`no-impl-in-docs`](rust-specific/comments.md#no-impl-in-docs): Doc comments "
 "describe what an API does and how to use it, not its internal implementation."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/index.md:74
+#: src/to-contribute/coding-guidelines/for-maintainability/index.md:76
 msgid "No **path-specific** guidelines yet."
 msgstr ""

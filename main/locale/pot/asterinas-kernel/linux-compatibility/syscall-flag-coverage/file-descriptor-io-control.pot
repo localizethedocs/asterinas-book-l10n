@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -27,7 +27,7 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:146
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:172
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:198
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:241
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:249
 msgid "Supported functionality in SCML:"
 msgstr ""
 
@@ -348,61 +348,65 @@ msgstr ""
 msgid "`ioctl`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:206
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:211
 msgid "// Control file descriptor flags and I/O modes\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:209
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:214
 msgid "// Control terminal devices\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:212
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:217
 msgid "// Control framebuffer display\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:220
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:225
 msgid "// Control Event devices (evdev)\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:228
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:233
 msgid "// Control block devices\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:231
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:236
 msgid "// Control Trust Domain Extensions (TDX) guest devices\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:236
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:239
+msgid "// Control socket and network interface settings\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:244
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/ioctl.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:239
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:247
 msgid "`ioprio_set` and `ioprio_get`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:244
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:252
 msgid "// Set the I/O priority for a single thread\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:246
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:254
 msgid "// Get the I/O priority for a single thread\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:251
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:259
 msgid "Unsupported selectors:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:252
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:260
 msgid "`IOPRIO_WHO_PGRP`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:253
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:261
 msgid "`IOPRIO_WHO_USER`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:255
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:263
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/ioprio_set.2.html)."

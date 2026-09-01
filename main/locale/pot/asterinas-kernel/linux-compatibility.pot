@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-14T10:43:21Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -373,7 +373,6 @@ msgstr ""
 #: src/kernel/linux-compatibility/index.md:118
 #: src/kernel/linux-compatibility/index.md:119
 #: src/kernel/linux-compatibility/index.md:120
-#: src/kernel/linux-compatibility/index.md:122
 #: src/kernel/linux-compatibility/index.md:125
 #: src/kernel/linux-compatibility/index.md:127
 #: src/kernel/linux-compatibility/index.md:128
@@ -1582,6 +1581,10 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:122
 msgid "sysinfo"
+msgstr ""
+
+#: src/kernel/linux-compatibility/index.md:122
+msgid "[⚠️](syscall-flag-coverage/system-information-and-misc/#sysinfo)"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:123

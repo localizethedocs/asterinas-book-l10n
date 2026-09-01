@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:01Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -472,5 +472,9 @@ msgid "RFC-0002: Asterinas NixOS"
 msgstr ""
 
 #: src/SUMMARY.md:133
+msgid "RFC-0003: Hypervisor Support"
+msgstr ""
+
+#: src/SUMMARY.md:134
 msgid "RFC Template"
 msgstr ""

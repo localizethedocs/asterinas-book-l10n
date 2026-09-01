@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -25,299 +25,439 @@ msgid "Inherited from Linux"
 msgstr ""
 
 #: src/kernel/linux-compatibility/kernel-parameters.md:7
-msgid "`init`"
+msgid "`rdinit`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/kernel-parameters.md:9
-msgid "Run the specified binary as `init`."
+msgid "Run the specified initramfs binary as the first userspace process."
 msgstr ""
 
 #: src/kernel/linux-compatibility/kernel-parameters.md:11
-#: src/kernel/linux-compatibility/kernel-parameters.md:67
-#: src/kernel/linux-compatibility/kernel-parameters.md:100
+#: src/kernel/linux-compatibility/kernel-parameters.md:27
+#: src/kernel/linux-compatibility/kernel-parameters.md:45
+#: src/kernel/linux-compatibility/kernel-parameters.md:58
+#: src/kernel/linux-compatibility/kernel-parameters.md:71
+#: src/kernel/linux-compatibility/kernel-parameters.md:85
+#: src/kernel/linux-compatibility/kernel-parameters.md:170
+#: src/kernel/linux-compatibility/kernel-parameters.md:203
 msgid "Example:"
 msgstr ""
 
 #: src/kernel/linux-compatibility/kernel-parameters.md:16
-#: src/kernel/linux-compatibility/kernel-parameters.md:48
-#: src/kernel/linux-compatibility/kernel-parameters.md:72
-#: src/kernel/linux-compatibility/kernel-parameters.md:106
+#: src/kernel/linux-compatibility/kernel-parameters.md:32
+#: src/kernel/linux-compatibility/kernel-parameters.md:63
+#: src/kernel/linux-compatibility/kernel-parameters.md:76
+#: src/kernel/linux-compatibility/kernel-parameters.md:90
+#: src/kernel/linux-compatibility/kernel-parameters.md:122
+#: src/kernel/linux-compatibility/kernel-parameters.md:175
+#: src/kernel/linux-compatibility/kernel-parameters.md:209
 msgid "Notes:"
 msgstr ""
 
 #: src/kernel/linux-compatibility/kernel-parameters.md:17
-msgid "The value is the path to the executable."
+msgid "The value is the path to the executable in the initramfs root."
 msgstr ""
 
 #: src/kernel/linux-compatibility/kernel-parameters.md:18
 msgid ""
-"If omitted, Asterinas will try to execute from the following paths in order: "
-"`/sbin/init`, `/etc/init`, `/bin/init`, `/bin/sh`."
+"If omitted, Asterinas will try to execute `/init` from the initramfs root."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:21
-msgid "`console`"
+#: src/kernel/linux-compatibility/kernel-parameters.md:19
+msgid ""
+"If the specified path cannot be accessed, Asterinas ignores it and proceeds "
+"with root filesystem initialization. It does not fall back to `/init` in "
+"this case."
 msgstr ""
 
 #: src/kernel/linux-compatibility/kernel-parameters.md:23
+msgid "`root`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:25
+msgid "Mount the specified block device as the root filesystem."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:33
+msgid ""
+"The value currently must name a registered block device under `/dev`, such "
+"as `/dev/vda2`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:35
+msgid ""
+"Asterinas first determines the boot source. If the path specified by "
+"`rdinit` is accessible, or if `rdinit` is absent and `/init` exists, it "
+"boots from the initramfs and ignores `root`. Otherwise, it boots from the "
+"rootfs, for which `root` is required: Asterinas mounts the specified device "
+"as the root filesystem and panics if the parameter is absent."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:41
+msgid "`rootfstype`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:43
+msgid "Select the filesystem type used for the root filesystem."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:50
+#: src/kernel/linux-compatibility/kernel-parameters.md:101
+#: src/kernel/linux-compatibility/kernel-parameters.md:138
+#: src/kernel/linux-compatibility/kernel-parameters.md:153
+#: src/kernel/linux-compatibility/kernel-parameters.md:221
+msgid "Valid values:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:51
+msgid "`ext2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:53
+msgid "`ro`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:55
+msgid ""
+"Mount the root filesystem read-only. This is the default when Asterinas "
+"mounts the root filesystem via `root`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:64
+#: src/kernel/linux-compatibility/kernel-parameters.md:77
+msgid "This parameter has no effect when Asterinas boots from the initramfs."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:65
+#: src/kernel/linux-compatibility/kernel-parameters.md:79
+msgid "If both `ro` and `rw` are specified, the last one takes precedence."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:67
+msgid "`rw`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:69
+msgid "Mount the root filesystem read-write."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:78
+msgid "`rw` overrides the default read-only root mount."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:81
+msgid "`init`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:83
+msgid ""
+"Run the specified executable as the first userspace process from the root "
+"filesystem."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:91
+msgid ""
+"`init` is used only after Asterinas mounts the root filesystem via `root=`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:92
+msgid ""
+"If omitted, Asterinas tries `/sbin/init`, `/etc/init`, `/bin/init`, and `/"
+"bin/sh`, in that order."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:95
+msgid "`console`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:97
 msgid ""
 "Select console devices for kernel messages. This parameter may be specified "
 "multiple times. Kernel messages are delivered to each listed console."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:27
-#: src/kernel/linux-compatibility/kernel-parameters.md:118
-msgid "Valid values:"
-msgstr ""
-
-#: src/kernel/linux-compatibility/kernel-parameters.md:28
+#: src/kernel/linux-compatibility/kernel-parameters.md:102
 msgid "`tty0`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:29
+#: src/kernel/linux-compatibility/kernel-parameters.md:103
 msgid "`ttyS0`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:30
+#: src/kernel/linux-compatibility/kernel-parameters.md:104
 msgid "`hvc0`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:32
-#: src/kernel/linux-compatibility/kernel-parameters.md:54
-#: src/kernel/linux-compatibility/kernel-parameters.md:122
+#: src/kernel/linux-compatibility/kernel-parameters.md:106
+#: src/kernel/linux-compatibility/kernel-parameters.md:128
+#: src/kernel/linux-compatibility/kernel-parameters.md:142
+#: src/kernel/linux-compatibility/kernel-parameters.md:157
+#: src/kernel/linux-compatibility/kernel-parameters.md:225
 msgid "Examples:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:38
+#: src/kernel/linux-compatibility/kernel-parameters.md:112
 msgid "`virtio_mmio.device`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:40
+#: src/kernel/linux-compatibility/kernel-parameters.md:114
 msgid ""
 "Register a VirtIO-MMIO device from the kernel command line. This parameter "
 "may be specified multiple times."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:43
+#: src/kernel/linux-compatibility/kernel-parameters.md:117
 msgid "Format:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:49
+#: src/kernel/linux-compatibility/kernel-parameters.md:123
 msgid "`size` and `base` may be decimal or hexadecimal with a `0x` prefix."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:50
+#: src/kernel/linux-compatibility/kernel-parameters.md:124
 msgid "`size` may use `K`, `M`, `G`, or `T` suffixes."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:51
+#: src/kernel/linux-compatibility/kernel-parameters.md:125
 msgid "`irq` must be nonzero."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:52
+#: src/kernel/linux-compatibility/kernel-parameters.md:126
 msgid ""
 "The optional `id` field is accepted for Linux compatibility but ignored."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:60
-#: src/kernel/linux-compatibility/kernel-parameters.md:112
-msgid "Asterinas-specific"
+#: src/kernel/linux-compatibility/kernel-parameters.md:134
+msgid "`i8042.reset`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:61
+#: src/kernel/linux-compatibility/kernel-parameters.md:136
+msgid "Force the i8042 controller self-test during initialization."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:139
+msgid "`1`, `on`, `yes`, `true` or no value — perform the controller self-test"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:140
+msgid "`0`, `off`, `no`, `false` — skip the controller self-test (default)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:149
+msgid "`atkbd.reset`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:151
+msgid ""
+"Override whether the AT keyboard reset is performed during initialization."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:154
+msgid "`1`, `on`, `yes`, `true` or no value — send the keyboard reset command"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:155
+msgid "`0`, `off`, `no`, `false` — skip the keyboard reset"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:164
 msgid "`earlycon`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:63
+#: src/kernel/linux-compatibility/kernel-parameters.md:166
 msgid ""
 "Enable the early console to output logs during the early stages of system "
 "boot. The name follows Linux's `earlycon` parameter. Asterinas currently "
 "supports a simplified form."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:73
+#: src/kernel/linux-compatibility/kernel-parameters.md:176
 msgid "If omitted, the early console stays disabled."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:74
+#: src/kernel/linux-compatibility/kernel-parameters.md:177
 msgid ""
 "Only the bare `earlycon` token is supported; complex Linux forms such as "
 "`earlycon=uart8250,io,0x3f8,115200` are not supported yet."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:77
+#: src/kernel/linux-compatibility/kernel-parameters.md:180
 msgid "`loglevel`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:79
+#: src/kernel/linux-compatibility/kernel-parameters.md:182
 msgid ""
 "Control how verbose kernel log output is on the console. Set either a "
 "numeric value (`0` to `8`) or a lowercase level name."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:82
+#: src/kernel/linux-compatibility/kernel-parameters.md:185
 msgid ""
 "Each value acts as a cutoff: messages at that severity and all more urgent "
 "levels are printed. For example, `loglevel=4` shows emergencies through "
 "errors, but not warnings or routine info."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:85
+#: src/kernel/linux-compatibility/kernel-parameters.md:188
 msgid ""
 "This uses the same `0`–`8` scale as the Linux kernel `loglevel` parameter, "
 "with string aliases for convenience."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:88
+#: src/kernel/linux-compatibility/kernel-parameters.md:191
 msgid "Value"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:88
+#: src/kernel/linux-compatibility/kernel-parameters.md:191
 msgid "Name(s)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:88
+#: src/kernel/linux-compatibility/kernel-parameters.md:191
 msgid "Messages shown"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:90
+#: src/kernel/linux-compatibility/kernel-parameters.md:193
 msgid "`0`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:90
+#: src/kernel/linux-compatibility/kernel-parameters.md:193
 msgid "`off`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:90
+#: src/kernel/linux-compatibility/kernel-parameters.md:193
 msgid "None"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:91
+#: src/kernel/linux-compatibility/kernel-parameters.md:194
 msgid "`1`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:91
+#: src/kernel/linux-compatibility/kernel-parameters.md:194
 msgid "`emerg`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:91
+#: src/kernel/linux-compatibility/kernel-parameters.md:194
 msgid "Emerg only"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:92
+#: src/kernel/linux-compatibility/kernel-parameters.md:195
 msgid "`2`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:92
+#: src/kernel/linux-compatibility/kernel-parameters.md:195
 msgid "`alert`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:92
+#: src/kernel/linux-compatibility/kernel-parameters.md:195
 msgid "Emerg through Alert"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:93
+#: src/kernel/linux-compatibility/kernel-parameters.md:196
 msgid "`3`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:93
+#: src/kernel/linux-compatibility/kernel-parameters.md:196
 msgid "`crit`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:93
+#: src/kernel/linux-compatibility/kernel-parameters.md:196
 msgid "Emerg through Crit"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:94
+#: src/kernel/linux-compatibility/kernel-parameters.md:197
 msgid "`4`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:94
+#: src/kernel/linux-compatibility/kernel-parameters.md:197
 msgid "`error`, `err`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:94
+#: src/kernel/linux-compatibility/kernel-parameters.md:197
 msgid "Emerg through Error"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:95
+#: src/kernel/linux-compatibility/kernel-parameters.md:198
 msgid "`5`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:95
+#: src/kernel/linux-compatibility/kernel-parameters.md:198
 msgid "`warning`, `warn`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:95
+#: src/kernel/linux-compatibility/kernel-parameters.md:198
 msgid "Emerg through Warning"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:96
+#: src/kernel/linux-compatibility/kernel-parameters.md:199
 msgid "`6`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:96
+#: src/kernel/linux-compatibility/kernel-parameters.md:199
 msgid "`notice`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:96
+#: src/kernel/linux-compatibility/kernel-parameters.md:199
 msgid "Emerg through Notice"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:97
+#: src/kernel/linux-compatibility/kernel-parameters.md:200
 msgid "`7`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:97
+#: src/kernel/linux-compatibility/kernel-parameters.md:200
 msgid "`info`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:97
+#: src/kernel/linux-compatibility/kernel-parameters.md:200
 msgid "Emerg through Info"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:98
+#: src/kernel/linux-compatibility/kernel-parameters.md:201
 msgid "`8`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:98
+#: src/kernel/linux-compatibility/kernel-parameters.md:201
 msgid "`debug`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:98
+#: src/kernel/linux-compatibility/kernel-parameters.md:201
 msgid "All levels (most verbose)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:107
+#: src/kernel/linux-compatibility/kernel-parameters.md:210
 msgid "Level names are case-sensitive; use lowercase names."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:108
+#: src/kernel/linux-compatibility/kernel-parameters.md:211
 msgid "If omitted, the default is `8` (`debug`). Invalid values are ignored."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:109
+#: src/kernel/linux-compatibility/kernel-parameters.md:212
 msgid ""
 "Use `warn` for normal operation, `info`/`debug` when troubleshooting, and "
 "`error` or lower for a quieter console."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:114
+#: src/kernel/linux-compatibility/kernel-parameters.md:215
+msgid "Asterinas-specific"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:217
 msgid "`i8042.exist`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:116
+#: src/kernel/linux-compatibility/kernel-parameters.md:219
 msgid "Override ACPI's indication of whether a PS/2 (i8042) controller exists."
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:119
+#: src/kernel/linux-compatibility/kernel-parameters.md:222
 msgid ""
 "`1`, `on`, `yes`, `true` or no value — treat the i8042 controller as present "
 "(force probing)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/kernel-parameters.md:120
+#: src/kernel/linux-compatibility/kernel-parameters.md:223
 msgid ""
-"`0`, `off`, `no`, `false` - treat the i8042 controller as absent (skip "
+"`0`, `off`, `no`, `false` — treat the i8042 controller as absent (skip "
 "probing)"
 msgstr ""

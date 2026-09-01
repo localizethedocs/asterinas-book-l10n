@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,8 +23,9 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:31
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:55
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:77
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:105
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:129
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:103
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:125
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:149
 msgid "Supported functionality in SCML:"
 msgstr ""
 
@@ -140,64 +141,103 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:101
-msgid "POSIX clocks"
+msgid "`sysinfo`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:103
-msgid "`clock_gettime`"
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:106
+msgid "// Return system information.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:110
+msgid "Supported returned fields:"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:111
-msgid "// Get the time of a clock specified by a static ID\n"
+msgid "`uptime`, rounded up to seconds when it has a fractional part"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:114
-msgid "// Get the time of a clock specified by a dynamic ID\n"
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:112
+msgid ""
+"`loads`, containing the 1-, 5-, and 15-minute load averages as fixed-point "
+"values scaled by `1 << SI_LOAD_SHIFT`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:119
-msgid "Unsupported predefined clock IDs:"
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:113
+msgid "`totalram`, `freeram`, `procs`, and `mem_unit`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:120
-msgid "`CLOCK_REALTIME_ALARM`"
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:115
+msgid ""
+"The `sharedram`, `bufferram`, `totalhigh`, and `freehigh` fields are "
+"reported as zero. The `totalswap` and `freeswap` fields are reported as zero "
+"because swap is not supported."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:118
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/sysinfo.2.html)."
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:121
+msgid "POSIX clocks"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:123
+msgid "`clock_gettime`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:131
+msgid "// Get the time of a clock specified by a static ID\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:134
+msgid "// Get the time of a clock specified by a dynamic ID\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:139
+msgid "Unsupported predefined clock IDs:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:140
+msgid "`CLOCK_REALTIME_ALARM`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:141
 msgid "`CLOCK_BOOTTIME_ALARM`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:122
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:145
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:142
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:165
 msgid "`CLOCK_TAI`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:124
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:144
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/clock_gettime.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:127
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:147
 msgid "`clock_nanosleep`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:132
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:152
 msgid "// Sleep with a specified clock\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:136
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:156
 msgid ""
 "// Optional flags:\n"
 "        //\n"
 "        // Sleep until an absolute time point\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:144
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:164
 msgid "Unsupported clock IDs:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:147
+#: src/kernel/linux-compatibility/syscall-flag-coverage/system-information-and-misc/index.md:167
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/clock_nanosleep.2.html)."

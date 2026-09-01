@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:22
 msgid ""
-"Exposed via [`UserContext`](https://asterinas.github.io/api-docs/0.17.1/ostd/"
+"Exposed via [`UserContext`](https://asterinas.github.io/api-docs/0.18.1/ostd/"
 "arch/cpu/context/struct.UserContext.html) with sanitization"
 msgstr ""
 
@@ -227,7 +227,7 @@ msgstr ""
 #: src/ostd/soundness/sensitivity-classification.md:40
 msgid ""
 "Manipulated safely via [`VmSpace`](https://asterinas.github.io/api-"
-"docs/0.17.1/ostd/mm/vm_space/struct.VmSpace.html)"
+"docs/0.18.1/ostd/mm/vm_space/struct.VmSpace.html)"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:41
@@ -240,9 +240,9 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:41
 msgid ""
-"Exposed as [`UFrame`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/"
+"Exposed as [`UFrame`](https://asterinas.github.io/api-docs/0.18.1/ostd/mm/"
 "frame/untyped/type.UFrame.html) / [`USegment`](https://asterinas.github.io/"
-"api-docs/0.17.1/ostd/mm/frame/segment/type.USegment.html); used for user "
+"api-docs/0.18.1/ostd/mm/frame/segment/type.USegment.html); used for user "
 "pages, DMA buffers"
 msgstr ""
 
@@ -269,7 +269,7 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:55
 msgid ""
-"[`IoMem`](https://asterinas.github.io/api-docs/0.17.1/ostd/io/struct.IoMem."
+"[`IoMem`](https://asterinas.github.io/api-docs/0.18.1/ostd/io/struct.IoMem."
 "html)`<Sensitive>`, `pub(crate)` only"
 msgstr ""
 
@@ -318,7 +318,7 @@ msgstr ""
 #: src/ostd/soundness/sensitivity-classification.md:59
 msgid ""
 "`IoMem<Insensitive>` via [`IoMem::acquire(range)`](https://asterinas.github."
-"io/api-docs/0.17.1/ostd/io/struct.IoMem.html#method.acquire)"
+"io/api-docs/0.18.1/ostd/io/struct.IoMem.html#method.acquire)"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:60
@@ -327,9 +327,9 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:60
 msgid ""
-"[`IoPort`](https://asterinas.github.io/api-docs/0.17.1/ostd/io/struct.IoPort."
+"[`IoPort`](https://asterinas.github.io/api-docs/0.18.1/ostd/io/struct.IoPort."
 "html) via [`IoPort::acquire(port)`](https://asterinas.github.io/api-"
-"docs/0.17.1/ostd/io/struct.IoPort.html#method.acquire)"
+"docs/0.18.1/ostd/io/struct.IoPort.html#method.acquire)"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:61
@@ -342,7 +342,7 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:61
 msgid ""
-"[`IrqLine`](https://asterinas.github.io/api-docs/0.17.1/ostd/irq/struct."
+"[`IrqLine`](https://asterinas.github.io/api-docs/0.18.1/ostd/irq/struct."
 "IrqLine.html) callback registration"
 msgstr ""
 
@@ -356,9 +356,9 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:62
 msgid ""
-"[`DmaCoherent`](https://asterinas.github.io/api-docs/0.17.1/ostd/mm/dma/"
+"[`DmaCoherent`](https://asterinas.github.io/api-docs/0.18.1/ostd/mm/dma/"
 "struct.DmaCoherent.html) / [`DmaStream`](https://asterinas.github.io/api-"
-"docs/0.17.1/ostd/mm/dma/struct.DmaStream.html) APIs"
+"docs/0.18.1/ostd/mm/dma/struct.DmaStream.html) APIs"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:64

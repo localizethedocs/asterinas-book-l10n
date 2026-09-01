@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:01Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -281,8 +281,8 @@ msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:215
 msgid ""
-"[whois](https://packages.qa.debian.org/w/whois.html) queries domain "
-"registration information."
+"[whois](https://tracker.debian.org/pkg/whois) queries domain registration "
+"information."
 msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:226

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -112,8 +112,8 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:178
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:204
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:222
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:259
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:280
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:258
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:279
 msgid "Supported functionality in SCML:"
 msgstr ""
 
@@ -275,75 +275,71 @@ msgid "`STATX_DIOALIGN`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:249
-msgid "`STATX_MNT_ID_UNIQUE`"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:250
 msgid "`STATX_SUBVOL`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:251
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:250
 msgid "`STATX_WRITE_ATOMIC`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:252
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:251
 msgid "`STATX_DIO_READ_ALIGN`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:254
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:253
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/statx.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:257
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:256
 msgid "`fallocate`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:262
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:261
 msgid "// Allocate disk space within the range specified\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:264
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:263
 msgid ""
 "// Deallocate space (create a hole) while keeping the file size unchanged\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:269
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:268
 msgid "Unsupported modes:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:270
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:269
 msgid "`FALLOC_FL_UNSHARE_RANGE`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:271
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:270
 msgid "`FALLOC_FL_COLLAPSE_RANGE`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:272
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:271
 msgid "`FALLOC_FL_ZERO_RANGE`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:273
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:272
 msgid "`FALLOC_FL_INSERT_RANGE`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:275
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:274
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/fallocate.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:278
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:277
 msgid "`utimensat`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:283
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:282
 msgid "// Change file timestamps with nanosecond precision\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:287
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:286
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/utimensat.2.html)."

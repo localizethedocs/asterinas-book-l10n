@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -154,11 +154,11 @@ msgstr ""
 #: src/kernel/the-framekernel-architecture.md:70
 msgid ""
 "**Efficiency.** The safe API provided by the framework is only allowed to "
-"introduce minimal overheads. Ideally, these APIs should be realized as [zero-"
-"cost abstractions](https://monomorph.is/posts/zero-cost-abstractions/)."
+"introduce minimal overheads. Ideally, these APIs should be realized as zero-"
+"cost abstractions."
 msgstr ""
 
-#: src/kernel/the-framekernel-architecture.md:76
+#: src/kernel/the-framekernel-architecture.md:75
 msgid ""
 "Fortunately, our efforts to design and implement an OS framework meeting "
 "these standards have borne fruit in the form of the [Asterinas OSTD](../"
