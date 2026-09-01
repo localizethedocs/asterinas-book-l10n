@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -51,13 +51,13 @@ msgstr ""
 #: src/osdk/reference/manifest.md:28
 msgid ""
 "```toml\n"
-"project_type = \"kernel\"                     # <1> \n"
+"project_type = \"kernel\"                     # <1>\n"
 "\n"
 "# --------------------------- the default scheme settings "
 "-------------------------------\n"
 "supported_archs = [\"x86_64\", \"riscv64\"]     # <2>\n"
 "\n"
-"# The common options for all build, run and test subcommands \n"
+"# The common options for all build, run and test subcommands\n"
 "[build]                                     # <3>\n"
 "features = [\"no_std\", \"alloc\"]              # <4>\n"
 "profile = \"dev\"                             # <5>\n"
@@ -68,23 +68,24 @@ msgid ""
 "kcmd_args = [\"SHELL=/bin/sh\", \"HOME=/\"]     # <10>\n"
 "init_args = [\"sh\", \"-l\"]                    # <11>\n"
 "initramfs = \"path/to/it\"                    # <12>\n"
-"[grub]                                      # <13>  \n"
+"[grub]                                      # <13>\n"
 "mkrescue_path = \"path/to/it\"                # <14>\n"
-"boot_protocol = \"multiboot2\"                # <15> \n"
+"boot_protocol = \"multiboot2\"                # <15>\n"
 "display_grub_menu = false                   # <16>\n"
 "[qemu]                                      # <17>\n"
 "path = \"path/to/it\"                         # <18>\n"
 "args = \"-machine q35 -m 2G\"                 # <19>\n"
+"log_file = \"qemu.log\"                       # <20>\n"
 "\n"
 "# Special options for run subcommand\n"
-"[run]                                       # <20>\n"
+"[run]                                       # <21>\n"
 "[run.build]                                 # <3>\n"
 "[run.boot]                                  # <8>\n"
 "[run.grub]                                  # <13>\n"
 "[run.qemu]                                  # <17>\n"
 "\n"
 "# Special options for test subcommand\n"
-"[test]                                      # <21>\n"
+"[test]                                      # <22>\n"
 "[test.build]                                # <3>\n"
 "[test.boot]                                 # <8>\n"
 "[test.grub]                                 # <13>\n"
@@ -93,194 +94,194 @@ msgid ""
 "----------------------------\n"
 "\n"
 "# A customized scheme settings\n"
-"[scheme.\"custom\"]                           # <22>\n"
+"[scheme.\"custom\"]                           # <23>\n"
 "[scheme.\"custom\".build]                     # <3>\n"
-"[scheme.\"custom\".run]                       # <20>\n"
-"[scheme.\"custom\".test]                      # <21>\n"
+"[scheme.\"custom\".run]                       # <21>\n"
+"[scheme.\"custom\".test]                      # <22>\n"
 "```"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:75
+#: src/osdk/reference/manifest.md:76
 msgid "Here are some additional notes for the fields:"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:77
+#: src/osdk/reference/manifest.md:78
 msgid "The type of current crate."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:79
+#: src/osdk/reference/manifest.md:80
 msgid ""
 "Optional. If not specified, the default value is inferred from the usage of "
 "the macro `#[ostd::main]`. if the macro is used, the default value is "
 "`kernel`. Otherwise, the default value is `library`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:84
+#: src/osdk/reference/manifest.md:85
 msgid "Possible values are `library` or `kernel`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:86
+#: src/osdk/reference/manifest.md:87
 msgid "The architectures that can be supported."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:88
+#: src/osdk/reference/manifest.md:89
 msgid ""
 "Optional. By default OSDK supports all architectures. When building or "
 "running, if not specified in the CLI, the architecture of the host machine "
 "will be used."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:93
+#: src/osdk/reference/manifest.md:94
 msgid "Possible values are `aarch64`, `riscv64`, `x86_64`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:95
+#: src/osdk/reference/manifest.md:96
 msgid "Options for compilation stage."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:97
+#: src/osdk/reference/manifest.md:98
 msgid "Cargo features to activate."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:99 src/osdk/reference/manifest.md:132
-#: src/osdk/reference/manifest.md:141 src/osdk/reference/manifest.md:145
-#: src/osdk/reference/manifest.md:178
+#: src/osdk/reference/manifest.md:100 src/osdk/reference/manifest.md:133
+#: src/osdk/reference/manifest.md:142 src/osdk/reference/manifest.md:146
+#: src/osdk/reference/manifest.md:179
 msgid "Optional. The default value is empty."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:101
+#: src/osdk/reference/manifest.md:102
 msgid "Only features defined in `Cargo.toml` can be added to this array."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:103
+#: src/osdk/reference/manifest.md:104
 msgid "Build artifacts with the specified Cargo profile."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:105
+#: src/osdk/reference/manifest.md:106
 msgid "Optional. The default value is `dev`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:107
+#: src/osdk/reference/manifest.md:108
 msgid ""
 "Possible values are `dev`, `release`, `test`, and `bench` and other profiles "
 "defined in `Cargo.toml`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:110
+#: src/osdk/reference/manifest.md:111
 msgid "Whether to strip the built kernel ELF using `rust-strip`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:112 src/osdk/reference/manifest.md:165
+#: src/osdk/reference/manifest.md:113 src/osdk/reference/manifest.md:166
 msgid "Optional. The default value is `false`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:114
+#: src/osdk/reference/manifest.md:115
 msgid "Denote the encoding format for kernel self-decompression"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:116
+#: src/osdk/reference/manifest.md:117
 msgid "Optional. The default value is `raw`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:118
+#: src/osdk/reference/manifest.md:119
 msgid "Possible values are `raw`, `gzip` and `zlib`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:120
+#: src/osdk/reference/manifest.md:121
 msgid ""
 "If the boot protocol is not `linux`, it is not allowed to specipy the "
 "econding format."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:122
+#: src/osdk/reference/manifest.md:123
 msgid "Options for booting the kernel."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:124
+#: src/osdk/reference/manifest.md:125
 msgid "The boot method."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:126
+#: src/osdk/reference/manifest.md:127
 msgid "Optional. The default value is `qemu-direct`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:128
+#: src/osdk/reference/manifest.md:129
 msgid "Possible values are `grub-rescue-iso`, `grub-qcow2` and `qemu-direct`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:130
+#: src/osdk/reference/manifest.md:131
 msgid "The arguments provided will be passed to the guest kernel."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:134
+#: src/osdk/reference/manifest.md:135
 msgid ""
 "Each argument should be in one of the following two forms: `KEY=VALUE` or "
 "`KEY` if no value is required. Each `KEY` can appear at most once."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:138
+#: src/osdk/reference/manifest.md:139
 msgid ""
 "The arguments provided will be passed to the init process, usually, the init "
 "shell."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:143
+#: src/osdk/reference/manifest.md:144
 msgid "The path to the initramfs."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:147 src/osdk/reference/manifest.md:155
-#: src/osdk/reference/manifest.md:173
+#: src/osdk/reference/manifest.md:148 src/osdk/reference/manifest.md:156
+#: src/osdk/reference/manifest.md:174 src/osdk/reference/manifest.md:212
 msgid ""
 "If the path is relative, it is relative to the manifest's enclosing "
 "directory."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:149
+#: src/osdk/reference/manifest.md:150
 msgid ""
 "Grub options. Only take effect if boot method is `grub-rescue-iso` or `grub-"
 "qcow2`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:151
+#: src/osdk/reference/manifest.md:152
 msgid "The path to the `grub-mkrescue` executable."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:153 src/osdk/reference/manifest.md:171
+#: src/osdk/reference/manifest.md:154 src/osdk/reference/manifest.md:172
 msgid ""
 "Optional. The default value is the executable in the system path, if any."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:157
+#: src/osdk/reference/manifest.md:158
 msgid "The protocol GRUB used."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:159
+#: src/osdk/reference/manifest.md:160
 msgid "Optional. The default value is `multiboot2`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:161
+#: src/osdk/reference/manifest.md:162
 msgid "Possible values are `linux`, `multiboot`, `multiboot2`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:163
+#: src/osdk/reference/manifest.md:164
 msgid "Whether to display the GRUB menu when booting with GRUB."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:167
+#: src/osdk/reference/manifest.md:168
 msgid "Options for finding and starting QEMU."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:169
+#: src/osdk/reference/manifest.md:170
 msgid "The path to the QEMU executable."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:175
+#: src/osdk/reference/manifest.md:176
 msgid ""
 "Additional arguments passed to QEMU are organized in a single string that "
 "can include any POSIX shell compliant separators."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:180
+#: src/osdk/reference/manifest.md:181
 msgid ""
 "Each argument should be in the form of `KEY` and `VALUE` or `KEY` if no "
 "value is required. Some keys can appear multiple times (e.g., `-device`, `-"
@@ -289,7 +290,7 @@ msgid ""
 "with the settings of OSDK."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:189
+#: src/osdk/reference/manifest.md:190
 msgid ""
 "The field will be evaluated, so it is ok to use environment variables in the "
 "arguments (usually for paths or conditional arguments). You can even use "
@@ -297,58 +298,84 @@ msgid ""
 "to/your/custom/args/file)`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:194
+#: src/osdk/reference/manifest.md:195
+msgid "The path to the file where QEMU writes the guest output."
+msgstr ""
+
+#: src/osdk/reference/manifest.md:197
+msgid ""
+"Optional. If this field is absent, OSDK does not inspect QEMU output for "
+"kernel panics or coverage data."
+msgstr ""
+
+#: src/osdk/reference/manifest.md:201
+msgid ""
+"This field only tells OSDK where to read the log; it does not cause QEMU to "
+"create the file. QEMU must be configured through `args` to write guest "
+"output to the same path. For example:"
+msgstr ""
+
+#: src/osdk/reference/manifest.md:206
+msgid ""
+"```toml\n"
+"[qemu]\n"
+"args = \"-serial file:qemu-serial.log\"\n"
+"log_file = \"qemu-serial.log\"\n"
+"```"
+msgstr ""
+
+#: src/osdk/reference/manifest.md:215
 msgid ""
 "Special settings for running. Only take effect when running `cargo osdk run`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:196
+#: src/osdk/reference/manifest.md:217
 msgid "By default, it inherits common options."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:198
+#: src/osdk/reference/manifest.md:219
 msgid "Values set here are used to override common options."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:200
+#: src/osdk/reference/manifest.md:221
 msgid "Special settings for testing."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:202
-msgid "Similar to `20`, but only take effect when running `cargo osdk test`."
+#: src/osdk/reference/manifest.md:223
+msgid "Similar to `21`, but only take effect when running `cargo osdk test`."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:204
+#: src/osdk/reference/manifest.md:225
 msgid "The definition of customized scheme."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:206
+#: src/osdk/reference/manifest.md:227
 msgid ""
 "A customized scheme has the same fields as the default scheme. By default, a "
 "customized scheme will inherit all options from the default scheme, unless "
 "overridden by new options."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:210
+#: src/osdk/reference/manifest.md:231
 msgid "Example"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:212
+#: src/osdk/reference/manifest.md:233
 msgid ""
 "Here is a sound, self-explanatory example which is used by OSDK in the "
 "Asterinas project."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:215
+#: src/osdk/reference/manifest.md:236
 msgid ""
 "In the script `./tools/qemu_args.sh`, the environment variables will be used "
 "to determine the actual set of qemu arguments."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:218
+#: src/osdk/reference/manifest.md:239
 msgid ""
 "```toml\n"
-"# The OSDK manifest at the Asterinas root virtual workspace \n"
+"# The OSDK manifest at the Asterinas root virtual workspace\n"
 "# provides default OSDK settings for all packages.\n"
 "\n"
 "# The common options for build, run and test\n"
@@ -360,6 +387,7 @@ msgid ""
 "\n"
 "[qemu]\n"
 "args = \"$(./tools/qemu_args.sh normal)\"\n"
+"log_file = \"qemu-serial.log\"\n"
 "\n"
 "# Special options for running\n"
 "[run.boot]\n"
@@ -369,10 +397,8 @@ msgid ""
 "    \"HOME=/\",\n"
 "    \"USER=root\",\n"
 "    \"PATH=/bin:/benchmark\",\n"
-"    \"init=/init\",\n"
 "]\n"
 "init_args = [\"sh\", \"-l\"]\n"
-"initramfs = \"test/initramfs/build/initramfs.cpio.gz\"\n"
 "\n"
 "# Special options for testing\n"
 "[test.qemu]\n"
@@ -443,11 +469,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:313
+#: src/osdk/reference/manifest.md:333
 msgid "Scheme"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:315
+#: src/osdk/reference/manifest.md:335
 msgid ""
 "Scheme is an advanced feature that allows you to create multiple profiles "
 "for the same action (`build`, `run`, or `test`) under different scenarios (e."
@@ -455,32 +481,32 @@ msgid ""
 "configuration) and can be selected using the `--scheme` CLI argument."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:320
+#: src/osdk/reference/manifest.md:340
 msgid ""
 "If a scheme `<s>` is selected for an action (such as `test`), the value of "
 "an unspecified but required configuration `key` will be determined by the "
 "following rules:"
 msgstr ""
 
-#: src/osdk/reference/manifest.md:323
+#: src/osdk/reference/manifest.md:343
 msgid ""
 "If the general config (`scheme.<s>.key`) exists for the selected scheme, use "
 "this value."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:325
+#: src/osdk/reference/manifest.md:345
 msgid ""
 "Otherwise, if the default scheme has this configuration for the action "
 "(`test.key`), use this value."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:327
+#: src/osdk/reference/manifest.md:347
 msgid ""
 "Otherwise, if the default scheme has this configuration (`key`), use this "
 "value."
 msgstr ""
 
-#: src/osdk/reference/manifest.md:330
+#: src/osdk/reference/manifest.md:350
 msgid ""
 "If the value is still not found, either the default value for the key will "
 "be used or an error will be thrown."

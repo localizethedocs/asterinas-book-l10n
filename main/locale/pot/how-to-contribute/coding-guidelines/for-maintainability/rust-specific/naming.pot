@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,40 +16,60 @@ msgid "Naming"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:3
+msgid "Create crates with kebab-case names (`kebab-case-crate-names`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:5
+msgid ""
+"Asterinas prefers kebab-case for crate names, which is unspecified in "
+"official Rust API Guidelines."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:8
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:23
+msgid "// Good\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:10
+msgid "\"short-vis-path\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:11
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:28
+msgid "// Bad\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:14
+msgid "\"short_vis_path\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:17
 msgid ""
 "Follow Rust CamelCase and acronym capitalization (`camel-case-acronyms`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:5
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:19
 msgid ""
 "Type names follow Rust's CamelCase convention. Acronyms are title-cased per "
 "the Rust API Guidelines:"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:9
-msgid "// Good\n"
-msgstr ""
-
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:14
-msgid "// Bad\n"
-msgstr ""
-
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:22
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:36
 msgid "End closure variables with `_fn` (`closure-fn-suffix`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:24
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:38
 msgid ""
 "Variables holding closures or function pointers must signal they are "
 "callable by ending with `_fn`. Treating a closure variable as if it were a "
 "data object misleads readers."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:30
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:44
 msgid "// Good — clearly a callable\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:43
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/naming.md:57
 msgid ""
 "See also: PR [\\#395](https://github.com/asterinas/asterinas/"
 "pull/395#discussion_r1402964415) and [\\#783](https://github.com/asterinas/"

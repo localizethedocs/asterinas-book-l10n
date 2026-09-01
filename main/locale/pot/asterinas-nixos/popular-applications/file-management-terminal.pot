@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:01Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -245,7 +245,7 @@ msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:157
 msgid ""
-"[Zip](https://www.info-zip.org/) is a file compression and archive utility."
+"[Zip](http://www.info-zip.org/) is a file compression and archive utility."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:168
@@ -610,8 +610,8 @@ msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:460
 msgid ""
-"[tree](http://mama.indstate.edu/users/ice/tree/) displays directory "
-"structures in a tree format."
+"[tree](http://oldmanprogrammer.net/source.php?dir=projects/tree) displays "
+"directory structures in a tree format."
 msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:471

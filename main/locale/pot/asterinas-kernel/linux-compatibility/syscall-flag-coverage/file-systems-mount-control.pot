@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-14T10:43:22Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,7 +29,8 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:114
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:137
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:160
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:175
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:195
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:210
 msgid "Supported functionality in SCML:"
 msgstr ""
 
@@ -288,70 +289,127 @@ msgid ""
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:156
-msgid "Event notifications"
+msgid "Mount queries"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:158
-msgid "`inotify_init` and `inotify_init1`"
+msgid "`listmount`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:163
+msgid ""
+"// List the unique IDs of a mount's strict descendants in the current\n"
+"// mount namespace.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:173
+msgid "The `req` argument is a `struct mnt_id_req`:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:174
+msgid ""
+"`mnt_id` is the parent mount's `unique_id`, or `LSMT_ROOT` (`(uint64_t)-1`) "
+"for the current namespace's root mount."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:176
+msgid ""
+"`param` is a pagination cursor; only descendants with `unique_id` strictly "
+"greater than `param` are returned (strictly less than `param` when "
+"`LISTMOUNT_REVERSE` is set)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:179
+msgid ""
+"`size` must equal `MNT_ID_REQ_SIZE_VER0` (24); future struct versions are "
+"not yet accepted."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:181
+msgid "`spare` must be `0`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:183
+msgid "Limitations:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:184
+msgid ""
+"Bind-mount visibility filtering (Linux's `is_path_reachable`) is not yet "
+"modeled; descendancy is determined by the strict mount parent chain."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:188
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/listmount.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:191
+msgid "Event notifications"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:193
+msgid "`inotify_init` and `inotify_init1`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:198
 msgid "// Create an inotify instance\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:165
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:200
 msgid "// Create an inotify instance with enhanced behavior control\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:170
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:205
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/inotify_init.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:173
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:208
 msgid "`inotify_add_watch`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:184
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:219
 msgid "// Add a watch to an initialized inotify instance\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:189
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:224
 msgid "Unsupported event flags:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:190
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:225
 msgid "`IN_MOVED_FROM` and `IN_MOVED_TO` - Move events are not generated"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:191
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:226
 msgid "`IN_MOVE_SELF` - Self move events are not generated"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:192
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:227
 msgid "`IN_UNMOUNT` - Unmount events are not generated"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:193
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:228
 msgid ""
 "`IN_Q_OVERFLOW` - Queue overflow events are not generated (events are "
 "silently dropped when queue is full)"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:194
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:229
 msgid "`IN_ALL_EVENTS` - Only includes actually supported events"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:196
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:231
 msgid "Unsupported control flags:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:197
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:232
 msgid "`IN_EXCL_UNLINK` - Events on unlinked files are not excluded"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:199
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-systems-and-mount-control/index.md:234
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man7/inotify.7.html)."

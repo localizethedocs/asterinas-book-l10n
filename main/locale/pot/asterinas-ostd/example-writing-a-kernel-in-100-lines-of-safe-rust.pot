@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -46,7 +46,7 @@ msgid "# stdout\n"
 msgstr ""
 
 #: src/ostd/a-100-line-kernel.md:17
-msgid "# address of message         \n"
+msgid "# address of message\n"
 msgstr ""
 
 #: src/ostd/a-100-line-kernel.md:19

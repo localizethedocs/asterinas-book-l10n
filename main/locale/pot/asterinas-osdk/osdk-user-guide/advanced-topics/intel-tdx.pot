@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -33,9 +33,8 @@ msgstr ""
 
 #: src/osdk/guide/intel-tdx.md:10
 msgid ""
-"See [this guide](https://github.com/canonical/tdx/tree/noble-24.04?"
-"tab=readme-ov-file#4-setup-host-os) or other materials to enable Intel TDX "
-"in host OS."
+"See [this guide](https://github.com/canonical/tdx#4-setup-host-os) or other "
+"materials to enable Intel TDX in host OS."
 msgstr ""
 
 #: src/osdk/guide/intel-tdx.md:13

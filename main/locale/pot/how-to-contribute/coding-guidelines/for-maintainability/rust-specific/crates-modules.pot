@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -31,7 +31,7 @@ msgid ""
 "```toml\n"
 "# In the workspace root Cargo.toml\n"
 "[workspace.dependencies]\n"
-"ostd = { version = \"0.17.0\", path = \"ostd\" }\n"
+"ostd = { path = \"ostd\", version = \"0.17.0\" }\n"
 "bitflags = \"2.6\"\n"
 "\n"
 "# In a member crate's Cargo.toml\n"
@@ -42,29 +42,80 @@ msgid ""
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:22
-msgid "Add module-level documentation for major components (`module-docs`)"
+msgid ""
+"Keep the kernel crate graph layered and acyclic (`layered-kernel-crates`)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:24
+msgid ""
+"For modularity, the Asterinas kernel under `kernel/` is decomposed into an "
+"acyclic graph of kernel crates arranged in layers. A kernel crate may depend "
+"on crates in the same layer or any lower layer. The layers are, from highest "
+"to lowest:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:30
+msgid "The assembler crate (`kernel/src/`)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:31
+msgid "High-level component crates (`kernel/comps/`)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:32
+msgid "The `aster-core` crate (`kernel/core/`)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:33
+msgid "Low-level component crates (`kernel/core/comps/`)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:34
+msgid "Kernel libraries (`kernel/libs/`)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:36
+msgid ""
+"A new kernel subsystem, driver, or utility type should be added as a "
+"separate crate outside `aster-core` by default. Add new code directly to "
+"`aster-core` only when necessary."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:40
+msgid "All these kernel crates may depend on OSTD."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:42
+msgid ""
+"When lower-layer code needs behavior implemented above it, define the "
+"interface and registration mechanism in the lower layer and let the higher "
+"component register its implementation."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:46
+msgid "Add module-level documentation for major components (`module-docs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:48
 msgid ""
 "A module file that serves as an important kernel component (e.g., subsystem "
 "entry point, major data structure, driver) should begin with a `//!` comment "
 "explaining:"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:28
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:52
 msgid "What the module does"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:29
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:53
 msgid "The key types it exposes"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:30
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:54
 msgid "How it relates to neighboring modules"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:33
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:57
 msgid ""
 "//! Virtual memory area (VMA) management.\n"
 "//!\n"
@@ -74,47 +125,172 @@ msgid ""
 "//! VMAs are managed by the [`Vmar`] tree in the parent module.\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:40
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:64
 msgid "Default to the narrowest visibility (`narrow-visibility`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:42
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:66
 msgid ""
 "Start private, then widen to `pub(super)`, `pub(crate)`, or `pub` only when "
 "an actual external consumer requires it."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:47
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:71
 msgid "// Good — restricted to the parent module\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:52
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:76
 msgid "// ...\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:54
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:78
 msgid "// Bad — unnecessarily wide\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:59
-msgid ""
-"Inside the `aster-kernel` crate, `pub(crate)` and `pub` are equivalent, as "
-"the crate has no downstream consumers. Prefer the shorter `pub`."
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:83
+msgid "The `asterinas` assembler crate does not expose any `pub` Rust items."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:63
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:85
 msgid ""
-"See also: PR [\\#2951](https://github.com/asterinas/asterinas/pull/2951), "
-"[\\#2605](https://github.com/asterinas/asterinas/"
-"pull/2605#discussion_r2720506912), and [\\#3154](https://github.com/"
-"asterinas/asterinas/pull/3154#discussion_r3100905375)."
+"Visibility modifiers encode intent, not just effect (`encode-intent-in-vis`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:68
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:87
+msgid ""
+"A plain `pub` says \"export me as far as possible\": along its defining "
+"module path, the item's _effective_ visibility is capped by every enclosing "
+"module up to the crate root (and a `pub use` elsewhere can re-export it "
+"around that cap entirely). In a large project like Asterinas, a `pub` item "
+"may sit deep in the module hierarchy, making its effective visibility hard "
+"to see locally and fragile against visibility changes in its ancestors."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:97
+msgid ""
+"Therefore, a visibility modifier in Asterinas declares the maximum "
+"_intended_ exposure of an item, regardless of what its ancestors happen to "
+"allow:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:101
+msgid ""
+"`pub` means \"exported from this crate\". Reserve it for items with an "
+"actual consumer in another crate."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:103
+msgid ""
+"`pub(crate)`, `pub(super)`, `pub(in super::super)`, and `pub(in crate::a)` "
+"mean \"this item must never escape the named scope\", even when an enclosing "
+"private module already restricts it further. If the `path` part of a `pub(in "
+"path)` modifier is long, apply [`short-vis-path`](#short-vis-path)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:109
+msgid ""
+"One exception is struct fields and union fields: a `pub` field of a "
+"visibility-restricted struct or union is acceptable, because the field sits "
+"only a few lines from the type's own modifier, so its real visibility "
+"remains locally obvious."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:114
+msgid ""
+"This guideline is partially enforced by the rustc lint [`unreachable_pub`]"
+"(https://doc.rust-lang.org/rustc/lints/listing/allowed-by-default."
+"html#unreachable-pub), which flags any `pub` item not actually reachable "
+"from outside its crate."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:118
+msgid "Restrict subsystem visibility with a short name (`short-vis-path`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:120
+msgid ""
+"To conform with the [`narrow-visibility`](#narrow-visibility) guideline, a "
+"common pattern is to expose Rust items inside a subsystem only to the "
+"subsystem itself. But when the subsystem sits deep in the module hierarchy, "
+"we have to write long visibility modifiers like `pub(in crate::a::very::"
+"deep::subsystem)`, which is tedious for writers and unfriendly for readers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:127
+msgid ""
+"Instead, you can use the `short_vis_path` macro to create a short name for "
+"the long full path of a subsystem:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:131
+msgid "// In kernel/src/a/very/deep/subsystem/lib.rs\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:132
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:166
+msgid "// Good\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:137
+msgid "// Bad: violating the narrow-visibility guideline.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:140
+msgid "// Bad: the visibility path is too long to read.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:145
+msgid ""
+"To avoid overusing this attribute, only follow this guideline when **all** "
+"of the following three conditions are met:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:148
+msgid ""
+"the submodule depth exceeds 2 levels (i.e., the target path contains at "
+"least two `::` separators)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:152
+msgid "// In kernel/src/fs/utils/systree_inode.rs\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:153
+msgid ""
+"// Good: `fs` is a direct submodule of root, thus it's readable already.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:156
+msgid "// Bad: no need to do this.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:162
+msgid "`pub(super)` and `pub(self)` are inapplicable"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:165
+msgid "// In ostd/src/mm/page_table/mod.rs\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:169
+msgid "// Bad\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:175
+msgid "and the restricted visibility path is used at least 2 times"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:177
+msgid ""
+"Refer to [\\#3188](https://github.com/asterinas/asterinas/issues/3188) for "
+"the `short-vis-path` design."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:182
 msgid "Qualify function calls with the parent module (`qualified-fn-imports`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:70
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:184
 msgid ""
 "When importing a free function or a static/constant from another module, "
 "import the **parent module** and access the item through it (`module::"
@@ -122,7 +298,7 @@ msgid ""
 "directly by name."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:76
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:190
 msgid ""
 "This convention is recommended by [_The Rust Programming Language_](https://"
 "doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-"
@@ -130,33 +306,33 @@ msgid ""
 "purposes:"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:81
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:195
 msgid ""
 "The call site makes it clear that an imported item is being used, not a "
 "local one."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:84
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:198
 msgid "The module name provides context that complements the item name."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:88
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:202
 msgid "// Good — module-qualified function call\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:92
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:206
 msgid "// Good — module-qualified static access\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:97
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:211
 msgid "// Bad — bare function name; unclear origin at call site\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:102
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:216
 msgid "// Bad — bare static name; could be mistaken for a local constant\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:109
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:223
 msgid ""
 "This guideline applies to **free functions and statics/constants**. Types, "
 "traits, and enum variants should still be imported directly by name, "

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
+"POT-Creation-Date: 2026-09-01T13:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -25,10 +25,10 @@ msgid ""
 "developer community: the [OSDK](https://crates.io/crates/cargo-osdk) and "
 "[OSTD](https://crates.io/crates/ostd). To support development with these "
 "tools, we also publish companion Docker images on DockerHub, (i.e., "
-"[`asterinas/osdk`](https://hub.docker.com/r/asterinas/osdk)). While the "
-"Asterinas kernel is not yet ready for public binary release, its development "
-"Docker images (i.e., [`asterinas/asterinas`](https://hub.docker.com/r/"
-"asterinas/asterinas)) are released regularly."
+"[`asterinas/osdk-dev`](https://hub.docker.com/r/asterinas/osdk-dev)). While "
+"the Asterinas kernel is not yet ready for public binary release, its "
+"development Docker images (i.e., [`asterinas/dev`](https://hub.docker.com/r/"
+"asterinas/dev)) are released regularly."
 msgstr ""
 
 #: src/to-contribute/version-bump.md:16
@@ -60,7 +60,7 @@ msgid "How to Bump Versions"
 msgstr ""
 
 #: src/to-contribute/version-bump.md:43
-msgid "We recommend a three-commit procedure to bump versions:"
+msgid "We recommend a four-commit procedure to bump versions:"
 msgstr ""
 
 #: src/to-contribute/version-bump.md:44
@@ -80,41 +80,48 @@ msgid ""
 "**Commit 3 \"Bump the project version\"** triggers the release of new crates."
 msgstr ""
 
-#: src/to-contribute/version-bump.md:48
+#: src/to-contribute/version-bump.md:47
 msgid ""
-"Depending on your exact purpose, you may complete the version bump process "
-"with at most three commits within two PRs."
+"**Commit 4 \"Update API doc hyperlinks in the Book\"** updates all Book "
+"links to use the latest API doc version."
 msgstr ""
 
-#: src/to-contribute/version-bump.md:50
+#: src/to-contribute/version-bump.md:49
+msgid ""
+"Depending on your exact purpose, you may complete the version bump process "
+"with at most four commits within two or three PRs."
+msgstr ""
+
+#: src/to-contribute/version-bump.md:51
 msgid ""
 "**To make non-breaking changes to the Docker images**, submit Commit 1 in a "
 "PR, then Commit 2 in another."
 msgstr ""
 
-#: src/to-contribute/version-bump.md:52
+#: src/to-contribute/version-bump.md:53
 msgid ""
 "**To make breaking changes to the Docker images and the crates' APIs**, "
-"submit Commit 1 in a PR, then Commit 2 and 3 in another."
+"submit Commit 1 in the first PR, then Commits 2 and 3 in the second, and "
+"Commit 4 in the third."
 msgstr ""
 
-#: src/to-contribute/version-bump.md:55
+#: src/to-contribute/version-bump.md:56
 msgid ""
-"Across the three commits, you will be assisted with a convenient utility "
+"Across the four commits, you will be assisted with a convenient utility "
 "script, `tools/bump_version.sh`,"
 msgstr ""
 
-#: src/to-contribute/version-bump.md:58
+#: src/to-contribute/version-bump.md:59
 msgid "Commit 1: \"Bump the Docker image version\""
 msgstr ""
 
-#: src/to-contribute/version-bump.md:60
+#: src/to-contribute/version-bump.md:61
 msgid ""
 "After updating the Docker image content, increment the Docker image version "
 "using the following command:"
 msgstr ""
 
-#: src/to-contribute/version-bump.md:67
+#: src/to-contribute/version-bump.md:68
 msgid ""
 "The second argument specifies which part of the Docker image version to "
 "increment. Use `date` for non-breaking Docker image changes. If the changes "
@@ -122,45 +129,67 @@ msgid ""
 "in line with semantic versioning."
 msgstr ""
 
-#: src/to-contribute/version-bump.md:72
+#: src/to-contribute/version-bump.md:73
 msgid ""
 "This command updates the `DOCKER_IMAGE_VERSION` file. Submit these changes "
 "as a pull request. Once merged, the CI will automatically trigger the "
 "creation of new Docker images."
 msgstr ""
 
-#: src/to-contribute/version-bump.md:76
+#: src/to-contribute/version-bump.md:77
 msgid "Commit 2: \"Switch to a new Docker image\""
 msgstr ""
 
-#: src/to-contribute/version-bump.md:78
+#: src/to-contribute/version-bump.md:79
 msgid ""
 "Creating new Docker images can be time-consuming. Once the images have been "
 "pushed to DockerHub, write a follow-up commit to update all Docker image "
 "version references across the codebase."
 msgstr ""
 
-#: src/to-contribute/version-bump.md:87
+#: src/to-contribute/version-bump.md:88
 msgid ""
 "If your purpose is to publish non-breaking changes to the Docker images, "
 "then submit this commit in a PR and then your job is finished. Otherwise, go "
 "on with Commit 3."
 msgstr ""
 
-#: src/to-contribute/version-bump.md:91
+#: src/to-contribute/version-bump.md:92
 msgid "Commit 3: \"Bump the project version\""
 msgstr ""
 
-#: src/to-contribute/version-bump.md:93
+#: src/to-contribute/version-bump.md:94
 msgid ""
 "In this commit, synchronize the version number in `VERSION` with that in "
 "`DOCKER_IMAGE_VERSION` by running:"
 msgstr ""
 
-#: src/to-contribute/version-bump.md:101
+#: src/to-contribute/version-bump.md:102
 msgid ""
 "This command also updates all version numbers in the `Cargo.toml` files of "
 "all crates scheduled for release. Pack these changes into a third commit and "
 "submit the last two commits in a single PR. After the PR is merged into the "
 "`main` branch, the CI will automatically publish the new crate versions."
+msgstr ""
+
+#: src/to-contribute/version-bump.md:109
+msgid "Commit 4: \"Update API doc hyperlinks in the Book\""
+msgstr ""
+
+#: src/to-contribute/version-bump.md:111
+msgid "After new API docs are published, run:"
+msgstr ""
+
+#: src/to-contribute/version-bump.md:117
+msgid ""
+"This command mechanically updates API doc hyperlinks in Book pages to point "
+"to the current project version."
+msgstr ""
+
+#: src/to-contribute/version-bump.md:120
+msgid "Then, validate all hyperlinks in the Book are valid:"
+msgstr ""
+
+#: src/to-contribute/version-bump.md:126
+msgid "Submit the changes in a single-commit PR."
 msgstr ""
