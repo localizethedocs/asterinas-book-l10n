@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:1
+msgid "Syscall Flag Coverage"
+msgstr "系统调用 Flag 覆盖率"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:3
+msgid ""
+"This section documents the flag coverage of Asterinas's implementation of "
+"Linux system calls. It introduces [**System Call Matching Language (SCML)**]"
+"(system-call-matching-language.md), a lightweight domain‑specific language "
+"for specifying allowed and disallowed patterns of system‑call invocations."
+msgstr ""
+"本节记录了Asterinas实现的Linux系统调用的标志覆盖情况。它介绍了[**系统调用匹配"
+"语言（SCML）**](system-call-matching-language.md)，这是一种轻量级的领域特定语"
+"言，用于指定允许和不允许的系统调用模式。"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:8
+msgid ""
+"The rest of this section uses SCML to accurately and concisely describe both "
+"supported and unsupported functionality of system calls, which are divided "
+"into the following categories:"
+msgstr ""
+"本节的其余部分使用 SCML 准确、简洁地描述系统调用的支持功能和不支持功能，这些"
+"功能分为以下几类："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:12
+msgid "[Process and thread management](process-and-thread-management/)"
+msgstr "[进程和线程管理](process-and-thread-management/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:13
+msgid "[Memory management](memory-management/)"
+msgstr "[内存管理](memory-management/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:14
+msgid "[File & directory operations](file-and-directory-operations/)"
+msgstr "[文件与目录操作](file-and-directory-operations/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:15
+msgid "[File systems & mount control](file-systems-and-mount-control/)"
+msgstr "[文件系统与挂载控制](file-systems-and-mount-control/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:16
+msgid "[File descriptor & I/O control](file-descriptor-and-io-control/)"
+msgstr "[文件描述符与 I/O 控制](file-descriptor-and-io-control/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:17
+msgid "[Inter-process communication](inter-process-communication/)"
+msgstr "[进程间通信](inter-process-communication/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:18
+msgid "[Networking & sockets](networking-and-sockets/)"
+msgstr "[网络与 sockets](networking-and-sockets/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:19
+msgid "[Signals & timers](signals-and-timers/)"
+msgstr "[信号与定时器](signals-and-timers/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:20
+msgid "[Namespaces, cgroups & security](namespaces-cgroups-and-security/)"
+msgstr ""
+"[命名空间、控制组（cgroups）与安全性](namespaces-cgroups-and-security/)"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/index.md:21
+msgid "[System information & misc](system-information-and-misc/)"
+msgstr "[系统信息及其他](system-information-and-misc/)"
