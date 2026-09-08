@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/reference/commands/run.md:1
+msgid "cargo osdk run"
+msgstr "cargo osdk run"
+
+#: src/osdk/reference/commands/run.md:3
+msgid "Overview"
+msgstr "概覽"
+
+#: src/osdk/reference/commands/run.md:5
+msgid ""
+"`cargo osdk run` is used to run the kernel with QEMU. The usage is as "
+"follows:"
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:12
+msgid "Options"
+msgstr "選項"
+
+#: src/osdk/reference/commands/run.md:14
+msgid ""
+"Most options are the same as those of `cargo osdk build`. Refer to the "
+"[documentation](build.md) of `cargo osdk build` for more details."
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:18
+msgid ""
+"Additionally, when running the kernel using QEMU, we can setup the QEMU as a "
+"debug server using option `--gdb-server`. This option supports an additional "
+"comma separated configuration list:"
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:22
+msgid ""
+"`addr=ADDR`: the network or unix socket address on which the GDB server "
+"listens (default: `.osdk-gdb-socket`, a local UNIX socket);"
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:24
+msgid ""
+"`wait-client`: let the GDB server wait for the GDB client before execution;"
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:25
+msgid ""
+"`vscode`: generate a '.vscode/launch.json' for debugging with Visual Studio "
+"Code (Requires [CodeLLDB](https://marketplace.visualstudio.com/items?"
+"itemName=vadimcn.vscode-lldb))."
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:28
+msgid ""
+"Besides, to collect coverage data, we can use option `--coverage`. This "
+"option enables the coverage feature and collect coverage data to `coverage."
+"profraw` when exit."
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:31
+msgid ""
+"See [Debug Command](debug.md) to interact with the GDB server in terminal."
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:33
+msgid "Examples"
+msgstr "範例"
+
+#: src/osdk/reference/commands/run.md:35
+msgid "Launch a debug server via QEMU with an unix socket stub, e.g. `.debug`:"
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:44
+msgid "Launch a debug server via QEMU with a TCP stub, e.g., `localhost:1234`:"
+msgstr ""
+
+#: src/osdk/reference/commands/run.md:50 src/osdk/reference/commands/run.md:56
+msgid "Launch a debug server via QEMU and use VSCode to interact with:"
+msgstr ""

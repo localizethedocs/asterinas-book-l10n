@@ -1,0 +1,323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:1
+msgid "Kernel Parameters"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:3
+msgid ""
+"This section documents kernel command-line parameters supported by Asterinas."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:5
+msgid "Inherited from Linux"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:7
+msgid "`init`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:9
+msgid "Run the specified binary as `init`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:11
+#: src/kernel/linux-compatibility/kernel-parameters.md:67
+#: src/kernel/linux-compatibility/kernel-parameters.md:100
+msgid "Example:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:16
+#: src/kernel/linux-compatibility/kernel-parameters.md:48
+#: src/kernel/linux-compatibility/kernel-parameters.md:72
+#: src/kernel/linux-compatibility/kernel-parameters.md:106
+msgid "Notes:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:17
+msgid "The value is the path to the executable."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:18
+msgid ""
+"If omitted, Asterinas will try to execute from the following paths in order: "
+"`/sbin/init`, `/etc/init`, `/bin/init`, `/bin/sh`."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:21
+msgid "`console`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:23
+msgid ""
+"Select console devices for kernel messages. This parameter may be specified "
+"multiple times. Kernel messages are delivered to each listed console."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:27
+#: src/kernel/linux-compatibility/kernel-parameters.md:118
+msgid "Valid values:"
+msgstr "有效值："
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:28
+msgid "`tty0`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:29
+msgid "`ttyS0`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:30
+msgid "`hvc0`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:32
+#: src/kernel/linux-compatibility/kernel-parameters.md:54
+#: src/kernel/linux-compatibility/kernel-parameters.md:122
+msgid "Examples:"
+msgstr "範例："
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:38
+msgid "`virtio_mmio.device`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:40
+msgid ""
+"Register a VirtIO-MMIO device from the kernel command line. This parameter "
+"may be specified multiple times."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:43
+msgid "Format:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:49
+msgid "`size` and `base` may be decimal or hexadecimal with a `0x` prefix."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:50
+msgid "`size` may use `K`, `M`, `G`, or `T` suffixes."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:51
+msgid "`irq` must be nonzero."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:52
+msgid ""
+"The optional `id` field is accepted for Linux compatibility but ignored."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:60
+#: src/kernel/linux-compatibility/kernel-parameters.md:112
+msgid "Asterinas-specific"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:61
+msgid "`earlycon`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:63
+msgid ""
+"Enable the early console to output logs during the early stages of system "
+"boot. The name follows Linux's `earlycon` parameter. Asterinas currently "
+"supports a simplified form."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:73
+msgid "If omitted, the early console stays disabled."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:74
+msgid ""
+"Only the bare `earlycon` token is supported; complex Linux forms such as "
+"`earlycon=uart8250,io,0x3f8,115200` are not supported yet."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:77
+msgid "`loglevel`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:79
+msgid ""
+"Control how verbose kernel log output is on the console. Set either a "
+"numeric value (`0` to `8`) or a lowercase level name."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:82
+msgid ""
+"Each value acts as a cutoff: messages at that severity and all more urgent "
+"levels are printed. For example, `loglevel=4` shows emergencies through "
+"errors, but not warnings or routine info."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:85
+msgid ""
+"This uses the same `0`–`8` scale as the Linux kernel `loglevel` parameter, "
+"with string aliases for convenience."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:88
+msgid "Value"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:88
+msgid "Name(s)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:88
+msgid "Messages shown"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:90
+msgid "`0`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:90
+msgid "`off`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:90
+msgid "None"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:91
+msgid "`1`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:91
+msgid "`emerg`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:91
+msgid "Emerg only"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:92
+msgid "`2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:92
+msgid "`alert`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:92
+msgid "Emerg through Alert"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:93
+msgid "`3`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:93
+msgid "`crit`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:93
+msgid "Emerg through Crit"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:94
+msgid "`4`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:94
+msgid "`error`, `err`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:94
+msgid "Emerg through Error"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:95
+msgid "`5`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:95
+msgid "`warning`, `warn`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:95
+msgid "Emerg through Warning"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:96
+msgid "`6`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:96
+msgid "`notice`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:96
+msgid "Emerg through Notice"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:97
+msgid "`7`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:97
+msgid "`info`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:97
+msgid "Emerg through Info"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:98
+msgid "`8`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:98
+msgid "`debug`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:98
+msgid "All levels (most verbose)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:107
+msgid "Level names are case-sensitive; use lowercase names."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:108
+msgid "If omitted, the default is `8` (`debug`). Invalid values are ignored."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:109
+msgid ""
+"Use `warn` for normal operation, `info`/`debug` when troubleshooting, and "
+"`error` or lower for a quieter console."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:114
+msgid "`i8042.exist`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:116
+msgid "Override ACPI's indication of whether a PS/2 (i8042) controller exists."
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:119
+msgid ""
+"`1`, `on`, `yes`, `true` or no value — treat the i8042 controller as present "
+"(force probing)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/kernel-parameters.md:120
+msgid ""
+"`0`, `off`, `no`, `false` - treat the i8042 controller as absent (skip "
+"probing)"
+msgstr ""

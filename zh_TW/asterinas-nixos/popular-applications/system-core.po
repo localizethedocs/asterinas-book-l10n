@@ -1,0 +1,822 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/distro/popular-applications/system-core/index.md:1
+msgid "System Core"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:3
+msgid ""
+"This category covers essential system components: shells, init systems, "
+"system monitoring tools, and core utilities."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:5
+msgid "Shells"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:7
+msgid "Bash"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:9
+msgid ""
+"[Bash](https://www.gnu.org/software/bash/) is the GNU Project's shell and "
+"command language, enabled by default in Asterinas NixOS."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:11
+#: src/distro/popular-applications/system-core/index.md:28
+#: src/distro/popular-applications/system-core/index.md:45
+#: src/distro/popular-applications/system-core/index.md:64
+#: src/distro/popular-applications/system-core/index.md:87
+#: src/distro/popular-applications/system-core/index.md:110
+#: src/distro/popular-applications/system-core/index.md:130
+#: src/distro/popular-applications/system-core/index.md:153
+#: src/distro/popular-applications/system-core/index.md:179
+#: src/distro/popular-applications/system-core/index.md:199
+#: src/distro/popular-applications/system-core/index.md:239
+#: src/distro/popular-applications/system-core/index.md:355
+#: src/distro/popular-applications/system-core/index.md:377
+#: src/distro/popular-applications/system-core/index.md:407
+#: src/distro/popular-applications/system-core/index.md:442
+#: src/distro/popular-applications/system-core/index.md:471
+#: src/distro/popular-applications/system-core/index.md:496
+#: src/distro/popular-applications/system-core/index.md:526
+#: src/distro/popular-applications/system-core/index.md:554
+#: src/distro/popular-applications/system-core/index.md:601
+msgid "Installation"
+msgstr "安裝"
+
+#: src/distro/popular-applications/system-core/index.md:17
+#: src/distro/popular-applications/system-core/index.md:34
+#: src/distro/popular-applications/system-core/index.md:51
+#: src/distro/popular-applications/system-core/index.md:70
+#: src/distro/popular-applications/system-core/index.md:94
+#: src/distro/popular-applications/system-core/index.md:116
+#: src/distro/popular-applications/system-core/index.md:136
+#: src/distro/popular-applications/system-core/index.md:159
+#: src/distro/popular-applications/system-core/index.md:185
+#: src/distro/popular-applications/system-core/index.md:205
+#: src/distro/popular-applications/system-core/index.md:245
+#: src/distro/popular-applications/system-core/index.md:361
+#: src/distro/popular-applications/system-core/index.md:383
+#: src/distro/popular-applications/system-core/index.md:413
+#: src/distro/popular-applications/system-core/index.md:448
+#: src/distro/popular-applications/system-core/index.md:477
+#: src/distro/popular-applications/system-core/index.md:502
+#: src/distro/popular-applications/system-core/index.md:532
+#: src/distro/popular-applications/system-core/index.md:560
+#: src/distro/popular-applications/system-core/index.md:607
+msgid "Verified Usage"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:20
+#: src/distro/popular-applications/system-core/index.md:37
+#: src/distro/popular-applications/system-core/index.md:54
+msgid "# Execute a script\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:24
+msgid "fish"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:26
+msgid ""
+"[fish](https://fishshell.com/) is a user-friendly shell with autosuggestions "
+"and web-based configuration."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:41
+msgid "Zsh"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:43
+msgid ""
+"[Zsh](https://www.zsh.org/) is a powerful shell with extensive customization "
+"options."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:58
+msgid "Init & Service Management"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:60
+msgid "BusyBox"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:62
+msgid ""
+"[BusyBox](https://busybox.net/) provides many common UNIX utilities in a "
+"single small executable, enabled by default in `initramfs` of Asterinas "
+"NixOS."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:73
+msgid "# List all applets provided by BusyBox\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:75
+msgid "# Run a BusyBox applet explicitly\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:78
+msgid "# Show help for a specific applet\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:83
+msgid "systemd"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:85
+msgid ""
+"[systemd](https://systemd.io/) is a software suite for system and service "
+"management, enabled by default in `rootfs` of Asterinas NixOS."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:97
+msgid "# Show overall system status\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:99
+msgid "# List running services\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:104
+msgid "System Monitoring"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:106
+msgid "fastfetch"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:108
+msgid ""
+"[fastfetch](https://github.com/fastfetch-cli/fastfetch) is a system "
+"information tool similar to `neofetch`."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:119
+msgid "# Show system information with default configuration\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:121
+msgid "# Save current output to a file\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:126
+msgid "htop"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:128
+msgid "[htop](https://htop.dev/) is an interactive process viewer."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:139
+msgid "# Start htop\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:141
+msgid "# Inside htop:\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:143
+msgid "# Left/Right    - Move between columns or UI sections\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:145
+msgid "# q             - Quit\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:149
+msgid "lsof"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:151
+msgid ""
+"[lsof](https://github.com/lsof-org/lsof) lists open files and the processes "
+"that opened them."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:162
+msgid "# Show all files opened by a process with a given PID\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:164
+msgid "# Show all files opened by processes with a given command name\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:167
+msgid "# Show all files opened by a specific user\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:170
+msgid "# Show files opened under a directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:175
+msgid "ncdu"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:177
+msgid ""
+"[ncdu](https://dev.yorhel.nl/ncdu) is a disk usage analyzer with an "
+"interactive TUI."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:188
+msgid "# Analyze a specific directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:190
+msgid "# Save scan results to a file\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:195
+msgid "procps"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:197
+msgid ""
+"[procps](https://gitlab.com/procps-ng/procps) provides system utilities for "
+"process management and system information."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:208
+msgid "# Display memory in human readable format\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:210
+msgid "# Kill process by PID\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:213
+msgid "# Display processes with custom format\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:216
+msgid "# Find processes with full command line\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:218
+msgid "\"python script.py\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:219
+msgid "# Kill processes by pattern\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:222
+msgid "# Display memory map of a process\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:225
+msgid "# Monitor processes in real-time\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:228
+msgid "# Display system uptime\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:233
+msgid "Essential Tooling"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:235
+msgid "coreutils"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:237
+msgid ""
+"[coreutils](https://www.gnu.org/software/coreutils/) includes basic file, "
+"shell and text manipulation utilities."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:248
+msgid "# BLAKE2 checksum\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:251
+msgid "# Base64 encode/decode\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:255
+msgid "# Strip directory and suffix from filenames\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:258
+msgid "# Concatenate and display files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:261
+msgid "# Change file permissions\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:266
+msgid "# Run command or interactive shell with special root directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:269
+msgid "# Copy files and directories\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:273
+msgid "# Split a file into sections determined by context lines\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:275
+msgid "'/pattern/' '{*}'"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:276
+msgid "# Remove sections from each line of files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:278
+msgid "':'"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:279
+msgid "# Convert and copy a file\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:283
+msgid "# Strip last component from file name\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:286
+msgid "# Display a line of text\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:288
+msgid "\"Hello World\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:289
+msgid "# Evaluate expressions\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:292
+msgid "# Escape * for shell\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:293
+msgid "# Output the first part of files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:296
+msgid "# Make links between files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:300
+msgid "# Make directories\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:303
+msgid "# Move (rename) files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:307
+msgid "# Dump files in octal and other formats\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:310
+msgid "# Character format\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:311
+msgid "# Hexadecimal format\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:312
+msgid "# Merge lines of files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:314
+msgid "','"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:314
+msgid "# Use comma as delimiter\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:315
+msgid "# Print value of a symbolic link or canonical file name\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:318
+msgid "# Print the resolved path\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:321
+msgid "# Remove files or directories\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:325
+msgid "# Print a sequence of numbers\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:327
+msgid "# Start, increment, end\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:328
+msgid "# SHA2 checksums\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:332
+msgid "# Display file or file system status\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:334
+msgid "\"%U %G\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:334
+msgid "# Custom format\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:335
+msgid "# Flush file system buffers\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:338
+msgid "# Output the last part of files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:341
+msgid "# Change file timestamps\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:344
+msgid "# Print newline, word, and byte counts for each file\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:346
+msgid "# Lines only\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:347
+msgid "# Words only\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:348
+msgid "# Bytes only\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:351
+msgid "diffutils"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:353
+msgid ""
+"[diffutils](https://www.gnu.org/software/diffutils/) compares files line by "
+"line."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:364
+msgid "# diff - Compare files line by line\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:366
+msgid "# Compare three files line by line\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:373
+msgid "findutils"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:375
+msgid ""
+"[findutils](https://www.gnu.org/software/findutils/) provides the basic "
+"directory searching utilities."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:386
+msgid "# Search for files in a directory hierarchy\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:387
+msgid "\"*.txt\"           # Find by name\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:388
+msgid "\"*.TXT\"          # Case insensitive\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:389
+msgid "# Find files only\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:390
+msgid "# Find directories only\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:391
+msgid "# Find symbolic links only\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:392
+msgid "# Execute commands on found files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:394
+msgid "\"*.tmp\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:395
+#: src/distro/popular-applications/system-core/index.md:400
+msgid "\"*.log\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:396
+msgid "\"*.bak\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:397
+msgid "# Build and execute command lines from standard input\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:399
+msgid "\"*.txt\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:403
+msgid "grep"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:405
+msgid ""
+"[grep](https://www.gnu.org/software/grep/) searches for patterns in text."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:416
+msgid "# Search for a pattern in a file\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:417
+#: src/distro/popular-applications/system-core/index.md:420
+#: src/distro/popular-applications/system-core/index.md:423
+#: src/distro/popular-applications/system-core/index.md:426
+#: src/distro/popular-applications/system-core/index.md:429
+#: src/distro/popular-applications/system-core/index.md:432
+msgid "\"pattern\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:418
+msgid "# Search recursively in a directory\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:421
+msgid "# Case-insensitive search\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:424
+msgid "# Show line numbers\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:427
+msgid "# Show only the matching part of the line\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:430
+msgid "# Invert match: show lines that do NOT match\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:433
+msgid "# Use extended regular expressions\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:435
+msgid "\"foo|bar\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:438
+msgid "hostname"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:440
+msgid ""
+"[hostname](https://man7.org/linux/man-pages/man1/hostname.1.html) shows or "
+"sets the system host name."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:451
+msgid "# Show current hostname\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:453
+msgid "# Set hostname\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:456
+msgid "# Show NIS/YP domainname\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:459
+msgid "# Set NIS domainname\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:462
+msgid "# Show ip address for the hostname\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:467
+msgid "less"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:469
+msgid ""
+"[less](https://www.greenwoodsoftware.com/less/) is a terminal pager program "
+"for viewing text files."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:480
+msgid "# Opposite of more (better file viewer)\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:482
+msgid "# Navigation commands (while in less):\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:484
+msgid "#   k             - Move up one line\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:486
+msgid "#   b             - Backward one window\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:488
+msgid "#   u             - Backward half window\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:492
+msgid "man-pages"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:494
+msgid ""
+"[man-pages](https://www.kernel.org/doc/man-pages/) provides the Linux manual "
+"pages."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:505
+msgid "# Display manual page in specific section\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:506
+msgid "# User commands\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:507
+msgid "# System calls\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:508
+msgid "# Library functions\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:509
+msgid "# Special files\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:510
+msgid "# File formats\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:511
+msgid "# Games\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:512
+msgid "# Miscellaneous\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:513
+msgid "# System administration\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:514
+msgid "# Display manual page with pager\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:517
+msgid "# Display manual page without pager\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:522
+msgid "Texinfo"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:524
+msgid ""
+"[Texinfo](https://www.gnu.org/software/texinfo/) is the official GNU "
+"documentation system."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:535
+msgid "# Display info documentation for a topic\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:537
+msgid "# Navigate within info viewer:\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:539
+msgid "#   Backspace   - Scroll backward\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:541
+msgid "#   p           - Previous node\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:543
+msgid "#   l           - Last visited node\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:545
+msgid "#   s           - Search forward\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:550
+msgid "util-linux"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:552
+msgid ""
+"[util-linux](https://www.kernel.org/pub/linux/utils/util-linux/) provides a "
+"set of system utilities for any Linux system."
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:563
+msgid "# Display system information\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:565
+msgid "# Display disk space usage\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:568
+msgid "# Mount a file system\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:571
+msgid "# Unmount a file system\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:574
+msgid "# Find mounted file systems\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:577
+msgid "# Display date in custom format\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:579
+msgid "\"%Y-%m-%d %H:%M:%S\""
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:580
+msgid "# Display calendar for specific month\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:583
+msgid "# Display user and group information\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:586
+msgid "# Display login history\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:589
+msgid "# Display file in hexadecimal\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:592
+msgid "# Display where program is located\n"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:597
+msgid "which"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:599
+msgid ""
+"[which](https://www.gnu.org/software/which/) shows the full path of (shell) "
+"commands"
+msgstr ""
+
+#: src/distro/popular-applications/system-core/index.md:610
+msgid "# Locate a command\n"
+msgstr ""

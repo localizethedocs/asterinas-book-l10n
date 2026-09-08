@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:1
+msgid "Inter-Process Communication"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:10
+msgid "`futex`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:12
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:78
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:94
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:121
+msgid "Supported functionality in SCML:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:16
+msgid ""
+"// Block current thread if target value at `uaddr` matches `val`, and wait "
+"up to `timeout`.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:23
+msgid ""
+"// Block current thread with bitmask condition if target value at `uaddr` "
+"matches `val`,\n"
+"// and wait up to `timeout`.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:31
+msgid "// Unblock up to `max_waiters` threads waiting on `uaddr`\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:38
+msgid ""
+"// Unblock up to `max_waiters` threads on `uaddr`, if the value on `uaddr` "
+"matches `bitmask`\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:45
+msgid ""
+"// Unblock up to `max_waiters` threads waiting on `uaddr`, and requeue up "
+"to\n"
+"// `max_requeue_waiters` of the remaining waiters to the target futex at "
+"`uaddr2`.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:53
+msgid ""
+"// Perform atomic operation encoded in `operation` on `uaddr2`. Unblock up "
+"to `max_waiters`\n"
+"// threads waiting on `uaddr`, and conditionally unblock up to "
+"`max_waiters2` threads\n"
+"// waiting on `uaddr2` based on the result of the atomic operation.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:64
+msgid "Unsupported operations:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:65
+msgid "`FUTEX_FD`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:66
+msgid "`FUTEX_CMP_REQUEUE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:67
+msgid "`FUTEX_LOCK_PI`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:68
+msgid "`FUTEX_UNLOCK_PI`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:69
+msgid "`FUTEX_TRYLOCK_PI`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:71
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/futex.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:74
+msgid "System V semaphore"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:76
+msgid "`semget`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:81
+msgid "// Creat or open a semaphore set\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:89
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/semget.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:92
+msgid "`semop` and `semtimedop`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:101
+msgid "// Semaphore operations without blocking\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:110
+msgid "Unsupported semaphore flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:111
+msgid "`SEM_UNDO`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:113
+msgid ""
+"Supported and unsupported functionality of `semtimedop` are the same as "
+"`semop`. The SCML rules are omitted for brevity."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:116
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/semop.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:119
+msgid "`semctl`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:124
+msgid "// Remove the semaphore set\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:130
+msgid "// Initialize the value of the semnum-th semaphore\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:138
+msgid ""
+"// Return the current value (GETVAL), last operating process's PID "
+"(GETPID),\n"
+"// count of processes awaiting increment (GETNCNT) or count of processes "
+"awaiting\n"
+"// zero (GETZCNT) of the semnum-th semaphore\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:147
+msgid ""
+"// Retrieve a copy of the `semid_ds` kernel structure for the specified "
+"semaphore set\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:157
+msgid "Unsupported commands:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:158
+msgid "`IPC_INFO`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:159
+msgid "`SEM_INFO`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:160
+msgid "`SEM_STAT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:161
+msgid "`SEM_STAT_ANY`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:162
+msgid "`GETALL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:163
+msgid "`SETALL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/inter-process-communication/index.md:165
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/semctl.2.html)."
+msgstr ""
