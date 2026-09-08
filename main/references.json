@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-13 19:14:41 +0800",
-      "hash" : "b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d",
-      "title" : "Remove redundant empty-path checks"
+      "date" : "2026-09-08 01:28:48 -0700",
+      "hash" : "819d6628c882eab21b0074720b47af8ded042107",
+      "title" : "Add AArch64 QEMU scheme support"
     }
   },
   "type" : "branch",
