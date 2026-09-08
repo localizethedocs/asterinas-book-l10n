@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-09-08T13:31:47Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -39,10 +39,10 @@ msgstr ""
 msgid ""
 "Asterinas surpasses Linux in terms of developer friendliness. It empowers "
 "kernel developers to (1) utilize the more productive Rust programming "
-"language, (2) leverage a purpose-built toolkit called [OSDK]() to streamline "
-"their workflows, and (3) choose between releasing their kernel modules as "
-"open source or keeping them proprietary, thanks to the flexibility offered "
-"by [MPL](../)."
+"language, (2) leverage a purpose-built toolkit called [OSDK](../osdk/guide/) "
+"to streamline their workflows, and (3) choose between releasing their kernel "
+"modules as open source or keeping them proprietary, thanks to the "
+"flexibility offered by [MPL](../)."
 msgstr ""
 
 #: src/kernel/index.md:26
@@ -108,56 +108,60 @@ msgid "RISC-V 64"
 msgstr ""
 
 #: src/kernel/index.md:49
-msgid "LoongArch 64"
+msgid "ARM 64"
 msgstr ""
 
-#: src/kernel/index.md:49
+#: src/kernel/index.md:49 src/kernel/index.md:50
 msgid "Tier 3"
 msgstr ""
 
-#: src/kernel/index.md:51
-msgid "Tier definitions:"
+#: src/kernel/index.md:50
+msgid "LoongArch 64"
 msgstr ""
 
 #: src/kernel/index.md:52
+msgid "Tier definitions:"
+msgstr ""
+
+#: src/kernel/index.md:53
 msgid ""
 "**Tier 1:** Fully supported and tested. CI runs the full test suite on every "
 "PR."
 msgstr ""
 
-#: src/kernel/index.md:54
+#: src/kernel/index.md:55
 msgid ""
 "**Tier 2:** Actively developed with basic functionality working. CI runs "
 "build checks and basic tests on a regular basis (per PR for RISC-V and "
 "nightly for Intel TDX), but the full test suite is not yet covered."
 msgstr ""
 
-#: src/kernel/index.md:58
+#: src/kernel/index.md:59
 msgid ""
 "**Tier 3:** Early-stage or experimental. The kernel can boot and perform "
 "basic operations, but CI coverage is limited and may not include automated "
 "runtime tests for every pull request."
 msgstr ""
 
-#: src/kernel/index.md:63
+#: src/kernel/index.md:64
 msgid "Getting started"
 msgstr ""
 
-#: src/kernel/index.md:65
+#: src/kernel/index.md:66
 msgid ""
 "Get yourself an x86-64 (or ARM64) Linux machine with Docker installed. "
 "Follow the three simple steps below to get Asterinas up and running."
 msgstr ""
 
-#: src/kernel/index.md:70
+#: src/kernel/index.md:71
 msgid "Download the latest source code."
 msgstr ""
 
-#: src/kernel/index.md:76
+#: src/kernel/index.md:77
 msgid "Run a Docker container as the development environment."
 msgstr ""
 
-#: src/kernel/index.md:86
+#: src/kernel/index.md:87
 msgid ""
 "Alternatively, if you use VS Code with the [Dev Containers](https://"
 "marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-"
@@ -165,11 +169,11 @@ msgid ""
 "Container\"."
 msgstr ""
 
-#: src/kernel/index.md:90
+#: src/kernel/index.md:91
 msgid ""
 "Inside the container, go to the project folder to build and run Asterinas."
 msgstr ""
 
-#: src/kernel/index.md:97
+#: src/kernel/index.md:98
 msgid "If everything goes well, Asterinas is now up and running inside a VM."
 msgstr ""
