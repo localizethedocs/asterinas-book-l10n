@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-13 19:14:41 +0800",
-      "hash" : "b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d",
-      "title" : "Remove redundant empty-path checks"
+      "date" : "2026-09-14 19:54:09 -0700",
+      "hash" : "d4b407ca87de203f79c27c9a83ada1d8223fe280",
+      "title" : "Fix `getcwd` panic after unmounting a parent with child mounts"
     }
   },
   "type" : "branch",
