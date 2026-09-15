@@ -1,0 +1,450 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-16T14:08:57Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/vm-based-containers/coco.md:1
+msgid "Using Asterinas as a Confidential Containers Guest Kernel"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:3
+msgid ""
+"This guide explains how to use Asterinas as the guest kernel for "
+"Confidential Containers (CoCo)."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:6
+msgid ""
+"[Confidential Containers](https://github.com/confidential-containers/"
+"confidential-containers) is a VM-based containers stack built on [Kata "
+"Containers](https://github.com/kata-containers/kata-containers) and "
+"protected with [confidential computing](https://en.wikipedia.org/wiki/"
+"Confidential_computing) technology. It runs pods inside confidential virtual "
+"machines (CVMs) while integrating with Kubernetes and confidential computing "
+"workflows. If you only need VM-based isolation without confidential "
+"computing, see [Using Asterinas as a Kata Guest Kernel](kata.md) instead."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:14
+msgid ""
+"This guide uses the [Asterinas fork of Confidential Containers](https://"
+"github.com/asterinas/confidential-containers), which carries Asterinas-"
+"specific patches, helper scripts, and configuration for building, "
+"installing, and testing CoCo with Asterinas as the guest kernel."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:20
+msgid "The current Asterinas-based CoCo setup supports two paths:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:22
+msgid "a regular CoCo runtime for local development and debugging"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:23
+msgid "a [Intel TDX](../intel-tdx.md)\\-powered CoCo runtime for CVMs"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:25
+msgid "Step 1: Prepare the host kernel"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:27
+msgid ""
+"CoCo requires a host with KVM and vhost support. The commands in this guide "
+"are currently written for x86-64 hosts."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:30
+msgid "Verify that the required device nodes exist:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:36
+msgid "If any of them are missing, load the matching kernel modules:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:41
+msgid "# Or use kvm_amd on AMD hosts.\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:45
+msgid ""
+"Then make sure the user running Docker can access `/dev/kvm` and `/dev/vhost-"
+"vsock`."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:48
+msgid ""
+"If you plan to use the TDX-powered CoCo runtime, your host additionally "
+"requires Intel TDX hardware support, a TDX-capable host kernel, and the TDX "
+"firmware modules. See [Intel TDX](../intel-tdx.md) for the full list of TDX "
+"prerequisites."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:53
+msgid "Step 2: Enter the CoCo environment"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:55
+msgid ""
+"We provide the `asterinas/coco` image with CoCo and Asterinas preinstalled. "
+"End users should use it directly. Kernel developers should additionally "
+"mount the local Asterinas source."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:59
+msgid "Step 2.1: Prepare Docker arguments"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:61
+msgid "Define the following Docker arguments:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:73
+msgid "These flags are required for CoCo:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:75
+msgid ""
+"`--cgroupns host` shares the host cgroup namespace so that `containerd` "
+"inside the container can manage CoCo workloads."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:77
+msgid "`--privileged` is required for KVM and nested container management."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:78
+msgid ""
+"`--device /dev/kvm` and `--device /dev/vhost-vsock` expose the "
+"virtualization devices that CoCo needs."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:81
+msgid ""
+"`--tmpfs /var/lib/containerd-nydus:rw,size=512m` gives the nydus image "
+"service enough temporary storage space for guest-side image pulling."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:84
+msgid "Step 2.2: Start the Docker container"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:86
+msgid "For end users"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:88
+msgid ""
+"Run an `asterinas/coco` Docker container to enter an environment with CoCo "
+"and Asterinas preinstalled:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:97
+msgid ""
+"The image bundles the CoCo runtime, the Asterinas guest kernel, the cluster "
+"setup script `/opt/coco/setup-coco-k8s.sh`, and the pod manifests under `/"
+"opt/coco/manifests/` used in the steps below."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:102
+#: src/kernel/vm-based-containers/coco.md:126
+msgid ""
+"After entering the container, continue with [Step 3](#step-3-start-a-coco-"
+"workload)."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:105
+msgid "For kernel developers"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:107
+msgid ""
+"Clone the Asterinas source, then run an `asterinas/coco` Docker container "
+"with the source tree mounted:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:112
+msgid "# Assumes the Asterinas source has already been cloned locally.\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:113
+msgid "$HOME/asterinas"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:121
+msgid ""
+"The `asterinas/coco` image is built on top of the `asterinas/asterinas` "
+"image, so it already includes all the dependencies needed to build "
+"Asterinas. This means kernel developers can build Asterinas directly inside "
+"the CoCo image by simply mounting the local Asterinas source tree."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:129
+msgid "Step 3: Start a CoCo workload"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:131
+msgid "Step 3.1: Set up the cluster"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:133
+msgid "Set up the local Kubernetes cluster with:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:139
+msgid ""
+"This script prepares the Kubernetes control plane and configures the CoCo "
+"runtime within it, including `containerd`, CNI, and the CoCo runtime "
+"configuration."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:144
+msgid "Step 3.2: Run a CoCo workload"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:146
+msgid ""
+"CoCo manages workloads through Kubernetes, where you submit a pod manifest "
+"to the cluster to run a workload."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:149
+msgid "Apply the regular CoCo workload bundled in the CoCo Docker image:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:155
+msgid ""
+"**Or** the TDX CoCo workload (requires Intel TDX hardware support on the "
+"host):"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:161
+msgid "After applying the manifest, wait for the pod to become ready:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:168
+msgid "The regular manifest bundled looks like:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:171
+msgid "apiVersion"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:171
+msgid "v1"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:171
+msgid "kind"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:172
+msgid "Pod"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:172
+msgid "metadata"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:174
+#: src/kernel/vm-based-containers/coco.md:178
+msgid "name"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:174
+msgid "alpine-coco"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:174
+msgid "spec"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:176
+msgid "runtimeClassName"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:176
+msgid "kata-qemu-coco-dev-asterinas"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:177
+msgid "containers"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:178
+msgid "alpine"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:179
+msgid "image"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:179
+msgid "docker.io/library/alpine:3.22"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:180
+msgid "command"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:180
+msgid "\"sleep\""
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:180
+msgid "\"infinity\""
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:183
+msgid ""
+"This manifest runs an Alpine container as pod `alpine-coco`, with `sleep "
+"infinity` to keep it running for `kubectl exec` verification."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:186
+msgid ""
+"The `runtimeClassName` field determines which CoCo runtime the pod uses. The "
+"Asterinas-based CoCo supports two runtime classes:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:189
+msgid "`kata-qemu-coco-dev-asterinas` — for regular CoCo"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:190
+msgid ""
+"`kata-qemu-tdx-asterinas` — for TDX-backed CVMs (requires Intel TDX hardware "
+"support)"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:192
+msgid "Step 3.3: Verify the guest"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:194
+msgid ""
+"After the pod becomes ready, run the following commands to check the guest "
+"kernel and the workload rootfs:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:199
+msgid "# Inside the container\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:205
+msgid ""
+"The `/proc/cmdline` output should contain the Asterinas kernel image path. "
+"Look for the keyword:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:212
+msgid ""
+"This is the most direct check that CoCo booted an Asterinas guest kernel. "
+"The `/etc/alpine-release` output should print the Alpine version of the "
+"container rootfs."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:216
+msgid "Step 3.4: Clean up"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:218
+msgid "After verification, remove the pod with:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:225
+msgid ""
+"Both bundled manifests create a pod named `alpine-coco`, so only one can be "
+"applied at a time. To switch to the other runtime class, delete the existing "
+"pod first by running the command above."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:230
+msgid "Step 4: Use a local kernel (optional)"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:232
+msgid ""
+"This step is for the kernel-developer setup only: it requires the Asterinas "
+"source tree, so it assumes you entered the CoCo environment through the [For "
+"kernel developers](#for-kernel-developers) setup in Step 2.2."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:236
+msgid "Build the kernel and verify the output images:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:239
+msgid "# Build the regular guest kernel\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:241
+msgid "# Verify the regular build output\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:244
+msgid "# Build the TDX guest kernel (only needed for the CVM path)\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:247
+msgid "# Verify the TDX build output\n"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:253
+msgid ""
+"Then adjust the CoCo runtime configuration to point to the locally built "
+"Asterinas kernel."
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:255
+msgid "For the regular runtime, edit:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:257
+msgid "`/opt/coco/config/configuration-qemu-coco-dev-asterinas.toml`"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:259
+#: src/kernel/vm-based-containers/coco.md:270
+msgid "and set `kernel` under `[hypervisor.qemu]`:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:261
+msgid ""
+"```toml\n"
+"[hypervisor.qemu]\n"
+"kernel = \"/root/asterinas/target/osdk/aster-kernel-osdk-bin.qemu_elf\"\n"
+"```"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:266
+msgid "For the TDX runtime, edit:"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:268
+msgid "`/opt/coco/config/configuration-qemu-tdx-asterinas.toml`"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:272
+msgid ""
+"```toml\n"
+"[hypervisor.qemu]\n"
+"kernel = \"/root/asterinas/target/osdk/aster-kernel-osdk-bin\"\n"
+"```"
+msgstr ""
+
+#: src/kernel/vm-based-containers/coco.md:277
+msgid ""
+"The configuration takes effect immediately — no service restart is needed. "
+"Follow [Step 3.2](#step-32-run-a-coco-workload) to verify that the guest "
+"boots with your locally compiled Asterinas kernel."
+msgstr ""

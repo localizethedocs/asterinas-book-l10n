@@ -1,0 +1,350 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:1
+msgid "File and Directory Operations"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:12
+msgid "`open` and `openat`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:14
+msgid "Supported functionality of `open` in SCML:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:36
+msgid "// Open an existing file\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:47
+msgid "// Create a new file\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:60
+msgid "// Status flags that are meaningful with O_PATH\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:66
+msgid "// All other flags are ignored with O_PATH\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:76
+msgid "// Obtain a file descriptor to indicate a location in FS\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:89
+msgid "// Create an unnamed file\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:104
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:170
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:188
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:214
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:242
+msgid "Silently-ignored flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:105
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:110
+msgid "`O_NOCTTY`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:106
+msgid "`O_DSYNC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:107
+msgid "`O_SYNC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:108
+msgid "`O_LARGEFILE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:109
+msgid "`O_NOATIME`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:112
+msgid "Partially-supported flags:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:113
+msgid "`O_PATH`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:114
+msgid ""
+"`O_TMPFILE` (only on file systems that support unnamed temporary files, e.g. "
+"ramfs)"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:116
+msgid ""
+"Supported and unsupported functionality of `openat` are the same as `open`. "
+"The SCML rules are omitted for brevity."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:119
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/openat.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:122
+msgid "`renameat2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:124
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:141
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:160
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:178
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:204
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:222
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:259
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:280
+msgid "Supported functionality in SCML:"
+msgstr "SCML 支援的功能："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:127
+msgid "// Rename a file, moving it between directories if required.\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:131
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:151
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:194
+msgid "Unsupported flags:"
+msgstr "未支援的旗標："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:132
+msgid "`RENAME_EXCHANGE`"
+msgstr "`RENAME_EXCHANGE`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:133
+msgid "`RENAME_NOREPLACE`"
+msgstr "`RENAME_NOREPLACE`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:134
+msgid "`RENAME_WHITEOUT`"
+msgstr "`RENAME_WHITEOUT`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:136
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/rename.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:139
+msgid "`lseek`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:144
+msgid "// Set file offset\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:152
+msgid "`SEEK_DATA`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:153
+msgid "`SEEK_HOLE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:155
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/lseek.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:158
+msgid "`newfstatat`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:163
+msgid "// Retrieve file status by file descriptor\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:171
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:243
+msgid "`AT_NO_AUTOMOUNT`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:173
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/newfstatat.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:176
+msgid "`preadv2` and `pwritev2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:181
+msgid "// Read data from multiple buffers\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:183
+msgid "// Write data to multiple buffers\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:189
+msgid "`RWF_DSYNC`"
+msgstr "`RWF_DSYNC`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:190
+msgid "`RWF_HIPRI`"
+msgstr "`RWF_HIPRI`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:191
+msgid "`RWF_SYNC`"
+msgstr "`RWF_SYNC`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:192
+msgid "`RWF_NOWAIT`"
+msgstr "`RWF_NOWAIT`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:195
+msgid "`RWF_APPEND`"
+msgstr "`RWF_APPEND`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:196
+msgid "`RWF_NOAPPEND`"
+msgstr "`RWF_NOAPPEND`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:197
+msgid "`RWF_ATOMIC`"
+msgstr "`RWF_ATOMIC`"
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:199
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/preadv2.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:202
+msgid "`faccessat2`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:207
+msgid "// Check user's permissions for a file\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:215
+msgid "`AT_EACCESS`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:217
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/faccessat2.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:220
+msgid "`statx`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:232
+msgid "// Get file status (extended)\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:244
+msgid "`AT_STATX_FORCE_SYNC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:245
+msgid "`AT_STATX_DONT_SYNC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:247
+msgid "Silently-ignored masks:"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:248
+msgid "`STATX_DIOALIGN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:249
+msgid "`STATX_MNT_ID_UNIQUE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:250
+msgid "`STATX_SUBVOL`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:251
+msgid "`STATX_WRITE_ATOMIC`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:252
+msgid "`STATX_DIO_READ_ALIGN`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:254
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/statx.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:257
+msgid "`fallocate`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:262
+msgid "// Allocate disk space within the range specified\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:264
+msgid ""
+"// Deallocate space (create a hole) while keeping the file size unchanged\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:269
+msgid "Unsupported modes:"
+msgstr "未支援的模式："
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:270
+msgid "`FALLOC_FL_UNSHARE_RANGE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:271
+msgid "`FALLOC_FL_COLLAPSE_RANGE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:272
+msgid "`FALLOC_FL_ZERO_RANGE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:273
+msgid "`FALLOC_FL_INSERT_RANGE`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:275
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/fallocate.2.html)."
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:278
+msgid "`utimensat`"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:283
+msgid "// Change file timestamps with nanosecond precision\n"
+msgstr ""
+
+#: src/kernel/linux-compatibility/syscall-flag-coverage/file-and-directory-operations/index.md:287
+msgid ""
+"For more information, see [the man page](https://man7.org/linux/man-pages/"
+"man2/utimensat.2.html)."
+msgstr ""
