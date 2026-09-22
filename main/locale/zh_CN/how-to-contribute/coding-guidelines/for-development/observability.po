@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-development/observability.md:1
 msgid "Observability"
-msgstr ""
+msgstr "可观测性"
 
 #: src/to-contribute/coding-guidelines/for-development/observability.md:3
 msgid "Use OSTD logging macros exclusively (`ostd-log-only`)"

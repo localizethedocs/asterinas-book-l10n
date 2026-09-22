@@ -33,67 +33,67 @@ msgstr "热门应用程序"
 
 #: src/SUMMARY.md:9
 msgid "System Core"
-msgstr ""
+msgstr "系统核心"
 
 #: src/SUMMARY.md:10
 msgid "Nix and NixOS Tools"
-msgstr ""
+msgstr "Nix 与 NixOS 工具"
 
 #: src/SUMMARY.md:11
 msgid "Containerization and Virtualization"
-msgstr ""
+msgstr "容器与虚拟化"
 
 #: src/SUMMARY.md:12
 msgid "Networking"
-msgstr ""
+msgstr "网络"
 
 #: src/SUMMARY.md:13
 msgid "Web Servers & Proxies"
-msgstr ""
+msgstr "Web 服务器与代理"
 
 #: src/SUMMARY.md:14
 msgid "Databases & Middleware"
-msgstr ""
+msgstr "数据库与中间件"
 
 #: src/SUMMARY.md:15
 msgid "Development Tools"
-msgstr ""
+msgstr "开发工具"
 
 #: src/SUMMARY.md:16
 msgid "CI/CD & DevOps"
-msgstr ""
+msgstr "CI/CD 与 DevOps"
 
 #: src/SUMMARY.md:17
 msgid "Monitoring & Observability"
-msgstr ""
+msgstr "监控与可观测性"
 
 #: src/SUMMARY.md:18
 msgid "Desktop Environments & Display"
-msgstr ""
+msgstr "桌面环境与显示"
 
 #: src/SUMMARY.md:19
 msgid "Web Browsers"
-msgstr ""
+msgstr "Web 浏览器"
 
 #: src/SUMMARY.md:20
 msgid "Office & Productivity"
-msgstr ""
+msgstr "办公与生产力"
 
 #: src/SUMMARY.md:21
 msgid "Multimedia"
-msgstr ""
+msgstr "多媒体"
 
 #: src/SUMMARY.md:22
 msgid "Communication"
-msgstr ""
+msgstr "通讯"
 
 #: src/SUMMARY.md:23
 msgid "File Management & Terminal"
-msgstr ""
+msgstr "文件管理与终端"
 
 #: src/SUMMARY.md:24
 msgid "AI & Machine Learning"
-msgstr ""
+msgstr "AI与机器学习"
 
 #: src/SUMMARY.md:26
 msgid "Asterinas Kernel"
@@ -169,19 +169,19 @@ msgstr "文件系统覆盖率"
 
 #: src/SUMMARY.md:46
 msgid "Kernel Parameters"
-msgstr ""
+msgstr "内核参数"
 
 #: src/SUMMARY.md:47
 msgid "VM-based Containers"
-msgstr ""
+msgstr "基于虚拟机的容器"
 
 #: src/SUMMARY.md:48
 msgid "Kata Containers"
-msgstr ""
+msgstr "Kata Containers"
 
 #: src/SUMMARY.md:49
 msgid "Confidential Containers (CoCo)"
-msgstr ""
+msgstr "机密容器（CoCo）"
 
 #: src/SUMMARY.md:50
 msgid "Roadmap"
@@ -209,31 +209,31 @@ msgstr "可靠性分析"
 
 #: src/SUMMARY.md:58
 msgid "What Soundness Means"
-msgstr ""
+msgstr "可靠性意味着什么"
 
 #: src/SUMMARY.md:59
 msgid "The Sensitivity Classification"
-msgstr ""
+msgstr "敏感程度分类"
 
 #: src/SUMMARY.md:60
 msgid "Safe Physical Memory Management"
-msgstr ""
+msgstr "安全的物理内存管理"
 
 #: src/SUMMARY.md:61
 msgid "Safe User-Kernel Interactions"
-msgstr ""
+msgstr "安全的用户-内核交互"
 
 #: src/SUMMARY.md:62
 msgid "Safe Kernel-Peripheral Interactions"
-msgstr ""
+msgstr "安全的内核-外设交互"
 
 #: src/SUMMARY.md:63
 msgid "Safe Kernel Logic"
-msgstr ""
+msgstr "安全的内核逻辑"
 
 #: src/SUMMARY.md:64
 msgid "Safe Policy Injection"
-msgstr ""
+msgstr "安全的策略注入"
 
 #: src/SUMMARY.md:66
 msgid "Asterinas OSDK"
@@ -317,127 +317,127 @@ msgstr "代码组织"
 
 #: src/SUMMARY.md:90
 msgid "Coding Guidelines"
-msgstr ""
+msgstr "代码准则"
 
 #: src/SUMMARY.md:91
 msgid "How Guidelines Are Written"
-msgstr ""
+msgstr "如何编写准则"
 
 #: src/SUMMARY.md:92
 msgid "For Maintainability"
-msgstr ""
+msgstr "有关可维护性"
 
 #: src/SUMMARY.md:93
 msgid "Design"
-msgstr ""
+msgstr "设计"
 
 #: src/SUMMARY.md:94
 msgid "Process"
-msgstr ""
+msgstr "流程"
 
 #: src/SUMMARY.md:95 src/SUMMARY.md:99
 msgid "Naming"
-msgstr ""
+msgstr "命名"
 
 #: src/SUMMARY.md:96
 msgid "Layout"
-msgstr ""
+msgstr "布局"
 
 #: src/SUMMARY.md:97 src/SUMMARY.md:104
 msgid "Comments"
-msgstr ""
+msgstr "评论"
 
 #: src/SUMMARY.md:98
 msgid "Rust-Specific"
-msgstr ""
+msgstr "Rust 相关"
 
 #: src/SUMMARY.md:100
 msgid "Crates & Modules"
-msgstr ""
+msgstr "Crates 与模块"
 
 #: src/SUMMARY.md:101
 msgid "Types & Traits"
-msgstr ""
+msgstr "类型与特性"
 
 #: src/SUMMARY.md:102
 msgid "Functions & Methods"
-msgstr ""
+msgstr "函数与方法"
 
 #: src/SUMMARY.md:103
 msgid "Attributes & Macros"
-msgstr ""
+msgstr "属性与宏"
 
 #: src/SUMMARY.md:105
 msgid "For Development"
-msgstr ""
+msgstr "有关开发"
 
 #: src/SUMMARY.md:106
 msgid "Correctness"
-msgstr ""
+msgstr "正确性"
 
 #: src/SUMMARY.md:107
 msgid "Concurrency"
-msgstr ""
+msgstr "并发"
 
 #: src/SUMMARY.md:108
 msgid "Resource Management"
-msgstr ""
+msgstr "资源管理"
 
 #: src/SUMMARY.md:109
 msgid "Efficiency"
-msgstr ""
+msgstr "效率"
 
 #: src/SUMMARY.md:110
 msgid "Observability"
-msgstr ""
+msgstr "可观测性"
 
 #: src/SUMMARY.md:111
 msgid "Testing"
-msgstr ""
+msgstr "测试"
 
 #: src/SUMMARY.md:112
 msgid "For Security"
-msgstr ""
+msgstr "有关安全"
 
 #: src/SUMMARY.md:113
 msgid "Memory Safety"
-msgstr ""
+msgstr "内存安全"
 
 #: src/SUMMARY.md:114
 msgid "Security Properties"
-msgstr ""
+msgstr "安全属性"
 
 #: src/SUMMARY.md:115
 msgid "For Hardware"
-msgstr ""
+msgstr "有关硬件"
 
 #: src/SUMMARY.md:116
 msgid "Assembly Conventions"
-msgstr ""
+msgstr "汇编规范"
 
 #: src/SUMMARY.md:117
 msgid "CPU Architecture-Specific"
-msgstr ""
+msgstr "CPU 架构相关"
 
 #: src/SUMMARY.md:118
 msgid "x86-64"
-msgstr ""
+msgstr "x86-64"
 
 #: src/SUMMARY.md:119
 msgid "For Documentation"
-msgstr ""
+msgstr "有关文档"
 
 #: src/SUMMARY.md:120
 msgid "General Style"
-msgstr ""
+msgstr "通用风格"
 
 #: src/SUMMARY.md:121
 msgid "Path-Specific"
-msgstr ""
+msgstr "路径相关"
 
 #: src/SUMMARY.md:122
 msgid "`kernel/`"
-msgstr ""
+msgstr "`kernel/`"
 
 #: src/SUMMARY.md:123
 msgid "Boterinas"

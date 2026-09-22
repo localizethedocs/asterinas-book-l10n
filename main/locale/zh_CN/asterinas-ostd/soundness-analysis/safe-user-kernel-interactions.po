@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/ostd/soundness/safe-user-kernel-interactions.md:1
 msgid "Safe User-Kernel Interactions"
-msgstr ""
+msgstr "安全的用户-内核交互"
 
 #: src/ostd/soundness/safe-user-kernel-interactions.md:3
 msgid ""

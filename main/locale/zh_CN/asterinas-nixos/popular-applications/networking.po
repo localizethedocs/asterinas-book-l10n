@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/networking/index.md:1
 msgid "Networking"
-msgstr ""
+msgstr "网络"
 
 #: src/distro/popular-applications/networking/index.md:3
 msgid ""

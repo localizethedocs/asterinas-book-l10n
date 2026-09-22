@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:1
 msgid "File Descriptor and I/O Control"
-msgstr ""
+msgstr "文件描述符与 I/O 控制"
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/file-descriptor-and-io-control/index.md:10
 msgid "`fcntl`"

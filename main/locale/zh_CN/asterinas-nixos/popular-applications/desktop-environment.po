@@ -17,7 +17,7 @@ msgstr "桌面环境"
 
 #: src/distro/popular-applications/desktop-environment.md:3
 msgid "Xfce"
-msgstr ""
+msgstr "Xfce"
 
 #: src/distro/popular-applications/desktop-environment.md:5
 msgid ""
@@ -40,19 +40,19 @@ msgstr "已验证的后端"
 
 #: src/distro/popular-applications/desktop-environment.md:25
 msgid "Display server:"
-msgstr ""
+msgstr "显示服务器："
 
 #: src/distro/popular-applications/desktop-environment.md:26
 msgid "Xorg display server"
-msgstr ""
+msgstr "Xorg 显示服务器"
 
 #: src/distro/popular-applications/desktop-environment.md:27
 msgid "Graphics drivers:"
-msgstr ""
+msgstr "图形驱动："
 
 #: src/distro/popular-applications/desktop-environment.md:28
 msgid "Standard UEFI VGA framebuffer"
-msgstr ""
+msgstr "标准 UEFI VGA framebuffer"
 
 #: src/distro/popular-applications/desktop-environment.md:30
 msgid "Verified Functionality"
@@ -100,11 +100,11 @@ msgstr "`mupf`: 轻量的 PDF 和 XPS 查看器"
 
 #: src/distro/popular-applications/desktop-environment.md:46
 msgid "Games:"
-msgstr ""
+msgstr "游戏："
 
 #: src/distro/popular-applications/desktop-environment.md:48
 msgid "`fairymax`: Chess"
-msgstr "`fairymax`: 国际象像"
+msgstr "`fairymax`: 国际象棋"
 
 #: src/distro/popular-applications/desktop-environment.md:49
 msgid "`five-or-more`: GNOME alignment game"

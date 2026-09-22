@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/databases-and-middleware/index.md:1
 msgid "Databases & Middleware"
-msgstr ""
+msgstr "数据库与中间件"
 
 #: src/distro/popular-applications/databases-and-middleware/index.md:3
 msgid ""

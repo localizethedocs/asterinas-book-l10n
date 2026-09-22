@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-development/index.md:1
 msgid "For Development"
-msgstr ""
+msgstr "有关开发"
 
 #: src/to-contribute/coding-guidelines/for-development/index.md:3
 msgid ""
