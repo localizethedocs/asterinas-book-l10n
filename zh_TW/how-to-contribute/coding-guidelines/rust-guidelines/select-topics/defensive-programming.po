@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-10T17:12:34Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/defensive-programming.md:1
+msgid "Defensive Programming"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/defensive-programming.md:3
+msgid ""
+"Assertions verify invariants that must hold for the program to be correct. "
+"Choosing the right assertion type balances safety against runtime cost."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/defensive-programming.md:8
+msgid "Use `debug_assert` for correctness-only checks (`debug-assert`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/defensive-programming.md:10
+msgid ""
+"Assertions verifying invariants that should never fail in correct code "
+"belong in `debug_assert!`, not `assert!`. `debug_assert!` is compiled out in "
+"release builds, so the check catches bugs during development without costing "
+"anything in production."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/defensive-programming.md:22
+msgid ""
+"See also: [std::debug_assert!](https://doc.rust-lang.org/std/macro."
+"debug_assert.html) and [Rust Reference: `debug_assertions`](https://doc.rust-"
+"lang.org/reference/conditional-compilation.html#debug_assertions)."
+msgstr ""
