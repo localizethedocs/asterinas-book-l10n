@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-13 19:14:41 +0800",
-      "hash" : "b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d",
-      "title" : "Remove redundant empty-path checks"
+      "date" : "2026-09-22 16:11:53 +0800",
+      "hash" : "ac790aa89b2f39e700d263882e1a1301e0a77a25",
+      "title" : "Initialize RISC-V BSS for flat-binary boot"
     }
   },
   "type" : "branch",
