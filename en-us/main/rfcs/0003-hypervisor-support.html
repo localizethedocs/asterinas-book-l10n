@@ -1,0 +1,653 @@
+<!DOCTYPE HTML>
+<html lang="en_US" class="navy sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>RFC-0003: Hypervisor Support - The Asterinas Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "navy";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-1772122b.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-645892d4.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Asterinas Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="rfc-0003-hypervisor-support"><a class="header" href="#rfc-0003-hypervisor-support">RFC-0003: Hypervisor Support</a></h1>
+<ul>
+<li>Status: Approved</li>
+<li>Pull request: https://github.com/asterinas/asterinas/pull/3418</li>
+<li>Date submitted: 2026-06-21</li>
+<li>Date approved: 2026-08-05</li>
+</ul>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<p>This RFC proposes extending OSTD with hypervisor support. These OSTD facilities allow the Asterinas kernel to safely implement a complete hypervisor, including a KVM-compatible control plane, while keeping privileged virtualization mechanisms inside OSTD.</p>
+<h2 id="motivation"><a class="header" href="#motivation">Motivation</a></h2>
+<p>Asterinas needs virtualization support for existing Linux KVM-based VMMs and unmodified guest kernels.</p>
+<p>Supporting virtualization requires extending the framekernel boundary with care. Taking x86 as an example, a malformed VMCS, a bad EPT mapping, or an incorrectly restored host register can break the soundness semantics of the host kernel. Therefore, this RFC focuses on what kind of OSTD hypervisor layer Asterinas needs: it must provide soundness by encapsulating privileged virtualization mechanisms, minimality by keeping the trusted surface small, and expressiveness by giving the Asterinas kernel enough safe operations to build a complete hypervisor above it.</p>
+<h2 id="design"><a class="header" href="#design">Design</a></h2>
+<h3 id="layering"><a class="header" href="#layering">Layering</a></h3>
+<p>This split of the virtualization mechanism and the policy mirrors the existing user-mode design in Asterinas. The kernel can decide what to run and how to handle exits, but the transition that could affect host CPU state is mediated by OSTD.</p>
+<p>The Asterinas kernel owns the KVM-compatible file-descriptor ABI and kernel policy. It implements <code>/dev/kvm</code>, VM file descriptors, vCPU file descriptors, the <code>kvm_run</code> shared page, memory-slot registration, register ioctls, basic in-kernel irqchip emulation, and conversion between KVM structs and OSTD types.</p>
+<p>OSTD owns the virtualization mechanism. It manages hardware virtualization state, second-stage address translation, and guest-host context switching, and returns <code>GuestRunResult</code> events to the kernel. The VM-exit case carries a small <code>GuestExitInfo</code> record.</p>
+<h3 id="ostd-interface-design"><a class="header" href="#ostd-interface-design">OSTD Interface Design</a></h3>
+<p>OSTD provides three new abstractions. <code>GuestPhysMemSpace</code> represents guest physical memory and owns second-stage translation from guest physical addresses to host frames. <code>GuestContext</code> represents the per-vCPU architectural state that must survive across guest exits. <code>GuestMode</code> is the execution object that enters guest mode, handles the guest-host state transition, and returns exits to the kernel.</p>
+<p>The following diagram shows the core object ownership and the upper-lower relationship between the kernel hypervisor layer and the OSTD VM API.</p>
+<pre class="mermaid">flowchart TB
+    subgraph KF["kernel fd objects"]
+        direction LR
+        VmFile["VmFile&lt;br/&gt;VM fd"]
+        VcpuFile["VcpuFile&lt;br/&gt;vCPU fd"]
+    end
+
+    subgraph KS["kernel VM/vCPU state"]
+        direction LR
+        Vm["Vm&lt;br/&gt;memory slots"]
+        Vcpu["Vcpu&lt;br/&gt;per-vCPU state"]
+        Policy["interrupt and timer policy"]
+    end
+
+    subgraph O["ostd safe public API"]
+        direction LR
+        Gpm["GuestPhysMemSpace"]
+        Context["GuestContext"]
+        Mode["GuestMode::execute"]
+        Ports["GuestInterruptPort&lt;br/&gt;GuestTimerPort"]
+    end
+
+    VmFile -- "own (Arc)" --&gt; Vm
+    VmFile -- "KVM_CREATE_VCPU" --&gt; VcpuFile
+    VcpuFile -- "own (Arc)" --&gt; Vm
+    VcpuFile -- "own (Arc)" --&gt; Vcpu
+
+    Vm -- "own (by value)" --&gt; Gpm
+    Vm -- "own vCPU table (Arc)" --&gt; Vcpu
+
+    Vcpu -- "borrow (Weak)" --&gt; Vm
+    Vcpu -- "own (Mutex)" --&gt; Context
+    Vcpu -- "own" --&gt; Mode
+    Vcpu -- "own" --&gt; Policy
+
+    Policy -. "implements" .-&gt; Ports
+    Mode -- "borrow" --&gt; Ports
+    Mode -- "borrow" --&gt; Gpm
+    Mode -- "mutable borrow" --&gt; Context
+</pre>
+
+<h4 id="guestphysmemspace"><a class="header" href="#guestphysmemspace">GuestPhysMemSpace</a></h4>
+<p><code>GuestPhysMemSpace</code> represents a guest physical address space backed by a second-stage translation page table.</p>
+<p>Its public interface is similar to <code>VmSpace</code>, which exposes the cursor to operate on the page table:</p>
+<pre><code class="language-rust">// ostd/src/vm/gpm_space.rs
+
+/// Manages the guest physical memory space of a VM.
+///
+/// This type owns the page table that maps guest physical addresses to
+/// host physical frames. One `GuestPhysMemSpace` can be reused by multiple
+/// vCPUs in the same VM by passing a reference to
+/// [`super::GuestMode::execute`].
+pub struct GuestPhysMemSpace;
+
+impl GuestPhysMemSpace {
+    /// Creates a new guest physical memory space.
+    pub fn new() -&gt; Result&lt;Self&gt;;
+
+    /// Gets an immutable cursor over a guest physical address range.
+    pub fn cursor&lt;'a, G: AsAtomicModeGuard&gt;(
+        &amp;'a self,
+        guard: &amp;'a G,
+        gpa: &amp;Range&lt;Gpaddr&gt;,
+    ) -&gt; Result&lt;Cursor&lt;'a&gt;&gt;;
+
+    /// Gets a mutable cursor over a guest physical address range.
+    pub fn cursor_mut&lt;'a, G: AsAtomicModeGuard&gt;(
+        &amp;'a self,
+        guard: &amp;'a G,
+        gpa: &amp;Range&lt;Gpaddr&gt;,
+    ) -&gt; Result&lt;CursorMut&lt;'a&gt;&gt;;
+}
+
+/// The cursor for querying over the guest physical memory space without modifying it.
+pub struct Cursor&lt;'a&gt;;
+
+impl Cursor&lt;'_&gt; {
+    /// Gets the guest physical address of the current slot.
+    pub fn gpa(&amp;self) -&gt; Gpaddr;
+
+    // Query and navigation interfaces are the same as `vm_space::Cursor`.
+    // ...
+}
+
+/// The cursor for modifying the mappings in guest physical memory space.
+pub struct CursorMut&lt;'a&gt;;
+
+impl&lt;'a&gt; CursorMut&lt;'a&gt; {
+    /// Gets the guest physical address of the current slot.
+    pub fn gpa(&amp;self) -&gt; Gpaddr;
+
+    // Query, navigation, map, and unmap interfaces are the same as `vm_space::CursorMut`.
+    // ...
+}</code></pre>
+<p><strong>Soundness, minimality and expressiveness.</strong></p>
+<p>Since the key interfaces provided by <code>GuestPhysMemSpace</code> are exactly the same as those of <code>VmSpace</code>, they can also ensure soundness, minimality, and expressiveness.</p>
+<h4 id="guestcontext"><a class="header" href="#guestcontext">GuestContext</a></h4>
+<p><code>GuestContext</code> is the per-vCPU state object. It stores the guest-visible register state, the vCPU run state, and the hardware virtualization state owned by OSTD.</p>
+<p>Its public interface is (using the x86 architecture as an example):</p>
+<pre><code class="language-rust">// ostd/src/arch/x86/vm/context.rs
+
+/// Stores the execution context and run state of a guest vCPU.
+///
+/// The kernel uses it to configure the vCPU-visible context, including
+/// general-purpose registers, special registers, and MSRs.
+///
+/// OSTD uses it to emulate guest instructions and to provide
+/// [`crate::vm::GuestMode`] with the state needed to run the vCPU. Before
+/// entering the vCPU, `GuestMode` loads the context into hardware. After a
+/// VM exit, `GuestMode` synchronizes the hardware vCPU state back into this
+/// context.
+pub struct GuestContext {
+    /// The guest architectural state.
+    arch: VcpuArchState,
+
+    /// The vCPU run state.
+    run: VcpuRunState,
+
+    /// The VMCS owned by this vCPU.
+    pub(crate) vmcs: Vmcs,
+
+    // Other fields.
+}
+
+impl GuestContext {
+    /// Creates a guest vCPU context.
+    pub fn new(vcpu_id: u32) -&gt; Result&lt;Self&gt;;
+
+    /// Returns the guest general-purpose register state.
+    pub fn regs(&amp;self) -&gt; VcpuRegs;
+
+    /// Replaces the guest general-purpose register state.
+    pub fn set_regs(&amp;mut self, regs: VcpuRegs);
+
+    // `GuestContext` provides numerous get/set APIs for the guest vCPU state.
+    // The accessible guest vCPU state includes general-purpose registers,
+    // system registers, model-specific registers, and vCPU state, among others.
+    // ...
+}
+
+/// Guest general-purpose registers.
+///
+/// This type represents the guest CPU's general-purpose registers.
+pub type VcpuRegs = GeneralRegs;
+
+// More structures for the guest vCPU state.
+// ...</code></pre>
+<p><strong>Soundness.</strong></p>
+<p><code>GuestContext</code> merely wraps the vCPU state and provides interfaces for reading and setting the vCPU state. Through these interfaces, it does not affect the host state, nor does it impact the memory safety of the host kernel.</p>
+<p><strong>Minimality.</strong></p>
+<p><code>GuestContext</code> centralizes the vCPU data that OSTD must understand when switching into guest mode. To the kernel, it is a minimal vCPU state interface for configuring and running a guest. Additional device-level vCPU state, such as irqchip state, remains in the kernel or userspace VMM layer.</p>
+<p><strong>Expressiveness.</strong></p>
+<p><code>GuestContext</code> exposes enough interfaces for the kernel to configure key guest registers such as general-purpose registers, system registers and so on. This lets the kernel build vCPUs in various states, and update guest state while emulating exits such as MMIO accesses.</p>
+<h4 id="guestmode"><a class="header" href="#guestmode">GuestMode</a></h4>
+<p><code>GuestMode</code> is the OSTD execution object that performs VM entry and returns VM exits. The public interfaces are:</p>
+<pre><code class="language-rust">// ostd/src/vm/mod.rs
+
+/// Runs guest vCPU code in an isolated guest execution mode.
+///
+/// `GuestMode` is the OSTD-side execution object for a guest vCPU. It enters
+/// guest execution with the vCPU context and kernel-provided policy ports
+/// supplied to [`Self::execute`] until a VM exit must be handled outside OSTD.
+///
+/// # Examples
+///
+/// ```no_run
+/// # fn handle_vm_exit(guest_result: ostd::vm::GuestRunResult) {}
+/// #
+/// use ostd::{
+///     arch::vm::GuestContext,
+///     prelude::*,
+///     vm::{GuestInterruptPort, GuestMode, GuestPhysMemSpace, GuestTimerPort},
+/// };
+///
+/// fn run_guest(
+///     context: &amp;mut GuestContext,
+///     interrupt_port: &amp;dyn GuestInterruptPort,
+///     timer_port: &amp;dyn GuestTimerPort,
+///     guest_mem: &amp;GuestPhysMemSpace,
+/// ) -&gt; Result&lt;()&gt; {
+///     let guest_mode = GuestMode::new()?;
+///
+///     loop {
+///         let run_result = guest_mode.execute(context, guest_mem, interrupt_port, timer_port)?;
+///         // Handle VM exit according to the exit reason recorded in `run_result`.
+///         handle_vm_exit(run_result);
+///     }
+/// }
+/// ```
+pub struct GuestMode;
+
+/// Describes why a guest run returned to the kernel client.
+pub enum GuestRunResult {
+    /// The vCPU exited and needs higher-level handling.
+    VmExit(GuestExitInfo),
+    /// The vCPU is waiting for a startup IPI and was not entered (x86 only).
+    #[cfg(target_arch = "x86_64")]
+    WaitForSipi,
+}
+
+impl GuestMode {
+    /// Creates a guest execution object.
+    ///
+    /// Creating this value does not enter the guest; use [`Self::execute`] to
+    /// run the vCPU with a guest context and kernel-provided policy ports.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error if the platform does not support virtualization.
+    pub fn new() -&gt; Result&lt;Self&gt;;
+
+    /// Runs the guest with the supplied
+    /// guest context and guest physical memory space.
+    ///
+    /// The `interrupt_port` and `timer_port` arguments provide kernel
+    /// policy for pending guest interrupts and guest timers
+    /// while the vCPU is running.
+    ///
+    /// The method returns when guest execution needs handling by the kernel
+    /// client. [`GuestRunResult::VmExit`] carries the architecture-specific
+    /// VM-exit information.
+    ///
+    /// After handling the returned event and updating `context` or the guest
+    /// device model as needed, call this method again to resume guest
+    /// execution.
+    pub fn execute&lt;I, T&gt;(
+        &amp;self,
+        context: &amp;mut GuestContext,
+        guest_mem: &amp;GuestPhysMemSpace,
+        interrupt_port: &amp;I,
+        timer_port: &amp;T,
+    ) -&gt; Result&lt;GuestRunResult&gt;
+    where
+        I: GuestInterruptPort + ?Sized,
+        T: GuestTimerPort + ?Sized;
+}
+
+// ostd/src/vm/interrupt.rs
+
+use crate::arch::vm::GuestInterrupt;
+
+/// Provides guest interrupt injection policy to [`super::GuestMode`].
+///
+/// `GuestMode` uses this port before guest entry to choose whether a pending
+/// interrupt should be injected into the guest. If it commits an interrupt for
+/// the next entry, it calls [`GuestInterruptPort::accept_interrupt`] so the
+/// kernel-side interrupt model can synchronize its state.
+///
+/// The implementation is supplied by the kernel. It may model a virtual
+/// interrupt controller, or it may be a policy object that never offers
+/// interrupts.
+///
+/// These methods may be called while guest entry preparation has disabled
+/// preemption or local interrupts. Implementations must not sleep, yield, or
+/// wait on synchronization primitives that can block the current task.
+pub trait GuestInterruptPort {
+    /// Returns the next guest interrupt to offer for injection.
+    ///
+    /// This method is a query. It should not consume the interrupt because
+    /// `GuestMode` may find that the guest cannot accept it yet.
+    /// Returning `None` means that no interrupt should be offered for this
+    /// guest entry.
+    ///
+    /// An implementation that does not inject guest interrupts can always
+    /// return `None`.
+    fn query_pending_interrupt(&amp;self) -&gt; Option&lt;GuestInterrupt&gt;;
+
+    /// Marks a guest interrupt as accepted for injection.
+    ///
+    /// `GuestMode` calls this method only after it has committed the interrupt
+    /// for the next guest entry. Implementations should update their state
+    /// accordingly.
+    fn accept_interrupt(&amp;self, interrupt: GuestInterrupt);
+}
+
+// ostd/src/vm/timer.rs
+
+use crate::arch::vm::GuestTimerInstant;
+
+/// Provides guest timer interrupt policy to [`super::GuestMode`].
+///
+/// `GuestMode` uses this port before VM entry to ask when a VM exit should
+/// happen so the kernel can publish a virtual timer interrupt in time.
+///
+/// This method may be called while guest entry preparation has disabled
+/// preemption or local interrupts. Implementations must not sleep, yield, or
+/// wait on synchronization primitives that can block the current task.
+pub trait GuestTimerPort {
+    /// Returns the next guest timer deadline after `current`.
+    ///
+    /// The `current` argument is the current guest-visible timer instant. The
+    /// returned deadline is expressed on the same guest-visible timeline.
+    ///
+    /// Returning `Some(deadline)` asks OSTD to arrange a guest exit when that
+    /// deadline is reached.
+    fn poll_deadline(&amp;self, current: GuestTimerInstant) -&gt; Option&lt;GuestTimerInstant&gt;;
+}
+
+// ostd/src/arch/x86/vm/exit/mod.rs
+
+/// Describes a VM exit that should be handled outside OSTD.
+pub struct GuestExitInfo {
+    /// The VMX exit reason.
+    pub exit_reason: u32,
+    /// The length of the instruction that caused the exit.
+    pub instruction_len: u32,
+    /// VMX exit qualification.
+    pub exit_qualification: u64,
+    /// Guest physical address associated with the exit.
+    pub guest_phys_addr: Gpaddr,
+    /// Guest instruction pointer at the exit.
+    pub guest_rip: Gvaddr,
+}</code></pre>
+<p><strong>Soundness.</strong></p>
+<p><code>GuestMode::execute</code> wraps the hardware virtualization transition and the sensitive CPU-state updates around it. After guest state is loaded and before host state is restored, OSTD prevents the run from migrating away from the current physical CPU or being interleaved with ordinary kernel execution. The kernel receives only <code>GuestRunResult</code>, whose VM-exit case carries <code>GuestExitInfo</code>; it cannot directly issue hardware virtualization instructions, or corrupt host state through this API.</p>
+<p>The interrupt and timer ports are safe policy traits. A buggy kernel-side implementation may inject the wrong virtual interrupt or choose a poor timer deadline, but this can only affect guest behavior or latency. It must not corrupt host CPU state or host memory.</p>
+<p><strong>Minimality.</strong></p>
+<p>The type is deliberately small. It does not own the vCPU context, guest memory, or policy ports; those are supplied to each <code>execute</code> call. The kernel decides what interrupt or timer model to provide, but OSTD decides how and when those policy decisions are reflected in hardware.</p>
+<p><strong>Expressiveness.</strong></p>
+<p><code>GuestMode</code> performs hardware virtualization operations according to the contents of <code>GuestContext</code>, so its expressiveness mostly follows from the expressiveness of <code>GuestContext</code> described above. It adds two ports for interrupt and timer state, which are intentionally kept out of <code>GuestContext</code>. Together, the context and ports let the kernel run a guest while providing virtual interrupts and timer events. <code>GuestRunResult</code> also gives the kernel a direct way to handle other exit conditions besides VM exit.</p>
+<h4 id="vmx-and-vmcs-lifecycle-on-x86"><a class="header" href="#vmx-and-vmcs-lifecycle-on-x86">VMX and VMCS Lifecycle on x86</a></h4>
+<p>Safe and efficient VMX and VMCS lifecycle management can be implemented under the <code>GuestMode</code> and <code>GuestContext</code> API design. Following <a href="https://elixir.bootlin.com/linux/v7.1.4/source/arch/x86/kvm/vmx/vmx.c#L586">Linux’s state-tracking approach</a>, OSTD can map these APIs to VMX operations as follows.</p>
+<p><code>GuestMode::new</code> creates an internal VMX lifecycle guard that is privately owned by the returned <code>GuestMode</code>. OSTD maintains a global reference count of live guards. Access to this count is protected by a lock, which serializes guard construction and destruction. When the first guard is created, OSTD executes <code>VMXON</code> on every CPU. When the final guard is dropped, OSTD performs coordinated teardown on every CPU: it first executes <code>VMCLEAR</code> for every VMCS region that is still active on that CPU, and then executes <code>VMXOFF</code>.</p>
+<p><code>GuestContext::new</code> allocates a VMCS region, which is privately owned by the returned <code>GuestContext</code>. OSTD uses statically allocated per-CPU data to record the current VMCS region and the set of active VMCS regions on each CPU. Each <code>GuestContext</code> also tracks the CPU on which its VMCS region was most recently loaded and whether its launch state is clear or launched.</p>
+<p><code>GuestMode::execute</code> disables preemption while operating on the per-CPU VMX state, thereby pinning the execution to the current CPU. The exclusive <code>&amp;mut GuestContext</code> argument serializes operations on the corresponding VMCS region, so the same VMCS region cannot be migrated or entered concurrently from two CPUs.</p>
+<p>Let <code>A</code> be the VMCS region owned by the supplied <code>GuestContext</code>, and let <code>C</code> be the current CPU:</p>
+<ol>
+<li>If <code>A</code> is already active and current on <code>C</code>, OSTD proceeds directly to VM entry without executing <code>VMPTRLD</code> or <code>VMCLEAR</code>.</li>
+<li>If <code>A</code> is active on <code>C</code> but is not current, OSTD executes only <code>VMPTRLD(A)</code>. It preserves the existing launch state and does not execute <code>VMCLEAR</code>.</li>
+<li>If <code>A</code> is active on another CPU, OSTD sends a synchronous IPI to that CPU to execute <code>VMCLEAR(A)</code>. The old CPU then removes <code>A</code> from its active set and clears its current-VMCS record if necessary. After the IPI completes, OSTD executes <code>VMPTRLD(A)</code> on <code>C</code> and adds <code>A</code> to the active set of <code>C</code>.</li>
+<li>If <code>A</code> is not active on any CPU, OSTD first executes <code>VMCLEAR(A)</code> to establish a well-defined clear state, then executes <code>VMPTRLD(A)</code> on <code>C</code> and adds <code>A</code> to the active set of <code>C</code>.</li>
+</ol>
+<p>OSTD chooses <code>VMLAUNCH</code> or <code>VMRESUME</code> according to the recorded launch state. After a VM exit, <code>GuestMode::execute</code> leaves the VMCS region active and does not execute <code>VMCLEAR</code> before returning. Therefore, subsequent executions on the same CPU can reuse the current or active VMCS region and benefit from the CPU’s VMCS cache.</p>
+<p>When a <code>GuestContext</code> is dropped, OSTD first ensures that its VMCS region is no longer active. If necessary, it synchronously executes <code>VMCLEAR</code> on the CPU where the region is active before deallocating it. Similarly, when the final VMX lifecycle guard is dropped, every CPU clears all VMCS regions in its local active set before executing <code>VMXOFF</code>.</p>
+<p>All VMX instructions and lifecycle state remain internal to OSTD. The kernel manages guest policy through the safe <code>GuestMode</code> and <code>GuestContext</code> APIs without directly accessing VMCS residency state or issuing VMX instructions.</p>
+<h3 id="building-a-hypervisor-with-the-ostd-apis"><a class="header" href="#building-a-hypervisor-with-the-ostd-apis">Building a Hypervisor With the OSTD APIs</a></h3>
+<p>The kernel can build a complete hypervisor by composing the OSTD objects above with kernel-owned policy and device state. A minimal pseudo-code flow looks like this:</p>
+<pre><code class="language-rust">fn create_and_run_guest(image: GuestImage, userspace_mem: UserRange) -&gt; Result&lt;()&gt; {
+    // Create the VM and install userspace-backed guest RAM into the GPA space.
+    let guest_mem = GuestPhysMemSpace::new()?;
+    let frames: Vec&lt;UFrame&gt; = query_userspace_frames(&amp;userspace_mem)?;
+    let guest_end = image.ram_gpa.checked_add(userspace_mem.len)
+        .ok_or(Error::new(Errno::EOVERFLOW))?;
+    let guest_range = image.ram_gpa..guest_end;
+    {
+        let preempt_guard = disable_preempt();
+        let mut cursor = guest_mem.cursor_mut(&amp;preempt_guard, &amp;guest_range)?;
+        for frame in &amp;frames {
+            cursor.map(frame.clone(), guest_mem_prop());
+        }
+    }
+    record_memory_slot(0, &amp;userspace_mem, guest_range, frames)?;
+
+    // Create a vCPU context and let the kernel set the guest boot state.
+    let mut context = GuestContext::new(0)?;
+    context.set_regs(image.boot_regs());
+    context.set_sregs(image.boot_sregs());
+
+    // Kernel-owned policy ports provide virtual interrupts and timers.
+    let lapic = KernelLapicPort::new();
+    let guest_mode = GuestMode::new()?;
+
+    loop {
+        match guest_mode.execute(&amp;mut context, &amp;guest_mem, &amp;lapic, &amp;lapic)? {
+            GuestRunResult::WaitForSipi =&gt; wait_for_startup_ipi()?,
+            GuestRunResult::VmExit(exit) =&gt; match decode_exit(exit) {
+                Exit::Mmio(access) =&gt; emulate_mmio(access)?,
+                Exit::Io(access) =&gt; forward_to_userspace_vmm(access)?,
+                Exit::Hlt | Exit::Shutdown =&gt; return Ok(()),
+                Exit::Other(exit) =&gt; reflect_exit_to_userspace(exit)?,
+            },
+        }
+    }
+}</code></pre>
+<p>This example shows the intended split. OSTD owns the mechanisms needed to enter and leave guest mode safely. The kernel owns VM lifecycle, memory-slot policy, vCPU file semantics, interrupt-chip state, device emulation, and userspace handoff.</p>
+<h3 id="architecture-agnostic-design"><a class="header" href="#architecture-agnostic-design">Architecture-agnostic Design</a></h3>
+<p>Although the examples above are based on Intel CPUs, the current API split should also support AMD CPUs and the ARM and RISC-V architectures.</p>
+<p><code>GuestMode</code> and <code>GuestPhysMemSpace</code> are intended to be architecture-agnostic APIs. <code>GuestTimerPort</code> and <code>GuestInterruptPort</code> should also be architecture-agnostic.</p>
+<p><code>GuestContext</code> and <code>GuestExitInfo</code> are intentionally architecture-specific. It is both reasonable and necessary to provide one <code>GuestContext</code> API and one <code>GuestExitInfo</code> type per architecture and, where necessary, per hardware virtualization backend, since register state, system registers, exit reasons, and exit metadata are fundamentally different across x86, ARM, and RISC-V.</p>
+<p>The hypervisor implementation model exposed by the OSTD APIs is reusable for ARM and RISC-V. Both architectures provide hardware-assisted second-stage translation. <code>GuestPhysMemSpace</code> is exactly the abstraction for that second-stage page table: it provides generic mapping, unmapping, and query operations, while the internal implementation can use different <code>PageTableConfig</code>s for Intel x86 <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html" title="Vol. 3C. 30.3 EPT">EPT</a>, AMD x86 <a href="https://docs.amd.com/v/u/en-US/24593_3.44_APM_Vol2" title="15.25 Nested Paging">nested paging</a>, ARM <a href="https://developer.arm.com/documentation/102142/0100/Stage-2-translation">stage-2 translation</a>, or <a href="https://docs.riscv.org/reference/isa/v20260120/priv/hypervisor.html#two-stage-translation">RISC-V G-stage translation</a>.</p>
+<p><code>GuestMode</code> also maps naturally to ARM and RISC-V. All three architectures need an OSTD-controlled path that saves host state, loads guest vCPU state, installs the guest physical memory space, enters the guest execution environment, and returns to the kernel on a guest exit.</p>
+<p>The two port traits express policy rather than hardware details. <code>GuestInterruptPort</code> provides guest interrupt injection policy to <code>GuestMode::execute</code>. On x86, the port may be backed by virtual <a href="https://wiki.osdev.org/APIC">APIC</a> state; on ARM, by virtual <a href="https://developer.arm.com/documentation/198123/0302/What-is-a-Generic-Interrupt-Controller-">GIC</a> state; and on RISC-V, by virtual interrupt-controller state such as a virtual <a href="https://wiki.osdev.org/PLIC">PLIC</a> or virtual <a href="https://docs.riscv.org/reference/aia/v1.0/intro.html">AIA interrupt-controller</a> state. <code>GuestTimerPort</code> provides guest timer interrupt policy to <code>GuestMode::execute</code>. On x86, the port may be backed by virtual <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html" title="Vol. 3A. 12.5.4 APIC Timer">APIC timer or TSC-deadline timer</a> state; on ARM, by <a href="https://developer.arm.com/documentation/ddi0487/mb/-Part-D-The-AArch64-System-Level-Architecture/-Chapter-D12-The-Generic-Timer-in-AArch64-state/-D12-1-About-the-Generic-Timer/-D12-1-1-The-full-set-of-Generic-Timer-components?lang=en">generic timer</a>; and on RISC-V, by virtual timer state exposed through an <a href="https://docs.riscv.org/reference/sbi/v3.0/ext-time.html">SBI timer interface</a> or the <a href="https://docs.riscv.org/reference/isa/v20260120/priv/sstc.html">Sstc</a> virtual-supervisor timer facility.</p>
+<h2 id="drawbacks-alternatives-and-unknowns"><a class="header" href="#drawbacks-alternatives-and-unknowns">Drawbacks, Alternatives, and Unknowns</a></h2>
+<h3 id="unresolved-questions"><a class="header" href="#unresolved-questions">Unresolved Questions</a></h3>
+<ul>
+<li>Is the current OSTD hypervisor interface stable enough for future acceleration features such as vAPIC acceleration? If those features require exposing additional architecture-specific controls, interrupt virtualization state, or APIC backing pages, the <code>GuestContext</code>, <code>GuestMode</code>, and <code>GuestPhysMemSpace</code> boundaries may need to evolve.</li>
+</ul>
+<h2 id="prior-art-and-references"><a class="header" href="#prior-art-and-references">Prior Art and References</a></h2>
+<ul>
+<li><a href="../ostd/soundness/README.html">Asterinas OSTD soundness analysis</a></li>
+<li><a href="https://www.kernel.org/doc/html/v7.1/virt/kvm/api.html">Linux KVM API documentation</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html">Intel 64 and IA-32 Architectures Software Developer Manuals</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../rfcs/0002-asterinas-nixos.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../rfcs/rfc-template.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../rfcs/0002-asterinas-nixos.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../rfcs/rfc-template.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../mermaid-eefea253.min.js"></script>
+        <script src="../mermaid-init-53b67c53.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
