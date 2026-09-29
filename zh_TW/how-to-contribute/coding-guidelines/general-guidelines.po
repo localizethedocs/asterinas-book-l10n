@@ -1,0 +1,397 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-10T17:12:34Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:1
+msgid "General Guidelines"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:3
+msgid "Names"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:5
+msgid "Be descriptive (`descriptive-names`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:7
+msgid ""
+"Choose names that convey meaning at the point of use. Avoid single-letter "
+"names and ambiguous abbreviations. Prefer full words over cryptic shorthand "
+"so that readers do not need surrounding context to understand a variable's "
+"purpose. Prefer names that are as short as possible while still being "
+"unambiguous at the point of use."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:15
+msgid "Be accurate (`accurate-names`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:17
+msgid ""
+"Avoid confusing names. If a name can be misread to imply the wrong meaning, "
+"behavior, or side effects, it must be corrected immediately."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:23
+msgid "// Good — clearly a count\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:24
+msgid ""
+"// Bad — looks like a collection\n"
+"// rather than a numeric counter\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:30
+msgid "Choose verbs that reflect the actual work being done."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:34
+msgid "// Good — implies a MMIO read is involved\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:35
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:37
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:44
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:46
+msgid "/* .. */"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:36
+msgid "// Bad — looks like a plain field access\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:43
+msgid "// Good — implies an O(n) collection pass\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:45
+msgid "// Bad — sounds like an accessor returning a reference\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:50
+msgid ""
+"See also: PR [\\#1488](https://github.com/asterinas/asterinas/"
+"pull/1488#discussion_r1825441287) and [\\#2964](https://github.com/asterinas/"
+"asterinas/pull/2964#discussion_r2789739882)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:54
+msgid "Encode units and important attributes in names (`encode-units`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:56
+msgid ""
+"When the type does not encode the unit, the name must. Kernel code deals "
+"with bytes, pages, frames, nanoseconds, ticks, and sectors — ambiguous units "
+"are a source of real bugs."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:62
+msgid ""
+"```text\n"
+"// Good — unit is unambiguous\n"
+"timeout_ns\n"
+"offset_bytes\n"
+"size_pages\n"
+"delay_ms\n"
+"\n"
+"// Bad — unit is ambiguous\n"
+"timeout\n"
+"offset\n"
+"size\n"
+"delay\n"
+"```"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:76
+msgid ""
+"Where the language's type system can enforce units (e.g., newtypes), prefer "
+"that. Where it cannot, the name must carry the information."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:80
+msgid ""
+"See also: PR [\\#2796](https://github.com/asterinas/asterinas/"
+"pull/2796#discussion_r2646889913)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:83
+msgid "Use assertion-style boolean names (`bool-names`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:85
+msgid ""
+"Boolean variables and functions should read as assertions of fact. Use "
+"`is_`, `has_`, `can_`, `should_`, `was_`, or `needs_` prefixes. Never use "
+"negated names (`is_not_empty`, `no_error`); prefer the positive form "
+"(`is_empty`, `ok` or `succeeded`). A bare name like `found`, `done`, or "
+"`ready` is acceptable when the context is unambiguous."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:97
+msgid "// Good — reads as an assertion\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:101
+msgid "// Bad — verb suggests an action, not a query\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:103
+msgid "// Bad — negated name\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:108
+msgid ""
+"See also: PR [\\#1488](https://github.com/asterinas/asterinas/"
+"pull/1488#discussion_r1841827039)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:111
+msgid "Comments"
+msgstr "註釋"
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:113
+msgid "Prefer semantic line breaks (`semantic-line-breaks`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:115
+msgid ""
+"For prose in Markdown and doc comments, insert line breaks at semantic "
+"boundaries so each line carries one coherent idea. At minimum, break at "
+"sentence boundaries. For longer sentences, also consider breaking at clause "
+"boundaries."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:121
+msgid ""
+"Semantic line breaks make diffs smaller, reviews easier, and merge conflicts "
+"less noisy."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:125
+msgid ""
+"As an exception, RFC documents that are mostly read-only can use regular "
+"paragraph wrapping."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:129
+msgid "See also: [Semantic Line Breaks](https://sembr.org/)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:132
+msgid "Explain why, not what (`explain-why`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:134
+msgid ""
+"Comments should explain the intent behind the code, not restate what the "
+"code does. If a comment merely paraphrases the code, it adds noise without "
+"insight."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:139
+msgid ""
+"If a comment is needed to explain what code does, first try to rewrite the "
+"code. Do not write good comments to compensate for bad code — rewrite it to "
+"be straightforward."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:144
+msgid ""
+"See also: _The Art of Readable Code_, Chapter 6 \"Knowing What to Comment\"; "
+"PR [\\#2265](https://github.com/asterinas/asterinas/"
+"pull/2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
+"asterinas/pull/2050#discussion_r2224106025)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:149
+msgid "Document design decisions (`design-decisions`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:151
+msgid ""
+"When the code makes a non-obvious choice — a particular data structure, a "
+"locking strategy, a deviation from Linux behavior — add a comment explaining "
+"the rationale and any alternatives considered. Design-decision comments "
+"(\"director's commentary\") are the most valuable kind of comment."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:160
+msgid ""
+"// We use a radix tree rather than a HashMap\n"
+"// because lookups must be O(log n) worst-case\n"
+"// for the page fault handler.\n"
+"// A HashMap gives O(1) amortized\n"
+"// but O(n) worst-case due to rehashing,\n"
+"// which is unacceptable on the page fault path.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:168
+msgid ""
+"See also: PR [\\#2265](https://github.com/asterinas/asterinas/"
+"pull/2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
+"asterinas/pull/2050#discussion_r2224106025)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:172
+msgid "Cite specifications and algorithm sources (`cite-sources`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:174
+msgid ""
+"When implementing behavior defined by an external specification or a non-"
+"trivial algorithm, cite the source: the relevant POSIX section, Linux man "
+"page, hardware reference manual, or academic paper."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:181
+msgid ""
+"/// Maximum number of bytes guaranteed to be written to a pipe atomically.\n"
+"///\n"
+"/// For more details, see the description of `PIPE_BUF` in\n"
+"/// <https://man7.org/linux/man-pages/man7/pipe.7.html>.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:188
+msgid "Layout"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:190
+msgid "One concept per file (`one-concept-per-file`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:192
+msgid ""
+"When a file grows long or contains multiple distinct concepts, split it. "
+"Each major data structure, each subsystem entry point, each significant "
+"abstraction deserves its own file."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:198
+msgid "Organize code for top-down reading (`top-down-reading`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:200
+msgid ""
+"A source file should read from top to bottom. Start with high-level entry "
+"points and core flow. Move implementation details downward so readers can "
+"understand the big picture first before diving into low-level helpers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:206
+msgid ""
+"Within each visibility group (e.g., a module), order methods so that callers "
+"appear before callees where possible, enabling the file to be read top to "
+"bottom. Place public methods before private helpers."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:211
+msgid "Group statements into logical paragraphs (`logical-paragraphs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:213
+msgid ""
+"Within functions, group related statements into logical paragraphs separated "
+"by blank lines. Each paragraph should represent one sub-step of the "
+"function's overall purpose."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:219
+msgid ""
+"For long functions, add a one-line summary comment at the start of each "
+"paragraph when the paragraph intent is not obvious."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:224
+msgid "Formatting"
+msgstr "格式化"
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:226
+msgid "Format error messages consistently (`error-message-format`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:228
+msgid ""
+"Start with a lowercase letter (unless the first word is a proper noun or "
+"identifier). Be specific: prefer \"`len` is too large\" over \"the argument "
+"is invalid\"."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:233
+msgid ""
+"For system call errors, follow the style and descriptions in Linux man pages."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:236
+msgid "API Design"
+msgstr "API 設計"
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:238
+msgid "Stick to familiar conventions (`familiar-conventions`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:240
+msgid ""
+"Prefer names and API shapes that users already know from Rust and Linux. Do "
+"not invent new terms for well-known operations."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:246
+msgid "// Good — follows common Rust naming conventions\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:249
+msgid "// Bad — unfamiliar synonyms for common operations\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:255
+msgid ""
+"See also: [Least Surprise](../how-guidelines-are-written.md#least-surprise)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:258
+msgid "Hide implementation details (`hide-impl-details`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:260
+msgid ""
+"Do not expose internal implementation details through public APIs (including "
+"their documentation). A module's public surface should contain only what its "
+"consumers need."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:265
+msgid ""
+"See also: [Modules and Crates](../rust-guidelines/language-items/modules-and-"
+"crates.md#narrow-visibility) for Rust-specific visibility rules; PR [\\#2951]"
+"(https://github.com/asterinas/asterinas/pull/2951#discussion_r2786925410)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:270
+msgid "Validate at boundaries, trust internally (`validate-at-boundaries`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:272
+msgid ""
+"Designate certain interfaces as validation boundaries. In Asterinas, syscall "
+"entry points are the primary boundary: all user-supplied data (pointers, "
+"file descriptors, sizes, flags, strings) must be validated at the syscall "
+"boundary. Once validated, internal kernel functions may trust these values "
+"without re-validation."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/general-guidelines/index.md:281
+msgid ""
+"See also: PR [\\#2806](https://github.com/asterinas/asterinas/pull/2806)."
+msgstr ""

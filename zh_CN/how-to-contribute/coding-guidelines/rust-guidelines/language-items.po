@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-03-10T17:12:34Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:1
+msgid "Language Items"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:3
+msgid ""
+"This section covers conventions for specific Rust language constructs. Each "
+"page addresses one category with actionable guidelines."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:8
+msgid ""
+"**[Variables, Expressions, and Statements](variables-expressions-and-"
+"statements.md)** — Explaining variables, block expressions, and checked "
+"arithmetic."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:12
+msgid ""
+"**[Functions and Methods](functions-and-methods.md)** — Nesting control, "
+"function focus, and boolean-argument avoidance."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:16
+msgid ""
+"**[Types and Traits](types-and-traits.md)** — Type-level invariants, closed-"
+"set modeling, and field encapsulation."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:20
+msgid ""
+"**[Comments and Documentation](comments-and-documentation.md)** — Rustdoc "
+"conventions, punctuation/readability, and module docs."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:24
+msgid ""
+"**[Unsafety](unsafety.md)** — `// SAFETY:` comments, `# Safety` sections, "
+"and module-boundary audits."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:28
+msgid ""
+"**[Modules and Crates](modules-and-crates.md)** — Visibility and dependency "
+"policy."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/index.md:31
+msgid ""
+"**[Macros and Attributes](macros-and-attributes.md)** — Lint suppression "
+"scope, dead-code expectations, and macro restraint."
+msgstr ""
