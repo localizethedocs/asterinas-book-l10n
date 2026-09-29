@@ -3784,8 +3784,3 @@ msgid ""
 "[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
 "html#pe-coff-entry-point)"
 msgstr ""
-
-#~ msgid ""
-#~ "Most of these system calls (or their variants) are also supported for the "
-#~ "RISC-V and LoongArch architectures."
-#~ msgstr "这些系统调用中的大多数（或其变体）也支持 RISC-V 和龙芯架构。"

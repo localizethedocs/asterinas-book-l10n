@@ -93,7 +93,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/build.md:53
 msgid "`--initramfs <PATH>`: Path of the initramfs"
-msgstr ""
+msgstr "`--initramfs <PATH>`：initramfs 的路徑"
 
 #: src/osdk/reference/commands/build.md:55
 msgid "`--boot-method <METHOD>`: The method to boot the kernel"
@@ -101,7 +101,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/build.md:57
 msgid "`--grub-mkrescue <PATH>`: Path of grub-mkrescue"
-msgstr ""
+msgstr "`--grub-mkrescue <PATH>`：grub-mkrescue 的路徑"
 
 #: src/osdk/reference/commands/build.md:59
 msgid ""
@@ -114,7 +114,7 @@ msgstr ""
 
 #: src/osdk/reference/commands/build.md:63
 msgid "`--qemu-exe <FILE>`: The QEMU executable file"
-msgstr ""
+msgstr "`--qemu-exe <FILE>`：QEMU 執行檔"
 
 #: src/osdk/reference/commands/build.md:65
 msgid "`--qemu-args <ARGS>`: Extra arguments for running QEMU"
