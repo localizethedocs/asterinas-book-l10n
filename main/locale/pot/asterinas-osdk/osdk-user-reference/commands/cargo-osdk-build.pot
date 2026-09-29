@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
+"POT-Creation-Date: 2026-09-29T15:23:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -119,47 +119,53 @@ msgid "`--qemu-args <ARGS>`: Extra arguments for running QEMU"
 msgstr ""
 
 #: src/osdk/reference/commands/build.md:67
-msgid "`--strip-elf`: Whether to strip the built kernel ELF using `rust-strip`"
+msgid ""
+"`--qemu-with-daemon <COMMAND>`: Host daemon to run alongside QEMU, including "
+"its path and optional arguments."
 msgstr ""
 
 #: src/osdk/reference/commands/build.md:69
+msgid "`--strip-elf`: Whether to strip the built kernel ELF using `rust-strip`"
+msgstr ""
+
+#: src/osdk/reference/commands/build.md:71
 msgid ""
 "`--scheme <SCHEME>`: Select the specific configuration scheme provided in "
 "the OSDK manifest"
 msgstr ""
 
-#: src/osdk/reference/commands/build.md:71
+#: src/osdk/reference/commands/build.md:73
 msgid ""
 "`--encoding <FORMAT>`: Denote the encoding format for kernel self-"
 "decompression"
 msgstr ""
 
-#: src/osdk/reference/commands/build.md:74
+#: src/osdk/reference/commands/build.md:76
 msgid "Examples"
 msgstr ""
 
-#: src/osdk/reference/commands/build.md:76
+#: src/osdk/reference/commands/build.md:78
 msgid ""
 "Build a project with `./initramfs.cpio.gz` as the initramfs and `multiboot2` "
 "as the boot protocol used by GRUB:"
 msgstr ""
 
-#: src/osdk/reference/commands/build.md:80
+#: src/osdk/reference/commands/build.md:82
 msgid "\"./initramfs.cpio.gz\""
 msgstr ""
 
-#: src/osdk/reference/commands/build.md:80
+#: src/osdk/reference/commands/build.md:82
 msgid "\"multiboot2\""
 msgstr ""
 
-#: src/osdk/reference/commands/build.md:83
+#: src/osdk/reference/commands/build.md:85
 msgid "Build a project and append `sh`, `-l` to init process arguments:"
 msgstr ""
 
-#: src/osdk/reference/commands/build.md:87
+#: src/osdk/reference/commands/build.md:89
 msgid "\"sh\""
 msgstr ""
 
-#: src/osdk/reference/commands/build.md:87
+#: src/osdk/reference/commands/build.md:89
 msgid "\"-l\""
 msgstr ""

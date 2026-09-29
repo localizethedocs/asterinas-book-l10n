@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-09-22T13:56:37Z\n"
+"POT-Creation-Date: 2026-09-29T15:23:05Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/kernel/nix-development.md:1
@@ -63,12 +63,14 @@ msgstr ""
 
 #: src/kernel/nix-development.md:38
 msgid ""
-"The first run downloads the dependencies and builds the packages that no "
-"public binary cache provides, such as QEMU and the firmware. This can take a "
-"long time."
+"The flake declares the project's binary caches on Cachix, which serve the "
+"packages that no public cache provides, such as the patched QEMU, the "
+"firmware, and the Rust toolchain. The first run asks whether to accept those "
+"caches and whether to remember the answer. Pass `--accept-flake-config` to "
+"accept them for one run without the questions."
 msgstr ""
 
-#: src/kernel/nix-development.md:43
+#: src/kernel/nix-development.md:44
 msgid ""
 "Inside the shell, the Make targets work as they do in the Docker container. "
 "Build and run Asterinas with the same commands as in [Getting Started](../"
@@ -76,11 +78,11 @@ msgid ""
 "(advanced-instructions.md) for the test targets."
 msgstr ""
 
-#: src/kernel/nix-development.md:47
+#: src/kernel/nix-development.md:48
 msgid "Editors and direnv"
 msgstr ""
 
-#: src/kernel/nix-development.md:49
+#: src/kernel/nix-development.md:50
 msgid ""
 "The shell includes `rust-analyzer` from the same nightly as the Rust "
 "toolchain. Start your editor from inside the shell so that it inherits the "
@@ -89,18 +91,19 @@ msgid ""
 "your host:"
 msgstr ""
 
-#: src/kernel/nix-development.md:60
+#: src/kernel/nix-development.md:61
 msgid ""
 "If you use [direnv](https://direnv.net/), the `.envrc` at the repository "
 "root activates the shell whenever you enter the checkout. Run `direnv allow` "
-"once to approve it."
+"once to approve it. Run `nix develop` once first and answer `y` to both "
+"questions, because direnv does not show the prompt in every shell."
 msgstr ""
 
-#: src/kernel/nix-development.md:64
+#: src/kernel/nix-development.md:67
 msgid "Differences from the Docker environment"
 msgstr ""
 
-#: src/kernel/nix-development.md:66
+#: src/kernel/nix-development.md:69
 msgid ""
 "The Docker image already contains the test suites and benchmarks prebuilt. "
 "The shell builds them on demand instead. The first time you run a test "
@@ -108,21 +111,21 @@ msgid ""
 "dependencies with Nix, which adds time to that first run."
 msgstr ""
 
-#: src/kernel/nix-development.md:71
+#: src/kernel/nix-development.md:74
 msgid ""
 "The gVisor syscall tests are built with Bazel inside the Docker image, "
 "together with a set of shared libraries that the shell does not provide. Use "
 "the Docker environment to run them."
 msgstr ""
 
-#: src/kernel/nix-development.md:75
+#: src/kernel/nix-development.md:78
 msgid ""
 "Projects created by `cargo osdk new` and the TDX scheme of the OSDK test "
 "suite contain firmware paths specific to the Docker image. They do not work "
 "in the shell unless you edit those paths yourself."
 msgstr ""
 
-#: src/kernel/nix-development.md:79
+#: src/kernel/nix-development.md:82
 msgid ""
 "The shell points `OVMF_DIR` at the firmware in the Nix store. If you "
 "override it, choose a path without spaces, because the shared QEMU scripts "
