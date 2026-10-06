@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-14T10:27:23Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:1
+msgid "Macros and Attributes"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:3
+msgid "Sort attributes and derive traits alphabetically (`alphabetical-attrs`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:5
+msgid ""
+"When an item carries multiple outer attributes, list non-derive attributes "
+"in **alphabetical order** by name and place `#[derive(...)]` **last**. "
+"Within `#[derive(...)]`, list the traits **alphabetically** as well."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:12
+msgid ""
+"// Good — non-derive attributes sorted; derive is last with sorted traits\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:13
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:20
+msgid "\"alloc\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:17
+msgid "// Bad — arbitrary ordering\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:25
+msgid ""
+"Placing `#[derive(...)]` last ensures that derive macros always see the item "
+"after all attribute macros (e.g., `#[padding_struct]`, `#[pod_union]`) have "
+"transformed it. Derive helper attributes (e.g., `#[serde(...)]`, "
+"`#[clap(...)]`) stay immediately after `#[derive(...)]`. Sorting the "
+"remaining attributes alphabetically eliminates hesitation over placement and "
+"reduces noise in diffs."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:37
+msgid ""
+"See also: PR [\\#3080](https://github.com/asterinas/asterinas/"
+"pull/3080#discussion_r3031834321) (motivating discussion) and PR [\\#2898]"
+"(https://github.com/asterinas/asterinas/pull/2898#discussion_r2763969731) "
+"(earlier ad-hoc ordering choice)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:43
+msgid "Use `#[expect(dead_code)]` with restraint (`expect-dead-code`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:45
+msgid ""
+"In general, dead code should be avoided because _(i)_ it introduces "
+"unnecessary maintenance overhead, and _(ii)_ its correctness can only be "
+"guaranteed by manual and error-prone review."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:50
+msgid "Dead code is acceptable only when all of these hold:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:52
+msgid ""
+"A _concrete case_ will be implemented in the future that turns the dead code "
+"into used code."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:54
+msgid "The semantics are _clear_ enough, even without the use case."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:56
+msgid ""
+"The dead code is _simple_ enough that both the committer and the reviewer "
+"can be confident it is correct without testing."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:59
+msgid "It serves as a counterpart to existing non-dead code."
+msgstr "它与现有的非死代码相对应。"
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:61
+msgid ""
+"For example, it is fine to add ABI constants that are unused because the "
+"corresponding feature is partially implemented."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:65
+msgid ""
+"See also: [Rust Reference: Diagnostic attributes](https://doc.rust-lang.org/"
+"reference/attributes/diagnostics.html) and rustc "
+"[`unfulfilled_lint_expectations`](https://doc.rust-lang.org/rustc/lints/"
+"listing/warn-by-default.html#unfulfilled-lint-expectations)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:69
+msgid "Suppress lints at the narrowest scope (`narrow-lint-suppression`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:71
+msgid ""
+"When suppressing lints, the suppression should affect as little scope as "
+"possible. This makes readers aware of the exact places where the lint is "
+"generated and makes it easier for subsequent committers to maintain the "
+"suppression."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:79
+msgid "// Good — each method is individually marked\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:89
+msgid "// Bad — the entire trait is suppressed\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:95
+msgid ""
+"There is one exception: if it is clear enough that every member will trigger "
+"the lint, it is reasonable to expect the lint at the type level."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:108
+msgid ""
+"See also: [Clippy `allow_attributes`](https://rust-lang.github.io/rust-"
+"clippy/master/#allow_attributes), [Clippy `allow_attributes_without_reason`]"
+"(https://rust-lang.github.io/rust-clippy/master/"
+"#allow_attributes_without_reason), and rustc "
+"[`unfulfilled_lint_expectations`](https://doc.rust-lang.org/rustc/lints/"
+"listing/warn-by-default.html#unfulfilled-lint-expectations)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:113
+msgid "Prefer functions over macros (`macros-as-last-resort`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:115
+msgid ""
+"Prefer functions and generics over macros. Macros are powerful but harder to "
+"understand, debug, test, and format. Reach for a macro only when the type "
+"system or generics cannot express what you need (e.g., variadic arguments, "
+"compile-time code generation, or DSL syntax)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:125
+msgid "// Good — a generic function covers all types\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:130
+msgid "// Bad — a macro where a function would suffice\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/rust-guidelines/language-items/macros-and-attributes.md:139
+msgid ""
+"See also: _The Rust Programming Language_, Chapter 20.5 \"Macros\"; [Rust by "
+"Example: Macros](https://doc.rust-lang.org/rust-by-example/macros.html)."
+msgstr ""

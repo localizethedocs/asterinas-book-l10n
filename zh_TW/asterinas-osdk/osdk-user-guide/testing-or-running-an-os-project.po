@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/osdk/guide/run-project.md:1
+msgid "Running or Testing an OS Project"
+msgstr "執行或測試作業系統專案"
+
+#: src/osdk/guide/run-project.md:3
+msgid ""
+"The OSDK allows for convenient building, running, and testing of an OS "
+"project. The following example shows the typical workflow."
+msgstr ""
+
+#: src/osdk/guide/run-project.md:7
+msgid ""
+"Suppose you have created a new kernel project named `myos` and you are in "
+"the project directory:"
+msgstr ""
+
+#: src/osdk/guide/run-project.md:14
+msgid "Build the project"
+msgstr "建置專案"
+
+#: src/osdk/guide/run-project.md:16
+msgid "To build the project and its dependencies, simply type:"
+msgstr ""
+
+#: src/osdk/guide/run-project.md:23
+msgid ""
+"The initial build of an OSDK project may take a considerable amount of time "
+"as it involves downloading the Rust toolchain used by the framekernel. "
+"However, this is a one-time process."
+msgstr ""
+
+#: src/osdk/guide/run-project.md:28
+msgid "Run the project"
+msgstr "執行專案"
+
+#: src/osdk/guide/run-project.md:30
+msgid "To launch the kernel with QEMU, use the following command:"
+msgstr ""
+
+#: src/osdk/guide/run-project.md:37
+msgid ""
+"OSDK will boot the kernel and initialize OS resources like the console for "
+"output, and then hand over control to the kernel entry point to execute the "
+"kernel code."
+msgstr ""
+
+#: src/osdk/guide/run-project.md:42
+msgid ""
+"**Note**: Only kernel projects (the projects that defines the function "
+"marked with `#[ostd::main]`) can be run; library projects cannot."
+msgstr ""
+
+#: src/osdk/guide/run-project.md:48
+msgid "Test the project"
+msgstr "測試專案"
+
+#: src/osdk/guide/run-project.md:50
+msgid ""
+"Suppose you have created a new library project named `mylib` which contains "
+"a default test case and you are in the project directory."
+msgstr ""
+
+#: src/osdk/guide/run-project.md:58
+msgid "To run the kernel mode tests, use the following command:"
+msgstr ""
+
+#: src/osdk/guide/run-project.md:64
+msgid "OSDK will run all the kernel mode tests in the crate."
+msgstr ""
+
+#: src/osdk/guide/run-project.md:66
+msgid ""
+"Test cases can be added not only in library projects but also in kernel "
+"projects."
+msgstr ""
+
+#: src/osdk/guide/run-project.md:69
+msgid ""
+"If you want to run a specific test with a given name, for example, if the "
+"test is named `foo`, use the following command:"
+msgstr ""
+
+#: src/osdk/guide/run-project.md:77
+msgid "Options"
+msgstr "選項"
+
+#: src/osdk/guide/run-project.md:79
+msgid ""
+"All of the `build`, `run`, and `test` commands accept options to control "
+"their behavior, such as how to compile and launch the kernel. The following "
+"documentations provide details on all the available options:"
+msgstr ""
+
+#: src/osdk/guide/run-project.md:85
+msgid "[`build` options](../reference/commands/build.md)"
+msgstr "[`build` 選項](../reference/commands/build.md)"
+
+#: src/osdk/guide/run-project.md:86
+msgid "[`run` options](../reference/commands/run.md)"
+msgstr "[`run` 選項](../reference/commands/run.md)"
+
+#: src/osdk/guide/run-project.md:87
+msgid "[`test` options](../reference/commands/test.md)"
+msgstr "[`test` 選項](../reference/commands/test.md)"
