@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-09-22 16:11:53 +0800",
-      "hash" : "ac790aa89b2f39e700d263882e1a1301e0a77a25",
-      "title" : "Initialize RISC-V BSS for flat-binary boot"
+      "date" : "2026-10-05 21:39:02 +0800",
+      "hash" : "3d85cb44263808723ee46c5dbbd06b330a2b3204",
+      "title" : "Reserve device tree memory on ARM"
     }
   },
   "type" : "branch",
