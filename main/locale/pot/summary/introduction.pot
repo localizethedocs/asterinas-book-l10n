@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-02-09T09:02:59Z\n"
+"POT-Creation-Date: 2026-10-06T15:35:08Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -100,10 +100,61 @@ msgid ""
 msgstr ""
 
 #: src/index.md:62
-msgid "Licensing"
+msgid "Publications"
 msgstr ""
 
 #: src/index.md:64
+msgid ""
+"Asterinas has been the subject of the following publications, listed from "
+"newest to oldest:"
+msgstr ""
+
+#: src/index.md:67
+msgid ""
+"[_RusyFuzz: Unhandled Exception Guided Fuzzing for Rust OS Kernel_](https://"
+"conf.researchr.org/details/icse-2026/icse-2026-research-track/96/RusyFuzz-"
+"Unhandled-Exception-Guided-Fuzzing-for-Rust-OS-Kernel), **ICSE 2026**."
+msgstr ""
+
+#: src/index.md:69
+msgid ""
+"[_MlsDisk: Trusted Block Storage for TEEs Based on Layered Secure Logging_]"
+"(https://www.usenix.org/conference/fast26/presentation/xu), **FAST 2026**."
+msgstr ""
+
+#: src/index.md:71
+msgid ""
+"[_CortenMM: Efficient Memory Management with Strong Correctness Guarantees_]"
+"(https://dl.acm.org/doi/10.1145/3731569.3764836), **SOSP 2025**, Best Paper "
+"Award."
+msgstr ""
+
+#: src/index.md:73
+msgid ""
+"[_Asterinas: A Linux ABI-Compatible, Rust-Based Framekernel OS with a Small "
+"and Sound TCB_](https://www.usenix.org/conference/atc25/presentation/peng-"
+"yuke), **USENIX ATC 2025**."
+msgstr ""
+
+#: src/index.md:75
+msgid ""
+"[_Converos: Practical Model Checking for Verifying Rust OS Kernel "
+"Concurrency_](https://www.usenix.org/conference/atc25/presentation/tang), "
+"**USENIX ATC 2025**."
+msgstr ""
+
+#: src/index.md:77
+msgid ""
+"[_Asterinas: A Rust-Based Framekernel to Reimagine Linux in the 2020s_]"
+"(https://www.usenix.org/publications/loginonline/asterinas-rust-based-"
+"framekernel-reimagine-linux-2020s), **USENIX _;login:_ 2025**."
+msgstr ""
+
+#: src/index.md:80
+msgid "Licensing"
+msgstr ""
+
+#: src/index.md:82
 msgid ""
 "Asterinas's source code and documentation primarily use the [Mozilla Public "
 "License (MPL), Version 2.0](https://github.com/asterinas/asterinas/blob/main/"
@@ -111,13 +162,13 @@ msgid ""
 "[here](https://github.com/asterinas/asterinas/blob/main/.licenserc.yaml)."
 msgstr ""
 
-#: src/index.md:69
+#: src/index.md:87
 msgid ""
 "Our choice of the [weak-copyleft](https://www.tldrlegal.com/license/mozilla-"
 "public-license-2-0-mpl-2) MPL license reflects a strategic balance:"
 msgstr ""
 
-#: src/index.md:71
+#: src/index.md:89
 msgid ""
 "**Commitment to open-source freedom**: We believe that OS kernels are a "
 "communal asset that should benefit humanity. The MPL ensures that any "
@@ -128,7 +179,7 @@ msgid ""
 "drewdevault.com/2018/10/05/Dont-sign-a-CLA.html)."
 msgstr ""
 
-#: src/index.md:79
+#: src/index.md:97
 msgid ""
 "**Accommodating proprietary modules**: Recognizing the evolving landscape "
 "where large corporations also contribute significantly to open-source, we "
@@ -136,7 +187,7 @@ msgid ""
 "the MPL permits the linking of MPL-covered files with proprietary code."
 msgstr ""
 
-#: src/index.md:86
+#: src/index.md:104
 msgid ""
 "In conclusion, we believe that MPL is the best choice to foster a vibrant, "
 "robust, and inclusive open-source community around Asterinas."

@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-10-06T15:35:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/kernel/firecracker.md:1
+msgid "Running Asterinas on Firecracker"
+msgstr ""
+
+#: src/kernel/firecracker.md:3
+msgid ""
+"Asterinas can run as a guest kernel inside a [Firecracker](https://github."
+"com/firecracker-microvm/firecracker) microVM through the PVH boot protocol. "
+"This page shows how to build the kernel and boot it with Firecracker."
+msgstr ""
+
+#: src/kernel/firecracker.md:8
+msgid "Prerequisites"
+msgstr ""
+
+#: src/kernel/firecracker.md:10
+msgid "An x86-64 host with KVM enabled (`/dev/kvm` accessible)."
+msgstr ""
+
+#: src/kernel/firecracker.md:11
+msgid ""
+"A `firecracker` binary in `PATH`. The Asterinas Docker development image "
+"already has Firecracker installed."
+msgstr ""
+
+#: src/kernel/firecracker.md:14
+msgid "Build the kernel"
+msgstr ""
+
+#: src/kernel/firecracker.md:20
+msgid ""
+"This builds a PVH-bootable kernel image. `BOOT_PROTOCOL=pvh` automatically "
+"uses the `vmm-direct` boot method and enables the `pvh_boot` feature."
+msgstr ""
+
+#: src/kernel/firecracker.md:24
+msgid "The output kernel image is:"
+msgstr ""
+
+#: src/kernel/firecracker.md:30
+msgid "The default initramfs used for the boot test is:"
+msgstr ""
+
+#: src/kernel/firecracker.md:36
+msgid "Boot with Firecracker"
+msgstr ""
+
+#: src/kernel/firecracker.md:38
+msgid ""
+"Create a Firecracker VM configuration file, for example `vm_config.json`:"
+msgstr ""
+
+#: src/kernel/firecracker.md:42
+msgid "\"boot-source\""
+msgstr ""
+
+#: src/kernel/firecracker.md:43
+msgid "\"kernel_image_path\""
+msgstr ""
+
+#: src/kernel/firecracker.md:43
+msgid "\"target/osdk/asterinas/asterinas-osdk-bin.elf\""
+msgstr ""
+
+#: src/kernel/firecracker.md:44
+msgid "\"initrd_path\""
+msgstr ""
+
+#: src/kernel/firecracker.md:44
+msgid "\"test/initramfs/build/initramfs.cpio.gz\""
+msgstr ""
+
+#: src/kernel/firecracker.md:45
+msgid "\"boot_args\""
+msgstr ""
+
+#: src/kernel/firecracker.md:45
+msgid "\"console=ttyS0 rdinit=/bin/sh\""
+msgstr ""
+
+#: src/kernel/firecracker.md:47
+msgid "\"drives\""
+msgstr ""
+
+#: src/kernel/firecracker.md:48
+msgid "\"machine-config\""
+msgstr ""
+
+#: src/kernel/firecracker.md:49
+msgid "\"vcpu_count\""
+msgstr ""
+
+#: src/kernel/firecracker.md:50
+msgid "\"mem_size_mib\""
+msgstr ""
+
+#: src/kernel/firecracker.md:55
+msgid ""
+"The `rdinit=/bin/sh` kernel parameter in `boot_args` selects the init "
+"program to run as the first userspace process; here it starts a BusyBox "
+"shell on the serial console. Omitting `rdinit` boots the default initramfs `/"
+"init` instead."
+msgstr ""
+
+#: src/kernel/firecracker.md:60
+msgid "Then boot the microVM:"
+msgstr ""
