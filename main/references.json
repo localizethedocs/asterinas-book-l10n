@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-09-22 16:11:53 +0800",
-      "hash" : "ac790aa89b2f39e700d263882e1a1301e0a77a25",
-      "title" : "Initialize RISC-V BSS for flat-binary boot"
+      "date" : "2026-10-13 16:48:58 +0800",
+      "hash" : "745ebe54e63c35c8b8c49971b581e62e5d5ed569",
+      "title" : "Fix stale `IN` readiness of `TimerfdFile` after `set_time` and `read`"
     }
   },
   "type" : "branch",

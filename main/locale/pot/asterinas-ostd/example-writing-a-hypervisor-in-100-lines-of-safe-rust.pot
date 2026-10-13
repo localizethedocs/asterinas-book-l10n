@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-10-13T16:11:39Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ostd/a-100-line-hypervisor.md:1
+msgid "Example: Writing a Hypervisor in About 100 Lines of Safe Rust"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:3
+msgid ""
+"This example demonstrates OSTD's hypervisor support on Intel x86 by "
+"implementing a minimal hypervisor entirely in safe Rust."
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:5
+msgid ""
+"This minimal hypervisor aims at running the following Hello World assembly "
+"program in a guest. The guest loops over the `\"Hello World\\n\"` string and "
+"writes each character to COM1 via the `out` instruction."
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:9
+msgid "# SPDX-License-Identifier: MPL-2.0\n"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:32
+msgid "\"Hello World\\n\""
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:35
+msgid ""
+"[RFC-0003](../rfcs/0003-hypervisor-support.md) describes the OSTD support "
+"required by this minimal hypervisor. Three core OSTD abstractions provide "
+"the kernel with hypervisor capabilities:"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:38
+msgid ""
+"`GuestPhysMemSpace` maps guest physical addresses to OSTD-managed frames "
+"using EPT."
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:39
+msgid "`GuestContext` provides access to the guest CPU state."
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:40
+msgid ""
+"`GuestMode` provides an interface to run the guest using `GuestContext` and "
+"`GuestPhysMemSpace`."
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:42
+msgid "The code of this minimal hypervisor is shown below:"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:45
+msgid "// SPDX-License-Identifier: MPL-2.0\n"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:62
+msgid ""
+"// VMX lifecycle operations need a task context with interrupts enabled.\n"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:75
+msgid "\"Error: VMX is not supported by the VM\""
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:78
+msgid "\"Failed to initialize VMX: {err:?}\""
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:81
+msgid "// Prepares the guest code by writing to the guest memory space.\n"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:82
+msgid "\"EPT is required for guest memory\""
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:94
+msgid ""
+"// Creates the data structure that maintains the CPU state of the guest.\n"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:103
+msgid "// Runs the guest until an exit requires handling by the host.\n"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:112
+msgid "// Decodes the VM exit reason to handle guest serial output or halt.\n"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:119
+msgid "\"{}\""
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:124
+msgid "\"unsupported guest exit: {reason:#x}\""
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:128
+msgid "\"Guest halted; returned to host.\""
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:130
+msgid ""
+"// The Makefile assembles and links `guest_hello.S` as a flat binary at GPA "
+"0.\n"
+msgstr ""
+
+#: src/ostd/a-100-line-hypervisor.md:132
+msgid "\"../guest_hello\""
+msgstr ""
