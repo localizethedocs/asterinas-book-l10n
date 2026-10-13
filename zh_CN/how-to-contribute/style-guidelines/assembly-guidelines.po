@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-02-09T09:03:00Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:1
+msgid "Assembly Guidelines"
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:3
+msgid "Define sections"
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:5
+msgid ""
+"To define built-in sections, such as the text section, it is preferable to "
+"use the short directive, e.g., `.text`. For other sections, the section "
+"directive with the desired flags and type should be used, e.g., `.section \"."
+"bsp_boot\", \"awx\", @progbits`."
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:11
+msgid ""
+"To ensure consistency and clarity, a blank line should follow each section "
+"definition, creating a separate code block for each definition."
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:14
+msgid ""
+"```asm\n"
+".section \".bsp_boot.stack\", \"aw\", @nobits\n"
+"\n"
+"boot_stack_bottom:\n"
+"    .align 4096\n"
+"    .skip 0x40000  # 256 KiB\n"
+"boot_stack_top:\n"
+"```"
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:23
+msgid ""
+"In x86-64, if an executable section contains only 64-bit code, the `.code64` "
+"directive should be placed directly after the section definition. The same "
+"applies to the `.code32` directive for 32-bit code."
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:36
+msgid "Define functions"
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:38
+msgid ""
+"Function attributes, such as `.global` and `.align`, should be placed "
+"directly before the function. These function attributes should not be "
+"indented."
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:49
+msgid ""
+"The assembler treats the directives `.global` and `.globl` as the same. For "
+"clarity, however, `.global` is preferred."
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:52
+msgid ""
+"Note that a Rust crate is a single translation unit, so `global_asm!` labels "
+"in different modules within the same crate share the same global namespace. "
+"In RISC-V, we have experienced that defining two labels with the same name "
+"in different modules can nondeterministically cause duplicate symbol error. "
+"The `.L` prefix does not help. Therefore, add custom prefixes to your labels "
+"to avoid name clashes. Nevertheless, use `.global` to export symbols that "
+"need to be visible within the same crate."
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:59
+msgid ""
+"In x86-64, if an executable section contains a mix of 32-bit and 64-bit "
+"code, the `.code64` and `.code32` directives are treated as function "
+"attributes."
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:75
+msgid ""
+"Functions that can be called from Rust code should also include the `.type` "
+"and `.size` directives. This will give debuggers a better understanding of "
+"the function. For example:"
+msgstr ""
+
+#: src/to-contribute/style-guidelines/asm-guidelines.md:87
+msgid ""
+"Note that this rule explicitly limits the functions to those that can be "
+"called from Rust code. Therefore, it does not apply to boot entry points, "
+"exception trampolines, or interrupt trampolines. They may not fit into the "
+"typical definition of \"function\", and their sizes may be ill-defined."
+msgstr ""
