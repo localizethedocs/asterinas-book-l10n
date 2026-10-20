@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-09-22T13:56:37Z\n"
+"POT-Creation-Date: 2026-10-20T13:58:20Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -77,92 +77,79 @@ msgid ""
 msgstr ""
 
 #: src/to-contribute/boterinas.md:27
-msgid "Code Review"
-msgstr ""
-
-#: src/to-contribute/boterinas.md:28
-msgid ""
-"**`@boterinas codex`** Triggers an AI-powered code review of the pull "
-"request using OpenAI Codex. The review posts inline comments highlighting "
-"potential issues with correctness, performance, security, and "
-"maintainability. Only repository members and collaborators can use this "
-"command."
-msgstr ""
-
-#: src/to-contribute/boterinas.md:31
 msgid "Issue and Pull Request Management"
 msgstr ""
 
-#: src/to-contribute/boterinas.md:32
+#: src/to-contribute/boterinas.md:28
 msgid "**`@boterinas claim`** Assigns the issue or pull request to yourself."
 msgstr ""
 
-#: src/to-contribute/boterinas.md:35
+#: src/to-contribute/boterinas.md:31
 msgid ""
 "**`@boterinas release-assignment`** Removes the current assignee from an "
 "issue or pull request. This command can only be executed by the current "
 "assignee or a team member."
 msgstr ""
 
-#: src/to-contribute/boterinas.md:38
+#: src/to-contribute/boterinas.md:34
 msgid ""
 "**`@boterinas assign @user`** Assigns a specific user to the issue or pull "
 "request. Only team members have permission to assign other users."
 msgstr ""
 
-#: src/to-contribute/boterinas.md:41
+#: src/to-contribute/boterinas.md:37
 msgid "Label Management"
 msgstr ""
 
-#: src/to-contribute/boterinas.md:42
+#: src/to-contribute/boterinas.md:38
 msgid ""
 "**`@boterinas label <label>`** Adds a label to the issue or pull request. "
 "_Example:_ `@boterinas label C-enhancement C-rfc`"
 msgstr ""
 
-#: src/to-contribute/boterinas.md:46
+#: src/to-contribute/boterinas.md:42
 msgid ""
 "**`@boterinas label -<label>`** Removes a label from the issue or pull "
 "request. _Example:_ `@boterinas label -C-enhancement -C-bug`"
 msgstr ""
 
-#: src/to-contribute/boterinas.md:50
+#: src/to-contribute/boterinas.md:46
 msgid "Status Indicators"
 msgstr ""
 
-#: src/to-contribute/boterinas.md:51
+#: src/to-contribute/boterinas.md:47
 msgid ""
 "**`@boterinas author`** Indicates that a pull request is waiting on the "
 "author. It assigns the `S-waiting-on-author` label and removes both `S-"
 "waiting-on-review` and `S-blocked`, if present."
 msgstr ""
 
-#: src/to-contribute/boterinas.md:54
+#: src/to-contribute/boterinas.md:50
 msgid "**`@boterinas blocked`** Marks a pull request as blocked on something."
 msgstr ""
 
-#: src/to-contribute/boterinas.md:57
+#: src/to-contribute/boterinas.md:53
 msgid ""
 "**`@boterinas ready`** Indicates that a pull request is ready for review. "
 "This command can also be invoked with the aliases `@boterinas review` or "
 "`@boterinas reviewer`."
 msgstr ""
 
-#: src/to-contribute/boterinas.md:60
+#: src/to-contribute/boterinas.md:56
 msgid "Notes"
 msgstr ""
 
-#: src/to-contribute/boterinas.md:61
+#: src/to-contribute/boterinas.md:57
 msgid "Only team members can assign users or remove assignments."
 msgstr ""
 
-#: src/to-contribute/boterinas.md:62
+#: src/to-contribute/boterinas.md:58
 msgid ""
 "Labels are crucial for organizing issues and pull requests, so ensure they "
 "are used consistently and accurately."
 msgstr ""
 
-#: src/to-contribute/boterinas.md:63
+#: src/to-contribute/boterinas.md:59
 msgid ""
 "For any issues or questions regarding `@boterinas`, please reach out to the "
 "team for support."
