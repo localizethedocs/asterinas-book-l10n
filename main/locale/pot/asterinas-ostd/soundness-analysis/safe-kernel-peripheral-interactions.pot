@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-09-22T13:56:37Z\n"
+"POT-Creation-Date: 2026-10-27T14:41:07Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -40,18 +40,18 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:19
 msgid ""
-"**[`DmaCoherent`](https://asterinas.github.io/api-docs/0.18.1/ostd/mm/dma/"
+"**[`DmaCoherent`](https://asterinas.github.io/api-docs/0.19.0/ostd/mm/dma/"
 "struct.DmaCoherent.html)**: Cache-coherent DMA mapping. Created from a "
-"[`Segment<()>`](https://asterinas.github.io/api-docs/0.18.1/ostd/mm/frame/"
+"[`Segment<()>`](https://asterinas.github.io/api-docs/0.19.0/ostd/mm/frame/"
 "segment/struct.Segment.html) (untyped)."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:21
 msgid ""
-"**[`DmaStream`](https://asterinas.github.io/api-docs/0.18.1/ostd/mm/dma/"
+"**[`DmaStream`](https://asterinas.github.io/api-docs/0.19.0/ostd/mm/dma/"
 "struct.DmaStream.html)**: Streaming DMA mapping. Created from a [`USegment`]"
-"(https://asterinas.github.io/api-docs/0.18.1/ostd/mm/frame/segment/type."
-"USegment.html) (untyped)."
+"(https://asterinas.github.io/api-docs/0.19.0/ostd/mm/frame/segment/"
+"type.USegment.html) (untyped)."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:24
@@ -129,8 +129,9 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:76
 msgid ""
-"OSTD's [`IoMem`](https://asterinas.github.io/api-docs/0.18.1/ostd/io/struct."
-"IoMem.html) type has two sensitivity levels, enforced at the type level:"
+"OSTD's [`IoMem`](https://asterinas.github.io/api-docs/0.19.0/ostd/io/"
+"struct.IoMem.html) type has two sensitivity levels, enforced at the type "
+"level:"
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:83
@@ -143,16 +144,16 @@ msgstr ""
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:87
 msgid ""
 "`IoMem<Insensitive>`: Provides safe `reader()` and `writer()` methods via "
-"the `HasVmReaderWriter` trait. Available to device drivers via [`IoMem::"
-"acquire(range)`](https://asterinas.github.io/api-docs/0.18.1/ostd/io/struct."
-"IoMem.html#method.acquire)."
+"the `HasVmReaderWriter` trait. Available to device drivers via "
+"[`IoMem::acquire(range)`](https://asterinas.github.io/api-docs/0.19.0/ostd/"
+"io/struct.IoMem.html#method.acquire)."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:92
 msgid ""
-"The [`IoMemAllocator`](https://github.com/asterinas/asterinas/"
-"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_mem/allocator."
-"rs#L18) enforces the boundary:"
+"The [`IoMemAllocator`](https://github.com/asterinas/asterinas/blob/"
+"9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_mem/"
+"allocator.rs#L18) enforces the boundary:"
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:93
@@ -189,9 +190,9 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:109
 msgid ""
-"I/O ports, represented as [`IoPort`](https://asterinas.github.io/api-"
-"docs/0.18.1/ostd/io/struct.IoPort.html), are an x86-specific mechanism for "
-"device communication. The same sensitivity distinction applies:"
+"I/O ports, represented as [`IoPort`](https://asterinas.github.io/api-docs/"
+"0.19.0/ostd/io/struct.IoPort.html), are an x86-specific mechanism for device "
+"communication. The same sensitivity distinction applies:"
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:114
@@ -201,20 +202,20 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:116
 msgid ""
-"[`IoPort::acquire(port)`](https://asterinas.github.io/api-docs/0.18.1/ostd/"
+"[`IoPort::acquire(port)`](https://asterinas.github.io/api-docs/0.19.0/ostd/"
 "io/struct.IoPort.html#method.acquire) is the safe public API. It requests "
 "the port from the [`IoPortAllocator`](https://github.com/asterinas/asterinas/"
-"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_port/allocator."
-"rs#L17)."
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_port/"
+"allocator.rs#L17)."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:119
 msgid ""
 "The `IoPortAllocator` removes sensitive ports at initialization. Sensitive "
-"ports are declared statically via the [`sensitive_io_port!`](https://github."
-"com/asterinas/asterinas/blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/"
-"src/io/io_port/mod.rs#L168) macro, which places their addresses in the `."
-"sensitive_io_ports` linker section. At boot, OSTD reads this section and "
+"ports are declared statically via the [`sensitive_io_port!`](https://"
+"github.com/asterinas/asterinas/blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/"
+"ostd/src/io/io_port/mod.rs#L168) macro, which places their addresses in the "
+"`.sensitive_io_ports` linker section. At boot, OSTD reads this section and "
 "removes all listed ports from the allocator."
 msgstr ""
 
@@ -236,10 +237,11 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:133
 msgid ""
-"Device interrupts are managed through the [`IrqLine`](https://asterinas."
-"github.io/api-docs/0.18.1/ostd/irq/struct.IrqLine.html) abstraction. Clients "
-"register callbacks but cannot manipulate the IDT, APIC, or interrupt routing "
-"directly. All interrupt configuration is mediated by OSTD's safe APIs."
+"Device interrupts are managed through the [`IrqLine`](https://"
+"asterinas.github.io/api-docs/0.19.0/ostd/irq/struct.IrqLine.html) "
+"abstraction. Clients register callbacks but cannot manipulate the IDT, APIC, "
+"or interrupt routing directly. All interrupt configuration is mediated by "
+"OSTD's safe APIs."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-peripheral-interactions.md:138
