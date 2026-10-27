@@ -60,8 +60,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/design.md:44
 msgid ""
-"See also: _Clean Code_, Chapter 3 \"Functions\"; PR [\\#639](https://github."
-"com/asterinas/asterinas/pull/639#discussion_r1524629393)."
+"See also: _Clean Code_, Chapter 3 \"Functions\"; PR [\\#639](https://"
+"github.com/asterinas/asterinas/pull/639#discussion_r1524629393)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/design.md:48
@@ -92,8 +92,8 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/for-maintainability/design.md:66
 msgid ""
 "See also: [`narrow-visibility`](rust-specific/crates-and-modules.md#narrow-"
-"visibility) for Rust-specific visibility rules; PR [\\#2951](https://github."
-"com/asterinas/asterinas/pull/2951#discussion_r2786925410)."
+"visibility) for Rust-specific visibility rules; PR [\\#2951](https://"
+"github.com/asterinas/asterinas/pull/2951#discussion_r2786925410)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/design.md:71

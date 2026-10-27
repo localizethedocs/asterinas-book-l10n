@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:1
 msgid "Development Tools"
-msgstr ""
+msgstr "開發工具"
 
 #: src/distro/popular-applications/development-tools/index.md:3
 msgid ""
@@ -338,11 +338,11 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:244
 msgid "# Execute Ruby script\n"
-msgstr ""
+msgstr "# 執行 Ruby 腳本\n"
 
 #: src/distro/popular-applications/development-tools/index.md:246
 msgid "# Run Ruby code directly\n"
-msgstr ""
+msgstr "# 直接執行 Ruby 程式碼\n"
 
 #: src/distro/popular-applications/development-tools/index.md:248
 msgid "\"puts 'Hello World'\""
@@ -360,19 +360,19 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:265
 msgid "# Compile Rust source code\n"
-msgstr ""
+msgstr "# 編譯 Rust 來源碼\n"
 
 #: src/distro/popular-applications/development-tools/index.md:269
 msgid "Version Control"
-msgstr ""
+msgstr "版本控制"
 
 #: src/distro/popular-applications/development-tools/index.md:271
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: src/distro/popular-applications/development-tools/index.md:273
 msgid "[Git](https://git-scm.com/) is a distributed version control system."
-msgstr ""
+msgstr "[Git](https://git-scm.com/) 是一款分佈式版本控制系統。"
 
 #: src/distro/popular-applications/development-tools/index.md:284
 msgid "# Clone existing repository\n"
@@ -400,7 +400,7 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:301
 msgid "# Commit changes\n"
-msgstr ""
+msgstr "# 送交變更\n"
 
 #: src/distro/popular-applications/development-tools/index.md:303
 msgid "\"Commit message\""
@@ -436,23 +436,23 @@ msgstr ""
 #: src/distro/popular-applications/development-tools/index.md:355
 #: src/distro/popular-applications/development-tools/index.md:402
 msgid "# Build project\n"
-msgstr ""
+msgstr "# 建置專案\n"
 
 #: src/distro/popular-applications/development-tools/index.md:332
 msgid "# Run project\n"
-msgstr ""
+msgstr "# 執行專案\n"
 
 #: src/distro/popular-applications/development-tools/index.md:335
 msgid "# Test project\n"
-msgstr ""
+msgstr "# 測試專案\n"
 
 #: src/distro/popular-applications/development-tools/index.md:340
 msgid "CMake"
-msgstr ""
+msgstr "CMake"
 
 #: src/distro/popular-applications/development-tools/index.md:342
 msgid "[CMake](https://cmake.org/) is a cross-platform build system generator."
-msgstr ""
+msgstr "[CMake](https://cmake.org/) 是一款跨平台的建置系統生成器。"
 
 #: src/distro/popular-applications/development-tools/index.md:353
 msgid "# Generate build files\n"
@@ -480,7 +480,7 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:383
 msgid "Meson"
-msgstr ""
+msgstr "Meson"
 
 #: src/distro/popular-applications/development-tools/index.md:385
 msgid ""
@@ -489,15 +489,15 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:400
 msgid "# Initialize project\n"
-msgstr ""
+msgstr "# 初始化專案\n"
 
 #: src/distro/popular-applications/development-tools/index.md:405
 msgid "# Run output from build directory\n"
-msgstr ""
+msgstr "# 從建置目錄執行輸出\n"
 
 #: src/distro/popular-applications/development-tools/index.md:410
 msgid "Ninja"
-msgstr ""
+msgstr "Ninja"
 
 #: src/distro/popular-applications/development-tools/index.md:412
 msgid ""
@@ -578,11 +578,11 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:533
 msgid "Editors & IDEs"
-msgstr ""
+msgstr "編輯器 & IDE"
 
 #: src/distro/popular-applications/development-tools/index.md:535
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs"
 
 #: src/distro/popular-applications/development-tools/index.md:537
 msgid ""
@@ -675,7 +675,7 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:600
 msgid "# Ctrl+W        - Search text\n"
-msgstr ""
+msgstr "# Ctrl+W        - 搜尋文字\n"
 
 #: src/distro/popular-applications/development-tools/index.md:602
 msgid "# Ctrl+G        - Show help\n"
@@ -691,7 +691,7 @@ msgstr ""
 
 #: src/distro/popular-applications/development-tools/index.md:608
 msgid "# Ctrl+X        - Exit nano\n"
-msgstr ""
+msgstr "# Ctrl+X        - 退出 nano\n"
 
 #: src/distro/popular-applications/development-tools/index.md:610
 msgid "# Ctrl+T        - Run spell checker\n"

@@ -72,8 +72,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:55
 msgid ""
-"See also: PR [\\#2265](https://github.com/asterinas/asterinas/"
-"pull/2265#discussion_r2266214191) and [\\#2514](https://github.com/asterinas/"
+"See also: PR [\\#2265](https://github.com/asterinas/asterinas/pull/"
+"2265#discussion_r2266214191) and [\\#2514](https://github.com/asterinas/"
 "asterinas/pull/2514)."
 msgstr ""
 

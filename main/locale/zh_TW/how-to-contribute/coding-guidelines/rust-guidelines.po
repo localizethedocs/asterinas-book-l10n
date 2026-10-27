@@ -52,8 +52,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/index.md:23
 msgid ""
-"**[Comments and Documentation](language-items/comments-and-documentation."
-"md)** — RFC 1574 summaries, comment/doc style, and module docs."
+"**[Comments and Documentation](language-items/comments-and-"
+"documentation.md)** — RFC 1574 summaries, comment/doc style, and module docs."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/index.md:27

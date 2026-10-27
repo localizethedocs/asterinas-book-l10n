@@ -46,9 +46,9 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:26
 msgid ""
 "See also: PR [\\#2951](https://github.com/asterinas/asterinas/pull/2951), "
-"[\\#2605](https://github.com/asterinas/asterinas/"
-"pull/2605#discussion_r2720506912), and [\\#3154](https://github.com/"
-"asterinas/asterinas/pull/3154#discussion_r3100905375)."
+"[\\#2605](https://github.com/asterinas/asterinas/pull/"
+"2605#discussion_r2720506912), and [\\#3154](https://github.com/asterinas/"
+"asterinas/pull/3154#discussion_r3100905375)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:31
@@ -58,9 +58,9 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:33
 msgid ""
 "When importing a free function or a static/constant from another module, "
-"import the **parent module** and access the item through it (`module::"
-"function()`, `module::CONSTANT`). Do not import free functions or statics "
-"directly by name."
+"import the **parent module** and access the item through it "
+"(`module::function()`, `module::CONSTANT`). Do not import free functions or "
+"statics directly by name."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:39
@@ -110,9 +110,9 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:79
 msgid ""
-"Always declare shared dependencies in the workspace `[workspace."
-"dependencies]` table and reference them with `.workspace = true` in member "
-"crates."
+"Always declare shared dependencies in the workspace "
+"`[workspace.dependencies]` table and reference them with `.workspace = true` "
+"in member crates."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/modules-and-crates.md:84

@@ -21,10 +21,10 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-development/observability.md:5
 msgid ""
-"All OSTD-based crates must use the logging macros provided by the [`ostd::"
-"log`](https://asterinas.github.io/api-docs/0.18.1/ostd/log/) module: `debug!"
-"`, `info!`, `notice!`, `warn!`, `error!`, `crit!`, `alert!`, `emerg!`. "
-"Import them via `use ostd::prelude::*` or `use ostd::{info, warn, ...}`."
+"All OSTD-based crates must use the logging macros provided by the "
+"[`ostd::log`](https://asterinas.github.io/api-docs/0.18.1/ostd/log/) module: "
+"`debug!`, `info!`, `notice!`, `warn!`, `error!`, `crit!`, `alert!`, `emerg!"
+"`. Import them via `use ostd::prelude::*` or `use ostd::{info, warn, ...}`."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-development/observability.md:12

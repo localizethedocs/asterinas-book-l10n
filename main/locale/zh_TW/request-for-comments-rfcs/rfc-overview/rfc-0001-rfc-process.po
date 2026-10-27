@@ -222,9 +222,9 @@ msgstr "分叉 `asterinas/asterinas` 儲存庫。"
 #: src/rfcs/0001-rfc-process.md:59
 msgid ""
 "In [the `rfcs` directory](https://github.com/asterinas/asterinas/tree/main/"
-"book/src/rfcs), copy `rfc-template.md` and rename it to `0000-your-rfc-title."
-"md`. The `0000` is a placeholder for the RFC number, which will be assigned "
-"later."
+"book/src/rfcs), copy `rfc-template.md` and rename it to `0000-your-rfc-"
+"title.md`. The `0000` is a placeholder for the RFC number, which will be "
+"assigned later."
 msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:60
@@ -294,10 +294,10 @@ msgstr "投票者可以表達「贊成」或「反對」。"
 
 #: src/rfcs/0001-rfc-process.md:75
 msgid ""
-"The final decision will be based on a [rough consensus](https://en.wikipedia."
-"org/wiki/Rough_consensus) as determined by the facilitator. This means that "
-"while unanimous agreement is not required, any major objections must be "
-"addressed."
+"The final decision will be based on a [rough consensus](https://"
+"en.wikipedia.org/wiki/Rough_consensus) as determined by the facilitator. "
+"This means that while unanimous agreement is not required, any major "
+"objections must be addressed."
 msgstr ""
 
 #: src/rfcs/0001-rfc-process.md:77

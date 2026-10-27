@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:17
 msgid "[System Core](system-core/)"
-msgstr ""
+msgstr "[系統核心](system-core/)"
 
 #: src/distro/popular-applications/index.md:17
 msgid "Shells, init systems, system monitoring, and essential utilities"
@@ -74,11 +74,11 @@ msgstr ""
 
 #: src/distro/popular-applications/index.md:18
 msgid "Nix package management and NixOS system management tools"
-msgstr ""
+msgstr "Nix 軟體包管理與 NixOS 系統管理工具"
 
 #: src/distro/popular-applications/index.md:18
 msgid "[Nix](nix-and-nixos-tools/#nix)"
-msgstr ""
+msgstr "[Nix](nix-and-nixos-tools/#nix)"
 
 #: src/distro/popular-applications/index.md:19
 msgid ""

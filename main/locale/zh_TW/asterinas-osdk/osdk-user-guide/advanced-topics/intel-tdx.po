@@ -83,8 +83,8 @@ msgstr ""
 
 #: src/osdk/guide/intel-tdx.md:46
 msgid ""
-"For example, you can append the following TDX-specific scheme to your `OSDK."
-"toml` file."
+"For example, you can append the following TDX-specific scheme to your "
+"`OSDK.toml` file."
 msgstr ""
 
 #: src/osdk/guide/intel-tdx.md:48

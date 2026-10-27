@@ -46,8 +46,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-hardware/index.md:14
 msgid ""
-"[`asm-code-width`](assembly-conventions.md#asm-code-width): `.code64`/`."
-"code32` after the section definition for single-mode sections."
+"[`asm-code-width`](assembly-conventions.md#asm-code-width): `.code64`/"
+"`.code32` after the section definition for single-mode sections."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-hardware/index.md:15
@@ -71,8 +71,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-hardware/index.md:18
 msgid ""
-"[`asm-prefer-balign`](assembly-conventions.md#asm-prefer-balign): Use `."
-"balign` (byte-count) over arch-dependent `.align`."
+"[`asm-prefer-balign`](assembly-conventions.md#asm-prefer-balign): Use "
+"`.balign` (byte-count) over arch-dependent `.align`."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-hardware/index.md:20

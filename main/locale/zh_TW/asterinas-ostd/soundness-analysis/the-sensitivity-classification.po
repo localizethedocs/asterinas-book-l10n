@@ -181,9 +181,9 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:37
 msgid ""
-"Typed frames ([`SlabMeta`](https://github.com/asterinas/asterinas/"
-"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/mm/heap/slab."
-"rs#L31)); never exposed"
+"Typed frames ([`SlabMeta`](https://github.com/asterinas/asterinas/blob/"
+"9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/mm/heap/slab.rs#L31)); "
+"never exposed"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:38
@@ -212,8 +212,8 @@ msgstr ""
 #: src/ostd/soundness/sensitivity-classification.md:39
 msgid ""
 "In dedicated [`FRAME_METADATA_RANGE`](https://github.com/asterinas/asterinas/"
-"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/mm/kspace/mod."
-"rs#L114); never exposed"
+"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/mm/kspace/"
+"mod.rs#L114); never exposed"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:40
@@ -226,8 +226,8 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:40
 msgid ""
-"Manipulated safely via [`VmSpace`](https://asterinas.github.io/api-"
-"docs/0.18.1/ostd/mm/vm_space/struct.VmSpace.html)"
+"Manipulated safely via [`VmSpace`](https://asterinas.github.io/api-docs/"
+"0.18.1/ostd/mm/vm_space/struct.VmSpace.html)"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:41
@@ -249,10 +249,10 @@ msgstr ""
 #: src/ostd/soundness/sensitivity-classification.md:43
 msgid ""
 "The sensitive/insensitive distinction maps directly to the typed/untyped "
-"frame distinction ([Safe Physical Memory Management](safe-memory-management."
-"md)). All sensitive memory is held in typed frames, which are never exposed "
-"to clients, user space, or devices. All insensitive memory is held in "
-"untyped frames, which can be safely shared."
+"frame distinction ([Safe Physical Memory Management](safe-memory-"
+"management.md)). All sensitive memory is held in typed frames, which are "
+"never exposed to clients, user space, or devices. All insensitive memory is "
+"held in untyped frames, which can be safely shared."
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:51
@@ -269,8 +269,8 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:55
 msgid ""
-"[`IoMem`](https://asterinas.github.io/api-docs/0.18.1/ostd/io/struct.IoMem."
-"html)`<Sensitive>`, `pub(crate)` only"
+"[`IoMem`](https://asterinas.github.io/api-docs/0.18.1/ostd/io/"
+"struct.IoMem.html)`<Sensitive>`, `pub(crate)` only"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:56
@@ -317,8 +317,8 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:59
 msgid ""
-"`IoMem<Insensitive>` via [`IoMem::acquire(range)`](https://asterinas.github."
-"io/api-docs/0.18.1/ostd/io/struct.IoMem.html#method.acquire)"
+"`IoMem<Insensitive>` via [`IoMem::acquire(range)`](https://"
+"asterinas.github.io/api-docs/0.18.1/ostd/io/struct.IoMem.html#method.acquire)"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:60
@@ -327,9 +327,10 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:60
 msgid ""
-"[`IoPort`](https://asterinas.github.io/api-docs/0.18.1/ostd/io/struct.IoPort."
-"html) via [`IoPort::acquire(port)`](https://asterinas.github.io/api-"
-"docs/0.18.1/ostd/io/struct.IoPort.html#method.acquire)"
+"[`IoPort`](https://asterinas.github.io/api-docs/0.18.1/ostd/io/"
+"struct.IoPort.html) via [`IoPort::acquire(port)`](https://"
+"asterinas.github.io/api-docs/0.18.1/ostd/io/"
+"struct.IoPort.html#method.acquire)"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:61
@@ -342,8 +343,8 @@ msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:61
 msgid ""
-"[`IrqLine`](https://asterinas.github.io/api-docs/0.18.1/ostd/irq/struct."
-"IrqLine.html) callback registration"
+"[`IrqLine`](https://asterinas.github.io/api-docs/0.18.1/ostd/irq/"
+"struct.IrqLine.html) callback registration"
 msgstr ""
 
 #: src/ostd/soundness/sensitivity-classification.md:62
@@ -364,12 +365,12 @@ msgstr ""
 #: src/ostd/soundness/sensitivity-classification.md:64
 msgid ""
 "Internally, OSTD maintains two I/O resource allocators ([`IoMemAllocator`]"
-"(https://github.com/asterinas/asterinas/"
-"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_mem/allocator."
-"rs#L18), [`IoPortAllocator`](https://github.com/asterinas/asterinas/"
-"blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_port/allocator."
-"rs#L17)) that are initialized at boot time by removing all sensitive ranges. "
-"Only the remaining insensitive ranges are available for client allocation. "
-"This makes it impossible for a client to accidentally or maliciously access "
-"a sensitive device."
+"(https://github.com/asterinas/asterinas/blob/"
+"9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_mem/"
+"allocator.rs#L18), [`IoPortAllocator`](https://github.com/asterinas/"
+"asterinas/blob/9ea44ed2b60bc81a5efb18af79e41fc07bf3d523/ostd/src/io/io_port/"
+"allocator.rs#L17)) that are initialized at boot time by removing all "
+"sensitive ranges. Only the remaining insensitive ranges are available for "
+"client allocation. This makes it impossible for a client to accidentally or "
+"maliciously access a sensitive device."
 msgstr ""

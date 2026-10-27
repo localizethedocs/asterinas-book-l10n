@@ -39,9 +39,9 @@ msgstr "選項"
 
 #: src/osdk/reference/commands/debug.md:19
 msgid ""
-"`--remote <REMOTE>`: Specify the address of the remote target \\[default: ."
-"osdk-gdb-socket\\]. The address can be either a path for the UNIX domain "
-"socket or a TCP port on an IP address."
+"`--remote <REMOTE>`: Specify the address of the remote target \\"
+"[default: .osdk-gdb-socket\\]. The address can be either a path for the UNIX "
+"domain socket or a TCP port on an IP address."
 msgstr ""
 
 #: src/osdk/reference/commands/debug.md:24

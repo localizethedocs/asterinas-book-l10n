@@ -21,15 +21,15 @@ msgstr "狀態：已批准"
 
 #: src/rfcs/0003-hypervisor-support.md:4
 msgid "Pull request: https://github.com/asterinas/asterinas/pull/3418"
-msgstr ""
+msgstr "拉取請求：https://github.com/asterinas/asterinas/pull/3418"
 
 #: src/rfcs/0003-hypervisor-support.md:5
 msgid "Date submitted: 2026-06-21"
-msgstr ""
+msgstr "提交日期：2026-06-21"
 
 #: src/rfcs/0003-hypervisor-support.md:6
 msgid "Date approved: 2026-08-05"
-msgstr ""
+msgstr "批准日期：2026-08-05"
 
 #: src/rfcs/0003-hypervisor-support.md:8
 msgid "Summary"
@@ -229,8 +229,8 @@ msgstr ""
 
 #: src/rfcs/0003-hypervisor-support.md:130
 msgid ""
-"// Query, navigation, map, and unmap interfaces are the same as `vm_space::"
-"CursorMut`.\n"
+"// Query, navigation, map, and unmap interfaces are the same as "
+"`vm_space::CursorMut`.\n"
 "    // ...\n"
 msgstr ""
 
@@ -790,10 +790,10 @@ msgid ""
 "`PageTableConfig`s for Intel x86 [EPT](https://www.intel.com/content/www/us/"
 "en/developer/articles/technical/intel-sdm.html \"Vol. 3C. 30.3 EPT\"), AMD "
 "x86 [nested paging](https://docs.amd.com/v/u/en-US/24593_3.44_APM_Vol2 "
-"\"15.25 Nested Paging\"), ARM [stage-2 translation](https://developer.arm."
-"com/documentation/102142/0100/Stage-2-translation), or [RISC-V G-stage "
-"translation](https://docs.riscv.org/reference/isa/v20260120/priv/hypervisor."
-"html#two-stage-translation)."
+"\"15.25 Nested Paging\"), ARM [stage-2 translation](https://"
+"developer.arm.com/documentation/102142/0100/Stage-2-translation), or [RISC-V "
+"G-stage translation](https://docs.riscv.org/reference/isa/v20260120/priv/"
+"hypervisor.html#two-stage-translation)."
 msgstr ""
 
 #: src/rfcs/0003-hypervisor-support.md:466
@@ -814,13 +814,13 @@ msgid ""
 "Controller-) state; and on RISC-V, by virtual interrupt-controller state "
 "such as a virtual [PLIC](https://wiki.osdev.org/PLIC) or virtual [AIA "
 "interrupt-controller](https://docs.riscv.org/reference/aia/v1.0/intro.html) "
-"state. `GuestTimerPort` provides guest timer interrupt policy to `GuestMode::"
-"execute`. On x86, the port may be backed by virtual [APIC timer or TSC-"
-"deadline timer](https://www.intel.com/content/www/us/en/developer/articles/"
-"technical/intel-sdm.html \"Vol. 3A. 12.5.4 APIC Timer\") state; on ARM, by "
-"[generic timer](https://developer.arm.com/documentation/ddi0487/mb/-Part-D-"
-"The-AArch64-System-Level-Architecture/-Chapter-D12-The-Generic-Timer-in-"
-"AArch64-state/-D12-1-About-the-Generic-Timer/-D12-1-1-The-full-set-of-"
+"state. `GuestTimerPort` provides guest timer interrupt policy to "
+"`GuestMode::execute`. On x86, the port may be backed by virtual [APIC timer "
+"or TSC-deadline timer](https://www.intel.com/content/www/us/en/developer/"
+"articles/technical/intel-sdm.html \"Vol. 3A. 12.5.4 APIC Timer\") state; on "
+"ARM, by [generic timer](https://developer.arm.com/documentation/ddi0487/mb/-"
+"Part-D-The-AArch64-System-Level-Architecture/-Chapter-D12-The-Generic-Timer-"
+"in-AArch64-state/-D12-1-About-the-Generic-Timer/-D12-1-1-The-full-set-of-"
 "Generic-Timer-components?lang=en); and on RISC-V, by virtual timer state "
 "exposed through an [SBI timer interface](https://docs.riscv.org/reference/"
 "sbi/v3.0/ext-time.html) or the [Sstc](https://docs.riscv.org/reference/isa/"
@@ -860,6 +860,6 @@ msgstr ""
 
 #: src/rfcs/0003-hypervisor-support.md:480
 msgid ""
-"[Intel 64 and IA-32 Architectures Software Developer Manuals](https://www."
-"intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)"
+"[Intel 64 and IA-32 Architectures Software Developer Manuals](https://"
+"www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)"
 msgstr ""

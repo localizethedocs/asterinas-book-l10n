@@ -21,9 +21,9 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:5
 msgid ""
-"Always declare shared dependencies in the workspace `[workspace."
-"dependencies]` table and reference them with `.workspace = true` in member "
-"crates."
+"Always declare shared dependencies in the workspace "
+"`[workspace.dependencies]` table and reference them with `.workspace = true` "
+"in member crates."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:10
@@ -198,9 +198,9 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:114
 msgid ""
 "This guideline is partially enforced by the rustc lint [`unreachable_pub`]"
-"(https://doc.rust-lang.org/rustc/lints/listing/allowed-by-default."
-"html#unreachable-pub), which flags any `pub` item not actually reachable "
-"from outside its crate."
+"(https://doc.rust-lang.org/rustc/lints/listing/allowed-by-"
+"default.html#unreachable-pub), which flags any `pub` item not actually "
+"reachable from outside its crate."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:118
@@ -212,8 +212,9 @@ msgid ""
 "To conform with the [`narrow-visibility`](#narrow-visibility) guideline, a "
 "common pattern is to expose Rust items inside a subsystem only to the "
 "subsystem itself. But when the subsystem sits deep in the module hierarchy, "
-"we have to write long visibility modifiers like `pub(in crate::a::very::"
-"deep::subsystem)`, which is tedious for writers and unfriendly for readers."
+"we have to write long visibility modifiers like `pub(in "
+"crate::a::very::deep::subsystem)`, which is tedious for writers and "
+"unfriendly for readers."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:127
@@ -293,9 +294,9 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:184
 msgid ""
 "When importing a free function or a static/constant from another module, "
-"import the **parent module** and access the item through it (`module::"
-"function()`, `module::CONSTANT`). Do not import free functions or statics "
-"directly by name."
+"import the **parent module** and access the item through it "
+"(`module::function()`, `module::CONSTANT`). Do not import free functions or "
+"statics directly by name."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/crates-and-modules.md:190

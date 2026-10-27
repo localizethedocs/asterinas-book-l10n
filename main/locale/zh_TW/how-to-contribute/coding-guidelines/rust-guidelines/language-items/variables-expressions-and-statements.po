@@ -37,8 +37,8 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/variables-expressions-and-statements.md:20
 msgid ""
 "See also: _The Art of Readable Code_, Chapter 8 \"Breaking Down Giant "
-"Expressions\"; PR [\\#2083](https://github.com/asterinas/asterinas/"
-"pull/2083#discussion_r2512772091) and [\\#643](https://github.com/asterinas/"
+"Expressions\"; PR [\\#2083](https://github.com/asterinas/asterinas/pull/"
+"2083#discussion_r2512772091) and [\\#643](https://github.com/asterinas/"
 "asterinas/pull/643#discussion_r1497243812)."
 msgstr ""
 

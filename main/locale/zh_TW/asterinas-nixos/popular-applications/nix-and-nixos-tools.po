@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/nix-and-nixos-tools/index.md:1
 msgid "Nix and NixOS Tools"
-msgstr ""
+msgstr "Nix 和 NixOS 工具"
 
 #: src/distro/popular-applications/nix-and-nixos-tools/index.md:3
 msgid ""
@@ -27,7 +27,7 @@ msgstr "軟體包管理"
 
 #: src/distro/popular-applications/nix-and-nixos-tools/index.md:7
 msgid "Nix"
-msgstr ""
+msgstr "Nix"
 
 #: src/distro/popular-applications/nix-and-nixos-tools/index.md:9
 msgid ""
@@ -131,7 +131,7 @@ msgstr ""
 
 #: src/distro/popular-applications/nix-and-nixos-tools/index.md:82
 msgid "NixOS System Management"
-msgstr ""
+msgstr "NixOS 系統管理"
 
 #: src/distro/popular-applications/nix-and-nixos-tools/index.md:84
 msgid "`nixos-rebuild`"

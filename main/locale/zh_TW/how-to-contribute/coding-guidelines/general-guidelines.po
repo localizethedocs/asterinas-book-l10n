@@ -81,8 +81,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:50
 msgid ""
-"See also: PR [\\#1488](https://github.com/asterinas/asterinas/"
-"pull/1488#discussion_r1825441287) and [\\#2964](https://github.com/asterinas/"
+"See also: PR [\\#1488](https://github.com/asterinas/asterinas/pull/"
+"1488#discussion_r1825441287) and [\\#2964](https://github.com/asterinas/"
 "asterinas/pull/2964#discussion_r2789739882)."
 msgstr ""
 
@@ -122,8 +122,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:80
 msgid ""
-"See also: PR [\\#2796](https://github.com/asterinas/asterinas/"
-"pull/2796#discussion_r2646889913)."
+"See also: PR [\\#2796](https://github.com/asterinas/asterinas/pull/"
+"2796#discussion_r2646889913)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:83
@@ -153,8 +153,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:108
 msgid ""
-"See also: PR [\\#1488](https://github.com/asterinas/asterinas/"
-"pull/1488#discussion_r1841827039)."
+"See also: PR [\\#1488](https://github.com/asterinas/asterinas/pull/"
+"1488#discussion_r1841827039)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:111
@@ -210,8 +210,8 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:144
 msgid ""
 "See also: _The Art of Readable Code_, Chapter 6 \"Knowing What to Comment\"; "
-"PR [\\#2265](https://github.com/asterinas/asterinas/"
-"pull/2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
+"PR [\\#2265](https://github.com/asterinas/asterinas/pull/"
+"2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
 "asterinas/pull/2050#discussion_r2224106025)."
 msgstr ""
 
@@ -239,8 +239,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/general-guidelines/index.md:168
 msgid ""
-"See also: PR [\\#2265](https://github.com/asterinas/asterinas/"
-"pull/2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
+"See also: PR [\\#2265](https://github.com/asterinas/asterinas/pull/"
+"2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
 "asterinas/pull/2050#discussion_r2224106025)."
 msgstr ""
 

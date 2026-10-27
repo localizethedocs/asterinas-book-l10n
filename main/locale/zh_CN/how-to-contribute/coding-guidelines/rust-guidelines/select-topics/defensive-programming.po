@@ -35,7 +35,7 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/defensive-programming.md:22
 msgid ""
-"See also: [std::debug_assert!](https://doc.rust-lang.org/std/macro."
-"debug_assert.html) and [Rust Reference: `debug_assertions`](https://doc.rust-"
-"lang.org/reference/conditional-compilation.html#debug_assertions)."
+"See also: [std::debug_assert!](https://doc.rust-lang.org/std/"
+"macro.debug_assert.html) and [Rust Reference: `debug_assertions`](https://"
+"doc.rust-lang.org/reference/conditional-compilation.html#debug_assertions)."
 msgstr ""

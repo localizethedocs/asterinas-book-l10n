@@ -154,8 +154,8 @@ msgstr ""
 "**对开源自由的承诺**：我们认为操作系统内核是公共资产，应造福全人类。MPL 协议"
 "确保对受 MPL 保护的文件所做的任何修改都保持开源，这与我们的理念一致。此外，我"
 "们**不要求贡献者签署贡献者许可协议（CLA）**，从而[保护贡献者的权利，并防止他"
-"们的贡献被闭源化 。](https://drewdevault.com/2018/10/05/Dont-sign-a-CLA."
-"html)。"
+"们的贡献被闭源化 。](https://drewdevault.com/2018/10/05/Dont-sign-a-"
+"CLA.html)。"
 
 #: src/index.md:79
 msgid ""

@@ -24,14 +24,14 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:7
 msgid ""
-"[_The Art of Readable Code_](https://www.oreilly.com/library/view/the-art-"
-"of/9781449318482/)"
+"[_The Art of Readable Code_](https://www.oreilly.com/library/view/the-art-of/"
+"9781449318482/)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:8
 msgid ""
-"[_Clean Code_](https://www.oreilly.com/library/view/clean-code-"
-"a/9780136083238/)"
+"[_Clean Code_](https://www.oreilly.com/library/view/clean-code-a/"
+"9780136083238/)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/how-guidelines-are-written.md:9

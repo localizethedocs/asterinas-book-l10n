@@ -99,8 +99,8 @@ msgstr ""
 
 #: src/osdk/guide/index.md:41
 msgid ""
-"About how to install Rust, you can refer to the [official site](https://www."
-"rust-lang.org/tools/install)."
+"About how to install Rust, you can refer to the [official site](https://"
+"www.rust-lang.org/tools/install)."
 msgstr ""
 "關於如何安裝 Rust，您可以參考[官方網站](https://www.rust-lang.org/tools/"
 "install)。"

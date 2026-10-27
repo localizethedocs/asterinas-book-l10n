@@ -50,12 +50,12 @@ msgstr ""
 #: src/ostd/soundness/safe-kernel-logic.md:28
 msgid ""
 "OSTD tracks atomic mode using guard types. [`DisabledPreemptGuard`](https://"
-"asterinas.github.io/api-docs/0.18.1/ostd/task/struct.DisabledPreemptGuard."
-"html) disables preemption for its lifetime, and [`DisabledLocalIrqGuard`]"
-"(https://asterinas.github.io/api-docs/0.18.1/ostd/irq/struct."
-"DisabledLocalIrqGuard.html) disables local IRQs (which also implies "
-"preemption is disabled). Both guards are `!Send` — they cannot be moved to "
-"another CPU, which would corrupt the CPU-local preemption state."
+"asterinas.github.io/api-docs/0.18.1/ostd/task/"
+"struct.DisabledPreemptGuard.html) disables preemption for its lifetime, and "
+"[`DisabledLocalIrqGuard`](https://asterinas.github.io/api-docs/0.18.1/ostd/"
+"irq/struct.DisabledLocalIrqGuard.html) disables local IRQs (which also "
+"implies preemption is disabled). Both guards are `!Send` — they cannot be "
+"moved to another CPU, which would corrupt the CPU-local preemption state."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:38
@@ -72,15 +72,15 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:47
 msgid ""
-"OSTD provides six synchronization primitives: [`SpinLock`](https://asterinas."
-"github.io/api-docs/0.18.1/ostd/sync/struct.SpinLock.html), [`Mutex`](https://"
-"asterinas.github.io/api-docs/0.18.1/ostd/sync/struct.Mutex.html), [`RwLock`]"
-"(https://asterinas.github.io/api-docs/0.18.1/ostd/sync/struct.RwLock.html), "
-"[`RwMutex`](https://asterinas.github.io/api-docs/0.18.1/ostd/sync/struct."
-"RwMutex.html), [`Rcu`](https://asterinas.github.io/api-docs/0.18.1/ostd/sync/"
-"struct.Rcu.html), and [`WaitQueue`](https://asterinas.github.io/api-"
-"docs/0.18.1/ostd/sync/struct.WaitQueue.html). Their soundness rests on two "
-"design principles:"
+"OSTD provides six synchronization primitives: [`SpinLock`](https://"
+"asterinas.github.io/api-docs/0.18.1/ostd/sync/struct.SpinLock.html), "
+"[`Mutex`](https://asterinas.github.io/api-docs/0.18.1/ostd/sync/"
+"struct.Mutex.html), [`RwLock`](https://asterinas.github.io/api-docs/0.18.1/"
+"ostd/sync/struct.RwLock.html), [`RwMutex`](https://asterinas.github.io/api-"
+"docs/0.18.1/ostd/sync/struct.RwMutex.html), [`Rcu`](https://"
+"asterinas.github.io/api-docs/0.18.1/ostd/sync/struct.Rcu.html), and "
+"[`WaitQueue`](https://asterinas.github.io/api-docs/0.18.1/ostd/sync/"
+"struct.WaitQueue.html). Their soundness rests on two design principles:"
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:51
@@ -94,23 +94,23 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:60
 msgid ""
-"**Principle 2: Atomic mode is entered before lock acquisition.** [`SpinLock::"
-"lock()`](https://asterinas.github.io/api-docs/0.18.1/ostd/sync/struct."
-"SpinLock.html#method.lock) disables preemption (or IRQs) _before_ entering "
-"the CAS loop. If the order were reversed (acquire lock, then disable "
-"preemption), there would be a window where the lock is held but preemption "
-"is still enabled — an interrupt could preempt the task, and if the interrupt "
-"handler tries to acquire the same lock, a deadlock results."
+"**Principle 2: Atomic mode is entered before lock acquisition.** "
+"[`SpinLock::lock()`](https://asterinas.github.io/api-docs/0.18.1/ostd/sync/"
+"struct.SpinLock.html#method.lock) disables preemption (or IRQs) _before_ "
+"entering the CAS loop. If the order were reversed (acquire lock, then "
+"disable preemption), there would be a window where the lock is held but "
+"preemption is still enabled — an interrupt could preempt the task, and if "
+"the interrupt handler tries to acquire the same lock, a deadlock results."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:70
 msgid ""
-"The kind of guard — preemption-only ([`PreemptDisabled`](https://asterinas."
-"github.io/api-docs/0.18.1/ostd/sync/enum.PreemptDisabled.html)) or IRQ-"
-"disabled ([`LocalIrqDisabled`](https://asterinas.github.io/api-docs/0.18.1/"
-"ostd/sync/enum.LocalIrqDisabled.html)) — is chosen at lock declaration time "
-"and statically enforced by the type system, ensuring consistent usage "
-"throughout the lock's lifetime."
+"The kind of guard — preemption-only ([`PreemptDisabled`](https://"
+"asterinas.github.io/api-docs/0.18.1/ostd/sync/enum.PreemptDisabled.html)) or "
+"IRQ-disabled ([`LocalIrqDisabled`](https://asterinas.github.io/api-docs/"
+"0.18.1/ostd/sync/enum.LocalIrqDisabled.html)) — is chosen at lock "
+"declaration time and statically enforced by the type system, ensuring "
+"consistent usage throughout the lock's lifetime."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:77
@@ -119,8 +119,8 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:79
 msgid ""
-"[`Rcu<P>`](https://asterinas.github.io/api-docs/0.18.1/ostd/sync/struct.Rcu."
-"html) provides lock-free read access with deferred reclamation:"
+"[`Rcu<P>`](https://asterinas.github.io/api-docs/0.18.1/ostd/sync/"
+"struct.Rcu.html) provides lock-free read access with deferred reclamation:"
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:81
@@ -172,8 +172,8 @@ msgstr ""
 msgid ""
 "**`cpu_local!` (static variables)**: Access requires a "
 "`DisabledLocalIrqGuard` via [`CpuLocal::get_with(&irq_guard)`](https://"
-"asterinas.github.io/api-docs/0.18.1/ostd/cpu/local/struct.CpuLocal."
-"html#method.get_with). This ensures two properties:"
+"asterinas.github.io/api-docs/0.18.1/ostd/cpu/local/"
+"struct.CpuLocal.html#method.get_with). This ensures two properties:"
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:113
@@ -188,10 +188,10 @@ msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:117
 msgid ""
-"For `Sync` types, [`CpuLocal::get_on_cpu(target_cpu)`](https://asterinas."
-"github.io/api-docs/0.18.1/ostd/cpu/local/struct.CpuLocal.html#method."
-"get_on_cpu) allows remote access without a guard (since `Sync` types are "
-"safe to share across threads)."
+"For `Sync` types, [`CpuLocal::get_on_cpu(target_cpu)`](https://"
+"asterinas.github.io/api-docs/0.18.1/ostd/cpu/local/"
+"struct.CpuLocal.html#method.get_on_cpu) allows remote access without a guard "
+"(since `Sync` types are safe to share across threads)."
 msgstr ""
 
 #: src/ostd/soundness/safe-kernel-logic.md:121

@@ -75,10 +75,10 @@ msgstr ""
 
 #: src/osdk/reference/commands/build.md:42
 msgid ""
-"These options can also be defined in the project's manifest named `OSDK."
-"toml`. Command line options are used to override or append values in `OSDK."
-"toml`. The allowed values for each option can be found in the [Manifest "
-"Documentation](../manifest.md)."
+"These options can also be defined in the project's manifest named "
+"`OSDK.toml`. Command line options are used to override or append values in "
+"`OSDK.toml`. The allowed values for each option can be found in the "
+"[Manifest Documentation](../manifest.md)."
 msgstr ""
 
 #: src/osdk/reference/commands/build.md:49

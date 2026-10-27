@@ -27,8 +27,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/error-handling.md:8
 msgid ""
-"Use the `?` operator to propagate errors idiomatically. In kernel code, `."
-"unwrap()` is rejected wherever failure is a legitimate possibility."
+"Use the `?` operator to propagate errors idiomatically. In kernel code, "
+"`.unwrap()` is rejected wherever failure is a legitimate possibility."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/select-topics/error-handling.md:15

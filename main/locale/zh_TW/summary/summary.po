@@ -33,11 +33,11 @@ msgstr "熱門應用程式"
 
 #: src/SUMMARY.md:9
 msgid "System Core"
-msgstr ""
+msgstr "系統核心"
 
 #: src/SUMMARY.md:10
 msgid "Nix and NixOS Tools"
-msgstr ""
+msgstr "Nix 和 NixOS 工具"
 
 #: src/SUMMARY.md:11
 msgid "Containerization and Virtualization"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/SUMMARY.md:15
 msgid "Development Tools"
-msgstr ""
+msgstr "開發工具"
 
 #: src/SUMMARY.md:16
 msgid "CI/CD & DevOps"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: src/SUMMARY.md:23
 msgid "File Management & Terminal"
-msgstr ""
+msgstr "檔案管理 & 終端"
 
 #: src/SUMMARY.md:24
 msgid "AI & Machine Learning"

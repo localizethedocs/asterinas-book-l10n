@@ -63,8 +63,8 @@ msgstr ""
 #: src/osdk/reference/commands/run.md:28
 msgid ""
 "Besides, to collect coverage data, we can use option `--coverage`. This "
-"option enables the coverage feature and collect coverage data to `coverage."
-"profraw` when exit."
+"option enables the coverage feature and collect coverage data to "
+"`coverage.profraw` when exit."
 msgstr ""
 
 #: src/osdk/reference/commands/run.md:31

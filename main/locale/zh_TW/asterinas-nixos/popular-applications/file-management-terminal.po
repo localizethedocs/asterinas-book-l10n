@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:1
 msgid "File Management & Terminal"
-msgstr ""
+msgstr "檔案管理 & 終端"
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:3
 msgid ""
@@ -484,7 +484,7 @@ msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:338
 msgid "Search & Filtering"
-msgstr ""
+msgstr "搜尋 & 篩選"
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:340
 msgid "eza"
@@ -624,7 +624,7 @@ msgstr ""
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:478
 msgid "Security & Backup"
-msgstr ""
+msgstr "安全性 & 備份"
 
 #: src/distro/popular-applications/file-management-and-terminal/index.md:480
 msgid "age"

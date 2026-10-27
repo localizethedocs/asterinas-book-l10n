@@ -36,8 +36,8 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/for-maintainability/comments.md:15
 msgid ""
 "See also: _The Art of Readable Code_, Chapter 6 \"Knowing What to Comment\"; "
-"PR [\\#2265](https://github.com/asterinas/asterinas/"
-"pull/2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
+"PR [\\#2265](https://github.com/asterinas/asterinas/pull/"
+"2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
 "asterinas/pull/2050#discussion_r2224106025)."
 msgstr ""
 
@@ -65,8 +65,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/comments.md:39
 msgid ""
-"See also: PR [\\#2265](https://github.com/asterinas/asterinas/"
-"pull/2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
+"See also: PR [\\#2265](https://github.com/asterinas/asterinas/pull/"
+"2265#discussion_r2266220943) and [\\#2050](https://github.com/asterinas/"
 "asterinas/pull/2050#discussion_r2224106025)."
 msgstr ""
 

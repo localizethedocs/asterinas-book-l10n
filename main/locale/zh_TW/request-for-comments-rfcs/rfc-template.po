@@ -25,11 +25,11 @@ msgstr ""
 
 #: src/rfcs/rfc-template.md:5
 msgid "Date submitted: YYYY-MM-DD"
-msgstr ""
+msgstr "提交日期：YYYY-MM-DD"
 
 #: src/rfcs/rfc-template.md:6
 msgid "Date approved: YYYY-MM-DD"
-msgstr ""
+msgstr "批准日期：YYYY-MM-DD"
 
 #: src/rfcs/rfc-template.md:8
 msgid "Summary"

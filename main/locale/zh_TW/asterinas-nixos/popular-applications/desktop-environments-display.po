@@ -23,11 +23,11 @@ msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:5
 msgid "Desktop Environments"
-msgstr ""
+msgstr "桌面環境"
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:7
 msgid "Xfce"
-msgstr ""
+msgstr "Xfce"
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:9
 msgid ""
@@ -110,7 +110,7 @@ msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:50
 msgid "Games:"
-msgstr ""
+msgstr "遊戲："
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:52
 msgid "`fairymax`: Chess"

@@ -23,8 +23,8 @@ msgstr "定義區段"
 msgid ""
 "To define built-in sections, such as the text section, it is preferable to "
 "use the short directive, e.g., `.text`. For other sections, the section "
-"directive with the desired flags and type should be used, e.g., `.section \"."
-"bsp_boot\", \"awx\", @progbits`."
+"directive with the desired flags and type should be used, e.g., `.section "
+"\".bsp_boot\", \"awx\", @progbits`."
 msgstr ""
 
 #: src/to-contribute/style-guidelines/asm-guidelines.md:11

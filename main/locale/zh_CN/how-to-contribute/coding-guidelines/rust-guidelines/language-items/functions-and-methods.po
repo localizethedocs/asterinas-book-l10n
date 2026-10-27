@@ -66,8 +66,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:32
 msgid ""
-"See also: PR [\\#2877](https://github.com/asterinas/asterinas/"
-"pull/2877#discussion_r2685861741)."
+"See also: PR [\\#2877](https://github.com/asterinas/asterinas/pull/"
+"2877#discussion_r2685861741)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:35
@@ -102,8 +102,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:67
 msgid ""
-"See also: _Clean Code_, Chapter 3 \"Functions\"; PR [\\#639](https://github."
-"com/asterinas/asterinas/pull/639#discussion_r1524629393)."
+"See also: _Clean Code_, Chapter 3 \"Functions\"; PR [\\#639](https://"
+"github.com/asterinas/asterinas/pull/639#discussion_r1524629393)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/functions-and-methods.md:71

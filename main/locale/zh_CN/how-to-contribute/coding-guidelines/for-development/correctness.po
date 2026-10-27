@@ -57,9 +57,9 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-development/correctness.md:40
 msgid ""
-"See also: [std::debug_assert!](https://doc.rust-lang.org/std/macro."
-"debug_assert.html) and [Rust Reference: `debug_assertions`](https://doc.rust-"
-"lang.org/reference/conditional-compilation.html#debug_assertions)."
+"See also: [std::debug_assert!](https://doc.rust-lang.org/std/"
+"macro.debug_assert.html) and [Rust Reference: `debug_assertions`](https://"
+"doc.rust-lang.org/reference/conditional-compilation.html#debug_assertions)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-development/correctness.md:44
@@ -68,8 +68,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-development/correctness.md:46
 msgid ""
-"Use the `?` operator to propagate errors idiomatically. In kernel code, `."
-"unwrap()` is rejected wherever failure is a legitimate possibility."
+"Use the `?` operator to propagate errors idiomatically. In kernel code, "
+"`.unwrap()` is rejected wherever failure is a legitimate possibility."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-development/correctness.md:53

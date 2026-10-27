@@ -19,8 +19,8 @@ msgstr ""
 msgid ""
 "This page covers language-agnostic testing conventions. For Rust-specific "
 "assertion policy (`assert!` vs `debug_assert!`), see [Rust Guidelines — "
-"Defensive Programming](rust-guidelines/select-topics/defensive-programming."
-"md)."
+"Defensive Programming](rust-guidelines/select-topics/defensive-"
+"programming.md)."
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/testing-guidelines.md:7

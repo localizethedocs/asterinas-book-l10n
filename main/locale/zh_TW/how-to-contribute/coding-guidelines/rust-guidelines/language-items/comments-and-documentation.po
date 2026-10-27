@@ -37,9 +37,9 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:13
 msgid ""
-"The Rust RFC book: [API Documentation Conventions](https://rust-lang.github."
-"io/rfcs/1574-more-api-documentation-conventions.html#appendix-a-full-"
-"conventions-text)"
+"The Rust RFC book: [API Documentation Conventions](https://rust-"
+"lang.github.io/rfcs/1574-more-api-documentation-conventions.html#appendix-a-"
+"full-conventions-text)"
 msgstr ""
 
 #: src/to-contribute/coding-guidelines/rust-guidelines/language-items/comments-and-documentation.md:16

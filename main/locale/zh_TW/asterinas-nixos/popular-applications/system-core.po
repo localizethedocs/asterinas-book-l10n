@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:1
 msgid "System Core"
-msgstr ""
+msgstr "系統核心"
 
 #: src/distro/popular-applications/system-core/index.md:3
 msgid ""
@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:7
 msgid "Bash"
-msgstr ""
+msgstr "Bash"
 
 #: src/distro/popular-applications/system-core/index.md:9
 msgid ""
@@ -113,7 +113,7 @@ msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:60
 msgid "BusyBox"
-msgstr ""
+msgstr "BusyBox"
 
 #: src/distro/popular-applications/system-core/index.md:62
 msgid ""

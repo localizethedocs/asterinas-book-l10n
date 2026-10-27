@@ -3755,14 +3755,14 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:398
 msgid ""
-"[Multiboot](https://www.gnu.org/software/grub/manual/multiboot/multiboot."
-"html)"
+"[Multiboot](https://www.gnu.org/software/grub/manual/multiboot/"
+"multiboot.html)"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:399
 msgid ""
-"[Multiboot2](https://www.gnu.org/software/grub/manual/multiboot2/multiboot."
-"html)"
+"[Multiboot2](https://www.gnu.org/software/grub/manual/multiboot2/"
+"multiboot.html)"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:400
@@ -3777,12 +3777,12 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:402
 msgid ""
-"[Linux EFI handover](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
-"html#efi-handover-protocol-deprecated)"
+"[Linux EFI handover](https://www.kernel.org/doc/html/v6.19/arch/x86/"
+"boot.html#efi-handover-protocol-deprecated)"
 msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:403
 msgid ""
-"[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/boot."
-"html#pe-coff-entry-point)"
+"[PE/COFF entry point](https://www.kernel.org/doc/html/v6.19/arch/x86/"
+"boot.html#pe-coff-entry-point)"
 msgstr ""

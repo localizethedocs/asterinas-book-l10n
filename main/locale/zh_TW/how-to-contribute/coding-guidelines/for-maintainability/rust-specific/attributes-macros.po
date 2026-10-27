@@ -101,8 +101,8 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/attributes-and-macros.md:63
 msgid ""
-"See also: PR [\\#3080](https://github.com/asterinas/asterinas/"
-"pull/3080#discussion_r3031834321) (motivating discussion) and PR [\\#2898]"
+"See also: PR [\\#3080](https://github.com/asterinas/asterinas/pull/"
+"3080#discussion_r3031834321) (motivating discussion) and PR [\\#2898]"
 "(https://github.com/asterinas/asterinas/pull/2898#discussion_r2763969731) "
 "(earlier ad-hoc ordering choice)."
 msgstr ""
