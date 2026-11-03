@@ -681,7 +681,7 @@ msgstr ""
 
 #: src/distro/popular-applications/system-core/index.md:507
 msgid "# System calls\n"
-msgstr ""
+msgstr "# 系統呼叫\n"
 
 #: src/distro/popular-applications/system-core/index.md:508
 msgid "# Library functions\n"

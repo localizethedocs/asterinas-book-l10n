@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/index.md:15
 msgid "System calls"
-msgstr ""
+msgstr "系統呼叫"
 
 #: src/kernel/linux-compatibility/index.md:17
 msgid ""

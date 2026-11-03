@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/distro/popular-applications/web-browsers/index.md:1
 msgid "Web Browsers"
-msgstr ""
+msgstr "網頁瀏覽器"
 
 #: src/distro/popular-applications/web-browsers/index.md:3
 msgid "This category covers web browsers."
@@ -21,15 +21,15 @@ msgstr ""
 
 #: src/distro/popular-applications/web-browsers/index.md:5
 msgid "Browsers"
-msgstr ""
+msgstr "瀏覽器"
 
 #: src/distro/popular-applications/web-browsers/index.md:7
 msgid "Firefox"
-msgstr ""
+msgstr "Firefox"
 
 #: src/distro/popular-applications/web-browsers/index.md:9
 msgid "[Firefox](https://www.mozilla.org/firefox/) is a graphical web browser."
-msgstr ""
+msgstr "[Firefox](https://www.mozilla.org/firefox/) 是一款圖形化網頁瀏覽器。"
 
 #: src/distro/popular-applications/web-browsers/index.md:11
 #: src/distro/popular-applications/web-browsers/index.md:37
@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/distro/popular-applications/web-browsers/index.md:33
 msgid "Links2"
-msgstr ""
+msgstr "Links2"
 
 #: src/distro/popular-applications/web-browsers/index.md:35
 msgid ""
@@ -66,7 +66,7 @@ msgstr ""
 
 #: src/distro/popular-applications/web-browsers/index.md:46
 msgid "# Open a website\n"
-msgstr ""
+msgstr "# 開啟網站\n"
 
 #: src/distro/popular-applications/web-browsers/index.md:48
 #: src/distro/popular-applications/web-browsers/index.md:68

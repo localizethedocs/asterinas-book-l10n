@@ -147,7 +147,7 @@ msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:95
 msgid "For example:"
-msgstr ""
+msgstr "例如："
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/system-call-matching-language.md:101
 msgid ""

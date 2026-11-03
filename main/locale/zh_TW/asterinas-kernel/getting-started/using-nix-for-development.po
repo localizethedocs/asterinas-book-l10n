@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/kernel/nix-development.md:1
 msgid "Using Nix for Development"
-msgstr ""
+msgstr "使用 Nix 進行開發"
 
 #: src/kernel/nix-development.md:3
 msgid ""

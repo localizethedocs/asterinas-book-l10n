@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/SUMMARY.md:19
 msgid "Web Browsers"
-msgstr ""
+msgstr "網頁瀏覽器"
 
 #: src/SUMMARY.md:20
 msgid "Office & Productivity"
@@ -101,7 +101,7 @@ msgstr "Asterinas 內核"
 
 #: src/SUMMARY.md:29
 msgid "Using Nix for Development"
-msgstr ""
+msgstr "使用 Nix 進行開發"
 
 #: src/SUMMARY.md:30
 msgid "Advanced Build and Test Instructions"
@@ -329,7 +329,7 @@ msgstr ""
 
 #: src/SUMMARY.md:93
 msgid "For Maintainability"
-msgstr ""
+msgstr "可維護性專區"
 
 #: src/SUMMARY.md:94
 msgid "Design"
@@ -373,7 +373,7 @@ msgstr ""
 
 #: src/SUMMARY.md:106
 msgid "For Development"
-msgstr ""
+msgstr "開發專區"
 
 #: src/SUMMARY.md:107
 msgid "Correctness"
@@ -401,7 +401,7 @@ msgstr ""
 
 #: src/SUMMARY.md:113
 msgid "For Security"
-msgstr ""
+msgstr "安全性專區"
 
 #: src/SUMMARY.md:114
 msgid "Memory Safety"
@@ -413,7 +413,7 @@ msgstr ""
 
 #: src/SUMMARY.md:116
 msgid "For Hardware"
-msgstr ""
+msgstr "硬體專區"
 
 #: src/SUMMARY.md:117
 msgid "Assembly Conventions"
@@ -429,7 +429,7 @@ msgstr "x86-64"
 
 #: src/SUMMARY.md:120
 msgid "For Documentation"
-msgstr ""
+msgstr "文件專區"
 
 #: src/SUMMARY.md:121
 msgid "General Style"
