@@ -1,0 +1,205 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-06-30T12:05:12Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/index.md:1
+msgid "Coding Guidelines"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:3
+msgid ""
+"This section describes coding and collaboration conventions for the "
+"Asterinas project. These guidelines aim to keep code clear, consistent, "
+"maintainable, correct, and efficient."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:6
+msgid ""
+"These guidelines set the same standard for both **writing** code and "
+"**reviewing** it. They are organized by **persona**: five durable "
+"engineering roles, each a page that doubles as that persona's checklist."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:11
+msgid ""
+"See [How Guidelines Are Written](how-guidelines-are-written.md) for the "
+"philosophy and the bar every guideline must meet (concrete, concise, "
+"grounded, relevant)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:14
+msgid "The Five Personas"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:16
+msgid ""
+"In a kernel-development team, engineers largely divide into five roles, or "
+"_personas_, each with its own area of expertise and its own focus:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:20
+msgid "Persona"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:20
+msgid "Focus"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:20
+msgid "Guidelines"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:22
+msgid "Project maintainer"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:22
+msgid "Is the code well-shaped and understandable?"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:22
+msgid "[For Maintainability](for-maintainability/)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:23
+msgid "Kernel developer"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:23
+msgid "Is it correct and efficient?"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:23
+msgid "[For Development](for-development/)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:24
+msgid "Security expert"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:24
+msgid "Is it safe and secure?"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:24
+msgid "[For Security](for-security/)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:25
+msgid "Hardware expert"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:25
+msgid "Is it correct against the hardware contract?"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:25
+msgid "[For Hardware](for-hardware/)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:26
+msgid "Documentation writer"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:26
+msgid "Are the user-facing docs well-written?"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:26
+msgid "[For Documentation](for-documentation/)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:28
+msgid ""
+"Each persona page opens with an index (the third column of the table above) "
+"for its guidelines so a reader (or a review tool) can grasp the gist of a "
+"guideline, reading the full text only when needed."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:32
+msgid "Where a Guideline Belongs"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:34
+msgid ""
+"A guideline belongs to the persona that is the **natural owner of the "
+"failure it prevents** — the one who guards against it when writing and "
+"catches it when reviewing, and whose context holds the evidence to judge a "
+"violation."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:39
+msgid ""
+"Some failure modes look interesting to two personas at once. The boundaries "
+"that come up most, and how to draw them:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:42
+msgid ""
+"**Project maintainer vs. kernel developer.** Ask whether the concern is a "
+"matter of _judgment_ or of _objective correctness_. Shape, naming, and "
+"design are judgment calls the **maintainer** owns; a logic error or a broken "
+"invariant is an objective defect any **developer** can point to undeniably."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:46
+msgid ""
+"**Kernel developer vs. security expert.** A logic or concurrency bug is the "
+"**developer**'s when it is merely _wrong_, and the **security expert**'s "
+"when an adversary can _exploit_ it. Any `unsafe`\\-soundness or untrusted-"
+"input guidelines always belong to the security expert."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:50
+msgid ""
+"**Kernel developer vs. documentation writer.** Ask whether the failure is in "
+"the _code_ or in the _documentation about the code_. A user-facing page or "
+"coverage file (e.g., `README.md`) that no longer matches the code — drifted, "
+"missing, or misleading — is the **documentation writer**'s."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:55
+msgid ""
+"**Project maintainer vs. documentation writer.** In-code comments and "
+"rustdoc are written _for the next maintainer or developer_, so they belong "
+"to the **maintainer**; the **documentation writer** owns standalone, user-"
+"facing artifacts such as the book and the syscall coverage files. Same "
+"medium — prose — but a different reader whose failure it is."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:61
+msgid "Adding a Guideline"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:63
+msgid ""
+"Find the persona that owns the failure your guideline prevents (the [test "
+"above](#where-a-guideline-belongs)), and add it to the matching subsection "
+"of that persona's page, with an entry in the page's Index."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:66
+msgid ""
+"**Language- and path-specific guidelines are not new top-level categories** "
+"— they live inside the owning persona. Rust-specific guidance goes in the "
+"persona's **Rust-Specific** subsection, grouped by language item, and each "
+"persona reserves a **Path-Specific** slot for guidelines scoped to one "
+"repository path — a sub-project (such as `ostd`), an architecture directory, "
+"or a kernel subsystem. For example, the Linux-compatibility doc guideline "
+"lives under For Documentation → Path-Specific → `kernel/`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/index.md:72
+msgid ""
+"Keep a guideline's kebab-case **short-name** stable once published; links "
+"point at it."
+msgstr ""
