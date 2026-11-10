@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
+"POT-Creation-Date: 2026-11-03T16:23:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -107,4 +107,82 @@ msgstr ""
 
 #: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:92
 msgid "// Bad — public field exposes representation\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:99
+msgid ""
+"Define bit flags types outside the macro for custom derives (`bitflags-"
+"derives`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:101
+msgid ""
+"When a bit flags type needs a custom derive that `bitflags` does not "
+"natively support, define an integer wrapper outside `bitflags!` and use the "
+"macro's `impl` syntax to generate the flags API."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:107
+msgid "/// Device status flags serialized in a reply.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:120
+msgid ""
+"See also: [`bitflags` custom derives](https://docs.rs/bitflags/2.13.0/"
+"bitflags/#custom-derives) and issue [\\#4120](https://github.com/asterinas/"
+"asterinas/issues/4120)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:124
+msgid "Keep bit flags declarations consistent (`bitflags-layout`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:126
+msgid ""
+"Use spaces to align the `=` signs and values within each flags type, "
+"including unnamed masks."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:129
+msgid ""
+"Within each flags type, use either bit shifts or numeric literals "
+"consistently. Zero values and unnamed masks are exempt, as are composite "
+"expressions and references to other flags."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:135
+msgid "/// Access permissions for a mapping.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:147
+msgid "Declare the bits that `bitflags` must retain (`bitflags-retained-bits`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:149
+msgid ""
+"In a `bitflags!` declaration, use an unnamed mask for uninterpreted bits "
+"that must be retained: use `const _ = !0;` for all bits, or a narrower mask "
+"for a subset. Explain which bit patterns the type accepts next to the mask."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:155
+msgid "/// A register snapshot used for read-modify-write updates.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:160
+msgid ""
+"// This type accepts all bit patterns,\n"
+"        // although only some flags are recognized.\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:167
+msgid ""
+"With `const _ = !0`, `from_bits` accepts every bit pattern, so callers must "
+"check supported options separately when required."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/rust-specific/types-and-traits.md:170
+msgid ""
+"See also: [`bitflags` externally defined flags](https://docs.rs/bitflags/"
+"2.13.0/bitflags/#externally-defined-flags)."
 msgstr ""

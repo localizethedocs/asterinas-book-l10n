@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-11-03T16:23:38Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,109 +41,203 @@ msgid "Installation"
 msgstr "安装"
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:13
-msgid "Add the following lines to the `configuration.nix` file:"
-msgstr "将以下行添加到 `configuration.nix` 文件："
+msgid ""
+"To enable the Xfce desktop, add the following settings to "
+"`configuration.nix` before building the installation image:"
+msgstr ""
 
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:27
-msgid "Verified Backends"
-msgstr "已验证的后端"
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:21
+msgid ""
+"**Note:** Enable Xfce during the initial installation of Asterinas NixOS. "
+"Applying configuration changes through `nixos-rebuild` is not supported yet."
+msgstr ""
 
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:29
-msgid "Display server:"
-msgstr "显示服务器："
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:23
+msgid ""
+"To include additional [verified GUI applications](#verified-gui-"
+"applications), add their package names to `environment.systemPackages` in "
+"the same file."
+msgstr ""
 
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:30
-msgid "Xorg display server"
-msgstr "Xorg 显示服务器"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:31
-msgid "Graphics drivers:"
-msgstr "图形驱动："
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:32
-msgid "Standard UEFI VGA framebuffer"
-msgstr "标准 UEFI VGA framebuffer"
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:25
+msgid "For example, to install galculator:"
+msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:34
-msgid "Verified Functionality"
-msgstr "已验证功能"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:36
-msgid "Changing desktop wallpapers and background settings"
-msgstr "更改桌面壁纸和背景设置"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:37
-msgid "Adjusting font size, style, and system theme"
-msgstr "调整字体大小、风格和系统主题"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:38
-msgid "Creating application shortcuts and desktop launchers"
-msgstr "创建应用程序快捷方式和桌面启动器"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:39
-msgid "Managing panels and window behavior"
-msgstr "管理面板和窗口行为"
+msgid "Improving Desktop Responsiveness"
+msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:40
-msgid "Using the settings manager and file browser"
-msgstr "使用设置管理器和文件浏览器"
+msgid ""
+"The current graphics stack relies on the CPU for rendering and display "
+"updates."
+msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:42
-msgid "Verified GUI Applications"
-msgstr "已验证的 GUI 应用程序"
+msgid ""
+"Giving the VM more virtual CPUs (vCPUs) can improve desktop responsiveness "
+"by allowing graphics work and other tasks to run concurrently."
+msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:44
-msgid "Utilities:"
-msgstr "实用工具："
+msgid ""
+"For end users, add `-smp 4` to the QEMU boot command in the [Getting Started "
+"guide](../../#end-users)."
+msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:46
-msgid "`galculator`: Calculator"
-msgstr "`galculator`：计算器"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:47
-msgid "`mousepad`: The default Xfce text editor"
-msgstr "`mousepad`: 默认 Xfce 文本编辑器"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:48
-msgid "`mupdf`: A lightweight PDF and XPS viewer"
-msgstr "`mupf`: 轻量的 PDF 和 XPS 查看器"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:50
-msgid "Games:"
-msgstr "游戏："
+msgid "For example, replace its CPU and memory options with:"
+msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:52
-msgid "`fairymax`: Chess"
-msgstr "`fairymax`: 国际象棋"
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:53
-msgid "`five-or-more`: GNOME alignment game"
-msgstr ""
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:54
-msgid "`lbreakout2`: Breakout/Arkanoid clone"
-msgstr ""
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:55
-msgid "`gnome-chess`: GNOME chess"
-msgstr ""
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:56
-msgid "`gnome-mines`: Minesweeper"
-msgstr ""
-
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:57
-msgid "`gnome-sudoku`: GNOME sudoku"
+msgid ""
+"For kernel developers, set `SMP` (symmetric multiprocessing) to the desired "
+"vCPU count when starting the VM:"
 msgstr ""
 
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:58
+msgid "Verified Backends"
+msgstr "已验证的后端"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:60
+msgid "Display server:"
+msgstr "显示服务器："
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:61
+msgid "Xorg display server with the `modesetting` driver over DRM/KMS"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:62
+msgid "Graphics stack:"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:63
+msgid "`simpledrm` over the standard UEFI framebuffer"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:64
+msgid "Mesa software rendering through GLX"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:66
+msgid "Verified Functionality"
+msgstr "已验证功能"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:68
+msgid "Changing desktop wallpapers and background settings"
+msgstr "更改桌面壁纸和背景设置"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:69
+msgid "Adjusting font size, style, and system theme"
+msgstr "调整字体大小、风格和系统主题"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:70
+msgid "Creating application shortcuts and desktop launchers"
+msgstr "创建应用程序快捷方式和桌面启动器"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:71
+msgid "Managing panels and window behavior"
+msgstr "管理面板和窗口行为"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:72
+msgid "Using the settings manager and file browser"
+msgstr "使用设置管理器和文件浏览器"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:74
+msgid "Verified GUI Applications"
+msgstr "已验证的 GUI 应用程序"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:76
+msgid ""
+"After starting the Xfce desktop, find installed applications in the "
+"Applications menu and click an application's entry to launch it."
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:78
+msgid ""
+"Included with Xfce (no separate entry in `environment.systemPackages` is "
+"needed):"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:80
+msgid "`mousepad`: Text editor"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:82
+msgid "Utilities:"
+msgstr "实用工具："
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:84
+msgid "`galculator`: Calculator"
+msgstr "`galculator`：计算器"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:85
+msgid "`mupdf`: A lightweight PDF and XPS viewer"
+msgstr "`mupf`: 轻量的 PDF 和 XPS 查看器"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:87
+msgid "Games:"
+msgstr "游戏："
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:89
+msgid "`fairymax`: Chess"
+msgstr "`fairymax`: 国际象棋"
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:90
+msgid "`five-or-more`: GNOME alignment game"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:91
+msgid "`lbreakout2`: Breakout/Arkanoid clone"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:92
+msgid "`gnome-chess`: GNOME chess"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:93
+msgid "`gnome-mines`: Minesweeper"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:94
+msgid "`gnome-sudoku`: GNOME sudoku"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:95
 msgid "`tali`: GNOME dice game"
 msgstr ""
 
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:59
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:96
 msgid "`xboard`: Chess"
 msgstr ""
 
-#: src/distro/popular-applications/desktop-environments-and-display/index.md:60
-msgid "`xgalaga`: Galaga-style arcade game"
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:98
+msgid "3D Games:"
 msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:100
+msgid "`openarena`: First-person arena shooter"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:101
+msgid "`supertuxkart`: Kart racing game"
+msgstr ""
+
+#: src/distro/popular-applications/desktop-environments-and-display/index.md:102
+msgid "`neverball`: Tilt-controlled ball rolling game"
+msgstr ""
+
+#~ msgid "Add the following lines to the `configuration.nix` file:"
+#~ msgstr "将以下行添加到 `configuration.nix` 文件："
+
+#~ msgid "Xorg display server"
+#~ msgstr "Xorg 显示服务器"
+
+#~ msgid "Graphics drivers:"
+#~ msgstr "图形驱动："
+
+#~ msgid "Standard UEFI VGA framebuffer"
+#~ msgstr "标准 UEFI VGA framebuffer"
+
+#~ msgid "`mousepad`: The default Xfce text editor"
+#~ msgstr "`mousepad`: 默认 Xfce 文本编辑器"

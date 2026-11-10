@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-09-22T13:56:37Z\n"
+"POT-Creation-Date: 2026-11-03T16:23:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -117,36 +117,26 @@ msgstr ""
 "///（例如，栈、堆、任务）将准备就绪\n"
 "/// 标记为`#[ostd::main]`的入口函数将被调用。\n"
 
-#: src/ostd/a-100-line-kernel.md:76
-msgid "\"../hello\""
-msgstr ""
-
-#: src/ostd/a-100-line-kernel.md:89
+#: src/ostd/a-100-line-kernel.md:88
 msgid ""
 "// Physical memory pages can be only accessed\n"
 "        // via the `UFrame` or `USegment` abstraction.\n"
 msgstr "// 物理内存页只能通过 `UFrame` 或 `USegment` 抽象来访问。\n"
 
-#: src/ostd/a-100-line-kernel.md:95
+#: src/ostd/a-100-line-kernel.md:94
 msgid ""
 "// The page table of the user space can be\n"
 "    // created and manipulated safely through\n"
 "    // the `VmSpace` abstraction.\n"
 msgstr "// 用户空间的页表可以通过 `VmSpace` 抽象安全地创建和操作。\n"
 
-#: src/ostd/a-100-line-kernel.md:99
-msgid "// The map addr for statically-linked executable\n"
-msgstr "// 静态链接可执行文件的映射地址\n"
-
-#: src/ostd/a-100-line-kernel.md:115
+#: src/ostd/a-100-line-kernel.md:113
 msgid ""
 "// Switching between user-kernel space is\n"
-"        // performed via the UserMode abstraction.\n"
+"        // performed via the `UserMode` abstraction.\n"
 msgstr ""
-"// 用户空间和内核空间之间的切换是\n"
-"        // 通过 UserMode 抽象来执行的。\n"
 
-#: src/ostd/a-100-line-kernel.md:123
+#: src/ostd/a-100-line-kernel.md:121
 msgid ""
 "// The execute method returns when system\n"
 "            // calls or CPU exceptions occur or some\n"
@@ -156,7 +146,7 @@ msgstr ""
 "            // 或者内核指定的某些事件发生时，\n"
 "            // execute方法返回。\n"
 
-#: src/ostd/a-100-line-kernel.md:128
+#: src/ostd/a-100-line-kernel.md:126
 msgid ""
 "// The CPU registers of the user space\n"
 "            // can be accessed and manipulated via\n"
@@ -165,31 +155,25 @@ msgstr ""
 "// 用户空间的 CPU 寄存器\n"
 "             // 可以通过 `UserContext` 抽象进行访问和操作。\n"
 
-#: src/ostd/a-100-line-kernel.md:139
+#: src/ostd/a-100-line-kernel.md:137
 msgid ""
-"// Kernel tasks are managed by the Framework,\n"
+"// Kernel tasks are managed by OSTD,\n"
 "    // while scheduling algorithms for them can be\n"
-"    // determined by the users of the Framework.\n"
+"    // determined by the users of OSTD.\n"
 msgstr ""
-"// 内核任务由框架管理，\n"
-"    // 而这些任务的调度算法可由框架用户确定。\n"
 
-#: src/ostd/a-100-line-kernel.md:146
+#: src/ostd/a-100-line-kernel.md:144
 msgid ""
 "// The user-space CPU states can be initialized\n"
 "    // to arbitrary values via the `UserContext`\n"
 "    // abstraction.\n"
 msgstr "// 用户空间的 CPU 状态可以通过 `UserContext` 抽象初始化为任意值。\n"
 
-#: src/ostd/a-100-line-kernel.md:150
-msgid "// The entry point for statically-linked executable\n"
-msgstr "// 静态链接可执行文件的入口点\n"
-
-#: src/ostd/a-100-line-kernel.md:161
+#: src/ostd/a-100-line-kernel.md:158
 msgid "// Access the user-space CPU registers safely.\n"
 msgstr "// 安全访问用户空间 CPU 寄存器。\n"
 
-#: src/ostd/a-100-line-kernel.md:166
+#: src/ostd/a-100-line-kernel.md:163
 msgid ""
 "// Copy data from the user space without\n"
 "                // unsafe pointer dereferencing.\n"
@@ -197,14 +181,51 @@ msgstr ""
 "// 从用户空间复制数据，避免\n"
 "                // 不安全的指针解引用。\n"
 
-#: src/ostd/a-100-line-kernel.md:174
+#: src/ostd/a-100-line-kernel.md:171
 msgid "// Use the console for output safely.\n"
 msgstr "// 安全地使用控制台进行输出。\n"
 
-#: src/ostd/a-100-line-kernel.md:175
+#: src/ostd/a-100-line-kernel.md:172
 msgid "\"{}\""
 msgstr ""
 
-#: src/ostd/a-100-line-kernel.md:176
+#: src/ostd/a-100-line-kernel.md:173
 msgid "// Manipulate the user-space CPU registers safely.\n"
 msgstr "// 安全地操作用户空间的 CPU 寄存器。\n"
+
+#: src/ostd/a-100-line-kernel.md:181
+msgid "\"../hello\""
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:181
+msgid "// A statically-linked executable.\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:182
+msgid "// The mapping address for the executable.\n"
+msgstr ""
+
+#: src/ostd/a-100-line-kernel.md:183
+msgid "// The entry point for the executable.\n"
+msgstr ""
+
+#~ msgid "// The map addr for statically-linked executable\n"
+#~ msgstr "// 静态链接可执行文件的映射地址\n"
+
+#~ msgid ""
+#~ "// Switching between user-kernel space is\n"
+#~ "        // performed via the UserMode abstraction.\n"
+#~ msgstr ""
+#~ "// 用户空间和内核空间之间的切换是\n"
+#~ "        // 通过 UserMode 抽象来执行的。\n"
+
+#~ msgid ""
+#~ "// Kernel tasks are managed by the Framework,\n"
+#~ "    // while scheduling algorithms for them can be\n"
+#~ "    // determined by the users of the Framework.\n"
+#~ msgstr ""
+#~ "// 内核任务由框架管理，\n"
+#~ "    // 而这些任务的调度算法可由框架用户确定。\n"
+
+#~ msgid "// The entry point for statically-linked executable\n"
+#~ msgstr "// 静态链接可执行文件的入口点\n"
