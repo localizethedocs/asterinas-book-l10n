@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-04-07T10:04:02Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ostd/soundness/index.md:1
+msgid "Soundness Analysis"
+msgstr "可靠性分析"
+
+#: src/ostd/soundness/index.md:3
+msgid ""
+"OSTD is the privileged OS framework — the memory-safety Trusted Computing "
+"Base (TCB) — of the Asterinas framekernel OS. OSTD is **privileged** because "
+"it is the **only** crate in the entire Asterinas codebase that is permitted "
+"to use `unsafe` Rust. Every other crate, including the full kernel (`kernel/"
+"`), enforces `#![deny(unsafe_code)]`."
+msgstr ""
+
+#: src/ostd/soundness/index.md:11
+msgid ""
+"The privilege boundary in an OSTD-based framekernel is OSTD's **public safe "
+"API surface**: every `pub` function, type, and trait that OSTD exposes. This "
+"document demonstrates that OSTD is **sound**: its `unsafe` code does not "
+"introduce undefined behavior (UB), regardless of how the rest of the system "
+"behaves."
+msgstr ""
+
+#: src/ostd/soundness/index.md:18
+msgid "Outline"
+msgstr ""
+
+#: src/ostd/soundness/index.md:20
+msgid ""
+"This section presents a systematic argument for the soundness of OSTD. The "
+"argument proceeds as follows. We first define exactly [what soundness means]"
+"(what-soundness-means.md) in an OS context and identify the threat model. We "
+"then explain the systematic principle OSTD uses to decide which resources "
+"require protection: [the sensitivity classification](sensitivity-"
+"classification.md), which partitions CPU, memory, and device resources into "
+"sensitive (kept inside OSTD) and insensitive (safely exposed) categories. "
+"This principle motivates every design decision in the sections that follow."
+msgstr ""
+
+#: src/ostd/soundness/index.md:30
+msgid ""
+"With the threat model and classification in hand, we address each attack "
+"surface in turn. The most fundamental is physical memory: if a client could "
+"obtain two mutable views of the same memory, or write to memory hosting Rust "
+"objects, all other guarantees collapse. [Safe Physical Memory Management]"
+"(safe-memory-management.md) presents the typed/untyped memory model — the "
+"cornerstone of OSTD's soundness — and argues that the frame lifecycle, "
+"reference counting, and metadata system prevent these violations. Building "
+"on this memory foundation, [Safe User-Kernel Interactions](safe-user-kernel-"
+"interactions.md) shows that user-space programs cannot corrupt kernel memory "
+"(because only untyped frames are mapped into user space) and that the user-"
+"kernel transition preserves CPU state integrity. [Safe Kernel-Peripheral "
+"Interactions](safe-kernel-peripheral-interactions.md) closes the device "
+"boundary: IOMMU DMA remapping restricts devices to untyped memory, interrupt "
+"remapping prevents interrupt spoofing, and I/O access control hides "
+"sensitive hardware registers."
+msgstr ""
+
+#: src/ostd/soundness/index.md:51
+msgid ""
+"The remaining sections address threats that arise from within kernel-mode "
+"safe Rust code itself. [Safe Kernel Logic](safe-kernel-logic.md) "
+"demonstrates that OSTD's synchronization primitives, preemption control, and "
+"CPU-local storage cannot be misused by clients to cause data races or "
+"deadlocks that lead to UB. [Safe Policy Injection](safe-policy-injection.md) "
+"shows that even the large, complex policy components injected into OSTD "
+"(scheduler, frame allocator, slab allocator) cannot violate soundness "
+"regardless of their behavior, because OSTD validates their outputs "
+"independently."
+msgstr ""
+
+#: src/ostd/soundness/index.md:62
+msgid "Together, these sections cover all major UB risks of OSTD."
+msgstr ""
