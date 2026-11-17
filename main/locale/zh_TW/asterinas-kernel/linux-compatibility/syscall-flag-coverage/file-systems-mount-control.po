@@ -398,15 +398,3 @@ msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man7/inotify.7.html)."
 msgstr ""
-
-#~ msgid "Unsupported mount flags:"
-#~ msgstr "未支援的掛載旗標："
-
-#~ msgid "`MS_SHARED`"
-#~ msgstr "`MS_SHARED`"
-
-#~ msgid "`MS_SLAVE`"
-#~ msgstr "`MS_SLAVE`"
-
-#~ msgid "`MS_UNBINDABLE`"
-#~ msgstr "`MS_UNBINDABLE`"

@@ -226,18 +226,3 @@ msgstr ""
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:102
 msgid "`neverball`: Tilt-controlled ball rolling game"
 msgstr ""
-
-#~ msgid "Add the following lines to the `configuration.nix` file:"
-#~ msgstr "将以下行添加到 `configuration.nix` 文件："
-
-#~ msgid "Xorg display server"
-#~ msgstr "Xorg 显示服务器"
-
-#~ msgid "Graphics drivers:"
-#~ msgstr "图形驱动："
-
-#~ msgid "Standard UEFI VGA framebuffer"
-#~ msgstr "标准 UEFI VGA framebuffer"
-
-#~ msgid "`mousepad`: The default Xfce text editor"
-#~ msgstr "`mousepad`: 默认 Xfce 文本编辑器"

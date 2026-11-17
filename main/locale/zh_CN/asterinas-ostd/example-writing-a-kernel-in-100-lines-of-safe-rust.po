@@ -208,24 +208,3 @@ msgstr ""
 #: src/ostd/a-100-line-kernel.md:183
 msgid "// The entry point for the executable.\n"
 msgstr ""
-
-#~ msgid "// The map addr for statically-linked executable\n"
-#~ msgstr "// 静态链接可执行文件的映射地址\n"
-
-#~ msgid ""
-#~ "// Switching between user-kernel space is\n"
-#~ "        // performed via the UserMode abstraction.\n"
-#~ msgstr ""
-#~ "// 用户空间和内核空间之间的切换是\n"
-#~ "        // 通过 UserMode 抽象来执行的。\n"
-
-#~ msgid ""
-#~ "// Kernel tasks are managed by the Framework,\n"
-#~ "    // while scheduling algorithms for them can be\n"
-#~ "    // determined by the users of the Framework.\n"
-#~ msgstr ""
-#~ "// 内核任务由框架管理，\n"
-#~ "    // 而这些任务的调度算法可由框架用户确定。\n"
-
-#~ msgid "// The entry point for statically-linked executable\n"
-#~ msgstr "// 静态链接可执行文件的入口点\n"

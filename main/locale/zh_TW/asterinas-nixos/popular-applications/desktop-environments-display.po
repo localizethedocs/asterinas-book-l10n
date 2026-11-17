@@ -226,9 +226,3 @@ msgstr ""
 #: src/distro/popular-applications/desktop-environments-and-display/index.md:102
 msgid "`neverball`: Tilt-controlled ball rolling game"
 msgstr ""
-
-#~ msgid "Xorg display server"
-#~ msgstr "Xorg 顯示伺服器"
-
-#~ msgid "`mousepad`: The default Xfce text editor"
-#~ msgstr "`mousepad`：預設的 Xfce 文字編輯器"
