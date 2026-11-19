@@ -267,6 +267,7 @@ execute_process(
             ${CRATE_OF_MDBOOK}
             ${CRATE_OF_MDBOOK_I18N_HELPERS}
             ${CRATE_OF_MDBOOK_MERMAID}
+            --locked
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
     RESULT_VARIABLE RES_VAR
