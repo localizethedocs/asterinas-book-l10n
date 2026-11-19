@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-05-19T11:50:21Z\n"
+"POT-Creation-Date: 2026-11-19T15:04:48Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,8 +26,8 @@ msgstr ""
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:16
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:39
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:55
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:97
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:119
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:94
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:116
 msgid "Supported functionality in SCML:"
 msgstr ""
 
@@ -84,27 +84,27 @@ msgid "// Create a timer based on a per-process or per-thread clock\n"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:81
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:107
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:104
 msgid "Partially-supported clock IDs:"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:82
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:108
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:105
 msgid "`CLOCK_BOOTTIME` is treated as `CLOCK_MONOTONIC`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:84
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:110
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:107
 msgid "Unsupported predefined clock IDs:"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:85
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:111
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:108
 msgid "`CLOCK_REALTIME_ALARM`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:86
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:112
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:109
 msgid "`CLOCK_BOOTTIME_ALARM`"
 msgstr ""
 
@@ -113,46 +113,38 @@ msgid "`CLOCK_TAI`"
 msgstr ""
 
 #: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:89
-msgid "Unsupported notification methods:"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:90
-msgid "`SIGEV_THREAD`"
-msgstr ""
-
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:92
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/timer_create.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:95
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:92
 msgid "`timerfd_create`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:100
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:97
 msgid "// Create a timer file descriptor with a predefined clock source\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:114
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:134
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:111
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:131
 msgid ""
 "For more information, see [the man page](https://man7.org/linux/man-pages/"
 "man2/timerfd_create.2.html)."
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:117
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:114
 msgid "`timerfd_settime`"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:122
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:119
 msgid "// Arm or disarm a timer file descriptor\n"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:131
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:128
 msgid "Ignored flags:"
 msgstr ""
 
-#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:132
+#: src/kernel/linux-compatibility/syscall-flag-coverage/signals-and-timers/index.md:129
 msgid "`TFD_TIMER_CANCEL_ON_SET`"
 msgstr ""

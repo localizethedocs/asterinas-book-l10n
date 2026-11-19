@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-11-03T16:23:38Z\n"
+"POT-Creation-Date: 2026-11-19T15:04:48Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -113,19 +113,12 @@ msgstr ""
 
 #: src/kernel/nix-development.md:74
 msgid ""
-"The gVisor syscall tests are built with Bazel inside the Docker image, "
-"together with a set of shared libraries that the shell does not provide. Use "
-"the Docker environment to run them."
-msgstr ""
-
-#: src/kernel/nix-development.md:78
-msgid ""
 "Projects created by `cargo osdk new` and the TDX scheme of the OSDK test "
 "suite contain firmware paths specific to the Docker image. They do not work "
 "in the shell unless you edit those paths yourself."
 msgstr ""
 
-#: src/kernel/nix-development.md:82
+#: src/kernel/nix-development.md:78
 msgid ""
 "The shell points `OVMF_DIR` at the firmware in the Nix store. If you "
 "override it, choose a path without spaces, because the shared QEMU scripts "
