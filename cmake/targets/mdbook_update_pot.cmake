@@ -87,19 +87,6 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'head.hbs' file to the mdbook theme directory...")
-file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DOCS_THEME_DIR}")
-file(COPY_FILE
-    "${PROJ_CMAKE_CUSTOM_DIR}/head.hbs"
-    "${PROJ_OUT_REPO_DOCS_THEME_DIR}/head.hbs")
-remove_cmake_message_indent()
-message("")
-message("From: ${PROJ_CMAKE_CUSTOM_DIR}/head.hbs")
-message("To:   ${PROJ_OUT_REPO_DOCS_THEME_DIR}/head.hbs")
-message("")
-restore_cmake_message_indent()
-
-
 if (NOT UPDATE_POT_REQUIRED)
     message(STATUS "No need to update .pot files.")
     return()
