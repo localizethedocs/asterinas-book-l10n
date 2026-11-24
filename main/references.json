@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-11-19 04:54:25 -0800",
-      "hash" : "7fecb4ffabc72d0767277a9ffb66168bc512034c",
-      "title" : "Fix the futex requeue regression test timeout"
+      "date" : "2026-11-23 21:38:24 -0800",
+      "hash" : "879e2c51cc3e8776b9b385645c6b0bbe45b7dbd5",
+      "title" : "Bump Docker image version to 0.19.0-20261119"
     }
   },
   "type" : "branch",

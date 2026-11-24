@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asterinas Book\n"
+"POT-Creation-Date: 2026-11-24T19:34:45Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:1
+msgid "`kernel/`"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:3
+msgid "Guidelines that apply only to code under `kernel/`."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:5
+msgid "Use `errno!` to construct errors (`use-errno-macro`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:7
+msgid ""
+"Prefer `errno!` over `Error::new` when constructing kernel errors, as it is "
+"more concise:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:11
+msgid "// Good\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:13
+msgid "// Bad\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:18
+msgid ""
+"To minimize its memory footprint, `Error` cannot carry an error message. "
+"However, you can document an error by including a message in `errno!`:"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:22
+msgid "// Even better\n"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:23
+msgid "\"the file offset is not page-aligned\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:26
+msgid ""
+"The message serves only as documentation; it is not compiled into the binary "
+"and therefore incurs no runtime overhead."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:29
+msgid "See also: [`error-message-format`](../naming.md#error-message-format)."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:32
+msgid "Track callers when converting errors (`track-error-caller`)"
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:34
+msgid ""
+"The kernel `Error` type records the caller's source location when it is "
+"constructed and preserves that location as the error propagates. This helps "
+"developers trace a failure back to its origin, even when the error is "
+"reported far from where it occurred."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:39
+msgid ""
+"To capture the caller's location when converting another error type into a "
+"kernel `Error`, add `#[track_caller]` to every function involved in the "
+"conversion, including `From::from` implementations and intermediate "
+"conversion helpers. Without the attribute, the recorded location points "
+"inside the conversion function instead of the caller that encountered the "
+"error."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:49
+msgid "\"invalid UTF-8 string\""
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-maintainability/path-specific/kernel.md:54
+msgid ""
+"See also: [Rust Reference: The `track_caller` attribute](https://doc.rust-"
+"lang.org/reference/attributes/codegen.html#the-track_caller-attribute)."
+msgstr ""
