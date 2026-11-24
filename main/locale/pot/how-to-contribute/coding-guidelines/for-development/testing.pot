@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-07-07T12:00:50Z\n"
+"POT-Creation-Date: 2026-11-24T19:34:45Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,79 +22,87 @@ msgstr ""
 #: src/to-contribute/coding-guidelines/for-development/testing.md:5
 msgid ""
 "When a bug is fixed, a test that would have caught the bug should accompany "
-"the fix. Include a reference to the issue number in a comment so future "
-"readers can recover the original context."
+"the fix."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:11
+#: src/to-contribute/coding-guidelines/for-development/testing.md:8
+msgid ""
+"Include the necessary context in code comments to explain the test. Do not "
+"hide the context of the test behind an issue link. Only include an issue "
+"link in the code if it provides useful additional information to future "
+"readers. If an issue link is included, explain when and why readers should "
+"open it."
+msgstr ""
+
+#: src/to-contribute/coding-guidelines/for-development/testing.md:14
 msgid ""
 "See also: PR [\\#2962](https://github.com/asterinas/asterinas/pull/2962)."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:14
+#: src/to-contribute/coding-guidelines/for-development/testing.md:17
 msgid "Test user-visible behavior, not internals (`test-visible-behavior`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:16
+#: src/to-contribute/coding-guidelines/for-development/testing.md:19
 msgid ""
 "Tests should validate observable, user-facing outcomes. Prefer testing "
 "through public APIs rather than exposing internal constants in test code."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:20
+#: src/to-contribute/coding-guidelines/for-development/testing.md:23
 msgid ""
 "Name tests after the behavior or specification concept being verified, not "
 "after internal implementation details. Using kernel-internal names in user-"
 "space regression tests creates unnecessary coupling."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:25
+#: src/to-contribute/coding-guidelines/for-development/testing.md:28
 msgid ""
 "See also: PR [\\#2926](https://github.com/asterinas/asterinas/pull/2926)."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:28
+#: src/to-contribute/coding-guidelines/for-development/testing.md:31
 msgid "Use assertion macros, not manual inspection (`use-assertions`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:30
+#: src/to-contribute/coding-guidelines/for-development/testing.md:33
 msgid ""
 "Use language- or framework-provided assertion helpers instead of printing "
 "values and manually inspecting output. Assertions provide clear failure "
 "messages and make tests self-checking."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:35
+#: src/to-contribute/coding-guidelines/for-development/testing.md:38
 msgid ""
 "See also: PR [\\#2877](https://github.com/asterinas/asterinas/pull/2877) and "
 "[\\#2926](https://github.com/asterinas/asterinas/pull/2926)."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:39
+#: src/to-contribute/coding-guidelines/for-development/testing.md:42
 msgid "Clean up resources after every test (`test-cleanup`)"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:41
+#: src/to-contribute/coding-guidelines/for-development/testing.md:44
 msgid ""
 "Always clean up resources after a test: close file descriptors, unlink "
 "temporary files, and call `waitpid` on child processes. Leftover resources "
 "can cause flaky failures in subsequent tests."
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:48
+#: src/to-contribute/coding-guidelines/for-development/testing.md:51
 msgid "// Good — cleanup after use\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:49
 #: src/to-contribute/coding-guidelines/for-development/testing.md:52
+#: src/to-contribute/coding-guidelines/for-development/testing.md:55
 msgid "\"/tmp/test_file\""
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:49
+#: src/to-contribute/coding-guidelines/for-development/testing.md:52
 msgid "// ... test logic ...\n"
 msgstr ""
 
-#: src/to-contribute/coding-guidelines/for-development/testing.md:55
+#: src/to-contribute/coding-guidelines/for-development/testing.md:58
 msgid ""
 "See also: PR [\\#2926](https://github.com/asterinas/asterinas/pull/2926) and "
 "[\\#2969](https://github.com/asterinas/asterinas/pull/2969)."

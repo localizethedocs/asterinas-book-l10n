@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Asterinas Book\n"
-"POT-Creation-Date: 2026-11-03T16:23:38Z\n"
+"POT-Creation-Date: 2026-11-24T19:34:45Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -383,114 +383,114 @@ msgstr ""
 msgid "Attributes & Macros"
 msgstr ""
 
-#: src/SUMMARY.md:109
-msgid "For Development"
-msgstr ""
-
-#: src/SUMMARY.md:110
-msgid "Correctness"
-msgstr ""
-
-#: src/SUMMARY.md:111
-msgid "Concurrency"
-msgstr ""
-
-#: src/SUMMARY.md:112
-msgid "Resource Management"
-msgstr ""
-
-#: src/SUMMARY.md:113
-msgid "Efficiency"
-msgstr ""
-
-#: src/SUMMARY.md:114
-msgid "Observability"
-msgstr ""
-
-#: src/SUMMARY.md:115
-msgid "Testing"
-msgstr ""
-
-#: src/SUMMARY.md:116
-msgid "For Security"
-msgstr ""
-
-#: src/SUMMARY.md:117
-msgid "Memory Safety"
-msgstr ""
-
-#: src/SUMMARY.md:118
-msgid "Security Properties"
-msgstr ""
-
-#: src/SUMMARY.md:119
-msgid "For Hardware"
-msgstr ""
-
-#: src/SUMMARY.md:120
-msgid "Assembly Conventions"
-msgstr ""
-
-#: src/SUMMARY.md:121
-msgid "CPU Architecture-Specific"
-msgstr ""
-
-#: src/SUMMARY.md:122
-msgid "x86-64"
-msgstr ""
-
-#: src/SUMMARY.md:123
-msgid "For Documentation"
-msgstr ""
-
-#: src/SUMMARY.md:124
-msgid "General Style"
-msgstr ""
-
-#: src/SUMMARY.md:125
+#: src/SUMMARY.md:109 src/SUMMARY.md:127
 msgid "Path-Specific"
 msgstr ""
 
-#: src/SUMMARY.md:126
+#: src/SUMMARY.md:110 src/SUMMARY.md:128
 msgid "`kernel/`"
 msgstr ""
 
-#: src/SUMMARY.md:127
-msgid "Boterinas"
+#: src/SUMMARY.md:111
+msgid "For Development"
 msgstr ""
 
-#: src/SUMMARY.md:128
-msgid "Version Bump"
+#: src/SUMMARY.md:112
+msgid "Correctness"
+msgstr ""
+
+#: src/SUMMARY.md:113
+msgid "Concurrency"
+msgstr ""
+
+#: src/SUMMARY.md:114
+msgid "Resource Management"
+msgstr ""
+
+#: src/SUMMARY.md:115
+msgid "Efficiency"
+msgstr ""
+
+#: src/SUMMARY.md:116
+msgid "Observability"
+msgstr ""
+
+#: src/SUMMARY.md:117
+msgid "Testing"
+msgstr ""
+
+#: src/SUMMARY.md:118
+msgid "For Security"
+msgstr ""
+
+#: src/SUMMARY.md:119
+msgid "Memory Safety"
+msgstr ""
+
+#: src/SUMMARY.md:120
+msgid "Security Properties"
+msgstr ""
+
+#: src/SUMMARY.md:121
+msgid "For Hardware"
+msgstr ""
+
+#: src/SUMMARY.md:122
+msgid "Assembly Conventions"
+msgstr ""
+
+#: src/SUMMARY.md:123
+msgid "CPU Architecture-Specific"
+msgstr ""
+
+#: src/SUMMARY.md:124
+msgid "x86-64"
+msgstr ""
+
+#: src/SUMMARY.md:125
+msgid "For Documentation"
+msgstr ""
+
+#: src/SUMMARY.md:126
+msgid "General Style"
 msgstr ""
 
 #: src/SUMMARY.md:129
-msgid "Community"
+msgid "Boterinas"
 msgstr ""
 
 #: src/SUMMARY.md:130
-msgid "Code of Conduct"
+msgid "Version Bump"
+msgstr ""
+
+#: src/SUMMARY.md:131
+msgid "Community"
 msgstr ""
 
 #: src/SUMMARY.md:132
-msgid "Request for Comments (RFCs)"
+msgid "Code of Conduct"
 msgstr ""
 
 #: src/SUMMARY.md:134
-msgid "RFC Overview"
-msgstr ""
-
-#: src/SUMMARY.md:135
-msgid "RFC-0001: RFC Process"
+msgid "Request for Comments (RFCs)"
 msgstr ""
 
 #: src/SUMMARY.md:136
-msgid "RFC-0002: Asterinas NixOS"
+msgid "RFC Overview"
 msgstr ""
 
 #: src/SUMMARY.md:137
-msgid "RFC-0003: Hypervisor Support"
+msgid "RFC-0001: RFC Process"
 msgstr ""
 
 #: src/SUMMARY.md:138
+msgid "RFC-0002: Asterinas NixOS"
+msgstr ""
+
+#: src/SUMMARY.md:139
+msgid "RFC-0003: Hypervisor Support"
+msgstr ""
+
+#: src/SUMMARY.md:140
 msgid "RFC Template"
 msgstr ""
